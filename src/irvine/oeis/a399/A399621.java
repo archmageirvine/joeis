@@ -1,13 +1,5 @@
 package irvine.oeis.a399;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.atomic.AtomicLong;
-
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,21 +9,16 @@ import irvine.oeis.Sequence1;
  */
 public class A399621 extends Sequence1 {
 
-  // Number of worker threads.
-  protected static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
-    String.valueOf(Runtime.getRuntime().availableProcessors())));
-
   private int mN = 0;
   private int mM = 0;
+  private long mMin = 0;
+  private boolean[][] mS = null;
 
-  /*
-   * Count the new configurations caused by setting (x,y) to v.
-   */
-  private static long count(final boolean[][] s, final int x, final int y, final boolean v) {
+  private long count(final int x, final int y, final boolean v) {
     long cnt = 0;
     for (int k = 0; k < x; ++k) {
       for (int j = 0; j < y; ++j) {
-        if (s[x][j] == v && s[k][j] == v && s[k][y] == v) {
+        if (mS[x][j] == v && mS[k][j] == v && mS[k][y] == v) {
           ++cnt;
         }
       }
@@ -39,46 +26,25 @@ public class A399621 extends Sequence1 {
     return cnt;
   }
 
-  /*
-   * Search one first-row configuration.
-   */
-  private static void search(final boolean[][] s, final int n, final int m,
-                             final int x, final int y, final long count,
-                             final AtomicLong globalMin) {
-    final long best = globalMin.get();
-    if (count >= best) {
+  private void search(final int x, final int y, final long count) {
+    if (count >= mMin) {
       return;
     }
-    if (y >= m) {
-      globalMin.accumulateAndGet(count, Math::min);
+    if (y >= mM) {
+      mMin = count;
       return;
     }
-    if (x >= n) {
-      search(s, n, m, 0, y + 1, count, globalMin);
+    if (x >= mN) {
+      search(0, y + 1, count);
       return;
     }
-    s[x][y] = false;
-    search(s, n, m, x + 1, y, count + count(s, x, y, false), globalMin);
-
-    // A better result may have been found by another thread.
-    if (count < globalMin.get()) {
-      s[x][y] = true;
-      search(s, n, m, x + 1, y, count + count(s, x, y, true), globalMin);
+    mS[x][y] = false;
+    search(x + 1, y, count + count(x, y, false));
+    // min could have changed to check again before trying other possibility
+    if (count < mMin) {
+      mS[x][y] = true;
+      search(x + 1, y, count + count(x, y, true));
     }
-  }
-
-  /*
-   * Search for a particular first row.
-   */
-  private static long searchFirstRow(final int n, final int m, final long mask, final AtomicLong globalMin) {
-    final boolean[][] s = new boolean[n][m];
-
-    // (0,0) is WLOG false.  The remaining entries of row 0 are specified by mask.
-    for (int y = 1; y < m; ++y) {
-      s[0][y] = (mask & (1L << (y - 1))) != 0;
-    }
-    search(s, n, m, 1, 0, 0, globalMin);
-    return globalMin.get();
   }
 
   @Override
@@ -87,50 +53,24 @@ public class A399621 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-
-    /*
-     * There are 2^(mM-1) possible first rows, since (0,0)
-     * can be assumed to be false.
-     *
-     * Use a long mask, so this implementation supports up to
-     * mM = 64.  In practice the number of jobs becomes enormous
-     * well before that.
-     */
-    if (mM > Long.SIZE) {
-      throw new UnsupportedOperationException();
-    }
-
-    final long jobs = 1L << (mM - 1);
-    final AtomicLong globalMin = new AtomicLong(Long.MAX_VALUE);
-
-    final ExecutorService executor =
-      Executors.newFixedThreadPool(Math.min(THREADS, (int) Math.min(jobs, Integer.MAX_VALUE)));
-
-    try {
-      final List<Future<Long>> futures = new ArrayList<>();
-      for (long mask = 0; mask < jobs; ++mask) {
-        final long row = mask;
-        futures.add(executor.submit(() -> searchFirstRow(mN, mM, row, globalMin)));
-      }
-      // Wait for all first-row searches to finish.
-      for (final Future<Long> future : futures) {
-        try {
-          future.get();
-        } catch (final InterruptedException e) {
-          Thread.currentThread().interrupt();
-          throw new RuntimeException(e);
-        } catch (final ExecutionException e) {
-          throw new RuntimeException(e.getCause());
-        }
-      }
-    } finally {
-      executor.shutdown();
-    }
-    return Z.valueOf(globalMin.get());
+    mMin = Long.MAX_VALUE;
+    mS = new boolean[mN][mM];
+    // WLOG can assume (0,0) is false
+    search(1, 0, 0);
+    return Z.valueOf(mMin);
   }
 }
 
-//package irvine.oeis.a399;
+// todo for reasons I do not understand, this parallel version is much slower ...
+
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.concurrent.Callable;
+//import java.util.concurrent.ExecutionException;
+//import java.util.concurrent.ExecutorService;
+//import java.util.concurrent.Executors;
+//import java.util.concurrent.Future;
+//import java.util.concurrent.atomic.AtomicLong;
 //
 //import irvine.math.z.Z;
 //import irvine.oeis.Sequence1;
@@ -141,16 +81,17 @@ public class A399621 extends Sequence1 {
 // */
 //public class A399621 extends Sequence1 {
 //
+//  protected static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
+//    String.valueOf(Runtime.getRuntime().availableProcessors())));
+//
 //  private int mN = 0;
 //  private int mM = 0;
-//  private long mMin = 0;
-//  private boolean[][] mS = null;
 //
-//  private long count(final int x, final int y, final boolean v) {
+//  private static long count(final boolean[][] s, final int x, final int y, final boolean v) {
 //    long cnt = 0;
 //    for (int k = 0; k < x; ++k) {
 //      for (int j = 0; j < y; ++j) {
-//        if (mS[x][j] == v && mS[k][j] == v && mS[k][y] == v) {
+//        if (s[x][j] == v && s[k][j] == v && s[k][y] == v) {
 //          ++cnt;
 //        }
 //      }
@@ -158,24 +99,65 @@ public class A399621 extends Sequence1 {
 //    return cnt;
 //  }
 //
-//  private void search(final int x, final int y, final long count) {
-//    if (count > mMin) {
-//      return;
+//  /**
+//   * Per-thread search state.
+//   */
+//  private static final class State {
+//    private final boolean[][] mS;
+//    private final int mN;
+//    private final int mM;
+//    private final AtomicLong mGlobalMin;
+//    private long mMin;
+//
+//    State(final int n, final int m, final AtomicLong globalMin) {
+//      mN = n;
+//      mM = m;
+//      mGlobalMin = globalMin;
+//      mS = new boolean[n][m];
+//      mMin = Long.MAX_VALUE;
 //    }
-//    if (y >= mM) {
-//      mMin = count;
-//      return;
+//
+//    private void search(final int x, final int y, final long cnt) {
+//      if (cnt >= mMin) {
+//        return;
+//      }
+//
+//      if (y >= mM) {
+//        mMin = mGlobalMin.accumulateAndGet(cnt, Math::min);
+//        return;
+//      }
+//
+//      if (x >= mN) {
+//        search(0, y + 1, cnt);
+//        return;
+//      }
+//
+//      mS[x][y] = false;
+//      search(x + 1, y, cnt + count(mS, x, y, false));
+//
+//      if (cnt < mMin) {
+//        mS[x][y] = true;
+//        search(x + 1, y, cnt + count(mS, x, y, true));
+//      }
 //    }
-//    if (x >= mN) {
-//      search(0, y + 1, count);
-//      return;
-//    }
-//    mS[x][y] = false;
-//    search(x + 1, y, count + count(x, y, false));
-//    // min could have changed to check again before trying other possibility
-//    if (count < mMin) {
-//      mS[x][y] = true;
-//      search(x + 1, y, count + count(x, y, true));
+//
+//    long run(final long mask) {
+//      /*
+//       * (0,0) is WLOG false.
+//       * The rest of row 0 is specified by mask.
+//       */
+//      for (int y = 1; y < mM; ++y) {
+//        mS[0][y] = (mask & (1L << (y - 1))) != 0;
+//      }
+//
+//      /*
+//       * Obtain the best result known before starting this job.
+//       * This is only done once.
+//       */
+//      mMin = mGlobalMin.get();
+//
+//      search(1, 0, 0);
+//      return mMin;
 //    }
 //  }
 //
@@ -185,10 +167,41 @@ public class A399621 extends Sequence1 {
 //      ++mN;
 //      mM = 1;
 //    }
-//    mMin = Long.MAX_VALUE;
-//    mS = new boolean[mN][mM];
-//    // WLOG can assume (0,0) is false
-//    search(1, 0, 0);
-//    return Z.valueOf(mMin);
+//
+//    final long jobs = 1L << (mM - 1);
+//    final AtomicLong globalMin = new AtomicLong(Long.MAX_VALUE);
+//
+//    final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
+//
+//    try {
+//      final List<Future<Long>> futures = new ArrayList<>();
+//
+//      for (long mask = 0; mask < jobs; ++mask) {
+//        final long rowMask = mask;
+//        futures.add(executor.submit(new Callable<Long>() {
+//          @Override
+//          public Long call() {
+//            return new State(mN, mM, globalMin).run(rowMask);
+//          }
+//        }));
+//      }
+//
+//      long min = Long.MAX_VALUE;
+//      for (final Future<Long> future : futures) {
+//        try {
+//          min = Math.min(min, future.get());
+//        } catch (final InterruptedException e) {
+//          Thread.currentThread().interrupt();
+//          throw new RuntimeException(e);
+//        } catch (final ExecutionException e) {
+//          throw new RuntimeException(e.getCause());
+//        }
+//      }
+//
+//      return Z.valueOf(min);
+//
+//    } finally {
+//      executor.shutdown();
+//    }
 //  }
 //}

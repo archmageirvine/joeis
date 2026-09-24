@@ -32,8 +32,6 @@ public class A399663 extends Sequence0 {
     }
   };
 
-  // T(n, k) = Sum_{j=0..floor(n/k)} T(n-j*k, k-1) * T(j, 1), T(n, 1) = Sum_{j=1..n} T(n-j, 1) * A000081(j), T(n, 0) = 0^n.
-
   @Override
   public Z next() {
     if (++mM > mN) {

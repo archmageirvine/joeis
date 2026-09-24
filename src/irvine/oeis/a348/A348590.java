@@ -29,7 +29,7 @@ public class A348590 extends Sequence0 {
       if (n == 0) {
         return Z.valueOf(t);
       }
-      return Integers.SINGLETON.sum(1 + t, n, i -> mG.get(i).multiply(get(n - i, (i == 1 ? 1 : t)).multiply(Binomial.binomial(n - 1, i - 1))));
+      return Integers.SINGLETON.sum(1 + t, n, i -> mG.get(i).multiply(get(n - i, i == 1 ? 1 : t).multiply(Binomial.binomial(n - 1, i - 1))));
     }
   };
 

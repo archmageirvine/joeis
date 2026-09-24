@@ -6,7 +6,9 @@ import irvine.math.group.MatrixField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.a000.A000701;
 
 /**
  * A085800.
@@ -14,11 +16,15 @@ import irvine.oeis.Sequence1;
  */
 public class A086644 extends Sequence1 {
 
+  private final Sequence mA = new A000701().skip();
   private int mN = 0;
 
   @Override
   public Z next() {
     ++mN;
+    if (mA.next().isOdd()) {
+      return Z.ZERO;
+    }
     final Matrix<Z> mat = new DefaultMatrix<>(SymmetricGroup.create(mN).characterTable(), Z.ZERO);
     return new MatrixField<>(mN, IntegerField.SINGLETON).permanent(mat);
   }

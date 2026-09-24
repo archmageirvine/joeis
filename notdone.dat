@@ -638,7 +638,6 @@ A007772 Values of Ehrhart polynomial of dilation by 2 of Relaxed Boolean Quadric
 A007783 Mixed Van der Waerden numbers w(n, 3; 2), hard
 A007784 Van der Waerden numbers W(2;3,n-1), hard, better called W(2;4,n-1)?, W(2,4,9)=309, known?
 A007791 From a problem concerning circulant matrices and Gauss sums, insufficient detail
-A007792 From a problem concerning circulant matrices and Gauss sums, insufficient detail
 A007793 Number of conjugacy classes of compact Cartan subgroups in Sp_{2n}(F), where p>n and the p-adic field F contains all r-th roots of unity for all r <= 2n, not in paper
 A007803 Number of connected series-parallel graphs with a longest path of at most n edges and also a largest cut set of at most n edges, maybe doable, couldn't get ref
 A007804 Related to the asymptotic expansion of Sum_{k = 0..n} C(n,k)^4, insufficient detail
@@ -2779,3 +2778,4 @@ A086588 Number of cycles in range [A014137(n-1)..A014138(n-1)] of permutations A
 A086589 Number of fixed points in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
 A086590 Maximum cycle size in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
 A086591 Least common multiple of cycle sizes in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
+A086643 Number of zeros in the character table of the group GL(2,Z_n).

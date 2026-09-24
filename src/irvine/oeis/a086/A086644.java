@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000701;
 
 /**
- * A085800.
+ * A086644 Permanent of the character table of the symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A086644 extends Sequence1 {

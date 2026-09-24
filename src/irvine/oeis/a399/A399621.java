@@ -43,8 +43,10 @@ public class A399621 extends Sequence1 {
     private final int mN;
     private final int mM;
     private final AtomicLong mGlobalMin;
+    private long mMin = Long.MAX_VALUE;
+    private long mNodes = 0;
 
-    State(final int n, final int m, final AtomicLong globalMin) {
+    private State(final int n, final int m, final AtomicLong globalMin) {
       mN = n;
       mM = m;
       mGlobalMin = globalMin;
@@ -52,11 +54,20 @@ public class A399621 extends Sequence1 {
     }
 
     private void search(final int x, final int y, final long cnt) {
-      if (cnt >= mGlobalMin.get()) {
+      // Periodically update our local minimum from the global minimum
+      // This reduces contention between threads by not constantly
+      // consulting the global minimum
+      if ((++mNodes & 0xFFFF) == 0) {
+        final long global = mGlobalMin.get();
+        if (global < mMin) {
+          mMin = global;
+        }
+      }
+      if (cnt >= mMin) {
         return;
       }
       if (y >= mM) {
-        mGlobalMin.accumulateAndGet(cnt, Math::min);
+        mMin = mGlobalMin.accumulateAndGet(cnt, Math::min);
         return;
       }
       if (x >= mN) {
@@ -65,13 +76,13 @@ public class A399621 extends Sequence1 {
       }
       mS[x][y] = false;
       search(x + 1, y, cnt + count(mS, x, y, false));
-      if (cnt < mGlobalMin.get()) {
+      if (cnt < mMin) {
         mS[x][y] = true;
         search(x + 1, y, cnt + count(mS, x, y, true));
       }
     }
 
-    long run(final long mask) {
+    void run(final long mask) {
       /*
        * (0,0) is WLOG false.
        * The rest of row 0 is specified by mask.
@@ -79,8 +90,8 @@ public class A399621 extends Sequence1 {
       for (int x = 1; x < mN; ++x) {
         mS[x][0] = (mask & (1L << (x - 1))) != 0;
       }
+      mMin = mGlobalMin.get(); // get current min from so far
       search(0, 1, 0); // start now on row 1
-      return mGlobalMin.get();
     }
   }
 
@@ -94,15 +105,14 @@ public class A399621 extends Sequence1 {
     final AtomicLong globalMin = new AtomicLong(Long.MAX_VALUE);
     final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
     try {
-      final List<Future<Long>> futures = new ArrayList<>();
+      final List<Future<?>> futures = new ArrayList<>();
       for (long mask = 0; mask < jobs; ++mask) {
         final long rowMask = mask;
         futures.add(executor.submit(() -> new State(mN, mM, globalMin).run(rowMask)));
       }
-      long min = Long.MAX_VALUE;
-      for (final Future<Long> future : futures) {
+      for (final Future<?> future : futures) {
         try {
-          min = Math.min(min, future.get());
+          future.get();
         } catch (final InterruptedException e) {
           Thread.currentThread().interrupt();
           throw new RuntimeException(e);
@@ -110,7 +120,7 @@ public class A399621 extends Sequence1 {
           throw new RuntimeException(e.getCause());
         }
       }
-      return Z.valueOf(min);
+      return Z.valueOf(globalMin.get());
     } finally {
       executor.shutdown();
     }

@@ -37,7 +37,7 @@ public class A398229 extends Sequence0 {
     return r;
   }
 
-  private static long pack(int p, int q) {
+  private static long pack(final int p, final int q) {
     return ((long) q << 32) | (p & 0xffffffffL);
   }
 

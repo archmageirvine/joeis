@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398229 allocated for David Niedbala Giraudin.
+ * A398229 Number of ordered pairs of finite sequences of polynomials over GF(2), each polynomial of degree 1 or 2 and each sequence of total degree n, having the same continuant.
  * @author Sean A. Irvine
  */
 public class A398229 extends Sequence0 {

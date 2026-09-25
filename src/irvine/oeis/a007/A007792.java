@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A007792 From a problem concerning circulant matrices and Gauss sums.
+ * A007792 a(n) = (1/n)*Sum_{x in (Z/nZ)^6} e^(2*Pi*i*det(circ(x))/n), the normalized Gauss sum of the 6 X 6 circulant determinant.
  * @author Sean A. Irvine
  */
 public class A007792 extends MultiplicativeSequence {

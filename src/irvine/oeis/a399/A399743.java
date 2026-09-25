@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399743 allocated for Felix Huber.
+ * A399743 a(n) is the minimum number of entries from row n of Pascal's triangle needed to represent Fibonacci(n) as a signed sum, with each position used at most once.
  * @author Sean A. Irvine
  */
 public class A399743 extends Sequence0 {

@@ -16,7 +16,7 @@ public class A399663 extends Sequence0 {
   private int mN = 0;
   private int mM = -1;
   private final DirectSequence mS = DirectSequence.create(new A000081());
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
+  protected final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (k == 0) {

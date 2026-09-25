@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A137525 A triangular sequence of coefficients based on an expansion of a Catenoid like Sheffer expansion function: g(t) = t; f(t) = -1/t; p(x,t) = Exp[x*(t)]*(1 - f(t)^2).
+ * A137525 Triangle read by rows: T(n, k) = [t^n*x^k] n! * (1-1/t^2) * exp(t*x), 0 &lt;= k &lt;= n + 2.
  * @author Sean A. Irvine
  */
 public class A137525 extends Sequence0 {

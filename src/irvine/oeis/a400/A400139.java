@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A002862.
+ * A400139 The number of divisors d of n such that gcid(d, n/d) is a powerful number (A001694), where gcid is the greatest common infinitary divisor.
  * @author Sean A. Irvine
  */
 public class A400139 extends MultiplicativeSequence {

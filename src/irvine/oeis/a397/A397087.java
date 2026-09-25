@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397087 allocated for Lezhe Gao.
+ * A397087 Number of nonempty subsets S of [n] such that sum(S) == 0 (mod n) and product(S) == 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A397087 extends Sequence1 {

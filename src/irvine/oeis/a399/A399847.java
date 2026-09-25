@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000043;
 
 /**
- * A399847 allocated for Frank M Jackson.
+ * A399847 Mersenne prime exponents k such that 2^k-2 is not a practical number.
  * @author Sean A. Irvine
  */
 public class A399847 extends FilterSequence {

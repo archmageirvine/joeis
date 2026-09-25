@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A002862.
+ * A400144 The sum of divisors d of n such that gcid(d, n/d) is a square, where gcid is the greatest common infinitary divisor.
  * @author Sean A. Irvine
  */
 public class A400144 extends MultiplicativeSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399715 allocated for Bence Hervay.
+ * A399715 T(n,k) is the k-th term obtained by greedily selecting the smallest number in {1..n} whose sorted distances to previously selected terms are lexicographically maximal, triangle read by rows.
  * @author Sean A. Irvine
  */
 public class A399715 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A399919 allocated for Stefano Spezia.
+ * A399919 Decimal expansion of the least positive root of the equation 2025*x^8 - 11970*x^6 + 17009*x^4 - 9000x^2 + 2000.
  * @author Sean A. Irvine
  */
 public class A399919 extends PolynomialRootExpansionSequence {

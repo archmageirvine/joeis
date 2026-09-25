@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065865 a(n) is the least k such that nk - 1 and nk + 1 are both composite.
+ * A065865 a(n) is the least k such that n*k - 1 and n*k + 1 are both composite.
  * @author Sean A. Irvine
  */
 public class A065865 extends Sequence1 {

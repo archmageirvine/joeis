@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A399783 allocated for Bernard Schott.
+ * A399783 Power chains: Number of essentially different linear (non-circular) permutations of the numbers 1 to n such that the sum of adjacent numbers is a perfect power, while the sum of the first and last numbers is not a perfect power.
  * @author Sean A. Irvine
  */
 public class A399783 extends ParallelPermutationSequence {

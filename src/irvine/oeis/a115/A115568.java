@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A115568 Maximal Fibonacci exponent in prime factorization of n, or 1 if there is no Fibonacci exponent.
+ * A115568 Maximum Fibonacci exponent in prime factorization of n, or 1 if there is no Fibonacci exponent.
  * @author Georg Fischer
  */
 public class A115568 extends LambdaSequence {

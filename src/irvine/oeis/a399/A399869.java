@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048675;
 
 /**
- * A399869 allocated for Rakesh Khanna A.
+ * A399869 Number of steps required for n to reach 1 under repeated application of A048675, which encodes the exponents in the prime factorization of n as a binary integer; or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A399869 extends Sequence1 {
@@ -21,6 +21,7 @@ public class A399869 extends Sequence1 {
     while (!m.isOne()) {
       ++cnt;
       m = mS.a(m);
+      //System.out.println(mN + " cnt=" + cnt + " m=" + m);
     }
     return Z.valueOf(cnt);
   }

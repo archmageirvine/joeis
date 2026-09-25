@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398829 allocated for Georg Fischer.
+ * A398829 Numbers k having at least two distinct prime factors and the property that p + 10 divides k + 10 for all primes p dividing k.
  * @author Georg Fischer
  */
 public class A398829 extends FilterNumberSequence {

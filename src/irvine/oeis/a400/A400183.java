@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a397.A397831;
 
 /**
- * A002862.
+ * A400183 Even terms in A397831, divided by 2.
  * @author Sean A. Irvine
  */
 public class A400183 extends A397831 {

@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A003094.
+ * A400326 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A400326 extends ParallelGenerateGraphsSequence {

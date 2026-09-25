@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002862.
+ * A400137 Triangle T(n, k) read by rows: the n-th row gives the greatest common infinitary divisor of n and k, n &gt;= 1, 1 &lt; = k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A400137 extends Sequence1 {

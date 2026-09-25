@@ -4,7 +4,7 @@ import irvine.oeis.a059.A059009;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A399553 allocated for Policarpo Yoshin Ulianov.
+ * A399553 a(n) is the least odd k such that neither k nor the odd part of k + 1 is yet in the sequence.
  * @author Sean A. Irvine
  */
 public class A399553 extends SimpleTransformSequence {

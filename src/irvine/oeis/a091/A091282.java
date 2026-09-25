@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A091282 Exponent of 2 in prime(n)^2 - 1.
+ * A091282 Exponent of 2 in the prime factorization of prime(n)^2 - 1.
  * a(n) = valuation(prime(n)^2-1, 2);
  * @author Georg Fischer
  */

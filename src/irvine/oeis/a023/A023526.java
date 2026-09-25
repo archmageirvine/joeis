@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
- * A023526 Greatest exponent in prime-power factorization of p(n)*p(n-1) + 1.
+ * A023526 Greatest exponent in prime-power factorization of prime(n)*prime(n-1) + 1; a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A023526 extends A023523 {

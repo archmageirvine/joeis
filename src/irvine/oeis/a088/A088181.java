@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A088181 E.g.f.: 1/(1-sinh(x)-x).
+ * A088181 Expansion of e.g.f.: 1/(1-sinh(x)-x).
  * E.g.f.: 1/(1-sinh(x)-x)
  * @author Georg Fischer
  */

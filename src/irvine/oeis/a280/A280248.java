@@ -4,7 +4,7 @@ package irvine.oeis.a280;
 import irvine.oeis.PartialProductSequence;
 
 /**
- * A280248 Partial products of A280246 (Product_{d|n} psi(d)).
+ * A280248 Partial products of A280246, where A280246(n) = Product_{d|n} A023896(d).
  * @author Georg Fischer
  */
 public class A280248 extends PartialProductSequence {

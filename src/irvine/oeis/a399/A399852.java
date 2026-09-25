@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A399852 allocated for Markus Sigg.
+ * A399852 Numbers k &gt;= 2 for which 2k is missing in A399704.
  * @author Sean A. Irvine
  */
 public class A399852 extends Sequence1 {

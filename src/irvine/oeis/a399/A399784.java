@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A399784 allocated for Bernard Schott.
+ * A399784 Power loops: the number of circular permutations (reversals not counted as different) of the numbers 1 to n such that the sum of any two consecutive numbers is a perfect power.
  * @author Sean A. Irvine
  */
 public class A399784 extends ParallelPermutationSequence {

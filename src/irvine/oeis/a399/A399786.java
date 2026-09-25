@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A399786 allocated for Bernard Schott.
+ * A399786 Power chains: Number of essentially different permutations of the numbers 1 to n such that the sum of any two consecutive numbers is a perfect power, with each circular permutation counted n times.
  * @author Sean A. Irvine
  */
 public class A399786 extends AbstractSequence {

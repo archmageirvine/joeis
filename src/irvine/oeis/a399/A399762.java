@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A399762 allocated for David Niedbala Giraudin.
+ * A399762 Minimum over monic polynomials g of degree n over GF(2) of the number of polynomials p with deg(p) &lt; n and gcd(p, g) = 1 such that every partial quotient of the continued fraction expansion of g/p has degree at most 2.
  * @author Sean A. Irvine
  */
 public class A399762 extends Sequence1 {

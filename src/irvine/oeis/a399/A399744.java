@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399744 allocated for Felix Huber.
+ * A399744 a(n) is the minimum number of entries needed to represent the n-th Lucas number as a signed sum of entries from row n of Pascal's triangle, with each position used at most once, or 0 if no such representation exists.
  * @author Sean A. Irvine
  */
 public class A399744 extends Sequence0 {

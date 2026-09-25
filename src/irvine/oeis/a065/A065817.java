@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065817 Numbers n such that sigma_5(n)/sigma_1(n) is prime.
+ * A065817 Numbers k such that sigma_5(k)/sigma_1(k) is prime.
  * @author Sean A. Irvine
  */
 public class A065817 extends Sequence1 {

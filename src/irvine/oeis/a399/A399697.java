@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399697 allocated for Hassane Bakkaoui.
+ * A399697 Numerator of delta_1(n), the density of the integers having exactly one divisor in the open interval (n, 2n).
  * @author Sean A. Irvine
  */
 public class A399697 extends Sequence1 {

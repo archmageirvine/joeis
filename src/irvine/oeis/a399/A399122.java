@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399122 allocated for Charles Kusniec.
+ * A399122 a(n) is the smallest positive index k such that k^2 - k + n has at least three prime factors counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A399122 extends Sequence1 {

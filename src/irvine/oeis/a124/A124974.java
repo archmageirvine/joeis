@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.a033.A033981;
 
 /**
- * A124974 Integers n such that 2^n == 17 (mod n).
+ * A124974 Integers k such that 2^k == 17 (mod k).
  * @author Georg Fischer
  */
 public class A124974 extends A033981 {

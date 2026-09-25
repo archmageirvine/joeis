@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399621 allocated for Jeremy F. Alm.
+ * A399621 Triangle T(n,k), 1 &lt;= k &lt;= n, read by rows: minimum number of monochromatic axis-parallel rectangles in a 2-coloring of a k X n grid.
  * @author Sean A. Irvine
  */
 public class A399621 extends Sequence1 {

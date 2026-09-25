@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A399897 allocated for Bartlomiej Pawlik.
+ * A399897 First elements of the rows of the grasshopper infinite barrycade (recursively defined family of permutations of the positive integers having pairwise disjoint sets of partial sums).
  * @author Sean A. Irvine
  */
 public class A399897 extends Sequence1 {

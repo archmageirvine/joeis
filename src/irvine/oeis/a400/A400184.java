@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a397.A397831;
 
 /**
- * A002862.
+ * A400184 Odd numbers missing from A397831.
  * @author Sean A. Irvine
  */
 public class A400184 extends A397831 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066311 All distinct primes dividing n are consecutive.
+ * A066311 Numbers whose distinct prime factors are consecutive.
  * @author Sean A. Irvine
  */
 public class A066311 extends Sequence1 {

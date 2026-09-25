@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023574 Sum of exponents in prime-power factorization of p(n)-3.
+ * A023574 Sum of exponents in prime-power factorization of prime(n)-3; a(1) = a(2) = 0.
  * @author Sean A. Irvine
  */
 public class A023574 extends A000040 {

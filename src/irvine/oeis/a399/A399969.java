@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399969 allocated for Robert Israel.
+ * A399969 Numbers k such that the number of divisors of k divides k + 2.
  * @author Sean A. Irvine
  */
 public class A399969 extends FilterNumberSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399923 allocated for Jishnu Babu Ranitha.
+ * A399923 Square array A(n,k), n &gt;= 0, k &gt;= 1, read by antidiagonals: A(n,k) is the number of k-dimensional vector partitions of (n, n, ..., n) into parts with nonnegative components, excluding the k elementary basis vectors.
  * @author Sean A. Irvine
  */
 public class A399923 extends Sequence1 {

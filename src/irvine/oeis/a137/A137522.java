@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A137522 A triangular sequence from an expansion of coefficients of the function: p(x,t)=Exp(x*g*(t))*(1-f(t)^2);f(t)=1/Sqrt[1 - 14*t^4 + t^8];g(t)=t. (Based on the Weierstrass functions of Schwarz's minimal surface which is identified with a cube.).
+ * A137522 Triangle read by rows: T(n, k) = [t^n*x^k] n! * (1-1/(1-14*t^4+t^8)) * exp(t*x).
  * @author Sean A. Irvine
  */
 public class A137522 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397683 allocated for Donovan Sneider Gonz\u00e1lez May.
+ * A397683 a(n) = f(2*n-1) where f(1)=1 and otherwise f(m) is the number of x, 1 &lt;= x &lt; m, such that gcd(x,m) = gcd(x+1,m) = 1 and ord_m(x) = ord_m(x+1).
  * @author Sean A. Irvine
  */
 public class A397683 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A395433 allocated for Ya-Ping Lu.
+ * A395433 a(n) is the median of the odd primes less than 2n.
  * @author Sean A. Irvine
  */
 public class A395433 extends Sequence2 {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A066383 a(n) = Sum_{k=0..n} C(n*(n+1)/2,k).
+ * A066383 a(n) = Sum_{k=0..n} binomial(n*(n+1)/2,k).
  * a(n) = sum(k=0,n,binom(n*(n+1)/2,k))
  * @author Georg Fischer
  */

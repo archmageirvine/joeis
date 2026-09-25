@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398974 allocated for Michael B. Porter.
+ * A398974 Number of 0's in the binary expansion of n^3.
  * @author Sean A. Irvine
  */
 public class A398974 extends Sequence0 {

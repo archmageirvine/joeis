@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039773 phi(n) is equal to the sum of prime factors and exponents of n-1.
+ * A039773 Numbers k such that phi(k) is equal to the sum of prime factors and exponents of k-1.
  * @author Sean A. Irvine
  */
 public class A039773 extends Sequence1 {

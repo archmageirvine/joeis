@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399589 allocated for Marco Rip\u00e0.
+ * A399589 Product of the distinct entries in the central row and column of the (2*n + 1) X (2*n + 1) square array formed by the integers 1, 2, ..., (2*n + 1)^2 in order.
  * @author Sean A. Irvine
  */
 public class A399589 extends Sequence0 {

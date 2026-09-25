@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.Combiner;
 
 /**
- * A399785 allocated for Bernard Schott.
+ * A399785 Power chains: Number of essentially different permutations of the numbers 1 to n such that the sum of adjacent numbers is a perfect power, with each circular permutation counted only once.
  * @author Sean A. Irvine
  */
 public class A399785 extends Combiner {

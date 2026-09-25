@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399805 allocated for Paolo P. Lava.
+ * A399805 Starting with a(0)=0, the sequence continues with the smallest integer that cannot be formed by the sum of any tuple of consecutive digits taken from the terms already present.
  * @author Sean A. Irvine
  */
 public class A399805 extends Sequence0 {

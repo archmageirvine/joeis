@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A399028 allocated for Vincenzo Librandi.
+ * A399028 Primes p such that (p + reversal of p) - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A399028 extends FilterSequence {

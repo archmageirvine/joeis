@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A003094.
+ * A400247 Number of labeled connected bipartite planar graphs with n vertices.
  * @author Sean A. Irvine
  */
 public class A400247 extends ParallelGenerateGraphsSequence {

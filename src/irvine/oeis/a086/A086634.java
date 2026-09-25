@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A086634 Triangle of coefficients, read by rows, where T(n,k) is the coefficient of x^n*y^k in f(x,y) that satisfies f(x,y) = (1+x) - x^2*(1+x)^3 + xy*f(x,y)^3.
+ * A086634 Triangle of coefficients, read by rows, where T(n,k) is the coefficient of x^n*y^k in f(x,y) that satisfies f(x,y) = (1+x) - x^2*(1+x)^3 + x*y*f(x,y)^3.
  * @author Sean A. Irvine
  */
 public class A086634 extends Sequence0 {

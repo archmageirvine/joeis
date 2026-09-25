@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399749 allocated for Kelvin Voskuijl.
+ * A399749 Decimal expansion of Sum_{k&gt;=0} 3^k/(3*k)! (reciprocals of A210277).
  * Formula:
  * @author Georg Fischer
  */

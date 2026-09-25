@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002378;
 import irvine.oeis.a094.A094807;
 
 /**
- * A399265 allocated for Russ Curry.
+ * A399265 Numbers having two factor pairs whose absolute pairwise differences form the legs of a primitive Pythagorean triple.
  * @author Sean A. Irvine
  */
 public class A399265 extends TwoParameterFormSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.PolynomialFieldSequence;
 import irvine.oeis.a400.A400247;
 
 /**
- * A399784.
+ * A397517 Number of labeled bipartite planar graphs with n vertices.
  * @author Sean A. Irvine
  */
 public class A397517 extends PolynomialFieldSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399750 allocated for Kelvin Voskuijl.
+ * A399750 Decimal expansion of Sum_{k&gt;=0} 4^k/(4*k)! (reciprocals of A067630).
  * Formula:
  * @author Georg Fischer
  */

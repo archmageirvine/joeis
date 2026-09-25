@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033676;
 
 /**
- * A398333 allocated for Srikanth Cherukupally.
+ * A398333 Number of integers r, 1&lt;=r&lt;n, such that L(n*r) &lt; L(n*r+1) where L(x) is the largest divisor of x &lt;= the square root of x.
  * @author Sean A. Irvine
  */
 public class A398333 extends Sequence1 {

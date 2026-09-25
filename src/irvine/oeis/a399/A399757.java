@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A399757 allocated for Zhao Hui Du.
+ * A399757 Largest integer k such that {1, 2, ..., k} can be partitioned into two subsets, with no two distinct elements of the same subset summing to a perfect n-th power.
  * @author Sean A. Irvine
  */
 public class A399757 extends Sequence2 {

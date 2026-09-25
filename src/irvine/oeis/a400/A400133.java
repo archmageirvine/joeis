@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A400133 allocated for Jonas Karlsson.
+ * A400133 a(n) = (A400184(n)-1)/2.
  * @author Sean A. Irvine
  */
 public class A400133 extends SimpleTransformSequence {

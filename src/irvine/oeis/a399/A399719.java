@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A399719 allocated for Nicolas B\u011blohoubek.
+ * A399719 Decimal expansion of the largest root of x^5 + x^4 - 7*x^3 - 7*x^2 + 9*x + 8.
  * @author Sean A. Irvine
  */
 public class A399719 extends PolynomialRootExpansionSequence {

@@ -18,7 +18,7 @@ public class A086648 extends DecimalExpansionSequence {
         final Z one = CR.ONE.getApprox(precision);
         Z sum = Z.ZERO;
         long k = 0;
-        while (true){
+        while (true) {
           final Z t = one.divide(Z.valueOf(++k).pow(2 * k));
           if (t.isZero()) {
             return sum;

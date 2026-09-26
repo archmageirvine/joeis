@@ -1,13 +1,15 @@
 package irvine.oeis.a185;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.a006.A006953;
 
 /**
  * A185633 For odd n, a(n) = 2; for even n, a(n) = denominator of Bernoulli(n)/n; The number 2 alternating with the elements of A006953.
  * @author Georg Fischer
  */
-public class A185633 extends A006953 {
+public class A185633 extends A006953 implements DirectSequence {
 
   private int mN = 0;
 
@@ -16,4 +18,15 @@ public class A185633 extends A006953 {
     ++mN;
     return (mN & 1) == 1 ? Z.TWO : super.next();
   }
+
+  @Override
+  public Z a(final Z n) {
+    return n.testBit(0) ? Z.TWO : Functions.BERNOULLI.q(n).divide(n).den();
+  }
+
+  @Override
+  public Z a(final long n) {
+    return (n & 1) == 1 ? Z.TWO : Functions.BERNOULLI.q(n).divide(n).den();
+  }
+
 }

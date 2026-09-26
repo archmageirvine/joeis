@@ -41,6 +41,6 @@ public class A002487 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    return a(n.longValueExact());
   }
 }

@@ -1,8 +1,8 @@
 package irvine.oeis.a359;
 // manually 2024-06-20
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.DirectPredicate;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048103;
@@ -13,11 +13,12 @@ import irvine.oeis.a048.A048103;
  */
 public class A359550 extends Sequence0 implements DirectSequence {
 
-  private int mN = -1;
+  private final DirectPredicate mS = new A048103();
+  private long mN = -1;
 
   @Override
   public Z a(final Z n) {
-    return n.isZero() ? Z.ZERO : A048103.isOk(Jaguar.factor(n)) ? Z.ONE : Z.ZERO;
+    return n.isZero() ? Z.ZERO : mS.is(n) ? Z.ONE : Z.ZERO;
   }
 
   @Override

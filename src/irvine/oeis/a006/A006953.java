@@ -1,14 +1,16 @@
 package irvine.oeis.a006;
 
+import irvine.math.function.Functions;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A006953 a(n) = denominator of Bernoulli(2n)/(2n).
  * @author Sean A. Irvine
  */
-public class A006953 extends Sequence1 {
+public class A006953 extends Sequence1 implements DirectSequence {
 
   private long mN = 0;
   private final BernoulliSequence mB = new BernoulliSequence(1);
@@ -19,4 +21,16 @@ public class A006953 extends Sequence1 {
     mB.nextQ(); // skip odd
     return mB.nextQ().divide(mN).den();
   }
+
+  @Override
+  public Z a(final Z n) {
+    final Z n2 = n.multiply2();
+    return Functions.BERNOULLI.q(n2).divide(n2).den();
+  }
+
+  @Override
+  public Z a(final long n) {
+    return Functions.BERNOULLI.q(n * 2).divide(n * 2).den();
+  }
+
 }

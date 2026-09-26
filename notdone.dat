@@ -2778,3 +2778,4 @@ A086589 Number of fixed points in range [A014137(n-1)..A014138(n-1)] of permutat
 A086590 Maximum cycle size in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
 A086591 Least common multiple of cycle sizes in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
 A086643 Number of zeros in the character table of the group GL(2,Z_n).
+A086676 Number of n-dimensional 2 X 2 X ... X 2 grid graphs needed to cover an n-dimensional 3 X 3 X ... X 3 torus

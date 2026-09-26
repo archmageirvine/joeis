@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A176905 Primes p such that p^p contains the string &apos;p&apos; as a substring.
+ * A176905 Primes p such that p^p contains the string 'p' as a substring.
  * @author Georg Fischer
  */
 public class A176905 extends FilterSequence {

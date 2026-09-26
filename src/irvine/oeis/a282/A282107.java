@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A282107 Numbers n with k digits in base x (MSD(n)_x=d_k, LSD(n)_x=d_1) such that,
+ * A282107 Numbers n with k digits in base x (MSD(n)_x=d_k, LSD(n)_x=d_1) such that, chosen one of their digits in position d_k &lt; j &lt; d_1, is Sum_{i=j+1..k}{(i-j)*d_i} = Sum_{i=1..j-1}{(j-i)*d_i}. Case x = 2.
  * @author Georg Fischer
  */
 public class A282107 extends FilterNumberSequence {

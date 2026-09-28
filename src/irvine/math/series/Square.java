@@ -30,14 +30,18 @@ class Square<E> implements Series<E> {
     }
     final long lo = Math.max(0, n - mS.bound());
     final long hi = Math.min(n, mS.bound());
-    return mElementField.sum(lo, hi, k -> mElementField.multiply(mS.coeff(k), mS.coeff(n - k)));
-    // todo why does the following not work?
-//    E sum = mElementField.multiply(mElementField.sum(0, (n - 1) / 2, k -> mElementField.multiply(mS.coeff(k), mS.coeff(n - k))), mTwo);
-//    if ((n & 1) == 0) {
-//      final E c = mS.coeff(n / 2);
-//      sum = mElementField.add(sum, mElementField.multiply(c, c));
-//    }
-//    return sum;
+    // Sum_{k=0..n} ([x^k] S(x)) * ([x^[n-k] S(x)) = 2 * Sum_{k=0..n/2}  ([x^k] S(x)) * ([x^[n-k] S(x)) + [n even] * ([x^{n/2}] S(x))^2
+    // Some care needed to handle lo and hi efficiently
+    E sum = mElementField.zero();
+    for (long k = Math.max(lo, n - hi), j = n - lo; k < j; ++k, --j) {
+      sum = mElementField.add(sum, mElementField.multiply(mS.coeff(k), mS.coeff(j)));
+    }
+    sum = mElementField.multiply(sum, mTwo);
+    if ((n & 1) == 0) {
+      final E c = mS.coeff(n / 2);
+      sum = mElementField.add(sum, mElementField.multiply(c, c));
+    }
+    return sum;
   }
 
   @Override

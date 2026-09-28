@@ -71,6 +71,21 @@ public class Integers extends AbstractOrderedIntegralDomain<Z> implements Pow<Z>
     return null;
   }
 
+  /**
+   * The xor sum of a range.
+   * @param lo start index
+   * @param hi end index (inclusive)
+   * @param function function to apply
+   * @return xor of the values
+   */
+  public Z sumXor(final long lo, final long hi, final Function<Long, Z> function) {
+    Z sum = zero();
+    for (long k = lo; k <= hi; ++k) {
+      sum = sum.xor(function.apply(k));
+    }
+    return sum;
+  }
+
   @Override
   public boolean isCyclic() {
     return true;

@@ -7,13 +7,31 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A059912 Triangle T(n,k) of orders of n degree irreducible polynomials over GF(2) listed in ascending order, k=1..A059499(n).
  * @author Sean A. Irvine
  */
-public class A059912 extends Sequence1 {
+public class A059912 extends AbstractSequence {
+
+  private Z mField;
+
+  /** Construct the sequence. */
+  public A059912() {
+    this(1, 2);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param field
+   */
+  public A059912(final int offset, final long field) {
+    super(offset);
+    mN = offset - 1;
+    mField = Z.valueOf(field);
+  }
 
   // After Alois P. Heinz
 
@@ -21,7 +39,7 @@ public class A059912 extends Sequence1 {
     @Override
     protected TreeSet<Z> compute(final int n) {
       final TreeSet<Z> s = new TreeSet<>();
-      Collections.addAll(s, Jaguar.factor(Z.ONE.shiftLeft(n).subtract(1)).divisors());
+      Collections.addAll(s, Jaguar.factor(mField.pow(n).subtract(1)).divisors());
       if (n > 1) {
         s.removeAll(mU.get(n - 1));
       }
@@ -53,3 +71,4 @@ public class A059912 extends Sequence1 {
     return mA.pollFirst();
   }
 }
+

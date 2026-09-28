@@ -52,6 +52,8 @@ public class FilterSequence extends AbstractSequence {
 
   /** Divisible by index. */
   public static final BiPredicate<Integer, Z> DIVISIBLE_BY_INDEX = (k, v) -> v.mod(k) == 0;
+  /** Fixed point. */
+  public static final BiPredicate<Integer, Z> FIXED_POINT = (k, v) -> v.equals(Z.valueOf(k));
 
   protected final Sequence mSeq;
   protected final Predicate<Z> mPredicate;

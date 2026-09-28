@@ -139,6 +139,14 @@ public interface Series<E> {
   }
 
   /**
+   * Create a proxy where the series itself is set afterward.
+   * @return the proxy series
+   */
+  static ProxySeries<Q> createProxy() {
+    return new ProxySeries<>();
+  }
+
+  /**
    * Return a coefficient of the series.
    * @param n coefficient index
    * @return the coefficient

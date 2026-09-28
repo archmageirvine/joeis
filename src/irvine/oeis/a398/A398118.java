@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398118 allocated for Guido Avagliano.
+ * A398118 Numbers that are M\u00fcnchhausen numbers in at least one base b with 2 &lt;= b &lt;= n-2.
  * @author Sean A. Irvine
  */
 public class A398118 extends Sequence1 {

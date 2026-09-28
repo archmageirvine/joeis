@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A399908 allocated for Bartlomiej Pawlik.
+ * A399908 First elements of the rows of the greedy infinite quasi-barrycade (recursively defined family of quasi-permutations having pairwise disjoint sets of partial sums).
  * @author Sean A. Irvine
  */
 public class A399908 extends Sequence1 {

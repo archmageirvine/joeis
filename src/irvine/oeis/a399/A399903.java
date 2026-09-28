@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.math.z.Z;
 
 /**
- * A399903 allocated for Bartlomiej Pawlik.
+ * A399903 Partial sums missed by the greedy grasshopper infinite barrycade (recursively defined family of permutations of the positive integers having pairwise disjoint sets of partial sums).
  * @author Sean A. Irvine
  */
 public class A399903 extends A399902 {

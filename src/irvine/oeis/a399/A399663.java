@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000081;
 
 /**
- * A399663 allocated for Peter Luschny.
+ * A399663 Triangle read by rows: T(n, k) = Sum_{j=0..floor(n/k)} T(n-j*k, k-1) * T(j, 1), T(n, 1) = Sum_{j=1..n} T(n-j, 1) * A000081(j), T(n, k) = 1 if n = 0 and 0 if k = 0 and n &gt; 1.
  * @author Sean A. Irvine
  */
 public class A399663 extends Sequence0 {

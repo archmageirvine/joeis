@@ -7,7 +7,7 @@ import irvine.oeis.gf.GfSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A400337 allocated for Vaclav Kotesovec.
+ * A400337 G.f.: 1/G(-x), where G(x) is g.f. for A225543.
  * @author Sean A. Irvine
  */
 public class A400337 extends GfSequence {

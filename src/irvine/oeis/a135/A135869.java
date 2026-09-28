@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A135869 G.f. A(x) = 1 + x*A(3x)^2.
+ * A135869 G.f. A(x) satisfies A(x) = 1 + x*A(3*x)^2.
  * 1+x*A(3x)^2
  * @author Georg Fischer
  */

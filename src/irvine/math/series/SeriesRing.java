@@ -196,7 +196,8 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
    * @return squared series
    */
   public Series<E> square(final Series<E> s) {
-    return multiply(s, s);
+    //return multiply(s, s);
+    return cache(new Square<>(mElementField, s));
   }
 
   /**
@@ -419,7 +420,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       return pow(s, n.longValue());
     }
     final Series<E> u = pow(s, n.divide2());
-    final Series<E> t = multiply(u, u);
+    final Series<E> t = square(u);
     return n.isEven() ? t : multiply(t, s);
   }
 

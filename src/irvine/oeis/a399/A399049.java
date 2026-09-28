@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399049 allocated for Hoang Xuan Thanh.
+ * A399049 a(1) = 1; a(n+1) is the smallest integer greater than a(n) such that: a(k) + a(k+4) is not a term for any k.
  * @author Sean A. Irvine
  */
 public class A399049 extends Sequence1 {

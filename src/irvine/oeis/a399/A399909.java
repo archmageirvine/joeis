@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.math.z.Z;
 
 /**
- * A399909 allocated for Bartlomiej Pawlik.
+ * A399909 Word representation of the greedy infinite quasi-barrycade (recursively defined family of quasi-permutations having pairwise disjoint sets of partial sums).
  * @author Sean A. Irvine
  */
 public class A399909 extends A399908 {

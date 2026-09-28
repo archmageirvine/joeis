@@ -9,8 +9,8 @@ import irvine.oeis.a002.A002322;
  */
 public class A050990 extends A002322 {
 
-  protected int mKnoed;
-  protected Z mN = Z.ZERO;
+  private final int mKnoed;
+  private Z mN = Z.ZERO;
 
   /** Construct the sequence. */
   public A050990() {
@@ -19,12 +19,11 @@ public class A050990 extends A002322 {
 
   /**
    * Generic constructor with parameters
-   * @param knoed
+   * @param knoedel order of Knoedel numbers
    */
-  public A050990(int knoed) {
-    mKnoed = knoed;
-    mN = Z.ZERO;
-    while (--knoed >= 0) {
+  public A050990(final int knoedel) {
+    mKnoed = knoedel;
+    for (int k = 0; k < knoedel; ++k) {
       super.next();
     }
   }

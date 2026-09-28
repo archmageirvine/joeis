@@ -74,6 +74,6 @@ public class A399617 extends ParallelGenerateGraphsSequence {
   public Z next() {
     SUPPLIER.clear();
     super.next();
-    return SUPPLIER.total();
+    return SUPPLIER.total().subtract(mN == 1 ? 1 : 0);
   }
 }

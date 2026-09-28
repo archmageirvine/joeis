@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399944 allocated for S. I. Dimitrov.
+ * A399944 Numbers k such that sigma(k) = phi(k) + tau(k)^5.
  * @author Sean A. Irvine
  */
 public class A399944 extends Sequence1 {

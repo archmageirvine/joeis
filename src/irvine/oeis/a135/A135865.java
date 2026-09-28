@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A135865 G.f. A(x) satisfies: A(x) = 1 + x*A(4x)^(1/2).
+ * A135865 G.f. A(x) satisfies A(x) = 1 + x*A(4*x)^(1/2).
  * 1+x*A(4x)^(1/2)
  * @author Georg Fischer
  */

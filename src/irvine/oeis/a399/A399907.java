@@ -6,7 +6,7 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
- * A399907 allocated for Bartlomiej Pawlik.
+ * A399907 Smallest positive integers omitted from the rows of the greedy infinite quasi-barrycade (recursively defined family of quasi-permutations having pairwise disjoint sets of partial sums).
  * @author Sean A. Irvine
  */
 public class A399907 extends A399908 {

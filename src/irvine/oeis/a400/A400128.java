@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A400128 allocated for Byron Pickell.
+ * A400128 Number of recursively defined forms of weight n, where a form is either a unit, an ordered fusion of two forms, or a propagation of one form whose weight is tripled.
  * @author Sean A. Irvine
  */
 public class A400128 extends CachedSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A135866 G.f. A(x) satisfies: A(x) = 1 + x*A(9x)^(1/3).
+ * A135866 G.f. A(x) satisfies A(x) = 1 + x*A(9*x)^(1/3).
  * 1+x*A(9x)^(1/3)
  * @author Georg Fischer
  */

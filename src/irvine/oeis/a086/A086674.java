@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001318;
 
 /**
- * A086674 Sum of signed indices from Euler's Pentagonal Theorem (see A000041).
+ * A086674 Sum of signed indices from Euler's pentagonal theorem (see A000041).
  * @author Sean A. Irvine
  */
 public class A086674 extends Sequence1 {

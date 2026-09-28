@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012146 arcsin(tan(sin(x)))=x+2/3!*x^3+16/5!*x^5+440/7!*x^7+27904/9!*x^9...
+ * A012146 Expansion of e.g.f. arcsin(tan(sin(x))) (only odd powers).
  * @author Sean A. Irvine
  */
 public class A012146 extends Sequence0 {

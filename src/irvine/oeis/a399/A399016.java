@@ -11,11 +11,6 @@ public class A399016 extends TwoParameterFormSequence {
 
   /** Construct the sequence. */
   public A399016() {
-    super(1, 1, 1, (x, y) -> y > x ? null : x % y != 0 ? new Z(String.valueOf(x) + String.valueOf(y) + "0") : new Z(String.valueOf(x) + String.valueOf(y) + (x / y)));
-  }
-
-  @Override
-  protected boolean accept(final long x, final long y, final Z n, final Z prev) {
-    return super.accept(x, y, n, prev) && n.mod(10) != 0;
+    super(1, 1, 0, (x, y) -> new Z(String.valueOf(x) + String.valueOf(y) + Z.valueOf(x).pow(y)));
   }
 }

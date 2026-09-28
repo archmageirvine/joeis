@@ -420,4 +420,21 @@ public final class GraphFactory {
     return g;
   }
 
+  /**
+   * Construct a Klein bottle graph.
+   * Note does not construct multiple edges.
+   * @param n first parameter
+   * @param k second parameter
+   * @return Klein bottle graph.
+   */
+  public static Graph kleinBottle(final int n, final int k) {
+    final Graph g = grid(n, k);
+    for (int j = 0; j < k; ++j) {
+      g.addEdge(j, (n - 1) * k + j);
+    }
+    for (int j = 0; j < n; ++j) {
+      g.addEdge(j * k, n * k - j * k - 1);
+    }
+    return g;
+  }
 }

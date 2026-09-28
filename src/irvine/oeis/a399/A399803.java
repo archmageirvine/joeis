@@ -15,8 +15,17 @@ import irvine.oeis.a000.A000142;
  */
 public class A399803 extends Sequence1 {
 
-  private final DirectSequence mU = DirectSequence.create(0, new UnionSequence(new A000040(), new A000142()));
+  private final DirectSequence mU;
   private long mN = 0;
+
+  protected A399803(final DirectSequence seq) {
+    mU = seq;
+  }
+
+  /** Construct the sequence. */
+  public A399803() {
+    this(DirectSequence.create(0, new UnionSequence(new A000040(), new A000142())));
+  }
 
   private static final class State implements Comparable<State> {
     private final Z mKey;

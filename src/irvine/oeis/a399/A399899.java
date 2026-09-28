@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.math.z.Z;
 
 /**
- * A399899 allocated for Bartlomiej Pawlik.
+ * A399899 Word representation of the grasshopper infinite barrycade (recursively defined family of permutations of the positive integers having pairwise disjoint sets of partial sums).
  * @author Sean A. Irvine
  */
 public class A399899 extends A399897 {

@@ -21,8 +21,8 @@ public class A399863 extends Sequence1 {
     }
     return Binomial.binomial(mN + 1, 2)
       .subtract(Binomial.binomial(mN - mM + 1, 2))
-      .add(Binomial.binomial(mN + mM, 2))
+      .add(Binomial.binomial(mN - mM, 2))
       .subtract(mN - mM + 1 > mM ? Binomial.binomial(mN - 2 * mM + 1, 2) : Z.ZERO);
   }
 }
-// T(n,k) = binomial(n+1,2) - binomial(n-k+1,2) + binomial(n+k,2) - [n-k+1 > k]*binomial(n-2*k+1,2), k = 1..n
+

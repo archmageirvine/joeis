@@ -233,6 +233,16 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return ((UnaryCrFunction) new Acot()).execute(n);
   }
 
+  /**
+   * Two argument atan comparable to <code>Math.atan2</code>
+   * @param x x-coordinate
+   * @param y y-coordinate
+   * @return arctangent
+   */
+  public CR atan2(final CR y, final CR x) {
+    return atan(y.divide(x.square().add(y.square()).sqrt().add(x))).multiply(2);
+  }
+
   @Override
   public CR pow(final CR n, final CR e) {
     return e.multiply(n.log()).exp();

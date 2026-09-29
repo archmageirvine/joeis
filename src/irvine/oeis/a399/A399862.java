@@ -10,23 +10,19 @@ import irvine.oeis.Sequence1;
  */
 public class A399862 extends Sequence1 {
 
-  // todo definition is not correct?
-
-  private long mN = -1;
+  private long mN = 0;
   private long mM = 0;
 
   private Z t(final long n, final long m) {
-    return Functions.TRIANGULAR.z(n).subtract(n > m ? Functions.TRIANGULAR.z(n - m) : Z.ZERO);
+    return Functions.TRIANGULAR.z(n - m).subtract(n + 1 > 2 * m ? Functions.TRIANGULAR.z(n - 2 * m) : Z.ZERO);
   }
 
   @Override
   public Z next() {
-    if (++mM >= mN) {
+    if (++mM > mN) {
       ++mN;
-      mM = 0;
+      mM = 1;
     }
-    return t(mN - mM, mM + 1);
+    return t(mN, mM);
   }
 }
-// T(n,k) = binomial(n,2) - [n>k] * binomial(n-k,2), k=1..n, where brackets are Iverson.
-// nn = 12; f[i_, j_] := Binomial[i, 2] - If[i > j, Binomial[i - j, 2], 0]; Table[f[n - k + 1, k], {n, nn}, {k, n}] // Flatten

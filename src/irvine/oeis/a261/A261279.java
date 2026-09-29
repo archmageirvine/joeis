@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a065.A065649;
 
 /**
- * A261279 Fixed points of A065649, a permutation of nonnegative integers based on Champernowne&apos;s constant.
+ * A261279 Fixed points of A065649, a permutation of nonnegative integers based on Champernowne's constant.
  * @author Georg Fischer
  */
 public class A261279 extends FilterSequence {

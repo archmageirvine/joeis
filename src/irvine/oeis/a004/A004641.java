@@ -4,7 +4,6 @@ package irvine.oeis.a004;
 
 import irvine.oeis.base.MorphismFixedPointSequence;
 
-
 /**
  * A004641 Fixed under 0 -&gt; 10, 1 -&gt; 100.
  * @author Georg Fischer

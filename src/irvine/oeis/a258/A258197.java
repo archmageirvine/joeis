@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A258197 Arithmetic derivative of Pascal&apos;s triangle.
+ * A258197 Arithmetic derivative of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A258197 extends LambdaTriangle {

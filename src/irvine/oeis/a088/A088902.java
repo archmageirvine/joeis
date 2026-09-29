@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a122.A122111;
 
 /**
- * A088902 Numbers n such that n = product (p_k)^(c_k) and set of its (c_k k&apos;s)&apos;s is a self-conjugate partition, where p_k is k-th prime and c_k &gt; 0.
+ * A088902 Numbers n such that n = product (p_k)^(c_k) and set of its (c_k k's)'s is a self-conjugate partition, where p_k is k-th prime and c_k &gt; 0.
  * @author Georg Fischer
  */
 public class A088902 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A165194 Triangle of 2^(n-1) terms by rows, left half of (n+1)-th row = row n; right half = &quot;reverse and increment&quot; row n; using terms in A000110.
+ * A165194 Triangle of 2^(n-1) terms by rows, left half of (n+1)-th row = row n; right half = "reverse and increment" row n; using terms in A000110.
  * @author Georg Fischer
  */
 public class A165194 extends LambdaTable {

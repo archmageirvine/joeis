@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a151.A151949;
 
 /**
- * A099009 Fixed points of the Kaprekar mapping A151949(n) = n&apos; - n&apos;&apos;, where in n&apos; the digits of n are arranged in descending, in n&apos;&apos; in ascending order.
+ * A099009 Fixed points of the Kaprekar mapping A151949(n) = n' - n'', where in n' the digits of n are arranged in descending, in n'' in ascending order.
  * @author Georg Fischer
  */
 public class A099009 extends FilterSequence {

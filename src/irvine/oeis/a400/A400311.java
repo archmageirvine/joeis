@@ -20,22 +20,21 @@ public class A400311 extends CachedSequence {
 
   //  0 <= i < j < k <= n, |(j-i)*(a(k)-a(i)) - (k-i)*(a(j)-a(i))|
   private boolean isOk(final long k, final Z ak) {
+    final HashSet<Z> localSeen = new HashSet<>();
     for (long i = 0; i < k; ++i) {
       for (long j = i + 1; j < k; ++j) {
         final Z t = ak.subtract(a(i)).multiply(j - i).subtract(a(j).subtract(a(i)).multiply(k - i)).abs();
         if (mForbidden.contains(t)) {
+          // This area has already been seen.
+          return false;
+        }
+        if (!localSeen.add(t)) {
+          // This value would lead to multiple triangles with the same area when combined
+          // with the existing triangles.
           return false;
         }
       }
     }
-//    for (long i = 0; i < k; ++i) {
-//      for (long j = i + 1; j < k; ++j) {
-//        final Z t = a(j).subtract(ak).multiply(i).add(ak.subtract(a(i)).multiply(j)).add(a(i).subtract(a(j)).multiply(k));
-//        if (t.isZero()) {
-//          return false; // collinear
-//        }
-//      }
-//    }
     return true;
   }
 
@@ -55,7 +54,7 @@ public class A400311 extends CachedSequence {
       mForbidden.add(Z.ZERO);
       return Z.ZERO;
     }
-    Z a = a(n - 1);
+    Z a = Z.ZERO;
     while (true) {
       a = a.add(1);
       if (isOk(n, a)) {

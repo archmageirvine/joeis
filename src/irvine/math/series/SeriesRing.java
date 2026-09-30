@@ -190,17 +190,6 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Convenience method to square a series.
-   * Equivalent to <code>multiply(x, x)</code> or <code>pow(s, 2)</code>.
-   * @param s series
-   * @return squared series
-   */
-  public Series<E> square(final Series<E> s) {
-    //return multiply(s, s);
-    return cache(new Square<>(mElementField, s));
-  }
-
-  /**
    * Return the series multiplied by the specified value.
    * @param s series
    * @param n multiplicand
@@ -214,6 +203,16 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
       return zero();
     }
     return new ScalarMultiply<>(mElementField, s, n);
+  }
+
+  /**
+   * Convenience method to square a series.
+   * Equivalent to <code>multiply(x, x)</code> or <code>pow(s, 2)</code>.
+   * @param s series
+   * @return squared series
+   */
+  public Series<E> square(final Series<E> s) {
+    return cache(new Square<>(mElementField, s));
   }
 
   /**

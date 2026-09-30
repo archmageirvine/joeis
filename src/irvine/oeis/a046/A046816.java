@@ -17,10 +17,10 @@ public class A046816 extends MemoryFunctionInt3Sequence<Z> {
 
   @Override
   protected Z compute(final int i, final int j, final int k) {
-    if (/* k < 0 || */ i < 0 || j < 0 || i > k || j > i) {
+    if (/* k < 0 || i < 0 || */ j < 0 || i > k || j > i) {
       return Z.ZERO;
     }
-    if (i == 0 && j == 0 && k == 0) {
+    if (i == 0 && k == 0) {
       return Z.ONE;
     }
     return get(i, j, k - 1).add(get(i - 1, j, k - 1)).add(get(i - 1, j - 1, k - 1));

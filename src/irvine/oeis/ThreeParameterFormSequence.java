@@ -84,7 +84,7 @@ public class ThreeParameterFormSequence extends AbstractSequence {
    * @param rule rule to generate the value from <code>m</code>, <code>r</code> and <code>s</code>
    * (may return <code>null</code> if the combination of parameters is invalid)
    */
-  protected ThreeParameterFormSequence(final int offset, final long m, final long r, final long s, final TriFunction rule) {
+  public ThreeParameterFormSequence(final int offset, final long m, final long r, final long s, final TriFunction rule) {
     super(offset);
     mRule = rule;
     add(new State(m, r, s));

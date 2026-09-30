@@ -1,19 +1,16 @@
 package irvine.oeis.a387;
 
-import java.util.HashSet;
-
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A387687 a(n) is the smallest prime p greater than all previous terms such that the product of the previous terms plus p is prime.
  * @author Sean A. Irvine
  */
-public class A387687 extends Sequence0 {
+public class A387687 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private final HashSet<Long> mUsed = new HashSet<>();
   private Z mProd = Z.ONE;
   private long mP = 1;
 
@@ -21,9 +18,8 @@ public class A387687 extends Sequence0 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (!mUsed.contains(mP) && mProd.add(mP).isProbablePrime()) {
+      if (mProd.add(mP).isProbablePrime()) {
         mProd = mProd.multiply(mP);
-        mUsed.add(mP);
         return Z.valueOf(mP);
       }
     }

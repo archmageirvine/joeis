@@ -1,28 +1,28 @@
-package irvine.oeis.a398;
+package irvine.oeis.a399;
 
 import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398629 allocated for Eric Fox.
+ * A399299 allocated for Eric Fox.
  * @author Sean A. Irvine
  */
-public class A398629 extends FilterNumberSequence {
+public class A399299 extends FilterNumberSequence {
 
   private static final char[] SUFFIX = {'0', '1', '4', '5', '6', '7'};
 
   /** Construct the sequence. */
-  public A398629() {
-    super(1, 0, k -> {
+  public A399299() {
+    super(1, k -> {
       final String s = String.valueOf(k);
       for (char pre = '1'; pre <= '9'; ++pre) {
         for (final char suf : SUFFIX) {
           if (Predicates.SQUARE.is(Long.parseLong(pre + s + suf))) {
-            return true;
+            return false;
           }
         }
       }
-      return false;
+      return true;
     });
   }
 }

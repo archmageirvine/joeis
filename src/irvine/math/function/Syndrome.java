@@ -47,6 +47,6 @@ class Syndrome extends AbstractFunction2D {
 
   @Override
   public Z z(final long base, final Z n) {
-    return Z.valueOf(i(base, n.longValueExact()));
+    return Z.valueOf(i(base, n));
   }
 }

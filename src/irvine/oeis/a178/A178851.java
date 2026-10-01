@@ -3,14 +3,14 @@ package irvine.oeis.a178;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.ZUtils;
-import irvine.oeis.CountLess10nthSequence;
+import irvine.oeis.CountLessNthSequence;
 import irvine.oeis.a000.A000027;
 
 /**
  * A178851 The number of length n sequences on {0,1,2}(ternary sequences) that contain a prime number of 2's.
  * @author Georg Fischer
  */
-public class A178851 extends CountLess10nthSequence {
+public class A178851 extends CountLessNthSequence {
 
   /** Construct the sequence */
   public A178851() {

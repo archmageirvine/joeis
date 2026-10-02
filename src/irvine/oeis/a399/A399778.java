@@ -1,16 +1,16 @@
-package irvine.oeis.a395;
+package irvine.oeis.a399;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
- * A395722 allocated for Marco Rip\u00e0.
+ * A399778 allocated for Marco Rip\u00e0.
  * @author Sean A. Irvine
  */
-public class A395722 extends Sequence1 {
+public class A399778 extends Sequence2 {
 
-  private long mN = 0;
+  private long mN = 1;
 
   @Override
   public Z next() {
@@ -18,6 +18,7 @@ public class A395722 extends Sequence1 {
     final Z c2 = c.square();
     final Z t0 = Z.valueOf(mN).square().multiply(4);
     final Z t1 = Z.valueOf(mN + 1).square().multiply(4);
-    return Integers.SINGLETON.product(1, mN, k -> c2.subtract(t0.multiply(k * k)).multiply(c2.subtract(t1.multiply(k * k)))).multiply(c);
+    return Integers.SINGLETON.product(1, mN, k -> c2.subtract(t0.multiply(k * k)).multiply(c2.subtract(t1.multiply(k * k)))).divide(4 * mN + 1);
   }
 }
+

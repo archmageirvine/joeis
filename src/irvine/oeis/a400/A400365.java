@@ -1,20 +1,16 @@
-package irvine.oeis.a002;
+package irvine.oeis.a400;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 
 /**
- * A002144 Pythagorean primes: primes of the form 4*k + 1.
+ * A400365 allocated for Edward Schmidt.
  * @author Sean A. Irvine
  */
-public class A002144 extends AbstractSequence {
-
-  /** Construct the sequence. */
-  public A002144() {
-    super(1);
-  }
+public class A400365 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 3;
@@ -26,9 +22,9 @@ public class A002144 extends AbstractSequence {
       if ((mP & 3) == 1) {
         final long lim = mP / 2;
         for (long x = 1; x * x <= lim; ++x) {
-          final long d = mP - x * x;
-          if (Predicates.SQUARE.is(d)) {
-            return Z.valueOf(mP);
+          final long y2 = mP - x * x;
+          if (Predicates.SQUARE.is(y2)) {
+            return Z.valueOf(y2 - x * x).pow(4).add(Z.valueOf(x * Functions.SQRT.l(y2) * 2).pow(4)).multiply(mP);
           }
         }
       }

@@ -279,6 +279,8 @@ public final class Functions {
   public static final Function2 QUOTIENT_CEILING = new QuotientCeiling();
   /** Floor of a quotient. */
   public static final Function2 QUOTIENT_FLOOR = new QuotientFloor();
+  /** Floor of a quotient. */
+  public static final Function2 GCUD = new Gcud();
 
   // Aggregating functions
 

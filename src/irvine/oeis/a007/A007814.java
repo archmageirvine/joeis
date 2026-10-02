@@ -25,6 +25,6 @@ public class A007814 extends InterleaveSequence implements DirectSequence {
 
   @Override
   public Z a(final long n) {
-    return a(Z.valueOf(n));
+    return Functions.VALUATION.z(n, Z.TWO);
   }
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a002;
 
+import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 import irvine.oeis.transform.CycleTransformSequence;
 
@@ -11,7 +12,6 @@ public class A002861 extends CycleTransformSequence {
 
   /** Construct the sequence. */
   public A002861() {
-    super(new A000081(), 1);
-    super.next();
+    super(0, new A000081(), 1, Z.ZERO);
   }
 }

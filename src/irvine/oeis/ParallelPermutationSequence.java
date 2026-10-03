@@ -63,7 +63,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
    * Test if a partially constructed permutation is acceptable.
    * The elements in positions <code>0..(pos-1)</code> are set when this
    * function is called, remaining elements should be ignored.
-   * This method must be re-entrant.
+   * This method must be re-entrant and not modify the contents of <code>p</code>.
    * @param p the (partial) permutation
    * @param sum sum of elements in the (partial) permutation
    * @param pos exclusive upper bound on set values in p
@@ -78,7 +78,7 @@ public class ParallelPermutationSequence extends AbstractSequence implements Dir
    * contribution of the current permutation to the sequence being computed.
    * The default is simply to return 1, indicating the permutation should
    * be counted.
-   * This method must be re-entrant.
+   * This method must be re-entrant and not modify the contents of <code>p</code>.
    * @param p permutation
    * @return the count
    */

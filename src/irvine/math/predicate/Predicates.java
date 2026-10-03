@@ -131,4 +131,6 @@ public final class Predicates {
   public static final Predicate2 ECHO = new Echo(); // =A383927(2, =A383896(10
   /** Test if a number is a Harshad number in a base. */
   public static final Predicate2 HARSHAD = new Harshad(); // =A005349(10
+  /** Test if a number is an automorphic number in a base. */
+  public static final Predicate2 AUTOMORPHIC = new Automorphic(); // =A003226(10
 }

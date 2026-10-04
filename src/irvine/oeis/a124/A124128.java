@@ -5,7 +5,6 @@ package irvine.oeis.a124;
 import irvine.oeis.a001.A001372;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
-
 /**
  * A124128 Numbers k such that A001372(k) is prime.
  * @author Georg Fischer

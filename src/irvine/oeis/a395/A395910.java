@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a057.A057961;
+import irvine.oeis.a057.A057655;
 
 /**
  * A395910 allocated for Andrew J. Morris.
@@ -13,7 +13,7 @@ import irvine.oeis.a057.A057961;
  */
 public class A395910 extends Sequence1 {
 
-  private final DirectSequence mA = DirectSequence.create(1, new A057961());
+  private final DirectSequence mA = DirectSequence.create(new A057655());
   private long mN = 0;
 
   private Z n(final long n, final long z) {
@@ -28,6 +28,3 @@ public class A395910 extends Sequence1 {
     return mA.a(4 * ++mN * mN).add(Integers.SINGLETON.sum(1, mN, k -> n(mN, k)).multiply2());
   }
 }
-// a(n) = A057655(2*n) + 2 * Sum_{z=1..n} N(n, z), where N(n, z) = A057961(floor((n + sqrt(n^2 - z^2))^2)) - A057961(ceiling((n - sqrt(n^2 - z^2))^2) - 1).
-// s = sqrt(n^2 - z^2)
-// a(n) = A057655(2*n) + 2 * Sum_{z=1..n} N(n, z), where N(n, z) = A057961(floor((n + s)^2)) - A057961(ceiling((n - s)^2) - 1).

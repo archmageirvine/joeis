@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A062718 p and p^2 + 6 are both prime.
+ * A062718 Primes p such that p^2 + 6 is also prime.
  * @author Sean A. Irvine
  */
 public class A062718 extends A000040 {

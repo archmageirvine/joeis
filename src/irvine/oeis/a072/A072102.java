@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A072102 Decimal expansion of sum of reciprocal perfect powers (excluding 1).
+ * A072102 Decimal expansion of the sum of the reciprocal of the perfect powers (excluding 1).
  * @author Sean A. Irvine
  */
 public class A072102 extends DecimalExpansionSequence {

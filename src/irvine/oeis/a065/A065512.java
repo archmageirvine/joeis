@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065512 Numbers n such that sigma(n) + 1 is prime.
+ * A065512 Numbers k such that sigma(k) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A065512 extends Sequence1 {

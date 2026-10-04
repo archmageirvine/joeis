@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086707 Smallest mode of the sequences n/(n-k)*binomial(n,n-k) (see link).
+ * A086707 Smallest mode of the sequences (n/(n-k)) * binomial(n,n-k).
  * @author Sean A. Irvine
  */
 public class A086707 extends Sequence1 {

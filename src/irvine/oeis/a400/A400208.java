@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.ThreeParameterFormSequence;
 
 /**
- * A400208 allocated for Bernard Schott.
+ * A400208 Integers m such that m^2 = p! * q! * r! for some p &gt; q &gt; r &gt; 1.
  * @author Sean A. Irvine
  */
 public class A400208 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204263 Symmetric matrix: f(i,j)=(i+j mod 3), by antidiagonals.
+ * A204263 Symmetric matrix: T(i,j)=(i+j mod 3), by antidiagonals.
  *
  * @author Georg Fischer
  */

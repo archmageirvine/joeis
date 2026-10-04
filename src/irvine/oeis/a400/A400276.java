@@ -7,7 +7,7 @@ import irvine.oeis.a046.A046660;
 import irvine.oeis.a056.A056169;
 
 /**
- * A400276 allocated for Santi Garcia-Cremades.
+ * A400276 Numbers k such that A046660(k) &gt;= A056169(k).
  * @author Sean A. Irvine
  */
 public class A400276 extends Sequence1 {

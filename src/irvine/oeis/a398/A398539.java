@@ -9,7 +9,7 @@ import irvine.oeis.a002.A002997;
 import irvine.oeis.a050.A050990;
 
 /**
- * A398539 allocated for Jens Ahlstr\u00f6m.
+ * A398539 Square array T(n, m) read by antidiagonals downwards: T(n, m) is the m-th n-Kn\u00f6del number, for n &gt;= 1 and m &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A398539 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400347 allocated for Tesfamichael Bogale.
+ * A400347 a(1) = 2; a(n+1) is the least prime factor of 1 + Product_{k=1..n, a(k)&lt;=a(n)} a(k) which is not yet in the sequence.
  * @author Sean A. Irvine
  */
 public class A400347 extends Sequence1 {

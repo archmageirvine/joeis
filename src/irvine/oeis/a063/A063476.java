@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063476 Sum_{d |C(n)} d^2, where C(n) is the Cototient function n - phi(n) (A051953).
+ * A063476 a(n) = Sum_{d |C(n)} d^2, where C(n) is the Cototient function n - phi(n) (A051953).
  * @author Sean A. Irvine
  */
 public class A063476 extends Sequence1 {

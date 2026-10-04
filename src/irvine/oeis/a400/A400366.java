@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a080.A080075;
 
 /**
- * A400366 allocated for Chai Wah Wu.
+ * A400366 Number of Proth numbers &lt;= n.
  * @author Sean A. Irvine
  */
 public class A400366 extends Sequence0 {

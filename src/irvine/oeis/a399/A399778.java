@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A399778 allocated for Marco Rip\u00e0.
+ * A399778 Diagonal product divided by the central-cross sum in the (2*n + 1) X (2*n + 1) square array formed by the integers 1, 2, ..., (2*n + 1)^2 in order.
  * @author Sean A. Irvine
  */
 public class A399778 extends Sequence2 {

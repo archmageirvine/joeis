@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399692 allocated for Alexander Krivilev.
+ * A399692 Triangle T(n,k) read by rows of Knuth's deltas for comparison trees used in a uniform binary search.
  * @author Sean A. Irvine
  */
 public class A399692 extends Sequence1 {

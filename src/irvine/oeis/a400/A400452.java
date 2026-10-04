@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400452 allocated for Amiram Eldar.
+ * A400452 The number of divisors d of n such that gcd(d, n/d) is a prime power (A246655).
  * @author Sean A. Irvine
  */
 public class A400452 extends Sequence1 {

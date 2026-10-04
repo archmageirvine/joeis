@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A400127 allocated for David Rabahy.
+ * A400127 Least m such that every binary word of length n occurs as a contiguous subword of the binary representation of 3^k for some 0 &lt;= k &lt;= m.
  * @author Sean A. Irvine
  */
 public class A400127 extends Sequence1 {

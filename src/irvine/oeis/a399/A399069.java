@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399069 allocated for Felix Huber.
+ * A399069 a(n) is the least positive integer divisible by at least n distinct entries of a single row of Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A399069 extends Sequence0 {

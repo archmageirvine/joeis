@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A138024 A triangular sequence of coefficients of an expansion of a Mach wave as a traveling wave in a medium: (vt')^2 = vp*vg = c^2 - (gamma-1)/(gamma+1)*vt^2; Substituting: vt -&gt; exp(t*x); gamma-&gt;t; c-&gt;1; p(x,t) = 1 - exp(2*x*t)*(t - 1)/(1 + t).
+ * A138024 Triangle read by rows: T(n,k) = (n!/2) * [t^n*x^k] (1 - exp(2*x*t)*(t - 1)/(1 + t)), 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A138024 extends Sequence0 {

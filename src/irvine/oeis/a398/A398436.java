@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
- * A398436 allocated for Michal Paulovic.
+ * A398436 a(n) is the smallest composite number c greater than all previous terms such that the product of the previous terms plus c is prime.
  * @author Sean A. Irvine
  */
 public class A398436 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399742 allocated for Yoshio Okita.
+ * A399742 Table of B(n, m) read by antidiagonals: B(n, m) = Sum_{k=0..m-1} binomial(k+n, n) * 2^k and B(n, 0) = 0, for n &gt;= 0, m &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A399742 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400362 allocated for Dario T. de Castro.
+ * A400362 Smallest base in which the n-th Brazilian number (A125134) is a repdigit.
  * @author Sean A. Irvine
  */
 public class A400362 extends Sequence1 {

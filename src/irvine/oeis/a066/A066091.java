@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A066091 a(n+2) = a(n+1)*a(n)*(a(n+1)+a(n)).
+ * A066091 a(n+2) = a(n+1)*a(n)*(a(n+1)+a(n)), with a(0)=1 and a(1)=2.
  * <code>a(n+2) = a(n+1)*a(n)*(a(n+1)+a(n))</code>
  * @author Georg Fischer
  */

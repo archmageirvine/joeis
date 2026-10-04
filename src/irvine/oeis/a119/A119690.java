@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A119690 n! mod n*(n+1)/2.
+ * A119690 a(n) = n! mod n*(n+1)/2.
  * @author Georg Fischer
  */
 public class A119690 extends LambdaSequence {

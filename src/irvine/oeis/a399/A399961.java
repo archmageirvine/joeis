@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399961 allocated for Abhishek Kumar Jaiswal.
+ * A399961 Trajectory of 2 under the map x -&gt; x + (sum of decimal digits of x)*(product of nonzero decimal digits of x).
  * @author Sean A. Irvine
  */
 public class A399961 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a006.A006128;
 
 /**
- * A210970 Total area of the shadows of the three views of a three-dimensional version of the modular table of partitions with n shells.
+ * A210970 Total area of the shadows of the three views of a three-dimensional version of the modular table of partitions with n sections, where the area of the shadows are A006128(n), A006128(n) and A000217(n).
  * @author Georg Fischer
  */
 public class A210970 extends Sequence0 {

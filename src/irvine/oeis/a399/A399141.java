@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399141 allocated for Zhining Yang.
+ * A399141 Smallest prime factor of F(n) = 10^(10^n)+1.
  * @author Sean A. Irvine
  */
 public class A399141 extends Sequence0 {

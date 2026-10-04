@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A124103 C(2*n,n)*stirling2(2*n,n).
+ * A124103 a(n) = C(2*n,n) * Stirling2(2*n,n).
  * a(n)=binom(2*n,n)*stirl2(2*n,n)
  * @author Georg Fischer
  */

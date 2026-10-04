@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A395722 allocated for Marco Rip\u00e0.
+ * A395722 Product of the distinct entries on the two main diagonals of the (2*n + 1) X (2*n + 1) square array formed by the integers 1, 2, ..., (2*n + 1)^2 in order.
  * @author Sean A. Irvine
  */
 public class A395722 extends Sequence1 {

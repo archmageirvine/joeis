@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054861;
 
 /**
- * A090619 Highest power of 12 dividing n!.
+ * A090619 Exponent of highest power of 12 dividing n!.
  * @author Georg Fischer
  */
 public class A090619 extends A054861 {

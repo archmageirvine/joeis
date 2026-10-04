@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400364 allocated for Edward Schmidt.
+ * A400364 Sum of the fourth powers of the legs of the primitive Pythagorean triangle with prime hypotenuse A002144(n).
  * @author Sean A. Irvine
  */
 public class A400364 extends Sequence1 {

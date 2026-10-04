@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a057.A057961;
 
 /**
- * A397620 allocated for Peter Bala.
+ * A395910 allocated for Andrew J. Morris.
  * @author Sean A. Irvine
  */
 public class A395910 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A175567 (n!)^2 modulo n(n+1)/2.
+ * A175567 a(n) = (n!)^2 modulo n*(n+1)/2.
  * a(n) = (n!)^2 % (n*(n+1)/2);
  * @author Georg Fischer
  */

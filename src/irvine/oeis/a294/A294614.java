@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a017.A017653;
 
 /**
- * A294614 Sum of the divisors of 12*n - 1, divided by 12, minus n.
+ * A294614 Sum of the divisors of (12*n - 1), divided by 12, minus n.
  * @author Georg Fischer
  */
 public class A294614 extends AbstractSequence {

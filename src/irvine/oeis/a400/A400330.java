@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A400330 allocated for Giuseppe Ciacco.
+ * A400330 Minimum difference between positive integers x, y with x * y = n! and gcd(x, y) = 2.
  * @author Sean A. Irvine
  */
 public class A400330 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a007.A007504;
 
 /**
- * A400132 allocated for Om S. M. Yadav.
+ * A400132 Numbers k such that A007504(k) - 1 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A400132 extends FilterPositionSequence {

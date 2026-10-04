@@ -7,7 +7,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A053188.
+ * A397095 a(n) is the smallest prime dividing exactly n numbers of the form k! + 1 (k &gt; 0).
  * @author Sean A. Irvine
  */
 public class A397095 extends Sequence1 {

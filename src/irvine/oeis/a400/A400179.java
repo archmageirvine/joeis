@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053188 Distance from n to nearest square.
+ * A400179 a(n) = number of iterations of the map n -&gt; A053188(n) needed to reach 0, starting from n.
  * @author Sean A. Irvine
  */
 public class A400179 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399550 allocated for Eddie Lin Rui.
+ * A399550 Pascal's cube: entries in the 3-dimensional multivariate Pascal matrix, read by cubes, slices, and rows.
  * @author Sean A. Irvine
  */
 public class A399550 extends Sequence0 {

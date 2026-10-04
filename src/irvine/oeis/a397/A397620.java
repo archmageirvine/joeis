@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397620 allocated for Peter Bala.
+ * A397620 a(n) = Sum_{d | n^3} d^3 * lambda(d) / Sum_{d | n^3} d * lambda(d), where lambda(n) denotes Liouville's function A008836(n).
  * @author Sean A. Irvine
  */
 public class A397620 extends Sequence1 {

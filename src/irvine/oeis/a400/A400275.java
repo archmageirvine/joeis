@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400275 allocated for Leon Eickhoff.
+ * A400275 Number of strongly connected components of a directed graph Gamma_{2,n}(Z) related to wild frieze patterns.
  * @author Sean A. Irvine
  */
 public class A400275 extends Sequence0 {

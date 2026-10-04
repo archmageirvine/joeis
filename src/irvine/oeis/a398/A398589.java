@@ -8,7 +8,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A398589 allocated for Joshua B. Weinstein.
+ * A398589 Irregular triangle read by rows, where row n is the lexicographically earliest sequence starting with T(n,1) = n, allowed integers are &gt;= n, and each term T(n,k) is banned for the next T(n,k) terms in that row. If the sequence for row n is eventually periodic, the row terminates at the end of the first period; however, if it is not eventually periodic, the row is infinite.
  * @author Sean A. Irvine
  */
 public class A398589 extends Sequence0 {

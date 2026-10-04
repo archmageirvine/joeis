@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A137526 Triangle read by rows: T(n,k) = [t^n*x^k] n! * (1-t^2) * exp(t*x).
+ * A137526 Triangle read by rows: T(n,k) = n! * [t^n*x^k] (1-t^2) * exp(t*x).
  * @author Sean A. Irvine
  */
 public class A137526 extends Sequence0 {

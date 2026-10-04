@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054861;
 
 /**
- * A090618 Highest power of 9 dividing n!.
+ * A090618 Exponent of highest power of 9 dividing n!.
  * @author Georg Fischer
  */
 public class A090618 extends A054861 {

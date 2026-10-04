@@ -8,7 +8,7 @@ import irvine.oeis.a091.A091508;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A398786 allocated for Sam Chapman.
+ * A398786 a(n) is the number of times n appears in A091508.
  * @author Sean A. Irvine
  */
 public class A398786 extends Sequence1 {

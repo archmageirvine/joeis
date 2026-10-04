@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063480 C(n+3)=2*C(n), where C(n) is Cototient(n) := n - phi(n) (A051953).
+ * A063480 Numbers k such that cototient(k+3) = 2*cototient(k), where cototient(k) = k - phi(k) (A051953).
  * @author Sean A. Irvine
  */
 public class A063480 extends Sequence1 {

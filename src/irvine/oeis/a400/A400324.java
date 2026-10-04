@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400324 allocated for Dario T. de Castro.
+ * A400324 Irregular triangle read by rows, where row n gives the lengths of consecutive same species move blocks in the solution of the Frogs and Toads interchange puzzle with n frogs and n toads.
  * @author Sean A. Irvine
  */
 public class A400324 extends Sequence1 {

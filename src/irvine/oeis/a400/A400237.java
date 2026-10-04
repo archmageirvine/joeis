@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A400237 allocated for A. Lamek.
+ * A400237 Primes p such that 2^p-1 has a divisor d with 2*p+1 &lt; d &lt; 2^p-1 and d == 1+2*p (mod 2*p^2).
  * @author Sean A. Irvine
  */
 public class A400237 extends FilterSequence {

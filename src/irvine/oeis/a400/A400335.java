@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400335 allocated for Rasmus Joergensen.
+ * A400335 Number of partial matchings of n points on a circle up to rotation.
  * @author Sean A. Irvine
  */
 public class A400335 extends Sequence1 {

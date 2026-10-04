@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067712 Numbers n such that sum of exponents in prime factorization of n is &gt; log(n).
+ * A067712 Numbers k such that sum of exponents in prime factorization of k is &gt; log(k).
  * @author Sean A. Irvine
  */
 public class A067712 extends Sequence1 {

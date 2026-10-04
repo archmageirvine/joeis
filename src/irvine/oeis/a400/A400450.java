@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400450 allocated for Amiram Eldar.
+ * A400450 The number of divisors d of n such that gcd(d, n/d) is prime.
  * @author Sean A. Irvine
  */
 public class A400450 extends Sequence1 {

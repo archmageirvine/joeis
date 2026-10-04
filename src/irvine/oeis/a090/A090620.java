@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.a054.A054861;
 
 /**
- * A090620 Highest power of 13 dividing n!.
+ * A090620 Exponent of highest power of 13 dividing n!.
  * @author Georg Fischer
  */
 public class A090620 extends A054861 {

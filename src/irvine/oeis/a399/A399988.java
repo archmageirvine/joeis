@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399988 allocated for Gnouma Jerome Kadouno.
+ * A399988 Irregular triangle read by rows: Sum_{m&gt;=2} (-1)^m/A000217(m)^n = T(n,0) + T(n,1)*log(2) + Sum_{k=2..ceiling(n/2)} T(n,k)*zeta(2*k-1).
  * @author Sean A. Irvine
  */
 public class A399988 extends Sequence1 {

@@ -12,23 +12,27 @@ import irvine.oeis.Sequence1;
  */
 public class A384225 extends Sequence1 {
 
-  private final LinkedList<Integer> mA = new LinkedList<>();
+  protected final LinkedList<Integer> mA = new LinkedList<>();
   private long mN = 0;
+
+  protected void step() {
+    final Z[] d = Jaguar.factor(++mN).divisorsSorted();
+    int c = 1;
+    for (int k = 1; k < d.length; ++k) {
+      if (d[k].compareTo(d[k - 1].multiply2()) > 0) {
+        mA.add(c);
+        c = d[k].isOdd() ? 1 : 0;
+      } else if (d[k].isOdd()) {
+        ++c;
+      }
+    }
+    mA.add(c);
+  }
 
   @Override
   public Z next() {
     if (mA.isEmpty()) {
-      final Z[] d = Jaguar.factor(++mN).divisorsSorted();
-      int c = 1;
-      for (int k = 1; k < d.length; ++k) {
-        if (d[k].compareTo(d[k - 1].multiply2()) > 0) {
-          mA.add(c);
-          c = d[k].isOdd() ? 1 : 0;
-        } else if (d[k].isOdd()) {
-          ++c;
-        }
-      }
-      mA.add(c);
+      step();
     }
     return Z.valueOf(mA.pollFirst());
   }

@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A400114 allocated for Eric Fox.
+ * A400114 Numbers whose substrings are pairwise coprime.
  * @author Sean A. Irvine
  */
 public class A400114 extends FiniteSequence {

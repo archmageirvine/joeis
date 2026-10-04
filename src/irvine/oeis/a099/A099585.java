@@ -7,7 +7,7 @@ import irvine.oeis.a038.A038502;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A099585 Remove all 3s from prime(n) - 1.
+ * A099585 Remove all factors of 3 from prime(n) - 1.
  * @author Georg Fischer
  */
 public class A099585 extends SingleTransformSequence {

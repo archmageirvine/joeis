@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400348 allocated for Stefano Spezia.
+ * A400348 Array read by ascending antidiagonals: A(n,k) = [x^n] 1/(1 - k^2*x/(1 - x))^(n/k), with k &gt; 0.
  * @author Sean A. Irvine
  */
 public class A400348 extends Sequence0 {
@@ -15,10 +15,6 @@ public class A400348 extends Sequence0 {
 
   private Z t(final long n, final long m) {
     return SeriesParser.parse("1/(1 - " + (m * m) + "*x/(1 - x))^(" + n + "/" + m + ")").coeff(n).toZ();
-//    if (n == 0) {
-//      return Z.ONE;
-//    }
-//    return Rationals.SINGLETON.sum(1, n, j -> Binomial.binomial(Q.valueOf(n / m).add(j - 1), j).multiply(Binomial.binomial(n - 1, j - 1)).multiply(Z.valueOf(m).pow(2 * j))).toZ();
   }
 
   @Override

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400203 allocated for Jamie Morken.
+ * A400203 Triangle read by rows: T(n,d) = Sum_{x=1..floor(n/d), gcd(x,d)=1} mu(x) where mu(x) is the M\u00f6bius function.
  * @author Sean A. Irvine
  */
 public class A400203 extends Sequence1 {

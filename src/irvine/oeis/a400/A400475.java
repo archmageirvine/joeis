@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053188.
+ * A400475 The number of integers k such that 2^n+2^k-1 is a prime, for 0 &lt; k &lt; n.
  * @author Sean A. Irvine
  */
 public class A400475 extends Sequence1 {

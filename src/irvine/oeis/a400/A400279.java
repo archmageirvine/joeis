@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400279 allocated for Csaba M\u00e1rkus.
+ * A400279 The number of skipped edges in the regular (n+1)-gon when the regular (n+2)-gon is drawn in a particular polygon spiral (see comments).
  * @author Sean A. Irvine
  */
 public class A400279 extends Sequence0 {

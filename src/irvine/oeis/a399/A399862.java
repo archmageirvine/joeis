@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399862 allocated for Michael De Vlieger.
+ * A399862 Triangle read by rows: T(n,k) = binomial(n-k+1, 2) - [n-k+1 &gt; k] * binomial(n-2*k+1, 2), k = 1..n, where brackets are Iverson.
  * @author Sean A. Irvine
  */
 public class A399862 extends Sequence1 {

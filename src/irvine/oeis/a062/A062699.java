@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062699 Numbers n such that sigma(n) = 2*phi(n).
+ * A062699 Numbers k such that sigma(k) = 2*phi(k).
  * @author Sean A. Irvine
  */
 public class A062699 extends Sequence1 {

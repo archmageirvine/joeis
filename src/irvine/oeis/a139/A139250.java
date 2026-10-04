@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A139250 Toothpick sequence (see Comments lines for definition).
+ * A139250 The toothpick sequence (see Comments lines for definition).
  * @author Sean A. Irvine
  */
 public class A139250 extends CachedSequence {

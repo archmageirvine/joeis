@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400219 allocated for Ilya Gutkovskiy.
+ * A400219 Number of subsets of the first n nonzero fourth powers whose sum is a nonzero fourth power.
  * @author Sean A. Irvine
  */
 public class A400219 extends Sequence1 {

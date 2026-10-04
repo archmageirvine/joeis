@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A400453 allocated for Amiram Eldar.
+ * A400453 The sum of divisors d of n such that gcd(d, n/d) is a powerful number (A001694).
  * Multiplicative with: a(p) = p + 1, a(p^2) = p^2 + 1, and a(p^e) = (p^2-p+1)*(p^(e-1)-1)/(p-1) for e >= 3.
  * @author Georg Fischer
  */

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398441 allocated for V. Barbera.
+ * A398441 Irregular triangle in which the n-th row contains distinct values of A399722 that have the same periodicity 2^(A020914(n)-1).
  * @author Sean A. Irvine
  */
 public class A398441 extends Sequence1 {

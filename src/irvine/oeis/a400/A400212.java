@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400212 allocated for Om S. M. Yadav.
+ * A400212 Numbers k &gt; R(k) such that k - R(k) = floor(k/10) where R(k) is the digit reversal of k.
  * @author Sean A. Irvine
  */
 public class A400212 extends FilterNumberSequence {

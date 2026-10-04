@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399406 allocated for Clark Kimberling.
+ * A399406 Order array of the array W given by w(n, k) = k*(n + e), for n &gt;= 1, k &gt;= 1, a rectangular array, read by descending antidiagonals; see Comments.
  * @author Sean A. Irvine
  */
 public class A399406 extends Sequence1 {

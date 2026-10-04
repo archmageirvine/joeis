@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a054.A054861;
 /**
- * A089792 a(n) = n-(exponent of highest power of 3 dividing n!).
+ * A089792 a(n) = n - (exponent of highest power of 3 dividing n!).
  * @author Georg Fischer
  */
 public class A089792 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a134.A134808;
 
 /**
- * A398378 allocated for Ronie P. Dario.
+ * A398378 Cyclops Smith numbers.
  * @author Sean A. Irvine
  */
 public class A398378 extends FilterSequence {

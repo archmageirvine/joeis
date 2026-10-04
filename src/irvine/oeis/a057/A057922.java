@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A057922 d(n) divides d(n+1), where d(n) is number of positive divisors of n.
+ * A057922 Numbers k such that d(k) divides d(k+1), where d(k) is number of positive divisors of k.
  * @author Sean A. Irvine
  */
 public class A057922 extends Sequence0 {

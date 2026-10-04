@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A336282.
+ * A399946 Maximum terminal value in the Gilbreath reduction of graceful paths of order n.
  * @author Sean A. Irvine
  */
 public class A399946 extends ParallelPermutationSequence {

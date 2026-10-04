@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063743 Numbers n such that n and Omega(n) are relatively prime, where Omega(n) is the number of prime divisors of n (with repetition).
+ * A063743 Numbers k such that k and Omega(k) are relatively prime, where Omega(k) is the number of prime divisors of k (with repetition).
  * @author Sean A. Irvine
  */
 public class A063743 extends Sequence1 {

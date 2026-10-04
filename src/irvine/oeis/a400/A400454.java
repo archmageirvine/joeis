@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400454 allocated for Gary Wright.
+ * A400454 Numbers k such that (2^k-1)*2^(k+3)+1 is a prime.
  * @author Georg Fischer
  */
 public class A400454 extends FilterNumberSequence {

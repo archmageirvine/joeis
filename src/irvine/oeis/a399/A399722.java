@@ -7,7 +7,7 @@ import irvine.oeis.a122.A122458;
 import irvine.oeis.a260.A260590;
 
 /**
- * A399722 allocated for V. Barbera.
+ * A399722 a(n) = 3^(m-1) + Sum_{i=2..m} 3^(m-i)*2^(d(1)+...d(i-1)) where m=A122458(n) and d(i)=A351122(n,i-1) for 1&lt;=i&lt;m.
  * @author Sean A. Irvine
  */
 public class A399722 extends A060565 {

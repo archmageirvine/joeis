@@ -6,7 +6,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400372 allocated for Ilya Gutkovskiy.
+ * A400372 Expansion of Product_{k&gt;=0} (1 + Sum_{j&gt;=0} x^(3^(k+j))).
  * @author Sean A. Irvine
  */
 public class A400372 extends GfSequence {

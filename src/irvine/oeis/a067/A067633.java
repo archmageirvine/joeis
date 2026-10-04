@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633 a(1) = 1; sequence of digits of a(n)^2 is a subsequence of the sequence of digits of a(n+1)^2.
+ * A067633 a(1) = 1; for n &gt; 1, a(n) is the least integer &gt; a(n-1) such that the sequence of digits of a(n-1)^2 is a subsequence of the sequence of digits of a(n)^2.
  * @author Sean A. Irvine
  */
 public class A067633 extends Sequence1 {

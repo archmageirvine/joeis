@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398629 allocated for Eric Fox.
+ * A398629 Numbers that can be obtained by removing the first and last digits of a square.
  * @author Sean A. Irvine
  */
 public class A398629 extends FilterNumberSequence {

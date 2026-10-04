@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A124138 a(n)= A000265(3*(a(n-1)+a(n-2))/2 +1) starting at a(1)=1, a(2)=3.
+ * A124138 a(n) = A000265(3*(a(n-1)+a(n-2))/2 +1) starting at a(1)=1, a(2)=3.
  * @author Georg Fischer
  */
 public class A124138 extends TupleTransformSequence {

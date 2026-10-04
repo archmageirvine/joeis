@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400391 allocated for Amiram Eldar.
+ * A400391 Irregular table read by rows: T(n, k) = gcud(d(n, k), n/d(n, k)), where d(n, k) = A027750(n, k) is the k-th divisor of n, and gcud is the greatest common unitary divisor.
  * @author Sean A. Irvine
  */
 public class A400391 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A400311 allocated for Eric Fox.
+ * A400311 Lexicographically earliest sequence of nonnegative integers such that all triangles determined by the points (n, a(n)) have distinct positive areas.
  * @author Sean A. Irvine
  */
 public class A400311 extends CachedSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 
 /**
- * A400418 allocated for Ctibor O. Zizka.
+ * A400418 a(n) = Sum_{k=1..n} A007947(floor(n/k)).
  * @author Sean A. Irvine
  */
 public class A400418 extends Sequence1 {

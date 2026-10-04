@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400233 allocated for Henrik Arhold.
+ * A400233 a(n) is the number of boundary lattice points minus the number of interior lattice points of the 4-dimensional cube [0,n]^4.
  * @author Sean A. Irvine
  */
 public class A400233 extends Sequence1 {

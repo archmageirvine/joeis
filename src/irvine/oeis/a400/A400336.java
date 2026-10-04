@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A400336 allocated for Rasmus Joergensen.
+ * A400336 Number of partial matchings of n points on a circle up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A400336 extends A400335 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A400351 allocated for Ilya Gutkovskiy.
+ * A400351 a(0) = 1; a(2*n) = Sum_{j=0..n} a(j) * a(n-j), a(2*n+1) = a(n).
  * @author Sean A. Irvine
  */
 public class A400351 extends CachedSequence {

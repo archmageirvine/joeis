@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398424 allocated for Paolo P. Lava.
+ * A398424 Start with a(0) = 0. Thereafter, a(n) is the smallest integer that cannot be formed by concatenation (read from left to right or right to left) or by the sum of any tuple of consecutive digits taken from the terms already present.
  * @author Sean A. Irvine
  */
 public class A398424 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400497.
+ * A400497 G.f. A(x) satisfies A(x) = 1/(1 - x * A(x^4))^2.
  * @author Sean A. Irvine
  */
 public class A400497 extends GfSequence {

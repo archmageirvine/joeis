@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399985 allocated for John Tyler Rascoe.
+ * A399985 Number of trees with total node weight n where nodes have positive integer weights and no adjacent nodes have the same weight.
  * @author Sean A. Irvine
  */
 public class A399985 extends Sequence0 {

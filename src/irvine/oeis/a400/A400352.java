@@ -11,7 +11,7 @@ import irvine.oeis.Sequence3;
 import irvine.oeis.a000.A000058;
 
 /**
- * A400352 allocated for Jude Wallis.
+ * A400352 Least integer m &gt; 1 that does not occur as a denominator in any representation of 1 as a sum of n distinct unit fractions.
  * @author Sean A. Irvine
  */
 public class A400352 extends Sequence3 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400446 Number of captured 0-cells in the binary grid construction.
+ * A400446 Number of 0-cells captured, Othello-style in all 8 directions, when the binary expansion of n is written in row n, right-justified beneath rows 1..n-1.
  * @author Sean A. Irvine
  */
 public class A400446 extends Sequence1 {

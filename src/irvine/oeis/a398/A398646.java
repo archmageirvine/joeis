@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398646 allocated for V. Barbera.
+ * A398646 Irregular triangle in which the n-th row contains the distinct possible parity vectors of length A020914(n) under the Collatz map A014682.
  * @author Sean A. Irvine
  */
 public class A398646 extends Sequence0 {

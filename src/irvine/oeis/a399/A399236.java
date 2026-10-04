@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399236 allocated for Benjamin Simon Strang.
+ * A399236 Squares visited by knight moves on a diagonally numbered Q1 board and always taking the available unvisited square with the shortest distance to the origin, while in the case of a tie the square with smaller row index is preferred. Starting square is labeled 1.
  * @author Sean A. Irvine
  */
 public class A399236 extends Sequence1 {

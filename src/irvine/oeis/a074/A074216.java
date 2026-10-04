@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A074216 Squares satisfying sigma(n)==0 (mod 3).
+ * A074216 Squares m satisfying sigma(m) == 0 (mod 3).
  * @author Georg Fischer
  */
 public class A074216 extends FilterSequence {

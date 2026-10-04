@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002033;
 
 /**
- * A398628 allocated for Jishnu Babu Ranitha.
+ * A398628 Square array T(n,k), n &gt;= 0, k &gt;= 1, read by antidiagonals: T(n,k) is the number of multiplicative perfect partitions of (p_1 * p_2 * ... * p_k)^n into parts &gt; 1, for k distinct primes.
  * @author Sean A. Irvine
  */
 public class A398628 extends Sequence0 {

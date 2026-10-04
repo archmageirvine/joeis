@@ -6,7 +6,7 @@ import irvine.oeis.a225.A225543;
 import irvine.oeis.a400.A400338;
 
 /**
- * A399317 allocated for Vaclav Kotesovec.
+ * A399317 Convolution of |A225543| and A400338.
  * @author Sean A. Irvine
  */
 public class A399317 extends ConvolutionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a396.A396966;
 
 /**
- * A397780 allocated for Jakob Stemberger.
+ * A397780 allocated for Dmytro Voievoda.
  * @author Sean A. Irvine
  */
 public class A397780 extends A396966 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400211 allocated for Eddie Lin Rui.
+ * A400211 a(n) = x^3 - m*(m+1)*x, where m = floor(sqrt(n)) and x = n - m*(m+1).
  * @author Sean A. Irvine
  */
 public class A400211 extends Sequence0 {

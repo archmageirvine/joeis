@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A399745 allocated for Felix Huber.
+ * A399745 Numbers k such that the k-th Lucas number cannot be represented as a signed sum of entries from row k of Pascal's triangle, with each position used at most once.
  * @author Sean A. Irvine
  */
 public class A399745 extends FilterPositionSequence {

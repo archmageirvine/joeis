@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a023.A023896;
 
 /**
- * A280246 a(n) = Product_{d|n} psi(d), where psi(m) is the sum of totatives of m (A023896).
+ * A280246 a(n) = Product_{d|n} A023896(d), where A023896(m) is the sum of totatives of m.
  * @author Georg Fischer
  */
 public class A280246 extends LambdaSequence {

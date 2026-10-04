@@ -5,7 +5,7 @@ import irvine.oeis.TwoParameterFormSequence;
 import irvine.oeis.a002.A002275;
 
 /**
- * A400298 allocated for Vicenzo P DeMaar.
+ * A400298 Numbers that are products of exactly two positive decimal repunits, allowing equal factors and the factor 1.
  * @author Sean A. Irvine
  */
 public class A400298 extends TwoParameterFormSequence {

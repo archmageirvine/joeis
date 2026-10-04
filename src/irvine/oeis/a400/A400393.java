@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A400393 allocated for Amiram Eldar.
+ * A400393 a(n) = Sum_{d|n} gcid(d, n/d), where gcid is the greatest common infinitary divisor.
  * @author Sean A. Irvine
  */
 public class A400393 extends MultiplicativeSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400363 allocated for Edward Schmidt.
+ * A400363 Pythagorean primes p such that the sum of the fourth powers of the legs of the primitive Pythagorean triangle with hypotenuse p is prime.
  * @author Sean A. Irvine
  */
 public class A400363 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399060.
+ * A399196 allocated for Jakub Buczak.
  * @author Sean
  */
 public class A399196 extends Sequence1 {

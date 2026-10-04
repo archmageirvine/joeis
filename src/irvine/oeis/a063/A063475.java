@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A063475 Sum_{d | H(n)} d^2, where H(n) is the Half-Totient function (A023022).
+ * A063475 a(n) = Sum_{d | H(n)} d^2, where H(n) is the half-totient function (A023022).
  * @author Sean A. Irvine
  */
 public class A063475 extends Sequence3 {

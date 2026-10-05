@@ -17,7 +17,7 @@ public class A126285 extends EulerTransform {
 
   private static final class MySequence extends Sequence0 {
     private final Sequence mA000081 = new A000081();
-    private final Sequence mA002861 = new A002861();
+    private final Sequence mA002861 = new A002861().skip();
 
     private MySequence() {
       mA000081.next();

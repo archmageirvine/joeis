@@ -1,6 +1,5 @@
 A000019 Primitive permutation groups
 A000236 Maximum m such that there are no two adjacent elements belonging to the same n-th power residue class modulo some prime p in the sequence 1,2,...,m (equivalently, there is no n-th power residue modulo p in the sequence 1/2,2/3,...,(m-1)/m)
-A000241 Crossing number of complete graph, hard
 A000403 Number of simple equifacetted 3-manifolds with n faces, hard, have paper
 A000438 Number of 1-factorizations of complete graph K_{2n}, hard, have papers
 A000445 related A236
@@ -8,7 +7,6 @@ A000474 Number of nonisomorphic 1-factorizations of complete graph K_{2n}, hard,
 A000509 Complete arcs in PG(2,q) [have a paper, not easy]
 A000510 related A000509
 A000528 1-factorizations of K_n,n (hard)
-A000591 Automata counting, hard group theory cycle index, have paper
 A000609 Boolean functions, threshold, hard
 A000611 Latin squares
 A000615 Threshold functions, related A000609?
@@ -18,7 +16,6 @@ A000637 Simple dependency on A000638
 A000638 Number of permutation groups of degree n
 A000679 Subset of A000001, hard
 A000769 No 3 in a line problem, hard
-A000785 Depends on A048142
 A000786 Depends on A000784, A000785
 A000789 Ramsey numbers
 A000791 Ramsey numbers
@@ -29,11 +26,9 @@ A000876 Need more detail [had 1 email from author], cf. A000361
 A000937 Length of longest simple cycle without chords in the n-dimensional hypercube graph, have paper
 A000952 Numbers k == 2 (mod 4) that are the orders of conference matrices
 A000983 Size of minimal binary covering code of length n and covering radius 1
-A000997 Have paper, can't find exact sequence in paper, pos. like A000998
 A001032 Not obvious how to exclude 842 for example
 A001033 Related A001032
 A001034 Group order
-A001035 Posets [current impl. is a cheat]
 A001066 Dimensions Lie algebra (depends A003038)
 A001070 Latin squares
 A001086 Elliptic curve continued fraction, have paper
@@ -57,9 +52,7 @@ A001211 Stamp counting, cf. A001208
 A001230 Closed knights tour, hard
 A001231 Number of nonisomorphic projective planes of order n, hard
 A001289 Boolean functions, perhaps similar to existing
-A001290 Restricted Affine group, possibly Boolean functions, xref links not right?
 A001291 Restricted Affine group, possibly Boolean functions
-A001360 Tesselation there is a conjectural formula, insufficient detail
 A001393 Ising model, looks hard
 A001403 Combinatorial configurations, hard?
 A001406 Partition function for b.c.c. lattice
@@ -122,11 +115,8 @@ A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
 A002268 Dimensions of integral lattices that are irreducible modulo every prime (there may be missing terms!)
 A002273 Theta series, paper available, but insufficient detail?
-A002304 Numerators of coefficients in asymptotic expansion of (2/Pi)*Integral_{0..inf} (sin x / x)^n dx
-A002305 Simple dependency on A002304
 A002319 Finite groups, conjugacy classes
 A002336 Maximal kissing number of n-dimensional laminated lattice
-A002369 Stamp-folding, have doc, very hard to read, pos. error form of A056780
 A002395 Crystal forms, insufficient detail
 A002497 Composite sequence, not obvious criteria, have dependencies
 A002498 Depends A002497
@@ -158,7 +148,6 @@ A002892 Partition f.c.c lattice, Domb paper
 A002906 Ising, possibly described in Mathematical Constants, have paper
 A002907 Ising susceptibility, have paper
 A002910 Ising susceptibility
-A002911 Ising susceptibility
 A002912 Ising susceptibility
 A002913 Ising susceptibility, one paper available, but looks hard
 A002914 Ising susceptibility, one paper available, but looks hard
@@ -177,14 +166,12 @@ A002926 Magnetic susceptibility, see Finch
 A002927 Magnetic susceptibility, see Finch
 A002929 Magnetization cubic lattice
 A002930 Magnetization diamond
-A002936 Solid partition, distinct rows, might be doable, not much detail available [partial impl]
 A002962 Counting squares in rectangle, possible? but hard
 A002967 Egyptian fractions, hard to do efficient (sim A002966)
 A002976 Paths in square lattice, have paper, might be possible, but has lots of conditions
 A002978 Susceptibility series for honeycomb
 A002979 Susceptibility series for square lattice
 A003006 Ladder, have paper, pos. same as A052321
-A003007 Ladder, have paper
 A003008 Ladder, have paper
 A003012 Packing cubes in torus, have paper, backtrack search is too slow
 A003018 3^3^... distinct values with different parentheses (likely to overflow quickly)
@@ -203,7 +190,6 @@ A003155 Halving chess board - probably possible but lot of effort for small numb
 A003171 Class groups [pari code exists]
 A003178 Number of indecomposable self-dual binary codes of length 2n
 A003179 Number of self-dual binary codes of length 2n
-A003181 Nondegenerate Boolean functions of n variables
 A003182 Inequivalent monotone Boolean functions of n or fewer variables, or antichains of subsets of an n-set
 A003183 Number of NPN-equivalence classes of unate Boolean functions of n or fewer variables
 A003184 Simple dependency A001532
@@ -237,7 +223,6 @@ A003419 Extreme values of Dirichlet series, insufficient detail
 A003420 Extreme values of Dirichlet series, insufficient detail
 A003421 Extreme values of Dirichlet series, insufficient detail
 A003427 Number of trees by stability index. have paper
-A003428 Number of trees by stability index, emailed Derek Holton and Kevin McAvaney
 A003429 Number of trees by stability index
 A003431 Number of connected irreducible posets with n labeled points, pos. depends A000112, paper available
 A003432 Hadamard maximal determinant problem, doable but hard in general
@@ -256,7 +241,6 @@ A003498 Internal energy series for f.c.c. lattice
 A003505 Number of simple tournaments with n nodes, existing paper does not have method
 A003507 Number of rigid tournaments with n nodes, existing paper does not have method
 A003521 Extreme values of Dirichlet series
-A003614 Number of symmetries in unrooted (1,4) trees on 3n-1 vertices, could not get exact paper
 A003616 Symmetries in unrooted 4-trees on n+1 vertices, could not get exact paper
 A003646 Class number of binary quadratic forms with fundamental discriminant A003658(n),n>=2, cf. also A003636
 A003647 Class number of real quadratic forms with discriminant 4n+1
@@ -272,7 +256,6 @@ A004026 Number of perfect quadratic forms or lattices in dimension n
 A004027 Arithmetic n-dimensional crystal classes
 A004028 Geometric n-dimensional crystal classes
 A004029 Number of n-dimensional space groups
-A004030 Number of n-dimensional Bravais lattices (version 1)
 A004031 Number of n-dimensional crystal systems
 A004032 Number of n-dimensional crystal families
 A004034 Theta series of Leech lattice with respect to deep hole of type A_1, insufficient detail
@@ -288,7 +271,6 @@ A004078 Tuscan squares of order n, hard, insufficient detail
 A004079 Maximal m such that an m X n Florentine rectangle exists, hard
 A004118 Maximal excess of a Hadamard matrix of order 4n, hard
 A004145 Number of degenerate simplices in n-cube, hard to get many terms
-A004251 Number of graphical partitions, some papers are available
 A004252 Path sums of n-point graphs, insufficient detail
 A004401 Least number of edges in graph containing all trees on n nodes
 A004491 Number of bent functions of 2n variables, hard, paper exists
@@ -355,7 +337,6 @@ A005507 Triangulations of the disk K_{n,3}
 A005508 Triangulations of the disk K_{n,4}?
 A005509 Triangulations of the disk K_{n,5}?
 A005519 Let T(n,d) = number of distinct d-dimensional polyominoes (or polycubes) with n cells (A049429, A049430); sequence gives Sum_{d} T(n,d), hard
-A005523 Maximal number of rational points on elliptic curve over GF(q) [have Hasse bound]
 A005524 k-arcs on elliptic curves over GF(q) (possibly integer complexity thing? doable?)
 A005525 Maximal number of rational points on curve of genus 2 over GF(q)
 A005526 Maximal number of rational points that a (smooth, geometrically irreducible) curve of genus 3 over the finite field GF(q) can have
@@ -381,15 +362,12 @@ A005842 Minimal integer m such that an m X m square contains non-overlapping squ
 A005864 The coding-theoretic function A(n,4)
 A005865 The coding-theoretic function A(n,6)
 A005866 The coding-theoretic function A(n,8)
-A005873 Theta series of hexagonal close-packing with respect to tetrahedral hole, eqn error?
-A005924 From solution to a difference equation, simple conjecture, could not find seq in paper
 A005944 Theta series of 18-dimensional lattice associated with Sp_4(4), with det 1024 and minimal norm 4, insufficient details
 A005950 Theta series of 18-dimensional lattice associated with Sp_4(4), with det 256 and minimal norm 3
 A005951 Theta series of P_{9a} packing
 A005952 Theta series of P_{12a} packing
 A005953 Theta series of P_{11a} packing
 A005954 Theta series of P_{10b} packing
-A005965 Number of trivalent multigraphs with 2n nodes, probably error, have book
 A005973 Number of connected labeled interval graphs with n nodes, depends A005215, table p.422 Hanlon
 A005974 Number of unlabeled connected identity interval graphs with n nodes, probably inverse Euler of A005216
 A005975 Number of interval graphs on n unlabeled nodes, depends A005976, V function
@@ -432,8 +410,6 @@ A006292 Pseudo-bricks with n nodes, have paper
 A006293 Pseudo-bricks with n nodes, have paper
 A006302 Related to enumeration of rooted maps, some notes blog2017
 A006303 Related to enumeration of rooted maps, some notes blog2017
-A006360 Antichains (or order ideals) in the poset 2*2*3*n or size of the distributive lattice J(2*2*3*n), have paper, might be possible
-A006361 Antichains (or order ideals) in the poset 2*2*4*n or size of the distributive lattice J(2*2*4*n)
 A006362 Antichains (or order ideals) in the poset 2*2*5*n or size of the distributive lattice J(2*2*5*n)
 A006363 Number of distributive lattices (like A006362?)
 A006372 Numbers of terms in expressions for coefficients of "Lovelock Lagrangians"
@@ -442,7 +418,6 @@ A006375 Number of reduced indefinite binary forms of determinant -n, hard
 A006376 Number of indecomposable positive definite ternary quadratic forms of determinant n
 A006377 Determinants of indecomposable indefinite ternary quadratic forms
 A006379 Number of noncyclic (finite) simple groups with n conjugacy classes
-A006434 Tree-rooted toroidal maps (have papers)
 A006435 Tree-rooted toroidal maps (have papers)
 A006436 Tree-rooted toroidal maps (have papers)
 A006437 Tree-rooted toroidal maps (have papers)
@@ -454,9 +429,7 @@ A006445 Number of n-edge 3-connected planar maps with a sense-reversing automorp
 A006459 Number of elements in Z[ sqrt(-2) ] whose `smallest algorithm' is <= n, have paper
 A006461 Percolation series for directed square lattice
 A006462 Percolation series for directed square lattice
-A006469 Number of rooted genus-1 maps with 2 faces, n vertices and no isthmuses
 A006474 Related to Ramsey numbers, insufficient detail
-A006475 Number of 2-tournaments on n nodes, insufficient detail
 A006476 From relations between Siegel theta series, have paper
 A006536 Switching classes of digraphs, insufficient detail
 A006545 Number of stable unicyclic graphs with n nodes
@@ -581,8 +554,6 @@ A007196 Number of primitive n-node animals on b.c.c. lattice
 A007197 Number of n-node animals on b.c.c. lattice
 A007198 Number of n-node animals on f.c.c. lattice
 A007199 Number of n-node animals on f.c.c. lattice
-A007206 Magnetization for honeycomb lattice
-A007207 Magnetization for hexagonal lattice
 A007214 Low temperature antiferromagnetic susceptibility for honeycomb lattice
 A007215 Low temperature antiferromagnetic susceptibility for square lattice
 A007216 Low temperature antiferromagnetic susceptibility for diamond
@@ -608,9 +579,7 @@ A007288 Expansion of layer susceptibility series for square lattice, have paper
 A007293 Dimension of space of weight systems of chord diagrams, conj. g.f., actual enumeration likely hard
 A007299 Number of Hadamard matrices of order 4n, lot of effort for small number of terms
 A007303 Earliest monotonic sequence fixed (apart from signs) under reversion, revert is easy, but how do you tell is earliest such sequence, greedy approach gets blocked
-A007308 Number of crystallographic orbits in n dimensions, hard
 A007324 Least number for which Solovay-Strassen primality test on bases < p fails, strange definition of Solovay-Strassen? could not reproduce with reasonble guesses of what is meant
-A007355 Prime race mod 10 (likely incorrect data, cf. A297408)
 A007361 Numerator of n-th power of Hermite constant for dimension n, hard
 A007362 Denominator of n-th power of Hermite constant for dimension n, hard
 A007363 Maximal self-dual antichains on n points, insufficient detail
@@ -629,7 +598,6 @@ A007577 Number of chess games with n plies (another version) -- this one likely 
 A007673 Number of coins needed for ApSimon's mints problem, hard
 A007720 Arises in attempts to apply Engel's `probabilistic abacus' to random walks on infinite square grid, insufficient detail
 A007760 Number of solid partitions of height n in a cube of side n, insufficient detail
-A007762 Number of domino tilings of a certain region, insufficient detail, emailed author
 A007765 Primes p == 1 (mod 8), p = a^2 +64*b^2 such that y^2 = x^3 + p*x has rank 0
 A007766 Primes p == 1 (mod 8), p = a^2 +64*b^2 such that y^2 = x^3 + p*x has rank 2
 A007771 Values of Ehrhart polynomial of dilation by 2 of Relaxed Boolean Quadric Polytope of order 4, not in paper
@@ -659,9 +627,7 @@ A007977 Modified de Bruijn sequences: max. length of binary necklace in which no
 A007984 Number of essential graphs with n nodes (in 1-1 correspondence with Markov equivalence classes of acyclic digraphs)
 A007991 Poincare series of Lie algebra associated with a certain braid group, have paper
 A007998 Number of primitive solutions to x + y + z = 0 (mod n), possibly erroneous
-A008285 Triangle T(n,k) = number of labeled order relations on n nodes in which longest chain has k nodes (n >= 1, 1 <= k <= n), related A001035
 A008286 Number of different parameter sets for orthogonal arrays with 2^n runs, looks hard
-A008300 Triangle read by rows: T(n,k) (n >= 0, 0<=k<=n) gives number of {0,1} n X n matrices with all row and column sums equal to k (have attempt by direct approach, too slow and memory intensive)
 A008337 Number of orbits on points that are at n steps from 0 in E_8 lattice, not in paper
 A008368 Number of orbits on points that are at n steps from the origin in the f.c.c. lattice
 A008369 Number of orbits on points that are at n steps from 0 in D_4 lattice
@@ -697,8 +663,6 @@ A008988 Number of immersions of oriented circle into unoriented sphere with n do
 A008989 Number of immersions of unoriented circle into unoriented sphere with n double points
 A008997 Orchard problem with 5 trees in a row (may not have all been proved optimal)
 A009190 2p twin peaks
-A009571 Least m such that if a/b < c/d are Farey fractions of order n then there exists k such that a/b < k/m < c/d, k/m reduced, have attempt, don't understand what is required, mailed David Wilson
-A009589 If i < n, j < n, p/a(i) < q/a(j), then there exists k with p/a(i) < k/a(n) < q/a(j), needs more constraints?, cf. A009571, pos. 1 <= p < a(i), etc., k must exist for every such pair?
 A009997 Number of comparative probability orderings on all subsets of n elements that can arise by assigning a probability distribution to the individual elements, hard
 A010039 High-temperature expansion of susceptibility chi_2 for square lattice
 A010040 High-temperature expansion of susceptibility chi_2 for cubic lattice
@@ -772,7 +736,7 @@ A011268 Triangle read by rows: number of P-graphs by number of edges and number 
 A011553 Number of standard Young tableaux of type (n,n,n) whose (2,1) entry is odd, must have a formula
 A011555 Number of vertices of secondary polytope for triangle X n-simplex, hard
 A011556 Number of regular triangulations of triangle X n-simplex, hard
-A011789 Number of directed animals on a certain lattice, insufficient detail
+A011789 Number of directed animals on a certain lattice, insufficient detail [email sent]
 A011790 Number of directed animals on a certain lattice, insufficient detail
 A011791 Number of directed animals on a certain lattice, insufficient detail
 A011792 Number of directed animals on a certain lattice, insufficient detail
@@ -809,7 +773,6 @@ A011996 (n,3,6) difference families over Z_n
 A011997 Number of (n,3,7) difference families over Z_n
 A011998 (n,3,8) difference families over Z_n
 A011999 (2n+1,3,9) difference families over Z_{2n+1}
-A013561 Triangle of coefficients of polynomials arising as numerators of certain Hilbert series, paper not available
 A013568 Probably erroneous, my attempt is now A317209
 A013575 Minimal scope of an (n,3) difference triangle
 A013576 Minimal scope of an (n,4) difference triangle
@@ -821,10 +784,8 @@ A013639 Brund-Steinmetz permutations, insufficient detail
 A013659 Initialized continued fraction for sqrt(n-th nonsquare) has period (1,a(n)), don't understand
 A013704 Terms in perturbation solution of a heat transfer problem
 A013976 Number of tournaments on n nodes with a unique winner, insufficient detail
-A014088 Birthday problem, have an implementation but it is stupidly slow
 A014315 Number of permutations of squarefree monomials of degree n in n non-commutative variables that are compatible with a non-commutative monomial order (in the Groebner basis sense), insufficient detail
 A014367 Aronson's sequence in French: m est la premiere, la dixieme ... lettre de cette phrase
-A014423 From table of maximal epacts e(p) and corresponding primes p, for x_1=2, x_{m+1} = (x_m)^2+1; sequence gives e(p), have attempt, doesn't seem to reproduce, emailed Richard Guy
 A014424 From table of maximal epacts e(p) and corresponding primes p, for x_1=2, x_{m+1} = (x_m)^2+1; sequence gives e(p)
 A014425 From table of maximal epacts e(p) and corresponding primes p, for x_0=2, x_{m+1} = (x_m)^2-1; sequence gives e(p), have attempt, doesn't seem to reproduce
 A014426 From table of maximal epacts e(p) and corresponding primes p, for x_0=2, x_{m+1} = (x_m)^2-1; sequence gives e(p)
@@ -854,7 +815,6 @@ A016072 Obsolete sequence of lower bounds for A028444
 A016088 Smallest prime p such that Sum_{primes q = 2, ..., p} 1/q exceeds n, hard
 A016119 Minimal number of cosets in an orthogonal sublattice of A_n (minimal number of paths in any trellis diagram), likely hard
 A016120 Minimal number of cosets in an orthogonal sublattice of {A_n}* (minimal number of paths in any trellis diagram), likely hard
-A016729 Highest minimal Hamming distance of any Type 4^H+ Hermitian additive self-dual code over GF(4) of length n
 A018189 Population of "Triangle" cellular automaton at n-th generation, insufficient detail
 A018216 Maximal number of subgroups in a group with n elements, needs all groups enumeration
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
@@ -864,7 +824,6 @@ A018807 Number of ways to place n^2 nonattacking kings on 2n X 2n chessboard
 A018835 Minimal number of smaller integer-sided squares that tile an n X n square, base on plantri?, lots of work for one sequence
 A018843 Number of n-dimensional unimodular lattices without roots
 A018891 Number of positive knots with n crossings
-A018895 Weight distribution of [ 512,130,64 ] third-order Reed-Muller code, fini
 A018898 Theta series of 14-dimensional lattice of det 3^7 and minimal norm 2, possible dupe
 A018924 Isotropic subspaces of an n-dimensional symplectic space over GF(4)
 A019267 From an asymptotic expansion for Pi
@@ -895,7 +854,6 @@ A022489 An upper bound for linearized chord diagrams, no formula in paper?
 A022490 An upper bound for linearized chord diagrams, no formula in paper?
 A022491 An upper bound for linearized chord diagrams, no formula in paper?
 A022492 An upper bound for linearized chord diagrams, no formula in paper?
-A022607 Number of topological types of 4-connected n-nodal networks, hard
 A023193 a(n) gives the largest number k for which there is at least one admissible k-tuple taken from [0, 1, ..., n-1] if the tuple starts with 0. Admissibility is defined in a comment
 A023199 a(n) = least k with sigma(k) >= nk, possible
 A023393 Maximal number of circles of radius 1 that can be packed in a circle of radius n
@@ -927,9 +885,7 @@ A024158 Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such 
 A024187 n-th elementary symmetric function of 3,4,...,n+3 (probably A001711)
 A024211 Theta series of laminated lattice LAMBDA_25 with minimal norm 4, depends A004034
 A026081 Integers in reverse alphabetical order in U.S. English, dumb
-A026488 a(n) = least positive integer > a(n-1) and not a(i)*a(j)-a(k) for 1<=i<=j<=k<=n, terms don't match
 A026739 Number of subgroups L of Z^n with the property that for every a in Z^n there exists precisely one b in L with d(a,b) <= 1. Here d denotes Euclidean distance
-A027361 Number of "sorted permutations": permutations that can occur as the output of the sorting procedure described by Knuth, formulas do not reproduce
 A027565 Largest number not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i integers >= 1, hard
 A027566 Number of numbers not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i >= 1, hard
 A027567 Number of distinct (modulo rotation and reflection) n X n panmagic = pandiagonal = diabolic = Nasik squares, hard
@@ -947,7 +903,6 @@ A027846 Number of subgroups of index n in fundamental group of a certain fiber s
 A027851 Number of nonisomorphic semigroups of order n, hard
 A027881 a(i)=a(i-1)+a(j_1)*a(j_2) {where j_1+j_2=i-1, j_1 <= q j_2} + a(j_1)*a(j_2)*a(j_3) {where j_1+j_2+j_3=i-1, j_1 <= q j_2 <= q j_3} +...+ a(1)^{i-1}, possibly erroneous
 A028241 Weight distribution of (256,2^240,6) Preparata code
-A028247 Number of T-frame polyominoes with n cells, insufficient information
 A028252 Sequence arising in multiprocessor page migration, not in paper
 A028333 Number of nonzero terms in expansion of square of Vandermonde determinant of order (n+1)x(n+1) in terms of Schur functions, looks complicated
 A028351 Dimension of invariant subspace of Lie polynomials of degree 2n under action of SL_2(C) on free Lie algebra of rank 2,indexes seem to exceed character table?
@@ -961,7 +916,6 @@ A028410 Number of types of Boolean functions of n variables under a certain grou
 A028411 Number of types of Boolean functions of n variables under a certain group
 A028420 Number of monomer-dimer tilings of n X n chessboard, existing b-file unknown algorithm
 A028441 Triangulations of 4-dimensional cyclic polytopes, cf. A007815
-A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}, probably hard
 A028475 Total number of Hamiltonian cycles avoiding the root-edge in rooted cubic bipartite planar maps with 2n nodes, paper describes algorithm insufficient detail
 A028497 Maximum number of facets of n-dimensional polytope with {0,1}-coordinates, hard
 A028847 Number of composite labeled topologies on n points
@@ -1006,7 +960,6 @@ A029822 Average theta series of odd unimodular lattices of dimension 21 (multipl
 A029823 Average theta series of odd unimodular lattices of dimension 22 (multiplied by 50521).
 A029824 Average theta series of odd unimodular lattices of dimension 23 (multiplied by 53057489).
 A029825 Average theta series of odd unimodular lattices of dimension 24 (multiplied by 691).
-A029849 Number of nonisomorphic and nonantiisomorphic relations
 A029851 Number of self-converse semigroups of order n, depends A001423
 A029865 Smallest covering radius of [ n,6 ] binary code, hard
 A029866 Size of minimal covering code of length n and covering radius 2
@@ -1046,7 +999,6 @@ A030126 Schur's numbers (version 1), hard, for small number of terms
 A030128 Steiner triple systems (STS's) on n elements, hard
 A030129 Number of nonisomorphic Steiner triple systems (STS's) S(2,3,n) on n points, hard
 A030131 Site percolation series for hexagonal net
-A030241 Minimal determinant of any n-dimensional even lattice, not on indicated page?
 A030242 Number of n-point nonisomorphic relations with no symmetry
 A030243 Number of nonisomorphic relations with a nontrivial symmetry
 A030244 Number of connected nonisomorphic relations with no symmetry
@@ -1182,17 +1134,13 @@ A036235 Found on a quiz long ago.
 A036297 Number of Hadamard matrices of order n
 A036300 Number of binary abstract 2-D configurations.
 A036392 Coefficients of cluster series, sim A03202?
-A036393 Coefficients of cluster series, almost certain dupe of A03201
 A036394 Coefficients of cluster series.
 A036395 Coefficients of cluster series.
 A036396 Coefficients of cluster series.
 A036397 Coefficients of cluster series.
 A036398 Coefficients of cluster series.
-A036399 Coefficients of cluster series.
-A036400 Coefficients of cluster series.
 A036401 Coefficients of cluster series.
 A036402 Coefficients of cluster series.
-A036403 Number of equilateral triangles whose vertices (whether connected by lines or not) lie at intersection points resulting from drawing lines connecting every pair of vertices of a regular 3n-gon (and extending beyond the polygon).
 A036429 Primes related to Carmichael numbers of the form pqr, p<q<r and p-1 a divisor of both q-1 and r-1, insufficient detail
 A036500 Number of inequivalent cyclic Hadamard difference sets with parameters (2^n-1, 2^(n-1)-1, 2^(n-2)-1)
 A036604 Sorting numbers: minimal number of comparisons needed to sort n elements, hard
@@ -1223,7 +1171,6 @@ A037289 Number of commutative rings with n elements
 A037290 Number of self-converse rings (isomorphic to inverse) with n elements
 A037291 Number of rings with 1 containing n elements
 A037292 Number of nonassociative rings with n elements
-A037294 Number of (s,2) gates, insufficient detail
 A037295 Number of (s,3) gates, insufficient detail
 A037296 Number of (s,4) gates, insufficient detail
 A037297 Number of (s,5) gates, insufficient detail
@@ -1284,7 +1231,6 @@ A038581 Depends A038552
 A038666 Minimum area rectangle into which squares of sizes 1, 2, 3, ... n can be packed.
 A038837 Solutions to HAKMEM Problem 45
 A038839 In A038837 but not A038838.
-A038842 Primes which when converted to base 36 make English words.
 A039625 Number of planar simply-connected mono-q-polyhexes for q=5
 A039626 Number of planar simply-connected mono-q-polyhexes for q=4
 A039627 Number of planar simply-connected mono-q-polyhexes for q=3
@@ -1301,7 +1247,6 @@ A039719 Two-dimensional simplicial complexes on n unlabeled nodes
 A039792 Sequence arising in search for Legendre sequences, have paper
 A039793 Sequence arising in search for Legendre sequences
 A039794 Sequence arising in search for Legendre sequences
-A039795 Sequence arising in search for Legendre sequences
 A039927 Number of types of maximal mixed orthogonal arrays with n runs
 A039928 Sum of first n terms of A_n (using absolute values of terms)
 A039930 Height of lattice of parameters of mixed orthogonal arrays with n runs and strength 2
@@ -1365,13 +1310,11 @@ A047709 Low-temperature series in u = exp(-4J/kT) for ferromagnetic susceptibili
 A047710 Low temperature series associated with square lattice, depends A002979
 A047711 High-temperature coefficients for b.c.c. lattice.
 A047712 High-temperature coefficients for f.c.c. lattice.
-A047837 Honaker's triangle problem: form a triangle with base of length n, all entries different, all row sums equal; a(n) gives minimal row sum. (attempted backtracking search too slow)
 A047875 Size of smallest polyomino with surround number n (the surround number of a polyomino is the number of different ways that it can be surrounded by non-overlapping copies of the same polyomino).
 A047896 For given n, consider all 4-tuples P = (a,b,c,d) with P.P = n; let d = squared distance to the line OP from the closest point of Z^n (excluding the endpoints); sequence gives max_P d*n.
 A047947 a(n) is the number of k values for which A023193(k) = n.
 A047995 Number of impartial misere games born on or before day n.
 A048139 Number of planar partitions of n, when partitions that are rotations of each other (when regarded as 3-D objects) are counted only once.
-A048142 Number of symmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have only a threefold axis of symmetry, i.e., C3 symmetry. 
 A048283 For k >= a(n), there are A048284(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048284 For k >= A048283(n), there are a(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048289 Number of Go games with exactly n moves.
@@ -1427,22 +1370,15 @@ A050178 T(n,k)=M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the 3r
 A050179 T(n,k) = M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the 4th-from-least t for which M0(n,k,t) is not 0.
 A050204 a(n) is the number of n X n matrices of 0's, 1's and -1's in which the entries in each row or column sum to 1.
 A050240 Handsome numbers (A007532) representable as a sum of any positive powers of their digits in two distinct ways, not counting different powers of duplicated digits as distinct.
-A050257 Number of distinct antimagic squares of order n (modulo rotations and reflections)
 A050259 Numbers n such that 2^n == 3 (mod n) [a lot of effort to do efficiently].
 A050276 Nonzero numerators in asymptotic expansion of the Riemann-Seigel Z-function.
 A050277 Integer part of denominators of nonzero terms in asymptotic expansion of the Riemann-Seigel Z-function.
 A050437 Dimension of space spanned by symmetric powers of n-dimensional standard representation of symmetric group S_n
-A050967 Discriminants of real quadratic fields with class number 1 and related continued fraction period length of 18.
 A050972 Smaller member of friendly pairs ordered by smallest maximal element, [hard to get right?]
 A050973 Larger member of friendly pairs ordered by smallest maximal element
 A050974 Number of binary arrangements on n X n array without three adjacent 1's in a row or column.
 A050996 Decimal expansion of Rényi's parking constant.
-A051056 Depends A048142.
-A051057 Depends A048142.
-A051058 Depends A048142.
 A051070 a(n) is the n-th term in sequence A_n, respecting the offset, or a(n) = -1 if A_n has fewer than n terms [requires knowing offset of sequences!]
-A051103 Numerator of a certain Selberg integral [hypergeometric].
-A051104 Denominator of a certain Selberg integral [hypergeometric].
 A051174 H*-palindromic trees with n nodes [insufficient detail, email sent]
 A051185 Number of intersecting families of an n-element set. Also number of n-variable clique Boolean functions
 A051234 Possible orders of central factor groups of groups
@@ -1462,7 +1398,6 @@ A051569 Consider the problem of placing N = A051756(n) queens on an n X n board 
 A051570 Consider the problem of placing N = A051756(n) queens on an n X n board so that each queen attacks precisely 3 others; a(n) gives the number of inequivalent solutions [probably erroneous]
 A051571 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=4 and sequence gives number of different solutions when N takes its maximal value [probably erroneous]
 A051590 Number of oriented triangle graphs on binomial(n,2) points [could not get ref]
-A051602 Maximal number of squares that can be formed from n points in the plane [hard to prove?]
 A051637 Chromos with n colors
 A051655 Continued fraction for imaginary part of first zero (in critical strip) of Riemann zeta function
 A051657 Experimental values for number of equal circles that are packed into a square for which the density of the packing is strictly increasing.
@@ -1604,14 +1539,11 @@ A056620 Partition function coefficients for square lattice spin 3 Ising model
 A056638 Number of polygons of length 2n with two (self-avoiding polygon) holes on square lattice (not allowing rotations).
 A056639 Number of polygons of length 2n with 3 (self-avoiding polygon) holes on square lattice (not allowing rotations).
 A056642 Number of linear spaces on n (labeled) points
-A056746 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed
 A056747 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in top hole
 A056748 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in initial empty hole.
 A056755 Number of n-celled polyominoes, where the cells are 1 X 2 rectangles with some of the edges of length 2 replaced by curved arcs that either sag inwards or bulge outwards
 A056769 Puzzle 2, related to polyominoes
-A056778 Number of 3-element antichains on an unlabeled n-element set; equivalence classes of monotone Boolean functions of n variables with 3 mincuts under action of symmetric group S_n
 A056779 Number of poly-IH73-tiles (holes allowed) with n cells
-A056782 Number of 3-element proper antichains (i.e., antichains such that every two members have nonempty intersection) on an unlabeled n-element set
 A056786 Number of inequivalent connected planar figures that can be formed from n non-overlapping 1 X 2 rectangles (or dominoes)
 A056814 Triangle partitions of order n: topologically distinct ways to dissect a triangle into n triangles.
 A056840 Number of rounded n-celled polyominoes
@@ -1762,7 +1694,6 @@ A058494 Total number of interior nodes in all essentially parallel series-parall
 A058495 Total number of multiple edges in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
 A058642 Number of unlabeled graphs with n edges, no nodes of degree 1 or 2, no multiple edges and no cut nodes, under "series-equivalence"
 A058643 McKay-Thompson series of class 35a for Monster.
-A058655 Decimal expansion of area under the curve 1/Gamma(x) from zero to infinity.
 A058668 Number of unlabeled graphs with n edges, no nodes of degree 1 and no cut nodes, under "series-equivalence"; multiple edges are allowed.
 A058669 Triangle T(n,k) read by rows, giving number of matroids of rank k on n labeled points (n >= 0, 0 <= k <= n). [depends on A058711]
 A058673 Number of matroids on n labeled points.
@@ -1821,7 +1752,6 @@ A059495 For odd p such that 2^p-1 is a prime (A000043), write 2^p-1 = x^2+3*y^2;
 A059523 Simple dependency of A059052.
 A059525 Number of nonzero n X n binary arrays with all 1's connected.
 A059573 Polyotessamino numbers T(n,k) (1<=k<=n): take all the polyominoes with n cells (including those with holes but excluding rotations and reflections); fill them as completely as possible with rectangular 1 X k tiles; T(n,k) is number of ways of doing this. [probably erroneous]
-A059681 Triangle T(n,k) giving number of fixed 5 X k polyominoes with n cells (n >= 5, 1<=k<=n-4)
 A059683 Triangle T(n,k) giving number of 3 X k polyominoes with n cells (n >= 3, 1<=k<=n-2).
 A059684 Triangle T(n,k) giving number of 4 X k polyominoes with n cells (n >= 4, 1<=k<=n-3).
 A059685 Split interval orders on n points.
@@ -1843,7 +1773,6 @@ A060111 Dimensions of graded algebra associated with meanders
 A060134 Positions of permutations produced by the transposition sequence A060135 in A055089.
 A060135 Sequence of adjacent transpositions (a[n] a[n]+1), which, when starting from the identity permutation and applied successively, produce a Hamiltonian circuit through all permutations of S_4, in such a way that S_{n-1} is always traversed before the rest of S_n. Furthermore, each subsequence from the first to the (n!-1)-th term is palindromic.
 A060148 Number of forest meanders with 2n crossings
-A060149 Number of homogeneous generators of degree n for graded algebra associated with meanders
 A060159 Initial term of a series of exactly n consecutive Harshad or Niven numbers (a Harshad number is such that is divided by the sum of its digits).
 A060174 Dimensions of graded algebra associated with forest meanders
 A060198 Dimensions of graded algebra associated with forest meanders
@@ -1867,7 +1796,6 @@ A060616 Number of flips between the d-dimensional tilings of the unary zonotope 
 A060617 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=7 and D varies.
 A060618 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=8 and D varies.
 A060619 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=9 and D varies.
-A060621 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here the codimension D-d is equal to 3 and d varies.
 A060622	Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here the codimension D-d is equal to 4 and d varies.
 A060631 Number of independent sets in an n-dimensional hypercube modulo symmetries of the hypercube.
 A060638 Triangle T(n,k) (0 <= k <= n) giving number of edges in the "flip graph" whose nodes are tilings of the k-dimensional zonotope constructed from n vectors
@@ -1878,7 +1806,6 @@ A060782 Degree of the curve C(n) relative to a triangle ABC with side lengths a,
 A060793 Orders of finite perfect groups (groups such that G = G' where G' is the commutator subgroup of G).
 A060838 Rank of elliptic curve x^3 + y^3 = n
 A060938 Maximal degree of an irreducible representation of a group with n elements.
-A060942 a(n) is the largest integer m such that m is divisible by every integer in the interval 1 <= x <= m^(1/n)
 A060950 Rank of elliptic curve y^2 = x^3 + n
 A060951 Rank of elliptic curve y^2 = x^3 - n
 A060952 Rank of elliptic curve y^2 = x^3 - n*x
@@ -2147,7 +2074,6 @@ A068469 Decimal expansion of zeta(Pi).
 A068471 Number of n X n binary matrices with each 1 having at most 2 adjacent 1's.
 A068472	Number of n X n binary matrices with every 1 having at most 3 adjacent 1's.
 A068529 k values for self-contained numbers.
-A068590 Number of different Euler multigraphs with n edges, loops allowed.
 A068591 Nonessential triangular numbers (conjectured).
 A068592 Number of different Euler multigraphs with n edges, loops forbidden.
 A068599 Number of n-uniform tilings
@@ -2186,7 +2112,6 @@ A069422 Number of 8 X n binary arrays with a path of adjacent 1's and no path of
 A069426 Number of n X 6 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069427 Number of n X 7 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
 A069428 Number of n X 8 binary arrays with a path of adjacent 1's and no path of adjacent 0's from top row to bottom row.
-A069430 Half the number of 4 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069431 Half the number of 5 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069432 Half the number of 6 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069433 Half the number of 7 X n binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
@@ -2200,7 +2125,6 @@ A069444 Half the number of n X 6 binary arrays with no path of adjacent 1's or a
 A069445 Half the number of n X 7 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069446 Half the number of n X 8 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
 A069447 Half the number of n X 9 binary arrays with no path of adjacent 1's or adjacent 0's from top row to bottom row.
-A069448 Half the number of 3 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
 A069449 Half the number of 4 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
 A069450 Half the number of 5 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
 A069451 Half the number of 6 X n binary arrays with no path of adjacent 1's or adjacent 0's from top to bottom or side to side.
@@ -2474,13 +2398,11 @@ A078524 Numerator of volume of Birkhoff polytope of n X n doubly-stochastic squa
 A078525 Denominator of volume of Birkhoff polytope of n X n doubly-stochastic square matrices.
 A078526 Probability P(n) of the occurrence of a 2D self-trapping walk of length n.
 A078598 Primes p for which one of the two factors in the factorization of the polynomial Sum_{i=0..p-1} p^i*x^(2i) has only positive coefficients.
-A078600 Number of permutation polynomials over F_q of degree < q-2, as q runs through the prime powers >= 2.
 A078630 Numerators of coefficients of asymptotic expansion of probability p(n) (see A002816) in powers of 1/n.
 A078631 Denominators of coefficients of asymptotic expansion of probability p(n) (see A002816) in powers of 1/n.
 A078639 Number of nonisomorphic graphic matroids (by rank or number of vertices).
 A078668 Primes that are the difference between two powers: y^z - x^z = prime.
 A078780 Number of different digraphs on an n-cube.
-A078816 Maximum element in the continued fraction for (1/n) * Sum_{k>=0} 1/2^2^k
 A078878 Irreducible polynomial coefficient of singular value associated with sqrt(2n).
 A079059 Decimal expansion of product( p == 3 (mod 4), sqrt(1-p^-2)).
 A079137 Number of (undirected) Hamiltonian paths on the 4 X n knight graph. [should have a recurrence]
@@ -2597,8 +2519,6 @@ A080976 a(n) = A080301(A080973(n)).
 A080977 a(n) = A080272(2*n)/A080292(n)
 A081086 Smallest partial quotients of an infinite simple continued fraction such that the fractional remainders sum to unity.
 A081087 Decimal expansion of the number whose simple continued fraction (A081086) has the smallest partial quotients such that the fractional remainders sum to unity.
-A081088 Smallest partial quotients of a series of continued fractions that have a sum of unity, where the n-th continued fraction term is [0; a(n),a(n-1),...,a(1)], so that sum(n>0, [0; a(n),a(n-1),...,a(1)] ) = 1, with a(1)=2.
-A081089 Ratios of the terms of A081088: a(n) = A081088(n+1)/A081088(n); involves the partial quotients of a series of continued fractions that sum to unity.
 A081153 Number of odd cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with no fixed points of either A057163 or A057164.
 A081154 Number of odd cycles in range [A014137(2n)..A014138(2n)] of permutation A057505/A057506, with no fixed points of either A057163 or A057164.
 A081155 Number of odd cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506, with fixed-points of both A057163 and A057164.
@@ -2747,7 +2667,6 @@ A086087 a(n) is the minimal m such that the group GL(m,3) has an element of orde
 A086141 Permutation of A025487 (least prime signatures) which, when values are factored, exhibit self-similarity (cf. A008687).
 A086153 Special prime numbers arranged in a triangle: n-th row contains m primes p (where m = pi(2n + A020483(n)) - pi(A020483(n))) with following properties.
 A086157 Sum of the orders of the elements in the group GL(n,2).
-A086183 In decimal expansion of Pi: greatest number contained as a string in the first n positions, which is also contained in the next n positions.
 A086232 Decimal expansion of probability that a random walk on a 4-d lattice returns to the origin.
 A086233 Decimal expansion of probability that a random walk on a 5-d lattice returns to the origin.
 A086234 Decimal expansion of probability that a random walk on a 6-d lattice returns to the origin.

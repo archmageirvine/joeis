@@ -512,4 +512,56 @@ public final class IntegerUtils {
     }
     return max;
   }
+
+  /**
+   * Compute the determinant of a square matrix using the Bareiss algorithm.
+   * The matrix is modified in place.
+   *
+   * @param m the matrix
+   * @return the determinant
+   */
+  public static long det(final int[][] m) {
+    final int n = m.length;
+    if (n == 0) {
+      return 1;
+    }
+    if (n == 1) {
+      return m[0][0];
+    }
+
+    long previous = 1;
+    int sign = 1;
+
+    for (int k = 0; k < n - 1; ++k) {
+      // Find a non-zero pivot.
+      int pivot = k;
+      while (pivot < n && m[pivot][k] == 0) {
+        ++pivot;
+      }
+
+      if (pivot == n) {
+        return 0;
+      }
+
+      if (pivot != k) {
+        final int[] tmp = m[k];
+        m[k] = m[pivot];
+        m[pivot] = tmp;
+        sign = -sign;
+      }
+
+      final long pivotValue = m[k][k];
+
+      for (int i = k + 1; i < n; ++i) {
+        for (int j = k + 1; j < n; ++j) {
+          m[i][j] = (int) ((m[i][j] * pivotValue
+            - (long) m[i][k] * m[k][j]) / previous);
+        }
+      }
+
+      previous = pivotValue;
+    }
+
+    return sign * m[n - 1][n - 1];
+  }
 }

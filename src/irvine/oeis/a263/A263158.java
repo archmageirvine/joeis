@@ -8,13 +8,12 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A263158 a(n) = Sum_{k=0..n} Stirling2(n,k)*(k!)^3.
- * a(n)=sum(k=1,n,stirl2(n,k)*((k)!)^3)
  * @author Georg Fischer
  */
 public class A263158 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A263158() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING2.z(n, k).multiply(Functions.FACTORIAL.z(k).pow(Z.THREE))));
+    super(0, n -> n == 0 ? Z.ONE : Integers.SINGLETON.sum(1, n, k -> Functions.STIRLING2.z(n, k).multiply(Functions.FACTORIAL.z(k).pow(Z.THREE))));
   }
 }

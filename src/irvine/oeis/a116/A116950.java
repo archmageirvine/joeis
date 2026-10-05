@@ -15,7 +15,7 @@ import irvine.oeis.transform.EulerTransform;
 public class A116950 extends EulerTransform {
 
   private static final class MySequence extends A000081 {
-    private final Sequence mSeq2 = new A002861();
+    private final Sequence mSeq2 = new A002861().skip();
 
     private MySequence() {
       super.next();

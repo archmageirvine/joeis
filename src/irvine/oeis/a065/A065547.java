@@ -6,12 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a028.A028296;
 import irvine.oeis.memory.MemorySequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A065547 Triangle of Salie numbers.
  * @author Sean A. Irvine
  */
-public class A065547 extends Sequence0 {
+public class A065547 extends Sequence0 implements DirectArray {
 
   private final MemorySequence mG = MemorySequence.cachedSequence(new A028296());
   private int mN = 0;
@@ -29,5 +30,11 @@ public class A065547 extends Sequence0 {
     }
     return t(mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return t((int) n, (int) k);
+  }
+
 }
 

@@ -4,12 +4,13 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A071920 Square array giving number of unimodal functions [n]-&gt;[m] for n&gt;=0, m&gt;=0, with a(0,m)=0 for all m&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A071920 extends Sequence0 {
+public class A071920 extends Sequence0 implements DirectArray {
 
   private int mN = 0;
   private int mM = -1;
@@ -26,5 +27,11 @@ public class A071920 extends Sequence0 {
     }
     return t(mM, mN - mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return n == 0 ? Z.ZERO : Integers.SINGLETON.sum(0, k - 1, j -> Binomial.binomial(n + 2L * j - 1, 2L * j));
+  }
+
 }
 

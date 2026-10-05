@@ -2,12 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A004747 Triangle read by rows: the Bell transform of the triple factorial numbers A008544 without column 0.
  * @author Sean A. Irvine
  */
-public class A004747 extends MemoryFunction2Sequence<Long, Z> {
+public class A004747 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   /** Construct the sequence. */
   public A004747() {
@@ -35,6 +36,12 @@ public class A004747 extends MemoryFunction2Sequence<Long, Z> {
       mM = 1;
     }
     return get(mN, mM);
+  }
+
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get(n, k);
   }
 
 }

@@ -2,12 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A011801 Triangle read by rows, the inverse Bell transform of n!*binomial(4,n) (without column 0).
  * @author Sean A. Irvine
  */
-public class A011801 extends MemoryFunction2Sequence<Long, Z> {
+public class A011801 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   /** Construct the sequence. */
   public A011801() {
@@ -28,7 +29,7 @@ public class A011801 extends MemoryFunction2Sequence<Long, Z> {
     return get(n - 1, m).multiply(5 * (n - 1) - m).add(get(n - 1, m - 1));
   }
 
- @Override
+  @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
@@ -36,4 +37,10 @@ public class A011801 extends MemoryFunction2Sequence<Long, Z> {
     }
     return get(mN, mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get(n, k);
+  }
+
 }

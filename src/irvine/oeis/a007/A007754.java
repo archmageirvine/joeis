@@ -2,12 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A007754 Array (a frieze pattern) defined by a(n,k) = (a(n-1,k)*a(n-1,k+1) - 1) / a(n-2,k+1), read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A007754 extends MemoryFunction2Sequence<Long, Z> {
+public class A007754 extends MemoryFunction2Sequence<Long, Z> implements DirectArray {
 
   private long mN = -1;
   private long mM = 0;
@@ -28,5 +29,11 @@ public class A007754 extends MemoryFunction2Sequence<Long, Z> {
     }
     return get(mM, mN - mM);
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    return get(n, k);
+  }
+
 }
 

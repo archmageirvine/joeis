@@ -43,6 +43,8 @@ public final class Functions {
   public static final Function1 PRIMORIAL = new Primorial(); // =A034386
   /** Superfactorial (product of factorials). */
   public static final Function1 SUPERFACTORIAL = new Superfactorial(); // =A000178
+  /** Barnes G function for integer arguments */
+  public static final Function1 BARNES_G = new BarnesG(); // 0, 1, A000178(n - 2)
   /** Factorial base representation. */
   public static final Function1 FACTORIAL_BASE = new FactorialBase(); // =A007623
   /** Primorial base representation. */

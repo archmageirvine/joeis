@@ -1,9 +1,6 @@
 package irvine.oeis.a399;
 
 import irvine.math.IntegerUtils;
-import irvine.math.group.IntegerField;
-import irvine.math.group.MatrixField;
-import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
@@ -11,8 +8,6 @@ import irvine.oeis.ParallelPermutationSequence;
  * @author Sean A. Irvine
  */
 public class A399939 extends ParallelPermutationSequence {
-
-  private final MatrixField<Z> RING = new MatrixField<>(1, IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A399939() {

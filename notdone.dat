@@ -2706,3 +2706,4 @@ A086748 Odd numbers m such that when C(2k, k) == 1 (mod m) then k is necessarily
 A086768 Number of conjugacy classes in the group GL(3,Z_n).
 A086771 Prime links (not necessarily connected knots) with n crossings.
 A086782 Sum of the degrees of the irreducible representations of the group GL(3,Z_n).
+A086792 Orders of finite groups G with the property that the sum of the orders of all the proper normal subgroups of G equals the order of G.

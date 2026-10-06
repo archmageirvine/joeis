@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a327.A327859;
 
 /**
- * A400259 Sum of digits when n&apos; [the arithmetic derivative of n] is written in primorial base (A049345).
+ * A400259 Sum of digits when n' [the arithmetic derivative of n] is written in primorial base (A049345).
  * @author Georg Fischer
  */
 public class A400259 extends AbstractSequence {

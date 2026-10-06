@@ -16,6 +16,7 @@ A000637 Simple dependency on A000638
 A000638 Number of permutation groups of degree n
 A000679 Subset of A000001, hard
 A000769 No 3 in a line problem, hard
+A000785 Number of asymmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have no symmetry. 
 A000786 Depends on A000784, A000785
 A000789 Ramsey numbers
 A000791 Ramsey numbers
@@ -115,6 +116,8 @@ A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
 A002268 Dimensions of integral lattices that are irreducible modulo every prime (there may be missing terms!)
 A002273 Theta series, paper available, but insufficient detail?
+A002304 Numerators of coefficients in asymptotic expansion of (2/Pi)*Integral_{0..oo} (sin x / x)^n dx. 
+A002305 Denominators of coefficients in asymptotic expansion of (2/Pi)*Integral_{0..oo} (sin x / x)^n dx. 
 A002319 Finite groups, conjugacy classes
 A002336 Maximal kissing number of n-dimensional laminated lattice
 A002395 Crystal forms, insufficient detail
@@ -663,6 +666,7 @@ A008988 Number of immersions of oriented circle into unoriented sphere with n do
 A008989 Number of immersions of unoriented circle into unoriented sphere with n double points
 A008997 Orchard problem with 5 trees in a row (may not have all been proved optimal)
 A009190 2p twin peaks
+A009589 If i < n, j < n, p/a(i) < q/a(j), then there exists k with p/a(i) < k/a(n) < q/a(j). 
 A009997 Number of comparative probability orderings on all subsets of n elements that can arise by assigning a probability distribution to the individual elements, hard
 A010039 High-temperature expansion of susceptibility chi_2 for square lattice
 A010040 High-temperature expansion of susceptibility chi_2 for cubic lattice
@@ -2701,3 +2705,4 @@ A086744 Decimal expansion of Product_{n>=1} (2n/(2n+1))^((-1)^t(n)), where t(n) 
 A086748 Odd numbers m such that when C(2k, k) == 1 (mod m) then k is necessarily even.
 A086768 Number of conjugacy classes in the group GL(3,Z_n).
 A086771 Prime links (not necessarily connected knots) with n crossings.
+A086782 Sum of the degrees of the irreducible representations of the group GL(3,Z_n).

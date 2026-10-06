@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A110375 Numbers n such that Maple 9.5, Maple 10, Maple 11 and Maple 12 give the wrong answers for the number of partitions of n.
+ * A110375 Numbers k such that Maple 9.5, Maple 10, Maple 11 and Maple 12 give the wrong answers for the number of partitions of k.
  * @author Georg Fischer
  */
 public class A110375 extends NoncomputableSequence {

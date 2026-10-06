@@ -3,7 +3,7 @@ package irvine.oeis.a398;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A400199.
+ * A398346 Numbers with at least two digits, whose second and last digits are nonzero, that divide every number obtained by inserting any number of 0's between their first and second digits.
  * @author Sean A. Irvine
  */
 public class A398346 extends FiniteSequence {

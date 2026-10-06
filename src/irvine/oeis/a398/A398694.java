@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A398694 allocated for Patrick X. Reymond.
+ * A398694 allocated for Omar E. Pol.
  * @author Sean A. Irvine
  */
 public class A398694 extends ParallelPermutationSequence {

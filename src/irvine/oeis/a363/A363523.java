@@ -6,7 +6,7 @@ import irvine.oeis.a160.A160014;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A363523 k is a term of this sequence if and only if Clausen(k, 0) divides Clausen(k, 2). (Clausen = A160014.)
+ * A363523 k is a term of this sequence if and only if Clausen(k, 0) divides Clausen(k, 2). (Clausen = A160014.).
  * @author Georg Fischer
  */
 public class A363523 extends FilterNumberSequence {

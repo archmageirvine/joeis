@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A397131 E.g.f. A(x) satisfies A&apos;(x) = (1 + A(x)*A&apos;(x))^3, with A(0)=0.
+ * A397131 E.g.f. A(x) satisfies A'(x) = (1 + A(x)*A'(x))^3, with A(0)=0.
  * @author Georg Fischer
  */
 public class A397131 extends PolynomialFieldSequence {

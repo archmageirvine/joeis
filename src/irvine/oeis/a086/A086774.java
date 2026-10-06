@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A400353.
+ * A086774 Decimal expansion of the number defined by the continued fraction shown below.
  * @author Sean A. Irvine
  */
 public class A086774 extends DecimalExpansionSequence {

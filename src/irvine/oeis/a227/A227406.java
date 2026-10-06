@@ -6,7 +6,7 @@ import irvine.oeis.a071.A071921;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A227406 Number of unimodal functions f: [n]-&gt;[2^n].
+ * A227406 Number of unimodal functions f:[n]-&gt;[2^n].
  * @author Georg Fischer
  */
 public class A227406 extends LambdaSequence {

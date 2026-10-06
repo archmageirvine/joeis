@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400199.
+ * A086778 Number of n X n matrices over GF(5) with rank n-1.
  * @author Sean A. Irvine
  */
 public class A086778 extends Sequence1 {

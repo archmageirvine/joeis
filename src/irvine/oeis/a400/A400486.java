@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400353.
+ * A400486 Number of positive integers m &lt; 2^n - 1 such that the Collatz trajectories of m and m+1 meet within n steps, after equal numbers of halving steps and before either reaches 1.
  * @author Sean A. Irvine
  */
 public class A400486 extends Sequence1 {

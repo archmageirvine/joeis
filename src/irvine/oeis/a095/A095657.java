@@ -6,7 +6,7 @@ import irvine.oeis.a065.A065547;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A095657 Ninth column of Sali√©-triangle A065547.
+ * A095657 Ninth column of Sali\u00e9-triangle A065547.
  * @author Georg Fischer
  */
 public class A095657 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400199 H_x(y, z), the x-th hyperoperation of y and z, where (x, y, z) is the n-th triple in the canonical shell ordering of N^3 given by A144625.
+ * A400456 Let m be the n-th hyperoperation applied to n (see A189896). a(n) is the n-th hyperoperation applied to m.
  * @author Sean A. Irvine
  */
 public class A400456 extends Sequence0 {

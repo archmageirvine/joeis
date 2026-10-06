@@ -6,7 +6,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A000360.
+ * A028247 Number of T-frame polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A028247 extends GfSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007949;
 import irvine.oeis.a327.A327859;
 
 /**
- * A400263 The second least significant digit of n&apos; [the arithmetic derivative of n, A003415] in the primorial base, A049345.
+ * A400263 The second least significant digit of n' [the arithmetic derivative of n, A003415] in the primorial base, A049345.
  * @author Georg Fischer
  */
 public class A400263 extends LambdaSequence {

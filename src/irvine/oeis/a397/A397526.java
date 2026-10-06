@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400199.
+ * A397526 Number of ways to write 6*n as p + q, where p and q are primes such that 2*p+1 and 4*q+1 are also prime.
  * @author Sean A. Irvine
  */
 public class A397526 extends Sequence1 {

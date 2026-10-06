@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400353.
+ * A400545 Number of asymmetric Boolean functions of n variables up to cyclic permutations of the variables.
  * @author Sean A. Irvine
  */
 public class A400545 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399226 Numbers k such that sigma(k) = phi(k) + tau(k)^6.
+ * A400368 Nonsquarefree numbers k such that sigma(k) = phi(k) + tau(k)^7.
  * @author Sean A. Irvine
  */
 public class A400368 extends Sequence1 {

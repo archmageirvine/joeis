@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001221;
 
 /**
- * A066996 Numbers n such that Sum_{i=2..n} 1/A001221(i) is an integer.
+ * A066996 Numbers k such that Sum_{i=2..k} 1/A001221(i) is an integer.
  * @author Sean A. Irvine
  */
 public class A066996 extends A001221 {

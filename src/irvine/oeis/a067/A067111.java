@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002110;
 import irvine.oeis.a007.A007504;
 
 /**
- * A067111 Floor[ Product of first n primes / Sum of first n primes].
+ * A067111 a(n) = floor( product of first n primes / sum of first n primes ).
  * @author Georg Fischer
  */
 public class A067111 extends A002110 {

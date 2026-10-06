@@ -6,7 +6,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A226031 Number A(n,k) of unimodal functions f: [n]-&gt;[k*n]; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
+ * A226031 Number A(n,k) of unimodal functions f:[n]-&gt;[k*n]; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A226031 extends LambdaArray {

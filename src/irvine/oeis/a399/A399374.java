@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a276.A276088;
 
 /**
- * A399374 For n &gt;= 2, the least significant nonzero digit in primorial base representation of n&apos; (the arithmetic derivative of n), with a(0) = a(1) = 0 by convention.
+ * A399374 For n &gt;= 2, the least significant nonzero digit in primorial base representation of n' (the arithmetic derivative of n), with a(0) = a(1) = 0 by convention.
  * @author Georg Fischer
  */
 public class A399374 extends LambdaSequence {

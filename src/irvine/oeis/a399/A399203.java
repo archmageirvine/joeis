@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400353.
+ * A399203 allocated for Vladeta Jovovic.
  * @author Sean A. Irvine
  */
 public class A399203 extends Sequence0 {

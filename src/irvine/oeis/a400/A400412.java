@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A400353.
+ * A400412 allocated for Hartmut F. W. Hoft.
  * @author Sean A. Irvine
  */
 public class A400412 extends Sequence1 {

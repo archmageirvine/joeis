@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a023.A023201;
 
 /**
- * A400353.
+ * A086776 Smaller member of a prime pair (p, p+6) with a square sum.
  * @author Sean A. Irvine
  */
 public class A086776 extends FilterSequence {

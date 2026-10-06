@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a057.A057655;
 
 /**
- * A395910 allocated for Andrew J. Morris.
+ * A395910 Number of integer lattice points on or strictly inside a 3-dimensional horn torus with major radius n and minor radius n: (sqrt(x^2 + y^2) - n)^2 + z^2 &lt;= n^2.
  * @author Sean A. Irvine
  */
 public class A395910 extends Sequence1 {

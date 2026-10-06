@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400353.
+ * A400375 Numbers whose greedy alternating digit sum is 0 (in base 10).
  * @author Sean A. Irvine
  */
 public class A400375 extends FilterNumberSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400353.
+ * A397971 Number of equivalence classes of maps f: {0,1}^n -&gt; {0,1}^n under conjugation by cyclic rotations of coordinates.
  * @author Sean A. Irvine
  */
 public class A397971 extends Sequence0 {

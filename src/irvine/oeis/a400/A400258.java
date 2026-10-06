@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a327.A327859;
 
 /**
- * A400258 Number of nonzero digits in primorial base representation of n&apos; [where n&apos; stands for the arithmetic derivative of n, A003415].
+ * A400258 Number of nonzero digits in primorial base representation of n' [where n' stands for the arithmetic derivative of n, A003415].
  * @author Georg Fischer
  */
 public class A400258 extends AbstractSequence {

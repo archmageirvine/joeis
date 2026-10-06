@@ -15,7 +15,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CachedFactorizerTest.class);
     suite.addTestSuite(DummyFactorizerTest.class);
     suite.addTestSuite(CheetahTest.class);
-    suite.addTestSuite(FactorDbFactorizerTest.class);
     suite.addTestSuite(FermatTest.class);
     suite.addTestSuite(PollardRhoTest.class);
     suite.addTestSuite(PMinusOneTest.class);

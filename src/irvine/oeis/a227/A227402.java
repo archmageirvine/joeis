@@ -6,7 +6,7 @@ import irvine.oeis.a071.A071921;
 import irvine.oeis.triangle.DirectArray;
 
 /**
- * A227402 Number of unimodal functions f: [n]-&gt;[n^2].
+ * A227402 Number of unimodal functions f:[n]-&gt;[n^2].
  * @author Georg Fischer
  */
 public class A227402 extends LambdaSequence {

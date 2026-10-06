@@ -44,7 +44,24 @@ class Valuation extends AbstractFunction2 {
       return 0; // convention
     }
     if (Z.TWO.equals(m)) {
-      return (int) n.makeOdd().auxiliary();
+      return n.getLowestSetBit();
+    }
+    int d = 0;
+    Z[] qr;
+    while ((qr = n.divideAndRemainder(m))[1].isZero()) {
+      ++d;
+      n = qr[0];
+    }
+    return d;
+  }
+
+  @Override
+  public int i(Z n, final long m) {
+    if (n.isZero()) {
+      return 0; // convention
+    }
+    if (m == 2) {
+      return n.getLowestSetBit();
     }
     int d = 0;
     Z[] qr;

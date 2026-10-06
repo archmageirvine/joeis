@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a276.A276153;
 
 /**
- * A400261 The most significant digit of n&apos; [the arithmetic derivative of n, A003415] in the primorial base, A049345.
+ * A400261 The most significant digit of n' [the arithmetic derivative of n, A003415] in the primorial base, A049345.
  * @author Georg Fischer
  */
 public class A400261 extends LambdaSequence {

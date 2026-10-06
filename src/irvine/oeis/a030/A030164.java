@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A030164 Numbers n such that uphi(sigma(n)) = n, where the uphi is the unitary phi function A047994.
+ * A030164 Numbers k such that uphi(sigma(k)) = k, where uphi is the unitary phi function (A047994).
  * @author Sean A. Irvine
  */
 public class A030164 extends Sequence1 {

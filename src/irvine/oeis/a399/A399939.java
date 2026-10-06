@@ -4,7 +4,7 @@ import irvine.math.IntegerUtils;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A399946.
+ * A399939 allocated for Pontus von Br\u00f6mssen.
  * @author Sean A. Irvine
  */
 public class A399939 extends ParallelPermutationSequence {
@@ -12,14 +12,6 @@ public class A399939 extends ParallelPermutationSequence {
   /** Construct the sequence. */
   public A399939() {
     super(0);
-  }
-
-  private int[] b(final int[] a) {
-    final int[] b = new int[a.length];
-    for (int k = 0; k < a.length; ++k) {
-      b[k] = a[k] + 1;
-    }
-    return b;
   }
 
   private boolean check(final int[] p, final int pos) {
@@ -31,7 +23,6 @@ public class A399939 extends ParallelPermutationSequence {
           m[k][j] = v;
         }
       }
-      //System.out.println("pos=" + pos + " len=" + len + " " + RING.det(m) + " " + m + " " + Arrays.toString(b(p)));
       if (IntegerUtils.det(m) == 0) {
         return false;
       }
@@ -41,9 +32,6 @@ public class A399939 extends ParallelPermutationSequence {
 
   @Override
   protected boolean accept(final int[] p, final int sum, final int pos) {
-    if (pos <= 2) {
-      return true;
-    }
-    return check(p, pos);
+    return pos <= 2 || check(p, pos);
   }
 }

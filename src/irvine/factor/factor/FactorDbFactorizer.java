@@ -16,15 +16,11 @@ import irvine.math.z.Z;
 
 /**
  * Attempt to factor by direct connection to <code>factordb.com</code>.
- *
  * Uses the FactorDB JSON-RPC API.
- *
  * @author Sean A. Irvine
  */
 public class FactorDbFactorizer extends AbstractFactorizer {
 
-  //private static final String API_URL = "https://v3.factordb.com/rpc";
-  //private static final String API_URL = "https://v3.factordb.com:4059/rpc";
   private static final String API_URL = "https://factordb.com:4059/rpc";
 
   /*
@@ -74,7 +70,7 @@ public class FactorDbFactorizer extends AbstractFactorizer {
         + params
         + "}";
 
-    try (OutputStream out = connection.getOutputStream()) {
+    try (final OutputStream out = connection.getOutputStream()) {
       out.write(request.getBytes(StandardCharsets.UTF_8));
     }
 
@@ -84,8 +80,7 @@ public class FactorDbFactorizer extends AbstractFactorizer {
       : connection.getErrorStream();
 
     final StringBuilder sb = new StringBuilder();
-    try (BufferedReader reader = new BufferedReader(
-      new InputStreamReader(stream, StandardCharsets.UTF_8))) {
+    try (final BufferedReader reader = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
       String line;
       while ((line = reader.readLine()) != null) {
         sb.append(line);
@@ -97,13 +92,10 @@ public class FactorDbFactorizer extends AbstractFactorizer {
     if (responseCode < 200 || responseCode >= 300) {
       throw new IOException("FactorDB HTTP " + responseCode + ": " + sb);
     }
-
     final String response = sb.toString();
-
     if (response.contains("\"error\"")) {
       throw new IOException("FactorDB error: " + response);
     }
-
     return response;
   }
 
@@ -151,113 +143,83 @@ public class FactorDbFactorizer extends AbstractFactorizer {
 
   /**
    * Obtain the known factors of n from FactorDB.
-   *
    * @param n number to factor
    * @return list of factors
    * @throws IOException if the request fails
    */
   private static List<Factor> getFactors(final Z n) throws IOException {
-    final String params =
-      "{\"target\":{\"expr\":" + jsonString(n.toString()) + "}}";
-
+    final String params = "{\"target\":{\"expr\":" + jsonString(n.toString()) + "}}";
     final String response = rpc("get_factors", params);
-
     final int factorsPos = response.indexOf("\"factors\"");
     if (factorsPos < 0) {
       throw new IOException("No factors in FactorDB response: " + response);
     }
-
     final int arrayStart = response.indexOf('[', factorsPos);
     if (arrayStart < 0) {
       throw new IOException("No factors array in FactorDB response: " + response);
     }
-
     final int arrayEnd = findMatching(response, arrayStart, '[', ']');
     if (arrayEnd < 0) {
       throw new IOException("Malformed factors array: " + response);
     }
-
     final String array = response.substring(arrayStart + 1, arrayEnd);
     return parseFactors(array);
   }
 
   /**
    * Parse the factors array.
-   *
    * @param json contents of factors array
    * @return factors
    */
   private static List<Factor> parseFactors(final String json) {
     final List<Factor> result = new ArrayList<>();
     int p = 0;
-
     while (p < json.length()) {
       final int objectStart = json.indexOf('{', p);
       if (objectStart < 0) {
         break;
       }
-
       final int objectEnd = findMatching(json, objectStart, '{', '}');
       if (objectEnd < 0) {
         break;
       }
-
       final String object = json.substring(objectStart, objectEnd + 1);
-
       final String base = getJsonString(object, "base");
       final String exponent = getJsonValue(object, "exponent");
       final String factorStatus = getJsonString(object, "status");
-
       if (base != null && exponent != null) {
-        result.add(new Factor(
-          new Z(base),
-          Integer.parseInt(exponent),
-          status(factorStatus)));
+        result.add(new Factor(new Z(base), Integer.parseInt(exponent), status(factorStatus)));
       }
-
       p = objectEnd + 1;
     }
 
     return result;
   }
 
-  /**
-   * Get a JSON string-valued member.
-   */
   private static String getJsonString(final String json, final String name) {
     final String tag = "\"" + name + "\"";
     final int p = json.indexOf(tag);
     if (p < 0) {
       return null;
     }
-
     int q = json.indexOf(':', p + tag.length());
     if (q < 0) {
       return null;
     }
-
     ++q;
     while (q < json.length() && Character.isWhitespace(json.charAt(q))) {
       ++q;
     }
-
     if (q >= json.length() || json.charAt(q) != '"') {
       return null;
     }
-
     ++q;
     final StringBuilder sb = new StringBuilder();
     boolean escaped = false;
-
     while (q < json.length()) {
       final char c = json.charAt(q++);
       if (escaped) {
         switch (c) {
-          case '"':
-          case '\\':
-          case '/':
-            sb.append(c);
-            break;
           case 'b':
             sb.append('\b');
             break;
@@ -273,6 +235,9 @@ public class FactorDbFactorizer extends AbstractFactorizer {
           case 't':
             sb.append('\t');
             break;
+          case '"':
+          case '\\':
+          case '/':
           default:
             sb.append(c);
             break;
@@ -286,30 +251,23 @@ public class FactorDbFactorizer extends AbstractFactorizer {
         sb.append(c);
       }
     }
-
     return null;
   }
 
-  /**
-   * Get a simple JSON value.
-   */
   private static String getJsonValue(final String json, final String name) {
     final String tag = "\"" + name + "\"";
     final int p = json.indexOf(tag);
     if (p < 0) {
       return null;
     }
-
     int q = json.indexOf(':', p + tag.length());
     if (q < 0) {
       return null;
     }
-
     ++q;
     while (q < json.length() && Character.isWhitespace(json.charAt(q))) {
       ++q;
     }
-
     final int start = q;
     while (q < json.length()) {
       final char c = json.charAt(q);
@@ -318,22 +276,18 @@ public class FactorDbFactorizer extends AbstractFactorizer {
       }
       ++q;
     }
-
     return start == q ? null : json.substring(start, q);
   }
 
-  /**
+  /*
    * Find the matching closing bracket.
    */
-  private static int findMatching(final String s, final int start,
-                                  final char open, final char close) {
+  private static int findMatching(final String s, final int start, final char open, final char close) {
     int depth = 0;
     boolean quoted = false;
     boolean escaped = false;
-
     for (int k = start; k < s.length(); ++k) {
       final char c = s.charAt(k);
-
       if (quoted) {
         if (escaped) {
           escaped = false;
@@ -344,7 +298,6 @@ public class FactorDbFactorizer extends AbstractFactorizer {
         }
         continue;
       }
-
       if (c == '"') {
         quoted = true;
       } else if (c == open) {
@@ -353,7 +306,6 @@ public class FactorDbFactorizer extends AbstractFactorizer {
         return k;
       }
     }
-
     return -1;
   }
 
@@ -390,24 +342,14 @@ public class FactorDbFactorizer extends AbstractFactorizer {
 
     try {
       message("Querying FactorDB for: " + n);
-
       final List<Factor> factors = getFactors(n);
-
       message("FactorDB returned " + factors.size() + " factors");
-
       for (final Factor factor : factors) {
-        message("Factor: " + factor.mBase
-          + "^" + factor.mExponent
-          + " [" + factor.mStatus + "]");
-
-        /*
-         * Ignore a factor equal to the original number.  This is
-         * what the old implementation did as well.
-         */
+        message("Factor: " + factor.mBase + "^" + factor.mExponent + " [" + factor.mStatus + "]");
+        // Ignore a factor equal to the original number.
         if (n.equals(factor.mBase)) {
           continue;
         }
-
         for (int k = 0; k < factor.mExponent; ++k) {
           if (!n.mod(factor.mBase).isZero()) {
             break;
@@ -416,15 +358,11 @@ public class FactorDbFactorizer extends AbstractFactorizer {
           n = n.divide(factor.mBase);
         }
       }
-
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
 
-    /*
-     * If FactorDB did not completely factor n, retain the remaining
-     * cofactor exactly as the old implementation did.
-     */
+    // If FactorDB did not completely factor n, retain the remaining cofactor
     if (!Z.ONE.equals(n)) {
       final int status = n.isProbablePrime()
         ? FactorSequence.PROB_PRIME
@@ -435,7 +373,6 @@ public class FactorDbFactorizer extends AbstractFactorizer {
 
   /**
    * Attempt to factor each of the supplied arguments.
-   *
    * @param args numbers to factor
    */
   public static void main(final String[] args) {

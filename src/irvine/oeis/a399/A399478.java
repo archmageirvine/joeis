@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A086786.
+ * A399478 allocated for Param Srivastava.
  * @author Sean A. Irvine
  */
 public class A399478 extends EgfSequence {

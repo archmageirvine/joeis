@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -54,7 +55,7 @@ public class FactorDbFactorizer extends AbstractFactorizer {
    * @throws IOException if the request fails
    */
   private static String rpc(final String method, final String params) throws IOException {
-    final URL url = new URL(API_URL);
+    final URL url = URI.create(API_URL).toURL();
     final HttpURLConnection connection = (HttpURLConnection) url.openConnection();
     connection.setRequestMethod("POST");
     connection.setDoOutput(true);

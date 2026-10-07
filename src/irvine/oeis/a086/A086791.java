@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086786.
+ * A086791 Primes found among the numerators of the continued fraction rational approximations to e.
  * @author Sean A. Irvine
  */
 public class A086791 extends Sequence1 {

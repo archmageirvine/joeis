@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086786.
+ * A086793 Number of iterations of the map A034690 (x -&gt; sum of digits of all divisors of x) required to reach one of the fixed points, 15 or 1.
  * @author Sean A. Irvine
  */
 public class A086793 extends Sequence1 {

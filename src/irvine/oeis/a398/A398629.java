@@ -9,7 +9,7 @@ import irvine.oeis.FilterNumberSequence;
  */
 public class A398629 extends FilterNumberSequence {
 
-  private static final char[] SUFFIX = {'0', '1', '4', '5', '6', '7'};
+  private static final char[] SUFFIX = {'0', '1', '4', '5', '6', '7', '9'};
 
   /** Construct the sequence. */
   public A398629() {

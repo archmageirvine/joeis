@@ -6,16 +6,16 @@ import irvine.math.MemoryFunctionInt2;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A392471 Triangle read by rows: T(n,k) is the number of nested cycle partitions of n labeled nodes into k components.
  * @author Sean A. Irvine
  */
-public class A392471 extends Sequence1 {
+public class A392471 extends Sequence0 {
 
   private int mN = 0;
-  private int mM = 0;
+  private int mM = -1;
 
   private final MemoryFunction1<Q> mNu = new MemoryFunction1<>() {
     @Override
@@ -63,7 +63,7 @@ public class A392471 extends Sequence1 {
   public Z next() {
     if (++mM > mN) {
       ++mN;
-      mM = 1;
+      mM = 0;
     }
     return mRhoC.get(mN, mM).multiply(Functions.FACTORIAL.z(mN)).toZ();
   }

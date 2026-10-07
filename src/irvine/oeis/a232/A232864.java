@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A232864
+ * A232864 Number of permutations of n elements not cyclically containing the consecutive pattern 123.
  * @author Georg Fischer
  */
 public class A232864 extends AbstractSequence implements DirectSequence {

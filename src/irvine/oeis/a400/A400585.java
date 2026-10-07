@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086786.
+ * A400585 allocated for Jishnu Babu Ranitha.
  * @author Sean A. Irvine
  */
 public class A400585 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A400610 a(n) is the least positive integer k such that digsum(k&apos;) = n * digsum(k), where k&apos; = A003415(k) is the arithmetic derivative of k and digsum(x) = A007953(x) is the sum of decimal digits of x.
+ * A400610 a(n) is the least positive integer k such that digsum(k') = n * digsum(k), where k' = A003415(k) is the arithmetic derivative of k and digsum(x) = A007953(x) is the sum of decimal digits of x.
  * @author Georg Fischer
  */
 public class A400610 extends LambdaSequence {

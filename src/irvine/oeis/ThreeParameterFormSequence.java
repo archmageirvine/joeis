@@ -100,6 +100,10 @@ public class ThreeParameterFormSequence extends AbstractSequence {
     return !n.equals(prev);
   }
 
+  protected Z select(final long x, final long y, final long z, final Z n) {
+    return n;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -109,7 +113,7 @@ public class ThreeParameterFormSequence extends AbstractSequence {
       add(new State(s.mM, s.mR, s.mS + 1));
       if (accept(s.mM, s.mR, s.mS, s.mN, mPrev)) {
         mPrev = s.mN;
-        return mPrev;
+        return select(s.mM, s.mR, s.mS, s.mN);
       }
     }
   }

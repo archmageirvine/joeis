@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A086786.
+ * A400287 allocated for Sajid Khan Hussain.
  * @author Sean A. Irvine
  */
 public class A400287 extends FilterNumberSequence {

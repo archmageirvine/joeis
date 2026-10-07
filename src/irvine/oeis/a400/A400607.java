@@ -5,22 +5,31 @@ import irvine.math.z.Z;
 import irvine.oeis.ThreeParameterFormSequence;
 
 /**
- * A400208 Integers m such that m^2 = p! * q! * r! for some p &gt; q &gt; r &gt; 1.
+ * A400607 allocated for Bernard Schott.
  * @author Sean A. Irvine
  */
-public class A400208 extends ThreeParameterFormSequence {
+public class A400607 extends ThreeParameterFormSequence {
 
   /** Construct the sequence. */
-  public A400208() {
+  public A400607() {
     super(1, 2, 3, 4, (r, q, p) -> p > q && q > r ? Functions.FACTORIAL.z(p).multiply(Functions.FACTORIAL.z(q)).multiply(Functions.FACTORIAL.z(r)) : null);
+  }
+
+  @Override
+  protected Z select(final long x, final long y, final long z, final Z n) {
+    final Z[] t = n.sqrtAndRemainder();
+    if (t[1].isZero()) {
+      return Z.valueOf(z);
+    }
+    return Z.ZERO;
   }
 
   @Override
   public Z next() {
     while (true) {
-      final Z[] t = super.next().sqrtAndRemainder();
-      if (t[1].isZero()) {
-        return t[0];
+      final Z t = super.next();
+      if (!t.isZero()) {
+        return t;
       }
     }
   }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086786.
+ * A400478 allocated for Ganesh Jasawat.
  * @author Sean A. Irvine
  */
 public class A400478 extends Sequence1 {

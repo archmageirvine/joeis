@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A086786.
+ * A138399 Ennea-Primes. Prime Numbers n (single prime number in-between 8 twin primes) such that Sum of 9 prime numbers (8 twin primes and single prime number in-between) are primes.
  * @author Sean A. Irvine
  */
 public class A138399 extends A000040 {

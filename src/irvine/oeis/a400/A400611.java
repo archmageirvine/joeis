@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400611 Numbers k such that digsum(k&apos;) is a multiple of digsum(k), where k&apos; = A003415(k) is the arithmetic derivative of k and digsum(x) = A007953(x) is the sum of decimal digits of x.
+ * A400611 Numbers k such that digsum(k') is a multiple of digsum(k), where k' = A003415(k) is the arithmetic derivative of k and digsum(x) = A007953(x) is the sum of decimal digits of x.
  * @author Georg Fischer
  */
 public class A400611 extends FilterNumberSequence {

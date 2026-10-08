@@ -16,7 +16,12 @@ public class A392325 extends Sequence1 {
   private Z mJump;
   private int mHalfLength;
 
-  protected A392325(final int base, final long start) {
+  /**
+   * Generate vampire numbers in a particular base.
+   * @param base base to use
+   * @param start starting value
+   */
+  public A392325(final int base, final long start) {
     mBase = base;
     mJump = Z.valueOf(base).pow(4);
     mN = Z.valueOf(start - 1);

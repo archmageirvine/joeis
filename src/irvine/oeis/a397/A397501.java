@@ -20,30 +20,6 @@ public class A397501 extends Sequence0 {
   private Z[] mBinomial;
   private HashMap<BitSet, Z> mCache;
 
-  @Override
-  public Z next() {
-    ++mN;
-    mBinomial = new Z[mN + 1];
-    for (int k = 0; k <= mN; ++k) {
-      mBinomial[k] = Binomial.binomial(mN, k);
-    }
-
-    if (mN >= 3) {
-      int d = mN - 1;
-      while ((d & 1) == 0) {
-        d >>= 1;
-      }
-      if (d == 1) {
-        return Z.ONE.shiftLeft((mN - 1) / 2).add(1);
-      }
-    }
-
-    final BitSet all = new BitSet();
-    all.set(0, mN + 1);
-    mCache = new HashMap<>();
-    return c(all);
-  }
-
   private Z c(final BitSet r) {
     final Z cached = mCache.get(r);
     if (cached != null) {
@@ -174,5 +150,18 @@ public class A397501 extends Sequence0 {
 
     mCache.put((BitSet) r.clone(), search.mSum);
     return search.mSum;
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    mBinomial = new Z[mN + 1];
+    for (int k = 0; k <= mN; ++k) {
+      mBinomial[k] = Binomial.binomial(mN, k);
+    }
+    final BitSet all = new BitSet();
+    all.set(0, mN + 1);
+    mCache = new HashMap<>();
+    return c(all);
   }
 }

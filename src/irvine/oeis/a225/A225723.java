@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001865;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A225723 Triangular array read by rows: T(n,k) is the number of size k components in the digraph representation of all functions f: {1,2,...,n}-&gt;{1,2,...,n}; n&gt;=1, 1&lt;=k&lt;=n.
+ * A225723 Triangular array read by rows: T(n,k) is the number of size k components in the digraph representation of all functions f:{1,2,...,n}-&gt;{1,2,...,n}; n&gt;=1, 1&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A225723 extends LambdaTriangle {

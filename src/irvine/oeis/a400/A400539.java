@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400539 Number of lattice points of the tetrakis hexahedron whose vertices are (+-3n,0,0), (0,+-3n,0), (0,0,+-3n) and (+-2n,+-2n,+-2n).
+ * A400539 allocated for Henrik Arhold.
  * @author Georg Fischer
  */
 public class A400539 extends HolonomicRecurrence {

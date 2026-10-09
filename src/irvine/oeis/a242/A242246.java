@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.DeadSequence;
 
 /**
- * A242246 Erroneous duplicate of A229979.
+ * A242246 Numerators of n*A164555(n-1)/A027642(n-1).
  * @author Georg Fischer
  */
 public class A242246 extends DeadSequence {

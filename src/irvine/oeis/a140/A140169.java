@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.DeadSequence;
 
 /**
- * A140169 Erroneous duplicate of A124731.
+ * A140169 Triangle read by rows, iterates of X * [1,0,0,0,...] where X = an infinite bidiagonal matrix with (2,1,2,1,2,1,...) in the main diagonal, (1,2,1,2,1,2,...) in the subdiagonal and the rest zeros.
  * @author Georg Fischer
  */
 public class A140169 extends DeadSequence {

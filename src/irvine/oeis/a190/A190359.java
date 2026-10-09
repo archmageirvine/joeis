@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.DeadSequence;
 
 /**
- * A190359 Erroneous duplicate of A056208.
+ * A190359 Largest prime factor of the least number having exactly two odd prime factors that differ by 2^n.
  * @author Georg Fischer
  */
 public class A190359 extends DeadSequence {

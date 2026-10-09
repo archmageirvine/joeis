@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054781;
 
 /**
- * A224851 First position of n in continued fraction for Khinchin&apos;s constant.
+ * A224851 First position of n in continued fraction for Khinchin's constant.
  * @author Georg Fischer
  */
 public class A224851 extends AbstractSequence {

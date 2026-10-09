@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002190;
 
 /**
- * A101981 Column 0 of triangle A101980, which is the matrix logarithm of A008459 (squared entries of Pascal&apos;s triangle).
+ * A101981 Column 0 of triangle A101980, which is the matrix logarithm of A008459 (squared entries of Pascal's triangle).
  * @author Georg Fischer
  */
 public class A101981 extends AbstractSequence {

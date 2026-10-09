@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400512 Expansion of g.f. x*(1-x)/((1-4*x)*(1-5*x-5*x^2)).
+ * A400512 allocated for Creighton Dement.
  * @author Georg Fischer
  */
 public class A400512 extends HolonomicRecurrence {

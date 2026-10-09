@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400537 Number of lattice points of the 24-cell whose vertices are the permutations of (+-n, +-n, 0, 0).
+ * A400537 allocated for Henrik Arhold.
  * @author Georg Fischer
  */
 public class A400537 extends HolonomicRecurrence {

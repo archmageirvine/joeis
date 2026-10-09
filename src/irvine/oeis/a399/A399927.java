@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399927 Sequence constructed by concatenating recursively defined parts.
+ * A399927 allocated for Hendrik Untch.
  * @author Sean A. Irvine
  */
 public class A399927 extends Sequence1 {

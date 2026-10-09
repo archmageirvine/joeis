@@ -8,7 +8,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A380336 Triangular array read by rows.  T(n,k) is the number of ways to choose a size k subset S of [n] and form a labeled acyclic digraph on S.  Then form another labeled acyclic digraph on [n]-S. For each pair u in S and v in [n]-S add the directed edge u-&gt;v or
+ * A380336 Triangular array read by rows.  T(n,k) is the number of ways to choose a size k subset S of [n] and form a labeled acyclic digraph on S.  Then form another labeled acyclic digraph on [n]-S. For each pair u in S and v in [n]-S add the directed edge u-&gt;v or not, n&gt;=0, 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A380336 extends LambdaTriangle {

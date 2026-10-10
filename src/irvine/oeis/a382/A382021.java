@@ -1,9 +1,8 @@
 package irvine.oeis.a382;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
@@ -15,7 +14,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A382021 extends ParallelGenerateGraphsSequence {
 
-  private static final Set<String> CONSEC_DEGREE_SEQUENCES = Collections.synchronizedSet(new HashSet<>());
+  private static final Set<String> CONSEC_DEGREE_SEQUENCES = ConcurrentHashMap.newKeySet();
 
   /** Construct the sequence. */
   public A382021() {

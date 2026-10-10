@@ -1,8 +1,7 @@
 package irvine.oeis.a082;
 
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.api.Matrix;
 import irvine.math.graph.Graph;
@@ -22,7 +21,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 public class A082104 extends ParallelGenerateGraphsSequence {
 
   private static final PolynomialRing<Z> POLY = new PolynomialRing<>(IntegerField.SINGLETON);
-  private static final Set<Polynomial<Z>> SEEN = Collections.synchronizedSet(new HashSet<>());
+  private static final Set<Polynomial<Z>> SEEN = ConcurrentHashMap.newKeySet();
   private static MatrixRing<Polynomial<Z>> sRing = null;
 
   private static Polynomial<Z> characteristicPolynomial(final Graph graph) {

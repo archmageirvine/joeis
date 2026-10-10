@@ -1,8 +1,7 @@
 package irvine.oeis.a385;
 
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.graph.IndependencePolynomial;
 import irvine.math.nauty.GenerateGraphs;
@@ -16,8 +15,8 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A385864 extends ParallelGenerateGraphsSequence {
 
-  private static final Set<Polynomial<Z>> SEEN = Collections.synchronizedSet(new HashSet<>());
-  private static final Set<Polynomial<Z>> DUPES = Collections.synchronizedSet(new HashSet<>());
+  private static final Set<Polynomial<Z>> SEEN = ConcurrentHashMap.newKeySet();
+  private static final Set<Polynomial<Z>> DUPES = ConcurrentHashMap.newKeySet();
 
   /** Construct the sequence. */
   public A385864() {

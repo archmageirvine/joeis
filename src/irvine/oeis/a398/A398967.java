@@ -1,9 +1,8 @@
 package irvine.oeis.a398;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
@@ -16,7 +15,7 @@ public class A398967 extends ParallelPermutationSequence {
 
   // After Stephen J. Pursey
 
-  private final Set<String> mCanon = Collections.synchronizedSet(new HashSet<>());
+  private final Set<String> mCanon = ConcurrentHashMap.newKeySet();
 
   /** Construct the sequence. */
   public A398967() {

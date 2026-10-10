@@ -1,10 +1,9 @@
 package irvine.oeis.a052;
 
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
@@ -209,7 +208,7 @@ public class A052436 extends Sequence1 {
   }
 
   private int mN = 0;
-  private final Set<String> mCanons = Collections.synchronizedSet(new HashSet<>());
+  private final Set<String> mCanons = ConcurrentHashMap.newKeySet();
   private final Walker mWalker = new SelfAvoidingCycler(Z2Q, true) {
     @Override
     protected boolean isAcceptable(final long point, final int remainingSteps) {

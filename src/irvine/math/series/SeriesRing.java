@@ -266,6 +266,15 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
+   * Convenience method to return the inverse of a series.
+   * @param s series to form the inverse of
+   * @return inverse series
+   */
+  public Series<E> inverse(final Series<E> s) {
+    return pow(s, -1);
+  }
+
+  /**
    * Return the series multiplied by <code>x^shift</code>.
    * Works for positive, zero, and negative <code>shift</code>.
    * @param s series

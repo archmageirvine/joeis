@@ -2,9 +2,9 @@ package irvine.oeis.a383;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
@@ -18,7 +18,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A383894 extends ParallelGenerateGraphsSequence {
 
-  private static final Set<String> ARBORESCENT_PARTITIONS = Collections.synchronizedSet(new HashSet<>());
+  private static final Set<String> ARBORESCENT_PARTITIONS = ConcurrentHashMap.newKeySet();
 
   private static void arborescentPartition(final Graph g, final int root, final List<Integer> p) {
     // This is not a particularly efficient way of generating the partition

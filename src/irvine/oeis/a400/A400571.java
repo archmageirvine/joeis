@@ -18,7 +18,7 @@ public class A400571 extends Sequence1 {
     if (r == 0) {
       return Z.valueOf(q + 1).pow(n - 1).multiply(2 * n);
     } else {
-      return Z.valueOf(q + 1).pow((n - r - 1)).multiply(Z.valueOf(q + 2).pow(r - 1)).multiply(n * q + 2 * n - r).multiply2();
+      return Z.valueOf(q + 1).pow(n - r - 1).multiply(Z.valueOf(q + 2).pow(r - 1)).multiply(n * q + 2 * n - r).multiply2();
     }
   }
 

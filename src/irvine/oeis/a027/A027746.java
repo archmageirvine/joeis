@@ -14,22 +14,27 @@ import irvine.oeis.Sequence1;
 public class A027746 extends Sequence1 {
 
   private long mN = 0;
-  private final ArrayList<Z> mList = new ArrayList<>();
+  protected final ArrayList<Z> mList = new ArrayList<>();
   private int mM = 0;
 
-  @Override
-  public Z next() {
-    if (++mM >= mList.size()) {
-      if (++mN == 1) {
-        return Z.ONE;
-      }
-      mList.clear();
+  protected void step() {
+    mList.clear();
+    if (++mN == 1) {
+      mList.add(Z.ONE);
+    } else {
       final FactorSequence fs = Jaguar.factor(mN);
       for (final Z p : fs.toZArray()) {
         for (int k = 0; k < fs.getExponent(p); ++k) {
           mList.add(p);
         }
       }
+    }
+  }
+
+  @Override
+  public Z next() {
+    if (++mM >= mList.size()) {
+      step();
       mM = 0;
     }
     return mList.get(mM);

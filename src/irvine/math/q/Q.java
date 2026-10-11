@@ -523,6 +523,24 @@ public class Q extends Number implements Comparable<Q>, IsInteger, Serializable 
   }
 
   /**
+   * Interpret this rational an integer modulo a prime.
+   * @param p prime
+   * @return integer value
+   */
+  public Z mod(final long p) {
+    return mod(Z.valueOf(p));
+  }
+
+  /**
+   * Generalized modulo of rationals.
+   * @param m modulus
+   * @return modulo
+   */
+  public Q mod(final Q m) {
+    return subtract(m.multiply(valueOf(divide(m).floor())));
+  }
+
+  /**
    * Return a rational number with the same value as the specified long.
    * @param val a long value
    * @return a rational number with the value <code>val</code>

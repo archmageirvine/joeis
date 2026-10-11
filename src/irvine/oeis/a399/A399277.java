@@ -25,7 +25,7 @@ public class A399277 extends ParallelPermutationSequence {
     final int n = p.length;
     final int[] m = new int[n];
     for (int k = 1; k < n; ++k) {
-      ++m[(n + p[k-1] - p[k]) % n];
+      ++m[(n + p[k - 1] - p[k]) % n];
     }
     mA.add(Arrays.toString(m));
     return 0;

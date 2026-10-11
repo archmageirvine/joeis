@@ -16,7 +16,7 @@ public class A102548 extends Sequence1 {
 
   @Override
   public Z next() {
-    final FactorSequence fs= Jaguar.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     boolean ok = true;
     for (final Z p : fs.toZArray()) {
       if (p.mod(4) == 3 && (fs.getExponent(p) & 1) == 1) {

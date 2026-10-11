@@ -39,7 +39,7 @@ public class A400535 extends A027746 {
       do {
         mA.add(Functions.PRODUCT.z(tuple));
       } while (bump(tuple, lim));
-      System.out.println(mList + " -> " + mA);
+      //System.out.println(mList + " -> " + mA);
     }
     return mA.pollFirst();
   }

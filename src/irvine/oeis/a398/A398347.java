@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398347 allocated for Jishnu Babu Ranitha.
+ * A398347 Number of S_3-symmetric 3-dimensional vector partitions of (n, n, n) into strictly distinct parts.
  * @author Sean A. Irvine
  */
 public class A398347 extends Sequence0 {

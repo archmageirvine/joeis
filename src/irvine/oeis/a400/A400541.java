@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A400541 allocated for Ya-Ping Lu.
+ * A400541 Number of ways to write 2n as the sum of two integers each of which has an odd number of prime factors counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A400541 extends Sequence2 {

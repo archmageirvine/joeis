@@ -5,7 +5,7 @@ import irvine.oeis.a018.A018804;
 import irvine.oeis.a384.A384628;
 
 /**
- * A400361 allocated for Ctibor O. Zizka.
+ * A400361 a(n) = A018804(n) - A384628(n).
  * @author Sean A. Irvine
  */
 public class A400361 extends Combiner {

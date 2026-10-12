@@ -9,7 +9,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a000.A000364;
 
 /**
- * A111162 a(n)=sum_{k=0...n-1}B_k*A000364(k)*binomial(n,k) where B_k is the k-th Bernoulli number.
+ * A111162 a(n) = Sum_{k=0...n-1} B_k*A000364(k)*binomial(n,k) where B_k is the k-th Bernoulli number.
  * @author Georg Fischer
  */
 public class A111162 extends LambdaSequence {

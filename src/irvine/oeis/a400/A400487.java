@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400487 allocated for Omar Said.
+ * A400487 Number of positive integers k &lt; 2^n that take the same number of Collatz steps to reach 1 as k-1 or k+1.
  * @author Sean A. Irvine
  */
 public class A400487 extends Sequence1 {

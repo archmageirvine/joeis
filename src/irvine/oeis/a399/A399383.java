@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399383 allocated for Meghanto Majumder.
+ * A399383 Triangle read by rows: T(n,k) = Sum_{i=0..n-k} binomial(n,i)*|Stirling1(n-i,k)|*k^i, for n &gt;= 0 and 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A399383 extends Sequence0 {

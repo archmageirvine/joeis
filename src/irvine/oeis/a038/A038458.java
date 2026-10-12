@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A038458 Decimal expansion of the solution to 127^x - 113^x = 1. This is the smallest x such that q^x - p^x = 1 for two successive primes p, q.
+ * A038458 Decimal expansion of the solution to 127^x - 113^x = 1. This is the smallest known x such that q^x - p^x = 1 for two successive primes p, q.
  * @author Sean A. Irvine
  */
 public class A038458 extends DecimalExpansionSequence {

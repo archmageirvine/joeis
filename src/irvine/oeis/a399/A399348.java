@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399348 allocated for Hassane Bakkaoui.
+ * A399348 Numbers k such that the number of consecutive values m = 0, 1, 2, ... for which |3*m^2 + 3*m - k| is prime is larger than for every smaller k.
  * @author Sean A. Irvine
  */
 public class A399348 extends Sequence1 {

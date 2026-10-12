@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000796;
 
 /**
- * A099297 Number of times the digit 6 appears in the first 10^n digits of Pi.
+ * A099297 Number of times the digit 6 appears in the first 10^n digits after the decimal point of Pi.
  * @author Georg Fischer
  */
 public class A099297 extends AbstractSequence {

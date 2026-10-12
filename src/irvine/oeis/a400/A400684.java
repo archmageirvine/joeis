@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001359;
 
 /**
- * A400684 allocated for Hector Yan Estivel.
+ * A400684 Primes p such that p+2 and (p-1)^2+1 are also prime.
  * @author Sean A. Irvine
  */
 public class A400684 extends FilterSequence {

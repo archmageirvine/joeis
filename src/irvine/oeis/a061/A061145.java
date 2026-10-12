@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061145 Sum of continued fraction terms in Sum_{k=1..n}(1/k^2).
+ * A061145 Sum of continued fraction terms in Sum_{k=1..n} (1/k^2).
  * @author Sean A. Irvine
  */
 public class A061145 extends Sequence1 {

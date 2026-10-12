@@ -5,7 +5,7 @@ import irvine.oeis.a105.A105876;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A114564 Numbers of the form n=12s+7, where q=4s+3 is a prime for which the order of 2 is either q-1 or (q-1)/2.
+ * A114564 Numbers of the form 12s+7, where q=4s+3 is a prime for which the order of 2 is either q-1 or (q-1)/2.
  * @author Georg Fischer
  */
 public class A114564 extends SimpleTransformSequence {

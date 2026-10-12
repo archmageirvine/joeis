@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400509 allocated for Felix Huber.
+ * A400509 a(n) is the number of distinct integer-sided triangles that can be placed with their vertices on three different sides of a square of side n.
  * @author Sean A. Irvine
  */
 public class A400509 extends Sequence1 {

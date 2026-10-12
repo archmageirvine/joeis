@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A020552 6th Fibonacci polynomial evaluated at x=n!.
+ * A020552 Sixth Fibonacci polynomial evaluated at x=n!.
  * @author Sean A. Irvine
  */
 public class A020552 extends Sequence0 {

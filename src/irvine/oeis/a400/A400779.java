@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086786.
+ * A400779 a(n) = Sum_{d|n} gcd(n,d+1).
  * @author Sean A. Irvine
  */
 public class A400779 extends Sequence1 {

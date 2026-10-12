@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A096618 Least k such that H(k) &gt;= 10^n, where H(k) is the harmonic number Sum_{i=0..k} 1/i.
+ * A096618 Least k such that H(k) &gt;= 10^n, where H(k) is the harmonic number Sum_{i=1..k} 1/i.
  *
  * @author Georg Fischer
  */

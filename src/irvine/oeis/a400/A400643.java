@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400643 allocated for Stuart Coe.
+ * A400643 Numbers k such that (k+1)^k-(k+2) is prime.
  * @author Sean A. Irvine
  */
 public class A400643 extends FilterNumberSequence {

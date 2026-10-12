@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398668 allocated for Jean Lauro Muller.
+ * A398668 Number of equivalence classes of dessins d'enfants with n edges under known Galois invariants.
  * @author Sean A. Irvine
  */
 public class A398668 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400534 allocated for Felix Huber.
+ * A400534 a(n) is the maximum number of entries in row n of Pascal's triangle divisible by the same prime.
  * @author Sean A. Irvine
  */
 public class A400534 extends Sequence0 {

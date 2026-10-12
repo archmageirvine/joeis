@@ -338,6 +338,19 @@ public class Polynomial<E> extends ArrayList<E> implements Series<E> {
      return aggr;
    }
 
+  /**
+   * Return the least index of a nonzero coefficient.
+   * @return least index of a nonzero coefficient
+   */
+  public int leastNonzeroIndex() {
+    for (int k = 0; k <= degree(); ++k) {
+      if (!coeff(k).equals(mZero)) {
+        return k;
+      }
+    }
+    return -1;
+  }
+
   @Override
   public boolean equals(final Object o) {
     if (!(o instanceof Polynomial)) {

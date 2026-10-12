@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A400572 allocated for Michael Shmoish.
+ * A400572 Primes of the form the product of two semiprimes plus 1.
  * @author Sean A. Irvine
  */
 public class A400572 extends FilterSequence {

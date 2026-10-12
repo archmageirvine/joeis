@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a268.A268335;
 
 /**
- * A398170 Exponentially odd numbers numbers k such that k+1 is squarefree.
+ * A398170 Exponentially odd numbers k such that k+1 is squarefree.
  * @author Georg Fischer
  */
 public class A398170 extends FilterSequence {

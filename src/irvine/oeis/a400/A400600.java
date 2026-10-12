@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A400600 allocated for Fedor Karpelevitch.
+ * A400600 Largest m such that one defective in an m-item set and one in a disjoint 5-item set can always be identified in at most n adaptive tests, each returning the number of defectives in a selected subset (0 if no positive m is feasible).
  * @author Sean A. Irvine
  */
 public class A400600 extends Sequence2 {

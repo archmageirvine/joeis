@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001795 Coefficients of Legendre polynomials.
+ * A001795 Coefficient of P_0(x) in the Legendre expansion of x^n.
  * @author Sean A. Irvine
  */
 public class A001795 extends Sequence0 {

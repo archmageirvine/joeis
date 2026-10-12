@@ -6,7 +6,7 @@ import irvine.oeis.a163.A163778;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A294434 a(0)=0; for n&gt;0, a(n) = (A163778(n)-1)/2.
+ * A294434 a(n) = (A163778(n)-1)/2.
  * @author Georg Fischer
  */
 public class A294434 extends SingleTransformSequence {

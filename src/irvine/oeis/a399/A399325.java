@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086811.
+ * A399325 allocated for Karan Sharma.
  * @author Sean A. Irvine
  */
 public class A399325 extends DecimalExpansionSequence {

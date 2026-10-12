@@ -4,7 +4,7 @@ import irvine.math.dirichlet.Dgf;
 import irvine.oeis.DirichletSequence;
 
 /**
- * A398922 allocated for David Bevan.
+ * A398922 Number of distinct acute lattice trapezia of area n/2 with horizontal base.
  * @author Sean A. Irvine
  */
 public class A398922 extends DirichletSequence {

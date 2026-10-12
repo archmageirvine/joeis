@@ -30,7 +30,7 @@ public class A397673 extends Sequence1 {
           assert (x + y) * (x + y) == u;
           final long z2 = mA * mA - x * x;
           final long z = Functions.SQRT.l(z2);
-          if (z * z == z2 && y * y + z2 == mB * mB && Functions.GCD.l(mA, mB, x, y, z) == 1) { // Janaka omits c
+          if (z * z == z2 && y * y + z2 == mB * mB && Functions.GCD.l(mA, mB, x, y, z) == 1) {
             //System.out.println("Ok: (" + mA + "," + mB + "," + c + "," + x + "," + y + "," + z + ")");
             return Z.valueOf(mA);
           }

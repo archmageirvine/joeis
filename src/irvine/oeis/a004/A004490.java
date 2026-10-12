@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004490 Colossally abundant numbers: m for which there is a positive exponent epsilon such that sigma(m)/m^{1 + epsilon} &gt;= sigma(k)/k^{1 + epsilon} for all k &gt; 1, so that m attains the maximum value of sigma(m)/m^{1 + epsilon}.
+ * A004490 Colossally abundant numbers: integers m &gt; 1 for which there is a positive exponent epsilon such that sigma(m)/m^{1 + epsilon} &gt;= sigma(k)/k^{1 + epsilon} for all k &gt; 1, so that m attains the maximum value of sigma(m)/m^{1 + epsilon}.
  * @author Sean A. Irvine
  */
 public class A004490 extends Sequence1 {

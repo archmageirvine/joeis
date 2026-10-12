@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a327.A327982;
 
 /**
- * A400323 allocated for David L. Condrey.
+ * A400323 Number of steps for the Rule 30 middle-column random walk to reach distance n.
  * @author Sean A. Irvine
  */
 public class A400323 extends Sequence1 {

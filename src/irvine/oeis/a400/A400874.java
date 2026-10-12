@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A086811.
+ * A400874 The total sum of infinitary divisors of the infinitary divisors of n.
  * @author Sean A. Irvine
  */
 public class A400874 extends MultiplicativeSequence {

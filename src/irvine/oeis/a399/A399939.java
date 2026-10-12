@@ -4,7 +4,7 @@ import irvine.math.IntegerUtils;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A399939 allocated for Pontus von Br\u00f6mssen.
+ * A399939 Number of permutations of 1..n such that the Hankel matrix of any subsequence of an odd number of consecutive terms is nonsingular.
  * @author Sean A. Irvine
  */
 public class A399939 extends ParallelPermutationSequence {

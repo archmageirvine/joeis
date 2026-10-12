@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A140056 Triangle of coefficients: f(x,y,n) = x^n - y^(n-1)*x - y^n; p(x,y,z,n) = f(x,y,n) + f(y,z,n) + f(z,x,n).
+ * A140056 Triangle read by rows: T(n,k) = [x^k] (-1-x-x^(n-1)) with T(0,0)=-3.
  * @author Sean A. Irvine
  */
 public class A140056 extends Sequence0 {

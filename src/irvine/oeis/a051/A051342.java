@@ -10,11 +10,6 @@ import irvine.oeis.a002.A002110;
  */
 public class A051342 extends A002110 {
 
-  {
-    setOffset(1);
-    super.next();
-  }
-
   @Override
   public Z next() {
     return Functions.LPF.z(super.next().add(1));

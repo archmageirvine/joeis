@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399975 allocated for \u017diga Pirc.
+ * A399975 Numbers k whose binary XOR of their distinct prime divisors is 0.
  * @author Sean A. Irvine
  */
 public class A399975 extends FilterNumberSequence {

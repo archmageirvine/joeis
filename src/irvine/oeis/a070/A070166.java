@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070166 Irregular triangle read by rows giving T(n,k) = number of rooted graphs on n + 1 nodes with k edges (n &gt;= 0, 0 &lt;= k &lt;= n(n-1)/2).
+ * A070166 Irregular triangle read by rows giving T(n,k) = number of rooted graphs on n + 1 nodes with k edges (n &gt;= 0, 0 &lt;= k &lt;= n(n+1)/2).
  * @author Sean A. Irvine
  */
 public class A070166 extends Sequence0 {

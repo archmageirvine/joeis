@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A399478 allocated for Param Srivastava.
+ * A399478 a(n) = n! * (H_{n-1} - 1/n), where H_n is the n-th harmonic number.
  * @author Sean A. Irvine
  */
 public class A399478 extends EgfSequence {

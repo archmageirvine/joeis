@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A399054 allocated for Avdhoot Pande.
+ * A399054 Number of distinct resistances that can be produced from a circuit of exactly n resistors, each of which is 1 ohm or 2 ohms, using only series and parallel combinations.
  * @author Sean A. Irvine
  */
 public class A399054 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400181 allocated for Dieter Renz.
+ * A400181 a(n) = D_n - A_n, where D_n is the descending permutation and A_n is the ascending permutation of n copies of each decimal digit 0..9.
  * @author Sean A. Irvine
  */
 public class A400181 extends Sequence1 {

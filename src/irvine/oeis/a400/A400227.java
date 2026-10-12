@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a102.A102548;
 
 /**
- * A400227 allocated for Carlo Mitchener.
+ * A400227 Number of distinct positive distances from the origin to points of (1/n)*Z^2 in the closed disc of radius sqrt(2) that do not occur for (1/m)*Z^2 with any m &lt; n.
  * @author Sean A. Irvine
  */
 public class A400227 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399132 allocated for Jishnu Babu Ranitha.
+ * A399132 Square array T(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals: T(n,k) = Sum_{j=0..n} Stirling2(n,j) * binomial(k+j-1, j-1), where Stirling2 are the Stirling numbers of the second kind (A008277).
  * @author Sean A. Irvine
  */
 public class A399132 extends Sequence0 {

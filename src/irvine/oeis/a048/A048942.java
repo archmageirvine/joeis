@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A048942 a(n) is twice the coefficient of the radical part in the fundamental unit of Q(sqrt(A000037(n))) where A000037 lists the nonsquare numbers (Version 1).
+ * A048942 Smallest positive integer y such that x^2 - A000037(n)*y^2 = +-4 for some positive integer x.
  * @author Sean A. Irvine
  */
 public class A048942 extends A000037 {

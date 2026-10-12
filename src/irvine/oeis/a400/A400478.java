@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400478 allocated for Ganesh Jasawat.
+ * A400478 a(1)=1, a(2)=2; thereafter a(n) = (a(n-1)-a(n-2))*sum of digits(a(n-1)+a(n-2)).
  * @author Sean A. Irvine
  */
 public class A400478 extends Sequence1 {

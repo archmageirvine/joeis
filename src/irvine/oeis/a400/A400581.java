@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002202;
 
 /**
- * A400581 allocated for Jud McCranie.
+ * A400581 Increasingly isolated totient numbers.
  * @author Sean A. Irvine
  */
 public class A400581 extends Sequence1 {

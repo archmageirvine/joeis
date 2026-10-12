@@ -4,7 +4,7 @@ package irvine.oeis.a387;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A387645 Detour index of the n X n black bishop graph.
+ * A387645 a(n) = m*(m-1)^2/2, where m = ceiling(n^2/2).
  * @author Georg Fischer
  */
 public class A387645 extends HolonomicRecurrence {

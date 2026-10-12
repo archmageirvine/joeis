@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047201;
 
 /**
- * A400182 allocated for Farhad Banazadeh.
+ * A400182 Number of steps starting from the n-th positive integer not divisible by 5 until the first repeated value under the reduced residue-dependent 6k +- {1,2} map, or -1 if no value ever repeats.
  * @author Sean A. Irvine
  */
 public class A400182 extends A047201 {

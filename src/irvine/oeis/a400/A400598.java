@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A400598 allocated for Bartlomiej Pawlik.
+ * A400598 Squares visited by a chess king moving on the square spiral, always moving to an adjacent unvisited square whose number has the smallest digit sum; ties are resolved by choosing the lowest number.
  * @author Sean A. Irvine
  */
 public class A400598 extends FiniteSequence {

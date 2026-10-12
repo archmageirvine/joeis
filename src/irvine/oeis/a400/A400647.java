@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400647 allocated for Tesfamichael Bogale.
+ * A400647 a(1) = 2; a(n+1) is the least prime factor of 1 + Product_{k=1..n, a(k) active} a(k) which is not yet in the sequence, where a(k) becomes permanently inactive as soon as some later a(j), j&gt;k, is less than a(k).
  * @author Sean A. Irvine
  */
 public class A400647 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a397.A397739;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A395978 allocated for Peter Munn.
+ * A395978 Square array A(n,k), n, k &gt;= 1, read by ascending antidiagonals, where row n is the ordered set {r*m : rad(m) | r} for squarefree r = A397739(n), where rad = A007947.
  * @author Sean A. Irvine
  */
 public class A395978 extends Sequence1 {

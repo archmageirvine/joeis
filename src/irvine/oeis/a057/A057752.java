@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006880;
 
 /**
- * A057752 Difference between nearest integer to Li(10^n) and pi(10^n), where Li(x) = integral of log(x) and pi(10^n) = number of primes &lt;= 10^n (A006880).
+ * A057752 Difference between nearest integer to Li(10^n) and pi(10^n), where Li(x) is the principal-value integral of 1/log(t) from 0 to x and pi(10^n) = number of primes &lt;= 10^n (A006880).
  * @author Sean A. Irvine
  */
 public class A057752 extends A006880 {

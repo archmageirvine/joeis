@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A397217 allocated for Eric Stolee.
+ * A397217 The smallest number that is n grid steps horizontally or vertically from n in the square spiral as in A316667.
  * @author Sean A. Irvine
  */
 public class A397217 extends Sequence1 {

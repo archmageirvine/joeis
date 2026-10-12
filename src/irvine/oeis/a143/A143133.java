@@ -5,7 +5,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A143133 Number of cribbage hands with score n.
+ * A143133 Number of cribbage hands with score n when flush points are omitted.
  * @author Georg Fischer
  */
 public class A143133 extends FiniteSequence {

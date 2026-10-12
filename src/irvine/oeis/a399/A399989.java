@@ -8,7 +8,7 @@ import irvine.math.series.SeriesRing;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A399989 allocated for Sivaramakrishnan Sivasubramanian.
+ * A399989 Number of fixed point free involutions in S_{2n} (or perfect matchings on [2n]) which avoid the permutations {123, 213, 231}.
  * @author Sean A. Irvine
  */
 public class A399989 extends GfSequence {

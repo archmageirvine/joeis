@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A400630 allocated for Hunter Hogan.
+ * A400630 Number of semi-meanders with n crossings and winding number n-4, for n &gt;= 4.
  * @author Sean A. Irvine
  */
 public class A400630 extends AbstractSequence {

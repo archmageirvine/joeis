@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399927 allocated for Hendrik Untch.
+ * A399927 Lexicographically earliest sequence such that each term specifies how many positions away the nearest larger term occurs.
  * @author Sean A. Irvine
  */
 public class A399927 extends Sequence1 {

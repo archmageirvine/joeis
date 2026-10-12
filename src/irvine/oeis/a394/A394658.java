@@ -1,23 +1,15 @@
 package irvine.oeis.a394;
 
-import irvine.math.function.Functions;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.FiniteSequence;
 
 /**
  * A394658 Numbers k such that sigma(k) = psi(k) + tau(k) + Omega(k)^2.
  * @author Sean A. Irvine
  */
-public class A394658 extends Sequence1 {
+public class A394658 extends FiniteSequence {
 
-  private long mN = 0;
-
-  @Override
-  public Z next() {
-    while (true) {
-      if (Functions.SIGMA1.z(++mN).equals(Functions.DEDEKIND_PSI.z(mN).add(Functions.SIGMA0.z(mN)).add(Functions.BIG_OMEGA.z(mN).square()))) {
-        return Z.valueOf(mN);
-      }
-    }
+  /** Construct the sequence. */
+  public A394658() {
+    super(1, FINITE, 56, 135, 375, 686);
   }
 }

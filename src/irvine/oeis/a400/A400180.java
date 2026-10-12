@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400180 allocated for Ekayan Singh.
+ * A400180 Gregorian years in which approximate dates for Diwali (Hindu lunar month 8, day 1) and Eid al-Fitr (1 Shawwal, arithmetic Islamic calendar) fall on the same or consecutive days, using the calendars of Reingold and Dershowitz.
  * @author Sean A. Irvine
  */
 public class A400180 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A086811.
+ * A399725 Numbers k that have no proper divisors d such that k - d is squarefree.
  * @author Sean A. Irvine
  */
 public class A399725 extends FilterNumberSequence {

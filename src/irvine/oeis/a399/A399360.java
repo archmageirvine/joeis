@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399360 allocated for Stephen Casey.
+ * A399360 Positive numbers equal to the sum of the fourth powers of their first k divisors for some k.
  * @author Sean A. Irvine
  */
 public class A399360 extends FilterNumberSequence {

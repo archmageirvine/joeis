@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001316;
 
 /**
- * A061549 Denominator of probability that there is no error when average of n numbers is computed, assuming errors of +1, -1 are possible and they each occur with p=1/4.
+ * A061549 Denominator of probability that there is no error when average of 2n numbers is computed, assuming errors of +1, -1 are possible and they each occur with p=1/4.
  * @author Georg Fischer
  */
 public class A061549 extends Sequence0 {

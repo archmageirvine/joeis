@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A210974 Decimal expansion of the angle (in degrees) between an edge and (the normal of) a face of the regular tetrahedron.
+ * A210974 Decimal expansion of the angle (in degrees) between an edge and a face not containing that edge of the regular tetrahedron.
  * Formula: arccos(sqrt(1/3))*180/Pi
  * @author Georg Fischer
  */

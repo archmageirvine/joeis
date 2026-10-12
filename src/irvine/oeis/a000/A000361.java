@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000361 From a fractal set of positive Lebesgue measure, a self-replicating tiling with holes, the 4-reptile following the 2-reptile of Paul Levy.
+ * A000361 Binary encodings of the successive columns of the Gosper-Lafitte triangle.
  * @author Sean A. Irvine
  */
 public class A000361 extends Sequence0 {

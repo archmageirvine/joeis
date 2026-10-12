@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108997 Coordination sequence for the 120-cell: number of vertices n steps away from a given vertex on the regular 120-cell (hecatonicosachoron or {3,3,5}).
+ * A108997 Coordination sequence for the 120-cell: number of vertices n steps away from a given vertex on the regular 120-cell (hecatonicosachoron or {5,3,3}).
  * @author Georg Fischer
  */
 public class A108997 extends FiniteSequence {

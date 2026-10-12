@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a400.A400298;
 
 /**
- * A396003 allocated for Vicenzo P DeMaar.
+ * A396003 Sum of the decimal digits of all distinct n-digit numbers that are products of two positive decimal repunits.
  * @author Sean A. Irvine
  */
 public class A396003 extends A400298 {

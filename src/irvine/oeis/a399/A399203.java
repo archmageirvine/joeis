@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399203 allocated for Vladeta Jovovic.
+ * A399203 Number of equivalence classes of maps f: {0,1}^n -&gt; {0,1}^n under conjugation by permutations of coordinates.
  * @author Sean A. Irvine
  */
 public class A399203 extends Sequence0 {

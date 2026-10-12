@@ -19,7 +19,7 @@ public class A295193 extends Sequence1 {
 
   // After Andrew Howroyd
 
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
+  protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;
 
   protected static int valuation(final Polynomial<Z> p) {

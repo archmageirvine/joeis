@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A048819 Decimal expansion of one of four fixed points (mod 1) of Minkowski's question mark function.
+ * A048819 Decimal expansion of the Minkowski-Bower constant.
  * @author Sean A. Irvine
  */
 public class A048819 extends DecimalExpansionSequence {

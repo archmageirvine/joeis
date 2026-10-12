@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399587 allocated for Jean-Marc Rebert.
+ * A399587 Smallest number m whose binary representation contains representatives of all binary words of length n up to reversal.
  * @author Sean A. Irvine
  */
 public class A399587 extends Sequence1 {

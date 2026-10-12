@@ -1,41 +1,42 @@
 package irvine.oeis.a398;
 
-import irvine.factor.prime.Fast;
-import irvine.oeis.ParallelPermutationSequence;
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
+import irvine.oeis.a174.A174973;
+import irvine.util.array.DynamicArray;
+import irvine.util.string.StringUtils;
 
 /**
  * A398694 allocated for Omar E. Pol.
  * @author Sean A. Irvine
  */
-public class A398694 extends ParallelPermutationSequence {
+public class A398694 extends Sequence1 {
 
-  private final Fast mPrime = new Fast();
-
-  /** Construct the sequence. */
-  public A398694() {
-    super(1, 2, 12);
-  }
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final Sequence mS = new A174973();
+  private final DynamicArray<Z> mFirsts = new DynamicArray<>();
+  private int mN = 0;
 
   @Override
-  protected boolean accept(final int[] p, final int sum, final int pos) {
-    if (p[0] != 0) {
-      return false;
+  public Z next() {
+    ++mN;
+    while (mFirsts.get(mN) == null) {
+      final Z t = mS.next();
+      int cnt = 0;
+      for (final Z d : Jaguar.factor(t).divisors()) {
+        if (d.isOdd()) {
+          ++cnt;
+        }
+      }
+      if (mFirsts.get(cnt) == null) {
+        mFirsts.set(cnt, t);
+        if (mVerbose) {
+          StringUtils.message("Solution for n=" + cnt + " is " + t);
+        }
+      }
     }
-    if (pos <= 1) {
-      return true;
-    }
-    // This next condition is the difference from A051252
-    final int n = mN / 2;
-    if (pos > n && p[pos - 1] + p[pos - n - 1] != mN - 1) {
-      return false;
-    }
-    if (!mPrime.isPrime(Math.abs(p[pos - 1] + p[pos - 2] + 2))) { // +2 since our elements are 0-based
-      return false;
-    }
-    if (pos == p.length && (p[p.length - 1] > p[1] || !mPrime.isPrime(p[p.length - 1] + 2))) { // p[0]==0
-      return false;
-    }
-    return true;
+    return mFirsts.get(mN);
   }
 }
-

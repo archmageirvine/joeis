@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400585 allocated for Jishnu Babu Ranitha.
+ * A400585 a(n) = Sum_{d|n, n/d odd} binomial(d, 2).
  * @author Sean A. Irvine
  */
 public class A400585 extends Sequence1 {

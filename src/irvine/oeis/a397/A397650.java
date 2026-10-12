@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397650 allocated for David Radcliffe.
+ * A397650 Largest 2-adic valuation of a number with n nonzero decimal digits not ending in zero.
  * @author Sean A. Irvine
  */
 public class A397650 extends Sequence1 {

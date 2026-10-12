@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A398413 allocated for Robert G. Wilson v.
+ * A398413 Number of ways the n-th prime is a Pillai prime.
  * @author Sean A. Irvine
  */
 public class A398413 extends A000040 {

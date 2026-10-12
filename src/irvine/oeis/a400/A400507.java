@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400507 allocated for Eddie Lin Rui.
+ * A400507 Square array A(n,k) = k*(k+2)^(n-1), n &gt;= 1, k &gt;= 1, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A400507 extends Sequence1 {

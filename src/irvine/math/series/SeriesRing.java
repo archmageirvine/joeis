@@ -286,7 +286,7 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Return the derivative of a series.
+   * Return the formal derivative of a series.
    * @param s series to take derivative of
    * @return derivative
    */
@@ -295,12 +295,22 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Return the formal integral of a series.
+   * Return the formal indefinite integral of a series.
    * @param s series to take integral of
-   * @return derivative
+   * @param constant constant of integration
+   * @return integral
+   */
+  public Series<E> integrate(final Series<E> s, final E constant) {
+    return cache(new Integral<>(mElementField, s, constant));
+  }
+
+  /**
+   * Return the formal indefinite integral of a series.
+   * @param s series to take integral of
+   * @return integral
    */
   public Series<E> integrate(final Series<E> s) {
-    return cache(new Integral<>(mElementField, s));
+    return integrate(s, mElementField.zero());
   }
 
   /**

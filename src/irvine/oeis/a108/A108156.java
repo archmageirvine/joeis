@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A108156 Numbers n such that a(n) is prime, where a(n) = a(n-1) + a(n-2), a(1) = 3794765361567513, a(2) = 20615674205555510.
+ * A108156 Numbers k such that f(k) is prime, where f(k) = f(k-1) + f(k-2), f(1) = 3794765361567513, f(2) = 20615674205555510.
  * @author Georg Fischer
  */
 public class A108156 extends FilterPositionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400471 allocated for Jwalin Bhatt.
+ * A400471 Write the positive squares 1, 4, 9, 16, ... in base 2 and juxtapose.
  * @author Sean A. Irvine
  */
 public class A400471 extends Sequence0 {

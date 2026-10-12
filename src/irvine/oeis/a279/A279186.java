@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a007.A007733;
 
 /**
- * A279186 Maximal entry in n-th row of A279185.
+ * A279186 Maximal entry in the n-th row of A279185.
  * @author Georg Fischer
  */
 public class A279186 extends LambdaSequence {

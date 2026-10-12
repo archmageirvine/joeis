@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a392.A392325;
 
 /**
- * A396747 allocated for Guido Avagliano.
+ * A396747 Numbers m that are vampire numbers in at least one base b.
  * @author Sean A. Irvine
  */
 public class A396747 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a073.A073353;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A075656 n + product of prime factors of n.
+ * A075656 Incorrect duplicate of A073353.
  * @author Georg Fischer
  */
 public class A075656 extends SingleTransformSequence {

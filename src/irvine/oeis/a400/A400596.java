@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A400596 allocated for Bartlomiej Pawlik.
+ * A400596 Squares visited by a chess king moving on the square spiral, always moving to an adjacent unvisited square whose number has the fewest distinct prime factors; ties are resolved by choosing the lowest number.
  * @author Sean A. Irvine
  */
 public class A400596 extends FiniteSequence {

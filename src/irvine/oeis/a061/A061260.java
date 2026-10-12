@@ -5,18 +5,18 @@ import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A061260 G.f.: Product_{k&gt;=1} (1-y*x^k)^(-numbpart(k)), where numbpart(k) = number of partitions of k, cf. A000041.
  * @author Sean A. Irvine
  */
-public class A061260 extends Sequence1 {
+public class A061260 extends Sequence0 {
 
   // After Alois P. Heinz
 
   private int mN = 0;
-  private int mM = 0;
+  private int mM = -1;
 
   private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
@@ -44,7 +44,7 @@ public class A061260 extends Sequence1 {
   public Z next() {
     if (++mM > mN) {
       ++mN;
-      mM = 1;
+      mM = 0;
     }
     return t(mN, mM);
   }

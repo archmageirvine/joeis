@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A400325 allocated for Bernard Schott.
+ * A400325 a(n) is the number of ordered pairs (x,y) modulo prime(n) satisfying the equation of the Lemniscate of Bernoulli (x^2+y^2)^2 = x^2-y^2.
  * @author Sean A. Irvine
  */
 public class A400325 extends A000040 {

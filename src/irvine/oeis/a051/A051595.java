@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A051595 Minimal elements of pairs of "(-1)sigma amicable numbers", sorted by their minimal elements.
+ * A051595 Lesser members of pairs of "(-1)sigma amicable numbers", sorted by their lesser members.
  * @author Sean A. Irvine
  */
 public class A051595 extends Sequence0 {

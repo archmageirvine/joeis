@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A400651 allocated for Mario C\u00e0llisto.
+ * A400651 Number of n-uniform honeycombs of Euclidean 3-space by convex uniform polyhedra having n different vertex stars.
  * @author Sean A. Irvine
  */
 public class A400651 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A399287 allocated for Om S. M. Yadav.
+ * A399287 Primes p such that if p &lt; q &lt; r are consecutive primes, p + 2*q*r, q + 2*p*r, and r + 2*p*q are all primes.
  * @author Sean A. Irvine
  */
 public class A399287 extends A000040 {

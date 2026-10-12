@@ -4,7 +4,7 @@ package irvine.oeis.a351;
 import irvine.oeis.FilterSequence;
 
 /**
- * A351087 After initial 0, numbers k such that A327860(k) is a multiple of k.
+ * A351087 Numbers k such that A327860(k) is a multiple of k, where A327860 is the arithmetic derivative of the primorial base exp-function.
  * @author Georg Fischer
  */
 public class A351087 extends FilterSequence {

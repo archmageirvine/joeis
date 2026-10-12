@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400688 allocated for Stefano Spezia.
+ * A400688 Triangle of the Catalan Pell numbers read by rows: T(n,k) = [x^n] (1 - 2*x - Sum_{h=1..k-1} A000108(h)*x^(h+1))^(-1), with 0 &lt; k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A400688 extends Sequence1 {

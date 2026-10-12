@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399563 allocated for Yu-Wen Wang.
+ * A399563 Numbers k such that the tens digit of k^2 equals the units digit of 2*k.
  * @author Sean A. Irvine
  */
 public class A399563 extends FilterNumberSequence {

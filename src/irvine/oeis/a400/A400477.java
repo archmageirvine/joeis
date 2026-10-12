@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400477 allocated for Janaka Rodrigo.
+ * A400477 Perimeters belonging to more than one Pythagorean triple with at least two of those triples having a side in common.
  * @author Sean A. Irvine
  */
 public class A400477 extends Sequence1 {

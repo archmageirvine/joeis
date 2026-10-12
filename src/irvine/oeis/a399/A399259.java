@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399259 allocated for Clark Kimberling.
+ * A399259 Rectangular array (c(n, k)), read by descending antidiagonals: c(n, k) = 1 if floor(k*Pi^n) = floor(m*Pi) for some positive integer m, and c(n, k) = 0 otherwise.
  * @author Sean A. Irvine
  */
 public class A399259 extends Sequence1 {

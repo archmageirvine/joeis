@@ -1,13 +1,16 @@
 package irvine.oeis.a015;
 
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
 
 /**
  * A015109 Triangle of Gaussian (or q-binomial) coefficients for q = -2.
  * @author Sean A. Irvine
  */
-public class A015109 extends Sequence0 {
+public class A015109 extends Sequence0 implements DirectArray {
 
   private int mN = -1;
   private int mM = -1;
@@ -38,4 +41,11 @@ public class A015109 extends Sequence0 {
     }
     return mP;
   }
+
+  @Override
+  public Z a(final long n, final long k) {
+    // mul( ((-2)^(1+n-i)-1)/((-2)^i-1) , i=1..k) ;
+    return Rationals.SINGLETON.product(1, k, i -> new Q(Z.valueOf(q()).pow(n - i + 1).subtract(1), Z.valueOf(q()).pow(i).subtract(1))).num();
+  }
+
 }

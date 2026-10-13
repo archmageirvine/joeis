@@ -1,16 +1,22 @@
 package irvine.oeis.a392;
 
-import irvine.math.function.Functions;
-import irvine.oeis.FilterNumberSequence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000040;
 
 /**
  * A392518 Numbers k such that sigma(k) = psi(k) + tau(k)^2 + omega(k).
  * @author Sean A. Irvine
  */
-public class A392518 extends FilterNumberSequence {
+public class A392518 extends A000040 {
 
-  /** Construct the sequence. */
-  public A392518() {
-    super(1, 148, k -> Functions.SIGMA1.z(k).equals(Functions.DEDEKIND_PSI.z(k).add(Functions.SIGMA0.z(k).square()).add(Functions.OMEGA.z(k))));
+  private static final Z M = Z.valueOf(37);
+
+  @Override
+  public Z next() {
+    Z p = super.next();
+    if (p.equals(M)) {
+      p = super.next();
+    }
+    return M.multiply(p.square());
   }
 }

@@ -2,22 +2,41 @@ package irvine.oeis.a394;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.FiniteSequence;
+import irvine.oeis.UnionSequence;
+import irvine.oeis.a000.A000040;
 
 /**
  * A394751 Numbers k such that sigma(k) = psi(k) + tau(k) + Omega(k)^4.
  * @author Sean A. Irvine
  */
-public class A394751 extends Sequence1 {
+public class A394751 extends UnionSequence {
 
-  private long mN = 0;
+  private static final class MySequence extends A000040 {
+    private final Z mM;
 
-  @Override
-  public Z next() {
-    while (true) {
-      if (Functions.SIGMA1.z(++mN).equals(Functions.DEDEKIND_PSI.z(mN).add(Functions.SIGMA0.z(mN)).add(Functions.BIG_OMEGA.z(mN).pow(4)))) {
-        return Z.valueOf(mN);
+    /** Construct the sequence. */
+    private MySequence(final long m) {
+      mM = Z.valueOf(m);
+    }
+
+    @Override
+    public Z next() {
+      while (true) {
+        final Z p = super.next();
+        if (Functions.GCD.z(mM, p).isOne()) {
+          return mM.multiply(p.square());
+        }
       }
     }
   }
+
+  /** Construct the sequence. */
+  public A394751() {
+    super(1,
+      new FiniteSequence(1, FiniteSequence.FINITE, 5375, 397535),
+      new MySequence(546)
+    );
+  }
 }
+

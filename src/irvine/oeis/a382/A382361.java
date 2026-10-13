@@ -1,73 +1,27 @@
 package irvine.oeis.a382;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.math.q.Q;
+import irvine.math.series.Series;
+import irvine.oeis.a000.A000108;
+import irvine.oeis.a103.A103970;
+import irvine.oeis.gf.GfSequence;
 
 /**
  * A382361 Number of nonnesting permutations of the multiset {1,1,2,2,...,n,n} that avoid 123.
  * @author Sean A. Irvine
  */
-public class A382361 extends Sequence1 {
+public class A382361 extends GfSequence {
 
-  private int mN = 0;
-  private int[] mP = null;
-  private int[] mUsed = null;
-  private long mCount = 0;
-
-  private boolean is(final int pos) {
-    if (mUsed[mP[pos]] == 2) {
-      // Check nesting
-      int k = 0;
-      while (mP[k] != mP[pos]) {
-        ++k;
-      }
-      assert k < pos;
-      for (int j = k + 1; j < pos - 1; ++j) {
-        if (mUsed[mP[j]] == 2) {
-          for (int i = j + 1; i < pos; ++i) {
-            if (mP[i] == mP[j]) {
-              return false;
-            }
-          }
-        }
-      }
-    }
-    // Check 123 avoidance
-    for (int a = 0; a < pos - 1; ++a) {
-      for (int b = a + 1; b < pos; ++b) {
-        if (mP[a] < mP[b] && mP[b] < mP[pos]) {
-          return false;
-        }
-      }
-    }
-    return true;
+  private static Series<Q> build() {
+    final Series<Q> u1 = Series.create(new A103970().skip().prepend(2)); // U+1
+    final Series<Q> v1 = Series.create(new A000108().skip().prepend(2)); // v+1
+    final Series<Q> den = SQ.subtract(SQ.monomial(Q.TWO, 0), SQ.shift(SQ.multiply(u1, v1), 1));
+    return SQ.add(SQ.shift(SQ.divide(u1, den), 1), SQ.one());
   }
 
-  private void search(final int pos) {
-    if (pos == mP.length) {
-      ++mCount;
-      return;
-    }
-    for (int v = 0; v < mN; ++v) {
-      if (mUsed[v] != 2) {
-        mP[pos] = v;
-        ++mUsed[v];
-        if (is(pos)) {
-          search(pos + 1);
-        }
-        --mUsed[v];
-      }
-    }
-  }
-
-  @Override
-  public Z next() {
-    ++mN;
-    mUsed = new int[mN];
-    mP = new int[2 * mN];
-    mCount = 0;
-    search(0);
-    return Z.valueOf(mCount);
+  /** Construct the sequence. */
+  public A382361() {
+    super(0, build());
   }
 }
 

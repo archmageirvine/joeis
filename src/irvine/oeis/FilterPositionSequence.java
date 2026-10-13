@@ -15,6 +15,7 @@ import irvine.util.string.StringUtils;
 public class FilterPositionSequence extends FilterSequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final long mVerboseMod = Long.parseLong(System.getProperty("oeis.verbose.mod", "1000"));
   private Integer mN; // current index
 
   /**
@@ -100,7 +101,7 @@ public class FilterPositionSequence extends FilterSequence {
           return Z.valueOf(mN);
         }
       }
-      if (mVerbose && mN % 1000 == 0) {
+      if (mVerbose && mN % mVerboseMod == 0) {
         StringUtils.message("Search completed to " + mN);
       }
     }

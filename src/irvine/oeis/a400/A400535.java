@@ -17,10 +17,12 @@ public class A400535 extends A027746 {
 
   private boolean bump(final int[] s, final int[] lim) {
     for (int k = s.length - 1; k >= 0; --k) {
-      s[k] = Functions.NEXT_PRIME.i(s[k]);
-      if (s[k] <= lim[k]) {
-        return true;
-      }
+      do {
+        s[k] = Functions.NEXT_PRIME.i(s[k]);
+        if (lim[k] % s[k] == 0) {
+          return true;
+        }
+      } while (s[k] < lim[k]);
       s[k] = 1;
     }
     return false;

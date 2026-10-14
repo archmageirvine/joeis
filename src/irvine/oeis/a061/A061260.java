@@ -36,7 +36,7 @@ public class A061260 extends Sequence0 {
     }
   };
 
-  private Z t(final int n, final int m) {
+  protected Z t(final int n, final int m) {
     return mB.get(n, n, m);
   }
 

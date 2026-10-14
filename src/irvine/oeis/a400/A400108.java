@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A077569.
+ * A400108 allocated for Zhicheng Wei.
  * @author Sean A. Irvine
  */
 public class A400108 extends Sequence1 {

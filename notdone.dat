@@ -2712,3 +2712,4 @@ A086825 Number of knots (prime or composite) with n crossings.
 A086826 Number of nonsplittable links (prime or composite) with n crossings.
 A086830 Orders of the non-Abelian groups in sequence A086792.
 A086832 Number of ways to tile an n X n board having a black border with the following 1 X 1 tiles: bbbb, bbww, wbbw, bwwb, wwbb, where the colors are read clockwise around each tile.
+A086878 Numbers n such that A003313(n) = A003313(2n).

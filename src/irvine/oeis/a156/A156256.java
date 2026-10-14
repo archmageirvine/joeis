@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a078.A078649;
 
 /**
- * A156256 Number of 1&apos;s separating successive 2&apos;s in the Kolakoski sequence A000002.
+ * A156256 Number of 1's separating successive 2's in the Kolakoski sequence A000002.
  * @author Georg Fischer
  */
 public class A156256 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A351775 Value of all prime numbers p after applying the rule: sigma_n( sigma_n-1( ... sigma_3( sigma_2( sigma_1( sigma_0(p) )))...)) (from sigma_0 up to sigma_n), where sigma_k(m) is the sum of the k-th powers of the divisors of m and p is prime (the choice of the
+ * A351775 Value of all prime numbers p after applying the rule: sigma_n( sigma_n-1( ... sigma_3( sigma_2( sigma_1( sigma_0(p) )))...)) (from sigma_0 up to sigma_n), where sigma_k(m) is the sum of the k-th powers of the divisors of m and p is prime (the choice of the prime p is arbitrary).
  * @author Georg Fischer
  */
 public class A351775 extends AbstractSequence {

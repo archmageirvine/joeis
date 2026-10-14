@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A286292 The first differences of A286291 (one of the bisections of A064736) appears to consist of runs of 1 followed by singleton 2&apos;s; this sequence gives the lengths of these runs.
+ * A286292 The first differences of A286291 (one of the bisections of A064736) appears to consist of runs of 1 followed by singleton 2's; this sequence gives the lengths of these runs.
  * @author Georg Fischer
  */
 public class A286292 extends AbstractSequence {

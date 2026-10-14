@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.a051.A051626;
+import irvine.oeis.a051.A051628;
 import irvine.oeis.a061.A061564;
 
 /**
@@ -14,6 +16,7 @@ import irvine.oeis.a061.A061564;
 public class A036275 extends A051626 {
 
   private static final int[] ZERO = {0};
+  private final DirectSequence mPreperiod = new A051628();
 
   // Also needed for A048962
   protected int[] step() {
@@ -24,6 +27,11 @@ public class A036275 extends A051626 {
     final int[] a = new int[period.intValueExact()];
     final int[] b = new int[a.length];
     Q n = new Q(Z.ONE, mN);
+    final int preperiod = mPreperiod.a(mN).intValueExact();
+    for (int k = 0; k < preperiod; ++k) {
+      n = n.multiply(10);
+      n = n.subtract(n.toZ());
+    }
     for (int k = 0; k < a.length; ++k) {
       n = n.multiply(10);
       a[k] = n.toZ().intValue();

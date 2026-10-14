@@ -3,15 +3,15 @@ package irvine.oeis.a385;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A385644 Swap multiplication and exponentiation in the canonical prime factorization of n.
  * @author Sean A. Irvine
  */
-public class A385644 extends Sequence2 {
+public class A385644 extends Sequence1 {
 
-  private long mN = 1;
+  private long mN = 0;
 
   @Override
   public Z next() {

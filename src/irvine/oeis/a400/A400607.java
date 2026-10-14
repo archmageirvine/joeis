@@ -1,6 +1,7 @@
 package irvine.oeis.a400;
 
 import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.ThreeParameterFormSequence;
 
@@ -10,26 +11,24 @@ import irvine.oeis.ThreeParameterFormSequence;
  */
 public class A400607 extends ThreeParameterFormSequence {
 
+  private long mRes = 0;
+
   /** Construct the sequence. */
   public A400607() {
     super(1, 2, 3, 4, (r, q, p) -> p > q && q > r ? Functions.FACTORIAL.z(p).multiply(Functions.FACTORIAL.z(q)).multiply(Functions.FACTORIAL.z(r)) : null);
   }
 
   @Override
-  protected Z select(final long x, final long y, final long z, final Z n) {
-    final Z[] t = n.sqrtAndRemainder();
-    if (t[1].isZero()) {
-      return Z.valueOf(z);
-    }
-    return Z.ZERO;
+  protected Z select(final long r, final long q, final long p, final Z n) {
+    mRes = p; // remember the p value for return if this value is accepted by next
+    return super.select(r, q, p, n);
   }
 
   @Override
   public Z next() {
     while (true) {
-      final Z t = super.next();
-      if (!t.isZero()) {
-        return t;
+      if (Predicates.SQUARE.is(super.next())) {
+        return Z.valueOf(mRes);
       }
     }
   }

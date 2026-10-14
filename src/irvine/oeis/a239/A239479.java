@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054377;
 
 /**
- * A239479 Integer solutions of the arithmetic differential equation m&apos; = m - sqrt(m).
+ * A239479 Integer solutions of the arithmetic differential equation m' = m - sqrt(m).
  * @author Georg Fischer
  */
 public class A239479 extends AbstractSequence {

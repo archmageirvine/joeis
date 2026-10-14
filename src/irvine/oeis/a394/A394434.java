@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a094.A094028;
 
 /**
- * A394434 a(n) is the smallest prime factor of Sum_{k=0..n} 10^2k
+ * A394434 a(n) is the smallest prime factor of Sum_{k=0..n} 10^2k.
  * @author Georg Fischer
  */
 public class A394434 extends AbstractSequence {

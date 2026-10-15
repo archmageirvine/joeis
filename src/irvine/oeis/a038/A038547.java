@@ -30,7 +30,7 @@ public class A038547 extends Sequence1 implements DirectSequence {
   {
     mS.put(Z.ONE, new int[0]);
   }
-  private int mN = 0;
+  private long mN = 0;
 
   private long prime(final int n) {
     while (mPrimes.get(n) == 0) {
@@ -50,7 +50,7 @@ public class A038547 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    return a(n.longValueExact());
   }
 
   @Override

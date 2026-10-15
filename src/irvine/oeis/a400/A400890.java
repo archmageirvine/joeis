@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400890 allocated for Wolfdieter Lang.
+ * A400890 Numbers k such that the 2-adic valuation of 3*k+2 is odd.
  * @author Sean A. Irvine
  */
 public class A400890 extends FilterNumberSequence {

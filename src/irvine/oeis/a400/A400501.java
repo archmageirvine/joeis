@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400501 allocated for Damian Vel\u00e1zquez L\u00f3pez.
+ * A400501 Number of partitions of n that can be reduced to a single part by repeatedly replacing two parts x and y with gcd(x,y) &gt; 1 by their sum x + y.
  * @author Sean A. Irvine
  */
 public class A400501 extends Sequence1 {

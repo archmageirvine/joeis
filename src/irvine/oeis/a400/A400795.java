@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400795 allocated for Kyle Petersen.
+ * A400795 Strongly nontriangular numbers, defined as the complement of the generalized triangular numbers in the reference below. Generalized triangular numbers include 1 and those in the range of the function P(i,j) = (i*j+i+j-gcd(i,j))/2 for integers i, j &gt; 1.
  * @author Sean A. Irvine
  */
 public class A400795 extends Sequence1 {

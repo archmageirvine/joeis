@@ -5,7 +5,7 @@ import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.a385.A385429;
 
 /**
- * A400871 allocated for Amiram Eldar.
+ * A400871 The number of ordered pairs of exponential divisors (d_1, d_2) of n^2 such d_1*d_2 is also an exponential divisor of n^2.
  * @author Sean A. Irvine
  */
 public class A400871 extends MultiplicativeSequence {

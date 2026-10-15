@@ -7,7 +7,7 @@ import irvine.oeis.a077.A077800;
 import irvine.util.array.DynamicArray;
 
 /**
- * A400738 allocated for Jean-Marc Rebert.
+ * A400738 For n &gt;= 1, a(n) is the smallest twin prime representable as the sum of 2*n - 1 consecutive terms of A077800.
  * @author Sean A. Irvine
  */
 public class A400738 extends Sequence1 {

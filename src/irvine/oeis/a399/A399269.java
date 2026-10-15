@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399269 allocated for Paolo P. Lava.
+ * A399269 The smallest number k such that the concatenation of the squares of the numbers from k to k + n is a prime number, or zero if such a k does not exist.
  * @author Sean A. Irvine
  */
 public class A399269 extends Sequence1 {

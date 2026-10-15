@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a069.A069268;
 
 /**
- * A398065 allocated for Scott M. Foltz.
+ * A398065 Partial sums of A069268: a(n) = Sum_{k=1..n} gcd(k!, k*(k+1)/2).
  * @author Sean A. Irvine
  */
 public class A398065 extends PartialSumSequence {

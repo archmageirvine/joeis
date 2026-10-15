@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400658 allocated for Paolo P. Lava.
+ * A400658 Lexicographically earliest sequence of distinct natural numbers such that the concatenation of a(n-1) with a(n) is divisible by the sum of their digits and no quotient repeats.
  * @author Sean A. Irvine
  */
 public class A400658 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A400792 allocated for Paolo Xausa.
+ * A400792 a(1) = 1. For n &gt; 1, a(n) is the smallest unused positive integer k such that (number of earlier terms smaller than k that are coprime to k) - (number of earlier terms larger than k that share a factor with k) = 1.
  * @author Sean A. Irvine
  */
 public class A400792 extends Sequence0 {

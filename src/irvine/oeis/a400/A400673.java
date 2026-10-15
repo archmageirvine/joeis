@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400673 allocated for Jakub Buczak.
+ * A400673 Smallest prime factor of (2*n)^(4*n^2) + 1.
  * @author Sean A. Irvine
  */
 public class A400673 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399515 allocated for M. F. Hasler.
+ * A399515 Numbers a for which there are smaller integers b &gt; c &gt; d &gt; 0 such that c^2 = a + d and d^2 = b + c.
  * @author Sean A. Irvine
  */
 public class A399515 extends FilterNumberSequence {

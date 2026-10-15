@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a295.A295193;
 
 /**
- * A399474 allocated for \u00c9lie de Panafieu.
+ * A399474 Number of labeled 8-regular graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A399474 extends A295193 {

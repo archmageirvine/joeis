@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A400868 allocated for Daniel Okwor.
+ * A400868 Number of deals of n cards numbered 1 to n between two players for which the card game War never ends, when the winner of each turn puts the losing card and then the winning card at the bottom of their pile.
  * @author Sean A. Irvine
  */
 public class A400868 extends ParallelPermutationSequence {

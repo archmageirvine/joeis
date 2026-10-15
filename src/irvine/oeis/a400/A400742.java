@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400742 allocated for Ruud H.G. van Tol.
+ * A400742 Number of runs of at least two odd steps before the first drop of 4n+3 under T(x) = x/2 (x even), (3x+1)/2 (x odd).
  * @author Sean A. Irvine
  */
 public class A400742 extends Sequence0 {

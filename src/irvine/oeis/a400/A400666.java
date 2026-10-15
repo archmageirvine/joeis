@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A400666 allocated for Zhining Yang.
+ * A400666 The smallest integer k greater than n such that c(k) is divisible by c(n), where c(n) is formed by concatenating 1, 2, 3, ..., n.
  * @author Sean A. Irvine
  */
 public class A400666 extends A007908 {

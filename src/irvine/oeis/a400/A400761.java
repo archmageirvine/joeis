@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A400761 allocated for Bartlomiej Pawlik.
+ * A400761 Product of the 8 nearest neighbors of n in the square spiral.
  * @author Sean A. Irvine
  */
 public class A400761 extends Sequence1 {

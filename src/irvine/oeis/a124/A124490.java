@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A124490 Numbers n such that 2n-1, 4n-1, 6n-1, 8n-1, 10n-1, 12n-1 and 14n-1 are primes.
+ * A124490 Numbers k such that 2k-1, 4k-1, 6k-1, 8k-1, 10k-1, 12k-1 and 14k-1 are primes.
  * @author Georg Fischer
  */
 public class A124490 extends PrimeConditionListSequence {

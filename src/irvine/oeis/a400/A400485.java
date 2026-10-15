@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400485 allocated for James C. McMahon.
+ * A400485 a(1) = 1; for n &gt; 1: if a(n-1) + n is odd, a(n) = a(n-1) + n else a(n) = (a(n-1) + n)/2.
  * @author Sean A. Irvine
  */
 public class A400485 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055932;
 
 /**
- * A399579 allocated for Zhicheng Wei.
+ * A399579 Irregular triangle read by rows: row n lists numbers in A055932 with n divisors.
  * @author Sean A. Irvine
  */
 public class A399579 extends A055932 {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A400108 allocated for Zhicheng Wei.
+ * A400108 a(n) is the position, in the row of A077569 where it appears, of the least integer with same prime signature as n.
  * @author Sean A. Irvine
  */
 public class A400108 extends Sequence1 {

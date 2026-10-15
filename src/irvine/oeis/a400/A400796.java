@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400796 allocated for Lluis Garcia Torcal.
+ * A400796 a(n) = (n^2 + 4*Legendre(n,5))/5.
  * @author Sean A. Irvine
  */
 public class A400796 extends Sequence0 {

@@ -9,7 +9,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A398694 allocated for Omar E. Pol.
+ * A398694 Smallest 2-dense number (A174973) with n odd divisors.
  * @author Sean A. Irvine
  */
 public class A398694 extends Sequence1 {

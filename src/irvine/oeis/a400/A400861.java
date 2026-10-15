@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A400861 allocated for Dimas Saputra.
+ * A400861 a(n) is the largest N such that the integers 1..n can be arranged in a row so that the sums of blocks of adjacent terms (including single terms) cover every integer from 1 to N.
  * @author Sean A. Irvine
  */
 public class A400861 extends ParallelPermutationSequence {

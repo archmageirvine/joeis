@@ -4,7 +4,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A400870 allocated for Amiram Eldar.
+ * A400870 The number of ordered pairs of infinitary divisors (d_1, d_2) of n such that d_1*d_2 is also an infinitary divisor of n.
  * @author Sean A. Irvine
  */
 public class A400870 extends MultiplicativeSequence {

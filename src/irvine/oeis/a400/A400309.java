@@ -9,7 +9,7 @@ import irvine.oeis.ParallelPermutationSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A400309 allocated for Ilyass Rhari.
+ * A400309 Triangle read by rows: T(n,k) is the number of involutions p of {1,...,n} such that inv(p) + rlmin(p) - n = k, where inv is the number of inversions and rlmin the number of right-to-left minima.
  * @author Sean A. Irvine
  */
 public class A400309 extends Sequence0 {

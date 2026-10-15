@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A399657 allocated for Henri Lifchitz.
+ * A399657 Values of L(p(n)#), where L(n) is the summatory function of the Liouville function A008836(n) and p(n)# the primorial function.
  * @author Sean A. Irvine
  */
 public class A399657 extends Sequence1 {

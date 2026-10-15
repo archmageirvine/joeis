@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400891 allocated for Wolfdieter Lang.
+ * A400891 Numbers k such that the 2-adic valuation of 3*k+2 is even.
  * @author Sean A. Irvine
  */
 public class A400891 extends FilterNumberSequence {

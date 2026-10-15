@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400737 allocated for Paolo P. Lava.
+ * A400737 Least number k such that the sum of the numbers from k to k + n - 1 is divisible by the sum of their digits.
  * @author Sean A. Irvine
  */
 public class A400737 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A400704 allocated for Pawe\u0142 Kwaczy\u0144ski.
+ * A400704 Number of unlabeled connected simple cubic graphs on 2*n vertices containing neither a 4-cycle nor an 8-cycle.
  * @author Sean A. Irvine
  */
 public class A400704 extends ParallelGenerateGraphsSequence {

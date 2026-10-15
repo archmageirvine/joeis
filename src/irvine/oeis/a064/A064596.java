@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064596 Smallest nonunitary multiperfect number of index n; i.e., smallest k such that sigma(k) - usigma(k) = nk.
+ * A064596 Smallest nonunitary multiperfect number of index n; i.e., smallest k such that sigma(k) - usigma(k) = n*k.
  * @author Sean A. Irvine
  */
 public class A064596 extends Sequence0 {

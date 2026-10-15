@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a061.A061260;
 
 /**
- * A400784 allocated for William J. Keith.
+ * A400784 Number of unordered 5-element sets of partitions summing to n.
  * @author Sean A. Irvine
  */
 public class A400784 extends A061260 {

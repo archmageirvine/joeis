@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A400794 allocated for Paolo Xausa.
+ * A400794 Positions of primorials in A400792.
  * @author Sean A. Irvine
  */
 public class A400794 extends FilterPositionSequence {

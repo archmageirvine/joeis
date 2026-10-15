@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400775 allocated for Jens Ahlstr\u00f6m.
+ * A400775 Fast-growing hierarchy {f_n(k)} read by antidiagonals, n &gt;= 0, k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A400775 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A400593 allocated for Bartlomiej Pawlik.
+ * A400593 Squares visited by a chess king moving on the square spiral, always moving to an adjacent unvisited square whose number has the greatest prime factor; ties are resolved by choosing the lowest number.
  * @author Sean A. Irvine
  */
 public class A400593 extends Sequence1 {

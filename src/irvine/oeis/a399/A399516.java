@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.math.z.Z;
 
 /**
- * A399516 allocated for M. F. Hasler.
+ * A399516 Indices of jumps in A399515, where first differences A399515(n+1) - A399515(n) are &gt; 1.
  * @author Sean A. Irvine
  */
 public class A399516 extends A399515 {

@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A400793 allocated for Paolo Xausa.
+ * A400793 Positions of primes in A400792.
  * @author Sean A. Irvine
  */
 public class A400793 extends FilterPositionSequence {

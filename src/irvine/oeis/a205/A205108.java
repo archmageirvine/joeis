@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001047;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205108 Least s(k) such that n divides s(k)-s(j) for some j&lt;k, where s(j)=3^j-2^j.
+ * A205108 Least s(k) such that n divides s(k)-s(j) for some j&lt;k, where s(j) = 3^j-2^j = A001047(j).
  * @author Georg Fischer
  */
 public class A205108 extends A204892 {

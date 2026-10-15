@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A400401 allocated for Pontus von Br\u00f6mssen.
+ * A400401 Decimal expansion of e^(-3*T/2) * Sum_{k &gt;= 1} I_k(T*sqrt(2))/2^(k/2), where T = 1.455378... is the constant given by A400400 and I_k is the order-k modified Bessel function of the first kind.
  * @author Sean A. Irvine
  */
 public class A400401 extends DecimalExpansionSequence {

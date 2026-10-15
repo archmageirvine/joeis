@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398557 allocated for Iurii Kirpichev.
+ * A398557 Second derivative of n-th cyclotomic polynomial Phi_n(x) evaluated at x = 1.
  * @author Sean A. Irvine
  */
 public class A398557 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a103.A103288;
 
 /**
- * A237046 Numbers n such that sigma(n) &lt; 2n-1.
+ * A237046 Numbers k such that sigma(k) &lt; 2*k-1.
  * @author Georg Fischer
  */
 public class A237046 extends ComplementSequence {

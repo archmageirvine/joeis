@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399659 allocated for Niccol\u00f2 Castronuovo.
+ * A399659 Number of involutions of length n avoiding the patterns 4321 and 4231.
  * @author Sean A. Irvine
  */
 public class A399659 extends Sequence0 {

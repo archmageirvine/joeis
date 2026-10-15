@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000332;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A051677 Tetrahedron-tree numbers: a(n)=sum(b(m),m=1..n), b(m)=1, 1,3, 1,3,6, 1,3,6,10,..., 1,2,...,i*(i+1)2.
+ * A051677 Tetrahedron-tree numbers: a(n) = Sum_{m=1..n} b(m), b(m)=1, 1,3, 1,3,6, 1,3,6,10, ..., 1,3,...,i*(i+1)/2.
  * @author Sean A. Irvine
  */
 public class A051677 extends A000332 {

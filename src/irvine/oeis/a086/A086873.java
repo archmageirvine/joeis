@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086873 Triangle read by rows in which row n &gt;= 1 gives coefficients in expansion of the polynomial Sum_{k=1..n} (1/n)*binomial(n,k)*binomial(n,k-1)*x^(2k)*(1+x)^(2n-2k) / x^2 in powers of x.
+ * A086873 Triangle read by rows in which row n &gt;= 1 gives coefficients in expansion of the polynomial Sum_{k=1..n} (1/n) * binomial(n,k) * binomial(n,k-1) * x^(2k) * (1+x)^(2n-2k) / x^2 in powers of x.
  * @author Sean A. Irvine
  */
 public class A086873 extends Sequence1 {

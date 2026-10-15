@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001047;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205107 The index j&lt;k such that n divides s(k)-s(j), where k is the least index (A205000) for which such j exists, and s(k)=3^k-2^k.
+ * A205107 The least index j &lt; k such that n divides s(k) - s(j), where s(m) = 3^m - 2^m = A001047(m) and k = A205000(n) is the least index for which such j exists.
  * @author Georg Fischer
  */
 public class A205107 extends A204892 {

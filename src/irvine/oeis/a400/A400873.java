@@ -5,7 +5,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A400873 allocated for Amiram Eldar.
+ * A400873 The total sum of exponential divisors of the exponential divisors of n.
  * @author Sean A. Irvine
  */
 public class A400873 extends MultiplicativeSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400644 allocated for Bence Bern\u00e1th.
+ * A400644 a(n+1) = round(sqrt(a(n)^2 + a(n-1)^2 + a(n-2)^2)).
  * @author Sean A. Irvine
  */
 public class A400644 extends Sequence1 {

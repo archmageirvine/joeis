@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
 
 /**
- * A397783 allocated for Zoltan Reti.
+ * A397783 allocated for Tomas Laris.
  * @author Sean A. Irvine
  */
 public class A397783 extends Sequence1 {

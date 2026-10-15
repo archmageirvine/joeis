@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a028.A028234;
 
 /**
- * A392858 a(n) = A028234(A276086(n)), where the A276086 is the primorial base exp-function, and A028234 completely removes the smallest prime factor of its argument.
+ * A392858 a(n) = A028234(A276086(n)), where A276086 is the primorial base exp-function, and A028234 completely removes the smallest prime factor of its argument.
  * @author Georg Fischer
  */
 public class A392858 extends LambdaSequence {

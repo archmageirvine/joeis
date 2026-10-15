@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400869 allocated for Amiram Eldar.
+ * A400869 The number of ordered pairs (k_1, k_2) of nonnegative integers bitwise covered by n such that k_1 + k_2 is also bitwise covered by n.
  * @author Sean A. Irvine
  */
 public class A400869 extends Sequence0 {

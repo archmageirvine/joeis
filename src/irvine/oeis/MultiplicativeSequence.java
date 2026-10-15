@@ -24,8 +24,8 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     Z apply(MultiplicativeSequence self, Z p, Integer e);
   }
 
-  private final TriFunction<MultiplicativeSequence, Z, Integer> mLambda;
-  private final long mStep;
+  protected final TriFunction<MultiplicativeSequence, Z, Integer> mLambda;
+  protected final long mStep;
   protected long mN;
 
   /**
@@ -53,13 +53,23 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
   /**
    * Construct a multiplicative sequence with the given function.
    * @param offset index of first term
+   * @param step increment for n 
+   * @param fr recurrent function
+   */
+  public MultiplicativeSequence(final int offset, final long step, final TriFunction<MultiplicativeSequence, Z, Integer> fr) {
+    super(offset);
+    mStep = step;
+    mN = offset - mStep;
+    mLambda = fr;
+  }
+
+  /**
+   * Construct a multiplicative sequence with the given function.
+   * @param offset index of first term
    * @param fr recurrent function
    */
   public MultiplicativeSequence(final int offset, final TriFunction<MultiplicativeSequence, Z, Integer> fr) {
-    super(offset);
-    mStep = 1;
-    mN = offset - mStep;
-    mLambda = fr;
+    this(offset, 1, fr);
   }
 
   @Override

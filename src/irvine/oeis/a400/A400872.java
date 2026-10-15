@@ -5,7 +5,7 @@ import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.a007.A007425;
 
 /**
- * A400872 allocated for Amiram Eldar.
+ * A400872 The total number of exponential divisors of the exponential divisors of n.
  * @author Sean A. Irvine
  */
 public class A400872 extends MultiplicativeSequence {

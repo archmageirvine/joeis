@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A400660 allocated for Guido Avagliano.
+ * A400660 Number of bases b in range 2 &lt;= b &lt;= prime(n) in which prime(n) is a two-sided truncatable prime.
  * @author Sean A. Irvine
  */
 public class A400660 extends A000040 {

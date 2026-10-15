@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A075773 Let {b(n)} be the sequence of perfect powers (A001597); then a(n) = max { b(n)-b(n-1), b(n+1)-b(n) }.
+ * A075773 Let {b(n)} be the sequence of perfect powers (A001597), with b(0) = 0; then a(n) = max { b(n)-b(n-1), b(n+1)-b(n) }.
  * @author Sean A. Irvine
  */
 public class A075773 extends A001597 {

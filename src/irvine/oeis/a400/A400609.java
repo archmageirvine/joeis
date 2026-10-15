@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ThreeParameterFormSequence;
 
 /**
- * A400609 allocated for Bernard Schott.
+ * A400609 Integers r occurring in solutions of m^2 = p! * q! * r!, with p &gt; q &gt; r &gt; 1, ordered by increasing m (A400208).
  * @author Sean A. Irvine
  */
 public class A400609 extends ThreeParameterFormSequence {

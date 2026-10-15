@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399347 allocated for Felix Huber.
+ * A399347 a(n) is the smallest size of a pairwise coprime subset of {1, ..., n} to which no further element can be added.
  * @author Sean A. Irvine
  */
 public class A399347 extends Sequence1 {

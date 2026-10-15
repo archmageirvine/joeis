@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a023.A023198;
 
 /**
- * A230608 Numbers with abundancy 4 &lt;= sigma(n)/n &lt; 5.
+ * A230608 Numbers k with abundancy 4 &lt;= sigma(k)/k &lt; 5.
  * @author Georg Fischer
  */
 public class A230608 extends AbstractSequence {

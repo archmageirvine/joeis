@@ -7,7 +7,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a324.A324198;
 
 /**
- * A346242 Dirichlet inverse of A324198, where A324198(n) = gcd(n, A276086(n)).
+ * A346242 Dirichlet inverse of A324198, where A324198(n) = gcd(n, A276086(n)), and A276086 is the primorial base exp-function.
  * @author Georg Fischer
  */
 public class A346242 extends AbstractSequence {

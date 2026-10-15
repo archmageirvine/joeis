@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A400399 allocated for Pontus von Br\u00f6mssen.
+ * A400399 Value of k that maximizes P(X &lt; Y), where X and Y are independent binomial random variables with k trials and success probabilities 1/n and 1/(2*n), respectively. In case of ties, choose the largest k.
  * @author Sean A. Irvine
  */
 public class A400399 extends Sequence2 {

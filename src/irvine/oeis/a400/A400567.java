@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005384;
 import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
- * A400567 allocated for Pierre Colmant.
+ * A400567 Number of set partitions of an n-element set whose number of blocks is a Sophie Germain prime.
  * @author Sean A. Irvine
  */
 public class A400567 extends Stirling2TransformSequence {

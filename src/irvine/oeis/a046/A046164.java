@@ -9,6 +9,8 @@ import irvine.oeis.a343.A343146;
  */
 public class A046164 extends A343146 {
 
+  // Bug discovered by Martin Fuller, fixed 2026-10-16
+
   /** Construct the sequence. */
   public A046164() {
     super(14);
@@ -18,7 +20,6 @@ public class A046164 extends A343146 {
   private boolean[] mUsed = null;
   private int mN = 26;
   private long mCount = 0;
-  private long mSum = 0; // Work around historical over counting
 
   @Override
   protected long targetState() {
@@ -54,8 +55,9 @@ public class A046164 extends A343146 {
     init();
     mCount = 0;
     mN += 2;
-    search(mStateToId.get(START_STATE), mN);
-    mSum = mCount - mSum; // Work around historical inaccuracy?
-    return Z.valueOf(mSum);
+    final int startId = mStateToId.get(START_STATE);
+    mUsed[startId] = true;
+    search(startId, mN);
+    return Z.valueOf(mCount);
   }
 }

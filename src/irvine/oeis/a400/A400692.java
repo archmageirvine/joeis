@@ -18,7 +18,7 @@ public class A400692 extends FilterNumberSequence {
   public A400692() {
     super(1, k -> {
       Z m = Z.valueOf(k);
-      HashSet<Z> seen = new HashSet<>();
+      final HashSet<Z> seen = new HashSet<>();
       while (seen.add(m)) {
         if (Z12.equals(m)) {
           return true;

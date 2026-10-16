@@ -50,7 +50,7 @@ public class A400888 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    List<Long> v = w(mN);
+    final List<Long> v = w(mN);
     v.sort(Collections.reverseOrder());
     final List<Long> uniqueV = new ArrayList<>();
     for (int i = 0; i < v.size(); i++) {
@@ -65,7 +65,7 @@ public class A400888 extends Sequence0 {
         ++ones;
       }
     }
-    long zeros = uniqueV.size() - ones;
+    final long zeros = uniqueV.size() - ones;
 
     Z p = Z.ONE;
     Z q = Z.ONE;

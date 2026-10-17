@@ -13,14 +13,10 @@ public class A397404 extends CachedSequence {
   /** Construct the sequence. */
   public A397404() {
     super(1, Long.class, (self, n) -> {
-      if (n == 1) {
+      if (n == 0) {
         return Z.ZERO;
       }
-      if ((n & 1) == 0) {
-        return self.a(n / 2).add(Functions.TRIANGULAR.z(n / 2));
-      } else {
-        return self.a(n - 1);
-      }
+      return self.a(n / 2).add(Functions.TRIANGULAR.z(n));
     });
   }
 }

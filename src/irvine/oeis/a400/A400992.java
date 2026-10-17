@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A400992 G.f. A(x) satisfies: A(x) = 1 + x * A(4*x/(1 + x)) / (1 + x).
+ * A400992 allocated for Ilya Gutkovskiy.
  * @author Georg Fischer
  */
 public class A400992 extends PolynomialFieldSequence {

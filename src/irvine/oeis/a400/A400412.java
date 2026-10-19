@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A400412 allocated for Hartmut F. W. Hoft.
+ * A400412 Triangle read by rows: T(n, k) = v is the smallest number which has n odd divisors and whose symmetric representation of sigma, SRS(v), consists of k parts, or 0 if no such number exists, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A400412 extends Sequence1 {

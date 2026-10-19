@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A400582 allocated for Eric S. Egge.
+ * A400582 Convolution of the number of dissections of a convex (n+2)-gon into triangles and quadrilaterals by nonintersecting diagonals (A001002).
  * @author Sean A. Irvine
  */
 public class A400582 extends CachedSequence {

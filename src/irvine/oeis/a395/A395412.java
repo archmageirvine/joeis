@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A395412 a(n) = number of k's that make A002110(n)/A005117(k)+A005117(k) prime, A005117(k)&lt;prime(n).
+ * A395412 a(n) = number of integers k that make A002110(n)/A005117(k)+A005117(k) prime, A005117(k)&lt;prime(n).
  * @author Sean A. Irvine
  */
 public class A395412 extends A000040 {

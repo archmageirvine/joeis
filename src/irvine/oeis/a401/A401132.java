@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A400888.
+ * A401132 Decimal expansion of Gamma(1/4)/Gamma(3/4).
  * @author Sean A. Irvine
  */
 public class A401132 extends DecimalExpansionSequence {

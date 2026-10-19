@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005385;
 import irvine.oeis.a063.A063640;
 
 /**
- * A400948 allocated for Frank M Jackson.
+ * A400948 Primes p such that (p-1)/2 is either prime or a squarefree semiprime.
  * @author Sean A. Irvine
  */
 public class A400948 extends UnionSequence {

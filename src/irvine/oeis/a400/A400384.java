@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400384 allocated for Li Ting Hon Stanford.
+ * A400384 Positive integers whose divisors can be partitioned into two disjoint subsets with sums differing by 5.
  * @author Sean A. Irvine
  */
 public class A400384 extends FilterNumberSequence {

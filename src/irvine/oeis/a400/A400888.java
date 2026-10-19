@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400888 allocated for M. Jeremie Lafitte (Levitas).
+ * A400888 Contents of the quarter-turn corrected Stern vectors associated with the column words of the Gosper-Lafitte triangle.
  * @author Sean A. Irvine
  */
 public class A400888 extends Sequence0 {

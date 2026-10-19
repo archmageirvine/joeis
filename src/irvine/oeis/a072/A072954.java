@@ -4,13 +4,13 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072954 Numbers n without letters a, i, l or t.
+ * A072954 Numbers without letters a, i, l or t.
  * @author Georg Fischer
  */
 public class A072954 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A072954() {
-    super(1, FINITE, 0, 1, 4, 7, 100, 101, 104, 107, 401, 404, 407, 700, 701, 704, 707);
+    super(1, FINITE, 0, 1, 4, 7, 100, 101, 104, 107, 400, 401, 404, 407, 700, 701, 704, 707);
   }
 }

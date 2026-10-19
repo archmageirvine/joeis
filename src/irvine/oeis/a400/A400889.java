@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A400889 allocated for M. Jeremie Lafitte (Levitas).
+ * A400889 Least k such that n divides A400888(k).
  * @author Sean A. Irvine
  */
 public class A400889 extends Sequence1 {

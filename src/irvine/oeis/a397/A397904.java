@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397904 allocated for Farhad Banazadeh.
+ * A397904 Number of steps starting from the n-th positive integer coprime to 6 until the first repeated value under the fully reduced residue-dependent (7k +- 1)/6 map, or -1 if no value ever repeats.
  * @author Sean A. Irvine
  */
 public class A397904 extends Sequence1 {

@@ -18,11 +18,7 @@ public class A062180 extends Sequence1 {
     this(2);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param parm
-   */
-  public A062180(final int parm) {
+  protected A062180(final int parm) {
     mN = 0;
     mParm = new Q(parm, 1);
   }

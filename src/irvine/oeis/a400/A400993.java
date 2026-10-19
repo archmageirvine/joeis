@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000961;
 import irvine.oeis.a003.A003963;
 
 /**
- * A400993 allocated for Ilya Gutkovskiy.
+ * A400993 a(n) = (prime index of the n-th prime power)^(exponent of the n-th prime power) (cf. A000961).
  * @author Sean A. Irvine
  */
 public class A400993 extends A000961 {

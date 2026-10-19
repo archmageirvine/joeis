@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A086891.
+ * A401121 Wreathed permutations of the cyclic group C_n with cycles of lengths 1, 1, 2, 3, 4, 5, ...
  * @author Sean A. Irvine
  */
 public class A401121 extends Sequence0 {

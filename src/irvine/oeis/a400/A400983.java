@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a078.A078417;
 
 /**
- * A400983 allocated for Omar Said.
+ * A400983 Number of steps after which the Collatz trajectories of A078417(n) and A078417(n)+1 first coincide.
  * @author Sean A. Irvine
  */
 public class A400983 extends A078417 {

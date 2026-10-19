@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400365 Center parameters of a six-square 3 X 3 magic-square construction from primitive Pythagorean triangles with prime hypotenuse.
+ * A400365 Square roots of the central entries in a six-square 3 X 3 magic-square construction from primitive Pythagorean triangles with prime hypotenuse.
  * @author Sean A. Irvine
  */
 public class A400365 extends Sequence1 {

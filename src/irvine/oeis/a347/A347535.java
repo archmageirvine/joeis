@@ -4,7 +4,7 @@ package irvine.oeis.a347;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A347535 Number of minimum dominating sets in the complete bipartite graph K_n,n.
+ * A347535 Number of minimum dominating sets in the complete bipartite graph K_{n,n}.
  * @author Georg Fischer
  */
 public class A347535 extends GeneratingFunctionSequence {

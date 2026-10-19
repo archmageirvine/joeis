@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400880 allocated for Guido Avagliano.
+ * A400880 Numbers k with the property that the concatenation of the representations of k and k+1 in at least one base b (where 2 &lt;= b &lt;= k-2) forms a perfect square (Sastry number).
  * @author Sean A. Irvine
  */
 public class A400880 extends FilterNumberSequence {

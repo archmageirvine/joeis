@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006577;
 
 /**
- * A400985 allocated for Omar Said.
+ * A400985 Length of the longest run of consecutive positive integers &lt; 2^n that take the same number of Collatz steps to reach 1.
  * @author Sean A. Irvine
  */
 public class A400985 extends Sequence1 {

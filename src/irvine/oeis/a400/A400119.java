@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A400119 allocated for Kelvin Voskuijl.
+ * A400119 Decimal expansion of Sum_{k&gt;=0} 1/((5*k)!)^3.
  * @author Sean A. Irvine
  */
 public class A400119 extends DecimalExpansionSequence {

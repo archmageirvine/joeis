@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400931 allocated for Bernard Schott.
+ * A400931 Numbers all of whose divisors are undulating numbers (A355301).
  * @author Sean A. Irvine
  */
 public class A400931 extends FilterNumberSequence {

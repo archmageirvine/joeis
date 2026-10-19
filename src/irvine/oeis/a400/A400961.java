@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A400961 allocated for Alex Ratushnyak.
+ * A400961 Composite numbers such that the product of the number's divisors (A007955) is divisible by the sum of the number's proper divisors (A001065).
  * @author Sean A. Irvine
  */
 public class A400961 extends FilterSequence {

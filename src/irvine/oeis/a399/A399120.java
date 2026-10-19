@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399120 allocated for Farhad Banazadeh.
+ * A399120 Number of steps starting from the n-th positive integer not divisible by 3 until the first repeated value under the reduced residue-dependent 4k - {1,2} map, or -1 if no value ever repeats.
  * @author Sean A. Irvine
  */
 public class A399120 extends Sequence1 {

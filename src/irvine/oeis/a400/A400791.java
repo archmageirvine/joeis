@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400791 allocated for Jishnu Babu Ranitha.
+ * A400791 a(n) = Sum_{d|n, d &gt;= 4} d * floor((d - 2)/2).
  * @author Sean A. Irvine
  */
 public class A400791 extends Sequence1 {

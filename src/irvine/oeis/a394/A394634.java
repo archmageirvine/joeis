@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A394634 allocated for Felix Huber.
+ * A394634 a(n) is the least k &gt;= 0 such that the maximum length of a divisibility chain among the distinct entries in row k of Pascal's triangle is n, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A394634 extends Sequence1 {

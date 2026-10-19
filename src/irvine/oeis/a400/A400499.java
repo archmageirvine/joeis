@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400499 allocated for Dieter Renz.
+ * A400499 Integer circumradii of non-isosceles cyclic quadrilaterals with integer sides.
  * @author Sean
  */
 public class A400499 extends FilterNumberSequence {

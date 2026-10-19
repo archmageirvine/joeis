@@ -12,7 +12,7 @@ import irvine.oeis.a112.A112141;
  */
 public class A226525 extends Sequence1 {
 
-  private final Sequence mA = new A112141();
+  private final Sequence mA = new A112141().skip();
 
   @Override
   public Z next() {

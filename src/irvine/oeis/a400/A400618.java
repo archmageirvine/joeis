@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400618 allocated for Marco Rip\u00e0.
+ * A400618 Sum of the distinct entries in the central row and central column of the (2*n + 1) X (2*n + 1) square spiral.
  * @author Sean A. Irvine
  */
 public class A400618 extends Sequence0 {

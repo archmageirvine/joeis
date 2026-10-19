@@ -4,7 +4,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A400929 allocated for Stefano Spezia.
+ * A400929 Antidiagonal sums of the array A400928.
  * @author Sean
  */
 public class A400929 extends A400928 {

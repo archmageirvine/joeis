@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A007534 Positive even numbers that are not the sum of a pair of twin primes.
+ * A007534 Positive even numbers that cannot be written as p + q, where p and q are primes each belonging to a twin-prime pair (p = q is allowed).
  * @author Sean A. Irvine
  */
 public class A007534 extends A001359 {

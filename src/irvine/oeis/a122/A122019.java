@@ -1,24 +1,18 @@
 package irvine.oeis.a122;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Combiner;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a112.A112141;
 
 /**
  * A122019 Product of the first n semiprimes, divided by product of the first n primes, rounded down.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A122019 extends A112141 {
+public class A122019 extends Combiner {
 
-  private final Sequence mSeq = new A002110();
-
-  {
-    mSeq.next();
-  }
-
-  @Override
-  public Z next() {
-    return super.next().divide(mSeq.next());
+  /** Construct the sequence. */
+  public A122019() {
+    super(1, new A112141().skip(), new A002110().skip(), DIVIDE);
   }
 }

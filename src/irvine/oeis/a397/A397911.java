@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397911 allocated for Antonio Mennillo.
+ * A397911 Primes p such that the sum of the primes &lt;= p exceeds li(p^2), where li is the logarithmic integral.
  * @author Sean A. Irvine
  */
 public class A397911 extends A000040 {

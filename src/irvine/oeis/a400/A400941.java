@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400941 allocated for James Mitchell.
+ * A400941 The number of order-preserving or reversing partial permutations of an n-element set.
  * @author Sean A. Irvine
  */
 public class A400941 extends Sequence0 {

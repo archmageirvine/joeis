@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A396565 allocated for Jishnu Babu Ranitha.
+ * A396565 Number of prime-free knapsack 2-dimensional vector partitions of (n, n).
  * @author Sean
  */
 public class A396565 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A399612 allocated for Bartlomiej Pawlik.
+ * A399612 Labels of successive landing squares of a rook on the Ulam spiral, starting at 2 and repeatedly moving to the smallest prime reachable without revisiting or passing over an earlier landing square.
  * @author Sean A. Irvine
  */
 public class A399612 extends FiniteSequence {

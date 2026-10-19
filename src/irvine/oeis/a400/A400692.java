@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400692 allocated for Alex Ratushnyak.
+ * A400692 Numbers x such that recursion {x -&gt; A000005(x)*2} reaches the fixed point of 12.
  * @author Sean A. Irvine
  */
 public class A400692 extends FilterNumberSequence {

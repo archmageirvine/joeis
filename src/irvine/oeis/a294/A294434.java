@@ -13,6 +13,6 @@ public class A294434 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A294434() {
-    super(0, (term, n) -> term.subtract(1).divide(2), "", new PrependSequence(0, new A163778(), 0));
+    super(1, (term, n) -> term.subtract(1).divide(2), "", new PrependSequence(0, new A163778(), 0));
   }
 }

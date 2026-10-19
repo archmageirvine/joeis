@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A295298 Numbers n for which sum of the divisors (A000203) and the binary weight of n (A000120) have the same parity.
+ * A295298 Numbers k for which sum of the divisors (A000203) and the binary weight of k (A000120) have the same parity.
  * @author Georg Fischer
  */
 public class A295298 extends FilterLambdaSequence {

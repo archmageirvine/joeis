@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400667 allocated for Guido Avagliano.
+ * A400667 Odd numbers k for which the sum of digits equals the product of digits in at least one base b from 4 to floor(sqrt(k)).
  * @author Sean
  */
 public class A400667 extends FilterNumberSequence {

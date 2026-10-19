@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397914 allocated for Ya-Ping Lu.
+ * A397914 a(n) is the number of monotonic prime gaps following the n-th prime, where increasing gaps are counted as positive, decreasing gaps as negative, and unchanging gaps as zero.
  * @author Sean A. Irvine
  */
 public class A397914 extends A000040 {

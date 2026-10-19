@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A400797 allocated for Lluis Garcia Torcal.
+ * A400797 a(n) = A400796(n) mod 5.
  * @author Sean A. Irvine
  */
 public class A400797 extends PeriodicSequence {

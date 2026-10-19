@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397404 allocated for Mosaab G. K. Abdelaleem.
+ * A397404 Number of inversions of the (2*n)-th Josephus permutation with step 2.
  * @author Sean A. Irvine
  */
 public class A397404 extends CachedSequence {

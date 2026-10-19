@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400703 allocated for Alex Ratushnyak.
+ * A400703 Numbers k whose trajectory under repeated application of the map x -&gt; sigma(x) - x is not strictly decreasing.
  * @author Sean A. Irvine
  */
 public class A400703 extends FilterNumberSequence {

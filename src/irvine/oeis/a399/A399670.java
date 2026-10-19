@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399670 allocated for Micah Meneyerji.
+ * A399670 Numbers with at least 6 divisors.
  * @author Sean A. Irvine
  */
 public class A399670 extends FilterNumberSequence {

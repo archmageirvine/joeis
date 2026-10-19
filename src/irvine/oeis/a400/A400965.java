@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006666;
 import irvine.oeis.a006.A006667;
 
 /**
- * A400965 allocated for Carlos Alberto Terencio de Bastos.
+ * A400965 a(n) = 2^A006666(n) - n*3^A006667(n).
  * @author Sean A. Irvine
  */
 public class A400965 extends Sequence1 {

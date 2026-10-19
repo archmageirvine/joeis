@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A396565.
+ * A401088 The number of exponentially odd divisors d of n such that n/d is a square.
  * @author Sean
  */
 public class A401088 extends MultiplicativeSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 
 /**
- * A400906 allocated for Michael B. Porter.
+ * A400906 Irregular triangle: n-th row is the prime factorization of the first n digits of Pi.
  * @author Sean A. Irvine
  */
 public class A400906 extends Sequence1 {

@@ -12,8 +12,6 @@ import irvine.oeis.CachedSequence;
  */
 public class A086925 extends CachedSequence {
 
-  // todo this does not reproduce sequence
-
   private final HashMap<Z, Integer> mCounts = new HashMap<>();
 
   /** Construct the sequence. */

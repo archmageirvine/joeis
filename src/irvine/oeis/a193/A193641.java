@@ -12,6 +12,6 @@ public class A193641 extends PrependSequence {
 
   /** Construct the sequence. */
   public A193641() {
-    super(1, new PartialSumSequence(new A052910()), 1);
+    super(0, new PartialSumSequence(new A052910()), 1);
   }
 }

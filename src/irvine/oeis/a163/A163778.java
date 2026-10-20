@@ -12,6 +12,6 @@ public class A163778 extends FilterSequence {
 
   /** Construct the sequence. */
   public A163778() {
-    super(0, new A054639(), ODD);
+    super(1, new A054639(), ODD);
   }
 }

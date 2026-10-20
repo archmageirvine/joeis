@@ -1,13 +1,13 @@
 package irvine.oeis.a397;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A397804 Square array A(n,k), n &gt;= 0, k &gt;= 1, read by antidiagonals: A(n,k) is the number of k-dimensional vector partitions of (n, n, ..., n) into strictly distinct parts with nonnegative components, excluding the k elementary basis vectors.
  * @author Sean A. Irvine
  */
-public class A397804 extends Sequence1 {
+public class A397804 extends Sequence0 {
 
   // After Jishnu Babu Ranitha
 

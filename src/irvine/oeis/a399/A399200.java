@@ -6,20 +6,22 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A399200 Numbers k such that (cos(k))^k sets a new record low.
  * @author Sean A. Irvine
  */
-public class A399200 extends Sequence0 {
+public class A399200 extends Sequence1 {
 
   private final TreeSet<Z> mCands = new TreeSet<>();
+
   {
     mCands.add(Z.ZERO);
     mCands.add(Z.ONE);
     mCands.add(Z.TWO);
   }
+
   private CR mRunningMin = CR.NEG_ONE;
   private final Convergents mC = new Convergents(CR.PI);
   private Q mConv = mC.next();

@@ -12,6 +12,6 @@ public class A164099 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A164099() {
-    super(1, new EulerTransform(1, new A243321()).skip(), k -> k.subtract(1));
+    super(2, new EulerTransform(1, new A243321()).skip(), k -> k.subtract(1));
   }
 }

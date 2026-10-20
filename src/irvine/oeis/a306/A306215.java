@@ -1,14 +1,14 @@
 package irvine.oeis.a306;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A306215 a(n) gives the length of A306211 after n generations.
  * @author Sean A. Irvine
  */
-public class A306215 extends Sequence0 {
+public class A306215 extends Sequence1 {
 
   private final LongDynamicByteArray mS = new LongDynamicByteArray();
   private long mLength = 0;

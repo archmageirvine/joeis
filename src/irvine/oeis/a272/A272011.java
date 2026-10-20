@@ -22,7 +22,7 @@ public class A272011 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A272011() {
-    super(0);
+    super(1);
     next();
   }
 

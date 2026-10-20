@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A397780 Lexicographically earliest numbers k such that the decimal digits of k and k^2 taken together form a set where each distinct digit d appears at least d times, and this set of digits has not appeared in any previous term.
  * @author Sean A. Irvine
  */
-public class A397780 extends Sequence1 {
+public class A397780 extends Sequence0 {
 
   private final HashSet<Integer> mSeen = new HashSet<>();
   private long mN = -1;

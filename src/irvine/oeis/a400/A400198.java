@@ -1,13 +1,13 @@
 package irvine.oeis.a400;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A400198 b^c^d, where b &gt;= c &gt;= d &gt;= 0 ordered by b then c then d.
  * @author Sean A. Irvine
  */
-public class A400198 extends Sequence1 {
+public class A400198 extends Sequence0 {
 
   private long mB = 0;
   private long mC = 0;

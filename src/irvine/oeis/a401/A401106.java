@@ -26,9 +26,6 @@ public class A401106 extends Sequence0 {
         for (long s = c; s < t; s <<= 1) {
           final long u = Functions.MAKE_ODD.l(t - s);
           if (u > c && !mPrime.isPrime(u)) {
-            if (t==128) {
-              System.out.println(t + " = 2^" + Z.valueOf(s).makeOdd().auxiliary() + "*" + c + " + 2^" + Z.valueOf(t - s).makeOdd().auxiliary() + "*" + u);
-            }
             ++cnt;
           }
         }

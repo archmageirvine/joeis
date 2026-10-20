@@ -2,13 +2,13 @@ package irvine.oeis.a086;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A086378 Sum of successive remainders in computing Euclidean algorithm for (1,1/sqrt(n)) is rational.
  * @author Sean A. Irvine
  */
-public class A086378 extends Sequence0 {
+public class A086378 extends Sequence1 {
 
   /**
    * An element of Q(sqrt(n)), represented as (a + b sqrt(n)) / d with d > 0.

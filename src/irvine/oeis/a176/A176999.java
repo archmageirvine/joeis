@@ -12,6 +12,6 @@ public class A176999 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A176999() {
-    super(1, new A397808().skip(), k -> new Z(k.toString(2)));
+    super(2, new A397808().skip(), k -> new Z(k.toString(2)));
   }
 }

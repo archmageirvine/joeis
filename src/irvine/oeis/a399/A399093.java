@@ -14,6 +14,6 @@ public class A399093 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A399093() {
-    super(0, (term, n) -> Z.valueOf(Jaguar.factor(term).maxExponent()), "", new A367695());
+    super(1, (term, n) -> Z.valueOf(Jaguar.factor(term).maxExponent()), "", new A367695());
   }
 }

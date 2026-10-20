@@ -11,13 +11,13 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A398809 Number of integer quadruples (w,x,y,z), all &gt; 0, such that w &lt;= s, x &lt;= t, y &lt;= u, z &lt;= v for some factorization n = s*t*u*v.
  * @author Sean A. Irvine
  */
-public class A398809 extends Sequence0 {
+public class A398809 extends Sequence1 {
 
   private long mN = 0;
   private List<Long> mDivisors;

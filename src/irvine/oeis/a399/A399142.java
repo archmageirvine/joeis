@@ -16,7 +16,7 @@ public class A399142 extends BaseTriangle implements DirectArray {
 
   /** Construct the sequence. */
   public A399142() {
-    super(0, 1, 0);
+    super(1, 1, 0);
   }
 
   final MemoryFunction2<Long, Z> mB = new MemoryFunction2<>() {

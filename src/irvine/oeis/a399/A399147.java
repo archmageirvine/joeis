@@ -8,13 +8,13 @@ import java.util.Map;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence3;
 
 /**
  * A399147 Number of distinct proper side-crossing points among regular polygons inscribed in a common circle and aligned by their side midpoints.
  * @author Sean A. Irvine
  */
-public class A399147 extends Sequence0 {
+public class A399147 extends Sequence3 {
 
   // After Eddie Lin Rui
 

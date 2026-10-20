@@ -6,13 +6,13 @@ import java.util.List;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A400279 The number of skipped edges in the regular (n+1)-gon when the regular (n+2)-gon is drawn in a particular polygon spiral (see comments).
  * @author Sean A. Irvine
  */
-public class A400279 extends Sequence0 {
+public class A400279 extends Sequence1 {
 
   // The "double" arithmetic version of this is much faster
 

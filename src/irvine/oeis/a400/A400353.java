@@ -7,13 +7,13 @@ import java.util.Set;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A400353 The lexicographically earliest infinite sequence of distinct integers such that the concatenation of a(n-1)'s last digit, a(n), and a(n+1)'s first digit is a square.
  * @author Sean A. Irvine
  */
-public class A400353 extends Sequence0 {
+public class A400353 extends Sequence1 {
 
   // After Eric Fox
 

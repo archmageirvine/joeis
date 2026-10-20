@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A137347 Triangle of polynomial coefficients read by rows where P(-1,x)=0, P(0,x)=1, P(1,x)=x-1, and P(n,x) = x*P(n-1,x) - 2*x^2*P(n-2,x) + x^3*P(n-3,x).
  * @author Sean A. Irvine
  */
-public class A137347 extends Sequence0 {
+public class A137347 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mA = RING.zero();

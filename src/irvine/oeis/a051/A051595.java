@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A051595 Lesser members of pairs of "(-1)sigma amicable numbers", sorted by their lesser members.
  * @author Sean A. Irvine
  */
-public class A051595 extends Sequence0 {
+public class A051595 extends Sequence1 {
 
   private Z mN = Z.valueOf(429551);
 

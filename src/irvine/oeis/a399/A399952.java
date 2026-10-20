@@ -2,14 +2,14 @@ package irvine.oeis.a399;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a030.A030190;
 
 /**
  * A399952 Deterministic version of the random Fibonacci sequence, with signs from A030190 and the seed as (0,1).
  * @author Sean A. Irvine
  */
-public class A399952 extends Sequence1 {
+public class A399952 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

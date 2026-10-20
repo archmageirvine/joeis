@@ -2,13 +2,13 @@ package irvine.oeis.a397;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A397756 Numbers i and j both with m digits such that i*j = 10^m*R(i) + j, where R(x) is the digit reversal of x; j may end in 0.
  * @author Sean A. Irvine
  */
-public class A397756 extends Sequence0 {
+public class A397756 extends Sequence1 {
 
   private Z mLo = Z.TEN;
   private Z mHi = Z.valueOf(100);

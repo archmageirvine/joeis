@@ -3,16 +3,17 @@ package irvine.oeis.a343;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007089;
 
 /**
  * A343810 Numbers that contain only the digits 0,4,8. Permutable multiples of 4: numbers k such that every permutation of the digits of k is a multiple of 4.
  * @author Georg Fischer
  */
-public class A343810 extends Sequence0 {
+public class A343810 extends Sequence1 {
 
   final Sequence mA007089 = new A007089();
+
   @Override
   public Z next() {
     return Z.FOUR.multiply(mA007089.next());

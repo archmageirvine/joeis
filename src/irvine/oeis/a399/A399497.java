@@ -3,13 +3,13 @@ package irvine.oeis.a399;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A399497 H_b(c, d) where b &gt;= c &gt;= d &gt;= 0 ordered by b then c then d, where H_i is the i-th hyperoperation.
  * @author Sean A. Irvine
  */
-public class A399497 extends Sequence1 {
+public class A399497 extends Sequence0 {
 
   private static final int MAX_BITS = 16;
   private long mB = 0;

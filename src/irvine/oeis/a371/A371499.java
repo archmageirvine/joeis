@@ -13,6 +13,6 @@ public class A371499 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A371499() {
-    super(0, 0, k -> new Q(1, Functions.FACTORIAL.z(k * k)));
+    super(1, 0, k -> new Q(1, Functions.FACTORIAL.z(k * k)));
   }
 }

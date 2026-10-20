@@ -3,13 +3,13 @@ package irvine.oeis.a399;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A399391 Indices of record high-water marks of the sequence abs((sin(p))^p) where p is the numerator of the k-th convergent to Pi/2, starting from k = 1.
  * @author Sean A. Irvine
  */
-public class A399391 extends Sequence0 {
+public class A399391 extends Sequence1 {
 
   private final Convergents mConvergents = new Convergents(CR.HALF_PI);
   private long mN = 0;

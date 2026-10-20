@@ -3,13 +3,13 @@ package irvine.oeis.a398;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A398138 Sum of the remainders k mod n over the distinct entries k of the n X n multiplication table.
  * @author Sean A. Irvine
  */
-public class A398138 extends Sequence0 {
+public class A398138 extends Sequence1 {
 
   private long mN = 0;
 

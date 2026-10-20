@@ -3,13 +3,13 @@ package irvine.oeis.a397;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A397038 Sum of the quotients floor(k/n) over the distinct entries k of the n X n multiplication table.
  * @author Sean A. Irvine
  */
-public class A397038 extends Sequence0 {
+public class A397038 extends Sequence1 {
 
   private long mN = 0;
 

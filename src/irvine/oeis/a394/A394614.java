@@ -8,13 +8,13 @@ import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A394614 Irregular triangle read by rows: T(n,k) is the number of rooted binary time-consistent leaf-labeled galled trees with n leaves and exactly k galls, 0 &lt;= k &lt;= floor((n-1)/2).
  * @author Sean A. Irvine
  */
-public class A394614 extends Sequence0 {
+public class A394614 extends Sequence1 {
 
   private static final Polynomial<Q> HALF = Polynomial.create(Q.HALF);
   private int mN = 0;

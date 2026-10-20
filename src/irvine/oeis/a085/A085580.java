@@ -2,13 +2,13 @@ package irvine.oeis.a085;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A085580 a(n) = (n+1)-st digit after decimal point of d, where d = (sqrt((n+1)^2 + 4(n+1)) - (n+1))/2.
  * @author Sean A. Irvine
  */
-public class A085580 extends Sequence1 {
+public class A085580 extends Sequence0 {
 
   private long mN = 0;
   private Z mT = Z.ONE;

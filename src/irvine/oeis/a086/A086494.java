@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A086494 Group the natural numbers such that the sum of the terms of every group has a distinct prime signature not occurring earlier: (1), (2), (3, 4, 5), (6), (7, 8, 9), (10, 11, 12, 13, 14), (15, 16, 17), (18, 19, 20, 21)... Sequence contains the sum of the terms of groups.
  * @author Sean A. Irvine
  */
-public class A086494 extends Sequence1 {
+public class A086494 extends Sequence0 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private long mN = 0;

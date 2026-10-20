@@ -1,17 +1,18 @@
 package irvine.oeis.a398;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A398367 Values written by the walker in the trampled carousel process.
  * @author Sean A. Irvine
  */
-public class A398367 extends Sequence0 {
+public class A398367 extends Sequence1 {
 
   private final DynamicIntArray mA = new DynamicIntArray();
   private int mP = 0;
+
   {
     mA.set(0, 1);
   }

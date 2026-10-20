@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A085944 Let S = 12345678901234567890123456..., the cyclic concatenation of digits; partition this string into distinct squarefree numbers. To avoid leading zeros, no member may end with the digit 9.
  * @author Sean A. Irvine
  */
-public class A085944 extends Sequence0 {
+public class A085944 extends Sequence1 {
 
   private final HashSet<Z> mUsed = new HashSet<>();
   private long mA = 0;

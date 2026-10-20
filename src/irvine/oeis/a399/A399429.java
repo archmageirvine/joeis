@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A399429 Indices of record low-water marks of the sequence abs((sin(p))^p) where p is the numerator of the k-th convergent to Pi/2, starting from k = 1.
  * @author Sean A. Irvine
  */
-public class A399429 extends Sequence0 {
+public class A399429 extends Sequence1 {
 
   private final Convergents mConvergents = new Convergents(CR.HALF_PI);
   private long mN = 0;

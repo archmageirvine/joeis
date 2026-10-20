@@ -14,6 +14,6 @@ public class A117690 extends FilterSequence {
 
   /** Construct the sequence. */
   public A117690() {
-    super(0, new A000578(), c -> Predicates.SQUARE.is(Functions.DIGIT_SUM.i(c)) && Predicates.SQUARE.is(Functions.DIGIT_PRODUCT.i(c)));
+    super(1, new A000578(), c -> Predicates.SQUARE.is(Functions.DIGIT_SUM.i(c)) && Predicates.SQUARE.is(Functions.DIGIT_PRODUCT.i(c)));
   }
 }

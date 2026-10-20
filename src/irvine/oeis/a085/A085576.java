@@ -3,13 +3,13 @@ package irvine.oeis.a085;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A085576 Array read by antidiagonals: T(n,k) = size of largest subset of nodes in n X k grid such that there at least 3 edges between any pair of nodes (n &gt;= 1, k &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A085576 extends Sequence0 {
+public class A085576 extends Sequence1 {
 
   private int mN = 0;
   private int mM = -1;

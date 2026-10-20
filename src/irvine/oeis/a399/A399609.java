@@ -2,13 +2,13 @@ package irvine.oeis.a399;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A399609 Table of T(n, k) read by antidiagonals: k-dimensional simplex coordinate; repeat j exactly binomial(j+k-1, k-1) times, for n &gt;= 0, k &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A399609 extends Sequence1 {
+public class A399609 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a137;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A137523 Triangle read by rows: T(n, k) = n! * [t^n*x^k] (1-1/(1-2*t^2+t^4)) * exp(t*x).
  * @author Sean A. Irvine
  */
-public class A137523 extends Sequence0 {
+public class A137523 extends Sequence1 {
 
   private long mN = -1;
   private long mM = 0;

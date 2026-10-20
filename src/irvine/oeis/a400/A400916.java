@@ -1,13 +1,13 @@
 package irvine.oeis.a400;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
- * A400916 Array A(n,k) read by antidiagonals: number of unit n-cubes added in the k-th shell by expanding an n-cube by one unit in every coordinate direction per step.
+ * A400916 allocated for Eddie Lin Rui.
  * @author Sean
  */
-public class A400916 extends Sequence0 {
+public class A400916 extends Sequence1 {
 
   private long mN = 0;
   private long mM = -1;

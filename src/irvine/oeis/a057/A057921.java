@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A057921 Numbers k such that d(k+1) divides d(k), where d(k) is number of positive divisors of k.
  * @author Sean A. Irvine
  */
-public class A057921 extends Sequence0 {
+public class A057921 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

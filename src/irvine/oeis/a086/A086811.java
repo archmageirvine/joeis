@@ -8,13 +8,13 @@ import irvine.math.function.Functions;
 import irvine.math.predicate.Predicates;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A086811 Average (scaled by a certain explicit factor) over all integers k of a_k(n), the n-th coefficient of the k-th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A086811 extends Sequence0 {
+public class A086811 extends Sequence1 {
 
   private int mN = 0;
 

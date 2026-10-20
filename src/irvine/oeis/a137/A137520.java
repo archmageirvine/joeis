@@ -2,13 +2,13 @@ package irvine.oeis.a137;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A137520 Triangle read by rows: T(n, k) = (n!/3) * [t^n*x^k] (1-(4/(t^4-1))^2) * exp(t*x).
  * @author Sean A. Irvine
  */
-public class A137520 extends Sequence0 {
+public class A137520 extends Sequence1 {
 
   private static final Z NEG5 = Z.valueOf(-5);
   private long mN = 0;

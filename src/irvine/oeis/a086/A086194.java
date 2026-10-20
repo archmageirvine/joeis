@@ -5,14 +5,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000625;
 
 /**
  * A086194 Number of unrooted steric quartic trees with n (unlabeled) nodes and possessing a centroid; number of n carbon alkanes C(n)H(2n +2) with a centroid when stereoisomers are regarded as different.
  * @author Sean A. Irvine
  */
-public class A086194 extends Sequence0 {
+public class A086194 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Sequence mS = new A000625();

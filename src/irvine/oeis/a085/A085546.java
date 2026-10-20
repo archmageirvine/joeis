@@ -6,13 +6,13 @@ import java.util.HashSet;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A085546 Starting term of the smallest n-chain of numbers whose squares are permutations of the same digits.
  * @author Sean A. Irvine
  */
-public class A085546 extends Sequence1 {
+public class A085546 extends Sequence2 {
 
   // After Michael S. Branicky
 

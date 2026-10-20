@@ -21,7 +21,6 @@ public class A400994 extends FilterNumberSequence {
       }
       v /= 10;
     }
-//    System.out.println(n + " -> " + Arrays.deepToString(m));
     return IntegerUtils.det(m);
   }
 

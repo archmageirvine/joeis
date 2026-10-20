@@ -2,13 +2,13 @@ package irvine.oeis.a086;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A086404 Square array of numbers T(n,k) = ((1+sqrt(3))*(k+sqrt(3))^n-(1-sqrt(3))*(k-sqrt(3))^n)/(2*sqrt(3)), read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A086404 extends Sequence1 {
+public class A086404 extends Sequence0 {
 
   private static final CR SQRT3 = CR.THREE.sqrt();
   private static final CR S0 = SQRT3.add(1);

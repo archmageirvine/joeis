@@ -2,13 +2,13 @@ package irvine.oeis.a085;
 
 import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A085926 a(n) = n if n is composite, else a(n) = smallest composite number beginning with n not obtained trivially by simply placing a zero as a least significant digit; i.e., a(n) is not equal to 10n.
  * @author Sean A. Irvine
  */
-public class A085926 extends Sequence1 {
+public class A085926 extends Sequence0 {
 
   private long mN = 0;
 

@@ -7,20 +7,19 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A398229 Number of ordered pairs of finite sequences of polynomials over GF(2), each polynomial of degree 1 or 2 and each sequence of total degree n, having the same continuant.
  * @author Sean A. Irvine
  */
-public class A398229 extends Sequence0 {
+public class A398229 extends Sequence1 {
 
   // After David Niedbala Giraudin
 
   private List<Long> mPrev2 = Collections.singletonList(pack(1, 0));
   private List<Long> mPrev1;
   private int mN = 0;
-
 
   /*
    * Multiplication of polynomials over GF(2), represented by coefficient bits.

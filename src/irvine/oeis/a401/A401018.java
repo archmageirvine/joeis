@@ -17,7 +17,7 @@ public class A401018 extends Sequence0 {
       if (n < 2) {
         return n;
       }
-      return (n & 1) == 1 ? get(n / 2) + get(n / 2 + 1) : get (n / 2);
+      return (n & 1) == 1 ? get(n / 2) + get(n / 2 + 1) : get(n / 2);
     }
   };
 

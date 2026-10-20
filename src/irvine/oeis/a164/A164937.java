@@ -3,13 +3,13 @@ package irvine.oeis.a164;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A164937 Near-repdigit primes.
  * @author Sean A. Irvine
  */
-public class A164937 extends Sequence0 {
+public class A164937 extends Sequence1 {
 
   // After Michael S. Branicky
 

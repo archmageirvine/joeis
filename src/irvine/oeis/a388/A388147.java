@@ -11,6 +11,6 @@ public class A388147 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A388147() {
-    super(0, CR.GAMMA.add(CR.TAU.log()).divide(2));
+    super(1, CR.GAMMA.add(CR.TAU.log()).divide(2));
   }
 }

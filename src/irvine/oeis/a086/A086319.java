@@ -3,15 +3,16 @@ package irvine.oeis.a086;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A086319 Primes produced by repeated application of the formula p -&gt; (4p +- 3) starting at the prime 2.
  * @author Sean A. Irvine
  */
-public class A086319 extends Sequence0 {
+public class A086319 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
+
   {
     mA.add(Z.TWO);
   }

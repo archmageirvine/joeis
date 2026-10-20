@@ -3,13 +3,13 @@ package irvine.oeis.a086;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A086211 Triangle related to Bell numbers; T(n,k) read by rows, n&gt;=1, 1&lt;=k&lt;=n: T(n,k) = T(n-1,k-1) + (k-1)*T(n-1,k) + Sum_{j=k..n-2} T(n-1,j)) with T(1,1)=1, T(1,k)=0 if k&gt;1.
  * @author Sean A. Irvine
  */
-public class A086211 extends Sequence0 {
+public class A086211 extends Sequence1 {
 
   private int mN = 1;
   private int mM = 0;

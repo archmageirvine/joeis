@@ -3,13 +3,13 @@ package irvine.oeis.a398;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A398354 Triangle read by rows: T(n,k) is the number of distinct entries q of the n X n multiplication table whose remainder upon division by n is k, for 0 &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
-public class A398354 extends Sequence0 {
+public class A398354 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

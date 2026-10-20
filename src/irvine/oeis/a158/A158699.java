@@ -3,13 +3,13 @@ package irvine.oeis.a158;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A158699 Start with 0; then add one to each single digit.
  * @author Sean A. Irvine
  */
-public class A158699 extends Sequence1 {
+public class A158699 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

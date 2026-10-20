@@ -3,13 +3,13 @@ package irvine.oeis.a316;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A316566 Triangle read by rows: T(n,k) is the number of elements of the group GL(2, Z(n)) with order k, 1 &lt;= k &lt;= A316565(n).
  * @author Sean A. Irvine
  */
-public class A316566 extends Sequence0 {
+public class A316566 extends Sequence1 {
 
   private int mN = 0;
   private Z[] mRow = new Z[0];

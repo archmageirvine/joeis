@@ -7,20 +7,21 @@ import irvine.math.series.AbstractInfiniteSeries;
 import irvine.math.series.Series;
 import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a096.A096960;
 
 /**
  * A398383 a(n) = c_6a(n)/n^2, where c_6a(n) are the Fourier coefficients of the level-2 K3 meromorphic modular form C_6a defined below.
  * @author Sean A. Irvine
  */
-public class A398383 extends Sequence0 {
+public class A398383 extends Sequence1 {
 
   private static final SeriesRing<Q> SQ = SeriesRing.SQ;
   private final Series<Q> mB = Series.create(new A096960().prepend(0));
   private final Series<Q> mU = SQ.shift(SQ.multiply(SQ.pow(new AbstractInfiniteSeries<>() {
     private Series<Q> mS = SQ.one();
     private long mK = 1;
+
     @Override
     public Q coeff(final long n) {
       while (n >= mK) {

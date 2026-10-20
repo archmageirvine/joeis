@@ -14,6 +14,6 @@ public class A117686 extends FilterSequence {
 
   /** Construct the sequence. */
   public A117686() {
-    super(0, new A000290(), v -> Predicates.CUBE.is(Functions.DIGIT_PRODUCT.z(v)));
+    super(1, new A000290(), v -> Predicates.CUBE.is(Functions.DIGIT_PRODUCT.z(v)));
   }
 }

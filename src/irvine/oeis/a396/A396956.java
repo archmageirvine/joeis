@@ -4,13 +4,13 @@ import irvine.math.function.Functions;
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
 import irvine.math.zi.Zi;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A396956 a(n) = n - Omega(|Re((3 + 2*i)^n)|) - Omega(|Im((3 + 2*i)^n)|), where Omega is A001222.
  * @author Sean A. Irvine
  */
-public class A396956 extends Sequence0 {
+public class A396956 extends Sequence1 {
 
   private static final GaussianIntegers G = GaussianIntegers.SINGLETON;
   private static final Zi C = new Zi(Z.THREE, Z.TWO);

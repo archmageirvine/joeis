@@ -3,7 +3,6 @@ package irvine.oeis.a143;
 
 import irvine.oeis.FiniteSequence;
 
-
 /**
  * A143133 Number of cribbage hands with score n when flush points are omitted.
  * @author Georg Fischer
@@ -12,6 +11,6 @@ public class A143133 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A143133() {
-    super(1, FINITE, 1025024, 101376, 2843456, 510528, 2874672, 704208, 1787376, 754144, 1118048, 353352, 375208, 42112, 308480, 15232, 87436, 8576, 57272, 11192, 2248, 0, 7828, 2472, 444, 356, 3680, 0, 0, 0, 76, 4);
+    super(0, FINITE, 1025024, 101376, 2843456, 510528, 2874672, 704208, 1787376, 754144, 1118048, 353352, 375208, 42112, 308480, 15232, 87436, 8576, 57272, 11192, 2248, 0, 7828, 2472, 444, 356, 3680, 0, 0, 0, 76, 4);
   }
 }

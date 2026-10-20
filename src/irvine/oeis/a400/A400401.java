@@ -16,7 +16,7 @@ public class A400401 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A400401() {
-    super(1, new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         final CR tsqrt2 = T0.multiply(SQRT2);

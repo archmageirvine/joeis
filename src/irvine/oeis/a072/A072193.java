@@ -6,13 +6,13 @@ import java.util.List;
 import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A072193 Irregular triangle read by rows of continued fraction expansions of the rational numbers 1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, 2/5, ... A002260(k) / A003057(k+1).
  * @author Sean A. Irvine
  */
-public class A072193 extends Sequence0 {
+public class A072193 extends Sequence1 {
 
   private long mN = 2;
   private long mM = 0;

@@ -4,14 +4,14 @@ import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a144.A144625;
 
 /**
  * A400199 H_x(y, z), the x-th hyperoperation of y and z, where (x, y, z) is the n-th triple in the canonical shell ordering of N^3 given by A144625.
  * @author Sean A. Irvine
  */
-public class A400199 extends Sequence1 {
+public class A400199 extends Sequence0 {
 
   private final Sequence mA = new A144625();
   private static final int MAX_BITS = 16;

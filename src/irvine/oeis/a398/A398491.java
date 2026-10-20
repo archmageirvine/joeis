@@ -3,13 +3,13 @@ package irvine.oeis.a398;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A398491 Number of distinct entries q of the n X n multiplication table such that floor(q/n) &gt; floor(q/(n+1)).
  * @author Sean A. Irvine
  */
-public class A398491 extends Sequence0 {
+public class A398491 extends Sequence1 {
 
   private long mN = 0;
 

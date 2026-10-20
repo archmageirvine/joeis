@@ -15,7 +15,7 @@ public class A117687 extends FilterSequence {
 
   /** Construct the sequence. */
   public A117687() {
-    super(0, new A000290(), v -> {
+    super(1, new A000290(), v -> {
       final Z dp = Functions.DIGIT_PRODUCT.z(v);
       return Predicates.CUBE.is(Functions.DIGIT_SUM.z(v)) && Predicates.CUBE.is(dp);
     });

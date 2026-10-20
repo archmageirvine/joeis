@@ -7,13 +7,13 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A398810 Number of integer 5-tuples, all entries &gt; 0, such that the k-th component is &lt;= q_k for some factorization n = q_1*q_2*q_3*q_4*q_5.
  * @author Sean A. Irvine
  */
-public class A398810 extends Sequence0 {
+public class A398810 extends Sequence1 {
 
   // After Soslan Daurov
 

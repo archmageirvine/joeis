@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001359;
 
 /**
- * A117849 a(n) =(A001359[n]^2-1)/2.
+ * A117849 a(n) = (A001359(n)^2 - 1)/4.
  * @author Georg Fischer
  */
 public class A117849 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A401080.
+ * A401042 allocated for Jan Snellman.
  * @author Sean A. Irvine
  */
 public class A401042 extends Sequence2 {

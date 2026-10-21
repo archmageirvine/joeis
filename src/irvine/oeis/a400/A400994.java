@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401080.
+ * A400994 allocated for Paolo P. Lava.
  * @author Sean A. Irvine
  */
 public class A400994 extends FilterNumberSequence {

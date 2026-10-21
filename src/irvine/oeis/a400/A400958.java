@@ -2,13 +2,13 @@ package irvine.oeis.a400;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A400958 allocated for Henri Lifchitz.
  * @author Sean A. Irvine
  */
-public class A400958 extends Sequence1 {
+public class A400958 extends Sequence0 {
 
   private long mSum = 0;
   private long mN = 1;

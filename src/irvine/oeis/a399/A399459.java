@@ -9,14 +9,14 @@ import irvine.math.graph.VertexConnectivity;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A399459 Table read by rows: T(n,k) is the number of Chv\u00e1tal-Erd\u0151s graphs with degree n and order k.
  * @author Sean A. Irvine
  */
-public class A399459 extends Sequence2 {
+public class A399459 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mDegree = 1;

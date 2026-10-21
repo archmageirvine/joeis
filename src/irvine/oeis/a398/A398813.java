@@ -1,7 +1,7 @@
 package irvine.oeis.a398;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001055;
 import irvine.util.array.LongDynamicByteArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicByteArray;
  * A398813 Smallest number with multiplicative partition persistence n (see A398037).
  * @author Sean A. Irvine
  */
-public class A398813 extends Sequence1 {
+public class A398813 extends Sequence0 {
 
   private final A001055 mA = new A001055();
   private final LongDynamicByteArray mIterations = new LongDynamicByteArray();

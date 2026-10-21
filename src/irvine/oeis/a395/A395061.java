@@ -12,6 +12,6 @@ public class A395061 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A395061() {
-    super(0, CrFunctions.STRUVE_L.cr(0, CR.ONE).multiply(CR.HALF_PI));
+    super(1, CrFunctions.STRUVE_L.cr(0, CR.ONE).multiply(CR.HALF_PI));
   }
 }

@@ -2,7 +2,7 @@ package irvine.oeis.a400;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A400792 a(1) = 1. For n &gt; 1, a(n) is the smallest unused positive integer k such that (number of earlier terms smaller than k that are coprime to k) - (number of earlier terms larger than k that share a factor with k) = 1.
  * @author Sean A. Irvine
  */
-public class A400792 extends Sequence0 {
+public class A400792 extends AbstractSequence {
 
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
@@ -18,6 +18,12 @@ public class A400792 extends Sequence0 {
   private final LongDynamicLongArray mCntLim = new LongDynamicLongArray();
   private long mN = -1;
   private long mLeastUnused = 1;
+
+  /** Construct the sequence. */
+  public A400792() {
+    super(1);
+    next();
+  }
 
   @Override
   public Z next() {

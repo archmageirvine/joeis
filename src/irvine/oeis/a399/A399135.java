@@ -2,13 +2,13 @@ package irvine.oeis.a399;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A399135 Numbers for which repeatedly subtracting the greatest prime factor (A006530) to reach 0 takes fewer steps than repeatedly subtracting the squarefree kernel (A007947).
  * @author Sean A. Irvine
  */
-public class A399135 extends Sequence2 {
+public class A399135 extends Sequence1 {
 
   private long mN = 1;
 

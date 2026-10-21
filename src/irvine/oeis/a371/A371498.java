@@ -14,7 +14,6 @@ public class A371498 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A371498() {
-    super(0, 0, k -> new Q(Z.NEG_ONE.pow(k), Functions.FACTORIAL.z(k * k)));
-    next();
+    super(-1, 0, k -> new Q(Z.NEG_ONE.pow(k), Functions.FACTORIAL.z(k * k)));
   }
 }

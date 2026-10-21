@@ -15,7 +15,7 @@ public class A181051 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A181051() {
-    super(1, ComputableReals.SINGLETON.hypergeometric(CR.HALF.negate(), ONE_QUARTER, ONE_QUARTER)
+    super(0, ComputableReals.SINGLETON.hypergeometric(CR.HALF.negate(), ONE_QUARTER, ONE_QUARTER)
       .divide(ComputableReals.SINGLETON.hypergeometric(CR.HALF, CR.valueOf(new Q(5, 4)), ONE_QUARTER)));
   }
 }

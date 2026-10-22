@@ -7,7 +7,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a400.A400873;
 
 /**
- * A401189 Nonsquarefree numbers k that divide A400873(k).
+ * A401189 allocated for Amiram Eldar.
  * @author Georg Fischer
  */
 public class A401189 extends FilterNumberSequence {

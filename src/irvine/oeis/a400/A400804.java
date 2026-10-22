@@ -24,7 +24,7 @@ public class A400804 extends Sequence1 {
   private int mM = 35;
   private long mHighest = 0;
 
-  private long b(final int m) {
+  protected long b(final int m) {
     final List<Point> edges = new ArrayList<>();
     for (int d = 2; d <= m / 2; ++d) {
       for (int j = 2 * d; j <= m; j += d) {

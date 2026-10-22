@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400968 a(n) is the number of boundary lattice points minus the number of interior lattice points of the octahedron |x| + |y| + |z| &lt;= n.
+ * A400968 allocated for Henrik Arhold.
  * @author Georg Fischer
  */
 public class A400968 extends HolonomicRecurrence {

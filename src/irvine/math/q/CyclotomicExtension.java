@@ -42,6 +42,11 @@ public final class CyclotomicExtension extends PolynomialRingField<Q> {
   }
 
   @Override
+  public Polynomial<Q> add(final Polynomial<Q> a, final Polynomial<Q> b) {
+    return mod(super.add(a, b), mMod);
+  }
+
+  @Override
   public Polynomial<Q> multiply(final Polynomial<Q> a, final Polynomial<Q> b) {
     return mod(super.multiply(a, b), mMod);
   }

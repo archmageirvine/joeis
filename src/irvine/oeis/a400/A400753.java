@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400753 Row sums of the Riordan array (1/(1-3*x), x/(1-3*x)^3).
+ * A400753 allocated for Ifeyinwa Madu.
  * @author Georg Fischer
  */
 public class A400753 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a057.A057511;
 
 /**
- * A243495 Indices in A014486  for the oriented trees that stay the same when &quot;deep-rotated&quot;: fixed points of A057511/A057512.
+ * A243495 Indices in A014486  for the oriented trees that stay the same when "deep-rotated": fixed points of A057511/A057512.
  * @author Georg Fischer
  */
 public class A243495 extends FilterSequence {

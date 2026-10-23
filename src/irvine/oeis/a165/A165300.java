@@ -9,8 +9,6 @@ import irvine.oeis.recur.MexSequence;
  */
 public class A165300 extends MexSequence {
 
-  private long mPeriod;
-
   /** Construct the sequence. */
   public A165300() {
     this(1, 2);
@@ -34,5 +32,4 @@ public class A165300 extends MexSequence {
         return result;
       }, "1");
   }
-
 }

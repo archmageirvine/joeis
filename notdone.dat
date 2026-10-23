@@ -2210,7 +2210,6 @@ A072897 Least n-th order digital invariant which is not an Armstrong number (A00
 A072934 Length of longest non-crossing walk along vertices of n-dimensional hypercubes.
 A072981 Partial quotients of the limit of a continued fraction (A071851).
 A073001 Decimal expansion of Bernstein's constant
-A073002 Decimal expansion of -zeta'(2) (the first derivative of the zeta function at 2).
 A073008 Decimal expansion of the Traveling Salesman constant.
 A073043 Number of nonisomorphic (finite) groups with n conjugacy classes.
 A073049 Least m > 1 such that m^n has m divisors, or 0 if no such m exists.
@@ -2606,8 +2605,6 @@ A084192 Array read by antidiagonals: T(n,k) = solution to postage stamp problem 
 A084193 Array read by antidiagonals: T(k,n) = solution to postage stamp problem with n stamps and k denominations (n >= 1, k >= 1).
 A084233 Decimal expansion of area under the curve Zeta(1/2 + t*I) from zero to its first nontrivial zero (A058303).
 A084425 Let b(0) = n, b(2*k+1) = c, where c > b(m) is the smallest number such that gcd(c,b(2*k))=1, b(2*k+2) = e where e < b(m) is the smallest number such that gcd(e,b(2*k+1))=1 for m = 0..2*k, until reaching e = 1. Then a(n) = the last c.
-A084448 Decimal expansion of (negative of) Kinkelin constant.
-A084539 Continued fraction expansion of (negative of) Kinkelin constant.
 A084565 Number of connected switching classes of signed graphs with n nodes.
 A084588 Least positive integers, all distinct, that satisfy Sum_{n>0} 1/a(n)^z = 0, where z is the first nontrivial zero of the Riemann zeta function: z = (1/2 + i*y) with y=14.13472514173469379045...
 A084589 Least positive integers, all distinct, that satisfy Sum_{n>0} 1/a(n)^z = 0, where z is the second nontrivial zero of the Riemann zeta function: z = (1/2 + i*y) with y=21.022039638771554992628...
@@ -2674,7 +2671,6 @@ A086233 Decimal expansion of probability that a random walk on a 5-d lattice ret
 A086234 Decimal expansion of probability that a random walk on a 6-d lattice returns to the origin.
 A086235 Decimal expansion of probability that a random walk on a 7-d lattice returns to the origin.
 A086236 Decimal expansion of probability that a random walk on a 8-d lattice returns to the origin.
-A086237 Decimal expansion of Porter's constant.
 A086238 Decimal expansion of Omega prime-generating constant.
 A086239 Decimal expansion of Sum_{k>=2} c(k)/prime(k), where c(k) = -1 if p == 1 (mod 4) and c(k) = +1 if p == 3 (mod 4).
 A086240 Decimal expansion of Sum_{k>=2} (p mod 4 - 2)/p^2 where p=prime(k).

@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006527;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A401015 allocated for Peter M. Chema.
+ * A401015 Digital roots of A006527(n), the number of unit tetrahedra in a regular tetrahedron subdivided into a tetrahedral-octahedral lattice.
  * @author Sean A. Irvine
  */
 public class A401015 extends SimpleTransformSequence {

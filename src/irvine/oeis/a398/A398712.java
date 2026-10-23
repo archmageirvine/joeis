@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398712 allocated for David Consiglio, Jr.
+ * A398712 Numbers k such that all of the digits of k are not represented in the Collatz pathway from n to 1.
  * @author Sean A. Irvine
  */
 public class A398712 extends FilterNumberSequence {

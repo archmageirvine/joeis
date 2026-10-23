@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400984 allocated for Omar Said.
+ * A400984 Numbers k &gt; 1 whose trajectory under the Collatz map A014682 contains k+1.
  * @author Sean A. Irvine
  */
 public class A400984 extends FilterNumberSequence {

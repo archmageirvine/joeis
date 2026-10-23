@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399807 allocated for Andrei Leonov.
+ * A399807 Start with the positive integers; at the k-th sieving step, remove every (2k+1)-th term of the sequence remaining after the (k-1)-st sieving step; iterate.
  * @author Sean A. Irvine
  */
 public class A399807 extends Sequence1 {

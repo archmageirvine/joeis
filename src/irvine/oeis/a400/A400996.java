@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400996 allocated for Sucharita Biswas.
+ * A400996 Number of fixed point free involutions in S_{2n} (or perfect matchings on [2n]) which avoid the patterns {123, 231, 321}.
  * @author Georg Fischer
  */
 public class A400996 extends HolonomicRecurrence {

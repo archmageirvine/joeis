@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A401034 allocated for Jens Ahlstr\u00f6m.
+ * A401034 a(n) = n + x + y where x and y are the coordinates of n in the square spiral.
  * @author Sean A. Irvine
  */
 public class A401034 extends Sequence1 {

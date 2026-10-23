@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A401113 allocated for Ved Prakash Pandey.
+ * A401113 Primes p at which the running sum Sum_{q prime &lt;= p} Kronecker(5,q) sets a new record high.
  * @author Sean A. Irvine
  */
 public class A401113 extends A000040 {

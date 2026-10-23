@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A086925 a(1) = 1; a(n+1) = a(n)/spf(a(n)) + number of earlier occurrences of a(n), spf=A020639 = smallest prime factor.
+ * A086925 a(1) = 1; a(n+1) = a(n)/lpf(a(n)) + number of earlier occurrences of a(n), lpf=A020639 = least prime factor.
  * @author Sean A. Irvine
  */
 public class A086925 extends CachedSequence {

@@ -12,7 +12,7 @@ import irvine.oeis.a001.A001055;
 import irvine.oeis.a025.A025487;
 
 /**
- * A395050 allocated for Zhicheng Wei.
+ * A395050 allocated for Alex Ratushnyak.
  * @author Sean A. Irvine
  */
 public class A395050 extends A001055 {

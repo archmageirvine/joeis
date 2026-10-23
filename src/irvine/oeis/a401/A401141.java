@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001097;
 
 /**
- * A401141 allocated for Jean-Marc Rebert.
+ * A401141 a(n) = the first twin-prime in the earliest chain of 2n-1 consecutive twin-primes whose sum is a twin-prime.
  * @author Sean A. Irvine
  */
 public class A401141 extends Sequence1 {

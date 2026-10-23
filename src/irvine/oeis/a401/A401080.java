@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A401080 allocated for Charles Delaporte.
+ * A401080 Numbers k such that binomial(k,2) equals another nontrivial binomial coefficient.
  * @author Sean A. Irvine
  */
 public class A401080 extends Sequence1 {

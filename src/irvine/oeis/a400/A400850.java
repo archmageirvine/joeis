@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a033.A033950;
 
 /**
- * A400850 allocated for Maxwell C. P. Brown.
+ * A400850 Refactorable numbers k (A033950) such that d(k/d(k)) = d(d(k)), where d(x) is the number of divisors of x (A000005).
  * @author Sean A. Irvine
  */
 public class A400850 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A372576 a(n) = A276085(n) mod 360, where A276085 is the primorial base log-function.
+ * A372576 a(n) = A276085(n) mod 360, where A276085 is fully additive with a(p) = p#/p.
  * @author Georg Fischer
  */
 public class A372576 extends LambdaSequence {

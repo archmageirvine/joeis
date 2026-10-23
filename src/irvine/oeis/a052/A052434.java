@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A052434 Nearest integer to R(n) - pi(n), where R(x) is the Riemann prime counting function.
+ * A052434 Nearest integer to R(n) - pi(n), where R(x) is Riemann's R function.
  * @author Sean A. Irvine
  */
 public class A052434 extends A000720 {

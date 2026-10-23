@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399161 allocated for Anthony Bean.
+ * A399161 Primes of the form 42*10^(k+2) + 43.
  * @author Sean A. Irvine
  */
 public class A399161 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A025587 '3x+1' record-setters (blowup factor).
+ * A025587 '3x+1' record indices for the blowup factor A056959(k)/k, where A056959(k) is the maximum of the orbit of k under iterations of the Collatz map A006370.
  * @author Sean A. Irvine
  */
 public class A025587 extends Sequence0 {

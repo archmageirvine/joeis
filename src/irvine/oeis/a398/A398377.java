@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a339.A339558;
 
 /**
- * A398377 allocated for Roberto Cicero Kfouri.
+ * A398377 Primes p for which pi_{24;7,11}(p) - pi_{24;1,5}(p) = -1, where pi_{m;a,b,...}(x) is the number of primes &lt;= x which are congruent to a or b or ... (mod m).
  * @author Sean A. Irvine
  */
 public class A398377 extends RecordPositionSequence {

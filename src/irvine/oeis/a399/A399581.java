@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399581 allocated for Karan Sharma.
+ * A399581 Upper bound for the smallest term of a cycle of the 7x+1 map with n odd terms: a(n) = floor(n/(7*log(2)*(ceiling(n*log_2(7)) - n*log_2(7)))).
  * @author Sean A. Irvine
  */
 public class A399581 extends Sequence1 {

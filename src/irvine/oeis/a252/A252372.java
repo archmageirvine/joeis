@@ -5,7 +5,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a251.A251726;
 
 /**
- * A252372 Characteristic function for A251726: a(n) = 1 if n &gt; 1 and gpf(n) &lt; spf(n)^2, otherwise 0; here spf(n) and gpf(n) (smallest and greatest prime factor of n) are sequences A020639(n) and A006530(n).
+ * A252372 Characteristic function for A251726: a(n) = 1 if n &gt; 1 and gpf(n) &lt; lpf(n)^2, otherwise 0; here lpf(n) and gpf(n) (least and greatest prime factor of n) are sequences A020639(n) and A006530(n).
  * @author Georg Fischer
  */
 public class A252372 extends CharacteristicFunction {

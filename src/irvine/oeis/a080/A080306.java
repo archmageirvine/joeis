@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A080306 Numerator of Sum(k^mu(k): 1&lt;=k&lt;=n), where mu is the Moebius function (A008683).
+ * A080306 Numerator of Sum_{k=1..n} k^mu(k), where mu is the Moebius function (A008683).
  * @author Georg Fischer
  */
 public class A080306 extends LambdaSequence {

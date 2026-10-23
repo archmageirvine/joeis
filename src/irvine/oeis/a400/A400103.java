@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.gf.EgfSequence;
 
 /**
- * A400103 allocated for M\u00e9lika Tebni.
+ * A400103 Number of endofunctions on [n] whose second-largest component has size 1.
  * @author Sean A. Irvine
  */
 public class A400103 extends EgfSequence {

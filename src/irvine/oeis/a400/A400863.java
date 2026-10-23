@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400863 allocated for Vicenzo P DeMaar.
+ * A400863 Least degree of a nonzero polynomial P(t) over GF(2) such that x^n - 1 divides P(1 + x + x^3).
  * @author Sean A. Irvine
  */
 public class A400863 extends Sequence1 {

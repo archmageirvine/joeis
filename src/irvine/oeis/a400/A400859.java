@@ -8,7 +8,7 @@ import irvine.oeis.PeekSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A400859 allocated for Maxwell C. P. Brown.
+ * A400859 Numbers of the form k * d(k), where k is a refactorable number (A033950) satisfying d(k/d(k)) = d(d(k)), where d(x) is the divisor count of x.
  * @author Sean A. Irvine
  */
 public class A400859 extends Sequence1 {

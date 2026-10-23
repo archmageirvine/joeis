@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054030 Sigma(n)/n for n such that sigma(n) is divisible by n.
+ * A054030 Sigma(k)/k for k such that sigma(k) is divisible by k.
  * @author Sean A. Irvine
  */
 public class A054030 extends Sequence1 {

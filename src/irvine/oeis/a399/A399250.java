@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399250 allocated for Jens Ahlstr\u00f6m.
+ * A399250 Product of the x- and y-coordinates of a point moving in a square spiral.
  * @author Sean A. Irvine
  */
 public class A399250 extends Sequence1 {

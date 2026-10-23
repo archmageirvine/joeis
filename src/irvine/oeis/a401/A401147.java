@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401147 allocated for Enyu Chen.
+ * A401147 Numbers k such that k^4 - 1 is the product of exactly 4 primes (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A401147 extends FilterNumberSequence {

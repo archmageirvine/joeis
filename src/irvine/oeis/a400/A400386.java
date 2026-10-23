@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400386 allocated for Vincenzo Librandi.
+ * A400386 Rows sum of triangle A106580.
  * @author Sean A. Irvine
  */
 public class A400386 extends GfSequence {

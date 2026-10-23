@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401041 allocated for Jan Snellman.
+ * A401041 a(n) = Sum_{k=4..n, k composite} (pi(lpf(k)) - 1), where lpf(k) = A020639(k) is the least prime factor of k.
  * @author Sean A. Irvine
  */
 public class A401041 extends Sequence1 {

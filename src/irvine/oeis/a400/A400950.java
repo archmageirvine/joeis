@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400950 allocated for David Cleaver.
+ * A400950 Triangle read by rows: T(n,k) is the number of distinct ways to get the minimum runtime for k threads to complete n tasks, where time(n_i) = i, with 1 &lt;= i &lt;= n.
  * @author Sean A. Irvine
  */
 public class A400950 extends Sequence1 {

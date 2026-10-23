@@ -5,7 +5,7 @@ import irvine.oeis.a057.A057148;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A193434 6*n/5 = (n written backwards), n &gt; 0.
+ * A193434 Numbers k such that 6*k/5 = (k written backwards), k &gt; 0.
  * @author Georg Fischer
  */
 public class A193434 extends SingleTransformSequence {

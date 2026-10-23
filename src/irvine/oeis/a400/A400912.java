@@ -6,7 +6,7 @@ import irvine.math.series.AbstractInfiniteSeries;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400912 allocated for Karan Sharma.
+ * A400912 Number of compositions of n into parts of the form Fibonacci(k) - 1, k &gt;= 3.
  * @author Sean A. Irvine
  */
 public class A400912 extends GfSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A264678 Number of (3+1)X(n+1) arrays of permutations of 0..n*4+3 with each element having directed index change -1,-1 1,0 -1,-2 -2,-2 or 0,1.
+ * A264678 Number of (3+1) X (n+1) arrays of permutations of 0..n*4+3 with each element having directed index change -1,-1 1,0 -1,-2 -2,-2 or 0,1.
  * @author Georg Fischer
  */
 public class A264678 extends HolonomicRecurrence implements Conjectural {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036903 Scan decimal expansion of Pi until all n-digit strings have been seen; a(n) is number of digits that must be scanned.
+ * A036903 Least k such that the decimal expansion of floor(Pi*10^k) contains every n-digit string.
  * @author Sean A. Irvine
  */
 public class A036903 extends Sequence1 {

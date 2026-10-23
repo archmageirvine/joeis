@@ -4,7 +4,7 @@ package irvine.oeis.a401;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A401139 allocated for Christopher W Moriarty.
+ * A401139 Period 6: repeat [1, 6, 5, 4, 3, 2].
  * @author Georg Fischer
  */
 public class A401139 extends PeriodicSequence {

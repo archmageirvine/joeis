@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400994 allocated for Paolo P. Lava.
+ * A400994 Numbers k such that the circulant matrix formed by their decimal digits and the one formed by the decimal digits of the sum of their divisors have the same determinant.
  * @author Sean A. Irvine
  */
 public class A400994 extends FilterNumberSequence {

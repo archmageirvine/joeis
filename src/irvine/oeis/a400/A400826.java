@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400826 allocated for Miquel Cerda.
+ * A400826 Grundy value of n in the impartial game in which from even n the only move is to n/2, from odd n &gt; 1 the moves are to 3n+1 or to (3n+1)/2, and 1 has no moves.
  * @author Sean A. Irvine
  */
 public class A400826 extends Sequence1 {

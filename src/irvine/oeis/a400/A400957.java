@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A400957 allocated for Robert G. Wilson v.
+ * A400957 Pillai composite numbers: composite numbers c such that there exists an integer m with m! + 1 == 0 (mod c) and c != 1 (mod m).
  * @author Sean A. Irvine
  */
 public class A400957 extends FilterSequence {

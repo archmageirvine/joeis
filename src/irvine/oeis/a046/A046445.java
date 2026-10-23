@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A046445 Smallest composite with n prime factors that are distinct in length.
+ * A046445 Smallest number with n prime factors that are distinct in length, where length is the number of decimal digits.
  * @author Sean A. Irvine
  */
 public class A046445 extends Sequence0 {

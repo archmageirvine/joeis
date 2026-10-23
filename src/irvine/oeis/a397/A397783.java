@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A397783 allocated for Tomas Laris.
+ * A397783 Sum of squares of differences of consecutive terms of n/gcd(n,k), k = 1..n-1.
  * @author Sean A. Irvine
  */
 public class A397783 extends Sequence1 {

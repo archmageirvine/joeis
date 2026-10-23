@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A401040 allocated for Jan Snellman.
+ * A401040 Irregular triangle read by rows: T(n,k) is the number of integers in [1,n] having no prime factor &lt;= prime(k), for n &gt;= 2 and 1 &lt;= k &lt;= pi(n).
  * @author Sean A. Irvine
  */
 public class A401040 extends Sequence2 {

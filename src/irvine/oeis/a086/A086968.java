@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A086968 Numbers n such that n^2 is a sum k-th prime + k for some k.
+ * A086968 Numbers k such that k^2 = prime(m) + m for some m.
  * @author Sean A. Irvine
  */
 public class A086968 extends A000040 {

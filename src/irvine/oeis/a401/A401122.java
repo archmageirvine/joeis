@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401122 allocated for James Mitchell.
+ * A401122 a(n) is the size of the annular Jones monoid of degree n.
  * @author Sean A. Irvine
  */
 public class A401122 extends Sequence1 {

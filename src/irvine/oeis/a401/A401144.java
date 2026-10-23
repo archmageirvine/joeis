@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401144 allocated for Farhad Banazadeh.
+ * A401144 Number of steps starting from n until the first repeated value under the map k -&gt; (floor(6*k/5)+1)/5^v_5(floor(6*k/5)+1), where v_5(m) is the 5-adic valuation of m; or -1 if no value ever repeats.
  * @author Sean A. Irvine
  */
 public class A401144 extends Sequence1 {

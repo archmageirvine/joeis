@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A397914 a(n) is the number of monotonic prime gaps following the n-th prime, where increasing gaps are counted as positive, decreasing gaps as negative, and unchanging gaps as zero.
+ * A397914 a(n) is the signed count of consecutive monotonic prime gaps starting after the n-th prime (increasing = +1, decreasing = -1, constant = 0).
  * @author Sean A. Irvine
  */
 public class A397914 extends A000040 {

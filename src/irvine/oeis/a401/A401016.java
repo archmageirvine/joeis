@@ -4,7 +4,7 @@ package irvine.oeis.a401;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A401016 allocated for Christopher W Moriarty.
+ * A401016 Period 4: repeat [1, 3, 2, 4].
  * @author Georg Fischer
  */
 public class A401016 extends HolonomicRecurrence {

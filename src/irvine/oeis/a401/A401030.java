@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401030 allocated for S. S. Krishna Chaitanya Bulusu.
+ * A401030 Triangle read by rows: T(n,0) = T(n,n) = 1, and T(n,k) = NAND(T(n-1,k-1), T(n-1,k)) for 0 &lt; k &lt; n, where NAND is the Boolean logic gate.
  * @author Sean A. Irvine
  */
 public class A401030 extends Sequence0 {

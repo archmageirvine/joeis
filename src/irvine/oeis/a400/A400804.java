@@ -14,7 +14,7 @@ import irvine.util.Point;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A400804 allocated for Vicenzo P DeMaar.
+ * A400804 Least m such that the divisor graph on {2,...,m}, after removing isolated vertices, has at least n independent linear relations among the columns of its adjacency matrix.
  * @author Sean A. Irvine
  */
 public class A400804 extends Sequence1 {

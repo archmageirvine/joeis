@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A147535 a(n) = 2*4^n+4*3^n-2^n.
+ * A147535 a(n) = 2*4^n + 4*3^n - 2^n.
  * @author Georg Fischer
  */
 public class A147535 extends HolonomicRecurrence {

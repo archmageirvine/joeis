@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400125 allocated for Felix Huber.
+ * A400125 a(n) is the number of nontrivial adjacent divisibilities in the strictly increasing half of row n of the Narayana triangle.
  * @author Sean A. Irvine
  */
 public class A400125 extends Sequence1 {

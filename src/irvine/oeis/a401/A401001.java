@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401001 allocated for Guido Avagliano.
+ * A401001 Numbers k such that the sum of digits of k in base b is not prime for any base b in the range 2 &lt;= b &lt;= floor(sqrt(k)).
  * @author Sean A. Irvine
  */
 public class A401001 extends FilterNumberSequence {

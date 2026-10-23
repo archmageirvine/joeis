@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401027 allocated for Stefano Spezia.
+ * A401027 Decimal expansion of 3*Pi^2/(16*G), where G = A006752.
  * @author Sean A. Irvine
  */
 public class A401027 extends DecimalExpansionSequence {

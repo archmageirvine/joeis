@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001405;
 
 /**
- * A401031 allocated for Kiran Ananthpur Bacche.
+ * A401031 Number of compositions of n using 1's and 2's such that the number of 1's and 2's differ by 0 or 1.
  * @author Sean A. Irvine
  */
 public class A401031 extends Sequence0 {

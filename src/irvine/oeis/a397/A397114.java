@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a025.A025487;
 
 /**
- * A397114 allocated for Zhicheng Wei.
+ * A397114 Numbers of terms in A055932 that have the same prime signature as A025487(n).
  * @author Sean A. Irvine
  */
 public class A397114 extends A025487 {

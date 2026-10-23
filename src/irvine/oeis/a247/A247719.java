@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A247719 Decimal expansion of Integral_{t=0..Pi/2} sqrt(tan(t)) dt.
+ * A247719 Decimal expansion of Pi/sqrt(2).
  * @author Georg Fischer
  */
 public class A247719 extends DecimalExpansionSequence {

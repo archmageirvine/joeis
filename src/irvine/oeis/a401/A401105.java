@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401105 allocated for Ali Sada.
+ * A401105 Number of unordered representations of 2^n as a sum of two numbers, each an odd prime multiplied by a power of 2.
  * @author Sean A. Irvine
  */
 public class A401105 extends Sequence0 {

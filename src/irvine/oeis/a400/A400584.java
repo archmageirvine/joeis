@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400584 allocated for J. R. G. Mendon\u00e7a.
+ * A400584 Irregular triangle read by rows: T(n,k) is the number of labelings of the internal vertices of the complete plane binary tree of depth n by + or min, with every leaf equal to 1, that evaluate to k at the root (n &gt;= 1, 1 &lt;= k &lt;= 2^n).
  * @author Sean A. Irvine
  */
 public class A400584 extends Sequence1 {

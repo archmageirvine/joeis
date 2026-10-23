@@ -6,7 +6,7 @@ import irvine.oeis.a174.A174574;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A343754 a(n) = 0, and for any n &gt; 0, a(n+1) = a(n) - A065363(n) + 1.
+ * A343754 a(0) = 0, and for any n &gt; 0, a(n+1) = a(n) - A065363(n+1) + 1.
  * @author Georg Fischer
  */
 public class A343754 extends SimpleTransformSequence {

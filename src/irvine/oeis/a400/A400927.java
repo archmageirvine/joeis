@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400927 allocated for Alex Tori.
+ * A400927 Number of distinct time intervals measurable by burning n non-uniform ropes, each burning for 1 unit of time, extinguishing allowed, as measured from the initial state to any transition.
  * @author Sean A. Irvine
  */
 public class A400927 extends Sequence1 {

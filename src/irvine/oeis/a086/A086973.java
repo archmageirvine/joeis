@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import irvine.math.lattice.Lattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,78 +19,49 @@ public class A086973 extends Sequence1 {
 
   // After R&eacute;my Sigrist
 
-  // The eight neighbours in the square lattice.
-  private static final int[] DX = {1, 0, -1, 0, 1, -1, -1, 1};
-  private static final int[] DY = {0, 1, 0, -1, 1, 1, -1, -1};
-
+  private static final Lattice L = Lattices.Z2Q;
   private int mN = 0;
 
-  // Pack two signed 32-bit coordinates into one long.
-  private static long point(final int x, final int y) {
-    return ((long) x << 32) | (y & 0xffffffffL);
-  }
-
-  private static int x(final long p) {
-    return (int) (p >> 32);
-  }
-
-  private static int y(final long p) {
-    return (int) p;
-  }
-
-  /**
-   * Compute one generation.
-   * @param live current live cells
-   * @return next generation
-   */
-  private static Set<Long> iterate(final Set<Long> live) {
-    if (live.isEmpty()) {
-      return new HashSet<>();
+  static Set<Long> step(final Set<Long> state) {
+    if (state.isEmpty()) {
+      return state;
     }
-
-    // Count the live neighbours of every cell adjacent to a live cell.
     final Map<Long, Integer> counts = new HashMap<>();
-    for (final long z : live) {
-      final int zx = x(z);
-      final int zy = y(z);
-      for (int j = 0; j < DX.length; ++j) {
-        final long neighbour = point(zx + DX[j], zy + DY[j]);
-        counts.merge(neighbour, 1, Integer::sum);
+    for (final long pt : state) {
+      for (final long q : L.neighbours(pt)) {
+        counts.merge(q, 1, Integer::sum);
       }
     }
-
-    final Set<Long> next = new HashSet<>();
-    for (final Map.Entry<Long, Integer> entry : counts.entrySet()) {
-      final long z = entry.getKey();
-      final int count = entry.getValue();
-      if (live.contains(z)) {
-        // A live cell survives only with exactly five live neighbours.
-        if (count == 5) {
-          next.add(z);
+    final Set<Long> res = new HashSet<>();
+    for (final Map.Entry<Long, Integer> e : counts.entrySet()) {
+      final long pt = e.getKey();
+      final int cnt = e.getValue();
+      if (state.contains(pt)) {
+        if (cnt == 5) {
+          res.add(pt);
         }
-      } else if (count >= 3 && count <= 5) {
-        // A dead cell is born with three, four, or five live neighbours.
-        next.add(z);
+      } else if (cnt >= 3 && cnt <= 5) {
+        res.add(pt);
       }
     }
-    return next;
+    return res;
   }
 
   @Override
   public Z next() {
     ++mN;
     Set<Long> w = new HashSet<>();
-    for (int i = 1; i <= mN; ++i) {
-      w.add(point(i, 0));
+    for (int k = 0; k < mN; ++k) {
+      w.add(L.toPoint(k, 0));
     }
-    Set<Long> ww = iterate(w);
+    Set<Long> ww = step(w);
     while (!w.equals(ww)) {
-      w = iterate(w);
-      ww = iterate(iterate(ww));
+      w = step(w);
+      ww = step(step(ww));
     }
     int period = 0;
     do {
-      ww = iterate(ww);
+      ww = step(ww);
       ++period;
     } while (!w.equals(ww));
     return Z.valueOf(period == 1 ? 0 : period);

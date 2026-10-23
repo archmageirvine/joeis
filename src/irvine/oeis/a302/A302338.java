@@ -13,16 +13,11 @@ import irvine.oeis.a007.A007814;
 public class A302338 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
-  protected long mN;
-  /** Construct the sequence. */
-  public A302338() {
-    mN = 0;
-  }
-  
+  private long mN = 0;
+
   @Override
   public Z next() {
     ++mN;
     return Z.THREE.multiply(Z.valueOf(mN)).add(Z.TWO.pow(mA007814.next()));
   }
-
 }

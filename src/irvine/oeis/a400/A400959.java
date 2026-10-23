@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400959 allocated for Henri Lifchitz.
+ * A400959 a(n) = Sum_{i=1..10^n} (-1)^BigOmega(i)*(-1)^BigOmega(i+1), where BigOmega(n) = A001222(n).
  * @author Sean A. Irvine
  */
 public class A400959 extends Sequence0 {

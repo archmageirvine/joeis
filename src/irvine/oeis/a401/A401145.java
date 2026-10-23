@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401145 allocated for Akash Suresh.
+ * A401145 Number of partitions of n into distinct parts such that n plus the product of the parts is prime.
  * @author Sean A. Irvine
  */
 public class A401145 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001006;
 
 /**
- * A006531 Semiorders on n elements.
+ * A006531 Number of semiorders on n labeled elements.
  * @author Sean A. Irvine
  */
 public class A006531 extends Sequence0 {

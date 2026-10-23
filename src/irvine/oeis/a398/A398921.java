@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398921 allocated for David Bevan.
+ * A398921 Number of solutions of the Diophantine inequality (a+c)*(b+d) &lt;= n with a,b,c,d &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A398921 extends Sequence1 {

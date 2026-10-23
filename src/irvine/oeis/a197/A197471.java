@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A197471 Number of nX4 0..4 arrays with each element x equal to the number its horizontal and vertical neighbors equal to 0,1,0,0,0 for x=0,1,2,3,4.
+ * A197471 Number of n X 4 0..4 arrays with each element x equal to the number of its horizontal and vertical neighbors equal to 0,1,0,0,0 for x=0,1,2,3,4.
  * @author Georg Fischer
  */
 public class A197471 extends HolonomicRecurrence implements Conjectural {

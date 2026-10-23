@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A141030 a(n)=If[Prime[n + 1]^2 - Prime[n]*Prime[n + 2] &gt; 0, If[Mod[Prime[n]*Sqrt[5], 1] &gt;= 0.5, 0, 1], If[Mod[Prime[n]*Sqrt[7], 1] &gt;= 0.5, 2, 3]].
+ * A141030 a(n) is the class of prime(n) according to the rule given in comments.
  * @author Sean A. Irvine
  */
 public class A141030 extends A000040 {

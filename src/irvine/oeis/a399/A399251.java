@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A399251 allocated for Jens Ahlstr\u00f6m.
+ * A399251 a(n) = x^2 - y^2, where (x, y) are the coordinates of the n-th point of the square counterclockwise spiral with n=1 at the origin.
  * @author Sean A. Irvine
  */
 public class A399251 extends Sequence1 {

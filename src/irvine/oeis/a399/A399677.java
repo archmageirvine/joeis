@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399677 allocated for Scott M. Foltz.
+ * A399677 Number of distinct Laplacian eigenvalues of the torus grid graph C_n X C_n.
  * @author Sean A. Irvine
  */
 public class A399677 extends Sequence1 {

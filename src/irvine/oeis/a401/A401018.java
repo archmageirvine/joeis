@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401018 allocated for M. Jeremie Lafitte (Levitas).
+ * A401018 Half the number of changes in the cyclic column words of the Gosper-Lafitte triangle.
  * @author Sean A. Irvine
  */
 public class A401018 extends Sequence0 {

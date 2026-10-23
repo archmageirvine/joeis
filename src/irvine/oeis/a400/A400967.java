@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400967 allocated for Henrik Arhold.
+ * A400967 a(n) is the number of boundary lattice points minus the number of interior lattice points of the regular tetrahedron with vertices (0,0,0), (n,n,0), (n,0,n) and (0,n,n).
  * @author Georg Fischer
  */
 public class A400967 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400617 allocated for Jules Beauchamp.
+ * A400617 Irregular array where the n-th row is the trajectory obtained when starting with t = 1; then if t is odd add 2*n-1; if even divide by 2. Stop when you reach 1.
  * @author Sean A. Irvine
  */
 public class A400617 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a401.A401006;
 
 /**
- * A397122 allocated for Derek Steinkamp.
+ * A397122 Prime reached by iterating A401006 starting at n, or -1 if no prime is reached.
  * @author Sean A. Irvine
  */
 public class A397122 extends Sequence1 {

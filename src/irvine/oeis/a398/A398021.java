@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398021 allocated for Giuseppe Ciacco.
+ * A398021 Number of values of k for which n eventually enters a non-elementary loop under a trajectory x -&gt; x / k if k divides x and x -&gt; x + ceiling(x / k) otherwise.
  * @author Sean A. Irvine
  */
 public class A398021 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001227;
 import irvine.oeis.a065.A065033;
 
 /**
- * A401008 allocated for Jaroslav Krizek.
+ * A401008 a(n) = the number of odd non-divisors of n in 1..n.
  * @author Sean A. Irvine
  */
 public class A401008 extends Combiner {

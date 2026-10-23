@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002760;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A399854 allocated for Iurii Kirpichev.
+ * A399854 Smallest prime that is the sum of n distinct elements from the union of squares and cubes.
  * @author Sean A. Irvine
  */
 public class A399854 extends Sequence2 {

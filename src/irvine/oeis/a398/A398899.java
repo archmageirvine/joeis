@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398899 allocated for Juri-Stepan Gerasimov.
+ * A398899 Numbers k such that Omega(k) = Omega(k/d + d) for some divisor d of k and Omega = A001222.
  * @author Sean A. Irvine
  */
 public class A398899 extends FilterNumberSequence {

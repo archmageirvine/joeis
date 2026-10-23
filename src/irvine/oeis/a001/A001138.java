@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A001138 Red rooted red-black trees with n internal nodes.
+ * A001138 Number of red rooted red-black trees with n internal nodes.
  * @author Sean A. Irvine
  */
 public class A001138 extends CachedSequence {

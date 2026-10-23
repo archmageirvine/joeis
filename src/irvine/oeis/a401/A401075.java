@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401075 allocated for Rok Cestnik.
+ * A401075 Decimal expansion of the generalized continued fraction 1/(3+5/(7+9/(11+13/(15+...)))), using every odd integer.
  * @author Sean A. Irvine
  */
 public class A401075 extends DecimalExpansionSequence {

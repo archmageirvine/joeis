@@ -10,6 +10,8 @@ public final class Predicates {
 
   /** Test if a number is a prime. */
   public static final Predicate PRIME = new Prime(); // =A000040
+  /** Test if a number is a composite (not &lt;= 1 and not prime). */
+  public static final Predicate COMPOSITE = new Composite(); // =A002808
   /** Test if a number is a semiprime. */
   public static final Predicate SEMIPRIME = new Semiprime(); // =A001358
   /** Test if a number is a square. */
@@ -106,6 +108,8 @@ public final class Predicates {
   public static final Predicate SUM_OF_3_SQUARES = new SumOfThreeSquares(); // =A000419
   /** Test if a number is a sum of four squares. */
   public static final Predicate SUM_OF_4_SQUARES = new SumOfFourSquares(); // =A004215
+  /** Test if a number is oblong (pronic), that is of the form n*(n + 1). */
+  public static final Predicate OBLONG = new Oblong(); // =A002378
 
   /** Test if a number is happy. */
   public static final Predicate2 HAPPY = new Happy(); // =A007770
@@ -133,4 +137,8 @@ public final class Predicates {
   public static final Predicate2 HARSHAD = new Harshad(); // =A005349(10
   /** Test if a number is an automorphic number in a base. */
   public static final Predicate2 AUTOMORPHIC = new Automorphic(); // =A003226(10
+  /** Test if a number is a power of some base number. */
+  public static final Predicate2 BASE_POWER = new BasePower();
+  /** Test if a number is a power of some base number. */
+  public static final Predicate2 PANDIGITAL = new Pandigital();
 }

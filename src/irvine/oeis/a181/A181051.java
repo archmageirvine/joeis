@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A181051 Decimal expansion of the generalized continued fraction 2/(4+6/(8+10/(12+14/(16+...)))), using every even integer.
+ * A181051 Incorrect duplicate of A073821.
  * @author Sean A. Irvine
  */
 public class A181051 extends DecimalExpansionSequence {

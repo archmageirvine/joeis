@@ -17,27 +17,12 @@ import irvine.oeis.triangle.DirectArray;
  */
 public class A292086 extends BaseTriangle implements DirectArray {
 
-  private int mN;
-
   /** Construct the sequence. */
   public A292086() {
     super(1, 1, 1);
-    mN = 0;
   }
 
-  /* Maple:
-     b:= proc(n, i, v, k) option remember; `if`(n=0,
-           `if`(v=0, 1, 0), `if`(i<1 or v<1 or n<v, 0,
-           `if`(v=n, 1, add(binomial(A(i, k)+j-1, j)*
-            b(n-i*j, i-1, v-j, k), j=0..min(n/i, v)))))
-         end:
-     A:= proc(n, k) option remember; `if`(n<2, n,
-           add(b(n, n+1-j, j, k), j=2..min(n, k)))
-         end:
-     T:= (n, k)-> A(n, k)-`if`(k=1, 0, A(n, k-1)):
-     seq(seq(T(n, k), k=1..n), n=1..15);  
-  */
-  final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<>() {
+  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<>() {
     @Override
     protected Z compute(final int n, final int i, final int v, final int k) {
       return n == 0 ? (v == 0 ? Z.ONE : Z.ZERO) : (i < 1 || v < 1 || n < v ? Z.ZERO : (v == n ? Z.ONE : Integers.SINGLETON.sum(0, Functions.MIN.i(n / i, v), j -> Binomial.binomial(mA.get(i, k).add(j - 1), j).multiply(get(n - i * j, i - 1, v - j, k)))));

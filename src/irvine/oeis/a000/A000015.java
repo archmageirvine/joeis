@@ -16,7 +16,6 @@ public class A000015 extends Sequence1 {
   private final DynamicLongArray mPrimes = new DynamicLongArray();
   private final Fast mPrime = new Fast();
   private long mP = 1;
-  private int mLastPrimeIndex = 0;
 
   protected long nextLong() {
     if (++mN <= 1) {
@@ -40,7 +39,6 @@ public class A000015 extends Sequence1 {
       if (pp - mN < minDelta) {
         minDelta = pp - mN;
         bestPP = pp;
-        mLastPrimeIndex = k;
       }
     }
     return bestPP;

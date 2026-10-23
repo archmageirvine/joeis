@@ -14,7 +14,6 @@ import irvine.oeis.DirectSequence;
 public class A309058 extends AbstractSequence implements DirectSequence {
 
   private long mN;
-  private long mColNo;
 
   /** Construct the sequence. */
   public A309058() {
@@ -29,14 +28,12 @@ public class A309058 extends AbstractSequence implements DirectSequence {
   public A309058(final int offset, final long colNo) {
     super(offset);
     mN = offset - 1;
-    mColNo = colNo;
   }
 
   protected final MemoryFunction3<Long, Z> mB = new MemoryFunction3<>() {
     @Override
     protected Z compute(final Long n, final Long i, final Long t) {
-      return
-        n == 0 ? Z.ONE : (i < 1 ? Z.ZERO : (t == 1 ? (n % i == 0 ? Z.ONE : Z.ZERO).add(get(n, i - 1, t)) : Integers.SINGLETON.sum(0, n / i, j -> get(n - i * j, i - 1, t - (j == 0 ? 0 : 1)))));
+      return n == 0 ? Z.ONE : (i < 1 ? Z.ZERO : (t == 1 ? (n % i == 0 ? Z.ONE : Z.ZERO).add(get(n, i - 1, t)) : Integers.SINGLETON.sum(0, n / i, j -> get(n - i * j, i - 1, t - (j == 0 ? 0 : 1)))));
     }
   };
 

@@ -14,7 +14,6 @@ import irvine.oeis.DirectSequence;
 public class A252782 extends AbstractSequence implements DirectSequence {
 
   private long mN;
-  private long mColNo;
 
   /** Construct the sequence. */
   public A252782() {
@@ -29,7 +28,6 @@ public class A252782 extends AbstractSequence implements DirectSequence {
   public A252782(final int offset, final long colNo) {
     super(offset);
     mN = offset - 1;
-    mColNo = colNo;
   }
 
   protected final MemoryFunction2<Long, Z> mB = new MemoryFunction2<>() {

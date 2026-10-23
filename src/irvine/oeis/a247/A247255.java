@@ -15,24 +15,14 @@ import irvine.oeis.triangle.DirectArray;
  */
 public class A247255 extends BaseTriangle implements DirectArray {
 
-  private int mN;
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A247255() {
     super(1, 1, 1);
-    mN = 0;
   }
 
-  /* Maple:
-     b:= proc(n, i) option remember; local r; expand(
-           `if`(i>n, 0, `if`(irem(n, i, 'r')=0, x^r, 0)+
-           add(b(n-i*j, i+1)*(j+1), j=0..n/i)))
-         end:
-     T:= n-> (p-> seq(coeff(p, x, i), i=1..n))(b(n, 1)):
-     seq(T(n), n=1..14);
-  */
-  final MemoryFunctionInt2<Polynomial<Z>> mB = new MemoryFunctionInt2<>() {
+  private final MemoryFunctionInt2<Polynomial<Z>> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Polynomial<Z> compute(final int n, final int i) {
       return

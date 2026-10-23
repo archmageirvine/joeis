@@ -15,16 +15,14 @@ import irvine.oeis.triangle.DirectArray;
  */
 public class A238349 extends BaseTriangle implements DirectArray {
 
-  private int mN;
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A238349() {
     super(0, 0, 0);
-    mN = -1;
   }
 
-  final MemoryFunctionInt2<Polynomial<Z>> mB = new MemoryFunctionInt2<>() {
+  private final MemoryFunctionInt2<Polynomial<Z>> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Polynomial<Z> compute(final int n, final int i) {
       return

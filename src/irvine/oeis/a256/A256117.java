@@ -16,22 +16,12 @@ import irvine.oeis.triangle.DirectArray;
  */
 public class A256117 extends BaseTriangle implements DirectArray {
 
-  private int mN;
-
   /** Construct the sequence. */
   public A256117() {
     super(0, 0, 0);
-    mN = -1;
   }
 
-  /* Maple:
-     A:= proc(n, k) option remember; `if`(n=0, 1, k/n*
-           add(binomial(2*n, j)*(n-j)*(k-1)^j, j=0..n-1))
-         end:
-     T:= (n, k)-> add((-1)^i*A(n, k-i)/(i!*(k-i)!), i=0..k):
-     seq(seq(T(n, k), k=0..n), n=0..10);  
-  */
-  final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       return n == 0 ? Z.ONE : Integers.SINGLETON.sum(0, n - 1, j ->

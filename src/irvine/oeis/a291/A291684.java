@@ -13,23 +13,12 @@ import irvine.oeis.triangle.DirectArray;
  */
 public class A291684 extends BaseTriangle implements DirectArray {
 
-  private int mN;
-
   /** Construct the sequence. */
   public A291684() {
     super(0, 0, 0);
-    mN = -1;
   }
 
-  /* Maple:
-     b:= proc(u, o, t) option remember; `if`(u+o=0, 1,
-           add(b(u-j, o+j-1, j), j=1..min(t, u))+
-           add(b(u+j-1, o-j, j), j=1..min(t, o)))
-         end:
-     T:= (n, k)-> b(0, n, k)-`if`(k=0, 0, b(0, n, k-1)):
-     seq(seq(T(n, k), k=0..n), n=0..12);
-  */
-  final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int u, final int o, final int t) {
       return u + o == 0

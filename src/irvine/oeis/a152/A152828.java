@@ -9,8 +9,7 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A152828 extends BaseTriangle {
 
-  private int mN;
-  private int mFold;
+  private final int mFold;
   private int mFoldIndex; // 0..mFold-1
   private int mPascalRow; // current row number in Pascal's triangle
 
@@ -21,11 +20,10 @@ public class A152828 extends BaseTriangle {
 
   /**
    * Generic constructor with parameters
-   * @param fold
+   * @param fold fold number
    */
   public A152828(final int offset, final int fold) {
     super(offset, 0, 0);
-    mN = -1;
     mRow = -1;
     mPascalRow = mRow;
     mFold = fold;

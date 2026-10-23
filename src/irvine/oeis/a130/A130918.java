@@ -12,11 +12,10 @@ import irvine.oeis.a000.A000108;
 public class A130918 extends AbstractSequence {
 
   private long mN;
-  private long mStart;
-  private Z mBlock; // block length from seq(k) 
+  private Z mBlock; // block length from seq(k)
   private long mLimit; // = - mBLock + 1
   private long mShift; // add so much to mN, steps down by 2
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   /** Construct the sequence. */
   public A130918() {
@@ -42,7 +41,6 @@ public class A130918 extends AbstractSequence {
     super(offset);
     mN = offset - 1;
     mSeq = seq;
-    mStart = start;
     mBlock = mSeq.next();
     while (mBlock.isZero()) { // ignore block of length 0
       mBlock = mSeq.next();

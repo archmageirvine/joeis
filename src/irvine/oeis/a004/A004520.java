@@ -8,8 +8,6 @@ import irvine.math.z.Z;
  */
 public class A004520 extends A004514 {
 
-  protected Z mN = Z.NEG_ONE;
-
   @Override
   public Z next() {
     mN = mN.add(1);

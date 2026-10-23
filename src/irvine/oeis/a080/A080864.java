@@ -2,15 +2,15 @@ package irvine.oeis.a080;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.a020.A020639;
+import irvine.oeis.Sequence1;
 
 /**
  * A080864 Numbers k such that lpf(k)+2 = lpf(k-2), where lpf=A020639 (least prime factor).
  * @author Georg Fischer
  */
-public class A080864 extends A020639 {
+public class A080864 extends Sequence1 {
 
-  protected long mN = 0;
+  private long mN = 0;
 
   @Override
   public Z next() {

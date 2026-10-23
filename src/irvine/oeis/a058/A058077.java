@@ -10,12 +10,14 @@ import irvine.oeis.a000.A000040;
  */
 public class A058077 extends A000040 {
 
-  protected Z mP = super.next();
+  {
+    super.next();
+  }
 
   @Override
   public Z next() {
     final Z t = mP;
-    mP = super.next();
+    super.next();
     return Binomial.binomial(mP, t);
   }
 }

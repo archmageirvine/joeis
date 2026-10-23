@@ -11,14 +11,14 @@ public class A058620 extends A000040 {
 
   {
     super.next(); // skip 2
+    super.next();
   }
-  Z mP = super.next();
 
   @Override
   public Z next() {
     while (true) {
       final Z p = mP;
-      mP = super.next();
+      super.next();
       if (mP.subtract(p).divide2().isProbablePrime()) {
         return p;
       }

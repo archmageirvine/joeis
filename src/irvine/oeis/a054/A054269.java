@@ -11,11 +11,9 @@ import irvine.oeis.a000.A000040;
  */
 public class A054269 extends A000040 {
 
-  protected Z mP = null;
-
   @Override
   public Z next() {
-    mP = super.next();
+    super.next();
     final Z[] sqrt = mP.sqrtAndRemainder();
     final Z f0 = sqrt[0];
     Z f = f0;

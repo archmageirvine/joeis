@@ -10,14 +10,13 @@ import irvine.oeis.a000.A000040;
 public class A024011 extends A000040 {
 
   protected Z mSum = Z.ZERO;
-  protected Z mP;
   private long mN = 0;
 
   @Override
   public Z next() {
     do {
       ++mN;
-      mP = super.next();
+      super.next();
       mSum = mSum.add(mP);
     } while (!mSum.mod(mP).isZero());
     return Z.valueOf(mN);

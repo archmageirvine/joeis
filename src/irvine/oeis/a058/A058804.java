@@ -5,17 +5,16 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058804 Number of labeled vertically indecomposable lattices with a fixed bottom.
  * @author Sean A. Irvine
  */
-public class A058804 extends A058164 {
+public class A058804 extends Sequence0 {
 
-  {
-    setOffset(0);
-  }
-
+  private final Sequence mA = new A058164();
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mB = RING.empty();
   private final Polynomial<Q> mC = RING.empty();
@@ -30,7 +29,7 @@ public class A058804 extends A058164 {
     if (mN > 1) {
       mF = mF.multiply(mN);
     }
-    final Q t = new Q(super.next(), mF);
+    final Q t = new Q(mA.next(), mF);
     mB.add(t);
     mC.add(mN > 0 ? t : Q.ZERO);
     return mN <= 1 ? Z.ONE : RING.coeff(mC, mB, mN).multiply(mF).toZ();

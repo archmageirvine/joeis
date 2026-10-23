@@ -47,8 +47,9 @@ public class A386981 extends Sequence1 {
     final Map<Long, Collection<Pair<Long, Long>>> asc = getAsc(rho);
     final List<long[]> lst1 = new ArrayList<>();
     final long rho2 = rho * rho;
-    for (final long n : asc.keySet()) {
-      for (final Pair<Long, Long> pair : asc.get(n)) {
+    for (final Map.Entry<Long, Collection<Pair<Long, Long>>> e : asc.entrySet()) {
+      final long n = e.getKey();
+      for (final Pair<Long, Long> pair : e.getValue()) {
         final long a = pair.left();
         final long b = pair.right();
         final long x = a + rho2;

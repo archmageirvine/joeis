@@ -38,7 +38,7 @@ public class A057336 extends Sequence1 {
   public Z next() {
     final List<Integer> rle = rle(++mN);
     final StringBuilder sb = new StringBuilder();
-    sb.append("1");
+    sb.append('1');
     for (int k = rle.size() - 1; k >= 0; --k) {
       sb.append('0');
       sb.append("10".repeat(Math.max(0, rle.get(k) - 1)));

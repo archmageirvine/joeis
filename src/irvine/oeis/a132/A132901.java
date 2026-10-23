@@ -34,7 +34,7 @@ public class A132901 extends A000040 {
   public Z next() {
     ++mN;
     if (mN == 0) { // configure
-      mSb.append("1"); // to be removed for first term
+      mSb.append('1'); // to be removed for first term
       mLengths = new int[mCount];
       mLengths[0] = mSb.length();
       for (int i = 1; i < mCount; ++i) {

@@ -26,7 +26,7 @@ public class A077364 extends Sequence1 {
     final StringBuilder base = new StringBuilder("1");
     base.append("0".repeat(mN - 1));
     final Z lim = new Z(base).sqrt();
-    Z b = new Z(base.append("0")).sqrt();
+    Z b = new Z(base.append('0')).sqrt();
     //System.out.println("base=" + base + " lim="+lim);
     while (b.compareTo(lim) >= 0) {
       final Z s = b.square();

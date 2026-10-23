@@ -199,7 +199,7 @@ public class A069404 extends Sequence1 {
         }
       }
     }
-    System.out.println("}");
+    System.out.println('}');
     //System.exit(0);
   }
 

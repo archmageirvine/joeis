@@ -43,10 +43,10 @@ public class A080634 extends Sequence1 {
     final StringBuilder sb = new StringBuilder("{");
     for (int k = 1; k <= n; ++k) {
       if (mS.isSet(k) == side) {
-        sb.append(k).append(",");
+        sb.append(k).append(',');
       }
     }
-    return sb.append("}").toString();
+    return sb.append('}').toString();
   }
 
   @Override

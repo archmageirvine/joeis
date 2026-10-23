@@ -269,7 +269,7 @@ public class A060677 extends Sequence1 {
       final long tx = animal.extent(L, 0);
       sb.append("\\clip(0,0) rectangle (")
         .append(tx + 1)
-        .append(",")
+        .append(',')
         .append(animal.extent(L, 1) + 1)
         .append("); ");
       if ("(0,0),(1,0),(1,1)".equals(animal.toString(L))) {

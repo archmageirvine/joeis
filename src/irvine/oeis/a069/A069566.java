@@ -19,8 +19,8 @@ public class A069566 extends Sequence1 {
     int k = 0;
     final StringBuilder forward = new StringBuilder();
     final StringBuilder reverse = new StringBuilder();
-    forward.append("1");
-    reverse.append("1");
+    forward.append('1');
+    reverse.append('1');
     Z nk = Z.ONE;
     while (true) {
       ++k;

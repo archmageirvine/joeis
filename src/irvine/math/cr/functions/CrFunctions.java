@@ -113,4 +113,8 @@ public final class CrFunctions {
   public static final CrFunction2Cr ANGER_J = new AngerJ();
   /** The Weber E function. */
   public static final CrFunction2Cr WEBER_E = new WeberE();
+  /** The Barnes G function. */
+  public static final CrFunction1 BARNES_G = new BarnesG();
+  /** The zeta' function. */
+  public static final CrFunction1 ZETA_PRIME = new ZetaPrime();
 }

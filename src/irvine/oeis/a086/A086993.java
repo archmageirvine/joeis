@@ -26,14 +26,12 @@ public class A086993 extends Sequence1 {
     for (int k = 0; k < mN; ++k) {
       w.add(L.toPoint(k, 0));
     }
-
-    // todo this counting is apparently not currently correct
-    int k = 0;
+    int k = -1;
     final HashMap<Set<Long>, Integer> seen = new HashMap<>();
     while (true) {
       final Integer v = seen.put(w, ++k);
       if (v != null) {
-        return Z.valueOf(seen.size() - (k - v));
+        return Z.valueOf(v);
       }
       w = A086973.step(w);
     }

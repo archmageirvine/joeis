@@ -10,7 +10,6 @@ import irvine.oeis.AbstractSequence;
  */
 public class A064117 extends AbstractSequence {
 
-  private long mN;
   private CR mFraction;
   private Z mT;
 

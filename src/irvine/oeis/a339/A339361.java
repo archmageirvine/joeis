@@ -17,7 +17,6 @@ public class A339361 extends AbstractSequence {
   private static final DirectSequence A003963 = new A003963();
 
   private final Sequence mSeq = new A006881();
-  private long mN;
 
   /** Construct the sequence */
   public A339361() {

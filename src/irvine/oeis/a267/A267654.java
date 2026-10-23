@@ -13,7 +13,6 @@ import irvine.oeis.a086.A086520;
 public class A267654 extends AbstractSequence {
 
   private final Sequence mSeq = new A086520().skip(2);
-  private long mN;
 
   /** Construct the sequence */
   public A267654() {

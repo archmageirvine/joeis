@@ -12,20 +12,17 @@ import irvine.oeis.Sequence;
 public class A160276 extends AbstractSequence {
 
   private final Sequence mSeq = new A160275();
-  private long mN;
   private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
   public A160276() {
     super(1);
-    mN = 0;
     mB1 = mSeq.next();
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     mB = mSeq.next();
     final Z result = mB.divide(mB1);
     mB1 = mB;

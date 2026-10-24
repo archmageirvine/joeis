@@ -56,7 +56,7 @@ public class MapleSequence extends AbstractSequence implements Closeable {
     final Header header = new Header(mapleProgram);
     offset = header.getOffset();
     setOffset(offset);
-    final int nStart = header.getNStart();
+    //final int nStart = header.getNStart();
     try {
       mTimeOut = Integer.parseInt(System.getProperty("oeis.timeout", "360000")) - 1; // 100 hours = almost never
     } catch (final RuntimeException exc) {

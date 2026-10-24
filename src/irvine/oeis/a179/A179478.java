@@ -14,20 +14,17 @@ import irvine.oeis.a073.A073609;
 public class A179478 extends AbstractSequence {
 
   private final Sequence mSeq = new A073609();
-  private long mN;
   private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
   public A179478() {
     super(0);
-    mN = -1;
     mB1 = mSeq.next();
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     mB = mSeq.next();
     final Z result = Functions.SQRT.z(mB.subtract(mB1));
     mB1 = mB;

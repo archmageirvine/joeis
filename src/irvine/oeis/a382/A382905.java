@@ -17,17 +17,14 @@ public class A382905 extends AbstractSequence {
   private static final DirectSequence A055231 = new A055231();
 
   private final Sequence mSeq = new A046100();
-  private long mN;
 
   /** Construct the sequence */
   public A382905() {
     super(1);
-    mN = 0;
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     return A055231.a(mSeq.next());
   }
 }

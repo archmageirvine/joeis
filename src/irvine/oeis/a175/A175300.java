@@ -15,19 +15,16 @@ public class A175300 extends AbstractSequence {
 
   private static final DirectSequence A005179 = new A005179();
 
-  private long mN;
   private Z mA1;
 
   /** Construct the sequence */
   public A175300() {
     super(1);
-    mN = 1;
     mA1 = Z.valueOf(1);
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     final Z result = mA1;
     mA1 = A005179.a(Functions.TAU.z(mA1)).add(mA1);
     return result;

@@ -14,20 +14,17 @@ import irvine.oeis.a000.A000073;
 public class A131354 extends AbstractSequence {
 
   private final Sequence mSeq = new A000073();
-  private long mN;
   private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
   public A131354() {
     super(0);
-    mN = -1;
     mB1 = mSeq.next();
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     mB = mSeq.next();
     final Z result = Functions.PRIME_PI.z(mB.subtract(1)).subtract(Functions.PRIME_PI.z(mB1));
     mB1 = mB;

@@ -13,17 +13,14 @@ import irvine.oeis.a080.A080075;
 public class A116882 extends AbstractSequence {
 
   private final Sequence mSeq = new A080075().prepend(2);
-  private long mN;
 
   /** Construct the sequence */
   public A116882() {
     super(1);
-    mN = 0;
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     return mSeq.next().subtract(1);
   }
 }

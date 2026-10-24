@@ -26,8 +26,6 @@ public class A006911 extends Sequence0 {
     final QPolynomial<Z> t2x2 = t2.substitutePower(2, Q.valueOf(mN));
     final QPolynomial<Z> t3 = ThetaFunctions.theta3(mN);
     final QPolynomial<Z> t3x2 = t3.substitutePower(2, Q.valueOf(mN));
-    final QPolynomial<Z> t4 = ThetaFunctions.theta4(mN);
-    final QPolynomial<Z> t4x2 = t4.substitutePower(2, Q.valueOf(mN));
     return RING.pow(t3x2, 11, mN).coeff(mN)
       .add(RING.multiply(RING.pow(t3x2, 7, mN), RING.pow(t2x2, 4, mN)).coeff(mN).multiply(26))
       .add(RING.multiply(RING.pow(t3x2, 5, mN), RING.pow(t2x2, 6, mN)).coeff(mN).multiply(24))

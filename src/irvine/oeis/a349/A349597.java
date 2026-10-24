@@ -11,19 +11,16 @@ import irvine.oeis.AbstractSequence;
  */
 public class A349597 extends AbstractSequence {
 
-  private long mN;
   private Z mA1;
 
   /** Construct the sequence */
   public A349597() {
     super(1);
-    mN = 1;
     mA1 = Z.valueOf(3);
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     final Z result = mA1;
     mA1 = Functions.DIGIT_SUM.z(Functions.FACTORIAL.z(mA1));
     return result;

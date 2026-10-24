@@ -11,19 +11,16 @@ import irvine.oeis.AbstractSequence;
  */
 public class A283793 extends AbstractSequence {
 
-  private long mN;
   private Z mA1;
 
   /** Construct the sequence */
   public A283793() {
     super(0);
-    mN = 0;
     mA1 = Z.valueOf(4);
   }
 
   @Override
   public Z next() {
-    final long n = ++mN;
     final Z result = mA1;
     mA1 = Functions.TRIANGULAR.z(mA1).add(4);
     return result;

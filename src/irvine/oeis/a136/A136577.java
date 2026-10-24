@@ -11,7 +11,7 @@ import irvine.oeis.transform.HankelTransformSequence;
  */
 public class A136577 extends HankelTransformSequence {
 
-  private int mN = -1;
+  private boolean mFirst = true;
 
   /** Construct the sequence. */
   public A136577() {
@@ -20,7 +20,8 @@ public class A136577 extends HankelTransformSequence {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
+    if (mFirst) {
+      mFirst = false;
       return Z.ONE;
     }
     return super.next();

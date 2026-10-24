@@ -25,7 +25,7 @@ public class A031214 extends Sequence1 {
       final Sequence sequence = SequenceFactory.sequence(SequenceFactory.getCanonicalId("A" + ++mN));
       return sequence instanceof DeadSequence ? Z.valueOf(DEADS[++mDeadIndex]) : sequence.next();
     } catch (final UnimplementedException e) {
-      throw new UnsupportedOperationException("Stalled at " + mN);
+      throw new UnsupportedOperationException("Stalled at " + mN, e);
     }
   }
 }

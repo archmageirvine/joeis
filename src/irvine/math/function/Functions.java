@@ -338,7 +338,7 @@ public final class Functions {
     try {
       return (Function1) Functions.class.getField(name.toUpperCase(Locale.getDefault())).get(null);
     } catch (final IllegalAccessException e) {
-      throw new RuntimeException("Could not access " + name);
+      throw new RuntimeException("Could not access " + name, e);
     }
   }
 

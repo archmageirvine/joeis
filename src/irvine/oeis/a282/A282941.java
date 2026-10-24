@@ -9,8 +9,6 @@ import irvine.oeis.a000.A000730;
  */
 public class A282941 extends A000730 {
 
-  private final int mN = -1;
-
   @Override
   public Z next() {
     final Z result = super.next();

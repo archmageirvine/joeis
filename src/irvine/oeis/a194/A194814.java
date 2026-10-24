@@ -32,7 +32,7 @@ public class A194814 extends A194733 {
     int sum = 0;
     if (mRel > 0) {
       for (int k = 1; k < mN; ++k) {
-        if (rN.add(mRK.get(k)).frac(mFrac).compareTo(rN.subtract(mRK.get(k)).frac(mFrac), mPrec) > 0) {
+        if (rN.add(mRK.get(k)).frac(32).compareTo(rN.subtract(mRK.get(k)).frac(32), -32) > 0) {
           ++sum;
         }
         //System.out.println("n,k=" + mN + "," + k + ", rN=" + rN + ", mRK=" + mRK.get(k) + ", sum=" + sum);
@@ -40,7 +40,7 @@ public class A194814 extends A194733 {
       ++sum; // because we left out k == n
     } else {
       for (int k = 1; k < mN; ++k) {
-        if (rN.add(mRK.get(k)).frac(mFrac).compareTo(rN.subtract(mRK.get(k)).frac(mFrac), mPrec) < 0) {
+        if (rN.add(mRK.get(k)).frac(32).compareTo(rN.subtract(mRK.get(k)).frac(32), -32) < 0) {
           ++sum;
         }  
       }

@@ -91,7 +91,7 @@ public class VertexType implements Serializable {
       String part  = parts[iedge];
       int signPos = part.indexOf('+');
       if (signPos >= 0) {
-        pxOrients [iedge] = +1; // "+" => same     orientation
+        pxOrients [iedge] = 1; // "+" => same     orientation
       } else {
         pxOrients [iedge] = -1; // "-" => opposite orientation
         signPos   = part.indexOf('-');

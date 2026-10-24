@@ -12,8 +12,6 @@ import irvine.oeis.LambdaSequence;
  */
 public class A234605 extends LambdaSequence {
 
-  private final long mN = 0;
-
   /** Construct the sequence. */
   public A234605() {
     // seq(add(10^((3^i+1)/2),i=0..n-2)^3,n=1..7);

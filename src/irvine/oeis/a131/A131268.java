@@ -12,8 +12,6 @@ import irvine.oeis.a065.A065941;
  */
 public class A131268 extends AbstractSequence {
 
-  private final long mFactor1 = 2;
-  private final long mFactor2 = -1;
   private final A065941 mSeq1 = new A065941();
   private final A000012 mSeq2 = new A000012();
 
@@ -24,6 +22,6 @@ public class A131268 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return mSeq1.next().multiply(mFactor1).add(mSeq2.next().multiply(mFactor2));
+    return mSeq1.next().multiply(2).add(mSeq2.next().multiply(-1));
   }
 }

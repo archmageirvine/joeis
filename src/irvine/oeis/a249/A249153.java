@@ -11,7 +11,6 @@ import irvine.oeis.a143.A143157;
  */
 public class A249153 extends Sequence0 {
 
-  private final int mN = -1;
   private final Sequence mSeq = new A143157();
 
   @Override

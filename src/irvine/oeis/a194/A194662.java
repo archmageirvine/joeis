@@ -27,18 +27,18 @@ public class A194662 extends A194733 {
 
   @Override
   public Z next() {
-    final CR rN = mR.multiply(++mN).frac(mFrac);
+    final CR rN = mR.multiply(++mN).frac(32);
     mRK.add(rN);
     int sum = 0;
     if (mRel > 0) {
       for (int k = 1; k <= mN; ++k) {
-        if (mRK.get(k).add(rN).compareTo(CR.ONE, mPrec) > 0) {
+        if (mRK.get(k).add(rN).compareTo(CR.ONE, -32) > 0) {
           ++sum;
         }
       }
     } else {
       for (int k = 1; k <= mN; ++k) {
-        if (mRK.get(k).add(rN).compareTo(CR.ONE, mPrec) < 0) {
+        if (mRK.get(k).add(rN).compareTo(CR.ONE, -32) < 0) {
           ++sum;
         }  
       }

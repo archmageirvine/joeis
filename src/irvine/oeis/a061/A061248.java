@@ -14,10 +14,10 @@ public class A061248 extends Sequence1 {
 
   // After Eric M. Schmidt
 
+  private static final int BASE = 10;
   private final List<Integer> mNList = new ArrayList<>();
   private int mDigitSum = 3;
   private Z mN = Z.TWO;
-  private final int mBase = 10;
 
   private int sum(final List<Integer> a) {
     int sum = 0;
@@ -35,7 +35,7 @@ public class A061248 extends Sequence1 {
       while (!(mN.isProbablePrime() && sum(mNList) >= mDigitSum)) {
         int i = mNList.size();
         for (int j = 0; j < mNList.size(); ++j) {
-          if (mNList.get(j) < mBase - 1) {
+          if (mNList.get(j) < BASE - 1) {
             i = j;
             break;
           }
@@ -49,12 +49,12 @@ public class A061248 extends Sequence1 {
           r -= mNList.get(j);
         }
         for (int j = 0; j < i; ++j) {
-          mNList.set(j, Math.min(r, mBase - 1));
+          mNList.set(j, Math.min(r, BASE - 1));
           r -= mNList.get(j);
         }
         mN = Z.ZERO;
         Z b = Z.ONE;
-        for (int j = 0; j < mNList.size(); ++j, b = b.multiply(mBase)) {
+        for (int j = 0; j < mNList.size(); ++j, b = b.multiply(BASE)) {
           mN = mN.add(b.multiply(mNList.get(j)));
         }
       }

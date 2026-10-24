@@ -12,6 +12,6 @@ public class A373261 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A373261() {
-    super(1, 0, k -> Functions.PRIMORIAL_BASE_LOG.z(k).mod(3) == +1);
+    super(1, 0, k -> Functions.PRIMORIAL_BASE_LOG.z(k).mod(3) == 1);
   }
 }

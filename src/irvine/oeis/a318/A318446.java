@@ -9,8 +9,6 @@ import irvine.oeis.transform.InverseMobiusTransformSequence;
  */
 public class A318446 extends InverseMobiusTransformSequence {
 
-  private final int mN = 0;
-
   /** Construct the sequence. */
   public A318446() {
     super(new A005187(), 1);

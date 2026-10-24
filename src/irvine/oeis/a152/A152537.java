@@ -10,8 +10,6 @@ import irvine.oeis.transform.ConvolutionProduct;
  */
 public class A152537 extends ConvolutionProduct {
 
-  private final int mN = -1;
-
   /** Construct the sequence. */
   public A152537() {
     super(0, "1,-1", new A000079(), new A000041());

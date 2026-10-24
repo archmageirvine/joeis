@@ -17,9 +17,6 @@ public class A194733 extends AbstractSequence {
   protected final CR mR;
   protected final int mRel;
   protected final ArrayList<CR> mRK;
-  protected final int mScale = 1;
-  protected final int mPrec = -32;
-  protected final int mFrac = 32;
 
   /** Construct the sequence. */
   public A194733() {
@@ -43,18 +40,18 @@ public class A194733 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final CR rN = mR.multiply(++mN).frac(mFrac);
+    final CR rN = mR.multiply(++mN).frac(32);
     mRK.add(rN);
     int sum = 0;
     if (mRel > 0) { // >
       for (int k = 1; k <= mN; ++k) {
-        if (mRK.get(k).compareTo(rN, mPrec) > 0) {
+        if (mRK.get(k).compareTo(rN, -32) > 0) {
           ++sum;
         }
       }
     } else { // <
       for (int k = 1; k <= mN; ++k) {
-        if (mRK.get(k).compareTo(rN, mPrec) < 0) {
+        if (mRK.get(k).compareTo(rN, -32) < 0) {
           ++sum;
         }  
       }

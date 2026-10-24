@@ -10,13 +10,12 @@ import irvine.oeis.Sequence0;
  */
 public class A128935 extends Sequence0 {
 
-  private final int mBase = 5;
-  private int mProd = 1;
+  private Z mProd = Z.ONE;
 
   @Override
   public Z next() {
     final Z result = Functions.FIBONACCI.z(mProd).divide(mProd);
-    mProd *= mBase;
+    mProd = mProd.multiply(5);
     return result;
   }
 }

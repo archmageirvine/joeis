@@ -11,8 +11,6 @@ import irvine.oeis.LambdaSequence;
  */
 public class A241039 extends LambdaSequence {
 
-  private final long mN = -1;
-
   /** Construct the sequence. */
   public A241039() {
     super(0, n -> (n == 0) ? Z.ONE : Functions.CYCLOTOMIC.z(n, 2048));

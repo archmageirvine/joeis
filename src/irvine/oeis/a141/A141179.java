@@ -1,7 +1,6 @@
 package irvine.oeis.a141;
 // manually pricongrm/pricongr at 2023-08-13 
 
-import irvine.math.z.Z;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
@@ -10,20 +9,8 @@ import irvine.oeis.prime.CongruenceForm;
  */
 public class A141179 extends CongruenceForm {
 
-  private final int mN = 0;
-
-  {
-    // super.next();
-  }
-
   /** Construct the sequence. */
   public A141179() {
     super(40, 0, 2, 3, 5, 13, 27, 37);
-  }
-
-  @Override
-  public Z next() {
-    return super.next();
-    // return (++mN == 1) ? Z.SEVEN : super.next();
   }
 }

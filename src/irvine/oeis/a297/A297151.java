@@ -7,12 +7,9 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A297151 a(n) = Sum_{i=0..n} Sum_{j=0..n} Sum_{k=0..n} binomial(n,i)*binomial(n,j)*binomial(n,k)*max(i,j,k).
- * a(n)=n*2^(3*n-1)+3*n*2^(n-2)*binom(2*n, n)
  * @author Georg Fischer
  */
 public class A297151 extends LambdaSequence {
-
-  private final long mN = -1;
 
   /** Construct the sequence. */
   public A297151() {

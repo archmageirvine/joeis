@@ -12,6 +12,6 @@ public class A303879 extends MexSequence {
 
   /** Construct the sequence. */
   public A303879() {
-    super(1, (self, n) -> self.mex(v -> (Functions.SYNDROME.i(v) & Functions.SYNDROME.i(self.a(n - 1)) & 0b1010101010101010) > 0), "1");
+    super(1, (self, n) -> self.mex(v -> (Functions.SYNDROME.i(v) & Functions.SYNDROME.i(self.a(n - 1)) & 0b1010101010101010) != 0), "1");
   }
 }

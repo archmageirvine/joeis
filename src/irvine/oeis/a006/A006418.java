@@ -14,7 +14,7 @@ public class A006418 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-//    return Binomial.binomial(mN, mN).multiply(1)
+//    return Binomial.binomial(mN, mN)
 //      .add(Binomial.binomial(mN, mN - 1).multiply(37))
 //      .add(Binomial.binomial(mN, mN - 2).multiply(394))
 //      .add(Binomial.binomial(mN, mN - 3).multiply(1714))

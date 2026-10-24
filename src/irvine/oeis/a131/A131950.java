@@ -25,6 +25,6 @@ public class A131950 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return mSeq1.next().multiply(1).add(mSeq2.next().multiply(1)).add(mSeq3.next().multiply(1)).add(mSeq4.next().multiply(-2));
+    return mSeq1.next().add(mSeq2.next()).add(mSeq3.next()).add(mSeq4.next().multiply(-2));
   }
 }

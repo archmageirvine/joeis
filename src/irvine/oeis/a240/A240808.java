@@ -15,6 +15,6 @@ public class A240808 extends HofstadterSequence {
   }
 
   protected int compute(final int n) {
-    return (a(n - 1) > n - 1 || a(n - 2) > n - 2) ? null : a(n - 1 - a(n - 1)) + a(n - 2 - a(n - 2));
+    return a(n - 1 - a(n - 1)) + a(n - 2 - a(n - 2));
   }
 }

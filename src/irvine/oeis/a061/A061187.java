@@ -32,6 +32,6 @@ public class A061187 extends Sequence0 {
       final Polynomial<Q> b = RING.pow(C2, mN + 1, lim);
       mRow = RING.multiply(RING.subtract(a, b), Q.HALF);
     }
-    return mRow.coeff(2 * mM + 1).toZ();
+    return mRow.coeff(2L * mM + 1).toZ();
   }
 }

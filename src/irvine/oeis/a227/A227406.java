@@ -15,6 +15,6 @@ public class A227406 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A227406() {
-    super(0, n -> A071921.a(n, 1 << n));
+    super(0, n -> A071921.a(n, 1L << n));
   }
 }

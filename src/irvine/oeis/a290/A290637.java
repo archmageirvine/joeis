@@ -14,6 +14,6 @@ public class A290637 extends RationalLambdaSequence {
 
   /** Construct the sequence. */
   public A290637() {
-    super(0, NUM, n -> (n == 0) ? Q.ONE : Rationals.SINGLETON.product(0, (1 << (n - 1)) - 1, k -> new Q(2 * k + 1, 2 * k + 2).pow(Functions.THUE_MORSE.z(k).testBit(0) ? -1 : 1)));
+    super(0, NUM, n -> (n == 0) ? Q.ONE : Rationals.SINGLETON.product(0, (1L << (n - 1)) - 1, k -> new Q(2 * k + 1, 2 * k + 2).pow(Functions.THUE_MORSE.z(k).testBit(0) ? -1 : 1)));
   }
 }

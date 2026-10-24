@@ -19,7 +19,7 @@ public class A068108 extends CachedSequence {
       Z sum = Z.ZERO;
       for (final Z d : Jaguar.factor(k - 1).divisors()) {
         final int dd = d.intValue();
-        if (dd * dd < k) {
+        if ((long) dd * dd < k) {
           sum = sum.add(self.a(dd));
         }
       }

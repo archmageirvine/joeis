@@ -17,6 +17,6 @@ public class A116422 extends LambdaTable {
 
   /** Construct the sequence. */
   public A116422() {
-    super(1, 1, n -> new Integer[] {1, Functions.SQRT.i(n)}, (n, k) -> (((n + k) & 1) == 0) ? A072233.a((n - k * k) / 2 + k, k) : Z.ZERO);
+    super(1, 1, n -> new Integer[] {1, Functions.SQRT.i(n)}, (n, k) -> (((n + k) & 1) == 0) ? A072233.a((n - (long) k * k) / 2 + k, k) : Z.ZERO);
   }
 }

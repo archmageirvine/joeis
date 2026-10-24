@@ -45,6 +45,6 @@ public class A032250 extends Sequence1 {
         sum = RING.signedAdd(mu == 1, sum, f(mN / d, d, 2 * mN));
       }
     }
-    return sum.coeff(2 * mN);
+    return sum.coeff(2L * mN);
   }
 }

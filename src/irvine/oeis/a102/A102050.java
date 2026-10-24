@@ -15,7 +15,7 @@ public class A102050 extends LambdaSequence {
   /** Construct the sequence. */
   public A102050() {
     super(0, n -> {
-      final Z t = Z.TEN.pow(1 << n).add(1);
+      final Z t = Z.TEN.pow(1L << n).add(1);
       return Predicates.PRIME.is(t) ? Z.ONE : Functions.LPF.z(t);
     });
   }

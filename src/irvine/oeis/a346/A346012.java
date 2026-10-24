@@ -13,6 +13,6 @@ public class A346012 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A346012() {
-    super(1, n -> FactorUtils.iterate(n, new Q(0), (x, p, e) -> x.add(new Q(e - 1, 2 * (e + 1)))).num());
+    super(1, n -> FactorUtils.iterate(n, new Q(0), (x, p, e) -> x.add(new Q(e - 1, 2L * (e + 1)))).num());
   }
 }

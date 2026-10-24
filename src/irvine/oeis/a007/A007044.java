@@ -14,6 +14,6 @@ public class A007044 extends A047812 {
   @Override
   public Z next() {
     final Integer key = ++mN;
-    return get(key).coeff(2 * (mN + 1));
+    return get(key).coeff(2L * (mN + 1));
   }
 }

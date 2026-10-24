@@ -48,6 +48,6 @@ public class A004013 extends Sequence0 {
     ++mN;
     final Polynomial<Z> p = RING.pow(phi(mN).substitutePower(8), 3, 4 * mN);
     final Polynomial<Z> q = RING.multiply(RING.pow(psi(mN).substitutePower(2), 3, mN), Z.EIGHT).substitutePower(4).shift(3);
-    return p.coeff(2 * mN).add(q.coeff(mN));
+    return p.coeff(2L * mN).add(q.coeff(mN));
   }
 }

@@ -12,6 +12,6 @@ public class A393443 extends LambdaArray {
 
   /** Construct the sequence. */
   public A393443() {
-    super(0, 0, 0, -1, (n, k) -> Z.valueOf(1 + k).add(2 * n * k).add(k * (k - 1) / 2).add(n * (n - 1)));
+    super(0, 0, 0, -1, (n, k) -> Z.valueOf(1 + k).add(2L * n * k).add((long) k * (k - 1) / 2).add((long) n * (n - 1)));
   }
 }

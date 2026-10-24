@@ -18,6 +18,6 @@ public class A030529 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return mM.a(2 * mN + 1).subtract(mM.a(2 * mN)).subtract(mM.a(mN)).divide2();
+    return mM.a(2L * mN + 1).subtract(mM.a(2L * mN)).subtract(mM.a(mN)).divide2();
   }
 }

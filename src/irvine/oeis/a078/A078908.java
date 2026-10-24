@@ -49,7 +49,7 @@ public class A078908 extends Sequence1 implements DirectSequence {
     // Not very efficient, essentially trial division
     for (int x = 1; x <= m; ++x) {
       final int x2 = x * x;
-      for (int y = 0; x2 + y * y <= m * m; ++y) {
+      for (int y = 0; x2 + (long) y * y <= m * m; ++y) {
         final Zi t = new Zi(x, y);
         if (G.isProbablePrime(t)) {
           sum = sum.add(t.multiply(valuation(n, t)));

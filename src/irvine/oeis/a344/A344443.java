@@ -13,6 +13,6 @@ public class A344443 extends AdditiveSequence {
 
   /** Construct the sequence. */
   public A344443() {
-    super(1, (self, p, e) -> is2(p) ? Z.valueOf(5 * e) : new Q(self.a(p.subtract(1)).add(self.a(p.add(1))), 2).ceiling().multiply(e));
+    super(1, (self, p, e) -> is2(p) ? Z.valueOf(5L * e) : new Q(self.a(p.subtract(1)).add(self.a(p.add(1))), 2).ceiling().multiply(e));
   }
 }

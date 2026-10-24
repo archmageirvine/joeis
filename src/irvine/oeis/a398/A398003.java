@@ -32,6 +32,6 @@ public class A398003 extends ParallelPermutationSequence {
     }
     // Compute excess shadings
     final int min = Functions.MIN.i(c);
-    return n * (n + 1) / 2 - n * min;
+    return (long) n * (n + 1) / 2 - (long) n * min;
   }
 }

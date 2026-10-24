@@ -18,7 +18,7 @@ public class A391595 extends Sequence0 {
   private int mN = -1;
 
   private Series<Q> b(final int k, final int j) {
-    return SQ.divide(SQ.subtract(SQ.monomial(k), SQ.monomial(k * j)), SQ.oneMinusXToTheN(k * j));
+    return SQ.divide(SQ.subtract(SQ.monomial(k), SQ.monomial((long) k * j)), SQ.oneMinusXToTheN((long) k * j));
   }
 
   private final MemoryFunction1<Series<Q>> mC = new MemoryFunction1<>() {
@@ -56,12 +56,12 @@ public class A391595 extends Sequence0 {
           private int mJ = 0;
           @Override
           public Q coeff(final long m) {
-            while (m > mI * mJ) {
+            while (m > (long) mI * mJ) {
               ++mJ;
               final Series<Q> cjxs = SQ.square(SQ.add(mC.get(mJ), SQ.one()));
-              final Series<Q> den = SQ.square(SQ.subtract(SQ.monomial(mI * mJ), SQ.one()));
+              final Series<Q> den = SQ.square(SQ.subtract(SQ.monomial((long) mI * mJ), SQ.one()));
               final Series<Q> d = SQ.divide(SQ.multiply(cjxs, i2), den);
-              mSK = SQ.add(mSK, SQ.shift(d, mI * mJ));
+              mSK = SQ.add(mSK, SQ.shift(d, (long) mI * mJ));
             }
             return mSK.coeff(m);
           }

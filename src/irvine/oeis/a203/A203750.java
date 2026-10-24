@@ -16,6 +16,6 @@ public class A203750 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return mSeq.a(2 * mN - 1).divide(mSeq.a(2 * mN - 2)).sqrt();
+    return mSeq.a(2L * mN - 1).divide(mSeq.a(2L * mN - 2)).sqrt();
   }
 }

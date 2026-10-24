@@ -19,7 +19,7 @@ public class A014586 extends MemorySequence {
     final int n = size();
     final Collection<Long> moves = new ArrayList<>();
     for (int r = 1; r <= Functions.SQRT.i(n); ++r) {
-      moves.add(a(n - r * r).longValueExact());
+      moves.add(a(n - (long) r * r).longValueExact());
     }
     return Z.valueOf(LongUtils.mex(moves));
   }

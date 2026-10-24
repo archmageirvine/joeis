@@ -19,6 +19,6 @@ public class A075149 extends Sequence0 {
   public Z next() {
     ++mN;
     final int r = 2 * (mN - (1 << IntegerUtils.floorLog2(mN)));
-    return Integers.SINGLETON.sum(0, 2 * r, k -> Functions.FIBONACCI.z(mN - k).multiply(Binomial.binomial(r, k, 2)));
+    return Integers.SINGLETON.sum(0, 2L * r, k -> Functions.FIBONACCI.z(mN - k).multiply(Binomial.binomial(r, k, 2)));
   }
 }

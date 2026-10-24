@@ -18,8 +18,8 @@ public class A259419 extends GeneralRecurrence {
   protected void initialize() {
     // a(n) = (a(n-1)*a(n-3) -   a(n-2)^2)/a(n-4) if n is not 2 mod 3, and 
     // a(n) = (a(n-1)*a(n-3) - 3*a(n-2)^2)/a(n-4) if n is 2 mod 3.
-    mLambda.add(m -> a(3 * m + 0 - 1).multiply(a(3 * m + 0 - 3)).add(a(3 * m + 0 - 2).square().multiply(-1)).divide(a(3 * m + 0 - 4)));
-    mLambda.add(m -> a(3 * m + 1 - 1).multiply(a(3 * m + 1 - 3)).add(a(3 * m + 1 - 2).square().multiply(-1)).divide(a(3 * m + 1 - 4)));
-    mLambda.add(m -> a(3 * m + 2 - 1).multiply(a(3 * m + 2 - 3)).add(a(3 * m + 2 - 2).square().multiply(-3)).divide(a(3 * m + 2 - 4)));
+    mLambda.add(m -> a(3L * m + 0 - 1).multiply(a(3L * m + 0 - 3)).add(a(3L * m + 0 - 2).square().multiply(-1)).divide(a(3L * m + 0 - 4)));
+    mLambda.add(m -> a(3L * m + 1 - 1).multiply(a(3L * m + 1 - 3)).add(a(3L * m + 1 - 2).square().multiply(-1)).divide(a(3L * m + 1 - 4)));
+    mLambda.add(m -> a(3L * m + 2 - 1).multiply(a(3L * m + 2 - 3)).add(a(3L * m + 2 - 2).square().multiply(-3)).divide(a(3L * m + 2 - 4)));
   }
 }

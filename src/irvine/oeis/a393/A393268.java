@@ -16,7 +16,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A393268 extends DecimalExpansionSequence {
 
   private static CR quot(final int n, final int m) {
-    return CR.ONE.subtract(CR.valueOf(new Q(Z.ONE, Z.valueOf(m).pow(2 * n))).multiply(Rationals.SINGLETON.sum(1, n, k -> new Q(Z.valueOf(m - k).pow(n)
+    return CR.ONE.subtract(CR.valueOf(new Q(Z.ONE, Z.valueOf(m).pow(2L * n))).multiply(Rationals.SINGLETON.sum(1, n, k -> new Q(Z.valueOf(m - k).pow(n)
       .multiply(Functions.FACTORIAL.z(m)).multiply(Functions.STIRLING2.z(n, k)), Functions.FACTORIAL.z(m - k)))));
   }
 

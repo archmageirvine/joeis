@@ -16,6 +16,6 @@ public class A166549 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A166549() {
-    super(1, (term, n) -> A006577.a(2 * n - 1).subtract(term), "", new A075680());
+    super(1, (term, n) -> A006577.a(2L * n - 1).subtract(term), "", new A075680());
   }
 }

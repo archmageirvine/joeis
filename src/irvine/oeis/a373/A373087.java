@@ -13,6 +13,6 @@ public class A373087 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A373087() {
-    super(1, 1, k -> Predicates.SQUARE.is(k) && Functions.OMEGA.i(k / (1 << Functions.VALUATION.i(k, 2))) == 2);
+    super(1, 1, k -> Predicates.SQUARE.is(k) && Functions.OMEGA.i(k / (1L << Functions.VALUATION.i(k, 2))) == 2);
   }
 }

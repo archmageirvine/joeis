@@ -15,6 +15,6 @@ public class A226031 extends LambdaArray {
 
   /** Construct the sequence. */
   public A226031() {
-    super(0, 0, 0, -1, (n, k) -> A071921.a(n, k * n));
+    super(0, 0, 0, -1, (n, k) -> A071921.a(n, (long) k * n));
   }
 }

@@ -12,6 +12,6 @@ public class A214072 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A214072() {
-    super(1, (n, k) -> !Functions.GCD.z(Functions.MULTIFACTORIAL.z(2, 2 * n - 1).add(k), Functions.MULTIFACTORIAL.z(2, 2 * n).subtract(k)).isOne(), 1, (n, k) -> 1);
+    super(1, (n, k) -> !Functions.GCD.z(Functions.MULTIFACTORIAL.z(2, 2L * n - 1).add(k), Functions.MULTIFACTORIAL.z(2, 2L * n).subtract(k)).isOne(), 1, (n, k) -> 1);
   }
 }

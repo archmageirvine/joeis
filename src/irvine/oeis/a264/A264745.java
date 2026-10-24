@@ -13,6 +13,6 @@ public class A264745 extends LambdaArray {
 
   /** Construct the sequence. */
   public A264745() {
-    super(1, 1, 1, 1, (n, k) -> Functions.FIBONACCI.z(Z.TWO.pow(n - 1).multiply(2 * k - 1).add(1)));
+    super(1, 1, 1, 1, (n, k) -> Functions.FIBONACCI.z(Z.TWO.pow(n - 1).multiply(2L * k - 1).add(1)));
   }
 }

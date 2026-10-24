@@ -199,12 +199,12 @@ public class A061526 extends Sequence1 {
 
   // The number of games of n x n tic-tac-toe won by x
   protected Z gx(final int n) {
-    return Integers.SINGLETON.sum(n, (n * n + 1) / 2, t -> gxt(n, t.intValue()));
+    return Integers.SINGLETON.sum(n, ((long) n * n + 1) / 2, t -> gxt(n, t.intValue()));
   }
 
   // The number of games of n x n tic-tac-toe won by o
   protected Z go(final int n) {
-    return Integers.SINGLETON.sum(n, (n * n) / 2, t -> got(n, t.intValue()));
+    return Integers.SINGLETON.sum(n, ((long) n * n) / 2, t -> got(n, t.intValue()));
   }
 
   // The number of games of n x n tic-tac-toe that end in a draw

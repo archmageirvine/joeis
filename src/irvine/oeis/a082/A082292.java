@@ -16,6 +16,6 @@ public class A082292 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return Functions.FACTORIAL.z(2L * mN).multiply(2L * mN + 1).divide(Integers.SINGLETON.product(1, 2 * mN + 1, k -> Functions.LCM.z(k, 2L * mN + 2 - k)).multiply(mN + 1).sqrt().multiply2());
+    return Functions.FACTORIAL.z(2L * mN).multiply(2L * mN + 1).divide(Integers.SINGLETON.product(1, 2L * mN + 1, k -> Functions.LCM.z(k, 2L * mN + 2 - k)).multiply(mN + 1).sqrt().multiply2());
   }
 }

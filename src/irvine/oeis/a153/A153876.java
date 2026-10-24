@@ -13,6 +13,6 @@ public class A153876 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A153876() {
-    super(1, n -> Integers.SINGLETON.sum(1 << (n - 1), (1 << n) - 1, i -> Functions.SIGMA0.z(i)));
+    super(1, n -> Integers.SINGLETON.sum(1L << (n - 1), (1L << n) - 1, i -> Functions.SIGMA0.z(i)));
   }
 }

@@ -14,6 +14,6 @@ public class A182471 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A182471() {
-    super(1, n -> (n == 1) ? Z.ZERO : FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> x.add(p).add(e)).divide(2 * Functions.OMEGA.i(n)));
+    super(1, n -> (n == 1) ? Z.ZERO : FactorUtils.iterate(n, Z.ZERO, (x, p, e) -> x.add(p).add(e)).divide(2L * Functions.OMEGA.i(n)));
   }
 }

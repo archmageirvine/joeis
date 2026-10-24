@@ -14,6 +14,6 @@ public class A392743 extends Sequence0 {
 
   @Override
   public Z next() {
-    return mS.a(2 * ++mN + 1 - mS.a(mN).intValue());
+    return mS.a(2L * ++mN + 1 - mS.a(mN).intValue());
   }
 }

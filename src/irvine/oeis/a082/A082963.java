@@ -16,6 +16,6 @@ public class A082963 extends A054252 {
     if (++mN > 0) {
       step();
     }
-    return mA.coeff(mN * mN / 2).toZ();
+    return mA.coeff((long) mN * mN / 2).toZ();
   }
 }

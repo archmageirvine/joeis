@@ -17,11 +17,11 @@ public class A132971 extends GeneralRecurrence {
   @Override
   protected void initialize() {
     /* 4*k+0 */
-    mLambda.add(n -> a(2 * n));
+    mLambda.add(n -> a(2L * n));
     /* 4*k+1 */
     mLambda.add(n -> a(n).negate());
     /* 4*k+2 */
-    mLambda.add(n -> a(2 * n + 1));
+    mLambda.add(n -> a(2L * n + 1));
     /* 4*k+3 */
     mLambda.add(n -> Z.ZERO);
   }

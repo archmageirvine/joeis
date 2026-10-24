@@ -18,7 +18,7 @@ public class A375932 extends LambdaSequence {
     super(1, n -> {
       final FactorSequence fs = Jaguar.factor(n);
       final int me = fs.maxExponent();
-      return FactorUtils.iterate(n, Z.ONE, (x, p, e) -> x.multiply(p.pow(e * (e < me ? 1 : 0))));
+      return FactorUtils.iterate(n, Z.ONE, (x, p, e) -> x.multiply(p.pow((long) e * (e < me ? 1 : 0))));
     });
   }
 }

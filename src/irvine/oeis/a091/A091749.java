@@ -13,6 +13,6 @@ public class A091749 extends A091747 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(2, 2 * ++mN, k -> a(mN, k));
+    return Integers.SINGLETON.sum(2, 2L * ++mN, k -> a(mN, k));
   }
 }

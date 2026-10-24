@@ -26,6 +26,6 @@ public class A072948 extends Sequence0 {
       final int b = k / 2;
       gf = RING.series(RING.one(), RING.subtract(RING.one(), RING.multiply(gf, INNER.monomial(new Q(a), b)).shift(1)), 2 * mN);
     }
-    return gf.coeff(2 * mN).coeff(mN).toZ();
+    return gf.coeff(2L * mN).coeff(mN).toZ();
   }
 }

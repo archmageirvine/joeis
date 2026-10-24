@@ -27,10 +27,10 @@ public class A398356 extends ParallelPermutationSequence {
     if (pos <= 1) {
       return true;
     }
-    if (!mPrime.isPrime((p[pos - 1] + 1) * (p[pos - 2] + 1) + 1)) {
+    if (!mPrime.isPrime((long) (p[pos - 1] + 1) * (p[pos - 2] + 1) + 1)) {
       return false;
     }
-    if (pos == p.length && (p[p.length - 1] > p[1] || !mPrime.isPrime((p[pos - 1] + 1) * (p[0] + 1) + 1))) {
+    if (pos == p.length && (p[p.length - 1] > p[1] || !mPrime.isPrime((long) (p[pos - 1] + 1) * (p[0] + 1) + 1))) {
       return false;
     }
     return true;

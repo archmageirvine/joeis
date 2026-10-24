@@ -22,7 +22,7 @@ public class A085000 extends Sequence1 {
     final MatrixField<Z> fld = new MatrixField<>(++mN, IntegerField.SINGLETON);
     final DefaultMatrix<Z> m = new DefaultMatrix<>(mN, mN, Z.ZERO);
     final Permutation perm = new Permutation(mN * mN - 1);
-    m.set(0, 0, Z.valueOf(mN * mN)); // WLOG symmetry
+    m.set(0, 0, Z.valueOf((long) mN * mN)); // WLOG symmetry
     Z max = Z.ZERO;
     int[] p;
     while ((p = perm.next()) != null) {

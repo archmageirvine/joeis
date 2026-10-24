@@ -13,6 +13,6 @@ public class A172157 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A172157() {
-    super(1, 1, 1, (n, k) -> (k == 1) ? Z.NEG_ONE : new Q(1, n * n).subtract(new Q(1, Z.valueOf(k - 1).square())).num());
+    super(1, 1, 1, (n, k) -> (k == 1) ? Z.NEG_ONE : new Q(1, (long) n * n).subtract(new Q(1, Z.valueOf(k - 1).square())).num());
   }
 }

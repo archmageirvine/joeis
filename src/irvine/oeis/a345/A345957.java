@@ -16,7 +16,7 @@ public class A345957 extends LambdaSequence {
   public A345957() {
     super(1, n -> {
       final long bon = Functions.BIG_OMEGA.i(n);
-      return Integers.SINGLETON.sumdiv(n, d -> (Functions.BIG_OMEGA.i(d) * 2 == bon) ? Z.ONE : Z.ZERO);
+      return Integers.SINGLETON.sumdiv(n, d -> (Functions.BIG_OMEGA.i(d) * 2L == bon) ? Z.ONE : Z.ZERO);
     });
   }
 }

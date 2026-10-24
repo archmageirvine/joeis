@@ -14,6 +14,6 @@ public class A141723 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A141723() {
-    super(0, 0, 0, (n, k) -> Rationals.SINGLETON.sum(0, n, j -> new Q(Functions.FACTORIAL.z(2 * n), Functions.FACTORIAL.z(2 * n - k - j).multiply(Functions.FACTORIAL.z(j)).multiply(Functions.FACTORIAL.z(k)))).num());
+    super(0, 0, 0, (n, k) -> Rationals.SINGLETON.sum(0, n, j -> new Q(Functions.FACTORIAL.z(2 * n), Functions.FACTORIAL.z(2L * n - k - j).multiply(Functions.FACTORIAL.z(j)).multiply(Functions.FACTORIAL.z(k)))).num());
   }
 }

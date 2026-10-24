@@ -11,6 +11,6 @@ public class A007167 extends A007166 {
 
   @Override
   protected Z select(final Polynomial<Z> s, final Polynomial<Z> b, final int n) {
-    return s.coeff(2 * n - 1);
+    return s.coeff(2L * n - 1);
   }
 }

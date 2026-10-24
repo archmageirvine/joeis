@@ -19,7 +19,7 @@ public class A395615 extends Sequence1 {
       res *= 10;
       res += s.charAt(k) - '0';
       res *= 10;
-      res += ((s.charAt(k) - '0') * (s.charAt(k + 1) - '0')) % 10;
+      res += ((long) (s.charAt(k) - '0') * (s.charAt(k + 1) - '0')) % 10;
     }
     return Z.valueOf(res * 10 + s.charAt(s.length() - 1) - '0');
   }

@@ -17,6 +17,6 @@ public class A124980 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return mA18782.a(2 * mN - 1).min(mA18782.a(2 * mN - 2));
+    return mA18782.a(2L * mN - 1).min(mA18782.a(2L * mN - 2));
   }
 }

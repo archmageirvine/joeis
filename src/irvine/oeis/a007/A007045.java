@@ -21,6 +21,6 @@ public class A007045 extends A047812 {
     if (++mN == 2) {
       return Z.ZERO;
     }
-    return get(mN).coeff((mN - 3) * (mN + 1));
+    return get(mN).coeff((long) (mN - 3) * (mN + 1));
   }
 }

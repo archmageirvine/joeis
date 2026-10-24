@@ -15,6 +15,6 @@ public class A104382 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A104382() {
-    super(1, 1, 1, (n, k) -> A072233.a((n - k + 1) * (n + k) / 2, k));
+    super(1, 1, 1, (n, k) -> A072233.a((long) (n - k + 1) * (n + k) / 2, k));
   }
 }

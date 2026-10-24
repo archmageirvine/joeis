@@ -41,7 +41,7 @@ public class A038381 extends Sequence0 {
       sum = sum.add(t.multiply(mU.a(i)).multiply(8));
     }
     for (int i = 1; i <= (a - 1) / 2; ++i) {
-      sum = sum.subtract(mU.a(i).square().multiply(mU.a(a - 2 * i)).multiply(4));
+      sum = sum.subtract(mU.a(i).square().multiply(mU.a(a - 2L * i)).multiply(4));
     }
     return sum;
   }

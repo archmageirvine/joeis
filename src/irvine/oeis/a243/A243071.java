@@ -19,6 +19,6 @@ public class A243071 extends GeneralRecurrence {
   @Override
   protected void initialize() {
     mLambda.add(n -> a(n).multiply2());
-    mLambda.add(n -> a(mSeq.a(2 * n + 1).intValueExact()).multiply2().add(1));
+    mLambda.add(n -> a(mSeq.a(2L * n + 1).intValueExact()).multiply2().add(1));
   }
 }

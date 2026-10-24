@@ -18,7 +18,7 @@ public class A255308 extends MultiTransformSequence {
         return Z.ZERO;
       }
       final int e = Functions.VALUATION.i(n, 2);
-      return n == (1 << e) ? self.a(e).add(1) : Z.ZERO;
+      return n == (1L << e) ? self.a(e).add(1) : Z.ZERO;
     }, "");
   }
 }

@@ -23,6 +23,6 @@ public class A060506 extends Sequence0 {
     if (++mN > 0) {
       mDen = mDen.multiply(216).multiply(mN);
     }
-    return select(new Q(Integers.SINGLETON.product(1, 3 * mN - 1, k -> Z.valueOf(2L * k + 1)), mDen));
+    return select(new Q(Integers.SINGLETON.product(1, 3L * mN - 1, k -> Z.valueOf(2L * k + 1)), mDen));
   }
 }

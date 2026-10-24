@@ -14,7 +14,7 @@ public class A225296 extends FilterNumberSequence {
   public A225296() {
     super(1, 1, k -> {
       final int d = Functions.LEADING_DIGIT.i(k);
-      return d > 1 && k % (d * d * d) == 0;
+      return d > 1 && k % ((long) d * d * d) == 0;
     });
   }
 }

@@ -15,7 +15,7 @@ public class A102877 extends GeneralRecurrence {
 
   @Override
   protected void initialize() {
-    mLambda.add(n -> a(2 * n - 1).multiply(3));
-    mLambda.add(n -> a(2 * n).multiply(3).subtract(a(n - 1).multiply2()));
+    mLambda.add(n -> a(2L * n - 1).multiply(3));
+    mLambda.add(n -> a(2L * n).multiply(3).subtract(a(n - 1).multiply2()));
   }
 }

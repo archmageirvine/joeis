@@ -13,6 +13,6 @@ public class A372873 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A372873() {
-    super(1, 1, 1, (n, k) -> Z.TWO.pow(2 * k - n - 1).multiply(Binomial.binomial(n - 1, 2 * (n - k))));
+    super(1, 1, 1, (n, k) -> Z.TWO.pow(2L * k - n - 1).multiply(Binomial.binomial(n - 1, 2L * (n - k))));
   }
 }

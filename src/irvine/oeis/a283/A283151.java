@@ -14,6 +14,6 @@ public class A283151 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A283151() {
-    super(0, 0, 0, (n, k) -> (n == 1) ? Z.valueOf(6 - 7 * k) : Binomial.binomial(new Q(3 * n - 1, 3), n - k).multiply(Z.NEG_ONE.pow(k)).multiply(Z.NINE.pow(n - k)).num());
+    super(0, 0, 0, (n, k) -> (n == 1) ? Z.valueOf(6 - 7L * k) : Binomial.binomial(new Q(3L * n - 1, 3), n - k).multiply(Z.NEG_ONE.pow(k)).multiply(Z.NINE.pow(n - k)).num());
   }
 }

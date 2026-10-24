@@ -12,6 +12,6 @@ public class A214061 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A214061() {
-    super(1, (n, k) -> Functions.GCD.i(2 * n - 1 + k, 2 * n - k) > 1, 0, (n, k) -> 0);
+    super(1, (n, k) -> Functions.GCD.i(2L * n - 1 + k, 2L * n - k) > 1, 0, (n, k) -> 0);
   }
 }

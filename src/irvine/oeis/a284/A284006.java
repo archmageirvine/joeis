@@ -16,6 +16,6 @@ public class A284006 extends HofstadterSequence {
   }
 
   protected int compute(final int n) {
-    return a(a(n - Functions.VALUATION.i(2 * n, 2))) + a(n - a(n - Functions.VALUATION.i(2 * n, 2)));
+    return a(a(n - Functions.VALUATION.i(2L * n, 2))) + a(n - a(n - Functions.VALUATION.i(2L * n, 2)));
   }
 }

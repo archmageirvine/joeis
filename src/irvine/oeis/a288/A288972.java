@@ -53,7 +53,7 @@ public class A288972 extends UpperLeftTriangle {
       if (n == 0 || k == 0) {
         return Z.ONE;
       }
-      return Integers.SINGLETON.sum(k * n + n - 1, k * n * (n + 1) / 2, w -> mB.get(w, k, k, n));
+      return Integers.SINGLETON.sum((long) k * n + n - 1, (long) k * n * (n + 1) / 2, w -> mB.get(w, k, k, n));
     }
   };
 

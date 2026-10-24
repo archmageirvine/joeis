@@ -23,9 +23,9 @@ public class A082647 extends GfSequence {
 
       @Override
       public Q coeff(final long n) {
-        while (n >= mK * (2 * mK - 1)) {
+        while (n >= mK * (2L * mK - 1)) {
           ++mK;
-          mS = SQ.add(mS, SQ.divide(SQ.monomial(mK * (2 * mK - 1)), SQ.oneMinusXToTheN(2 * mK - 1)));
+          mS = SQ.add(mS, SQ.divide(SQ.monomial(mK * (2L * mK - 1)), SQ.oneMinusXToTheN(2L * mK - 1)));
         }
         return mS.coeff(n);
       }

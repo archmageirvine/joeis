@@ -14,6 +14,6 @@ public class A156790 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A156790() {
-    super(0, n -> Integers.SINGLETON.sum(1, (1 << n) - 1, m -> Functions.SQRT.z(Z.FOUR.pow(n).subtract(Z.valueOf(m).square()))));
+    super(0, n -> Integers.SINGLETON.sum(1, (1L << n) - 1, m -> Functions.SQRT.z(Z.FOUR.pow(n).subtract(Z.valueOf(m).square()))));
   }
 }

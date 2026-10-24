@@ -21,7 +21,7 @@ public class A039660 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= (mN - 2) / 2; ++k) {
-      sum = sum.add(mA.a(k).multiply(mL.a(mN - 2 * k)));
+      sum = sum.add(mA.a(k).multiply(mL.a(mN - 2L * k)));
     }
     return sum;
   }

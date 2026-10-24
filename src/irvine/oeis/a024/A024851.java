@@ -17,7 +17,7 @@ public class A024851 extends Sequence2 {
   private long mM = 2;
 
   private CR f(final int n) {
-    return CR.valueOf(mF.a(2 * n - 1)).multiply(CR.PHI).subtract(CR.valueOf(mF.a(2 * n)));
+    return CR.valueOf(mF.a(2L * n - 1)).multiply(CR.PHI).subtract(CR.valueOf(mF.a(2L * n)));
   }
 
   private boolean check() {

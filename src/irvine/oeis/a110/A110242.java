@@ -13,6 +13,6 @@ public class A110242 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A110242() {
-    super(0, 0, 0, (n, k) -> (n == 0) ? Z.ONE : Functions.JACOBI.z(n, 2 * n - 2 * k + 1));
+    super(0, 0, 0, (n, k) -> (n == 0) ? Z.ONE : Functions.JACOBI.z(n, 2L * n - 2L * k + 1));
   }
 }

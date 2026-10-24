@@ -29,6 +29,6 @@ public class A165686 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (mN <= 2) ? Z.ZERO : A165684.next().subtract(A008615.a(2 * mN - 5));
+    return (mN <= 2) ? Z.ZERO : A165684.next().subtract(A008615.a(2L * mN - 5));
   }
 }

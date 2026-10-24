@@ -20,7 +20,7 @@ public class A060924 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return mA.a((2 * mN - mM + 1) * (2 * mN - mM + 2) / 2 + mM);
+    return mA.a((2L * mN - mM + 1) * (2L * mN - mM + 2) / 2 + mM);
   }
 }
 

@@ -14,6 +14,6 @@ public class A006098 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Binomial.gaussianBinomial(2 * ++mN, mN, 2);
+    return Binomial.gaussianBinomial(2L * ++mN, mN, 2);
   }
 }

@@ -17,7 +17,7 @@ public class A400958 extends Sequence0 {
   @Override
   public Z next() {
     while (mN <= mLim) {
-      mSum += Functions.MOBIUS.i(mN) * Functions.MOBIUS.i(++mN);
+      mSum += (long) Functions.MOBIUS.i(mN) * Functions.MOBIUS.i(++mN);
     }
     mLim *= 10;
     return Z.valueOf(mSum);

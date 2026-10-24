@@ -12,6 +12,6 @@ public class A224333 extends LambdaArray {
 
   /** Construct the sequence. */
   public A224333() {
-    super(1, 1, 1, -1, (n, k) -> Z.valueOf(1 + k).pow(n - 1).multiply(2 * n).subtract(n));
+    super(1, 1, 1, -1, (n, k) -> Z.valueOf(1 + k).pow(n - 1).multiply(2L * n).subtract(n));
   }
 }

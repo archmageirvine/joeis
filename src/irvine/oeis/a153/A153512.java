@@ -12,6 +12,6 @@ public class A153512 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A153512() {
-    super(0, 0, 0, (n, m) -> Functions.MULTIFACTORIAL.z(2, 2 * n + 1).square().divide(Functions.MULTIFACTORIAL.z(2, 2 * m + 1).multiply(Functions.MULTIFACTORIAL.z(2, 2 * n - 2 * m + 1))));
+    super(0, 0, 0, (n, m) -> Functions.MULTIFACTORIAL.z(2, 2L * n + 1).square().divide(Functions.MULTIFACTORIAL.z(2, 2L * m + 1).multiply(Functions.MULTIFACTORIAL.z(2, 2L * n - 2L * m + 1))));
   }
 }

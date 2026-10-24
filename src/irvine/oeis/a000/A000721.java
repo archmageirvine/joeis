@@ -163,6 +163,6 @@ public class A000721 extends AbstractSequence {
     //System.out.println(ans);
     final Polynomial<Q> gf = ans.applyOnePlusXToTheN();
     //System.out.println(gf);
-    return gf.coeff(1 << (mN - 1)).toZ();
+    return gf.coeff(1L << (mN - 1)).toZ();
   }
 }

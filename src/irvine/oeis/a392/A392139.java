@@ -11,13 +11,13 @@ import irvine.oeis.Sequence0;
  */
 public class A392139 extends Sequence0 {
 
-  private int mN = -1;
+  private long mN = -1;
 
   @Override
   public Z next() {
     ++mN;
     Series<Z> s = SeriesRing.SZ.one();
-    for (int j = 1; j <= mN; ++j) {
+    for (long j = 1; j <= mN; ++j) {
       s = SeriesRing.SZ.add(s, SeriesRing.SZ.monomial(Z.TWO, j * j * j * j));
     }
     s = SeriesRing.SZ.pow(s, mN);

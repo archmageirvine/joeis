@@ -19,6 +19,6 @@ public class A216513 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A216513() {
-    super(0, (term, n) -> (term.add(Z.TWO.multiply(A010052.a(n))).add(Z.TWO.multiply(A010052.a(6 * n))).subtract(A000007.a(n))).divide(4), "1,1", new A046113());
+    super(0, (term, n) -> (term.add(Z.TWO.multiply(A010052.a(n))).add(Z.TWO.multiply(A010052.a(6L * n))).subtract(A000007.a(n))).divide(4), "1,1", new A046113());
   }
 }

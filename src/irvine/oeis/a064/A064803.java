@@ -11,7 +11,7 @@ public class A064803 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A064803() {
-    super(1, (p, e) -> Integers.SINGLETON.sum(0, 2 * e, j -> p.pow(2L * e - j).multiply(2L * j - (j == 0 ? -1 : (j - 1) / 2)).multiply(e - (j == 0 ? -1 : (j - 1) / 2))));
+    super(1, (p, e) -> Integers.SINGLETON.sum(0, 2L * e, j -> p.pow(2L * e - j).multiply(2L * j - (j == 0 ? -1 : (j - 1) / 2)).multiply(e - (j == 0 ? -1 : (j - 1) / 2))));
   }
 }
 

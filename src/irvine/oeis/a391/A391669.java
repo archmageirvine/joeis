@@ -21,7 +21,7 @@ public class A391669 extends Sequence0 {
   private final MemoryFunction1<Series<Q>> mGfs = new MemoryFunction1<>() {
     @Override
     protected Series<Q> compute(final int k) {
-      return SQ.shift(SQ.divide(C1, SQ.pow(C2, k + 1)), 3 * k - 1);
+      return SQ.shift(SQ.divide(C1, SQ.pow(C2, k + 1)), 3L * k - 1);
     }
   };
 

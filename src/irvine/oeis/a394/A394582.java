@@ -15,6 +15,6 @@ public class A394582 extends LambdaArray {
 
   /** Construct the sequence. */
   public A394582() {
-    super(1, 1, 1, 1, (n, k) -> Integers.SINGLETON.sum(0, 2 * n + k - 2, j -> Binomial.binomial(2 * n + k - 2, j).multiply(Z.valueOf(1 - n).pow(2 * n + k - 2 - j)).multiply(Functions.STIRLING2.z(j, 2 * n - 1))));
+    super(1, 1, 1, 1, (n, k) -> Integers.SINGLETON.sum(0, 2L * n + k - 2, j -> Binomial.binomial(2L * n + k - 2, j).multiply(Z.valueOf(1 - n).pow(2L * n + k - 2 - j)).multiply(Functions.STIRLING2.z(j, 2L * n - 1))));
   }
 }

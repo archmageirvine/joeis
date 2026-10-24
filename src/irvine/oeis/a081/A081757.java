@@ -20,8 +20,8 @@ public class A081757 extends GfSequence {
 
       @Override
       public Q coeff(final long n) {
-        while (n > mK * mK + 3 * mK) {
-          mS = SeriesRing.SQ.add(mS, SeriesRing.SQ.divide(SeriesRing.SQ.monomial(++mK * mK + 3 * mK), SeriesRing.SQ.oneMinusXToTheN(mK)));
+        while (n > (long) mK * mK + 3L * mK) {
+          mS = SeriesRing.SQ.add(mS, SeriesRing.SQ.divide(SeriesRing.SQ.monomial((long) ++mK * mK + 3L * mK), SeriesRing.SQ.oneMinusXToTheN(mK)));
         }
         return mS.coeff(n - 1);
       }

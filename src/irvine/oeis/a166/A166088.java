@@ -15,6 +15,6 @@ public class A166088 extends FilterSequence {
 
   /** Construct the sequence. */
   public A166088() {
-    super(1, new A005408(), (k, v) -> Integers.SINGLETON.count(1, 2 * k, u -> Integers.SINGLETON.sum(1, u, i -> Functions.JACOBI.z(i, 2L * k + 1)).isZero()).equals(Z.EIGHT));
+    super(1, new A005408(), (k, v) -> Integers.SINGLETON.count(1, 2L * k, u -> Integers.SINGLETON.sum(1, u, i -> Functions.JACOBI.z(i, 2L * k + 1)).isZero()).equals(Z.EIGHT));
   }
 }

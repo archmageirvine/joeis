@@ -80,7 +80,7 @@ public class A395942 extends Sequence1 {
         final Z block = Z.valueOf((1L << p) - 1);
         final Z mask1 = block.shiftLeft(pos);
         final int cc = mN - c - p;
-        final Z mask2 = block.shiftLeft(r * mN + cc);
+        final Z mask2 = block.shiftLeft((long) r * mN + cc);
         if (mask1.equals(mask2) || mask1.and(mask2).isZero()) {
           final Z mask = mask1.or(mask2);
           if (board.and(mask).isZero()) {

@@ -42,8 +42,8 @@ public class A046733 extends A046735 {
           first = k;
         } else {
           final int p = k - first;
-          if (a.a(first + 2 * p).mod(mN) == 0
-            && a.a(first + 3 * p).mod(mN) == 0) {
+          if (a.a(first + 2L * p).mod(mN) == 0
+            && a.a(first + 3L * p).mod(mN) == 0) {
             return Z.valueOf(p);
           }
         }

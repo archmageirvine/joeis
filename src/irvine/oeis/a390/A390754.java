@@ -12,6 +12,6 @@ public class A390754 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A390754() {
-    super(1, (p, e) -> p.subtract(1).multiply(p.pow(e - 1 + (2 * e + 3) % 3)));
+    super(1, (p, e) -> p.subtract(1).multiply(p.pow(e - 1 + (2L * e + 3) % 3)));
   }
 }

@@ -13,7 +13,7 @@ public class A392485 extends A392482 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN * mN, k -> super.next());
+    return Integers.SINGLETON.sum(1, (long) ++mN * mN, k -> super.next());
   }
 }
 

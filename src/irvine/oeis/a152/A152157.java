@@ -15,6 +15,6 @@ public class A152157 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A152157() {
-    super(0, 0, 0, (n, k) -> A008284.a(n + k + 1, 2 * k + 1));
+    super(0, 0, 0, (n, k) -> A008284.a(n + k + 1, 2L * k + 1));
   }
 }

@@ -45,6 +45,6 @@ public class A047812 extends MemoryFunctionSequence<Integer, Polynomial<Z>> {
       ++mN;
       mM = 0;
     }
-    return get(mN).coeff(mM * (mN + 1));
+    return get(mN).coeff((long) mM * (mN + 1));
   }
 }

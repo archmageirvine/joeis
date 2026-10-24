@@ -19,6 +19,6 @@ public class A163491 extends MemorySequence {
   @Override
   public Z computeNext() {
     final int n = size();
-    return n % 3 == 1 ? Z.valueOf((n + 2) / 3) : a((n * 2) / 3);
+    return n % 3 == 1 ? Z.valueOf((n + 2) / 3) : a((n * 2L) / 3);
   }
 }

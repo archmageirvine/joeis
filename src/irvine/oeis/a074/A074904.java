@@ -20,7 +20,7 @@ public class A074904 extends DecimalExpansionSequence {
         Z sum = Z.ZERO;
         int k = 1;
         while (true) {
-          final Z v = Zeta.zeta(2 * ++k).subtract(1).subtract(CR.valueOf(Z.ONE.shiftLeft(2L * k)).inverse()).multiply(k - 1).divide(k + 1).multiply(Binomial.binomial(2L * k, k)).getApprox(precision);
+          final Z v = Zeta.zeta(2L * ++k).subtract(1).subtract(CR.valueOf(Z.ONE.shiftLeft(2L * k)).inverse()).multiply(k - 1).divide(k + 1).multiply(Binomial.binomial(2L * k, k)).getApprox(precision);
           if (v.isZero()) {
             return sum;
           }

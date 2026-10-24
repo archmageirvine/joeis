@@ -16,6 +16,6 @@ public class A330381 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A330381() {
-    super(0, 0, 0, (n, k) -> (k == 0) ? Z.ONE : A027907.a(n, 2 * k - 1).add(A027907.a(n, 2 * k)));
+    super(0, 0, 0, (n, k) -> (k == 0) ? Z.ONE : A027907.a(n, 2L * k - 1).add(A027907.a(n, 2L * k)));
   }
 }

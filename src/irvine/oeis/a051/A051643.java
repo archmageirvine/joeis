@@ -19,6 +19,6 @@ public class A051643 extends A047812 {
   @Override
   public Z next() {
     mN += 2;
-    return get(mN).coeff(mN * mN / 2);
+    return get(mN).coeff((long) mN * mN / 2);
   }
 }

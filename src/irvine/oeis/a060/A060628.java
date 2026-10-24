@@ -69,6 +69,6 @@ public class A060628 extends Sequence0 {
       mK = 0;
       mRow = row(mN);
     }
-    return mRow.coeff(2 * mK).toZ().abs();
+    return mRow.coeff(2L * mK).toZ().abs();
   }
 }

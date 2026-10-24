@@ -18,7 +18,7 @@ public class A076266 extends Sequence1 {
   public Z next() {
     ++mN;
     int k = 0;
-    while (mRecaman.a(mN + 2 * ++k).equals(mRecaman.a(mN).subtract(k))) {
+    while (mRecaman.a(mN + 2L * ++k).equals(mRecaman.a(mN).subtract(k))) {
       // do nothing
     }
     return Z.valueOf(k - 1);

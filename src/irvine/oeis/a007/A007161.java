@@ -22,7 +22,7 @@ public class A007161 extends A007165 {
   private int mN = 0;
 
   protected Z select(final Polynomial<Z> c, final Polynomial<Z> d, final int n) {
-    return c.coeff(2 * n - 1);
+    return c.coeff(2L * n - 1);
   }
 
   @Override

@@ -13,7 +13,7 @@ public class A062752 extends A062751 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, 3 * ++mN, k -> mB.get(mN, k).abs());
+    return Integers.SINGLETON.sum(0, 3L * ++mN, k -> mB.get(mN, k).abs());
   }
 }
 

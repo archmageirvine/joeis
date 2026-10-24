@@ -17,6 +17,6 @@ public class A063772 extends MemorySequence {
       return Z.ZERO;
     }
     final int k = Functions.SQRT.i(n);
-    return a(n - k * k).add(k);
+    return a(n - (long) k * k).add(k);
   }
 }

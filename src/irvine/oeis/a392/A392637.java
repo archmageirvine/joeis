@@ -22,7 +22,7 @@ public class A392637 extends GfSequence {
       public Q coeff(final long n) {
         if (n > mK) {
           ++mK;
-          mS = SQ.multiply(mS, SQ.divide(SQ.oneMinusXToTheN(6 * mK - 4), SQ.pow(SQ.oneMinusXToTheN(mK), (mK + 5) / 6)));
+          mS = SQ.multiply(mS, SQ.divide(SQ.oneMinusXToTheN(6L * mK - 4), SQ.pow(SQ.oneMinusXToTheN(mK), (mK + 5) / 6)));
         }
         return mS.coeff(n);
       }

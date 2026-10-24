@@ -16,6 +16,6 @@ public class A048234 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return mB.a(2 * mN - 1).subtract(mB.a(mN - 1));
+    return mB.a(2L * mN - 1).subtract(mB.a(mN - 1));
   }
 }

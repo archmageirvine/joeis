@@ -16,7 +16,7 @@ public class A291457 extends FilterNumberSequence {
   public A291457() {
     super(1, 1, k -> {
       final Z sk = Functions.SIGMA1.z(k);
-      return !Integers.SINGLETON.countdiv(k, d -> d < k && sk.subtract(3 * d).equals(Z.valueOf(3 * k))).isZero();
+      return !Integers.SINGLETON.countdiv(k, d -> d < k && sk.subtract(3L * d).equals(Z.valueOf(3 * k))).isZero();
     });
   }
 }

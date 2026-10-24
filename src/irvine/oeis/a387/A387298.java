@@ -13,6 +13,6 @@ public class A387298 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A387298() {
-    super(1, (p, e) -> Z.valueOf((e * e) % 3).multiply(Z.NEG_ONE.pow((e - 1) / 3)));
+    super(1, (p, e) -> Z.valueOf(((long) e * e) % 3).multiply(Z.NEG_ONE.pow((e - 1) / 3)));
   }
 }

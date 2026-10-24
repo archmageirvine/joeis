@@ -74,7 +74,7 @@ public class A392387 extends Sequence2 {
     if (Predicates.PRIME.is(++mN)) {
       return Z.TWO;
     }
-    mCyclotomicPoly = CyclotomicPolynomials.cyclotomic(2 * mN);
+    mCyclotomicPoly = CyclotomicPolynomials.cyclotomic(2L * mN);
     long count = 0;
     for (long k = 0; k < 1L << mN; ++k) {
       if (is2(k)) {

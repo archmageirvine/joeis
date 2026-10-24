@@ -26,7 +26,7 @@ public class A054446 extends Sequence0 {
       mM = 0;
       mT = mPell.next();
     } else {
-      mT = mT.subtract(mA.a(mN * (mN + 1) / 2 + mM - 1));
+      mT = mT.subtract(mA.a((long) mN * (mN + 1) / 2 + mM - 1));
     }
     return mT;
   }

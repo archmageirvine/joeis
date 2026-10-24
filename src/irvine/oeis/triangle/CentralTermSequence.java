@@ -54,7 +54,7 @@ public class CentralTermSequence extends AbstractSequence {
       }
     } else {
       ++mRow;
-      return mTriangle.a(2 * mRow, mRow);
+      return mTriangle.a(2L * mRow, mRow);
     }
   }
 }

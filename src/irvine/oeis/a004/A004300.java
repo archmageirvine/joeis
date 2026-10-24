@@ -28,7 +28,7 @@ public class A004300 extends MemorySequence {
     }
     final Sequence s = new A000699().skip(1);
     for (int k = 1; k <= n / 2; ++k) {
-      t = t.add(a(n - 2 * k).multiply(s.next()).multiply(2L * n - 4L * k - 1));
+      t = t.add(a(n - 2L * k).multiply(s.next()).multiply(2L * n - 4L * k - 1));
     }
     return t;
   }

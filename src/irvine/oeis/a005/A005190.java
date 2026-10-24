@@ -32,7 +32,7 @@ public class A005190 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return RING.pow(POLY, mN, 3 * mN / 2).coeff(3 * mN / 2);
+    return RING.pow(POLY, mN, 3 * mN / 2).coeff(3L * mN / 2);
   }
 }
 

@@ -13,6 +13,6 @@ public class A131980 extends LambdaTable {
 
   /** Construct the sequence. */
   public A131980() {
-    super(0, 0, n -> new Integer[] {0, n / 2}, (n, k) -> Binomial.binomial(n + 1, 2 * k + 1).multiply(Functions.FACTORIAL.z(n)));
+    super(0, 0, n -> new Integer[] {0, n / 2}, (n, k) -> Binomial.binomial(n + 1, 2L * k + 1).multiply(Functions.FACTORIAL.z(n)));
   }
 }

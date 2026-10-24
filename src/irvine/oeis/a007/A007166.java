@@ -32,7 +32,7 @@ public class A007166 extends AbstractSequence {
   private int mN = 0;
 
   protected Z select(final Polynomial<Z> s, final Polynomial<Z> b, final int n) {
-    return b.coeff(2 * n - 1);
+    return b.coeff(2L * n - 1);
   }
 
   @Override

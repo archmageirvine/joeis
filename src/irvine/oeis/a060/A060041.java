@@ -85,7 +85,7 @@ public class A060041 extends AbstractSequence {
     final Polynomial<Q> a1 = Polynomial.create(c1);
     final Q[] c2 = new Q[mN + 1];
     for (int k = 0; k < c2.length; ++k) {
-      final Q t0 = Rationals.SINGLETON.sum(k + 1, 5 * k, j -> new Q(1, j));
+      final Q t0 = Rationals.SINGLETON.sum(k + 1, 5L * k, j -> new Q(1, j));
       final Q t = t0.multiply(new Q(Functions.FACTORIAL.z(5 * k), Functions.FACTORIAL.z(k).pow(5)));
       c2[k] = (k & 1) == 0 ? t : t.negate();
     }

@@ -28,6 +28,6 @@ public class A072350 extends Sequence1 {
       final Polynomial<Q> b = RING.reversion(a, 2 * mN);
       a = RING.multiply(RING.add(a, RING.substitute(b, f, 2 * mN)), Q.HALF);
     }
-    return a.coeff(2 * mN - 1).multiply(Functions.FACTORIAL.z(2 * mN - 1)).toZ();
+    return a.coeff(2L * mN - 1).multiply(Functions.FACTORIAL.z(2 * mN - 1)).toZ();
   }
 }

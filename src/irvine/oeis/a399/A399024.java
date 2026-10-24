@@ -22,9 +22,9 @@ public class A399024 extends DecimalExpansionSequence {
           CR prod = CR.ONE;
           while (true) {
             if (++k > 0) {
-              prod = prod.multiply(CR.ONE.subtract(x.pow(2 * k - 1))).multiply(CR.ONE.subtract(x.pow(2 * k)));
+              prod = prod.multiply(CR.ONE.subtract(x.pow(2L * k - 1))).multiply(CR.ONE.subtract(x.pow(2L * k)));
             }
-            final CR z = x.subtract(1).pow(k).multiply(x.pow(k * k));
+            final CR z = x.subtract(1).pow(k).multiply(x.pow((long) k * k));
             final Z t = z.divide(prod).getApprox(precision - k);
             if (t.isZero()) {
               return sum;

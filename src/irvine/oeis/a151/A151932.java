@@ -15,6 +15,6 @@ public class A151932 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A151932() {
-    super(1, n -> Z.TWO.pow(2 * n).multiply(Functions.FACTORIAL.z(n).square()).multiply(FactorUtils.iterate(2 * n, Z.ONE, (x, p, e) -> x.multiply(Binomial.binomial(2 * e, e)))));
+    super(1, n -> Z.TWO.pow(2 * n).multiply(Functions.FACTORIAL.z(n).square()).multiply(FactorUtils.iterate(2 * n, Z.ONE, (x, p, e) -> x.multiply(Binomial.binomial(2L * e, e)))));
   }
 }

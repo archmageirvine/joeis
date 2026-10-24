@@ -45,7 +45,7 @@ public class A114533 extends AbstractSequence {
     final int no = mN - 1;
     mMat.setRows(mN);
     mMat.setCols(mN);
-    final long limit = no * no; // size of mMat 
+    final long limit = (long) no * no; // size of mMat
     long ro = 0;
     long co = 0;
     long count = 0;

@@ -31,6 +31,6 @@ public class A060627 extends Sequence1 {
       }
       mGf = ring.series(ring.one(), t, mN);
     }
-    return mGf.coeff(mN).coeff(2 * mM);
+    return mGf.coeff(mN).coeff(2L * mM);
   }
 }

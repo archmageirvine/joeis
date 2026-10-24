@@ -31,7 +31,7 @@ public class A047774 extends Sequence1 {
         case 1:
           return mT.a((mN - 1) / 3).subtract(mD.a(mN - 1)).divide2();
         case 2:
-          return mU.a((2 * mN - 1) / 3)
+          return mU.a((2L * mN - 1) / 3)
             .subtract(mD.a(mN - 1).multiply2())
             .subtract(mJ.a(mN - 1).multiply(4))
             .subtract(mK.a(mN - 1).multiply2())

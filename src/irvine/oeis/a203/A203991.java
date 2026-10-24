@@ -42,7 +42,7 @@ public class A203991 extends AbstractSequence {
       mULT = new UpperLeftTriangle(1, 1, -1) {
           @Override
           public Z matrixElement(final int i, final int j) {
-            return mSeq.a((i - mRow0) * (i - mRow0 + 1) / 2 + j - mCol0);
+            return mSeq.a((long) (i - mRow0) * (i - mRow0 + 1) / 2 + j - mCol0);
           }
         };
     }

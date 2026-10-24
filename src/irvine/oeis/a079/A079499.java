@@ -26,8 +26,8 @@ public class A079499 extends Sequence0 {
     @Override
     public Z coeff(final long n) {
       while (n * n > mK) {
-        mProd = SZ.multiply(mProd, SZ.oneMinusXToTheN(2 * ++mK));
-        mSums.add(SZ.divide(SZ.monomial(Z.valueOf(mK), mK * mK), mProd));
+        mProd = SZ.multiply(mProd, SZ.oneMinusXToTheN(2L * ++mK));
+        mSums.add(SZ.divide(SZ.monomial(Z.valueOf(mK), (long) mK * mK), mProd));
       }
       return Integers.SINGLETON.sum(0, mSums.size() - 1, k -> mSums.get(k.intValue()).coeff(n));
     }

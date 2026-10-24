@@ -21,7 +21,7 @@ public class A076813 extends DecimalExpansionSequence {
         int k = 0;
         while (true) {
           ++k;
-          final Z t = Zeta.zeta(2 * k).divide(Functions.FACTORIAL.z(k)).getApprox(precision);
+          final Z t = Zeta.zeta(2L * k).divide(Functions.FACTORIAL.z(k)).getApprox(precision);
           if (t.isZero()) {
             return sum;
           }

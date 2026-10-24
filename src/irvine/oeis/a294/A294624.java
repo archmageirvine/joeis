@@ -14,9 +14,9 @@ public class A294624 extends ConvolutionProduct {
   /** Construct the sequence. */
   public A294624() {
     super(0, "1,1", new RationalProductTransform(0, new RationalProductTransform.Builder().
-      f(-1).g(-1).h(k -> Z.valueOf(3 * k - 2).multiply(k))
+      f(-1).g(-1).h(k -> Z.valueOf(3L * k - 2).multiply(k))
     ), new RationalProductTransform(0, new RationalProductTransform.Builder().
-      f(-1).g(-1).h(k -> Z.valueOf(3 * k + 2).multiply(k))
+      f(-1).g(-1).h(k -> Z.valueOf(3L * k + 2).multiply(k))
     ));
   }
 }

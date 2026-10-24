@@ -15,7 +15,7 @@ public class A083121 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(++mN, 2 * mN - 1, mS::a).sqrt();
+    return Integers.SINGLETON.sum(++mN, 2L * mN - 1, mS::a).sqrt();
   }
 }
 

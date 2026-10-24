@@ -19,7 +19,7 @@ public class A387985 extends DecimalExpansionSequence {
         Z sum = Z.ZERO;
         int k = 0;
         while (true) {
-          final Z t = Zeta.zeta(2 * ++k).square().multiply(k).getApprox(precision + k); // +k here does /2^k
+          final Z t = Zeta.zeta(2L * ++k).square().multiply(k).getApprox(precision + k); // +k here does /2^k
           if (t.isZero()) {
             return sum;
           }

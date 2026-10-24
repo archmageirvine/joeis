@@ -35,8 +35,8 @@ public class A068182 extends Sequence0 {
         a.multiply(Functions.FACTORIAL.z(2 * k - 2 * g)),
         Functions.FACTORIAL.z(g)
           .multiply(Functions.FACTORIAL.z(k - g))
-          .multiply(Functions.FACTORIAL.z(4 * k + 3 - 2 * mN - 4 * g))
-      ).multiply(pow3(g.intValue() - 2)).divide(Functions.FACTORIAL.z(2 * mN - 1 - 3 * k)));
+          .multiply(Functions.FACTORIAL.z(4 * k + 3 - 2L * mN - 4 * g))
+      ).multiply(pow3(g.intValue() - 2)).divide(Functions.FACTORIAL.z(2L * mN - 1 - 3 * k)));
   }
 
   private Q pow34(final int g) {
@@ -46,10 +46,10 @@ public class A068182 extends Sequence0 {
   private Q sum1(final int n) {
     return Rationals.SINGLETON.sum(0, n / 2,
       g -> new Q(
-        Functions.FACTORIAL.z(4 * n - 2 - 2 * g),
+        Functions.FACTORIAL.z(4L * n - 2 - 2 * g),
         Functions.FACTORIAL.z(g)
-          .multiply(Functions.FACTORIAL.z(2 * n - 1 - g))
-          .multiply(Functions.FACTORIAL.z(2 * n - 4 * g + 1))
+          .multiply(Functions.FACTORIAL.z(2L * n - 1 - g))
+          .multiply(Functions.FACTORIAL.z(2L * n - 4 * g + 1))
           .multiply(Z.THREE.pow(g))
           .multiply2()));
   }
@@ -67,7 +67,7 @@ public class A068182 extends Sequence0 {
     return new Q(tauPlus3(++mN), Z.valueOf(6L * mN - 3).multiply2())
       .add(sum1(mN))
       .add(sum2(mN))
-      .add(Rationals.SINGLETON.sum(mN / 2, (2 * mN - 2) / 3, this::innerSum))
+      .add(Rationals.SINGLETON.sum(mN / 2, (2L * mN - 2) / 3, this::innerSum))
       .toZ();
   }
 }

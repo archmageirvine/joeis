@@ -26,7 +26,7 @@ public class A002210 extends DecimalExpansionSequence {
       while (true) {
         ++k;
         altHarmonic = altHarmonic.add(new Q(Z.ONE, Z.TWO.multiply(1 - k).multiply(2L * k - 1)));
-        final Z t = Zeta.zeta(2 * k).subtract(CR.ONE).multiply(altHarmonic.divide(k)).getApprox(precision);
+        final Z t = Zeta.zeta(2L * k).subtract(CR.ONE).multiply(altHarmonic.divide(k)).getApprox(precision);
         if (t.isZero()) {
           break;
         }

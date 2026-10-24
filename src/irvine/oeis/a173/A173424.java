@@ -12,6 +12,6 @@ public class A173424 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A173424() {
-    super(0, 0, 0, (n, k) -> Functions.MULTIFACTORIAL.z(2, 2 * n - 2 * k - 1).multiply(Functions.MULTIFACTORIAL.z(2, 2 * k - 1)));
+    super(0, 0, 0, (n, k) -> Functions.MULTIFACTORIAL.z(2, 2L * n - 2L * k - 1).multiply(Functions.MULTIFACTORIAL.z(2, 2L * k - 1)));
   }
 }

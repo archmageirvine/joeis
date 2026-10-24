@@ -14,6 +14,6 @@ public class A237292 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A237292() {
-    super(0, (term, n) -> Z.valueOf(2 * n + 1).divide(Functions.GCD.z(term, 2 * n + 1)), "", new A165781());
+    super(0, (term, n) -> Z.valueOf(2L * n + 1).divide(Functions.GCD.z(term, 2L * n + 1)), "", new A165781());
   }
 }

@@ -23,14 +23,14 @@ public class A393509 extends GfSequence {
 
       @Override
       public Q coeff(final long n) {
-        while (n > 7 * mK) {
+        while (n > 7L * mK) {
           ++mK;
-          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(2 * mK));
-          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(3 * 2 * mK - 4));
-          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(3 * 2 * mK - 2));
-          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(3 * 2 * mK));
+          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(2L * mK));
+          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(3L * 2 * mK - 4));
+          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(3L * 2 * mK - 2));
+          mProd1 = SQ.multiply(mProd1, SQ.oneMinusXToTheN(3L * 2 * mK));
           final Series<Q> s = SQ.divide(SQ.one(), mProd1);
-          mSum = SQ.add(mSum, SQ.shift(s, 7 * mK));
+          mSum = SQ.add(mSum, SQ.shift(s, 7L * mK));
         }
         return mSum.coeff(n);
       }

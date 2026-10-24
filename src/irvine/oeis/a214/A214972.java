@@ -23,7 +23,7 @@ public class A214972 extends MemorySequence {
     if (mN == 0) {
       return Z.ZERO;
     } else {
-      return a(2 * (mN - 1) / 3).add(1);
+      return a(2L * (mN - 1) / 3).add(1);
     }
   }
 }

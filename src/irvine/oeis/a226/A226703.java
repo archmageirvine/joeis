@@ -13,6 +13,6 @@ public class A226703 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A226703() {
-    super(0, 0, 0, (n, k) -> Binomial.binomial(2 * n, k).multiply(Functions.STIRLING2.z(2 * n - k, n)));
+    super(0, 0, 0, (n, k) -> Binomial.binomial(2L * n, k).multiply(Functions.STIRLING2.z(2L * n - k, n)));
   }
 }

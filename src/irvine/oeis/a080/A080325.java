@@ -18,7 +18,7 @@ public class A080325 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN < 1 ? Z.ZERO : mS.coeff(2 * mN - 2).multiply(Functions.FACTORIAL.z(mN + 1)).multiply(Functions.FACTORIAL.z(2 * mN + 1)).divide(4).toZ();
+    return ++mN < 1 ? Z.ZERO : mS.coeff(2L * mN - 2).multiply(Functions.FACTORIAL.z(mN + 1)).multiply(Functions.FACTORIAL.z(2 * mN + 1)).divide(4).toZ();
   }
 }
 

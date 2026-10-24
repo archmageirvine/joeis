@@ -21,6 +21,6 @@ public class A359979 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return mA.a(mN - 3 * mM);
+    return mA.a(mN - 3L * mM);
   }
 }

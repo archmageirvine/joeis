@@ -14,6 +14,6 @@ public class A338435 extends LambdaArray {
 
   /** Construct the sequence. */
   public A338435() {
-    super(0, 0, 0, -1, (n, k) -> LaguerrePolynomials.p(0, n, new Q(-k * n)).multiply(Functions.FACTORIAL.z(n)).num());
+    super(0, 0, 0, -1, (n, k) -> LaguerrePolynomials.p(0, n, new Q((long) -k * n)).multiply(Functions.FACTORIAL.z(n)).num());
   }
 }

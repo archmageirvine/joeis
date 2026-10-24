@@ -17,7 +17,7 @@ public class A078592 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mA.a(2 * mN).add(mA.a(mN)).divide2();
+    return mA.a(2L * mN).add(mA.a(mN)).divide2();
   }
 }
 

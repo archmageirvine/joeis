@@ -22,7 +22,7 @@ public class A028412 extends Sequence0 {
       mM = 0;
     }
     final int t = mN - mM;
-    return mF.a(t * (mM + 1)).divide(mF.a(t));
+    return mF.a((long) t * (mM + 1)).divide(mF.a(t));
   }
 }
 

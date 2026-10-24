@@ -13,6 +13,6 @@ public class A248359 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A248359() {
-    super(1, (n, k) -> CR.PI.divide(k).cos().add(new Q(1, k * n)).compareTo(CR.ONE) > 0, 1);
+    super(1, (n, k) -> CR.PI.divide(k).cos().add(new Q(1, (long) k * n)).compareTo(CR.ONE) > 0, 1);
   }
 }

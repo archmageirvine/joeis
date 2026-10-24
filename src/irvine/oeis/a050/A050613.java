@@ -21,7 +21,7 @@ public class A050613 extends Sequence0 {
     Z prod = Z.ONE;
     for (int k = 0; k <= IntegerUtils.log2(mN + 1); ++k) {
       if ((mN & (1 << k)) != 0) {
-        prod = prod.multiply(mL.a(1 << k));
+        prod = prod.multiply(mL.a(1L << k));
       }
     }
     return prod;

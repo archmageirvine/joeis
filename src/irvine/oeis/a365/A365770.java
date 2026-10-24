@@ -12,6 +12,6 @@ public class A365770 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A365770() {
-    super(0, 0, 0, (n, k) -> Binomial.binomial(n + 1, n - k).multiply(Binomial.binomial(2 * n - k - 1, k)).divide(n + 1));
+    super(0, 0, 0, (n, k) -> Binomial.binomial(n + 1, n - k).multiply(Binomial.binomial(2L * n - k - 1, k)).divide(n + 1));
   }
 }

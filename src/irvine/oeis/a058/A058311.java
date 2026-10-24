@@ -19,7 +19,7 @@ public class A058311 extends MemoryFunctionInt2Sequence<Z> {
     if (n == 1) {
       return Z.valueOf(k + 1).square().subtract(k - 1);
     } else {
-      return Integers.SINGLETON.sum(k, (k + 1) * (k + 1), j -> get(n - 1, j));
+      return Integers.SINGLETON.sum(k, (long) (k + 1) * (k + 1), j -> get(n - 1, j));
     }
   }
 

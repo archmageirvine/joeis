@@ -45,7 +45,7 @@ public class A339129 extends A014076 {
     while (true) {
       final Z m = super.next();
       final int k = m.intValueExact();
-      final Z val = mSeq.a(mMult * k - Functions.KRONECKER.i(k, mJp2));
+      final Z val = mSeq.a((long) mMult * k - Functions.KRONECKER.i(k, mJp2));
       if (val.subtract(mMod).remainder(m).isZero()) {
         return m;
       }

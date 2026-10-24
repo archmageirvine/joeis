@@ -14,6 +14,6 @@ public class A178720 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A178720() {
-    super(1, k -> (k == 1) ? Z.THREE : Z.valueOf(4 * k).add(Integers.SINGLETON.sum(1, k - 2, j -> Integers.SINGLETON.sum(Functions.FIBONACCI.i(k - j - 1) * 2 + 1, Functions.FIBONACCI.i(k - j) * 2, i -> Functions.PHI.z(i).multiply(2 * j + 1)))));
+    super(1, k -> (k == 1) ? Z.THREE : Z.valueOf(4 * k).add(Integers.SINGLETON.sum(1, k - 2, j -> Integers.SINGLETON.sum(Functions.FIBONACCI.i(k - j - 1) * 2L + 1, Functions.FIBONACCI.i(k - j) * 2L, i -> Functions.PHI.z(i).multiply(2 * j + 1)))));
   }
 }

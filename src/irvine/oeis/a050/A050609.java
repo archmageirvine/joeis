@@ -19,7 +19,7 @@ public class A050609 extends Sequence0 {
   protected Z t(final int n, final int m) {
     Z sum = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
-      sum = sum.add(mF.a(2 * k + m).multiply(Binomial.binomial(n, k, 2)));
+      sum = sum.add(mF.a(2L * k + m).multiply(Binomial.binomial(n, k, 2)));
     }
     return sum;
   }

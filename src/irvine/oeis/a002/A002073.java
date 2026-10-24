@@ -28,6 +28,6 @@ public class A002073 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return select(mGf.coeff(2 * mN - 1).multiply(2L * mN - 1));
+    return select(mGf.coeff(2L * mN - 1).multiply(2L * mN - 1));
   }
 }

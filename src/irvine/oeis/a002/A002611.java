@@ -20,7 +20,7 @@ public class A002611 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; 2 * k <= mN; ++k) {
-      sum = sum.add(mE.a(mN - 2 * k).multiply(mTheta.a(k)));
+      sum = sum.add(mE.a(mN - 2L * k).multiply(mTheta.a(k)));
     }
     return sum;
   }

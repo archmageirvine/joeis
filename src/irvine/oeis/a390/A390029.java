@@ -20,7 +20,7 @@ public class A390029 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return Integers.SINGLETON.sum(0, 2 * mM, j -> Z.NEG_ONE.pow(j).multiply(Binomial.binomial(2L * mM, j)).multiply(Z.valueOf(2 + mM - j).pow(2L * mN)));
+    return Integers.SINGLETON.sum(0, 2L * mM, j -> Z.NEG_ONE.pow(j).multiply(Binomial.binomial(2L * mM, j)).multiply(Z.valueOf(2 + mM - j).pow(2L * mN)));
   }
 }
 

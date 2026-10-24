@@ -15,6 +15,6 @@ public class A203751 extends A203748 {
   @Override
   public Z next() {
     ++mN;
-    return mSeq.a(2 * mN).divide(mSeq.a(2 * mN - 1).multiply(3)).sqrt();
+    return mSeq.a(2L * mN).divide(mSeq.a(2L * mN - 1).multiply(3)).sqrt();
   }
 }

@@ -190,6 +190,6 @@ public class A391687 extends Sequence1 {
 
   @Override
   public Z next() {
-    return mS.a(++mM * mM);
+    return mS.a((long) ++mM * mM);
   }
 }

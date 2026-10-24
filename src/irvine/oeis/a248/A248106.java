@@ -13,6 +13,6 @@ public class A248106 extends LeastLambdaSequence {
 
   /** Construct the sequence. */
   public A248106() {
-    super(1, (n, k) -> CR.valueOf(new Q(k + 1, k - 1).pow(k)).subtract(CR.E.square()).compareTo(CR.valueOf(new Q(1, n * n))) < 0, 3);
+    super(1, (n, k) -> CR.valueOf(new Q(k + 1, k - 1).pow(k)).subtract(CR.E.square()).compareTo(CR.valueOf(new Q(1, (long) n * n))) < 0, 3);
   }
 }

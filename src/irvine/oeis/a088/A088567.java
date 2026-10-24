@@ -16,7 +16,7 @@ public class A088567 extends GeneralRecurrence {
   @Override
   protected void initialize() {
     // a(0)=1, a(1)=1; and for m >= 1, a(2m) = a(2m-1) + a(m) - 1, a(2m+1) = a(2m) + 1.
-    mLambda.add(m -> a(2 * m - 1).add(a(m)).subtract(1));
-    mLambda.add(m -> a(2 * m).add(1));
+    mLambda.add(m -> a(2L * m - 1).add(a(m)).subtract(1));
+    mLambda.add(m -> a(2L * m).add(1));
   }
 }

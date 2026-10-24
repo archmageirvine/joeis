@@ -106,7 +106,7 @@ public final class Zeta {
   private static CR zeta4m(final int p) {
     CR sum = CR.ZERO;
     for (int n = 0; n <= 2 * p; ++n) {
-      sum = REALS.signedAdd((n & 1) == 1, sum, zeta(2 * n).multiply(zeta(4 * p - 2 * n)));
+      sum = REALS.signedAdd((n & 1) == 1, sum, zeta(2L * n).multiply(zeta(4L * p - 2L * n)));
     }
     return sum.divide(CR.PI).subtract(new PrescaledZeta4m1(p));
   }
@@ -115,7 +115,7 @@ public final class Zeta {
   private static CR zeta4p(final int p) {
     CR sum = CR.ZERO;
     for (int n = 0; n <= 2 * p + 1; ++n) {
-      sum = REALS.signedAdd((n & 1) == 0, sum, zeta(2 * n).multiply(zeta(4 * p + 2 - 2 * n)).multiply(CR.valueOf(n).subtract(CR.HALF)));
+      sum = REALS.signedAdd((n & 1) == 0, sum, zeta(2L * n).multiply(zeta(4L * p + 2 - 2L * n)).multiply(CR.valueOf(n).subtract(CR.HALF)));
     }
     sum = sum.divide(CR.PI);
 
@@ -199,7 +199,7 @@ public final class Zeta {
           final long n1 = ++k;
           final int m = Functions.MOBIUS.i(n1);
           if (m != 0) {
-            final Z t = zeta(n * k).log().divide(CR.valueOf(k)).getApprox(precision);
+            final Z t = zeta((long) (long) n * k).log().divide(CR.valueOf(k)).getApprox(precision);
             if (t.isZero()) {
               break;
             }

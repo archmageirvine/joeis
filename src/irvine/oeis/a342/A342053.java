@@ -80,7 +80,7 @@ public class A342053 extends AbstractSequence {
   final BiFunction<Integer, Integer, Z> mW = (n, m) -> m == 0
     ? Functions.FACTORIAL.z(4 * n + 1).multiply2().divide(Functions.FACTORIAL.z(3 * n + 2).multiply(Functions.FACTORIAL.z(n + 1)))
     : Functions.FACTORIAL.z(m + 2).multiply(Functions.FACTORIAL.z(m - 1).multiply(3))
-    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> Functions.FACTORIAL.z(4 * n + 3 * m - j + 1).multiply(m + j + 2).multiply(m - 3L * j).divide(Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(j + 1)).multiply(Functions.FACTORIAL.z(m - j)).multiply(Functions.FACTORIAL.z(m - j + 2)).multiply(Functions.FACTORIAL.z(n - j - 1))))).divide(Functions.FACTORIAL.z(3 * n + 3 * m + 3));
+    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> Functions.FACTORIAL.z(4L * n + 3L * m - j + 1).multiply(m + j + 2).multiply(m - 3L * j).divide(Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(j + 1)).multiply(Functions.FACTORIAL.z(m - j)).multiply(Functions.FACTORIAL.z(m - j + 2)).multiply(Functions.FACTORIAL.z(n - j - 1))))).divide(Functions.FACTORIAL.z(3 * n + 3 * m + 3));
 
   // Triangulations with Rotational Symmetry
   final BiFunction<Integer, Integer, Z> mEr = (s, p) -> Functions.FACTORIAL.z(2 * p + 2).multiply(Functions.FACTORIAL.z(4 * s + 2 * p + 1))

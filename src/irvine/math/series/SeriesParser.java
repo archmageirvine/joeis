@@ -81,11 +81,11 @@ public class SeriesParser {
   private int mIndex;
 
   private static boolean isAdditiveOp(final Token tok) {
-    return tok.mType == TokenType.OP && (tok.mValue.equals("+") || tok.mValue.equals("-"));
+    return tok.mType == TokenType.OP && ("+".equals(tok.mValue) || "-".equals(tok.mValue));
   }
 
   private static boolean isMultiply(final Token tok) {
-    return tok.mType == TokenType.OP && tok.mValue.equals("*");
+    return tok.mType == TokenType.OP && "*".equals(tok.mValue);
   }
 
   private static List<Token> rewriteRationals(final List<Token> tokens) {
@@ -97,7 +97,7 @@ public class SeriesParser {
         && tokens.get(k + 4).mType == TokenType.RPAREN
         && tokens.get(k + 1).mType == TokenType.NUMBER
         && tokens.get(k + 3).mType == TokenType.NUMBER
-        && tokens.get(k + 2).mType == TokenType.OP && tokens.get(k + 2).mValue.equals("/")
+        && tokens.get(k + 2).mType == TokenType.OP && "/".equals(tokens.get(k + 2).mValue)
       ) {
         final String v = tokens.get(k + 1).mValue + "/" + tokens.get(k + 3).mValue;
         tokens.set(k, new Token(TokenType.NUMBER, v));
@@ -108,7 +108,7 @@ public class SeriesParser {
     for (int k = 0; k < tokens.size() - 4; ++k) {
       if (tokens.get(k).mType == TokenType.NUMBER
         && tokens.get(k + 2).mType == TokenType.NUMBER
-        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 1).mValue.equals("/")
+        && tokens.get(k + 1).mType == TokenType.OP && "/".equals(tokens.get(k + 1).mValue)
       ) {
         final String v = tokens.get(k).mValue + "/" + tokens.get(k + 2).mValue;
         tokens.set(k, new Token(TokenType.NUMBER, v));
@@ -137,7 +137,7 @@ public class SeriesParser {
         && tokens.get(k + 2).mType == TokenType.VARIABLE
         && tokens.get(k + 4).mType == TokenType.NUMBER
         && isMultiply(tokens.get(k + 1))
-        && tokens.get(k + 3).mType == TokenType.OP && tokens.get(k + 3).mValue.equals("^")
+        && tokens.get(k + 3).mType == TokenType.OP && "^".equals(tokens.get(k + 3).mValue)
       ) {
         final String v = tokens.get(k).mValue + "*x^" + tokens.get(k + 4).mValue;
         tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
@@ -149,7 +149,7 @@ public class SeriesParser {
       if (tokens.get(k).mType == TokenType.NUMBER
         && tokens.get(k + 1).mType == TokenType.VARIABLE
         && tokens.get(k + 3).mType == TokenType.NUMBER
-        && tokens.get(k + 2).mType == TokenType.OP && tokens.get(k + 2).mValue.equals("^")
+        && tokens.get(k + 2).mType == TokenType.OP && "^".equals(tokens.get(k + 2).mValue)
       ) {
         final String v = tokens.get(k).mValue + "*x^" + tokens.get(k + 3).mValue;
         tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
@@ -181,7 +181,7 @@ public class SeriesParser {
     for (int k = 0; k < tokens.size() - 2; ++k) {
       if (tokens.get(k).mType == TokenType.VARIABLE
         && tokens.get(k + 2).mType == TokenType.NUMBER
-        && tokens.get(k + 1).mType == TokenType.OP && tokens.get(k + 2).mValue.equals("^")
+        && tokens.get(k + 1).mType == TokenType.OP && "^".equals(tokens.get(k + 2).mValue)
       ) {
         final String v = "x^" + tokens.get(k + 2).mValue;
         tokens.set(k, new Token(TokenType.POLYNOMIAL, v));
@@ -224,16 +224,16 @@ public class SeriesParser {
     //  x * coth -> xcoth
     for (int k = 0; k < tokens.size(); ++k) {
       if (tokens.get(k).mType == TokenType.VARIABLE && isMultiply(tokens.get(k + 1)) && tokens.get(k + 2).mType == TokenType.OP) {
-        if (tokens.get(k + 2).mValue.equals("cot")) {
+        if ("cot".equals(tokens.get(k + 2).mValue)) {
           tokens.set(k, new Token(TokenType.OP, "xcot"));
           tokens.subList(k + 1, k + 3).clear();
-        } else if (tokens.get(k + 2).mValue.equals("csc")) {
+        } else if ("csc".equals(tokens.get(k + 2).mValue)) {
           tokens.set(k, new Token(TokenType.OP, "xcsc"));
           tokens.subList(k + 1, k + 3).clear();
-        } else if (tokens.get(k + 2).mValue.equals("csch")) {
+        } else if ("csch".equals(tokens.get(k + 2).mValue)) {
           tokens.set(k, new Token(TokenType.OP, "xcsch"));
           tokens.subList(k + 1, k + 3).clear();
-        } else if (tokens.get(k + 2).mValue.equals("coth")) {
+        } else if ("coth".equals(tokens.get(k + 2).mValue)) {
           tokens.set(k, new Token(TokenType.OP, "xcoth"));
           tokens.subList(k + 1, k + 3).clear();
         }
@@ -273,7 +273,7 @@ public class SeriesParser {
     while (match(TokenType.OP, "+") || match(TokenType.OP, "-")) {
       final String op = consume().mValue;
       final Series<Q> right = parseTerm();
-      if (op.equals("+")) {
+      if ("+".equals(op)) {
         result = SQ.add(result, right);
       } else {
         result = SQ.subtract(result, right);
@@ -290,7 +290,7 @@ public class SeriesParser {
     while (match(TokenType.OP, "*") || match(TokenType.OP, "/")) {
       final String op = consume().mValue;
       final Series<Q> right = parseFactor();
-      if (op.equals("*")) {
+      if ("*".equals(op)) {
         if (result.bound() == 0) {
           // Scalar multiply
           result = SQ.multiply(right, result.coeff(0));
@@ -397,7 +397,7 @@ public class SeriesParser {
       consume(); // consume )
       return expr;
     }
-    if (t.mType == TokenType.OP && t.mValue.equals("-")) {
+    if (t.mType == TokenType.OP && "-".equals(t.mValue)) {
       consume(); // consume -
       return SQ.negate(parseExpression()); // Unary minus
     }

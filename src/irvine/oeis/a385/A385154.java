@@ -37,9 +37,13 @@ public class A385154 extends A386296 {
 
   @Override
   public Z next() {
-    mMinDefect = Integer.MAX_VALUE;
+    synchronized (A385154.this) {
+      mMinDefect = Integer.MAX_VALUE;
+    }
     t(++mN, 5);
-    return Z.valueOf(mMinDefect);
+    synchronized (A385154.this) {
+      return Z.valueOf(mMinDefect);
+    }
   }
 }
 

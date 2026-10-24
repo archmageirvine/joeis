@@ -36,9 +36,13 @@ public class A393319 extends A386296 {
 
   @Override
   public Z next() {
-    mMaxSurface = 0;
+    synchronized (A393319.this) {
+      mMaxSurface = 0;
+    }
     super.next();
-    return Z.valueOf(mMaxSurface);
+    synchronized (A393319.this) {
+      return Z.valueOf(mMaxSurface);
+    }
   }
 }
 

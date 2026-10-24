@@ -38,13 +38,17 @@ public class A393267 extends A386296 {
 
   @Override
   public Z next() {
-    mMinSurface = Integer.MAX_VALUE;
+    synchronized (A393267.this) {
+      mMinSurface = Integer.MAX_VALUE;
+    }
     if (++mM >= mN) {
       ++mN;
       mM = 0;
     }
     t(mM + 3, mN - mM);
-    return Z.valueOf(mMinSurface == Integer.MAX_VALUE ? 0 : mMinSurface);
+    synchronized (A393267.this) {
+      return Z.valueOf(mMinSurface == Integer.MAX_VALUE ? 0 : mMinSurface);
+    }
   }
 }
 

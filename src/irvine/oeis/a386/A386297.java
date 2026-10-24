@@ -41,9 +41,13 @@ public class A386297 extends A386296 {
       ++mN;
       mM = 1;
     }
-    mMinDefect = Integer.MAX_VALUE;
+    synchronized (A386297.this) {
+      mMinDefect = Integer.MAX_VALUE;
+    }
     t(mM + 2, mN - mM);
-    return mMinDefect == Integer.MAX_VALUE ? Z.ZERO : Z.valueOf(mMinDefect);
+    synchronized (A386297.this) {
+      return mMinDefect == Integer.MAX_VALUE ? Z.ZERO : Z.valueOf(mMinDefect);
+    }
   }
 }
 

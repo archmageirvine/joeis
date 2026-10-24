@@ -37,7 +37,7 @@ public class A054055 extends AbstractSequence implements DirectSequence {
   public Z a(final Z n) {
     Z m = n;
     long max = 0;
-    while (!m.isZero() && max != mBase - 1) {
+    while (max != mBase - 1 && !m.isZero()) {
       final long r = m.mod(mBase);
       m = m.divide(mBase);
       if (r > max) {

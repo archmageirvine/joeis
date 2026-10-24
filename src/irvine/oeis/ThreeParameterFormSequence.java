@@ -54,7 +54,7 @@ public class ThreeParameterFormSequence extends AbstractSequence {
         return false;
       }
       final State other = (State) obj;
-      return mN.equals(other.mN) && mR == other.mR && mS == other.mS;
+      return mR == other.mR && mS == other.mS && mN.equals(other.mN);
     }
 
     @Override

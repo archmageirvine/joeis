@@ -24,7 +24,7 @@ class Syndrome extends AbstractFunction2D {
     int syndrome = 0;
     final Z zBase = Z.valueOf(base);
     final int allSeen = (1 << base) - 1;
-    while (!n.isZero() && syndrome != allSeen) {
+    while (syndrome != allSeen && !n.isZero()) {
       final Z[] qr = n.divideAndRemainder(zBase);
       n = qr[0];
       syndrome |= 1 << qr[1].intValue();

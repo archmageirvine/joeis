@@ -11,8 +11,7 @@ import irvine.oeis.a007.A007770;
  */
 public class A071827 extends AbstractSequence {
 
-  protected int mN;
-  protected Sequence mSeq;
+  protected final Sequence mSeq;
   private final int mBase;
   private final StringBuilder mS = new StringBuilder();
 
@@ -29,7 +28,6 @@ public class A071827 extends AbstractSequence {
    */
   public A071827(final int offset, final Sequence seq, final int base) {
     super(offset);
-    mN = offset - 1;
     mSeq = seq;
     mBase = base;
   }

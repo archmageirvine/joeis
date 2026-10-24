@@ -11,8 +11,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A048710 extends UpperLeftTriangle {
 
-  protected int mN;
-  protected MemorySequence mSeq;
+  private final MemorySequence mSeq;
   
   /** Construct the sequence. */
   public A048710() {
@@ -24,7 +23,6 @@ public class A048710 extends UpperLeftTriangle {
         return mCa.nextStageD();
       }
     };
-    mN = -1;
   }
 
   @Override

@@ -12,8 +12,8 @@ import irvine.math.z.Z;
 public class UpperLeftTriangle extends Triangle {
 
   private static final int DEFOFF = 0;
-  protected int mRow; // current row index n
-  protected int mCol; // current column index k
+  //protected int mRow; // current row index n
+  //protected int mCol; // current column index k
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
   protected int mDir; // direction: +1 = ascending, -1 = descending

@@ -51,7 +51,7 @@ public class A070080 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A070080() {
-    this(1, SIDE_A, s -> isTriangle(s));
+    this(1, SIDE_A, A070080::isTriangle);
   }
 
   /**
@@ -61,7 +61,7 @@ public class A070080 extends AbstractSequence {
    * @param mode of operation, type of the target terms
    */
   public A070080(final int offset, final int mode) {
-    this(offset, mode, s -> isTriangle(s));
+    this(offset, mode, A070080::isTriangle);
   }
 
   /**

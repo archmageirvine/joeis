@@ -28,20 +28,16 @@ public class A290746 extends Sequence1 {
     mS = s;
   }
 
-  /* (PARI) Inner(m, s)=d=divisors(m); sum(i=1, length(d), moebius(m/d[i])*s^d[i]);
-     Lyndon(s, n) = sum(m=1, n, (n-m+1)/m * s^(n-m) * Inner(m, s));
-     vector(100, i, Lyndon(2, i))
-  */
-  private Z inner(final int m, final int s) {
+  private Z inner(final int m) {
     return Integers.SINGLETON.sumdiv(m, d -> Z.valueOf(mS).pow(d).multiply(Functions.MOBIUS.i(m / d)));
   }
 
-  protected Z lyndon(final int s, final int n) {
-    return Integers.SINGLETON.sum(1, n, m -> Z.valueOf(mS).pow(n - m).multiply(n - m + 1).multiply(inner(m.intValue(), mS)).divide(m));
+  protected Z lyndon(final int n) {
+    return Integers.SINGLETON.sum(1, n, m -> Z.valueOf(mS).pow(n - m).multiply(n - m + 1).multiply(inner(m.intValue())).divide(m));
   }
 
   @Override
   public Z next() {
-    return lyndon(mS, ++mN);
+    return lyndon(++mN);
   }
 }

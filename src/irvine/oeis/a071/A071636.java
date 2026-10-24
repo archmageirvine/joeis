@@ -18,8 +18,8 @@ public class A071636 extends Sequence1 {
   private boolean is(final long n) {
     final Sequence s = new A002144();
     long p;
-    while ((p = s.next().longValueExact()) * 2 <= mN) {
-      if (mPrime.isPrime(mN - p)) {
+    while ((p = s.next().longValueExact()) * 2 <= n) {
+      if (mPrime.isPrime(n - p)) {
         return false;
       }
     }

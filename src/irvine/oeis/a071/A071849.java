@@ -11,6 +11,6 @@ public class A071849 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A071849() {
-    super(1, 1, new A000040(), (n, p) -> n * Integer.bitCount(n) > p.longValueExact());
+    super(1, 1, new A000040(), (n, p) -> (long) n * Integer.bitCount(n) > p.longValueExact());
   }
 }

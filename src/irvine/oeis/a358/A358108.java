@@ -12,6 +12,6 @@ public class A358108 extends HypergeometricSequence {
 
   /** Construct the sequence. */
   public A358108() {
-    super(0, 3, 2, "[[1/2],[1/2],[0,-1],[1],[1],[-1]]", "", (n, v) -> v.multiply(Z.TWO.pow(n * 4)).num());
+    super(0, 3, 2, "[[1/2],[1/2],[0,-1],[1],[1],[-1]]", "", (n, v) -> v.multiply(Z.TWO.pow(n * 4L)).num());
   }
 }

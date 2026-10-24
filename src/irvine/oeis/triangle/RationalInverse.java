@@ -81,8 +81,7 @@ public class RationalInverse extends RationalTriangle {
     }
     System.out.println("---- result=" + result + ", S(" + n + ", " + k + ")=" + mS.get(n, k));
   */
-    final Q fraction = (n == k ? Q.ONE : Q.ZERO).subtract(result).divide(mS.get(n, n));
-    return fraction;
+    return (n == k ? Q.ONE : Q.ZERO).subtract(result).divide(mS.get(n, n));
   }
 
   /**

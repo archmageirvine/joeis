@@ -40,8 +40,7 @@ class DefiniteIntegral extends CR {
       for (int k = 1; k < mIntervals / 2; ++k) {
         sum = sum.add(mF.execute(mLo.add(s.multiply(2L * k))).multiply(CR.TWO).getApprox(precision));
       }
-      sum = sum.add(mFEdge.getApprox(precision));
-      return sum;
+      return sum.add(mFEdge.getApprox(precision));
     }
   }
 

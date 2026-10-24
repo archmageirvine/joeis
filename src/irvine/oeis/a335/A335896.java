@@ -12,7 +12,6 @@ public class A335896 extends A335893 {
   public Z next() {
     super.next();
     super.next();
-    final Z result = super.next();
-    return result;
+    return super.next();
   }
 }

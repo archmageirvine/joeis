@@ -24,8 +24,7 @@ public class A097749 extends A097474 {
       for (int j = k + 1; j <= n; ++j) {
         s = s.subtract(get(n, j).multiply(t(j, k)).multiply(Q.TWO.pow(h - (j + 3) / 2)));
       }
-      s = s.divide(t(k, k));
-      return s;
+      return s.divide(t(k, k));
     }
   };
 

@@ -54,9 +54,7 @@ public class A384864 extends MemoryFunctionInt2Sequence<Q> implements DirectArra
       //* System.err.println("    n=" + n + "\tk=" + k + "\tj=" + j + "\tp1=" + (mA*n + mB*j + k - 1) + "\tbinomial(p1, j-1)=" + (sbin) + "\tsget=" + sget);
       sum = sum.add(sget.multiply(sbin).divide(j));
     }
-    final Q result = sum.multiply((n & 1) == 0 ? k : -k);
-    //* System.err.println("    n=" + n + "\tk=" + k + "\tcompute(" + n + ", " + k + ") = " + result);
-    return result;
+    return sum.multiply((n & 1) == 0 ? k : -k);
   }
 
   protected Q t(final int n, final int m) {

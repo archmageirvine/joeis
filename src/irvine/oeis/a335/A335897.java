@@ -10,7 +10,6 @@ public class A335897 extends A335893 {
 
   @Override
   public Z next() {
-    final Z result = super.next().add(super.next()).add(super.next());
-    return result;
+    return super.next().add(super.next()).add(super.next());
   }
 }

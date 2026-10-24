@@ -246,9 +246,7 @@ public class SeriesParser {
     // Before attempting general parsing, we make an effort to identify polynomials
     // in typical forms. This identification reduces the burden on the Series
     // handling mechanism later on saving both memory and time.
-    final List<Token> tokens = rewritePolynomials(rewriteMonomials(rewriteSpecials(rewriteRationals(new Tokenizer(expr).tokenize()))));
-    //System.out.println(tokens);
-    return tokens;
+    return rewritePolynomials(rewriteMonomials(rewriteSpecials(rewriteRationals(new Tokenizer(expr).tokenize()))));
   }
 
   Series<Q> parseExpression(final String expr) {

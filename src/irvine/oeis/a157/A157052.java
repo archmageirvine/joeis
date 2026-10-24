@@ -26,8 +26,7 @@ public class A157052 extends GeneratingFunctionSequence {
     for (int i = 1; i <= parm - 1; ++i) {
       num = RING.add(num, RING.monomial(A088855.element(parm - 1, i), i));
     }
-    num = RING.multiply(num, RING.monomial(Z.TWO, 1)); // *2*x
-    return num;
+    return RING.multiply(num, RING.monomial(Z.TWO, 1)); // *2*x
   }
 
   /**

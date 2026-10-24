@@ -20,7 +20,7 @@ public class A079359 extends Sequence1 {
   public Z next() {
     final Z t = mPrev;
     mPrev = mA.next();
-    if (t.equals(mA)) {
+    if (t.equals(mPrev)) {
       throw new RuntimeException("Conjecture failed");
     }
     return mPrev;

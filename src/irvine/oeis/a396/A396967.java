@@ -12,9 +12,6 @@ import irvine.oeis.a381.A381801;
  */
 public class A396967 extends A024619 {
 
-  private final A272619 mA = new A272619();
-  private final A381801 mB = new A381801();
-
   private boolean isOk(final long k, final Z[] a, final long[] s) {
     final long rad = Functions.RAD.l(k);
     for (final Z rr : a) {
@@ -33,7 +30,7 @@ public class A396967 extends A024619 {
     while (true) {
       final Z k = super.next();
       final long m = k.longValueExact();
-      if (isOk(m, mB.row(m), mA.row(m))) {
+      if (isOk(m, A381801.row(m), A272619.row(m))) {
         return k;
       }
     }

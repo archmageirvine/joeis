@@ -13,7 +13,7 @@ public class A395685 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;
-  protected final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  protected final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (n == 0) {

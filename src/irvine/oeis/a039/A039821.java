@@ -13,7 +13,7 @@ public class A039821 extends Sequence1 {
 
   private int mN = 0;
   private final BernoulliSequence mBernoulli = new BernoulliSequence(0);
-  private final MemoryFunction1<Z> mCoeff = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mCoeff = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n == 0) {

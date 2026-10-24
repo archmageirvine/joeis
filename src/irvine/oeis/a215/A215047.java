@@ -9,9 +9,8 @@ import irvine.oeis.AbstractSequence;
  */
 public class A215047 extends AbstractSequence {
 
-  private Z mPow2;
+  private final Z mPow2;
   private Z mPow10;
-  private Z mA; // old term
 
   /** Construct the sequence. */
   public A215047() {

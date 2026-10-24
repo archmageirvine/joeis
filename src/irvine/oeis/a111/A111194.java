@@ -33,7 +33,7 @@ public class A111194 extends AbstractSequence {
       return Z.ONE;
     }
     final MatrixField<Q> mF = new MatrixField<>(mN, Rationals.SINGLETON);
-    final LambdaMatrix<Q> mat = new LambdaMatrix<Q>(mN, mN, Q.ZERO, mLambda, 1);
+    final LambdaMatrix<Q> mat = new LambdaMatrix<>(mN, mN, Q.ZERO, mLambda, 1);
     return mF.permanent(mF.inverse(mat)).num();
   }
 }

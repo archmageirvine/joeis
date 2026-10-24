@@ -30,7 +30,7 @@ public class A101812 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final LambdaMatrix<Q> mat = new LambdaMatrix<Q>(mN, mN, Q.ZERO, mLambda, 1);
-    return new MatrixField<Q>(mN, Rationals.SINGLETON).permanent(mat).den();
+    final LambdaMatrix<Q> mat = new LambdaMatrix<>(mN, mN, Q.ZERO, mLambda, 1);
+    return new MatrixField<>(mN, Rationals.SINGLETON).permanent(mat).den();
   }
 }

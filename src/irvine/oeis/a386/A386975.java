@@ -17,14 +17,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A386975 extends AbstractSequence {
 
-  private long mN = 0;
-  private BiFunction<Long, Long, Q> mLambda;
+  private long mN;
+  private final BiFunction<Long, Long, Q> mLambda;
 
   /** Construct the sequence */
   public A386975() {
     super(0);
     mN = -1;
-    mLambda = (j, k) -> new Q(j != k ? j : mN + j);
+    mLambda = (j, k) -> new Q(!j.equals(k) ? j : mN + j);
   }
 
   @Override
@@ -32,7 +32,7 @@ public class A386975 extends AbstractSequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final LambdaMatrix<Q> mat = new LambdaMatrix<Q>(mN, mN, Q.ZERO, mLambda, 1);
-    return new MatrixField<Q>(mN, Rationals.SINGLETON).permanent(mat).toZ();
+    final LambdaMatrix<Q> mat = new LambdaMatrix<>(mN, mN, Q.ZERO, mLambda, 1);
+    return new MatrixField<>(mN, Rationals.SINGLETON).permanent(mat).toZ();
   }
 }

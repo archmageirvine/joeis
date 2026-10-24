@@ -20,8 +20,7 @@ public class A154227 extends BaseTriangle implements DirectArray {
   final MemoryFunction2<Long, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Long n, final Long k) {
-      return
-        k == 0 || k == n ? Z.ONE : get(n - 1, k).add(get(n - 1, k - 1)).add(get(n - 2, k - 1).multiply(n + 1).multiply(n + 2).divide(2));
+      return k == 0 || k.equals(n) ? Z.ONE : get(n - 1, k).add(get(n - 1, k - 1)).add(get(n - 2, k - 1).multiply(n + 1).multiply(n + 2).divide(2));
     }
   };
 

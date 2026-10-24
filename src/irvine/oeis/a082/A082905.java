@@ -15,7 +15,7 @@ public class A082905 extends LambdaTriangle {
   /** Construct the sequence. */
   public A082905() {
     super(0, 0, 0, (n, j) -> {
-      if (j == 0 || j == n) {
+      if (j == 0 || j.equals(n)) {
         return Z.ONE;
       }
       final int g = Functions.GCD.i(n, j);

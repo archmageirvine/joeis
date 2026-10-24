@@ -14,6 +14,6 @@ public class A332778 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A332778() {
-    super(1, (self, n) -> Integers.SINGLETON.sumdiv(n, d -> d == n ? Z.ZERO : Functions.PHI.z(n / d).multiply(self.a(d).square())), "1");
+    super(1, (self, n) -> Integers.SINGLETON.sumdiv(n, d -> d.equals(n) ? Z.ZERO : Functions.PHI.z(n / d).multiply(self.a(d).square())), "1");
   }
 }

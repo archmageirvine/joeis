@@ -24,7 +24,7 @@ public class A303260 extends AbstractSequence {
   public A303260() {
     super(0);
     mN = -1;
-    mLambda = (i, j) -> new Q((j - i - 1 + mN) % mN + (i == j ? 1 : 0));
+    mLambda = (i, j) -> new Q((j - i - 1 + mN) % mN + (i.equals(j) ? 1 : 0));
   }
 
   @Override

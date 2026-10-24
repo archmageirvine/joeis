@@ -15,6 +15,6 @@ public class A354794 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A354794() {
-    super(0, 0, 0, (n, k) -> (n == k) ? Z.ONE : Rationals.SINGLETON.sum(0, k - 1, j -> new Q(Z.NEG_ONE.pow(j).multiply(Z.valueOf(n - j - 1).pow(n - 1)), Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(k - 1 - j)))).num());
+    super(0, 0, 0, (n, k) -> n.equals(k) ? Z.ONE : Rationals.SINGLETON.sum(0, k - 1, j -> new Q(Z.NEG_ONE.pow(j).multiply(Z.valueOf(n - j - 1).pow(n - 1)), Functions.FACTORIAL.z(j).multiply(Functions.FACTORIAL.z(k - 1 - j)))).num());
   }
 }

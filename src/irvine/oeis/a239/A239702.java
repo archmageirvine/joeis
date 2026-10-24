@@ -17,6 +17,6 @@ public class A239702 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A239702() {
-    super(0, 0, 0, (n, k) -> (n == 0 || k == 0 || n == k) ? Z.ONE : Integers.SINGLETON.product(1, n, i -> A173557.a(i)).divide(Integers.SINGLETON.product(1, k, j -> A173557.a(j)).multiply(Integers.SINGLETON.product(1, n - k, m -> A173557.a(m)))));
+    super(0, 0, 0, (n, k) -> (n == 0 || k == 0 || n.equals(k)) ? Z.ONE : Integers.SINGLETON.product(1, n, A173557::a).divide(Integers.SINGLETON.product(1, k, A173557::a).multiply(Integers.SINGLETON.product(1, n - k, A173557::a))));
   }
 }

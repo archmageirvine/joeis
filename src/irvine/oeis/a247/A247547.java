@@ -12,6 +12,6 @@ public class A247547 extends A246356 {
 
   /** Construct the sequence. */
   public A247547() {
-    super(1, CR.E.frac(), CR.E.inverse().frac(), (r, s) -> r != s);
+    super(1, CR.E.frac(), CR.E.inverse().frac(), (r, s) -> !r.equals(s));
   }
 }

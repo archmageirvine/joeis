@@ -13,6 +13,6 @@ public class A155868 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A155868() {
-    super(0, 0, 0, (n, k) -> (k == 0 || k == n) ? Z.ONE : Z.NEG_ONE.pow(n).multiply(Functions.STIRLING1.z(n, k)).multiply(Functions.STIRLING1.z(n, n - k)));
+    super(0, 0, 0, (n, k) -> (k == 0 || k.equals(n)) ? Z.ONE : Z.NEG_ONE.pow(n).multiply(Functions.STIRLING1.z(n, k)).multiply(Functions.STIRLING1.z(n, n - k)));
   }
 }

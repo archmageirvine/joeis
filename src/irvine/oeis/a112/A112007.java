@@ -13,6 +13,6 @@ public class A112007 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A112007() {
-    super(0, 0, 0, (n, k) -> n == k ? Z.ONE : Functions.EULERIAN2.z(n + 1, n - k));
+    super(0, 0, 0, (n, k) -> n.equals(k) ? Z.ONE : Functions.EULERIAN2.z(n + 1, n - k));
   }
 }

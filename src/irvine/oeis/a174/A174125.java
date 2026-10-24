@@ -15,6 +15,6 @@ public class A174125 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A174125() {
-    super(0, 0, 0, (n, k) -> (k == 0 || k == n) ? Z.ONE : new Q(Functions.POCHHAMMER.z(3, n), Functions.POCHHAMMER.z(3, k).multiply(Functions.POCHHAMMER.z(3, n - k))).multiply(Binomial.binomial(n, k)).multiply(3).num());
+    super(0, 0, 0, (n, k) -> (k == 0 || k.equals(n)) ? Z.ONE : new Q(Functions.POCHHAMMER.z(3, n), Functions.POCHHAMMER.z(3, k).multiply(Functions.POCHHAMMER.z(3, n - k))).multiply(Binomial.binomial(n, k)).multiply(3).num());
   }
 }

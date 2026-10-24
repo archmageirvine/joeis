@@ -13,6 +13,6 @@ public class A363915 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A363915() {
-    super(0, 0, 0, (n, k) -> Z.valueOf(Predicates.PRIME.is(k) && (k == n || (k > 0 && n % k == 0)) ? 1 : 0));
+    super(0, 0, 0, (n, k) -> Z.valueOf(Predicates.PRIME.is(k) && (k.equals(n) || (k > 0 && n % k == 0)) ? 1 : 0));
   }
 }

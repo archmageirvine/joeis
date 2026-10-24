@@ -16,6 +16,6 @@ public class A174117 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A174117() {
-    super(0, 0, 0, (n, k) -> (k == 0 || k == n) ? Z.ONE : A001263.a(n, k).multiply(2).multiply(n + 1).multiply(n - k).divide(k + 1));
+    super(0, 0, 0, (n, k) -> (k == 0 || k.equals(n)) ? Z.ONE : A001263.a(n, k).multiply(2).multiply(n + 1).multiply(n - k).divide(k + 1));
   }
 }

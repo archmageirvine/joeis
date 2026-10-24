@@ -12,6 +12,6 @@ public class A377278 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A377278() {
-    super(1, 1, 1, (n, k) -> (k == n) ? Z.TWO.pow(n).subtract(1) : Z.TWO.pow(k).subtract(1).multiply(Z.TWO.pow(k + 1).subtract(1)));
+    super(1, 1, 1, (n, k) -> k.equals(n) ? Z.TWO.pow(n).subtract(1) : Z.TWO.pow(k).subtract(1).multiply(Z.TWO.pow(k + 1).subtract(1)));
   }
 }

@@ -13,6 +13,6 @@ public class A140575 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A140575() {
-    super(0, 0, 0, (n, k) -> (k == 0) ? Z.valueOf((n & 1) == 0 ? 0 : 2) : ((k == n) ? Z.NEG_ONE : Binomial.binomial(n, k).multiply((n & 1) != (k & 1) ? 1 : -1)));
+    super(0, 0, 0, (n, k) -> (k == 0) ? Z.valueOf((n & 1) == 0 ? 0 : 2) : (k.equals(n) ? Z.NEG_ONE : Binomial.binomial(n, k).multiply((n & 1) != (k & 1) ? 1 : -1)));
   }
 }

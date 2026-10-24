@@ -21,7 +21,7 @@ public class A372208 extends BaseTriangle implements DirectArray {
     @Override
     protected Z compute(final Long n, final Long k) {
       return
-        k < 3 || k > n ? Z.ZERO : (n == k ? Z.ONE : get(n - 1, k - 1).add(Z.valueOf(n + k - 1).pow(3).multiply(get(n - 1, k))));
+        k < 3 || k > n ? Z.ZERO : (n.equals(k) ? Z.ONE : get(n - 1, k - 1).add(Z.valueOf(n + k - 1).pow(3).multiply(get(n - 1, k))));
     }
   };
 

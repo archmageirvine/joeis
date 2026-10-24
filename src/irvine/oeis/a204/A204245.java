@@ -18,14 +18,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A204245 extends AbstractSequence {
 
-  private long mN = 0;
+  private long mN;
   private final BiFunction<Long, Long, Q> mLambda;
 
   /** Construct the sequence */
   public A204245() {
     super(1);
     mN = 0;
-    mLambda = (i, j) -> new Q((i == 1 || j == 1) ? Z.ONE : (i == j ? Functions.FACTORIAL.z(i) : Z.ZERO));
+    mLambda = (i, j) -> new Q((i == 1 || j == 1) ? Z.ONE : (i.equals(j) ? Functions.FACTORIAL.z(i) : Z.ZERO));
   }
 
   @Override

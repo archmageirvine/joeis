@@ -13,6 +13,6 @@ public class A345139 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A345139() {
-    super(1, (self, n) -> self.a(n - 1).add(Integers.SINGLETON.sumdiv(n, d -> d == n ? Z.ZERO : self.a(d))), "1");
+    super(1, (self, n) -> self.a(n - 1).add(Integers.SINGLETON.sumdiv(n, d -> d.equals(n) ? Z.ZERO : self.a(d))), "1");
   }
 }

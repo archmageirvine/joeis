@@ -14,6 +14,6 @@ public class A345136 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A345136() {
-    super(1, (self, n) -> Integers.SINGLETON.sumdiv(n, d -> d == n ? Z.ZERO : Binomial.binomial(n, d).multiply(self.a(d))), "1");
+    super(1, (self, n) -> Integers.SINGLETON.sumdiv(n, d -> d.equals(n) ? Z.ZERO : Binomial.binomial(n, d).multiply(self.a(d))), "1");
   }
 }

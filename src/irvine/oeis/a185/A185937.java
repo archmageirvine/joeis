@@ -16,6 +16,6 @@ public class A185937 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A185937() {
-    super(0, 0, 0, (n, k) -> (k == 0) ? Functions.FIBONACCI.z(n) : ((k == n) ? Z.ZERO : Rationals.SINGLETON.sum(0, n - 1 - k, i -> new Q(Functions.FIBONACCI.z(i + 1).multiply(Binomial.binomial(2 * (n - 1 - i) - k - 1, n - 1 - i - 1)), Z.valueOf(n - 1 - i))).multiply(k).num()));
+    super(0, 0, 0, (n, k) -> (k == 0) ? Functions.FIBONACCI.z(n) : (k.equals(n) ? Z.ZERO : Rationals.SINGLETON.sum(0, n - 1 - k, i -> new Q(Functions.FIBONACCI.z(i + 1).multiply(Binomial.binomial(2 * (n - 1 - i) - k - 1, n - 1 - i - 1)), Z.valueOf(n - 1 - i))).multiply(k).num()));
   }
 }

@@ -13,6 +13,6 @@ public class A094785 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A094785() {
-    super(1, 1, 1, (n, k) -> (n == k) ? Functions.FACTORIAL.z(3 * n).multiply(2).divide(Functions.FACTORIAL.z(2 * n + 1).multiply(Functions.FACTORIAL.z(n + 1))) : Functions.FACTORIAL.z(n).multiply(6).multiply(4L * k + 3).multiply(Binomial.binomial(3L * k - 1, k - 3)).divide(Functions.FACTORIAL.z(k + 2).multiply(2L * k + 3)));
+    super(1, 1, 1, (n, k) -> n.equals(k) ? Functions.FACTORIAL.z(3 * n).multiply(2).divide(Functions.FACTORIAL.z(2 * n + 1).multiply(Functions.FACTORIAL.z(n + 1))) : Functions.FACTORIAL.z(n).multiply(6).multiply(4L * k + 3).multiply(Binomial.binomial(3L * k - 1, k - 3)).divide(Functions.FACTORIAL.z(k + 2).multiply(2L * k + 3)));
   }
 }

@@ -13,6 +13,6 @@ public class A156241 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A156241() {
-    super(1, 1, 1, (n, k) -> (n == k) ? Z.ONE : ((n % k == 0) ? Functions.MOEBIUS.z(n).multiply(Functions.MOEBIUS.z(k)) : Z.ZERO));
+    super(1, 1, 1, (n, k) -> n.equals(k) ? Z.ONE : ((n % k == 0) ? Functions.MOEBIUS.z(n).multiply(Functions.MOEBIUS.z(k)) : Z.ZERO));
   }
 }

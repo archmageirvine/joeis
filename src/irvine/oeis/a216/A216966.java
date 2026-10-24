@@ -13,7 +13,7 @@ import irvine.oeis.DirectSequence;
 public class A216966 extends AbstractSequence implements DirectSequence {
 
   private long mN;
-  private long mColNo;
+  private final long mColNo;
 
   /** Construct the sequence. */
   public A216966() {
@@ -35,7 +35,7 @@ public class A216966 extends AbstractSequence implements DirectSequence {
     @Override
     protected Z compute(final Long n, final Long k) {
       return
-        (k == 0) ? Z.ONE : (k == n ? get(n, k - 1) : Z.valueOf(k - n - 1).pow(mColNo).multiply((mColNo & 1) == 1 ? -1 : 1).multiply(get(n, k - 1)).add(get(n - 1, k)));
+        (k == 0) ? Z.ONE : (k.equals(n) ? get(n, k - 1) : Z.valueOf(k - n - 1).pow(mColNo).multiply((mColNo & 1) == 1 ? -1 : 1).multiply(get(n, k - 1)).add(get(n - 1, k)));
     }
   };
 

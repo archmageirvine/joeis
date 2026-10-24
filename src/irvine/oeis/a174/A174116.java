@@ -17,6 +17,6 @@ public class A174116 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A174116() {
-    super(0, 0, 0, (n, k) -> (k == 0 || k == n) ? Z.ONE : Binomial.binomial(n - k + 1, 2).multiply(A001263.a(n, k)));
+    super(0, 0, 0, (n, k) -> (k == 0 || k.equals(n)) ? Z.ONE : Binomial.binomial(n - k + 1, 2).multiply(A001263.a(n, k)));
   }
 }

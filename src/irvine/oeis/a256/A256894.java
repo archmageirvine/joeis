@@ -13,6 +13,6 @@ public class A256894 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A256894() {
-    super(0, 0, 0, (n, k) -> (n == 0 || n == k) ? Z.ONE : Functions.STIRLING2.z(n, k).add(Functions.STIRLING2.z(n, k + 1)));
+    super(0, 0, 0, (n, k) -> (n == 0 || n.equals(k)) ? Z.ONE : Functions.STIRLING2.z(n, k).add(Functions.STIRLING2.z(n, k + 1)));
   }
 }

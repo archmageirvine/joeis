@@ -17,6 +17,6 @@ public class A278427 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A278427() {
-    super(0, 0, 0, (n, k) -> (n == k) ? Z.ONE : Integers.SINGLETON.sum(k + 1, n, i -> A008284.a(i, i - k)));
+    super(0, 0, 0, (n, k) -> n.equals(k) ? Z.ONE : Integers.SINGLETON.sum(k + 1, n, i -> A008284.a(i, i - k)));
   }
 }

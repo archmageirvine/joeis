@@ -12,6 +12,6 @@ public class A247635 extends A246356 {
 
   /** Construct the sequence. */
   public A247635() {
-    super(1, CR.SQRT2.frac(), CR.EIGHT.sqrt().frac(), (r, s) -> r == s);
+    super(1, CR.SQRT2.frac(), CR.EIGHT.sqrt().frac(), Integer::equals);
   }
 }

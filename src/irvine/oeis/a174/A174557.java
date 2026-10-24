@@ -12,6 +12,6 @@ public class A174557 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A174557() {
-    super(1, 1, 1, (n, k) -> n == k ? Z.ONE : Z.valueOf(n / k).negate());
+    super(1, 1, 1, (n, k) -> n.equals(k) ? Z.ONE : Z.valueOf(n / k).negate());
   }
 }

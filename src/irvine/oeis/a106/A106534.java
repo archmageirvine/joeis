@@ -21,8 +21,7 @@ public class A106534 extends BaseTriangle implements DirectArray {
   final MemoryFunction2<Long, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Long n, final Long k) {
-      return
-        k > n ? Z.ZERO : (k == n ? Binomial.binomial(2 * n, n).divide(n + 1) : get(n - 1, k).add(get(n, k + 1)));
+      return k > n ? Z.ZERO : (k.equals(n) ? Binomial.binomial(2 * n, n).divide(n + 1) : get(n - 1, k).add(get(n, k + 1)));
     }
   };
 

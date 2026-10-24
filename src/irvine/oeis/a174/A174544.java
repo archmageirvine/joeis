@@ -13,6 +13,6 @@ public class A174544 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A174544() {
-    super(0, 0, 0, (n, m) -> (m == 0 || m == n) ? Z.ONE : ((n / 2 >= m) ? Functions.STIRLING2.z(n, m).multiply(Z.ONE.pow(m)) : Functions.STIRLING2.z(n, n - m).multiply(Z.ONE.pow(n - m))));
+    super(0, 0, 0, (n, m) -> (m == 0 || m.equals(n)) ? Z.ONE : ((n / 2 >= m) ? Functions.STIRLING2.z(n, m).multiply(Z.ONE.pow(m)) : Functions.STIRLING2.z(n, n - m).multiply(Z.ONE.pow(n - m))));
   }
 }

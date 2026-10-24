@@ -12,6 +12,6 @@ public class A247523 extends A246356 {
 
   /** Construct the sequence. */
   public A247523() {
-    super(1, CR.PHI.frac(), CR.PHI.divide(2).frac(), (r, s) -> r == s);
+    super(1, CR.PHI.frac(), CR.PHI.divide(2).frac(), Integer::equals);
   }
 }

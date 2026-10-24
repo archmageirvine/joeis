@@ -17,14 +17,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A303000 extends AbstractSequence {
 
-  private long mN = 0;
-  private BiFunction<Long, Long, Q> mLambda;
+  private long mN;
+  private final BiFunction<Long, Long, Q> mLambda;
 
   /** Construct the sequence */
   public A303000() {
     super(1);
     mN = 0;
-    mLambda = (i, j) -> new Q(i == j ? i * i : 1);
+    mLambda = (i, j) -> new Q(i.equals(j) ? i * i : 1);
   }
 
   @Override

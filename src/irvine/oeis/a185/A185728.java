@@ -12,6 +12,6 @@ public class A185728 extends LambdaArray {
 
   /** Construct the sequence. */
   public A185728() {
-    super(1, 1, 1, -1, (n, k) -> (n < k) ? Z.valueOf(k - 1).square().add(n) : ((n == k) ? Z.valueOf(n).square() : Z.valueOf(n).square().subtract(k)));
+    super(1, 1, 1, -1, (n, k) -> (n < k) ? Z.valueOf(k - 1).square().add(n) : (n.equals(k) ? Z.valueOf(n).square() : Z.valueOf(n).square().subtract(k)));
   }
 }

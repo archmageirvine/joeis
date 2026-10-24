@@ -37,7 +37,7 @@ public class A079494 extends Sequence0 {
             continue;
           }
           // Condition (c)
-          if (j > 0 && mR.get(j) > 0 & mR.get(mR.get(j)) == k) {
+          if (j > 0 && mR.get(j) > 0 && mR.get(mR.get(j)) == k) {
             continue;
           }
           mL.set(mNextFreeWord, j);

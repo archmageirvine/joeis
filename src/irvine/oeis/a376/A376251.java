@@ -17,7 +17,7 @@ public class A376251 extends FilterNumberSequence {
     super(1, 1, k -> {
       final FactorSequence fs = Jaguar.factor(k);
       final long max = fs.maxExponent();
-      final long second = FactorUtils.iterate(fs, 0L, (x, p, e) -> (e < max & e > x) ? e : x);
+      final long second = FactorUtils.iterate(fs, 0L, (x, p, e) -> e < max && e > x ? e : x);
       return second > 0L && second == max - 1;
     });
   }

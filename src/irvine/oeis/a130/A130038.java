@@ -12,6 +12,6 @@ public class A130038 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A130038() {
-    super(1, 10, n -> (n & 1) == 0 && Predicates.PRIME.is(n - 7) & !Predicates.PRIME.is(n - 3) && !Predicates.PRIME.is(n - 5));
+    super(1, 10, n -> (n & 1) == 0 && Predicates.PRIME.is(n - 7) && !Predicates.PRIME.is(n - 3) && !Predicates.PRIME.is(n - 5));
   }
 }

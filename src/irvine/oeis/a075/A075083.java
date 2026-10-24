@@ -19,7 +19,7 @@ public class A075083 extends Sequence1 {
     int[] p;
     while ((p = perm.next()) != null) {
       final Z v = Permutation.permToZ(p);
-      if (!Z.ONE.equals(v) && !v.isProbablePrime() & v.compareTo(max) > 0) {
+      if (!Z.ONE.equals(v) && !v.isProbablePrime() && v.compareTo(max) > 0) {
         max = v;
       }
     }

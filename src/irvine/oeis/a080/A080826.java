@@ -19,7 +19,7 @@ public class A080826 extends CachedSequence {
       final String l = self.a(n - 1).toString();
       sb.append(l, 0, l.length() - 1);
       for (int k = 1; k <= n - 2; ++k) {
-        sb.append(self.a(k).toString());
+        sb.append(self.a(k));
       }
       return new Z(sb);
     });

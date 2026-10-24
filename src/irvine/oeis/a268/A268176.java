@@ -11,6 +11,6 @@ public class A268176 extends MultiTransformSequence {
 
   /** Construct the sequence. */
   public A268176() {
-    super(0, (self, n) -> self.a(n - 1).add(self.a(Long.valueOf(self.a(n - 1).subtract(1).mod(n)).intValue())), "1,1");
+    super(0, (self, n) -> self.a(n - 1).add(self.a(self.a(n - 1).subtract(1).mod(n))), "1,1");
   }
 }

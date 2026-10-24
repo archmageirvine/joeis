@@ -14,8 +14,8 @@ import irvine.oeis.DirectSequence;
 public abstract class HofstadterSequence extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  private ArrayList<Integer> mA;
-  private int mInitLen;
+  private final ArrayList<Integer> mA;
+  private final int mInitLen;
   private int mLimit; // set all terms below and including this index to zero
 
   /** Construct the sequence. */
@@ -26,7 +26,7 @@ public abstract class HofstadterSequence extends AbstractSequence implements Dir
   /**
    * Generic constructor with parameter.
    * @param offset first index
-   * @param mask bit 0: yield sequence (0) or count (1), bit 1: yield odd (1) or even (0) count, bit 2: add a(n-1) (1) or not (0)
+   * @param inits mask bit 0: yield sequence (0) or count (1), bit 1: yield odd (1) or even (0) count, bit 2: add a(n-1) (1) or not (0)
    */
   public HofstadterSequence(final int offset, final int... inits) {
     super(offset);
@@ -66,7 +66,7 @@ public abstract class HofstadterSequence extends AbstractSequence implements Dir
    * @return mA.get(n)
    */
   public Z a(final long n) {
-    return Z.valueOf(a(Long.valueOf(n).intValue()));
+    return Z.valueOf(a((int) n));
   }
 
   /**
@@ -89,7 +89,7 @@ public abstract class HofstadterSequence extends AbstractSequence implements Dir
       mA.add(compute(aLen++));
     }
     // now n < mA.size() 
-    return mA.get(Long.valueOf(n).intValue());
+    return mA.get(n);
   }
 
   /**

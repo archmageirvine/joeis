@@ -127,7 +127,7 @@ public class RationalProductTransform extends AbstractSequence implements Ration
      * Empty constructor: set the defaults for all optional parameters.
      */
     public Builder() {
-      mHLambdaL = k -> (long) k;     // default: h=k in prod(1/(1 - x^h))
+      mHLambdaL = k -> k;     // default: h=k in prod(1/(1 - x^h))
       mFType = FunctionType.TYPE_NULL; // default: f=1 in prod(1/(1 - x^k)^f)
       mGType = FunctionType.TYPE_NULL; // default: g=1 in prod(1/(1 - g*x^k))
       mHType = FunctionType.TYPE_NULL; // default: h=k in prod(1/(1 - g*x^h))

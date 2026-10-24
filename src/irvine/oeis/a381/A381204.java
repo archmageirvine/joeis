@@ -20,7 +20,7 @@ public class A381204 extends LambdaSequence {
       final TreeSet<Z> ts = new TreeSet<>();
       return FactorUtils.iterate(n, Z.NEG_ONE, (x, p, e) -> {
         if (x.equals(Z.NEG_ONE)) {
-          return ts.add(p) ? Functions.GCD.z(p, ts.add(Z.valueOf(e)) ? e : e) : p;
+          return ts.add(p) ? Functions.GCD.z(p, e) : p;
         } else {
           final Z y = Functions.GCD.z(x, ts.add(p) ? p : x);
           return Functions.GCD.z(y, ts.add(Z.valueOf(e)) ? Z.valueOf(e) : y);

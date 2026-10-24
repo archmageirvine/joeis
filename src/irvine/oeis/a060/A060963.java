@@ -311,7 +311,7 @@ public class A060963 extends Sequence0 {
       int compulsory = 0;
       for (int i = 0; i < mLength; ++i) {
         if (digits[i] == 0) {
-          if (filled > maxNumberAvailable && gaps % 2 == 1) {
+          if (filled > maxNumberAvailable && (gaps & 1) == 1) {
             mMemo.put(shiftedUsed, 0);
             return 0;
           } else if (mStronglyDecreasing && filled == maxNumberAvailable && gaps % 2 == 1) {

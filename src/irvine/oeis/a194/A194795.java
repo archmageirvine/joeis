@@ -14,7 +14,6 @@ public class A194795 extends AbstractSequence {
 
   private final Sequence mSeq = new A240690();
   private long mN;
-  private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
@@ -27,9 +26,9 @@ public class A194795 extends AbstractSequence {
   @Override
   public Z next() {
     final long n = ++mN;
-    mB = mSeq.next();
-    final Z result = mB.subtract(mB1).multiply(Z.NEG_ONE.pow(n + 1)).subtract(1);
-    mB1 = mB;
+    final Z b = mSeq.next();
+    final Z result = b.subtract(mB1).multiply(Z.NEG_ONE.pow(n + 1)).subtract(1);
+    mB1 = b;
     return result;
   }
 }

@@ -15,7 +15,6 @@ public class A378899 extends AbstractSequence {
 
   private final Sequence mSeq = new A286708().prepend(0);
   private long mN;
-  private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
@@ -28,9 +27,9 @@ public class A378899 extends AbstractSequence {
   @Override
   public Z next() {
     final long n = ++mN;
-    mB = mSeq.next();
-    final Z result = n == 0 ? Z.valueOf(11) : Functions.PRIME_PI.z(mB).subtract(Functions.PRIME_PI.z(mB1));
-    mB1 = mB;
+    final Z b = mSeq.next();
+    final Z result = n == 0 ? Z.valueOf(11) : Functions.PRIME_PI.z(b).subtract(Functions.PRIME_PI.z(mB1));
+    mB1 = b;
     return result;
   }
 }

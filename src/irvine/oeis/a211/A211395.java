@@ -12,7 +12,6 @@ import irvine.oeis.Sequence;
 public class A211395 extends AbstractSequence {
 
   private final Sequence mSeq = new A211397().adjust(1, 0, 1);
-  private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
@@ -23,9 +22,9 @@ public class A211395 extends AbstractSequence {
 
   @Override
   public Z next() {
-    mB = mSeq.next();
-    final Z result = mB.subtract(mB1);
-    mB1 = mB;
+    final Z b = mSeq.next();
+    final Z result = b.subtract(mB1);
+    mB1 = b;
     return result;
   }
 }

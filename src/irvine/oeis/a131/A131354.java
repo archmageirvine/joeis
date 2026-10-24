@@ -14,7 +14,6 @@ import irvine.oeis.a000.A000073;
 public class A131354 extends AbstractSequence {
 
   private final Sequence mSeq = new A000073();
-  private Z mB;
   private Z mB1;
 
   /** Construct the sequence */
@@ -25,9 +24,9 @@ public class A131354 extends AbstractSequence {
 
   @Override
   public Z next() {
-    mB = mSeq.next();
-    final Z result = Functions.PRIME_PI.z(mB.subtract(1)).subtract(Functions.PRIME_PI.z(mB1));
-    mB1 = mB;
+    final Z b = mSeq.next();
+    final Z result = Functions.PRIME_PI.z(b.subtract(1)).subtract(Functions.PRIME_PI.z(mB1));
+    mB1 = b;
     return result;
   }
 }

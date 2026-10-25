@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A309058
+ * A309058 Partitions of n with parts having at most 3 distinct magnitudes.
  * @author Georg Fischer
  */
 public class A309058 extends AbstractSequence implements DirectSequence {

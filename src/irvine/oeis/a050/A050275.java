@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.z.Z;
 
 /**
- * A050275 Largest value c for Diophantine 1-triples (a,b,c) ordered by smallest c,b.
+ * A050275 Largest value c in Diophantine 1-triples (a,b,c), with 0 &lt; a &lt; b &lt; c, ordered lexicographically by (c,a,b).
  * @author Sean A. Irvine
  */
 public class A050275 extends A050273 {

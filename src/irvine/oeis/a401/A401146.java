@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401146 allocated for Carlos Alberto Terencio de Bastos.
+ * A401146 Irregular triangle read by rows: row n lists the iterates of A302338 starting at n, up to the first power of 2.
  * @author Sean A. Irvine
  */
 public class A401146 extends Sequence1 {

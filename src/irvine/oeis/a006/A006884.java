@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006884 In the '3x+1' problem, these values for the starting value set new records for highest point of trajectory before reaching 1.
+ * A006884 In the '3x+1' problem, these starting value set new records for highest point of trajectory before reaching 1.
  * @author Sean A. Irvine
  */
 public class A006884 extends Sequence1 {

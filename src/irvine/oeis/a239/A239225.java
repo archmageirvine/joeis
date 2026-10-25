@@ -12,8 +12,8 @@ public class A239225 extends A239224 {
 
   @Override
   public Z next() {
-    ++mN;
-    final Z result = Q.valueOf(mN * 2L).divide(super.nextQ().square()).den();
-    return mN == 1 ? Z.ONE : result;
+    ++mM;
+    final Z result = Q.valueOf(mM * 2L).divide(super.nextQ().square()).den();
+    return mM == 1 ? Z.ONE : result;
   }
 }

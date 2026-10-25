@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401170 allocated for Scott M. Foltz.
+ * A401170 Number of distinct adjacency eigenvalues of the n X n grid graph P_n X P_n.
  * @author Sean A. Irvine
  */
 public class A401170 extends Sequence1 {

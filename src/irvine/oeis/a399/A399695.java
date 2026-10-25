@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399695 allocated for Jishnu Babu Ranitha.
+ * A399695 Square array T(n,k), n &gt;= 0, k &gt;= 1, read by descending antidiagonals: T(n,k) is the number of nonnegative integer solutions to x + y + z + k*w = n.
  * @author Sean A. Irvine
  */
 public class A399695 extends Sequence0 {

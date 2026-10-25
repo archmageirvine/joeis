@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086993.
+ * A087015 Decimal expansion of G(3/4) where G is the Barnes G-function.
  * @author Sean A. Irvine
  */
 public class A087015 extends DecimalExpansionSequence {

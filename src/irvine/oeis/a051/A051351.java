@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A051351 a(n) = a(n-1) + sum of digits of n-th prime.
+ * A051351 a(n) = a(n-1) + sum of digits of n-th prime; a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A051351 extends A000040 {

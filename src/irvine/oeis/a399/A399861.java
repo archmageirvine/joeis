@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a191.A191232;
 
 /**
- * A399861 allocated for Jwalin Bhatt.
+ * A399861 Deterministic version of the random Fibonacci sequence, with signs from A191232 and the seed as (1,0).
  * @author Sean A. Irvine
  */
 public class A399861 extends Sequence0 {

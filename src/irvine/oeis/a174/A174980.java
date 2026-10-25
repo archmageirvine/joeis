@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A174980 Stern&apos;s diatomic series type ([0,1], 1).
+ * A174980 Stern's diatomic series type ([0,1], 1).
  * @author Georg Fischer
  */
 public class A174980 extends MultiTransformSequence {

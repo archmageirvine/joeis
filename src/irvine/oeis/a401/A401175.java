@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A401175 allocated for Adam Reichert.
+ * A401175 Hexadecimal expansion of the plastic constant A060006.
  * @author Sean A. Irvine
  */
 public class A401175 extends PolynomialRootExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A400173 Dirichlet convolution of the arithmetic derivative with Liouville&apos;s lambda.
+ * A400173 Dirichlet convolution of the arithmetic derivative with Liouville's lambda.
  * @author Georg Fischer
  */
 public class A400173 extends LambdaSequence {

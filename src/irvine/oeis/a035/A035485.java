@@ -52,7 +52,7 @@ public class A035485 extends AbstractSequence {
     }
     final Iterator<Long> top = mDeck.iterator();
     for (int k = 0; k < mN; ++k) {
-      next.add(m >= mDeck.size() ? m : existing.next());
+      next.add(m >= mDeck.size() ? Long.valueOf(m) : existing.next());
       ++m;
       next.add(top.next());
     }

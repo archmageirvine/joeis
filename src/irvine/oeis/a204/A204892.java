@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A204892 Least k such that n divides s(k)-s(j) for some j in [1,k), where s(k)=prime(k).
+ * A204892 Least k such that n divides s(k)-s(j) for some j in [1,k), where s(k) = prime(k).
  * @author Georg Fischer
  */
 public class A204892 extends Sequence1 {

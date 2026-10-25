@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
  */
 public class A001850 extends Sequence0 implements DirectSequence {
 
-  private int mN = -1;
+  private long mN = -1;
 
   @Override
   public Z next() {

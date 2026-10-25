@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401078 allocated for Michael P. May.
+ * A401078 a(1)=2, a(2)=3, thereafter a(n) is the sum of the two largest primes &lt;= a(n-1).
  * @author Sean A. Irvine
  */
 public class A401078 extends Sequence1 {

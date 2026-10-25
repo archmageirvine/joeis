@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398224 allocated for Alex Ratushnyak.
+ * A398224 Numbers k such that there is a square bigger than k among divisors of triangular(k), and a triangular number bigger than k among divisors of k^2.
  * @author Sean A. Irvine
  */
 public class A398224 extends FilterNumberSequence {

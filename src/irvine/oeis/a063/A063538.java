@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063538 Numbers n that are not sqrt(n-1)-smooth: largest prime factor of n (=A006530(n)) &gt;= sqrt(n).
+ * A063538 Numbers k that are not sqrt(k-1)-smooth: largest prime factor of k (A006530(k)) &gt;= sqrt(k).
  * @author Sean A. Irvine
  */
 public class A063538 extends Sequence1 {

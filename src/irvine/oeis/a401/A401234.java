@@ -6,7 +6,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401234 Squarefree numbers k such that A006530(k) [the largest prime dividing k, 1 if k is 1] divides A276085(k), where A276085 is fully additive with a(p) = p#/p.
+ * A401234 Squarefree numbers k such that A006530(k) divides A276085(k), where A006530(k) is the largest prime dividing k (with 1 if k is 1), and A276085 is fully additive with a(p) = p#/p.
  * @author Georg Fischer
  */
 public class A401234 extends FilterNumberSequence {

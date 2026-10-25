@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061955 Numbers n such that n divides the (left) concatenation of all numbers &lt;= n written in base 2 (most significant digit on right).
+ * A061955 Numbers k such that k divides the (left) concatenation of all numbers &lt;= k written in base 2 (most significant digit on right).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */

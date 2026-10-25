@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401201 allocated for Alex Ratushnyak.
+ * A401201 Smallest k such that k*(k+1)*(k+2)*...*(k+n-1)-1 is prime.
  * @author Sean A. Irvine
  */
 public class A401201 extends Sequence1 {

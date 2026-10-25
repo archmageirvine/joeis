@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401137 allocated for Vladeta Jovovic.
+ * A401137 Triangle read by rows: T(n,k) is the number of distinct equality patterns among compositions of n into exactly k parts, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A401137 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086993.
+ * A084448 Decimal expansion of (negative of) Kinkelin constant.
  * @author Sean A. Irvine
  */
 public class A084448 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A143071 A positive integer n is included if the number of 1&apos;s in the binary representation of n is a power of 2 (including being possibly 1).
+ * A143071 A positive integer n is included if the number of 1's in the binary representation of n is a power of 2 (including being possibly 1).
  * @author Georg Fischer
  */
 public class A143071 extends FilterNumberSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077227 Triangle of compositions of n into exactly k parts each no more than k.
+ * A077227 Triangle T(n,k) of compositions of n into exactly k parts each no more than k.
  * @author Sean A. Irvine
  */
 public class A077227 extends Sequence1 {

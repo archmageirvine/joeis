@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A400920 allocated for Hector Yan Estivel.
+ * A400920 Primes p such that p+2, (p-1)^2+1, (p-1)^2+3, (p-1)^4+1, (p-1)^4+3 and (p-1)^8+1 are all prime.
  * @author Sean A. Irvine
  */
 public class A400920 extends FilterSequence {

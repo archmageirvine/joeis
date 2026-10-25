@@ -25,6 +25,16 @@ public class A082554 extends Sequence1 {
     public int compareTo(final State myTriple) {
       return mN.compareTo(myTriple.mN);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof State && mN.equals(((State) obj).mN);
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode();
+    }
   }
 
   private final TreeSet<State> mA = new TreeSet<>();

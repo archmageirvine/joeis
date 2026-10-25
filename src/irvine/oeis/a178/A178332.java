@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A178332 Numbers n such that d(1)^p + d(2)^p-1 +... + d(p)^1 is a power of 2, where d(i), i=1..p, are the digits of n.
+ * A178332 Numbers n such that d(1)^p + d(2)^(p-1) + ... + d(p)^1 is a power of 2, where d(i), i=1..p, are the digits of n.
  * @author Georg Fischer
  */
 public class A178332 extends FilterNumberSequence {

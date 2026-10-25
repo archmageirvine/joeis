@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AdditiveSequence;
 
 /**
- * A240086 a(n) = Sum_{prime p|n} phi(gcd(p, n/p)) where phi is Euler&apos;s totient function.
+ * A240086 a(n) = Sum_{prime p|n} phi(gcd(p, n/p)) where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A240086 extends AdditiveSequence {

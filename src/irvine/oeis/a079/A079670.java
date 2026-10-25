@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a080.A080050;
 
 /**
- * A079670 a(n) = (gcd(2^p-1, Fibonacci(p))-1)/(8p) &gt; 0 where p = n-th prime from A080050.
+ * A079670 a(n) = (gcd(2^p-1, Fibonacci(p))-1)/(8*p) &gt; 0 where p = A080050(n).
  * @author Sean A. Irvine
  */
 public class A079670 extends AbstractSequence {

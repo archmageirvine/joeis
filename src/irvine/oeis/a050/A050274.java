@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.z.Z;
 
 /**
- * A050274 Middle value b for Diophantine 1-triples (a,b,c) ordered by smallest c,b.
+ * A050274 Middle value b in Diophantine 1-triples (a,b,c), with 0 &lt; a &lt; b &lt; c, ordered lexicographically by (c,a,b).
  * @author Sean A. Irvine
  */
 public class A050274 extends A050273 {

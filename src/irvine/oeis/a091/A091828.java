@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000254;
 
 /**
- * A091828 a(n)=n-2*valuation(A000254(n),3).
+ * A091828 a(n) = n - 2*valuation(A000254(n),3).
  * @author Georg Fischer
  */
 public class A091828 extends A000254 {

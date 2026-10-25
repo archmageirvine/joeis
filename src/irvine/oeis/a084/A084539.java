@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A086993.
+ * A084539 Continued fraction expansion of (negative of) Kinkelin constant.
  * @author Sean A. Irvine
  */
 public class A084539 extends ContinuedFractionSequence {

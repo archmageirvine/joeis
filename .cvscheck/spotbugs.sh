@@ -3,7 +3,7 @@
 # Run spotbugs
 
 export PATH=${HOME}/java_apps/spotbugs/bin:${PATH}
-export SPOTBUGS_OPTS="-maxHeap 4096 -pluginList ${HOME}/java_apps/spotbugs-3.1.0-RC5/lib/fb-contrib-7.0.5.sb.jar"
+export SPOTBUGS_OPTS="-maxHeap 4096"
 export config=${HOME}/joeis/.cvscheck/spotbugs_config.xml
 
 # There is an ant task that compile-src-debug to be run first

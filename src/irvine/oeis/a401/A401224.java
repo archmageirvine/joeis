@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A401224 allocated for Arjun Pemmasani.
+ * A401224 Number of largest sets S of points of the 4 X n grid such that any two distinct rectangles with all four corners at grid points (tilted rectangles included) have distinct sets of corners outside S.
  * @author Sean A. Irvine
  */
 public class A401224 extends GfSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086993.
+ * A086237 Decimal expansion of Porter's constant.
  * @author Sean A. Irvine
  */
 public class A086237 extends DecimalExpansionSequence {

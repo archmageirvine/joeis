@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A109753 n^3 mod 8; the periodic sequence {0,1,0,3,0,5,0,7}.
+ * A109753 a(n) = n^3 mod 8; the periodic sequence {0,1,0,3,0,5,0,7}.
  * @author Sean A. Irvine
  */
 public class A109753 extends LinearRecurrence {

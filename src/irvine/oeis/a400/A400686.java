@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400686 allocated for Felix Huber.
+ * A400686 a(n) is the number of ways to divide a 2*n X 2*n square into two congruent connected parts, each having the same perimeter as the square, by a simple lattice path, up to the symmetries of the square.
  * @author Sean A. Irvine
  */
 public class A400686 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070709 n^7 mod 28.
+ * A070709 a(n) = n^7 mod 28.
  * @author Georg Fischer
  */
 public class A070709 extends Sequence0 {

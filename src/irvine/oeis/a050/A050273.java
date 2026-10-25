@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050273 Smallest value a for Diophantine 1-triples (a,b,c) ordered by smallest c,b.
+ * A050273 Smallest value a in Diophantine 1-triples (a,b,c), with 0 &lt; a &lt; b &lt; c, ordered lexicographically by (c,a,b).
  * @author Sean A. Irvine
  */
 public class A050273 extends Sequence1 {

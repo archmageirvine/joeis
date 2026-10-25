@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086993.
+ * A074962 Decimal expansion of Glaisher-Kinkelin constant A.
  * @author Sean A. Irvine
  */
 public class A074962 extends DecimalExpansionSequence {

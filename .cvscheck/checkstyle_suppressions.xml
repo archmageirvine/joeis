@@ -57,6 +57,7 @@
     <suppress checks="ParameterNumber" files=".*A395034.java"/>
     <suppress checks="ParameterNumber" files=".*A395035.java"/>
     <suppress checks="ParameterNumber" files=".*A395036.java"/>
+    <suppress checks="ParameterNumber" files=".*A400685.java"/>
     <suppress checks="ParameterNumber" files=".*BipExtensionFinder.java"/>
     <suppress checks="ParameterNumber" files=".*BipScanner.java"/>
     <suppress checks="ParameterNumber" files=".*Canon.java"/>

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A400963 allocated for Michal Paulovic.
+ * A400963 Decimal expansion of the real solution to x^5 - 5*x^4 - 10*x^3 - 10*x^2 - 5*x - 1 = 0.
  * @author Sean A. Irvine
  */
 public class A400963 extends DecimalExpansionSequence {

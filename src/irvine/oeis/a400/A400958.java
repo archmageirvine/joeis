@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400958 allocated for Henri Lifchitz.
+ * A400958 a(n) = Sum_{i=1..10^n} Moebius(i)*Moebius(i+1), where Moebius(n) = A008683(n).
  * @author Sean A. Irvine
  */
 public class A400958 extends Sequence0 {

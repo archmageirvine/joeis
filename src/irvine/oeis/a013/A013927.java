@@ -44,7 +44,7 @@ public class A013927 extends Sequence1 {
       }
       System.out.println();
     }
-    System.out.printf("(swap count = %d)\n\n", lvl);
+    System.out.printf("(swap count = %d)%n%n", lvl);
   }
 
   /* Lower bound on required number of steps to reach target */

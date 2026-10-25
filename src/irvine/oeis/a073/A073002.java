@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086993.
+ * A073002 Decimal expansion of -zeta'(2) (the first derivative of the zeta function at 2).
  * @author Sean A. Irvine
  */
 public class A073002 extends DecimalExpansionSequence {

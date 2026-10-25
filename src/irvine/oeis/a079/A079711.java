@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A079711 C(2n,n)^(2n).
+ * A079711 a(n) = C(2n,n)^(2n).
  * a(n)=binom(2*n,n)^(2*n)
  * @author Georg Fischer
  */

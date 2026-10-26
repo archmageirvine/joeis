@@ -3,7 +3,7 @@
 # Run spotbugs
 
 export PATH=${HOME}/java_apps/spotbugs/bin:${PATH}
-export SPOTBUGS_OPTS="-maxHeap 4096"
+export SPOTBUGS_OPTS="-maxHeap 20000"
 export config=${HOME}/joeis/.cvscheck/spotbugs_config.xml
 
 # There is an ant task that compile-src-debug to be run first

@@ -56,6 +56,20 @@ public class A399803 extends Sequence1 {
       }
       return Long.compare(mPos, state.mPos);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mCnt == other.mCnt && mPos == other.mPos && mSum.equals(other.mSum) && mKey.equals(other.mKey);
+    }
+
+    @Override
+    public int hashCode() {
+      return mKey.hashCode();
+    }
   }
 
   @Override

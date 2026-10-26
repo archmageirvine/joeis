@@ -31,7 +31,7 @@ public class A100960 extends Sequence3 {
         j -> Z.NEG_ONE.pow(i + j + 1 - k)
           .multiply(Binomial.binomial(i + j - k, i))
           .multiply(i).multiply(i - 1).divide2()
-          .multiply(Binomial.binomial(2L * n - 2L * k + 2, k - i).multiply(Binomial.binomial(2L * k - 2, n - j)).subtract(Binomial.binomial(2L * n - 2 * k + 1, k - i - 1).multiply(Binomial.binomial(2L * k - 3, n - j - 1).multiply(4))))
+          .multiply(Binomial.binomial(2L * n - 2L * k + 2, k - i).multiply(Binomial.binomial(2L * k - 2, n - j)).subtract(Binomial.binomial(2L * n - 2L * k + 1, k - i - 1).multiply(Binomial.binomial(2L * k - 3, n - j - 1).multiply(4))))
       )
     );
   }

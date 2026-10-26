@@ -22,7 +22,7 @@ public class A085119 extends Sequence2 {
     final MemoryFunctionInt2<Long> ackermann = new MemoryFunctionInt2<>() {
       @Override
       protected Long compute(final int i, final int j) {
-        return i == 0 ? (j + 1) % mN : j == 0 ? get(i - 1, 1) : get(i - 1, get(i, j - 1));
+        return i == 0 ? Long.valueOf((j + 1) % mN) : j == 0 ? get(i - 1, 1) : get(i - 1, get(i, j - 1));
       }
     };
     long i = -1;

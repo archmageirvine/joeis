@@ -15,4 +15,3 @@ public class A397827 extends A393538 {
     return n.den();
   }
 }
-

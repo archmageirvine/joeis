@@ -12,12 +12,16 @@ public class A046445 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mT = null;
-  private Z mA = Z.ONE;
+  private Z mA = null;
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = Z.ONE;
+      return Z.ONE;
+    }
     mT = mT == null ? Z.ONE : mT.multiply(10);
     mA = mA.multiply(mPrime.nextPrime(mT));
-    return mA.equals(Z.TWO) ? Z.ONE : mA;
+    return mA;
   }
 }

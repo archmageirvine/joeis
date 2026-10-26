@@ -12,6 +12,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A078800 extends AbstractSequence {
 
+  private final Object mLock = new Object();
   private Z mTotal = Z.ZERO;
 
   /** Construct the sequence. */
@@ -40,7 +41,7 @@ public class A078800 extends AbstractSequence {
             }
           }
           final Z dist = Z.valueOf(Math.abs(Lattices.Z2.ordinate(pt, 0)) + Math.abs(Lattices.Z2.ordinate(pt, 1))).multiply(weight);
-          synchronized (A078800.this) {
+          synchronized (mLock) {
             mTotal = mTotal.add(dist);
           }
         });

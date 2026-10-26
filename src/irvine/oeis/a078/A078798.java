@@ -12,6 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A078798 extends Sequence1 {
 
+  private final Object mLock = new Object();
   private int mN = 0;
   private Z mTotal = Z.ZERO;
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.Z2) {
@@ -19,7 +20,7 @@ public class A078798 extends Sequence1 {
       setAccumulator((walk, weight, axesMask) -> {
         final long pt = walk[mN];
         final Z dist = Z.valueOf(Math.abs(Lattices.Z2.ordinate(pt, 0)) + Math.abs(Lattices.Z2.ordinate(pt, 1))).multiply(weight);
-        synchronized (A078798.this) {
+        synchronized (mLock) {
           mTotal = mTotal.add(dist);
         }
       });

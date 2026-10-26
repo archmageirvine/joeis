@@ -13,7 +13,7 @@ public class A245665 extends A047874 {
 
   /** Construct the sequence. */
   public A245665() {
-    super(7);
+    super(9);
   }
 
   private int mN = -1;

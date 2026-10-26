@@ -11,6 +11,6 @@ public class A105062 extends MorphismFixedPointSequence {
 
   /** Construct the sequence. */
   public A105062() {
-    super(0, "1", "rows", "1->2,2->3,3->4,4->5,5->6,6->66A7,7->8,8->9,9->A,A->B,B->C,C->CC51");
+    super(1, "1", "rows", "1->2,2->3,3->4,4->5,5->6,6->66A7,7->8,8->9,9->A,A->B,B->C,C->CC51");
   }
 }

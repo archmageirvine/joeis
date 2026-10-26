@@ -1,4 +1,3 @@
-
 package irvine.oeis.a087;
 
 import irvine.math.cr.functions.CrFunctions;
@@ -13,6 +12,6 @@ public class A087016 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A087016() {
-    super(0, CrFunctions.BARNES_G.cr(new Q(3, 2)));
+    super(1, CrFunctions.BARNES_G.cr(new Q(3, 2)));
   }
 }

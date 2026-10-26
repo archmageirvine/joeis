@@ -2,13 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
+import irvine.oeis.DirectPredicate;
 import irvine.oeis.Sequence1;
 
 /**
  * A007691 Multiply-perfect numbers: n divides sigma(n).
  * @author Sean A. Irvine
  */
-public class A007691 extends Sequence1 {
+public class A007691 extends Sequence1 implements DirectPredicate {
 
   private long mN = 0;
 
@@ -20,4 +21,15 @@ public class A007691 extends Sequence1 {
       }
     }
   }
+
+  @Override
+  public boolean is(final Z n) {
+    return Functions.SIGMA.z(n).mod(n).isZero();
+  }
+
+  @Override
+  public boolean is(final long n) {
+    return Functions.SIGMA.z(n).mod(n) == 0;
+  }
+
 }

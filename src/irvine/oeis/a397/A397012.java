@@ -11,7 +11,7 @@ public class A397012 extends TwoParameterFormSequence {
 
   /** Construct the sequence. */
   public A397012() {
-    super(0, 0, 0, (x, y) -> Functions.TRIANGULAR.z(x).multiply(3).add(y * y));
+    super(1, 0, 0, (x, y) -> Functions.TRIANGULAR.z(x).multiply(3).add(y * y));
   }
 }
 

@@ -10,8 +10,10 @@ import irvine.oeis.triangle.LambdaTable;
  */
 public class A274093 extends LambdaTable {
 
+  private static final Integer ONE = 1;
+
   /** Construct the sequence. */
   public A274093() {
-    super(0, 0, n -> new Integer[] {1, n == 0 ? 1 : n}, (n, k) -> Z.NEG_ONE.pow(n).multiply(n));
+    super(0, 0, n -> new Integer[] {ONE, n == 0 ? ONE : n}, (n, k) -> Z.NEG_ONE.pow(n).multiply(n));
   }
 }

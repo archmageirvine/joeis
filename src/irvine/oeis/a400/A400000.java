@@ -1,4 +1,4 @@
-package irvine.oeis.a399;
+package irvine.oeis.a400;
 
 import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
@@ -7,10 +7,10 @@ import irvine.oeis.CachedSequence;
  * A399633 The city-building sequence: a(n) = the height h of the shortest building which can see exactly h earlier buildings.
  * @author Sean A. Irvine
  */
-public class A399633 extends CachedSequence {
+public class A400000 extends CachedSequence {
 
   /** Construct the sequence. */
-  public A399633() {
+  public A400000() {
     super(1, Long.class, (self, n) -> {
       if (n == 1) {
         return Z.ZERO;

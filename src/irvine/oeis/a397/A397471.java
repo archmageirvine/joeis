@@ -3,7 +3,7 @@ package irvine.oeis.a397;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a394.A394611;
+import irvine.oeis.a399.A399995;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
@@ -12,7 +12,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A397471 extends Sequence1 {
 
-  private final Sequence mS = new A394611();
+  private final Sequence mS = new A399995();
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mM = 4;
   private long mMax = 0;

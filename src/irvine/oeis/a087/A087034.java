@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A087033 Number of distinct values taken on by f(P) = Sum_{i=1..n} p(i)*p(n+1-i) as {p(1),p(2),...,p(n)} ranges over all permutations P of {1,2,3,...n}.
+ * A087034 Number of distinct values taken on by f(P) = Sum_{i=1..n} p(i)*p(n+1-i) as {p(1),p(2),...,p(n)} ranges over all permutations P of {1,2,3,...n}.
  * @author Sean A. Irvine
  */
 public class A087034 extends ParallelPermutationSequence {

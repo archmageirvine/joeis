@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a127.A127824;
 
 /**
- * A087019.
+ * A398208 allocated for Yunjae Lee.
  * @author Sean A. Irvine
  */
 public class A398208 extends A127824 {

@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A007691.
+ * A401045 allocated for Peer Stelldinger.
  * @author Sean A. Irvine
  */
 public class A401045 extends SimpleTransformSequence {

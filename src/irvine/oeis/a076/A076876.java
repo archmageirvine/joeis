@@ -51,7 +51,7 @@ public class A076876 extends A005316 {
     public Iterable<Pair<Integer, Z>> enumerate(final Pair<Integer, Z> state) {
       final ArrayList<Pair<Integer, Z>> list = new ArrayList<>();
       for (Pair<Integer, Z> next : enumeratePossibilities(state.right(),
-        (action, lower, upper) -> new Pair<>(state.left() < 0 && upper.isOne() ? -state.left() : state.left(), pack(lower, upper)))) {
+        (action, lower, upper) -> new Pair<>(state.left() < 0 && upper.isOne() ? Integer.valueOf(-state.left()) : state.left(), pack(lower, upper)))) {
         if (mLimit.signum() < 0 || next.right().compareTo(mLimit) < 0) {
           for (Pair<Integer, Z> s : fork(next)) {
             list.add(s);

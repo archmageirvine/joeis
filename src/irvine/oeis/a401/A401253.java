@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401025 Maximum absolute difference between consecutive terms of n/gcd(n,k), k = 1..n-1.
+ * A401253 allocated for Tomas Laris.
  * @author Sean A. Irvine
  */
 public class A401253 extends Sequence1 {

@@ -177,7 +177,7 @@ public class A018190 extends Sequence1 {
 
   private int mGlobalInit; /* a marker whether the canonLabel() routine is called for a new skeleton or the same one as before */
   //private int just_skeletons = 0; /* shall just skeletons be generated */
-  private final int mModulo = 0;
+  private static final int MODULO = 0;
   //private int part;   /* shall the generation be split -- which part is to be generated */
   private int mModuloCounter = 0;
   //private int pl_code_out = 0;
@@ -185,8 +185,7 @@ public class A018190 extends Sequence1 {
   //  private char logfilename[100];
   //private int just_count = 0; /* by default all isomers are really formed in the memory of the computer -- this can be switched off */
   private boolean mBenzenoids = false; /* shall just benzenoid structures be generated ? */
-  private final boolean mDetailed = false; /* shall additional data like the mGroupName and the formula be computed and
-       displayed ? Option: d */
+  private static final boolean DETAILED = false; /* shall additional data like the mGroupName and the formula be computed and displayed ? Option: d */
   //FILE *outfile; /* The file to write data to -- default: stdout */
 
 
@@ -781,7 +780,7 @@ public class A018190 extends Sequence1 {
 
   void writeUp() {
     ++mCount;
-    if (mDetailed) {
+    if (DETAILED) {
       ++mGroupFormula[mGroupName.ordinal()][mC][mH];
       //if (catacondensed) catas++;
     }
@@ -2624,7 +2623,7 @@ public class A018190 extends Sequence1 {
     /* In case of maxDegree<3 numbs and numbsMirror are not correct. In case of a path the mGroupName
        must be recomputed depending on the labels anyway, so only the case of a cycle -- to be exact:
        of a 3-cycle must be detected: */
-    if (mDetailed && mNumEdges == 6 && mNumVertices == 3) {
+    if (DETAILED && mNumEdges == 6 && mNumVertices == 3) {
       numbs = numbsMirror = 3;
     }
 
@@ -2905,8 +2904,8 @@ public class A018190 extends Sequence1 {
     final Edge[] starts = new Edge[3 * MAXNV]; // Each vertex can occur up to 3 times in the boundary
     final int[][] howMuch = new int[3 * MAXNV][6];
 
-    if (mModulo != 0 && mNumVertices == SPLITLEVEL) {
-      if (mModuloCounter == mModulo) {
+    if (MODULO != 0 && mNumVertices == SPLITLEVEL) {
+      if (mModuloCounter == MODULO) {
         mModuloCounter = 1;
       } else {
         ++mModuloCounter;

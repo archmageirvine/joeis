@@ -251,6 +251,11 @@
        <BugCode name="FCBL"/>
      </Match>
 
+     <!-- deliberately complicated construction -->
+     <Match classregex="irvine.oeis.a078.A078348">
+       <BugCode name="QF"/>
+     </Match>
+
      <Match classregex="irvine.util.CliFlags\$Flag">
        <BugCode name="LEST,UCPM,URV"/>
      </Match>

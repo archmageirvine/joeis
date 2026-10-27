@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a104.A104010;
 
 /**
- * A007691.
+ * A401046 allocated for Peer Stelldinger.
  * @author Sean A. Irvine
  */
 public class A401046 extends FilterSequence {

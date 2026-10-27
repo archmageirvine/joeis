@@ -83,9 +83,13 @@ public class A390187 extends ParallelPermutationSequence {
 
   @Override
   public Z next() {
-    mMin = Functions.TRIANGULAR.i(mN + 1);
+    synchronized (A390187.this) {
+      mMin = Functions.TRIANGULAR.i(mN + 1);
+    }
     super.next();
-    return Z.valueOf(mMin);
+    synchronized (A390187.this) {
+      return Z.valueOf(mMin);
+    }
   }
 }
 

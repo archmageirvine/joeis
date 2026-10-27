@@ -4,7 +4,6 @@ package irvine.oeis.a400;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
-import irvine.oeis.a399.A399633;
 
 /**
  * A400110 a(n) = n - 1 - A399633(n).
@@ -12,7 +11,7 @@ import irvine.oeis.a399.A399633;
  */
 public class A400110 extends LambdaSequence {
 
-  private static final DirectSequence A399633 = new A399633();
+  private static final DirectSequence A399633 = new A400000();
 
   /** Construct the sequence. */
   public A400110() {

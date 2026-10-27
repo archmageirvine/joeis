@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087019.
+ * A127824 Triangle in which row n is a sorted list of all numbers having total stopping time n in the Collatz (or 3x+1) iteration.
  * @author Sean A. Irvine
  */
 public class A127824 extends Sequence0 {

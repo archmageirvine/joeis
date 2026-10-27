@@ -34,7 +34,9 @@ class DrainStreamThread extends Thread {
         }
       }
     } catch (final IOException e) {
-      mError = true;
+      synchronized (this) {
+        mError = true;
+      }
     } finally {
       try {
         mInputStream.close();
@@ -45,7 +47,8 @@ class DrainStreamThread extends Thread {
   }
 
   boolean isError() {
-    return mError;
+    synchronized (this) {
+      return mError;
+    }
   }
-
 }

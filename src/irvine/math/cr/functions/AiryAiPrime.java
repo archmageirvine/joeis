@@ -10,11 +10,12 @@ import irvine.math.q.Q;
  */
 class AiryAiPrime extends CrFunction1 {
 
+  private static final Gamma GAMMA = new Gamma();
   private static final CR[] FIVE_THIRDS = {CR.valueOf(new Q(5, 3))};
   private static final CR[] ONE_THIRD = {CR.valueOf(Q.ONE_THIRD)};
   private static final CR C1 = CR.ONE_THIRD.pow(new Q(2, 3));
-  private static final CR C2 = C1.divide(CrFunctions.GAMMA.cr(new Q(2, 3)).multiply(2));
-  private static final CR C3 = CR.ONE_THIRD.pow(CR.ONE_THIRD).divide(CrFunctions.GAMMA.cr(CR.ONE_THIRD));
+  private static final CR C2 = C1.divide(GAMMA.cr(new Q(2, 3)).multiply(2));
+  private static final CR C3 = CR.ONE_THIRD.pow(CR.ONE_THIRD).divide(GAMMA.cr(CR.ONE_THIRD));
   private static final CR[] EMPTY = new CR[0];
 
   @Override

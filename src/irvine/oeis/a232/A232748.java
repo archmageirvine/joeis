@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a030.A030124;
 
 /**
- * A232748 Partial sums of the characteristic function of Hofstadter&apos;s A030124.
+ * A232748 Partial sums of the characteristic function of Hofstadter's A030124.
  * @author Georg Fischer
  */
 public class A232748 extends PartialSumSequence {

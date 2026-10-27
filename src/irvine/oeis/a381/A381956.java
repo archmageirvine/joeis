@@ -12,6 +12,6 @@ public class A381956 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A381956() {
-    super(1, 1, k -> k == 1 || ((FactorUtils.iterate(k, 0L, (x, p, e) -> e > x ? e : x) ^ k) & 1L) == 1L);
+    super(1, 1, k -> k == 1L || ((FactorUtils.iterate(k, 0L, (x, p, e) -> e > x ? e : x) ^ k) & 1L) == 1L);
   }
 }

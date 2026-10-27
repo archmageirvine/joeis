@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003215;
 
 /**
- * A087019 Lunar squares: n*n where * is lunar multiplication (A087062).
+ * A100656 a(n)=1 if a hexagonal number is a prime, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A100656 extends A003215 {

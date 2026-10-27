@@ -1,4 +1,4 @@
-package irvine.oeis.a394;
+package irvine.oeis.a399;
 
 import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
@@ -8,12 +8,12 @@ import irvine.util.array.LongDynamicLongArray;
  * A394611 a(1) = 0. For n &gt; 1, a(n) is the number of ways to write a(n-1) as the sum of two earlier terms with distinct positions in the sequence.
  * @author Sean A. Irvine
  */
-public class A394611 extends CachedSequence {
+public class A399995 extends CachedSequence {
 
   protected final LongDynamicLongArray mCounts = new LongDynamicLongArray();
 
   /** Construct the sequence. */
-  public A394611() {
+  public A399995() {
     super(1);
   }
 

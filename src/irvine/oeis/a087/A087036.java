@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087019 Lunar squares: n*n where * is lunar multiplication (A087062).
+ * A087036 Lunar cubes: n*n*n, where * is lunar multiplication.
  * @author Sean A. Irvine
  */
 public class A087036 extends Sequence0 {

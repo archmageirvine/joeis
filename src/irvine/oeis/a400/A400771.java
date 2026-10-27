@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A087033.
+ * A400771 allocated for Benjamin Simon Strang.
  * @author Sean A. Irvine
  */
 public class A400771 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A078605.
+ * A400946 allocated for Benjamin Simon Strang.
  * @author Sean A. Irvine
  */
 public class A400946 extends GfSequence {

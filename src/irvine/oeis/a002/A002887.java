@@ -60,8 +60,10 @@ public class A002887 extends Sequence1 implements GraphProcessor {
 
   @Override
   public Z next() {
-    if (++mM >= MAX_TERM) {
-      throw new UnsupportedOperationException();
+    synchronized (this) {
+      if (++mM >= MAX_TERM) {
+        throw new UnsupportedOperationException();
+      }
     }
     while (mFirstCuttingCenter.get(mM) == 0) {
       ++mN;
@@ -80,9 +82,11 @@ public class A002887 extends Sequence1 implements GraphProcessor {
       };
       gg.next();
     }
-    if (mVerbose) {
-      StringUtils.message("Cutting center size=" + mM + " order=" + mFirstCuttingCenter.get(mM) + " cutting-number=" + mFirstCuttingNumber.get(mM));
+    synchronized (this) {
+      if (mVerbose) {
+        StringUtils.message("Cutting center size=" + mM + " order=" + mFirstCuttingCenter.get(mM) + " cutting-number=" + mFirstCuttingNumber.get(mM));
+      }
+      return Z.valueOf(mFirstCuttingCenter.get(mM));
     }
-    return Z.valueOf(mFirstCuttingCenter.get(mM));
   }
 }

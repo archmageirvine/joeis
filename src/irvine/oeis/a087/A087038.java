@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087019 Lunar squares: n*n where * is lunar multiplication (A087062).
+ * A087038 Smallest integer x &gt; 1 such that x^x + n is prime, or 0 if no such x exists.
  * @author Sean A. Irvine
  */
 public class A087038 extends Sequence1 {

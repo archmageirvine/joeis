@@ -314,7 +314,7 @@ public class A060963 extends Sequence0 {
           if (filled > maxNumberAvailable && (gaps & 1) == 1) {
             mMemo.put(shiftedUsed, 0);
             return 0;
-          } else if (mStronglyDecreasing && filled == maxNumberAvailable && gaps % 2 == 1) {
+          } else if (mStronglyDecreasing && filled == maxNumberAvailable && (gaps & 1) == 1) {
             if (compulsory != 0) {
               mMemo.put(shiftedUsed, 0);
               return 0;

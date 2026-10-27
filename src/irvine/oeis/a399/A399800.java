@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087019. If n > 0 is even, then p^n + 2 is divisible by 3 for all primes p > 3, so a(n) is either 3^n + 2 (if that is prime, i.e. n is in A051783) or -1.
+ * A399800 allocated for Robert Israel.
  * @author Sean A. Irvine
  */
 public class A399800 extends Sequence0 {

@@ -1,5 +1,8 @@
 package irvine.oeis.a006;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.partition.PartitionUtils;
@@ -25,12 +28,12 @@ public class A006372 extends Sequence0 {
     }
   }
 
-  private static void enumerateRow(final int i, final int j,
+  private static void enumerateRow(final int j,
                                    final int sum, final int[] inc,
                                    final Z coeff, final int[] lambda,
                                    final int[] dx, final int[] dy,
                                    final int[] g,
-                                   final java.util.List<RowTerm> terms) {
+                                   final List<RowTerm> terms) {
     final int r = lambda.length;
     if (j == r) {
       if (sum == 2) {
@@ -56,8 +59,7 @@ public class A006372 extends Sequence0 {
       }
 
       inc[j] = ey;
-      enumerateRow(i, j + 1, sum + ex, inc, coeff.multiply(c),
-        lambda, dx, dy, g, terms);
+      enumerateRow(j + 1, sum + ex, inc, coeff.multiply(c), lambda, dx, dy, g, terms);
       inc[j] = 0;
     }
   }
@@ -77,7 +79,8 @@ public class A006372 extends Sequence0 {
     final int states = pow3[r];
 
     // Precompute all possible row terms.
-    final java.util.List<RowTerm>[] rows = new java.util.List[r];
+    @SuppressWarnings("unchecked")
+    final List<RowTerm>[] rows = new List[r];
     for (int i = 0; i < r; ++i) {
       final int[] dx = new int[r];
       final int[] dy = new int[r];
@@ -87,8 +90,8 @@ public class A006372 extends Sequence0 {
         dx[j] = lambda[j] / g[j];
         dy[j] = lambda[i] / g[j];
       }
-      rows[i] = new java.util.ArrayList<>();
-      enumerateRow(i, 0, 0, new int[r], Z.ONE,
+      rows[i] = new ArrayList<>();
+      enumerateRow(0, 0, new int[r], Z.ONE,
         lambda, dx, dy, g, rows[i]);
     }
 
@@ -119,9 +122,7 @@ public class A006372 extends Sequence0 {
           }
           if (valid) {
             final Z contribution = value.multiply(term.mCoeff);
-            next[t] = next[t] == null
-              ? contribution
-              : next[t].add(contribution);
+            next[t] = next[t] == null ? contribution : next[t].add(contribution);
           }
         }
       }

@@ -3,17 +3,17 @@ package irvine.oeis.a056;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A056411 Number of step cyclic shifted sequences using a maximum of three different symbols.
  * @author Sean A. Irvine
  */
-public class A056411 extends Sequence1 {
+public class A056411 extends Sequence0 {
 
   // After Joerg Arndt
 
-  private long mN = 0;
+  private long mN = -1;
 
   private long m(final long j, final long l) {
     long m = 1;
@@ -36,8 +36,8 @@ public class A056411 extends Sequence1 {
   }
 
   protected Z cb(final long n, final long k) {
-    if (n == 1) {
-      return Z.valueOf(k);
+    if (n <= 1) {
+      return n == 0 ? Z.ONE : Z.valueOf(k);
     }
     Z sum = Z.ZERO;
     for (long t = 0; t < n; ++t) {

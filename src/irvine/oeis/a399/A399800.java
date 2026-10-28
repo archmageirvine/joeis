@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399800 allocated for Robert Israel.
+ * A399800 a(n) is the least prime of the form p^n + 2 where p is prime, or -1 if there is no such prime.
  * @author Sean A. Irvine
  */
 public class A399800 extends Sequence0 {

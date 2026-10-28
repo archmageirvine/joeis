@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400685 allocated for Felix Huber.
+ * A400685 a(n) is the number of ways to divide a 2*n X 2*n square into two connected regions of equal area, each having the same perimeter as the square, by a simple lattice path, up to the symmetries of the square.
  * @author Felix Huber
  * @author Sean A. Irvine (Java port)
  */

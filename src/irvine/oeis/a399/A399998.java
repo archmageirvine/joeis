@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A400887 a(n+1) = a(n-a(a(n))^2) + 1, a(0) = 0.
+ * A399998 a(n+1) = a(n-a(a(n))^2) + 1, a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A399998 extends CachedSequence {

@@ -21,7 +21,7 @@ class Power<E> extends MemoryFunction<Long, E> implements Series<E> {
 
   Power(final Field<E> elementField, final Series<E> s, final long n) {
     if (elementField.isZero(s.coeff(0))) {
-      throw new UnsupportedOperationException("t is not a formal power series with t0!=0");
+      throw new UnsupportedOperationException("s is not a formal power series with s0!=0");
     }
     mElementField = elementField;
     mS = s;

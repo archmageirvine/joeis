@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A086891 Denominator of 3 * sqrt(2) * (Integral_{x=0..1} (1+x^2)^((2n-1)/2) dx - ((2n-1)!! / (2n)!!}) * arsinh(1) ).
+ * A086891 Denominator of 3 * sqrt(2) * (Integral_{x=0..1} (1+x^2)^((2n-1)/2) dx - ((2n-1)!! / (2n)!!) * arcsinh(1) ).
  * @author Sean A. Irvine
  */
 public class A086891 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400946 allocated for Benjamin Simon Strang.
+ * A400946 Squares visited by knight moves on a diagonally numbered Q1 board and always taking the available unvisited square with the shortest distance to the bisecting line of Q1. In the case of a tie, first squares with the smaller row index are preferred, second the square with larger column index is preferred. Starting square is labeled 1.
  * @author Sean A. Irvine
  */
 public class A400946 extends GfSequence {

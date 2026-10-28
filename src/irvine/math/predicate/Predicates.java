@@ -141,4 +141,6 @@ public final class Predicates {
   public static final Predicate2 BASE_POWER = new BasePower();
   /** Test if a number is a power of some base number. */
   public static final Predicate2 PANDIGITAL = new Pandigital();
+  /** Test if a number is handsome in some base. */
+  public static final Predicate2 HANDSOME = new Handsome(); // = A007532(10
 }

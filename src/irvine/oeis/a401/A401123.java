@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401123 allocated for Leonardo Boulay.
+ * A401123 Numbers k such that the number formed by 1 followed by k copies of 81, (20*100^k - 9)/11, is prime.
  * @author Sean A. Irvine
  */
 public class A401123 extends Sequence1 {

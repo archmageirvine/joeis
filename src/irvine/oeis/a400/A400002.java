@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400976 Start with a set of two adjacent points in a hexagonal lattice. At each iteration, add to the set the lattice points which are adjacent to exactly two points already in the set, but only if those two points are adjacent to each other. The sequence gives the number of points in the set after n iterations.
+ * A400002 Start with a set of two adjacent points in a hexagonal lattice. At each iteration, add to the set the lattice points which are adjacent to exactly two points already in the set, but only if those two points are adjacent to each other. The sequence gives the number of points in the set after n iterations.
  * @author Sean A. Irvine
  */
 public class A400002 extends Sequence0 {

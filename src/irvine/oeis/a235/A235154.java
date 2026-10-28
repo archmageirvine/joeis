@@ -1,5 +1,6 @@
 package irvine.oeis.a235;
 
+import java.util.Objects;
 import java.util.TreeSet;
 
 import irvine.math.function.Functions;
@@ -37,6 +38,20 @@ public class A235154 extends Sequence1 {
         return d;
       }
       return Integer.compare(mB, state.mB);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State state = (State) obj;
+      return mA == state.mA && mB == state.mB && mN.equals(state.mN);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(mA, mB, mN);
     }
   }
 

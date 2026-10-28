@@ -18,13 +18,11 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FloatUtilsTest.class);
     suite.addTestSuite(GammaTest.class);
     suite.addTestSuite(HyperbolicTest.class);
-    suite.addTestSuite(HypergeometricTest.class);
     suite.addTestSuite(LogarithmTest.class);
     suite.addTestSuite(PhysicsConstantsTest.class);
     suite.addTestSuite(PolyEvalTest.class);
     suite.addTestSuite(PowerTest.class);
     suite.addTestSuite(RealsTest.class);
-    suite.addTestSuite(ZetaTest.class);
     return suite;
   }
 

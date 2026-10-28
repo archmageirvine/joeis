@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A393538 allocated for Naveed Javeed.
+ * A393538 Numerators of the reduced fractions in the reciprocal-addition Pascal triangle, read by rows.
  * @author Sean A. Irvine
  */
 public class A393538 extends Sequence0 {

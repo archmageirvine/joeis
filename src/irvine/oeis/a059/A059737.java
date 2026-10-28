@@ -1,5 +1,6 @@
 package irvine.oeis.a059;
 
+import java.util.Objects;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
@@ -46,6 +47,20 @@ public class A059737 extends Sequence0 {
     @Override
     public String toString() {
       return mValue.toString();
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State state = (State) obj;
+      return mBase == state.mBase && mK == state.mK && mValue.equals(state.mValue) && mVE.equals(state.mVE);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(mBase, mK, mValue, mVE);
     }
   }
 

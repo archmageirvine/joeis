@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399726 allocated for James Guillochon.
+ * A399726 Number of distinct configurations of n matryoshkas that are also allowed to stack.
  * @author Sean A. Irvine
  */
 public class A399726 extends Sequence0 {

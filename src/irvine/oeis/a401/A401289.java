@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a001.A001055;
 
 /**
- * A401289 allocated for Zhicheng Wei.
+ * A401289 Numbers k such that min(A001055(k), A001055(k+1)) is larger than the corresponding values of all previous numbers.
  * @author Sean A. Irvine
  */
 public class A401289 extends RecordPositionSequence {

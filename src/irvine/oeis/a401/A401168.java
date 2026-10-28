@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401168 allocated for Scott M. Foltz.
+ * A401168 a(n) = least k such that 2*x^k/(1 + x^(2*k)) &lt; 1/2, where x = u/(u+1) and u = 2*n*(n+1).
  * @author Sean A. Irvine
  */
 public class A401168 extends Sequence1 {

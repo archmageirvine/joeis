@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401253 allocated for Tomas Laris.
+ * A401253 Sum of absolute differences of consecutive terms of gcd(n,k), k = 1..n-1.
  * @author Sean A. Irvine
  */
 public class A401253 extends Sequence1 {

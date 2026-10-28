@@ -28,6 +28,20 @@ public class A059170 extends Sequence1 {
       }
       return Integer.compare(mDigitPair, state.mDigitPair);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State state = (State) obj;
+      return mDigitPair == state.mDigitPair && mValue.equals(state.mValue);
+    }
+
+    @Override
+    public int hashCode() {
+      return mValue.hashCode();
+    }
   }
 
   private final TreeSet<State> mA = new TreeSet<>();

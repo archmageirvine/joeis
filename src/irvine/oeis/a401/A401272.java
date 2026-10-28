@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005101;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401272 allocated for Bernard Schott.
+ * A401272 a(n) is the smallest abundant number that is equal to the sum of n distinct abundant numbers (A005101).
  * @author Sean A. Irvine
  */
 public class A401272 extends Sequence1 {

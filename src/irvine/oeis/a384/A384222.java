@@ -37,4 +37,3 @@ public class A384222 extends Sequence1 {
     return Z.valueOf(mA.pollFirst());
   }
 }
-

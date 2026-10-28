@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003226 Automorphic numbers: m^2 ends with m.
+ * A400433 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
 public class A400433 extends Sequence1 {

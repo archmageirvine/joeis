@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401121 Wreathed permutations of the cyclic group C_n with cycles of lengths 1, 1, 2, 3, 4, 5, ...
+ * A401121 Weighted evaluation of the cycle index of the cyclic group C_n, where each cycle of length d contributes weight w(1) = 1 and w(d) = 1/(d-1) for d &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A401121 extends Sequence0 {

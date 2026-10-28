@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400215 allocated for Dixon J. Jones.
+ * A400215 Triangular array read by rows: Coefficients of x^(2*k) in polynomials J(n,x) = 2*(-1)^(n+1) + 2 + Sum_{k=1..n} binomial(k+n-1,2*k-1)*(n/k)*x^(2*k).
  * @author Sean A. Irvine
  */
 public class A400215 extends Sequence0 {

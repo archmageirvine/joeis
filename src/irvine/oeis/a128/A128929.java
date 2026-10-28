@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a186.A186347;
 
 /**
- * A128929 Diameter of a special type of regular graph of degree 4 whose order maintain an increase in form of an arithmetic progression.
+ * A128929 a(n) = floor((n+2)/4).
  * @author Sean A. Irvine
  */
 public class A128929 extends DifferenceSequence {

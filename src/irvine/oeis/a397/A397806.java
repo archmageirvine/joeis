@@ -39,6 +39,20 @@ public class A397806 extends Sequence0 {
       return Long.compare(mNum * other.mDen, other.mNum * mDen);
     }
 
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof Rational)) {
+        return false;
+      }
+      final Rational other = (Rational) obj;
+      return mNum == other.mNum && mDen == other.mDen;
+    }
+
+    @Override
+    public int hashCode() {
+      return Long.hashCode(mNum) * 31 + Long.hashCode(mDen);
+    }
+
     private int floorMultiply(final int k) {
       return (int) ((mNum * k) / mDen);
     }

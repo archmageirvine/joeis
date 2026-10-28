@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a055.A055165;
 
 /**
- * A088389 Number of real regular n X n (0,1) matrices modulo rows permutations.
+ * A088389 Number of real regular n X n {0,1}-matrices modulo rows permutations.
  * @author Georg Fischer
  */
 public class A088389 extends AbstractSequence {

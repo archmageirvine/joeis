@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002144;
 
 /**
- * A401002 allocated for Edward Schmidt.
+ * A401002 Pythagorean primes p = x^2 + y^2 with integers x &gt; y &gt; 0 for which one Pell-type recurrence step (x, y) -&gt; (2*x + y, x) gives another Pythagorean prime q = (2*x + y)^2 + x^2.
  * @author Sean A. Irvine
  */
 public class A401002 extends FilterSequence {

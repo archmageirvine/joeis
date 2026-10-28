@@ -514,6 +514,21 @@ public final class IntegerUtils {
   }
 
   /**
+   * Return the smallest value in a collection.
+   * @param c collection
+   * @return largest value
+   */
+  public static int min(final Collection<Integer> c) {
+    int min = Integer.MAX_VALUE;
+    for (final int v : c) {
+      if (v < min) {
+        min = v;
+      }
+    }
+    return min;
+  }
+
+  /**
    * Compute the determinant of a square matrix using the Bareiss algorithm.
    * The matrix is modified in place.
    *

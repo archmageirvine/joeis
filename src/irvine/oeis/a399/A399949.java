@@ -5,7 +5,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a400.A400000;
 
 /**
- * A399949 Record high points in A399633.
+ * A399949 Record high points in A400000.
  * @author Georg Fischer
  */
 public class A399949 extends RecordSequence {

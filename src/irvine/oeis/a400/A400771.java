@@ -3,7 +3,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A400771 allocated for Benjamin Simon Strang.
+ * A400771 Squares visited by knight moves on a diagonally numbered Q1 board and always taking the available unvisited square with the shortest Euclidean distance to the starting square (1,1). In the case of a tie, first squares with the shortest distance to the Q1 bisecting line are preferred, second the square with smaller row index is preferred. Starting square is labeled 1.
  * @author Sean A. Irvine
  */
 public class A400771 extends FiniteSequence {

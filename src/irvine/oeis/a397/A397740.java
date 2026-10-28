@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a400.A400000;
 
 /**
- * A397740 Partial sums of A399633.
+ * A397740 Partial sums of A400000.
  * @author Georg Fischer
  */
 public class A397740 extends PartialSumSequence {

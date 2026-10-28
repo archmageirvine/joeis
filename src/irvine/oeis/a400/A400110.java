@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A400110 a(n) = n - 1 - A399633(n).
+ * A400110 a(n) = n - 1 - A400000(n).
  * @author Georg Fischer
  */
 public class A400110 extends LambdaSequence {

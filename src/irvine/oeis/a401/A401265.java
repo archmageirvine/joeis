@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401265 allocated for Yunjae Lee.
+ * A401265 Number of partitions of n into distinct parts whose product is a square.
  * @author Sean A. Irvine
  */
 public class A401265 extends Sequence0 {

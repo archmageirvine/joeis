@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006999 Partitioning integers to avoid arithmetic progressions of length 3.
+ * A006999 a(n) = floor((3*a(n-1)+2)/2) with a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A006999 extends Sequence0 {

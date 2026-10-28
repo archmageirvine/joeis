@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A008884 3x+1 sequence starting at 27.
+ * A008884 3x+1 sequence starting at 27: trajectory under iterations of the Collatz map A006370.
  * @author Sean A. Irvine
  */
 public class A008884 extends Sequence0 {

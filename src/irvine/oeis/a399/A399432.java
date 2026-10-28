@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399432 allocated for Ali Sada.
+ * A399432 Irregular triangle read by rows: integers from 1 to n that share no prime factor with any other integer from 1 to n.
  * @author Sean A. Irvine
  */
 public class A399432 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401191 allocated for Ganesh Jasawat.
+ * A401191 a(0)=a(1)=1, a(n) = a(n-1) + 1 + per(a(n-2)), where per(n) is the multiplicative persistence of n.
  * @author Sean A. Irvine
  */
 public class A401191 extends Sequence0 {

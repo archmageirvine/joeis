@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399636 allocated for Nicolae Boicu.
+ * A399636 Number of weighted permutations of [n], where cycles are given weights 1, 1, 1/2, 1/3, 1/4, 1/5 ... .
  * @author Sean A. Irvine
  */
 public class A399636 extends Sequence0 {

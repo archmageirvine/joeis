@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a400.A400000;
 
 /**
- * A399763 a(n) = index of first appearance of a building of height n in the city-building sequence A399633.
+ * A399763 a(n) = index of first appearance of a building of height n in the city-building sequence A400000.
  * @author Sean A. Irvine
  */
 public class A399763 extends InverseSequence {

@@ -1,5 +1,6 @@
 package irvine.oeis.a395;
 
+import java.util.Objects;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
@@ -37,6 +38,20 @@ public class A395949 extends Sequence1 {
         return d;
       }
       return Long.compare(mC, state.mC);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State state = (State) obj;
+      return mC == state.mC && mA.equals(state.mA) && mB.equals(state.mB);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(mA, mB, mC);
     }
   }
 

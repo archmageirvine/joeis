@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A401192 allocated for Felix Huber.
+ * A401192 a(n) is the number of inequivalent lattice triangles containing n lattice points, with no boundary lattice points other than their three vertices.
  * @author Sean A. Irvine
  */
 public class A401192 extends Sequence3 {

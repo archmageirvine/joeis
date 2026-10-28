@@ -1,5 +1,6 @@
 package irvine.oeis.a121;
 
+import java.util.Objects;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
@@ -12,7 +13,7 @@ import irvine.oeis.Sequence1;
 public class A121847 extends Sequence1 {
 
   protected static final class State implements Comparable<State> {
-    protected final long mN;
+    private final long mN;
     protected final long mI;
     protected final long mJ;
 
@@ -33,6 +34,20 @@ public class A121847 extends Sequence1 {
         return d;
       }
       return Long.compare(mJ, state.mJ);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State state = (State) obj;
+      return mI == state.mI && mJ == state.mJ && mN == state.mN;
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(mI, mJ, mN);
     }
   }
 

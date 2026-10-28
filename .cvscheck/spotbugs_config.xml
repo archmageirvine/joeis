@@ -149,6 +149,9 @@
      <Match classregex="irvine.oeis.a042.A042947">
        <BugCode name="DLS"/>
      </Match>
+     <Match classregex="irvine.oeis.a393.A393336">
+       <BugCode name="DLS"/>
+     </Match>
      <Match classregex="irvine.oeis.a003.A003294">
        <BugCode name="BIT"/>
      </Match>

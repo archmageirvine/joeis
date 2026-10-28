@@ -1,5 +1,6 @@
 package irvine.oeis.a060;
 
+import java.util.Objects;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
@@ -30,6 +31,20 @@ public class A060863 extends Sequence1 {
         return c;
       }
       return mP.compareTo(state.mP);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State state = (State) obj;
+      return mNumTerms == state.mNumTerms && mSum.equals(state.mSum) && mP.equals(state.mP);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(mSum, mP, mNumTerms);
     }
   }
 

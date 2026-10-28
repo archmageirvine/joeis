@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000040;
 
 /**
- * A401304 allocated for Jean-Marc Rebert.
+ * A401304 a(n) is the least prime p such that (p^m + q^m)/(p+q) is also prime where m=prime(n), where q is the next prime after p, or -1 if no such p exists.
  * @author Sean A. Irvine
  */
 public class A401304 extends Sequence2 {

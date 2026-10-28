@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A339261 Decimal expansion of the conjecturally maximum possible volume of a polyhedron with 9 vertices inscribed in the unit sphere.
+ * A339261 Decimal expansion of the maximum possible volume of a polyhedron with 9 vertices inscribed in the unit sphere.
  * @author Georg Fischer
  */
 public class A339261 extends DecimalExpansionSequence {

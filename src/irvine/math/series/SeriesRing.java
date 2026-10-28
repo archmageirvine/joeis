@@ -457,16 +457,6 @@ public class SeriesRing<E> extends AbstractRing<Series<E>> {
   }
 
   /**
-   * Return the inverse of a series.
-   * Equivalent to <code>pow(s, -1)</code>.
-   * @param s series
-   * @return inverse series
-   */
-  public Series<E> divide(final Series<E> s) {
-    return pow(s, -1);
-  }
-
-  /**
    * Substitute <code>x^e</code> for <code>x</code> in a series.
    * Equivalent to, but more efficient than, <code>substitute(s, monomial(one, e))</code>.
    * @param s series

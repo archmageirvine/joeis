@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400777 allocated for S. I. Dimitrov.
+ * A400777 Nonsquarefree numbers k such that sigma(k) = phi(k) + tau(k)^10.
  * @author Sean A. Irvine
  */
 public class A400777 extends Sequence1 {

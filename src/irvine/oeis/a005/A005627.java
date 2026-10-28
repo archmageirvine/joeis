@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000625;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A005627 Number of achiral planted trees with n nodes.
+ * A005627 Number of achiral planted steric ternary trees with n non-leaf nodes.
  * @author Sean A. Irvine
  */
 public class A005627 extends MemorySequence {

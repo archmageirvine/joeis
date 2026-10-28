@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a400.A400000;
 
 /**
- * A397831 Indices of ones in A399633.
+ * A397831 Indices of ones in A400000.
  * @author Sean A. Irvine
  */
 public class A397831 extends FilterPositionSequence {

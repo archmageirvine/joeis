@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080842 Numbers in the x/3 + 1 conjecture: Repeat until 1 is reached: if x is divisible by 3 then divide by 3, otherwise add 1.
+ * A080842 Triangle read by rows: trajectory of n under the map if x is divisible by 3 then divide by 3, otherwise add 1 with each row terminating when 1 is reached.
  * @author Sean A. Irvine
  */
 public class A080842 extends Sequence1 {

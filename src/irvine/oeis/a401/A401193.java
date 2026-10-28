@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401193 allocated for Felix Huber.
+ * A401193 a(n) is the number of noncongruent Heronian triangles whose largest incircle tangent length is n.
  * @author Sean A. Irvine
  */
 public class A401193 extends Sequence0 {

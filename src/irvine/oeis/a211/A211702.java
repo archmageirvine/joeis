@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A211702 Rectangular array:  R(n,k)=[n/F(1)]+[n/F(2)]+...+[n/F(k)], where [ ]=floor and F=A000045 (Fibonacci numbers), by antidiagonals.
+ * A211702 Rectangular array: R(n,k)=[n/F(1)]+[n/F(2)]+...+[n/F(k)], where [ ]=floor and F=A000045 (Fibonacci numbers), by antidiagonals.
  * @author Georg Fischer
  */
 public class A211702 extends LambdaArray {

@@ -1,5 +1,6 @@
 package irvine.oeis.a007;
 
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -11,33 +12,10 @@ public class A007532 extends Sequence1 {
 
   private long mN = 0;
 
-  private boolean isPowerful(final long n, final String s, final int pos) {
-    assert n >= 0;
-    if (pos == s.length()) {
-      return n == 0;
-    }
-    final long v = s.charAt(pos) - '0';
-    if (v <= 1) {
-      return isPowerful(n - v, s, pos + 1);
-    }
-    long u = v;
-    while (u <= n) {
-      if (isPowerful(n - u, s, pos + 1)) {
-        return true;
-      }
-      u *= v;
-    }
-    return false;
-  }
-
-  private boolean isPowerful(final long n) {
-    return isPowerful(n, String.valueOf(n), 0);
-  }
-
   @Override
   public Z next() {
     while (true) {
-      if (isPowerful(++mN)) {
+      if (Predicates.HANDSOME.is(++mN)) {
         return Z.valueOf(mN);
       }
     }

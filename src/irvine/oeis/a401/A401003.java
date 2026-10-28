@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
 /**
- * A401003 allocated for Edward Schmidt.
+ * A401003 Sum of two squares obtained from the n-th Pythagorean prime by one Pell-type recurrence step: a(n) = (2*x + y)^2 + x^2, where x &gt; y &gt; 0 are integers and x^2 + y^2 = A002144(n).
  * @author Sean A. Irvine
  */
 public class A401003 extends A002144 {

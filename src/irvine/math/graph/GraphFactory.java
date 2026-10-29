@@ -437,4 +437,20 @@ public final class GraphFactory {
     }
     return g;
   }
+
+  /**
+   * Construct a circulant graph.
+   * @param n number of vertices
+   * @param s1 step 1
+   * @param s2 step 2
+   * @return circulant graph
+   */
+  public static Graph circulant(final int n, final int s1, final int s2) {
+    final Graph g = new SmallGraph(n);
+    for (int u = 0; u < n; ++u) {
+      g.addEdge(u, (u + s1) % n);
+      g.addEdge(u, (u + s2) % n);
+    }
+    return g;
+  }
 }

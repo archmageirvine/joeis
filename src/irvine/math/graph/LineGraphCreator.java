@@ -5,7 +5,7 @@ import java.util.HashMap;
 import irvine.util.Pair;
 
 /**
- * Used for construction of line graphs
+ * Used for construction of line graphs.
  * @author Sean A. Irvine
  */
 class LineGraphCreator {

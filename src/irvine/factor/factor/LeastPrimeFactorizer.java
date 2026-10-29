@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
  */
 public final class LeastPrimeFactorizer {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private static boolean sVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final PrimeDivision mPrimeDivision = new PrimeDivision(10000000);
 
   private LeastPrimeFactorizer() { }
@@ -94,7 +94,7 @@ public final class LeastPrimeFactorizer {
   private Z findLpf(final Z u) {
     try {
       final Z lpf = Jaguar.factor(u).leastPrimeFactor();
-      if (mVerbose) {
+      if (sVerbose) {
         StringUtils.message("jaguar " + lpf + " is lpf of " + u);
       }
       return lpf;
@@ -104,14 +104,14 @@ public final class LeastPrimeFactorizer {
       mPrimeDivision.factor(fs);
       final Z[] p = fs.toZArray();
       if (p.length > 0 && p[0].isProbablePrime()) {
-        if (mVerbose) {
+        if (sVerbose) {
           StringUtils.message("trial " + p[0] + " is lpf of " + u);
         }
         return p[0];
       } else {
         final Z lpf = mHardCases.get(u);
         if (lpf != null) {
-          if (mVerbose) {
+          if (sVerbose) {
             StringUtils.message("special " + lpf + " is lpf of " + u);
           }
           return lpf;
@@ -141,5 +141,13 @@ public final class LeastPrimeFactorizer {
    */
   public static Z lpf(final long n) {
     return LPF.findLpf(Z.valueOf(n));
+  }
+
+  /**
+   * Set the verbose mode.
+   * @param verbose verbose mode
+   */
+  public static void setVerbose(final boolean verbose) {
+    sVerbose = verbose;
   }
 }

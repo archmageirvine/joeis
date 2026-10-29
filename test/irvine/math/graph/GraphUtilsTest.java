@@ -238,4 +238,20 @@ public class GraphUtilsTest extends TestCase {
     g.addEdge(2, 4);
     assertFalse(GraphUtils.houseFree(g));
   }
+
+  public void testVertexTransitivity() {
+    // Cases from A087101
+    assertTrue(GraphUtils.isVertexTransitive(GraphFactory.circulant(12, 1, 4)));
+    assertTrue(GraphUtils.isVertexTransitive(GraphFactory.circulant(12, 1, 5)));
+    assertTrue(GraphUtils.isVertexTransitive(GraphFactory.circulant(12, 2, 3)));
+    assertTrue(GraphUtils.isVertexTransitive(GraphFactory.circulant(12, 2, 4)));
+  }
+
+  public void testEdgeTransitivity() {
+    // Cases from A087101
+    assertFalse(GraphUtils.isEdgeTransitive(GraphFactory.circulant(12, 1, 4)));
+    assertTrue(GraphUtils.isEdgeTransitive(GraphFactory.circulant(12, 1, 5)));
+    assertFalse(GraphUtils.isEdgeTransitive(GraphFactory.circulant(12, 2, 3)));
+    assertTrue(GraphUtils.isEdgeTransitive(GraphFactory.circulant(12, 2, 4)));
+  }
 }

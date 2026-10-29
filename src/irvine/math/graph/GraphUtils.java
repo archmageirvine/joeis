@@ -1868,5 +1868,37 @@ public final class GraphUtils {
     }
     return false;
   }
+
+  /**
+   * Determines if a graph is vertex-transitive.
+   * @param graph the graph
+   * @return true iff the graph is vertex transitive
+   */
+  public static boolean isVertexTransitive(final Graph graph) {
+    final int n = graph.order();
+    if (n <= 1) {
+      return true;
+    }
+    final int[] orbits = new int[n];
+    new Nauty(graph, new int[n], new int[n], new NautySet(n), orbits, new OptionBlk(), new StatsBlk(), new long[100]);
+    // In nauty, all vertices belonging to the same symmetry orbit share the same representative value.
+    // A graph is vertex-transitive if every vertex belongs to orbit 0's equivalence class.
+    final int firstOrbit = orbits[0];
+    for (int i = 1; i < n; ++i) {
+      if (orbits[i] != firstOrbit) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Determines if a graph is edge-transitive.
+   * @param graph the graph
+   * @return true iff the graph is edge transitive
+   */
+  public static boolean isEdgeTransitive(final Graph graph) {
+    return isVertexTransitive(graph.lineGraph());
+  }
 }
 

@@ -11,6 +11,6 @@ public class A084651 extends EngelExpansionSequence {
 
   /** Construct the sequence. */
   public A084651() {
-    super(CR.ONE.cos());
+    super(0, CR.ONE.cos());
   }
 }

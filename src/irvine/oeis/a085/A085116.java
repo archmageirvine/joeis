@@ -9,6 +9,10 @@ import irvine.math.z.Z;
  */
 public class A085116 extends A085115 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected Z select(final Q n) {
     return n.den();

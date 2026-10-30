@@ -12,7 +12,7 @@ public class A086179 extends PolynomialRootExpansionSequence {
 
   /** Construct the sequence. */
   public A086179() {
-    super(0, Polynomial.create(-81, -36, -14, 24, 4, -6, 1), CR.THREE, CR.FOUR);
+    super(1, Polynomial.create(-81, -36, -14, 24, 4, -6, 1), CR.THREE, CR.FOUR);
   }
 }
 

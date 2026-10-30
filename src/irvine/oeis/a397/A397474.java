@@ -17,12 +17,13 @@ public class A397474 extends CachedSequence {
   /** Construct the sequence. */
   public A397474() {
     super(0);
+    setOffset(1);
   }
 
   @Override
   protected Z compute(final Z nn) {
     final long n = nn.longValueExact();
-    if (n == 0) {
+    if (n <= 0) {
       return Z.ZERO;
     }
     final Z v = a(n - 1);

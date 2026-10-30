@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A035109 Numerators in the expansion of the Dirichlet series zeta(s) * Product((1+p^-s) / (1-p^(1-s))), p &gt; 2.
  * @author Sean A. Irvine
  */
-public class A035109 extends Sequence0 {
+public class A035109 extends Sequence1 {
 
   private long mN = 0;
 

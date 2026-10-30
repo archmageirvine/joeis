@@ -12,7 +12,7 @@ public class A385186 extends UnionSequence {
 
   /** Construct the sequence. */
   public A385186() {
-    super(0, new A036689(), new A036690());
+    super(1, new A036689(), new A036690());
   }
 }
 

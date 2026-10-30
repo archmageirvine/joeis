@@ -23,6 +23,6 @@ public class A398228 extends TwoParameterFormSequence {
 
   /** Construct the sequence. */
   public A398228() {
-    super(0, 0, 0, (j, k) -> j <= k ? lucas(k).add(lucas(j)) : null);
+    super(1, 0, 0, (j, k) -> j <= k ? lucas(k).add(lucas(j)) : null);
   }
 }

@@ -2,13 +2,13 @@ package irvine.oeis.a401;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A401136 allocated for Yagel Bar.
  * @author Sean A. Irvine
  */
-public class A401136 extends Sequence0 {
+public class A401136 extends Sequence1 {
 
   private long mN = 0;
   private long mM = -1;

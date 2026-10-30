@@ -13,6 +13,10 @@ import irvine.oeis.a051.A051424;
  */
 public class A086191 extends A051424 {
 
+  {
+    setOffset(1);
+  }
+
   private final Sequence mP = new A000040();
 
   @Override

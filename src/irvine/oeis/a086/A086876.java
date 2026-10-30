@@ -11,6 +11,6 @@ public class A086876 extends RunLengthTransform {
 
   /** Construct the sequence. */
   public A086876() {
-    super(1, new A071542());
+    super(0, new A071542());
   }
 }

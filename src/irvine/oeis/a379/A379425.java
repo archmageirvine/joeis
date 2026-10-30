@@ -8,7 +8,7 @@ import irvine.oeis.a074.A074962;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A379425 Decimal expansion of Ni_2 = gamma/3 - log(2*Pi)/2 - 2*zeta&apos;(-1) + 2/3, where gamma = A001620.
+ * A379425 Decimal expansion of Ni_2 = gamma/3 - log(2*Pi)/2 - 2*zeta'(-1) + 2/3, where gamma = A001620.
  * @author Georg Fischer
  */
 public class A379425 extends DecimalExpansionSequence {

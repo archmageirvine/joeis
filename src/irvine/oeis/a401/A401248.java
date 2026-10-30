@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a384.A384222;
 
 /**
- * A401248 allocated for Omar E. Pol.
+ * A401248 Minimum number of terms in a 2-dense sublist of divisors of n.
  * @author Sean A. Irvine
  */
 public class A401248 extends A384222 {

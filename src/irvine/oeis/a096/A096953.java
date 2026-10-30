@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.DirectSequence;
 
 /**
- * A096953 Denominators of upper bounds for Lagrange-remainder in Taylor&apos;s expansion of log((1+x)/(1-x)) multiplied by 6/5.
+ * A096953 Denominators of upper bounds for Lagrange-remainder in Taylor's expansion of log((1+x)/(1-x)) multiplied by 6/5.
  * @author Georg Fischer
  */
 public class A096953 extends A096952 implements DirectSequence {

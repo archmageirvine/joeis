@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000244;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401301 allocated for Iurii Kirpichev.
+ * A401301 Smallest prime that is the sum of n distinct elements from the union of primes and powers of 3 starting at 3.
  * @author Sean A. Irvine
  */
 public class A401301 extends Sequence1 {

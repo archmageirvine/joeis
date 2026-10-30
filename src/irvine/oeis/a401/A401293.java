@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027556;
 
 /**
- * A401293 allocated for Ali Sada.
+ * A401293 Number of orange squares after n unfoldings in the edge-memory unfolding array.
  * @author Sean A. Irvine
  */
 public class A401293 extends Sequence0 {

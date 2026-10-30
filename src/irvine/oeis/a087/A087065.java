@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A087065 Sum{Floor(n*r^k): r=sqrt(3)-1, k&gt;=0}.
+ * A087065 a(n) = Sum_{k&gt;=0} floor(n*(sqrt(3)-1)^k).
  * @author Georg Fischer
  */
 public class A087065 extends LambdaSequence {

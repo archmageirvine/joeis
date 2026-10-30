@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A400886 allocated for \u017diga Pirc.
+ * A400886 Table read by descending antidiagonals: T(n, k) = (k*n-sigma(n))/gcd(tau(n)-k, k*n-sigma(n)), n&gt;=2, k&gt;=0.
  * @author Sean A. Irvine
  */
 public class A400886 extends Sequence2 {

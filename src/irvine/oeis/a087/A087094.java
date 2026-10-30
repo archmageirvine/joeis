@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A399071.
+ * A087094 a(n) = smallest k such that (10^k-1)/9 == 0 mod prime(n)^2, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A087094 extends A000040 {

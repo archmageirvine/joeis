@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A401302 allocated for Iurii Kirpichev.
+ * A401302 Completely multiplicative with a(p) = Phi_p(p) = (p^p-1)/(p-1) for prime p.
  * @author Sean A. Irvine
  */
 public class A401302 extends MultiplicativeSequence {

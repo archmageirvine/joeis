@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A399895 allocated for Marco Mantovanelli.
+ * A399895 Parity-perturbed Hofstadter-type sequence with delays 3 and 6 and initial values (1,1,3,3,5,1).
  * @author Sean A. Irvine
  */
 public class A399895 extends CachedSequence {

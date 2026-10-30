@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a025.A025487;
 
 /**
- * A401315 allocated for Zhicheng Wei.
+ * A401315 Number of terms in A025487 not exceeding 10^n.
  * @author Sean A. Irvine
  */
 public class A401315 extends Sequence0 {

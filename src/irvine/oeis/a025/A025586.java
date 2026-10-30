@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A025586 Largest value in '3x+1' trajectory of n.
+ * A025586 Largest value in the '3x+1' trajectory of n, or 0 if the orbit is unbounded.
  * @author Sean A. Irvine
  */
 public class A025586 extends Sequence1 {

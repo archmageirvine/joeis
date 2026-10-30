@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A056412.
+ * A087090 Positive numbers k such that p=k^2+k+41 and p+2 are twin primes.
  * @author Sean A. Irvine
  */
 public class A087090 extends FilterNumberSequence {

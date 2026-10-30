@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A063234 Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 82 ).
+ * A063234 Duplicate of A063220.
  * @author Georg Fischer
  */
 public class A063234 extends GeneratingFunctionSequence {

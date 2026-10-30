@@ -7,7 +7,7 @@ import irvine.util.bumper.Bumper;
 import irvine.util.bumper.BumperFactory;
 
 /**
- * A400989 allocated for Zhao Hui Du.
+ * A400989 Numbers that can be written from base 2 to base 17 using only the digits 0 to 9.
  * @author Sean A. Irvine
  */
 public class A400989 extends Sequence1 {

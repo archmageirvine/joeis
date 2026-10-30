@@ -1,39 +1,22 @@
 package irvine.oeis.a087;
 
-import irvine.math.graph.Graph;
-import irvine.math.graph.GraphUtils;
-import irvine.math.nauty.GenerateGraphs;
-import irvine.oeis.ParallelGenerateGraphsSequence;
+import irvine.math.z.Integers;
+import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence1;
+import irvine.oeis.a401.A401566;
 
 /**
- * A087101.
+ * A087101 Number of symmetric quartic graphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A087101 extends ParallelGenerateGraphsSequence {
+public class A087101 extends Sequence1 {
 
-  private static boolean accept(final Graph graph) {
-    // A quartic symmetric graph must be:
-    // 1. 4-regular (guaranteed by generator)
-    // 2. Vertex-transitive (automorphism group has a single vertex orbit)
-    // 3. Edge-transitive (its line graph is vertex-transitive)
-    if (graph.order() <= 1) {
-      return false;
-    }
-    return GraphUtils.isVertexTransitive(graph) && GraphUtils.isEdgeTransitive(graph);
-  }
-
-  /** Construct the sequence. */
-  public A087101() {
-    super(0, 4, 0, () -> g -> accept(g) ? 1 : 0);
-  }
+  private final DirectSequence mC = DirectSequence.create(new A401566());
+  private long mN = 0;
 
   @Override
-  protected void graphGenInit(final GenerateGraphs gg) {
-    gg.setVertices(mN);
-    gg.setMinEdges(2 * mN);
-    gg.setMaxEdges(2 * mN);
-    gg.setMinDeg(4);
-    gg.setMaxDeg(4);
-    gg.setConnectionLevel(1); // note there are more results if non-connected are considered
+  public Z next() {
+    return Integers.SINGLETON.sumdiv(++mN, mC::a);
   }
 }

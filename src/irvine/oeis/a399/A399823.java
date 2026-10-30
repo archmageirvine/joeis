@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a077.A077800;
 
 /**
- * A399071.
+ * A399823 For n&gt;=1, a(n) is the least twin prime that starts a block of 2*n - 1 consecutive terms of A077800 having a twin-prime sum.
  * @author Sean A. Irvine
  */
 public class A399823 extends Sequence1 {

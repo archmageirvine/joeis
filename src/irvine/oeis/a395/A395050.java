@@ -1,41 +1,36 @@
 package irvine.oeis.a395;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-
-import irvine.math.function.Functions;
+import irvine.factor.factor.Jaguar;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.a001.A001055;
-import irvine.oeis.a025.A025487;
+import irvine.oeis.FilterNumberSequence;
 
 /**
  * A395050 allocated for Alex Ratushnyak.
  * @author Sean A. Irvine
  */
-public class A395050 extends A001055 {
+public class A395050 extends FilterNumberSequence {
 
-  private static final List<Z> EMPTY = Collections.emptyList();
-  private final Sequence mS = new A025487();
-  private int mRowLength = super.next().intValueExact();
-  private final HashMap<Integer, List<Z>> mA = new HashMap<>();
-  private int mN = 1;
-  private int mM = -1;
+  private static boolean is1(final long n) {
+    for (final Z d : Jaguar.factor(n * (n + 1)).divisors()) {
+      if (d.compareTo(n) > 0 && Predicates.SQUARE.is(d)) {
+        return true;
+      }
+    }
+    return false;
+  }
 
-  @Override
-  public Z next() {
-    if (++mM >= mRowLength) {
-      ++mN;
-      mRowLength = super.next().intValueExact();
-      mM = 0;
+  private static boolean is2(final long n) {
+    for (final Z d : Jaguar.factor(n).square().divisors()) {
+      if (d.compareTo(n) > 0 && Predicates.OBLONG.is(d)) {
+        return true;
+      }
     }
-    while (mA.getOrDefault(mN, EMPTY).size() != mRowLength) {
-      final Z t = mS.next();
-      final int s = Functions.SIGMA0.i(t);
-      mA.computeIfAbsent(s, k -> new ArrayList<>()).add(t);
-    }
-    return mA.get(mN).get(mM);
+    return false;
+  }
+
+  /** Construct the sequence. */
+  public A395050() {
+    super(1, k -> is1(k) && is2(k));
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400919 allocated for Carlo Nurra.
+ * A400919 Sum of the remainders of n modulo the odd numbers 3, 5, ..., 2*floor(n/3)+1.
  * @author Sean A. Irvine
  */
 public class A400919 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A399323.
+ * A401269 Primes p such that the Euclidean algorithm quotients for the ratio p/q, where q is the next prime after p, are all prime numbers (excluding the integer part zero and the initial quotient 1).
  * @author Sean A. Irvine
  */
 public class A401269 extends A000040 {

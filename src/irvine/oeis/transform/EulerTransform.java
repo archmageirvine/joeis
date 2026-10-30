@@ -112,8 +112,7 @@ public class EulerTransform extends AbstractSequence {
   }
 
   /**
-   * Create a new sequence
-   * with additional long terms prepended.
+   * Create a new sequence with additional long terms prepended.
    * @param offset first index
    * @param seq main sequence
    * @param preTerms additional terms to be prepended;

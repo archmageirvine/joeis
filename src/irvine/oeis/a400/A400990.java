@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A400990 allocated for Zhao Hui Du.
+ * A400990 Number of terms of A400989 in the interval [17^(n-1), 17^n).
  * @author Sean A. Irvine
  */
 public class A400990 extends Sequence1 {

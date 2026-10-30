@@ -7,7 +7,7 @@ import irvine.oeis.a073.A073002;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A335006 Decimal expansion of gamma - zeta&apos;(2)/zeta(2), where gamma is the Euler-Mascheroni constant.
+ * A335006 Decimal expansion of gamma - zeta'(2)/zeta(2), where gamma is the Euler-Mascheroni constant.
  * @author Georg Fischer
  */
 public class A335006 extends DecimalExpansionSequence {

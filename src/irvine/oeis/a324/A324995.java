@@ -7,7 +7,7 @@ import irvine.oeis.a074.A074962;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A324995 Decimal expansion of zeta&apos;(-1, 1/4).
+ * A324995 Decimal expansion of zeta'(-1, 1/4).
  * @author Georg Fischer
  */
 public class A324995 extends DecimalExpansionSequence {

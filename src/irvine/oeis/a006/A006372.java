@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006372.
+ * A006372 Numbers of terms in expressions for coefficients of "Lovelock Lagrangians" (or "Gauss-Bonnet forms") in terms of Riemann-Christoffel curvature tensor and two of its contractions (viz., the Ricci curvature tensor and the Riemann curvature scalar) for n-dimensional differentiable manifolds having a general linear connection.
  * @author Sean A. Irvine
  */
 public class A006372 extends Sequence0 {

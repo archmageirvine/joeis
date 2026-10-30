@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401296 allocated for John M Schoonover.
+ * A401296 Smallest even k &gt; 0 such that k == +1 or -1 (mod p) for each of the first n odd primes p.
  * @author Sean A. Irvine
  */
 public class A401296 extends Sequence1 {

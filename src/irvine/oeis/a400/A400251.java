@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A400251 Numbers k for which A400249(k) is not zero, where A400249 is M√∂bius transform of A085731, with A085731(n) = gcd(n,n&apos;), and n&apos; the arithmetic derivative of n.
+ * A400251 Numbers k for which A400249(k) is not zero, where A400249 is M\u00f6bius transform of A085731, with A085731(n) = gcd(n,n'), and n' the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A400251 extends FilterPositionSequence {

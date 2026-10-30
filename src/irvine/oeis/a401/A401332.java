@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A394051.
+ * A401332 Numbers k such that the units digit of 3*k equals the tens digit of k^3.
  * @author Sean A. Irvine
  */
 public class A401332 extends FilterNumberSequence {

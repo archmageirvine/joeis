@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A401163.
+ * A401329 Least elements of periodic cycles of the map T(n) = n + D(n) - D(n+1), where D(n) is the largest positive proper divisor of n.
  * @author Sean A. Irvine
  */
 public class A401329 extends Sequence1 {

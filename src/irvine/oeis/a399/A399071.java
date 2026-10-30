@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399071: Nearest forward strides on the phyllotaxis spiral.
+ * A399071 Smallest positive integers k that minimize the Euclidean distance from point P_i to P_(i+k), where P_i = (i*cos(i), i*sin(i)), for integers i &gt;= 1, after removing consecutive duplicates.
  * @author Sean A. Irvine
  */
 public class A399071 extends Sequence1 {

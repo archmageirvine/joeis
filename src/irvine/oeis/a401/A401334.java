@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A394051.
+ * A401334 allocated for Marco Mantovanelli.
  * @author Sean A. Irvine
  */
 public class A401334 extends CachedSequence {

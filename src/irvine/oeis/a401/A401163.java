@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401163.
+ * A401163 Primes p such that, considering only splits containing at least one composite segment, the set of terminal primes reachable along shortest paths has cardinality at least 2.
  * @author Sean A. Irvine
  */
 public class A401163 extends Sequence1 {

@@ -35,7 +35,7 @@ public class A401042 extends Sequence2 {
     return cnt;
   }
 
-  private Z t(final long n, final long i) {
+  protected Z t(final long n, final long i) {
     if (i == 0) {
       return Z.ONE;
     }

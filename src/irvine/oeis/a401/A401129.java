@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401129 allocated for Adam Benzan.
+ * A401129 a(n) is the number of points (x, y) of the square lattice Z^2 connected to the origin by a path of unit horizontal and vertical steps through points satisfying digitsum(|x|) + digitsum(|y|) &lt;= n.
  * @author Sean A. Irvine
  */
 public class A401129 extends Sequence0 {

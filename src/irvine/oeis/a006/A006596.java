@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006596 Numbers k such that (2^(2k+1) - 2^(k+1) + 1)/5 is prime.
+ * A006596 Numbers k such that (2^(2*k+1) - 2^(k+1) + 1)/5 is prime.
  * @author Sean A. Irvine
  */
 public class A006596 extends Sequence1 {

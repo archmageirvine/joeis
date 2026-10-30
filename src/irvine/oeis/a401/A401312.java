@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A401312 allocated for Mourad Belafsahi.
+ * A401312 Numerator of Sum_{k=1..n} 1/k^prime(k).
  * @author Sean A. Irvine
  */
 public class A401312 extends A000040 {

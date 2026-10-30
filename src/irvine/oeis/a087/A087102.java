@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A087102: Number of numbers occurring most frequently
+ * A087102 Number of numbers occurring most frequently as difference between consecutive primes &lt;= prime(n).
  * @author Sean A. Irvine
  */
 public class A087102 extends Sequence2 {

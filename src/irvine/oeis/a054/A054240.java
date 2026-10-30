@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A054240 Bit-interleaved number addition table; like binary addition but carries shift 2 instead of 1; addition base sqrt(2).
+ * A054240 Bit-interleaved number addition table T(n,k) (n&gt;=0, k&gt;=0) read by antidiagonals: like binary addition but carries are shifted 2 places instead of 1; in other words, T(n,k) is the sum n+k in base sqrt(2).
  * @author Georg Fischer
  */
 public class A054240 extends UpperLeftTriangle {

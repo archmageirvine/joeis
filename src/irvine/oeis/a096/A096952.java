@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RationalLambdaSequence;
 
 /**
- * A096952 Numerators of upper bounds for Lagrange remainder in Taylor&apos;s expansion of log((1+x)/(1-x)) for x=1/3, multiplied by 6/5.
+ * A096952 Numerators of upper bounds for Lagrange remainder in Taylor's expansion of log((1+x)/(1-x)) for x=1/3, multiplied by 6/5.
  * @author Georg Fischer
  */
 public class A096952 extends RationalLambdaSequence {

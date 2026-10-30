@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelPermutationSequence;
 
 /**
- * A399277 allocated for Daniel Yaqubi.
+ * A399277 Number of distinct multisets of (p(j+1) - p(j)) mod n for permutations p in S_n.
  * @author Sean A. Irvine
  */
 public class A399277 extends ParallelPermutationSequence {

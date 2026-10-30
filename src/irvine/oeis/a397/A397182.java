@@ -4,7 +4,7 @@ package irvine.oeis.a397;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A397182 a(n) = maximum number of regions the plane can be divided into by drawing n constrained long-legged A&apos;s.
+ * A397182 a(n) = maximum number of regions the plane can be divided into by drawing n constrained long-legged A's.
  * @author Georg Fischer
  */
 public class A397182 extends HolonomicRecurrence {

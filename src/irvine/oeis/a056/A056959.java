@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A056959 In repeated iterations of function m -&gt; m/2 if m even, m -&gt; 3m+1 if m odd, a(n) is maximum value achieved if starting from n.
+ * A056959 a(n) is the maximum of the orbit of n under iterations of the Collatz or 3x+1 function A006370 (x/2 if even, 3x+1 else), or 0 if the orbit is unbounded.
  * @author Sean A. Irvine
  */
 public class A056959 extends Sequence1 {

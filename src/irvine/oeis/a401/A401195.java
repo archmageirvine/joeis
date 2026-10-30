@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A087101.
+ * A401195 allocated for Alex Towell.
  * @author Sean A. Irvine
  */
 public class A401195 extends ParallelGenerateGraphsSequence {

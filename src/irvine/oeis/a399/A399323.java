@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399323.
+ * A399323 Triangle read by rows: T(n,t), 1 &lt;= t &lt;= n, of the polynomial family defined by T(n,0)=1, T(t,t)=T(t,t-1), dT(n,t)/dn = s*t*T(n,t-1) for s=2.
  * @author Sean A. Irvine
  */
 public class A399323 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005835;
 
 /**
- * A401115 allocated for Guido Avagliano.
+ * A401115 Pseudoperfect numbers k such that every proper divisor of k belongs to at least one subset of proper divisors summing to k.
  * @author Sean A. Irvine
  */
 public class A401115 extends A005835 {

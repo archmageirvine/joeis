@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A399323.
+ * A400177 Irregular triangle: row n consists of the numbers x in [1,...,n-1] coprime to n such that (1/x) mod n &lt; (-1/x) mod n.
  * @author Sean A. Irvine
  */
 public class A400177 extends Sequence3 {

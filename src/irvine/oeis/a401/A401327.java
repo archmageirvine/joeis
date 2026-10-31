@@ -1,211 +1,314 @@
-
 package irvine.oeis.a401;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.CachedCyclotomicExtension;
+import irvine.math.q.CyclotomicExtension;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A401327 Folding polygons.
+ * A401327: Folding polygons.
  * @author Sean A. Irvine
  */
 public class A401327 extends Sequence3 {
 
-  private static final double EPS = 1e-10;
+  // A simple floating-point version of all this is significantly faster, but I
+  // didn't have complete confidence in the results.  This one should be exact
+  // but despite all my caching is still very slow.
 
-  private static final class Point {
-    final double mX;
-    final double mY;
+  /**
+   * Exact search for the maximum number of legal folds of a regular polygon.
+   */
+  private static final class FoldingSearch {
 
-    private Point(final double x, final double y) {
-      mX = x;
-      mY = y;
+    private final int mN;
+    private final CyclotomicExtension mField;
+    private final Polynomial<Q> mZ;
+    private final Map<String, Integer> mCache = new HashMap<>();
+    private final Polynomial<Q> mInvS;
+
+    // Precompute some values for a polygon to avoid repeated calculation
+    private final class Geometry {
+      private final List<Polynomial<Q>> mConjugates = new ArrayList<>();
+      private final List<Polynomial<Q>> mReflectionRatios = new ArrayList<>();
+      private final byte[][][] mOrientations;
+
+      private Geometry(final List<Polynomial<Q>> polygon) {
+        final int n = polygon.size();
+        for (final Polynomial<Q> qs : polygon) {
+          mConjugates.add(mField.conjugate(qs));
+        }
+        for (int k = 0; k < n; ++k) {
+          final Polynomial<Q> a = polygon.get((k + n - 1) % n);
+          final Polynomial<Q> b = polygon.get((k + 1) % n);
+          final Polynomial<Q> d = mField.subtract(b, a);
+          if (mField.isZero(d)) {
+            mReflectionRatios.add(null);
+          } else {
+            mReflectionRatios.add(mField.divide(d, mField.conjugate(d)));
+          }
+        }
+        mOrientations = new byte[n][n][n];
+        for (int i = 0; i < n; ++i) {
+          for (int j = 0; j < n; ++j) {
+            Arrays.fill(mOrientations[i][j], (byte) 2);
+          }
+        }
+      }
+
+      Polynomial<Q> conjugate(final int k) {
+        return mConjugates.get(k);
+      }
+
+      Polynomial<Q> reflectionRatio(final int k) {
+        return mReflectionRatios.get(k);
+      }
+
+      int orientation(final List<Polynomial<Q>> polygon, final int i, final int j, final int k) {
+        byte result = mOrientations[i][j][k];
+        if (result == 2) {
+          result = (byte) FoldingSearch.this.orientation(
+            polygon.get(i), polygon.get(j), polygon.get(k));
+          mOrientations[i][j][k] = result;
+        }
+        return result;
+      }
+    }
+
+    FoldingSearch(final int n) {
+      mN = n;
+      mField = new CachedCyclotomicExtension(n);
+      mZ = mField.x();
+      final Polynomial<Q> s = mField.subtract(mZ, mField.conjugate(mZ));
+      mInvS = mField.inverse(s);
+    }
+
+    /**
+     * Compute the maximum number of folds.
+     * @return maximum number of folds
+     */
+    int compute() {
+      if (mN == 3) {
+        return 0;
+      }
+      final List<Polynomial<Q>> polygon = new ArrayList<>();
+      for (int k = 0; k < mN; ++k) {
+        polygon.add(mField.pow(mZ, k));
+      }
+      final Geometry geometry = new Geometry(polygon);
+      // By rotational symmetry, the first fold can be at vertex 0
+      final List<Polynomial<Q>> folded = fold(polygon, geometry, 0);
+      if (!isSimple(folded, new Geometry(folded)) || mField.compare(area(folded), area(polygon)) >= 0) {
+        return 0;
+      }
+      return 1 + search(folded);
+    }
+
+    private Polynomial<Q> reflect(final Polynomial<Q> a, final Polynomial<Q> conjugateP, final Polynomial<Q> conjugateA, final Polynomial<Q> ratio) {
+      return mField.add(a, mField.multiply(ratio, mField.subtract(conjugateP, conjugateA)));
+    }
+
+    /**
+     * Fold one vertex.
+     * @param polygon polygon
+     * @param vertex vertex to fold
+     * @return new polygon, or null if the fold is degenerate
+     */
+    private List<Polynomial<Q>> fold(final List<Polynomial<Q>> polygon, final Geometry geometry, final int vertex) {
+      final int n = polygon.size();
+      final int previous = (vertex + n - 1) % n;
+      final Polynomial<Q> a = polygon.get(previous);
+      final List<Polynomial<Q>> result = new ArrayList<>(polygon);
+      final Polynomial<Q> ratio = geometry.reflectionRatio(vertex);
+      if (ratio == null) {
+        return null;
+      }
+      result.set(vertex, reflect(a, geometry.conjugate(vertex), geometry.conjugate(previous), ratio));
+      return result;
+    }
+
+    /**
+     * Sign of the imaginary part of an element.
+     * The result is obtained entirely within the real cyclotomic field.
+     * @param w field element
+     * @return sign of imaginary part
+     */
+    private int imaginarySign(final Polynomial<Q> w) {
+      final Polynomial<Q> numerator = mField.subtract(w, mField.conjugate(w));
+      return mField.signum(mField.multiply(numerator, mInvS));
+    }
+
+    /**
+     * Orientation of three points.
+     * @return -1, 0, or 1
+     */
+    private int orientation(final Polynomial<Q> a, final Polynomial<Q> b, final Polynomial<Q> c) {
+      final Polynomial<Q> u = mField.subtract(b, a);
+      final Polynomial<Q> v = mField.subtract(c, a);
+      return imaginarySign(mField.multiply(mField.conjugate(u), v));
+    }
+
+    /**
+     * Test whether p lies on the closed segment ab.
+     * Assumes that a, b, p are collinear.
+     */
+    private boolean onSegment(final Polynomial<Q> a, final Polynomial<Q> b, final Polynomial<Q> p) {
+      final Polynomial<Q> u = mField.subtract(p, a);
+      final Polynomial<Q> v = mField.subtract(p, b);
+      final Polynomial<Q> dot = mField.multiply(mField.conjugate(u), v);
+      // dot is real; p is between a and b exactly when dot <= 0.
+      return mField.signum(dot) <= 0;
+    }
+
+    /**
+     * Test whether two closed segments intersect.
+     */
+    private boolean intersects(final List<Polynomial<Q>> polygon, final Geometry geometry, final int i, final int j, final int k, final int l) {
+      final int o1 = geometry.orientation(polygon, i, j, k);
+      final int o2 = geometry.orientation(polygon, i, j, l);
+      final int o3 = geometry.orientation(polygon, k, l, i);
+      final int o4 = geometry.orientation(polygon, k, l, j);
+      if (o1 * o2 < 0 && o3 * o4 < 0) {
+        return true;
+      }
+      final Polynomial<Q> a = polygon.get(i);
+      final Polynomial<Q> b = polygon.get(j);
+      final Polynomial<Q> c = polygon.get(k);
+      final Polynomial<Q> d = polygon.get(l);
+      return (o1 == 0 && onSegment(a, b, c))
+        || (o2 == 0 && onSegment(a, b, d))
+        || (o3 == 0 && onSegment(c, d, a))
+        || (o4 == 0 && onSegment(c, d, b));
+    }
+
+    /**
+     * Test whether a polygon is simple.
+     */
+    private boolean isSimple(final List<Polynomial<Q>> polygon, final Geometry geometry) {
+      final int n = polygon.size();
+
+      // Reject zero-length edges.
+      for (int k = 0; k < n; ++k) {
+        if (polygon.get(k).equals(polygon.get((k + 1) % n))) {
+          return false;
+        }
+      }
+
+      // Reject adjacent edges which overlap rather than just meeting
+      // at their common endpoint.
+      for (int k = 0; k < n; ++k) {
+        final int i = (k + n - 1) % n;
+        final int j = (k + 1) % n;
+        if (geometry.orientation(polygon, i, k, j) == 0) {
+          final Polynomial<Q> a = polygon.get(i);
+          final Polynomial<Q> b = polygon.get(k);
+          final Polynomial<Q> c = polygon.get(j);
+          if (!onSegment(a, c, b)) {
+            return false;
+          }
+        }
+      }
+
+      // Non-adjacent edges must be disjoint, including at endpoints.
+      for (int i = 0; i < n; ++i) {
+        final int ii = (i + 1) % n;
+        for (int j = i + 1; j < n; ++j) {
+          if (j == i + 1 || (i == 0 && j == n - 1)) {
+            continue;
+          }
+          if (intersects(polygon, geometry, i, ii, j, (j + 1) % n)) {
+            return false;
+          }
+        }
+      }
+
+      // A simple polygon cannot have zero area.
+      return !mField.isZero(signedArea(polygon));
+    }
+
+    /**
+     * Twice the signed area, divided by sin(2 pi / n).
+     * This is a positive constant multiple of the actual signed area.
+     */
+    private Polynomial<Q> signedArea(final List<Polynomial<Q>> polygon) {
+      Polynomial<Q> sum = mField.zero();
+      for (int k = 0; k < polygon.size(); ++k) {
+        final Polynomial<Q> a = polygon.get(k);
+        final Polynomial<Q> b = polygon.get((k + 1) % polygon.size());
+        sum = mField.add(sum, mField.multiply(mField.conjugate(a), b));
+      }
+      return mField.multiply(mField.subtract(sum, mField.conjugate(sum)), mInvS);
+    }
+
+    /**
+     * Absolute area, up to a fixed positive factor.
+     */
+    private Polynomial<Q> area(final List<Polynomial<Q>> polygon) {
+      final Polynomial<Q> a = signedArea(polygon);
+      return mField.signum(a) < 0 ? mField.subtract(mField.zero(), a) : a;
+    }
+
+    /**
+     * Canonical key, invariant under cyclic permutation and reversal.
+     */
+    private String key(final List<Polynomial<Q>> polygon) {
+      final int n = polygon.size();
+      String best = null;
+      for (int direction = -1; direction <= 1; direction += 2) {
+        for (int start = 0; start < n; ++start) {
+          final StringBuilder sb = new StringBuilder();
+          for (int k = 0; k < n; ++k) {
+            final int index = (start + direction * k + n) % n;
+            final String s = polygon.get(index).toString();
+            sb.append(s.length()).append(':').append(s).append(';');
+          }
+          final String candidate = sb.toString();
+          if (best == null || candidate.compareTo(best) < 0) {
+            best = candidate;
+          }
+        }
+      }
+      return best;
+    }
+
+    /**
+     * Maximum number of additional folds possible from this state.
+     */
+    private int search(final List<Polynomial<Q>> polygon) {
+      final String key = key(polygon);
+      final Integer cached = mCache.get(key);
+      if (cached != null) {
+        return cached;
+      }
+
+      final Polynomial<Q> oldArea = area(polygon);
+      int best = 0;
+
+      final Geometry geometry = new Geometry(polygon);
+      for (int k = 0; k < mN; ++k) {
+        final List<Polynomial<Q>> next = fold(polygon, geometry, k);
+        final Geometry nextGeometry = new Geometry(next);
+        if (isSimple(next, nextGeometry) && mField.compare(area(next), oldArea) < 0) {
+          best = Math.max(best, 1 + search(next));
+        }
+      }
+
+      mCache.put(key, best);
+      return best;
     }
   }
 
   private int mN = 2;
 
-  private static double cross(final Point a, final Point b, final Point c) {
-    return (b.mX - a.mX) * (c.mY - a.mY) - (b.mY - a.mY) * (c.mX - a.mX);
-  }
-
-  private static double area(final Point[] p) {
-    double s = 0;
-    for (int i = 0; i < p.length; ++i) {
-      final Point a = p[i];
-      final Point b = p[(i + 1) % p.length];
-      s += a.mX * b.mY - a.mY * b.mX;
-    }
-    return Math.abs(s) / 2;
-  }
-
-  private static boolean onSegment(final Point a, final Point b, final Point p) {
-    return p.mX >= Math.min(a.mX, b.mX) - EPS
-      && p.mX <= Math.max(a.mX, b.mX) + EPS
-      && p.mY >= Math.min(a.mY, b.mY) - EPS
-      && p.mY <= Math.max(a.mY, b.mY) + EPS;
-  }
-
-  private static int sign(final double x) {
-    if (x > EPS) {
-      return 1;
-    }
-    if (x < -EPS) {
-      return -1;
-    }
-    return 0;
-  }
-
-  private static boolean intersects(final Point a, final Point b, final Point c, final Point d) {
-    final int o1 = sign(cross(a, b, c));
-    final int o2 = sign(cross(a, b, d));
-    final int o3 = sign(cross(c, d, a));
-    final int o4 = sign(cross(c, d, b));
-    if (o1 * o2 < 0 && o3 * o4 < 0) {
-      return true;
-    }
-    return o1 == 0 && onSegment(a, b, c)
-      || o2 == 0 && onSegment(a, b, d)
-      || o3 == 0 && onSegment(c, d, a)
-      || o4 == 0 && onSegment(c, d, b);
-  }
-
-  private static boolean simple(final Point[] p) {
-    final int n = p.length;
-    for (int i = 0; i < n; ++i) {
-      final int i2 = (i + 1) % n;
-      for (int j = i + 1; j < n; ++j) {
-        final int j2 = (j + 1) % n;
-        // Adjacent edges share a permitted endpoint
-        if (i == j || i2 == j || j2 == i) {
-          continue;
-        }
-        if (intersects(p[i], p[i2], p[j], p[j2])) {
-          return false;
-        }
-      }
-    }
-    return true;
-  }
-
-  private static Point reflect(final Point p, final Point a, final Point b) {
-    final double dx = b.mX - a.mX;
-    final double dy = b.mY - a.mY;
-    final double t = ((p.mX - a.mX) * dx + (p.mY - a.mY) * dy) / (dx * dx + dy * dy);
-    final double hx = a.mX + t * dx;
-    final double hy = a.mY + t * dy;
-    return new Point(2 * hx - p.mX, 2 * hy - p.mY);
-  }
-
-
-  private final Map<StateKey, Integer> mCache = new HashMap<>();
-
-  private static final class StateKey {
-    private static final double SCALE = 1e10;
-    private final long[] mCoordinates;
-    private final int mHashCode;
-
-    StateKey(final Point[] p) {
-      final int n = p.length;
-      final long[] x = new long[n];
-      final long[] y = new long[n];
-      for (int i = 0; i < n; ++i) {
-        x[i] = Math.round(p[i].mX * SCALE);
-        y[i] = Math.round(p[i].mY * SCALE);
-      }
-
-      long[] best = null;
-      for (int start = 0; start < n; ++start) {
-        for (int dir : new int[] {1, -1}) {
-          final long[] candidate = new long[2 * n];
-          for (int i = 0; i < n; ++i) {
-            final int j = (start + dir * i + n * n) % n;
-            candidate[2 * i] = x[j];
-            candidate[2 * i + 1] = y[j];
-          }
-          if (best == null || compare(candidate, best) < 0) {
-            best = candidate;
-          }
-        }
-      }
-      mCoordinates = best;
-      mHashCode = Arrays.hashCode(best);
-    }
-
-    private static int compare(final long[] a, final long[] b) {
-      for (int i = 0; i < a.length; ++i) {
-        final int c = Long.compare(a[i], b[i]);
-        if (c != 0) {
-          return c;
-        }
-      }
-      return 0;
-    }
-
-    @Override
-    public int hashCode() {
-      return mHashCode;
-    }
-
-    @Override
-    public boolean equals(final Object obj) {
-      return obj instanceof StateKey
-        && Arrays.equals(mCoordinates, ((StateKey) obj).mCoordinates);
-    }
-  }
-
-
-  private int search(final Point[] p, final double oldArea) {
-    final StateKey key = new StateKey(p);
-    final Integer cached = mCache.get(key);
-    if (cached != null) {
-      return cached;
-    }
-
-    int best = 0;
-    for (int i = 0; i < mN; ++i) {
-      final int prev = (i + mN - 1) % mN;
-      final int next = (i + 1) % mN;
-      final Point[] q = p.clone();
-      q[i] = reflect(p[i], p[prev], p[next]);
-      if (!simple(q)) {
-        continue;
-      }
-      final double newArea = area(q);
-      if (newArea >= oldArea - EPS * Math.max(1.0, oldArea)) {
-        continue;
-      }
-      best = Math.max(best, 1 + search(q, newArea));
-    }
-
-    mCache.put(key, best);
-    return best;
-  }
-
   @Override
   public Z next() {
-    if (++mN == 3) {
-      return Z.ZERO;
-    }
-    mCache.clear();
-    final Point[] p = new Point[mN];
-    for (int i = 0; i < mN; ++i) {
-      final double angle = 2 * Math.PI * i / mN;
-      p[i] = new Point(Math.cos(angle), Math.sin(angle));
-    }
-    // WLOG we can perform the initial fold since all vertices are equivalent
-    final double a = area(p);
-    p[0] = reflect(p[0], p[mN - 1], p[1]);
-    if (!simple(p)) {
-      return Z.ZERO;
-    }
-    final double b = area(p);
-    if (b >= a) {
-      return Z.ZERO;
-    }
-    return Z.valueOf(1 + search(p, b));
+    return Z.valueOf(new FoldingSearch(++mN).compute());
   }
 }

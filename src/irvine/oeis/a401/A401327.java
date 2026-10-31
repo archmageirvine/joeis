@@ -8,7 +8,6 @@ import java.util.Map;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.CachedCyclotomicExtension;
-import irvine.math.q.CyclotomicExtension;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
@@ -23,28 +22,26 @@ public class A401327 extends Sequence3 {
   // didn't have complete confidence in the results.  This one should be exact
   // but despite all my caching is still very slow.
 
+  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
+
   /**
    * Exact search for the maximum number of legal folds of a regular polygon.
    */
   private static final class FoldingSearch {
 
     private final int mN;
-    private final CyclotomicExtension mField;
+    private final CachedCyclotomicExtension mField;
     private final Polynomial<Q> mZ;
     private final Map<String, Integer> mCache = new HashMap<>();
     private final Polynomial<Q> mInvS;
 
     // Precompute some values for a polygon to avoid repeated calculation
     private final class Geometry {
-      private final List<Polynomial<Q>> mConjugates = new ArrayList<>();
       private final List<Polynomial<Q>> mReflectionRatios = new ArrayList<>();
       private final byte[][][] mOrientations;
 
       private Geometry(final List<Polynomial<Q>> polygon) {
         final int n = polygon.size();
-        for (final Polynomial<Q> qs : polygon) {
-          mConjugates.add(mField.conjugate(qs));
-        }
         for (int k = 0; k < n; ++k) {
           final Polynomial<Q> a = polygon.get((k + n - 1) % n);
           final Polynomial<Q> b = polygon.get((k + 1) % n);
@@ -63,10 +60,6 @@ public class A401327 extends Sequence3 {
         }
       }
 
-      Polynomial<Q> conjugate(final int k) {
-        return mConjugates.get(k);
-      }
-
       Polynomial<Q> reflectionRatio(final int k) {
         return mReflectionRatios.get(k);
       }
@@ -74,8 +67,7 @@ public class A401327 extends Sequence3 {
       int orientation(final List<Polynomial<Q>> polygon, final int i, final int j, final int k) {
         byte result = mOrientations[i][j][k];
         if (result == 2) {
-          result = (byte) FoldingSearch.this.orientation(
-            polygon.get(i), polygon.get(j), polygon.get(k));
+          result = (byte) FoldingSearch.this.orientation(polygon.get(i), polygon.get(j), polygon.get(k));
           mOrientations[i][j][k] = result;
         }
         return result;
@@ -108,7 +100,11 @@ public class A401327 extends Sequence3 {
       if (!isSimple(folded, new Geometry(folded)) || mField.compare(area(folded), area(polygon)) >= 0) {
         return 0;
       }
-      return 1 + search(folded);
+      final int res = search(folded);
+      if (VERBOSE) {
+        mField.reportStats();
+      }
+      return 1 + res;
     }
 
     private Polynomial<Q> reflect(final Polynomial<Q> a, final Polynomial<Q> conjugateP, final Polynomial<Q> conjugateA, final Polynomial<Q> ratio) {
@@ -130,7 +126,7 @@ public class A401327 extends Sequence3 {
       if (ratio == null) {
         return null;
       }
-      result.set(vertex, reflect(a, geometry.conjugate(vertex), geometry.conjugate(previous), ratio));
+      result.set(vertex, reflect(a, mField.conjugate(polygon.get(vertex)), mField.conjugate(a), ratio));
       return result;
     }
 

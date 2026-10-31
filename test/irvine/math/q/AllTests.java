@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BernoulliSequenceTest.class);
+    suite.addTestSuite(CyclotomicExtensionTest.class);
     suite.addTestSuite(HarmonicSequenceTest.class);
     suite.addTestSuite(RationalsTest.class);
     suite.addTestSuite(RationalUnityExtensionTest.class);

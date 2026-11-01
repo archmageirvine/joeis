@@ -16,14 +16,12 @@ A000637 Simple dependency on A000638
 A000638 Number of permutation groups of degree n
 A000679 Subset of A000001, hard
 A000769 No 3 in a line problem, hard
-A000785 Number of asymmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have no symmetry. 
-A000786 Depends on A000784, A000785
 A000789 Ramsey numbers
 A000791 Ramsey numbers
 A000794 Permanent projective plane (does not exist for 6?) - how to make matrix?
 A000840 Graph colouring, insufficient detail [geng -d3 -D3 (2n) | pickg -b (does't do automorphism part)]
 A000843 Graph colouring, insufficient detail
-A000876 Need more detail [had 1 email from author], cf. A000361
+A000876 From a self-replicating tiling. Need more detail [had 1 email from author], cf. A000361
 A000937 Length of longest simple cycle without chords in the n-dimensional hypercube graph, have paper
 A000952 Numbers k == 2 (mod 4) that are the orders of conference matrices
 A000983 Size of minimal binary covering code of length n and covering radius 1
@@ -2705,3 +2703,4 @@ A086878 Numbers n such that A003313(n) = A003313(2n).
 A087048 Class number of indefinite quadratic forms over the integers in two variables with discriminant D = D(n) = A079896(n), n>=1.
 A087071 Number of distinct prime 4-component links with crossing number n.
 A087089 Periods of logistic map intervals in order of size.
+A087176 a(n) - 1 is the maximal number of integers for which the absolute value of a reducible polynomial with integral coefficients of degree n is a prime.

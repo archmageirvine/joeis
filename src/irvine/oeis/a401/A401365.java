@@ -4,7 +4,7 @@ package irvine.oeis.a401;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A401365 Partial sums of A401407: a(n) = Sum_{k=1..n} lambda(k)*chi_{-4}(k), where lambda is Liouville&apos;s function A008836 and chi_{-4} = A101455 is the nonprincipal Dirichlet character modulo 4.
+ * A401365 Partial sums of A401407: a(n) = Sum_{k=1..n} lambda(k)*chi_{-4}(k), where lambda is Liouville's function A008836 and chi_{-4} = A101455 is the nonprincipal Dirichlet character modulo 4.
  * @author Georg Fischer
  */
 public class A401365 extends PartialSumSequence {

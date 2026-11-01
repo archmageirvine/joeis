@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A401327: Folding polygons.
+ * A401327 allocated for Gordon Hamilton.
  * @author Sean A. Irvine
  */
 public class A401327 extends Sequence3 {
@@ -291,6 +291,7 @@ public class A401327 extends Sequence3 {
       for (int k = 0; k < mN; ++k) {
         final List<Polynomial<Q>> next = fold(polygon, geometry, k);
         final Geometry nextGeometry = new Geometry(next);
+        //System.out.println("vertex=" + k + " area=" + mField.toCR(area(polygon)) + " -> " + mField.toCR(area(next)) + " simple=" + isSimple(next, nextGeometry) + " trivial=" + isTrivialFold(polygon, k));
         if (isSimple(next, nextGeometry) && mField.compare(area(next), oldArea) < 0) {
           best = Math.max(best, 1 + search(next));
         }

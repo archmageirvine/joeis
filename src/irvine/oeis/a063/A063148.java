@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.DeadSequence;
 
 /**
- * A063148 Duplicate of A063128.
+ * A063148 Dimension of the space of weight 2n cusp forms for Gamma_0( 80 ).
  * @author Georg Fischer
  */
 public class A063148 extends DeadSequence {

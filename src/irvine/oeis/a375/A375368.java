@@ -5,7 +5,7 @@ import irvine.oeis.a367.A367842;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A375368 Decimal expansion of zeta&apos;(2)/(2*Pi^2) + log(2*Pi)/6 - gamma/12.
+ * A375368 Decimal expansion of zeta'(2)/(2*Pi^2) + log(2*Pi)/6 - gamma/12.
  * @author Georg Fischer
  */
 public class A375368 extends DecimalExpansionSequence {

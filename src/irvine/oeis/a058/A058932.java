@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A395158 Number of 2-connected claw-free labeled cubic graphs with 2n nodes.
+ * A058932 Number of unlabeled claw-free cubic graphs with 2n nodes and connectivity 1.
  * @author Sean A. Irvine
  */
 public class A058932 extends ParallelGenerateGraphsSequence {

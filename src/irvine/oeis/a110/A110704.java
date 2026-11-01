@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002275;
 import irvine.oeis.transform.FilterTransformSequence;
 
 /**
- * A110704 Primes of form &quot;n 42&apos;s followed by 43&quot;.
+ * A110704 Primes of form "n 42's followed by 43".
  * @author Georg Fischer
  */
 public class A110704 extends FilterTransformSequence {

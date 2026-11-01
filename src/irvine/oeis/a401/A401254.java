@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A401254: Anti-abundant numbers with no anti-abundant antidivisors.
+ * A401254 allocated for Guido Avagliano.
  * @author Sean A. Irvine
  */
 public class A401254 extends Sequence1 {

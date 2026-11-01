@@ -6,7 +6,7 @@ import irvine.oeis.a261.A261829;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A324992 Decimal expansion of zeta&apos;(-1, 1/2).
+ * A324992 Decimal expansion of zeta'(-1, 1/2).
  * @author Georg Fischer
  */
 public class A324992 extends DecimalExpansionSequence {

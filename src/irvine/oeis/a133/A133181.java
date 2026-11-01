@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A395158.
+ * A133181 Number of distinct connected simple symmetric (edge- and vertex-transitive) graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A133181 extends ParallelGenerateGraphsSequence {

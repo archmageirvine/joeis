@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A395158 Number of 2-connected claw-free labeled cubic graphs with 2n nodes.
+ * A058931 Number of 3-connected claw-free cubic graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A058931 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A047864 Number of labeled bipartite graphs with n nodes.
+ * A087139 Least k&gt;1 such that p^k - p^(k-1) + 1 is prime for p = prime(n).
  * @author Sean A. Irvine
  */
 public class A087139 extends A000040 {

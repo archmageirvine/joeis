@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A137469 Numbers with an odd number of 1&apos;s in base 5 expansion.
+ * A137469 Numbers with an odd number of 1's in base 5 expansion.
  * @author Georg Fischer
  */
 public class A137469 extends FilterNumberSequence {

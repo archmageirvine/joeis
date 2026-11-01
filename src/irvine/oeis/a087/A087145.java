@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a133.A133181;
 
 /**
- * A005349 Niven (or Harshad, or harshad) numbers: numbers that are divisible by the sum of their digits.
+ * A087145 Number of distinct disconnected simple symmetric graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A087145 extends Sequence1 {

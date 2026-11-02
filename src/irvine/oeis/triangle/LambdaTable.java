@@ -53,6 +53,15 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
   }
 
   /**
+   * Determine the range for column indexes.
+   * @param n row index
+   * @return mColRange
+   */
+  public Integer[] getColumnRange(final int n) {
+    return mColRange.apply((int) n);
+  }
+
+  /**
    * Return next term, reading the triangle row by row from left to right,
    * starting with T[mRowMin, mColMin].
    * @return the next term of the sequence.

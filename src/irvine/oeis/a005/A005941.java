@@ -1,9 +1,7 @@
 package irvine.oeis.a005;
 
-import java.util.ArrayList;
-
-import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunction3;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -29,32 +27,22 @@ public class A005941 extends MemoryFunction2Sequence<Z, Z> implements DirectSequ
   }
 
   private static class GFunction extends MemoryFunction3<Z, Z> {
-
-    private final Fast mPrime = new Fast();
-    private final ArrayList<Long> mP = new ArrayList<>();
-    {
-      mP.add(null);
-      mP.add(2L);
-    }
-
-    private long ithPrime(final Z ii) {
-      final int i = ii.intValueExact();
-      while (i >= mP.size()) {
-        mP.add(mPrime.nextPrime(mP.get(mP.size() - 1)));
-      }
-      return mP.get(i);
-    }
-
     @Override
     protected Z compute(final Z n, final Z i, final Z x) {
-      if (Z.ONE.equals(n)) {
-        return x;
-      }
-      if (n.mod(ithPrime(i)) == 0) {
-        return get(n.divide(ithPrime(i)), i, x.multiply2().add(1));
+      final long p = Functions.PRIME.l(i);
+      if (n.mod(p) == 0) {
+        return get(n.divide(p), i, x.multiply2().add(1));
       } else {
         return get(n, i.add(1), x.multiply2());
       }
+    }
+
+    @Override
+    public Z get(final Z n, final Z i, final Z x) {
+      if (n.isOne()) {
+        return x;
+      }
+      return super.get(n, i, x);
     }
   }
 

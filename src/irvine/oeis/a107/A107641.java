@@ -6,6 +6,10 @@ package irvine.oeis.a107;
  */
 public class A107641 extends A107640 {
 
+  {
+    setOffset(2);
+  }
+
   /** Construct the sequence. */
   public A107641() {
     super((byte) 3);

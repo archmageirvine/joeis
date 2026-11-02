@@ -26,14 +26,24 @@ public abstract class EngelExpansionSequence extends AbstractSequence {
   }
 
   /**
+   * Constructor with offset and precision.
+   * @param offset first index
+   * @param prec precision for CR.ceil()
+   * @param n number to expand
+   */
+  public EngelExpansionSequence(final int offset, final int prec, final CR n) {
+    super(offset);
+    mPrec = prec;
+    mA = n;
+  }
+
+  /**
    * Constructor with precision.
    * @param prec precision for CR.ceil()
    * @param n number to expand
    */
   public EngelExpansionSequence(final int prec, final CR n) {
-    super(DEFOFF);
-    mPrec = prec;
-    mA = n;
+    this(DEFOFF, prec, n);
   }
 
   @Override

@@ -11,6 +11,6 @@ public class A084652 extends EngelExpansionSequence {
 
   /** Construct the sequence. */
   public A084652() {
-    super(0, CR.ONE.tan());
+    super(0, 0, CR.ONE.tan());
   }
 }

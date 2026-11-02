@@ -2704,3 +2704,7 @@ A087048 Class number of indefinite quadratic forms over the integers in two vari
 A087071 Number of distinct prime 4-component links with crossing number n.
 A087089 Periods of logistic map intervals in order of size.
 A087176 a(n) - 1 is the maximal number of integers for which the absolute value of a reducible polynomial with integral coefficients of degree n is a prime.
+A087235 a(n) is the largest number in the set of solutions to n = x/pi(x), where pi(x) = A000720(x).
+A087236 a(n) is the difference between the largest and smallest integer solutions to n=x/pi(x), where pi(x) = A000720(x).
+A087237 a(n) = (Max{x : n*pi(x) = x} - Min{x : n*pi(x) = x})/n = A087236(n)/n.
+A087240 First differences of A087235.

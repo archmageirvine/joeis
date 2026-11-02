@@ -10,7 +10,7 @@ public class A056423 extends MobiusTransformSequence {
 
   /** Construct the sequence. */
   public A056423() {
-    super(new A056414(), 0);
+    super(new A056414().skip(), 0);
     next();
   }
 }

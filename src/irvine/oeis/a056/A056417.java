@@ -11,12 +11,9 @@ import irvine.oeis.a002.A002729;
  */
 public class A056417 extends Sequence1 {
 
-  private final Sequence mA = new A056412();
-  private final Sequence mB = new A056411();
-  private final Sequence mC = new A002729();
-  {
-    mC.next();
-  }
+  private final Sequence mA = new A056412().skip();
+  private final Sequence mB = new A056411().skip();
+  private final Sequence mC = new A002729().skip();
 
   @Override
   public Z next() {

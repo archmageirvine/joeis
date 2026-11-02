@@ -14,7 +14,7 @@ public class A087200 extends A005235 {
 
   @Override
   public Z next() {
-    Z m = super.next();
+    final Z m = super.next();
     final Z p = Functions.PRIMORIAL_COUNT.z(++mN);
     final Z t = Functions.NEXT_PRIME.z(p.add(m));
     return t.subtract(p);

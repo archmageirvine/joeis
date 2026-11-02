@@ -25,7 +25,7 @@ public class A237270 extends Sequence1 {
     return (2 * n + 1 - k * k + k) / (2 * k);
   }
 
-  private static List<long[]> path(final int n) {
+  private static List<long[]> path(final long n) {
     final int c = Functions.TRINV.i(n);
     final long[] h = new long[c];
     for (int k = 0; k < c; ++k) {
@@ -66,7 +66,7 @@ public class A237270 extends Sequence1 {
     return p;
   }
 
-  private static List<List<Long>> segments(final int n) {
+  private static List<List<Long>> segments(final long n) {
     final List<long[]> pN = path(n);
     final List<long[]> pN1 = path(n - 1);
     // Drop first and last of path[n]
@@ -103,7 +103,7 @@ public class A237270 extends Sequence1 {
    * @param n value
    * @return list of parts
    */
-  public static ArrayList<Z> symmetricRepresentationSigma(final int n) {
+  public static ArrayList<Z> symmetricRepresentationSigma(final long n) {
     final ArrayList<Z> res = new ArrayList<>();
     for (final List<Long> seg : segments(n)) {
       long sum = 0;

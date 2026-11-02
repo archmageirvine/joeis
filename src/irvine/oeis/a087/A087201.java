@@ -17,7 +17,7 @@ public class A087201 extends Sequence3 {
 
   @Override
   public Z next() {
-    Z m = mA.next();
+    final Z m = mA.next();
     final Z p = Functions.PRIMORIAL_COUNT.z(++mN);
     final Z t = Functions.PREV_PRIME.z(p.subtract(m));
     return p.subtract(t);

@@ -19,7 +19,7 @@ public class A087203 extends Sequence3 {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    Z m = mA.next();
+    final Z m = mA.next();
     final Z t = Functions.PREV_PRIME.z(mF.subtract(m));
     return mF.subtract(t);
   }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401309
+ * A401309 allocated for M. Jeremie Lafitte (Levitas).
  * @author Sean A. Irvine
  */
 public class A401309 extends Sequence0 {

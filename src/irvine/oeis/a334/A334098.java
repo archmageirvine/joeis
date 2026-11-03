@@ -5,7 +5,7 @@ import irvine.oeis.a331.A331410;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A334098 a(n) = A334097(n) - A331410(n), where former is the exponent of the eventual power of 2 reached, and the latter is the number of iterations needed to get there, when starting from n and using the map k -&gt; k + k/p, where p can be any odd prime factor of k,
+ * A334098 a(n) = A334097(n) - A331410(n), where former is the exponent of the eventual power of 2 reached, and the latter is the number of iterations needed to get there, when starting from n and using the map k -&gt; k + k/p, where p can be any odd prime factor of k, for example, the largest.
  * @author Georg Fischer
  */
 public class A334098 extends MultiTransformSequence {

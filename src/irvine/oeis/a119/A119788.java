@@ -6,7 +6,7 @@ import irvine.oeis.a058.A058313;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A119788 Ratio of the numerator of the product of n and the n-th alternating harmonic number n*H&apos;(n) to the numerator of the n-th alternating harmonic number H&apos;(n) = Sum_{k=1..n} (-1)^(k+1)*1/k.
+ * A119788 Ratio of the numerator of the product of n and the n-th alternating harmonic number n*H'(n) to the numerator of the n-th alternating harmonic number H'(n) = Sum_{k=1..n} (-1)^(k+1)*1/k.
  * @author Georg Fischer
  */
 public class A119788 extends SingleTransformSequence {

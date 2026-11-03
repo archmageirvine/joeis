@@ -10,7 +10,7 @@ import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A270953 Number T(n,k) of set partitions of [n] having exactly k pairs (m,m+1) such that m+1 is in some block b and m is in block b+1;
+ * A270953 Number T(n,k) of set partitions of [n] having exactly k pairs (m,m+1) such that m+1 is in some block b and m is in block b+1; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n-floor((1+sqrt(max(0,8n-7)))/2), read by rows.
  * triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n-floor((1+sqrt(max(0,8n-7)))/2), read by rows.
  * @author Georg Fischer
  */

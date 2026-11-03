@@ -2,9 +2,7 @@ package irvine.oeis.a401;
 
 import java.util.HashSet;
 
-import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.CyclotomicExtension;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -25,7 +23,7 @@ public class A401170 extends Sequence1 {
   @Override
   public Z next() {
     final int m = 2 * (++mN + 1);
-    final CyclotomicExtension ring = new CyclotomicExtension("x", PolynomialUtils.zToQ(CyclotomicPolynomials.cyclotomic(m)));
+    final CyclotomicExtension ring = new CyclotomicExtension(m);
     final HashSet<Polynomial<Q>> s = new HashSet<>();
     for (int k = 1; k <= mN; ++k) {
       final Polynomial<Q> qk = ring.add(v(ring, k), v(ring, m - k));

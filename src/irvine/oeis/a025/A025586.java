@@ -1,21 +1,27 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A025586 Largest value in the '3x+1' trajectory of n, or 0 if the orbit is unbounded.
  * @author Sean A. Irvine
  */
-public class A025586 extends Sequence1 {
+public class A025586 extends Sequence1 implements DirectSequence {
 
-  private Z mN = Z.ZERO;
+  protected Z mN = Z.ZERO;
 
   @Override
   public Z next() {
     mN = mN.add(1);
-    Z max = mN;
-    Z m = mN;
+    return a(mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    Z max = n;
+    Z m = n;
     while (!Z.ONE.equals(m)) {
       if (m.isEven()) {
         m = m.makeOdd();
@@ -27,5 +33,10 @@ public class A025586 extends Sequence1 {
       }
     }
     return max;
+  }
+
+  @Override
+  public Z a(final long n) {
+    return a(Z.valueOf(n));
   }
 }

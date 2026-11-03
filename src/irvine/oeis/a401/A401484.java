@@ -5,7 +5,7 @@ import irvine.factor.util.FactorUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401484 Numbers whose largest square unitary divisor is a fourth power.
+ * A401484 allocated for Amiram Eldar.
  * @author Georg Fischer
  */
 public class A401484 extends FilterNumberSequence {

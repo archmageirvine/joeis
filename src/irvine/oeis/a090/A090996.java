@@ -6,7 +6,7 @@ import irvine.oeis.a063.A063250;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A090996 Number of leading 1&apos;s in binary expansion of n.
+ * A090996 Number of leading 1's in binary expansion of n.
  * @author Georg Fischer
  */
 public class A090996 extends SingleTransformSequence {

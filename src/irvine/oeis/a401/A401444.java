@@ -21,7 +21,7 @@ public class A401444 extends FilterSequence {
           final long x = Functions.SQRT.l(x2);
           final long u = x2 - y * y;
           final long v = 2 * y * x;
-          final long q = (u * u + (u + v) * (u + v));
+          final long q = u * u + (u + v) * (u + v);
           return (q & 3) == 2 && Predicates.PRIME.is(q / 2);
         }
       }

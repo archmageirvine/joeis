@@ -9,13 +9,13 @@ import irvine.oeis.LambdaSequence;
  */
 public class A270967 extends LambdaSequence {
 
-  private static final A270953 mSeq = new A270953();
+  private static final A270953 SEQ = new A270953();
 
   /** Construct the sequence. */
   public A270967() {
     super(0, n -> {
-      mSeq.a(n, 0);
-      return mSeq.a(n, mSeq.getColumnRange(Math.toIntExact(n))[1]);
+      SEQ.a(n, 0);
+      return SEQ.a(n, SEQ.getColumnRange(Math.toIntExact(n))[1]);
     });
   }
 }

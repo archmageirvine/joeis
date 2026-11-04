@@ -21,7 +21,7 @@ public class A401445 extends A002144 {
         final long x = Functions.SQRT.l(x2);
         final long u = x2 - y * y;
         final long v = 2 * y * x;
-        final long q = (u * u + (u + v) * (u + v));
+        final long q = u * u + (u + v) * (u + v);
         return Z.valueOf(q / 2);
       }
     }

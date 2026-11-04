@@ -13,11 +13,11 @@ import irvine.oeis.a001.A001227;
  */
 public class A086670 extends Sequence1 {
 
-  final Sequence mA000203 = new A000203();
-  final Sequence mA001227 = new A001227();
+  private final Sequence mA000203 = new A000203();
+  private final Sequence mA001227 = new A001227();
+
   @Override
   public Z next() {
-    return mA000203.next().subtract(mA001227.next()).divide(Z.TWO);
+    return mA000203.next().subtract(mA001227.next()).divide2();
   }
-
 }

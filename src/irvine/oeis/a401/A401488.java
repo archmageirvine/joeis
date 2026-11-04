@@ -16,4 +16,4 @@ public class A401488 extends Sequence0 {
     return ++mN == 0 ? Z.ONE : Z.ONE.shiftLeft((1L << mN) - 1).add(Z.ONE.shiftLeft((1L << (mN - 1)) - 1));
   }
 }
-// 2^(2^n-1) + 2^(2^(n-1)-1) for n >= 1.
+

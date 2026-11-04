@@ -4,15 +4,15 @@ import irvine.math.cr.CR;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A399548 allocated for Gerhard Kirchner.
  * @author Sean A. Irvine
  */
-public class A399548 extends Sequence1 {
+public class A399548 extends Sequence0 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
@@ -25,7 +25,7 @@ public class A399548 extends Sequence1 {
       sum = sum.add(Binomial.binomial(x + y, y));
     }
     sum = sum.multiply2().add(Binomial.binomial(2 * k, k).multiply(1 - r.multiply(2).floor().mod(2)));
-    return sum.multiply(4).subtract(4);
+    return sum;
   }
 }
 

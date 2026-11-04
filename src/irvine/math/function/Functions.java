@@ -283,6 +283,8 @@ public final class Functions {
   public static final Function2 QUOTIENT_FLOOR = new QuotientFloor();
   /** Floor of a quotient. */
   public static final Function2 GCUD = new Gcud();
+  /** Integer logarithm. */
+  public static final Function2 FLOOR_LOG = new FloorLog();
 
   // Aggregating functions
 

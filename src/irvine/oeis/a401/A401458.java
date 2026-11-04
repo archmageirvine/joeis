@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401458 Number of fixed points of S(x) = n + sum of squares of digits of x.
+ * A401458 allocated for Helen Grundman.
  * @author Sean A. Irvine
  */
 public class A401458 extends Sequence0 {

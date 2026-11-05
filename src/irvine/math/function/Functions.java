@@ -181,6 +181,11 @@ public final class Functions {
   public static final Function1 TENS_COMPLEMENT = new TensComplement();
   /** Kaprekar map. */
   public static final Function1 KAPREKAR = new Kaprekar(); // =A151949
+  /** Logarithm to base 2, round up to higher integer */
+  public static final Function1 CEILING_LOG2 = new CeilingLog2(); // =A029837
+  /** Logarithm to base 2, truncated to lower integer - number of bits - 1. */
+  public static final Function1 FLOOR_LOG2 = new FloorLog2(); // =A000523
+
 
   // Two argument functions with default first parameter
 
@@ -285,7 +290,6 @@ public final class Functions {
   public static final Function2 GCUD = new Gcud();
   /** Integer logarithm. */
   public static final Function2 FLOOR_LOG = new FloorLog();
-
   // Aggregating functions
 
   /** Minimum of the values. */

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A029837 extends Sequence1 implements DirectSequence {
 
-  private int mN = 0;
+  private long mN = 0L;
 
   @Override
   public Z next() {
@@ -21,14 +21,11 @@ public class A029837 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    final Z n1 = n.subtract(1);
-    return n1.isZero() ? Z.ZERO : Functions.DIGIT_LENGTH.z(2, n1);
+    return Functions.CEILING_LOG2.z(n);
   }
 
   @Override
   public Z a(final long n) {
-    final long n1 = n - 1;
-    return n1 <= 0 ? Z.ZERO : Functions.DIGIT_LENGTH.z(2, n1);
+    return Functions.CEILING_LOG2.z(n);
   }
-
 }

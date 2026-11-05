@@ -3,12 +3,13 @@ package irvine.oeis.a033;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectPredicate;
 
 /**
  * A033950 Refactorable numbers: number of divisors of k divides k. Also known as tau numbers.
  * @author Sean A. Irvine
  */
-public class A033950 extends AbstractSequence {
+public class A033950 extends AbstractSequence implements DirectPredicate {
 
   /**
    * Constructor with offset.
@@ -34,4 +35,15 @@ public class A033950 extends AbstractSequence {
       }
     }
   }
+
+  @Override
+  public boolean is(final Z n) {
+    return n.mod(Functions.SIGMA0.z(n)).isZero();
+  }
+
+  @Override
+  public boolean is(final long n) {
+    return n % Functions.SIGMA0.l(n) == 0L;
+  }
+
 }

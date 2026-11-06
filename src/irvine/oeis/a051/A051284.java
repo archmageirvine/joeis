@@ -2,17 +2,20 @@ package irvine.oeis.a051;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004001;
 
 /**
  * A051284 a(n) is the number k, 2^n &lt; k &lt; 2^(n+1), such that k/c(k) is a minimum in the interval, where c(k) is Hofstadter-Conway sequence A004001.
  * @author Sean A. Irvine
  */
-public class A051284 extends A004001 {
+public class A051284 extends Sequence1 {
+
+  private static final A004001 mSeq = new A004001();
 
   {
-    super.next();
-    super.next();
+    mSeq.next();
+    mSeq.next();
   }
 
   @Override
@@ -20,15 +23,15 @@ public class A051284 extends A004001 {
     Q min = Q.TWO;
     int minN = 0;
     while (true) {
-      final Z t = super.next();
-      final int n = size();
+      final Z t = mSeq.next();
+      final int n = mSeq.size();
       final Q m = new Q(n, t);
       if (m.compareTo(min) < 0) {
         min = m;
-        minN = size();
+        minN = mSeq.size();
       }
       if ((n & (n - 1)) == 0) {
-        return Z.valueOf(minN);
+        return minN == 0 ? Z.THREE : Z.valueOf(minN - 1);
       }
     }
   }

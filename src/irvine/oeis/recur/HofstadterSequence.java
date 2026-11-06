@@ -101,6 +101,14 @@ public abstract class HofstadterSequence extends AbstractSequence implements Dir
     mLimit = lim;
   }
 
+  /**
+   * Get the length of the internal array.
+   * @return mA.size()
+   */
+  public int size() {
+    return mA.size();
+  }
+
   @Override
   public Z next() {
     return Z.valueOf(a(++mN));

@@ -1,15 +1,17 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004001;
 
 /**
  * A051135 a(n) = number of times n appears in the Hofstadter-Conway $10000 sequence A004001.
  * @author Sean A. Irvine
  */
-public class A051135 extends A004001 {
+public class A051135 extends Sequence1 {
 
-  private Z mA = super.next();
+  private final A004001 mSeq = new A004001();
+  private Z mA = mSeq.next();
   private Z mN = Z.ZERO;
 
   @Override
@@ -18,7 +20,7 @@ public class A051135 extends A004001 {
     long cnt = 0;
     while (mA.equals(mN)) {
       ++cnt;
-      mA = super.next();
+      mA = mSeq.next();
     }
     return Z.valueOf(cnt);
   }

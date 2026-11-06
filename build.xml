@@ -38,7 +38,7 @@
 
   <target name="compile-src" description="Compile the source" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.10" includeantruntime="false">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.10" target="1.10" includeantruntime="false">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -49,7 +49,7 @@
 
   <target name="compile-src-debug" description="Compile the source with debugging" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes-debug"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes-debug" source="1.10" includeantruntime="false" debug="true" debuglevel="lines,vars,source">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes-debug" source="1.10" target="1.10" includeantruntime="false" debug="true" debuglevel="lines,vars,source">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -60,7 +60,7 @@
 
   <target name="compile-internal" depends="compile-src" description="Compile the internal">
     <mkdir dir="${build.dir}/classes-debug"/>
-    <javac srcdir="${internal.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${internal.dir}" source="1.10" target="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
@@ -71,7 +71,7 @@
   </target>
 
   <target name="compile-test" description="Compile the tests">
-    <javac srcdir="${test.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${test.dir}" source="1.10" target="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <pathelement path="${internal.dir}"/>

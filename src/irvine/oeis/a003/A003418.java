@@ -25,7 +25,7 @@ public class A003418 extends Sequence0 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    return a(n.longValueExact());
   }
 
   @Override

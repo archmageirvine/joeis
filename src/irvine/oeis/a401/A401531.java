@@ -16,8 +16,8 @@ public class A401531 extends Sequence1 {
     if (++mN == 1) {
       return Z.ZERO;
     }
-    Z k = Z.ONE.shiftLeft(2 * mN - 1);
-    long h = 1L << (mN - 2);
+    final Z k = Z.ONE.shiftLeft(2 * mN - 1);
+    final long h = 1L << (mN - 2);
     long cnt = 0;
     for (long x = 1L << (mN - 1); x < 1L << mN; ++x) {
       final long r = k.mod(x);

@@ -8,18 +8,28 @@ import java.util.TreeSet;
 
 import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A086786 Triangle read by rows: n-th row is the smallest set of n numbers in arithmetic progression with the same prime signature.
  * @author Sean A. Irvine
  */
-public class A086786 extends Sequence1 {
+public class A086786 extends AbstractSequence {
 
-  private int mN = 0;
+  private int mN;
   protected LinkedList<Integer> mRow = new LinkedList<>();
   private final HashMap<Z, TreeSet<Integer>> mSigSets = new HashMap<>();
   private int mK = 0;
+
+  protected A086786(final int offset) {
+    super(offset);
+    mN = offset - 1;
+  }
+
+  /** Construct the sequence. */
+  public A086786() {
+    this(1);
+  }
 
   private Collection<Integer> ap(final TreeSet<Integer> set) {
     if (set.size() < mN) {

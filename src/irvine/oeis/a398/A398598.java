@@ -4,7 +4,7 @@ package irvine.oeis.a398;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A398598 a(n) is the number of distinct paths of length n which begin and end on an odd number on the graph shown in the comments.
+ * A398598 allocated for Robert J. Boyd.
  * @author Georg Fischer
  */
 public class A398598 extends HolonomicRecurrence {

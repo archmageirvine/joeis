@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a399.A399741;
 
 /**
- * A401453 Primes in A399741.
+ * A401453 allocated for Robert Israel.
  * @author Georg Fischer
  */
 public class A401453 extends FilterSequence {

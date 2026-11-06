@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.EgyptianFractionSequence;
 
 /**
- * A110820 Denominator of Egyptian fraction for Euler&ampos;s constant (or Euler-Mascheroni constant) gamma.
+ * A110820 Denominator of Egyptian fraction for Euler's constant (or Euler-Mascheroni constant) gamma.
  * @author Georg Fischer
  */
 public class A110820 extends EgyptianFractionSequence {

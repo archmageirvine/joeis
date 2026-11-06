@@ -2,13 +2,13 @@ package irvine.oeis.a087;
 
 import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A087306 a(n) is the start of the first arithmetic progression with common difference n of n numbers with the same prime signature.
  * @author Sean A. Irvine
  */
-public class A087306 extends Sequence2 {
+public class A087306 extends Sequence1 {
 
   private long mN = 0;
 

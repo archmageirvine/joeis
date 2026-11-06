@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A401379 Number of distinct prime factors in the largest divisor of sigma(n) coprime with n, where sigma is the sum of divisors function.
+ * A401379 allocated for Antti Karttunen.
  * @author Georg Fischer
  */
 public class A401379 extends LambdaSequence {

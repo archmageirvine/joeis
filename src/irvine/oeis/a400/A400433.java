@@ -1,26 +1,26 @@
 package irvine.oeis.a400;
 
-import irvine.math.predicate.Predicates;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.math.function.Functions;
+import irvine.oeis.FilterNumberSequence;
 
 /**
  * A400433 allocated for Michael De Vlieger.
  * @author Sean A. Irvine
  */
-public class A400433 extends Sequence1 {
+public class A400433 extends FilterNumberSequence {
 
-  private long mN = 8;
-
-  @Override
-  public Z next() {
-    while (true) {
-      ++mN;
-      for (long b = 2; b < mN - 1; ++b) {
-        if (Predicates.AUTOMORPHIC.is(b, mN)) {
-          return Z.valueOf(mN);
+  /** Construct the sequence. */
+  public A400433() {
+    super(1, 4, k -> {
+      final long lpf = Functions.LPF.l(k);
+      final long core = Functions.CORE.l(k);
+      do {
+        k /= lpf;
+        if (core == k) {
+          return true;
         }
-      }
-    }
+      } while (k % lpf == 0);
+      return core == k;
+    });
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a401;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A401204 Number of spanning trees of the graph formed by n triangles arranged in a ring, with corresponding vertices of consecutive triangles joined and the ring closed by a cyclic shift of the vertices.
+ * A401204 allocated for Paul Mezy.
  * @author Georg Fischer
  */
 public class A401204 extends HolonomicRecurrence {

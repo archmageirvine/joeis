@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A171885 Representation of n in D. E. Knuth&apos;s second prefix-unambiguous, order-preserving binary string system.
+ * A171885 Representation of n in D. E. Knuth's second prefix-unambiguous, order-preserving binary string system.
  * @author Georg Fischer
  */
 public class A171885 extends LambdaSequence {

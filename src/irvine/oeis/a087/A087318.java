@@ -19,11 +19,11 @@ public class A087318 extends Sequence1 implements Conjectural {
     if (++mN == 1 || Predicates.POWER.is(mN)) {
       return Z.ZERO;
     }
-    Z t = Z.ONE;
     final Z sig = FactorUtils.leastPrimeSignature(mN);
     if (Z.TWO.equals(sig)) {
       return Z.TWO;
     }
+    Z t = Z.ONE;
     while (true) {
       t = t.multiply(mN);
       final Z u = t.add(1);

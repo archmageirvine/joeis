@@ -11,7 +11,7 @@ public class A076143 extends ParallelPermutationSequence {
 
   /** Construct the sequence. */
   public A076143() {
-    super(1);
+    super(0);
   }
 
   @Override

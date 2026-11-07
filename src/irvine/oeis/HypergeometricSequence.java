@@ -148,9 +148,10 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
    * Evaluate the Pochhammer symbol at index <code>ip</code> for <code>k = 0 to n - 1</code>.
    * @param ix index in {@link #mPolyArray}
    * @param n limit for the addition
+   * @param m multiplier
    * @return the value of the Pochhammer symbol
    */
-  private Q evalPochhammer(final int ix, final int n) {
+  private Q evalPochhammer(final int ix, final int n, final int m) {
     Q result = Q.ONE;
     final Q[] poly = mPolyArray[ix];
     final int plen = poly.length;
@@ -158,7 +159,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
       Q npow = Q.ONE;
       Q sum = poly[0];
       for (int ip = 1; ip < plen; ++ip) { // compute the base value elem
-        npow = npow.multiply(mN);
+        npow = npow.multiply(m);
         sum = sum.add(npow.multiply(poly[ip]));
       }
       int k = 0;
@@ -200,9 +201,9 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
       int ix = 0;
       while (mNonZero && ix < mPolyLen - 1) { // evaluate all Pochhammer symbols
         if (ix < mP) { // in the "numerator" - multiply
-          prod = prod.multiply(evalPochhammer(ix, exp));
+          prod = prod.multiply(evalPochhammer(ix, exp, n));
         } else { // in the "denominator" - divide
-          prod = prod.divide(evalPochhammer(ix, exp));
+          prod = prod.divide(evalPochhammer(ix, exp, n));
         }
         // System.out.println("\tprod, n=" + n + ", exp=" + exp + ", ix=" + ix + ", prod=" + prod + (ix < mP ? ", mul" : ", div") + ", sum=" + sum);
         ++ix;
@@ -285,7 +286,7 @@ public class HypergeometricSequence extends AbstractSequence implements DirectSe
 
   @Override
   public Z a(final long n) {
-    return mInitNo > n - mOffset ? mInits[(int) (n - mOffset)] : mLambdaQ.apply(mN, getTerm((int) n));
+    return mInitNo > n - mOffset ? mInits[(int) (n - mOffset)] : mLambdaQ.apply((int) n, getTerm((int) n));
   }
 
   @Override

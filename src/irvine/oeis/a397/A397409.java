@@ -11,20 +11,20 @@ import irvine.oeis.a033.A033677;
  */
 public class A397409 extends Sequence1 {
 
-  private final DirectSequence mA = DirectSequence.create(new A033677());
+  private final DirectSequence mA = DirectSequence.forceCreate(1, new A033677());
   private long mN = 0;
   private long mR = 0;
 
   @Override
   public Z next() {
-    if (mR >= mN * mN) {
-      ++mN;
-      mR = 0;
-    }
     while (true) {
-      final Z t = mA.a(++mR);
+      if (++mR > mN * mN) {
+        ++mN;
+        mR = 1;
+      }
+      final Z t = mA.a(mR * mN);
       if (t.equals(mN)) {
-        return Z.valueOf(mR);
+        return Z.valueOf(mR * mN);
       }
     }
   }

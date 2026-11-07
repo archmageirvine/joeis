@@ -13,7 +13,7 @@ public class A400793 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A400793() {
-    super(1, 0, new A400792(), k -> {
+    super(1, 1, new A400792(), k -> {
       if (k.isProbablePrime()) {
         if (VERBOSE) {
           StringUtils.message("Found prime " + k);

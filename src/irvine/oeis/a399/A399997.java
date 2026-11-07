@@ -1,4 +1,4 @@
-package irvine.oeis.a397;
+package irvine.oeis.a399;
 
 import java.util.ArrayList;
 import java.util.BitSet;
@@ -16,7 +16,7 @@ import irvine.oeis.Sequence3;
  * A397960 a(n) is the maximum number of distinct positive differences of an n-element subset of {0, 1, ..., n*(n-1)/2}.
  * @author Sean A. Irvine
  */
-public class A397960 extends Sequence3 {
+public class A399997 extends Sequence3 {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads", String.valueOf(Runtime.getRuntime().availableProcessors())));
   private int mN = 2;

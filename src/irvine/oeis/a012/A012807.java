@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012807 sinh(sec(x)*arctan(x))=x+2/3!*x^3+40/5!*x^5+576/7!*x^7+46208/9!*x^9...
+ * A012807 Expansion of e.g.f. sinh(sec(x)*arctan(x)) (only odd powers).
  * @author Sean A. Irvine
  */
 public class A012807 extends Sequence0 {

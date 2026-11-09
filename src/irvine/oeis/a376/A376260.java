@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A376260 Numbers k such that R(k)/k is of the form m/(m + 1), where R(k) is the digital reversal of k.
+ * A376260 Numbers k not ending with zero such that R(k)/k is of the form m/(m + 1), where R(k) is the digital reversal of k.
  * @author Georg Fischer
  */
 public class A376260 extends FilterNumberSequence {

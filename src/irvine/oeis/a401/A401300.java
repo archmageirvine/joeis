@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401300 allocated for Karan Sharma.
+ * A401300 Numbers k such that some Eisenstein integer of norm k has exactly four divisors up to associates.
  * @author Sean A. Irvine
  */
 public class A401300 extends FilterNumberSequence {

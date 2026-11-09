@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046523;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A305891 Filter sequence combining 2-adic valuation (A007814) and the prime signature (A046523) of n.
+ * A305891 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A007814(i) = A007814(j) and A046523(i) = A046523(j), for all i, j &gt;= 1, where A046523(n) is the smallest number with same prime signature as n, and A007814(n) is the exponent of the highest power of 2 dividing n.
  * @author Georg Fischer
  */
 public class A305891 extends RestrictedGrowthTransformSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a285.A285729;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A300229 Restricted growth sequence transform of A285729, combining A032742(n) and A046523(n), the largest proper divisor and the prime signature of n.
+ * A300229 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A032742(i) = A032742(j) and A046523(i) = A046523(j), for all i, j &gt;= 1, where A032742(n) is the largest proper divisor of n, and A046523(n) is the smallest number with same prime signature as n.
  * @author Georg Fischer
  */
 public class A300229 extends RestrictedGrowthTransformSequence {

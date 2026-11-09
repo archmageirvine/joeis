@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401432.
+ * A142709 Triangle read by rows: coefficients of the polynomials p(n) = (4*n + 2)*x + x^n.
  * @author Sean A. Irvine
  */
 public class A142709 extends Sequence0 {

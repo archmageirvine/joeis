@@ -7,7 +7,7 @@ import irvine.oeis.a049.A049501;
 import irvine.oeis.a171.A171885;
 
 /**
- * A281552 Write n in the Elias gamma code and sum the positions where there is a &apos;1&apos; followed immediately to the right by a &apos;0&apos;, counting the leftmost digit as position 1.
+ * A281552 Write n in the Elias gamma code and sum the positions where there is a '1' followed immediately to the right by a '0', counting the leftmost digit as position 1.
  * @author Georg Fischer
  */
 public class A281552 extends LambdaSequence {

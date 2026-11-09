@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A401119 allocated for Sajid Khan Hussain.
+ * A401119 Number of orbits of exponents d, 1 &lt;= d &lt;= 2^n-2, under multiplication by 2 modulo 2^n-1, such that gcd(d, 2^n-1) = 1 and the power map x -&gt; x^d on GF(2^n) has differential uniformity 4.
  * @author Sean A. Irvine
  */
 public class A401119 extends Sequence3 {

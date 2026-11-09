@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000598;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400923 allocated for Casper Asbj\u00f8rn Eriksen.
+ * A400923 Number of achiral n-carbon alkyl radicals C(n)H(2n+1) ignoring stereoisomers.
  * @author Sean A. Irvine
  */
 public class A400923 extends GfSequence {

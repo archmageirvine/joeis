@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
 /**
- * A401445 allocated for Edward Schmidt.
+ * A401445 Half the sum of the squares after one Fibonacci recurrence step (v, u) -&gt; (u, u+v): a(n) = (u^2 + (u+v)^2)/2, where u and v are the odd and even legs of the primitive Pythagorean triangle with hypotenuse A002144(n).
  * @author Sean A. Irvine
  */
 public class A401445 extends A002144 {

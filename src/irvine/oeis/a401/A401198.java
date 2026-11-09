@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a191.A191371;
 
 /**
- * A401198 allocated for Kanata Matsumaru.
+ * A401198 Number of ways to add one improperly colored vertex to a properly colored graph of n-1 vertices.
  * @author Sean A. Irvine
  */
 public class A401198 extends Sequence1 {

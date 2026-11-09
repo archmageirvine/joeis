@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
- * A097545 Numerators of "Farey fraction" approximations to Pi.
+ * A097545 Numerators of semiconvergents to Pi.
  * @author Sean A. Irvine
  */
 public class A097545 extends Sequence0 {

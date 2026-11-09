@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401367 allocated for Eddie Lin Rui.
+ * A401367 Array A(n,k), n &gt;= 1, k &gt;= 2, read by descending antidiagonals: number of pairs of adjacent edges in the k^n cubic grid.
  * @author Sean A. Irvine
  */
 public class A401367 extends Sequence1 {

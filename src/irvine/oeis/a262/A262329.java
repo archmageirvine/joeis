@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A262329 Number of (n+1)X(5+1) 0..1 arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits.
+ * A262329 Number of (n+1) X (5+1) 0..1 arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits.
  * @author Georg Fischer
  */
 public class A262329 extends HolonomicRecurrence implements Conjectural {

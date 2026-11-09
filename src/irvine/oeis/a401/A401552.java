@@ -4,7 +4,7 @@ import irvine.oeis.a400.A400000;
 import irvine.oeis.transform.RunLengthTransform;
 
 /**
- * A401648
+ * A401552 Run lengths of A400000.
  * @author Sean A. Irvine
  */
 public class A401552 extends RunLengthTransform {

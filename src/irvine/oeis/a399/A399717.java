@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399717 Numerators of "Farey fraction" approximations to Pi/2.
+ * A399717 Numerators of semiconvergents to Pi/2.
  * @author Sean A. Irvine
  */
 public class A399717 extends Sequence0 {

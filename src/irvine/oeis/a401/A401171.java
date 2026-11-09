@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a018.A018252;
 
 /**
- * A401171 allocated for \u017diga Pirc.
+ * A401171 Nonprime numbers k, such that 2*u*k + 2 = u*sigma(k) + tau(k), where u is an integer.
  * @author Sean A. Irvine
  */
 public class A401171 extends FilterSequence {

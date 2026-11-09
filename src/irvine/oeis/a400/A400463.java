@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400463 allocated for Adam Onus.
+ * A400463 Numbers of the form abs(k - reversal of k in base 2) for at least one k (written in base 10).
  * @author Sean A. Irvine
  */
 public class A400463 extends Sequence1 {

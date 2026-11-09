@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401487 allocated for Scott M. Foltz.
+ * A401487 Triangle read by rows: T(n,k) is the number of distinct Laplacian eigenvalues of the grid graph P_k X P_n, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A401487 extends Sequence1 {

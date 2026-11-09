@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401459 allocated for Helen Grundman.
+ * A401459 Number of attractors under iteration of the function S(x) = n+sum of squares of digits of x.
  * @author Sean A. Irvine
  */
 public class A401459 extends Sequence0 {

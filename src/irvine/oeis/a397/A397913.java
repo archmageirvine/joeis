@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A397913 allocated for Ryota Inagaki.
+ * A397913 Array read by antidiagonals T(x, y): T(x, y), the smallest chip that can reach (x, y) when sufficiently many chips are present in a certain labeled chip-firing game that is described in the comments, x &gt;= 0, y &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A397913 extends Sequence0 {

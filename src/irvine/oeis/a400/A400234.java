@@ -15,11 +15,11 @@ public class A400234 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
+    if (++mN <= 2) {
       // Necessary to handle a multiedge in this particular graph
-      return Z.valueOf(350);
+      return mN == 1 ? Z.SEVEN : Z.valueOf(350);
     }
-    return GraphUtils.numberOfSpanningTrees(GraphFactory.kleinBottle(3, 2 * mN));
+    return GraphUtils.numberOfSpanningTrees(GraphFactory.kleinBottle(3, mN));
   }
 }
 

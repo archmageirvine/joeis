@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a100.A100743;
 
 /**
- * A401529 allocated for Firdous Ahmad Mala.
+ * A401529 Number of labeled simple graphs on n vertices (not necessarily connected) with burning number 2.
  * @author Sean A. Irvine
  */
 public class A401529 extends Sequence1 {

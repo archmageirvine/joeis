@@ -5,7 +5,7 @@ import irvine.oeis.a278.A278221;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A286621 Restricted growth sequence computed for filter-sequence A278221, related to the conjugated prime factorization (see A122111).
+ * A286621 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A046523(A122111(i)) = A046523(A122111(j)), for all i, j &gt;= 1, where A122111 conjugates the prime factorization of n, and A046523(n) is the smallest number with same prime signature as n.
  * @author Georg Fischer
  */
 public class A286621 extends RestrictedGrowthTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401524 allocated for Miquel Cerda.
+ * A401524 Subword complexity (number of distinct blocks of length n) of A400826.
  * @author Sean A. Irvine
  */
 public class A401524 extends Sequence1 {

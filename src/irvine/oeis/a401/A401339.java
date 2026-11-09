@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a343.A343550;
 
 /**
- * A401339 allocated for Bernard Schott.
+ * A401339 Primitive terms of A343550.
  * @author Sean A. Irvine
  */
 public class A401339 extends A343550 {

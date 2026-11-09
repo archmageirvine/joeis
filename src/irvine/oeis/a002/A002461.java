@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002461 Coefficients of Legendre polynomials.
+ * A002461 Coefficients of Legendre polynomials in terms of the expansion of sqrt(1+x).
  * @author Sean A. Irvine
  */
 public class A002461 extends A002596 {

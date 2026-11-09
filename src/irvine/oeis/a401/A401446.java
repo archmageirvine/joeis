@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
 /**
- * A401446 allocated for Edward Schmidt.
+ * A401446 Square roots of the central entries in a six-square 3 X 3 magic-square construction from Pythagorean primes using a Fibonacci recurrence step on the legs.
  * @author Sean A. Irvine
  */
 public class A401446 extends A002144 {

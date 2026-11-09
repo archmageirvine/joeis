@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A154831 Numbers n such that n^4-2 is prime.
+ * A154831 Numbers k such that k^4-2 is prime.
  * @author Georg Fischer
  */
 public class A154831 extends PrimePositionSubsequence {

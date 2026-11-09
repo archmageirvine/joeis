@@ -5,7 +5,7 @@ import irvine.oeis.a278.A278243;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A286378 Restricted growth sequence computed for Stern-polynomial related filter-sequence A278243.
+ * A286378 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A046523(A260443(i)) = A046523(A260443(j)), for all i, j &gt;= 0, where A046523(n) is the smallest number with same prime signature as n, and A260443 is the prime factorization representation of Stern polynomials.
  * @author Georg Fischer
  */
 public class A286378 extends RestrictedGrowthTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
- * A401432 a(n) is the least k > 1 such that sum_{i = 1..n} k^(A003418(n)/i) is divisible by n.
+ * A106441 a(n) is the least k &gt; 1 such that Sum_{i = 1..n} k^(A003418(n)/i) is divisible by n.
  * @author Sean A. Irvine
  */
 public class A106441 extends Sequence1 {

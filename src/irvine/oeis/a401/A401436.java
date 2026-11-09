@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401436 allocated for Jishnu Babu Ranitha.
+ * A401436 Square array A(n,k), n &gt;= 0, k &gt;= 1, read by descending antidiagonals: A(n,k) is the number of nonnegative integer solutions to x + y + k*z = n.
  * @author Sean A. Irvine
  */
 public class A401436 extends Sequence0 {

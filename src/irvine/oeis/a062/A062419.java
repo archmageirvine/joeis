@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062419 Integer part of log(n)^log(n).
+ * A062419 Duplicate of A061052.
  * @author Georg Fischer
  */
 public class A062419 extends Sequence1 {

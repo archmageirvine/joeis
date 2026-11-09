@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002463 Coefficients of Legendre polynomials.
+ * A002463 Coefficients of cos(x) term of the Legendre polynomials of odd order when they are expressed in terms of the cosine function.
  * @author Sean A. Irvine
  */
 public class A002463 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398143 allocated for Andrei Leonov.
+ * A398143 Survivor in the Josephus problem with golden-ratio steps: n people stand in a circle, counting starts at person 1, and the i-th person eliminated is the A282162(i)-th person counted (steps 3,2,3,3,2,3,2,3,3,2,..., the Fibonacci word with 0 -&gt; 3, 1 -&gt; 2).
  * @author Sean A. Irvine
  */
 public class A398143 extends Sequence1 {

@@ -2703,3 +2703,4 @@ A087236 a(n) is the difference between the largest and smallest integer solution
 A087237 a(n) = (Max{x : n*pi(x) = x} - Min{x : n*pi(x) = x})/n = A087236(n)/n.
 A087240 First differences of A087235.
 A087241 Consecutive min and max-terms of solution-clusters of A057809, i,e, least and largest solutions to n=x/A000720[x].
+A087329 Independence numbers for KT_4 knight on hexagonal board.

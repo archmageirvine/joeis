@@ -11,6 +11,7 @@ public class A005151 extends Sequence1 {
 
   private static final long[] S = {1, 11, 21, 1112, 3112, 211213, 312213, 212223, 114213, 31121314, 41122314, 31221324, 21322314};
   private int mN = -1;
+
   @Override
   public Z next() {
     if (mN < S.length - 1) {

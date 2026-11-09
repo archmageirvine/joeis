@@ -4,7 +4,7 @@ import irvine.oeis.a020.A020861;
 import irvine.oeis.cons.ContinuedFractionDenominatorSequence;
 
 /**
- * A401355 allocated for Miquel Cerda.
+ * A401355 Denominators of convergents to log_2(9).
  * @author Sean A. Irvine
  */
 public class A401355 extends ContinuedFractionDenominatorSequence {

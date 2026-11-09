@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401194 allocated for Felix Huber.
+ * A401194 Nonnegative integers that do not occur as the largest incircle tangent length of a Heronian triangle.
  * @author Sean A. Irvine
  */
 public class A401194 extends FilterNumberSequence {

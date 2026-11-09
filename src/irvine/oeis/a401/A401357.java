@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002334;
 import irvine.oeis.a002.A002335;
 
 /**
- * A401357 allocated for Pierre Colmant.
+ * A401357 Hypotenuse of the unique primitive Pythagorean triangle whose legs sum to the n-th prime congruent to +-1 mod 8.
  * @author Sean A. Irvine
  */
 public class A401357 extends Combiner {

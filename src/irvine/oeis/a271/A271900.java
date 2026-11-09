@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A271900 Expansion of 1/((1-x^3)*(1-x^5)*(1-x^17)).
+ * A271900 Expansion of g.f. 1/((1-x^3)*(1-x^5)*(1-x^17)).
  * @author Georg Fischer
  */
 public class A271900 extends GeneratingFunctionSequence {

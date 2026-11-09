@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002110;
 
 /**
- * A400433 a(n) is the smallest divisor d of the n-th primorial such that prime(n)#/d + d or prime(n)#/d - d is prime.
+ * A400506 a(n) is the smallest divisor d of the n-th primorial such that prime(n)#/d - d is prime; a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A400506 extends Sequence1 {

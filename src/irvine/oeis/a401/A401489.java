@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401489 allocated for Bernard Schott.
+ * A401489 Numbers of divisors of n that are brilliant (A078972).
  * @author Sean A. Irvine
  */
 public class A401489 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A203376 Number of (n+1)X7 0..1 arrays with every 2X2 subblock having equal diagonal elements or equal antidiagonal elements.
+ * A203376 Number of (n+1) X 7 0..1 arrays with every 2 X 2 subblock having equal diagonal elements or equal antidiagonal elements.
  * @author Georg Fischer
  */
 public class A203376 extends HolonomicRecurrence implements Conjectural {

@@ -6,7 +6,7 @@ import irvine.oeis.a257.A257993;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A286142 Compound filter: a(n) = T(A257993(n), A046523(n)), where T(n,k) is sequence A000027 used as a pairing function.
+ * A286142 a(n) = (1/2)*(2 + ((A257993(n)+A046523(n))^2) - A257993(n) - 3*A046523(n)), where A257993(n) is the index of the least prime not dividing n, and A046523(n) is the smallest number with same prime signature as n.
  * @author Georg Fischer
  */
 public class A286142 extends TupleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046523;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A286570 Compound filter (prime signature of n &amp; gcd(n, sigma(n))): a(n) = P(A046523(n), A009194(n)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A286570 a(n) = (1/2)*(2 + ((A046523(n)+A009194(n))^2) - A046523(n) - 3*A009194(n)), where A046523(n) is the smallest number with same prime signature as n, and A009194(n) is gcd(n, sigma(n)).
  * @author Georg Fischer
  */
 public class A286570 extends TupleTransformSequence {

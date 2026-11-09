@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401385 allocated for Antti Karttunen.
+ * A401385 Numbers k for which {the largest divisor of sigma(k^2) that is coprime with k^2} is a prime power.
  * @author Georg Fischer
  */
 public class A401385 extends FilterNumberSequence {

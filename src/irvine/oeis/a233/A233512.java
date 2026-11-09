@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.DeadSequence;
 
 /**
- * A233512 The first n cyclotomic polynomials are simultaneously prime for these arguments.
+ * A233512 Erroneous version of A070732.
  * @author Sean A. Irvine
  */
 public class A233512 extends DeadSequence {

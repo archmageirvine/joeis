@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401433 allocated for Maja Gwozdz.
+ * A401433 Number of orbits of Aut(F_2) on the subgroups of index n of the free group F_2 of rank 2.
  * @author Sean A. Irvine
  */
 public class A401433 extends Sequence1 {

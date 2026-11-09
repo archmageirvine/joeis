@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A401490 allocated for Bernard Schott.
+ * A401490 a(n) is the smallest integer with exactly n divisors that are brilliant (A078972).
  * @author Sean A. Irvine
  */
 public class A401490 extends Sequence0 {

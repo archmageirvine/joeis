@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A401404 allocated for Vincenzo Manto.
+ * A401404 Numbers m such that pi(2*m) is prime, where pi is A000720.
  * @author Sean A. Irvine
  */
 public class A401404 extends A000720 {

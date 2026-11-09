@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007907 Concatenation of sequence (1, 2, ..., floor((n-1)/2), floor(n/2), floor(n/2)-1, ..., 1) for n &gt;= 1.
+ * A007907 Smarandache symmetric sequence: concatenate 1 through ceiling(n/2), followed by the positive integers from floor(n/2) down to 1.
  * @author Sean A. Irvine
  */
 public class A007907 extends Sequence1 {

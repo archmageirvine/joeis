@@ -6,7 +6,7 @@ import irvine.oeis.a260.A260443;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A278243 Filter-sequence for Stern polynomials: Least number with the same prime signature as A260443(n).
+ * A278243 The smallest number with same prime signature as A260443(n) has, where A260443 is the prime factorization representation of Stern polynomials.
  * @author Georg Fischer
  */
 public class A278243 extends SimpleTransformSequence {

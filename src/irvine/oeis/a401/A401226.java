@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A401226 allocated for Arjun Pemmasani.
+ * A401226 Number of largest sets S of points of the 3 X n grid as in A401223, counted up to the reflections of the grid in its horizontal and vertical axes and the half turn.
  * @author Sean A. Irvine
  */
 public class A401226 extends GfSequence {

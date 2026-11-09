@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400977 allocated for Aidan Markey.
+ * A400977 Start with a set of four adjacent collinear points in a hexagonal lattice. Every iteration, add to the set the lattice points which are adjacent to exactly two points already in the set, only if those two points are adjacent to each other. This sequence gives the number of points in the set after n iterations.
  * @author Sean A. Irvine
  */
 public class A400977 extends Sequence0 {

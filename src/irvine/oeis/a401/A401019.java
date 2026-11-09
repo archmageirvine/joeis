@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401019 allocated for Mykola Filipchuk.
+ * A401019 Number of permutations of {1..n} in which 1 is not adjacent to any prime.
  * @author Sean A. Irvine
  */
 public class A401019 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A401173 allocated for Igor Zhuk.
+ * A401173 Primes p such that every element x in GF(p) eventually reaches 1 under iteration of the polynomial map T(x) = (x^2 - 2)^2 mod p.
  * @author Sean A. Irvine
  */
 public class A401173 extends A000040 {

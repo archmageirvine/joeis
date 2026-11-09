@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400966 allocated for Eddie Lin Rui.
+ * A400966 Minimum number of exposed cubic faces of a 4-dimensional polyhypercube formed by n unit tesseracts.
  * @author Sean A. Irvine
  */
 public class A400966 extends Sequence1 {

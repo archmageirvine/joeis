@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a001.A001359;
 
 /**
- * A401268 allocated for Francisco Torres Gonzalez.
+ * A401268 a(n) = q - (7*p+4)/3, where p = A001359(n) and q is the least term of A001359 that is &gt;= (7*p+4)/3.
  * @author Sean A. Irvine
  */
 public class A401268 extends Sequence2 {

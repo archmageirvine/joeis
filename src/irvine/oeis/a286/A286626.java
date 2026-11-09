@@ -5,7 +5,7 @@ import irvine.oeis.a278.A278226;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A286626 Restricted growth sequence computed for primorial base related filter-sequence A278226.
+ * A286626 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A046523(A276086(i)) = A046523(A276086(j)), for all i, j &gt;= 0, where A046523(n) is the smallest number with same prime signature as n, and A276086 is the primorial base exp-function.
  * @author Georg Fischer
  */
 public class A286626 extends RestrictedGrowthTransformSequence {

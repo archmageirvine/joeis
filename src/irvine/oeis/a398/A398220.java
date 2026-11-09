@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A398220 allocated for Jacek Szymkowiak.
+ * A398220 Minimum diameter of an admissible nondegenerate Hilbert cube of dimension n: least s(1) + ... + s(n) over positive integers s(1) &lt; ... &lt; s(n) such that all 2^n subset sums are distinct and, for every prime p, they miss at least one residue class modulo p.
  * @author Sean A. Irvine
  */
 public class A398220 extends Sequence1 {

@@ -11,8 +11,7 @@ import irvine.oeis.a004.A004001;
  */
 public class A051284 extends Sequence1 {
 
-  private static final A004001 mSeq = new A004001();
-
+  private final A004001 mSeq = new A004001();
   {
     mSeq.next();
     mSeq.next();

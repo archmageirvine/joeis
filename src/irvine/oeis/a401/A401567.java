@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A087101.
+ * A401567 Number of disconnected symmetric quartic graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A401567 extends Sequence1 {

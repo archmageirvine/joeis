@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A087308.
+ * A401607 Squares visited by a knight moving on a diagonally numbered Q1 board and always taking the available unvisited square with the shortest distance to the bisecting line of Q1. In the case of a tie, first squares with the shortest Euclidean distance to the starting square (1,1) are preferred, second the square with smaller row index is preferred. Starting square is labeled 1.
  * @author Sean A. Irvine
  */
 public class A401607 extends FiniteSequence {

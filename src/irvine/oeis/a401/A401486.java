@@ -5,7 +5,7 @@ import irvine.factor.util.FactorUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401486 allocated for Amiram Eldar.
+ * A401486 Powerful numbers that have an odd number of square divisors.
  * @author Georg Fischer
  */
 public class A401486 extends FilterNumberSequence {

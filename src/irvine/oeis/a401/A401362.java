@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a390.A390628;
 
 /**
- * A401362 allocated for Hartmut F. W. Hoft.
+ * A401362 Numbers k whose symmetric representation of sigma(k), SRS(k), contains at least one part that is not unimodal.
  * @author Sean A. Irvine
  */
 public class A401362 extends A390628 {

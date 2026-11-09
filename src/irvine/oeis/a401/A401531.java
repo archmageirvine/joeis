@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401531 allocated for Akash Suresh.
+ * A401531 Number of n-bit binary significands X for which RN_n(X * RN_n(1/X)) != 1 where RN_n is the rounding to n significant binary bits using round to nearest, ties to even, with an unbounded exponent range.
  * @author Sean A. Irvine
  */
 public class A401531 extends Sequence1 {

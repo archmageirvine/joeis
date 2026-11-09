@@ -17,7 +17,7 @@ import irvine.oeis.a014.A014486;
  */
 public class A080035 extends Sequence1 implements Conjectural {
 
-  private static final Q MAX = Q.valueOf(Z.ONE.shiftLeft(20));
+  private static final Q MAX = Q.valueOf(Z.ONE.shiftLeft(24));
   private static final long POW_MAX = 100;
   private long mN = 126;
   private int mK = 0;
@@ -36,24 +36,30 @@ public class A080035 extends Sequence1 implements Conjectural {
       res.add(d.negate()); // unary -
       return res;
     }
+
+    final int start = mK;
     final Set<Q> left = compute(digits, s.car());
     final Set<Q> right = compute(digits, s.cdr());
     final Set<Q> res = new HashSet<>();
+
+    // Concatenation of consecutive digits, but not all the digits
+    if (mK - start > 1 && (start != 0 || mK != digits.length())) {
+      final Q c = Q.valueOf(digits.substring(start, mK));
+      add(res, c);
+      add(res, c.negate());
+    }
+
     for (final Q u : left) {
       for (final Q v : right) {
-        if (!s.car().isPair() && !s.cdr().isPair() && v.signum() >= 0 && !u.isZero()) {
-          // Warning: this concatenation is likely insufficient for > 2 digits
-          add(res, u.multiply(10).add(v.multiply(u.signum()))); // Concatenation
-        }
         add(res, u.add(v));
         add(res, u.subtract(v));
         add(res, u.multiply(v));
         if (v.signum() != 0) {
           add(res, u.divide(v));
         }
-        if (v.signum() >= 0 && u.signum() > 0 && v.isInteger()) {
+        if (v.isInteger() && (u.signum() > 0 || v.signum() >= 0)) {
           final long e = v.toZ().longValueExact();
-          if (e <= POW_MAX) {
+          if (Math.abs(e) <= POW_MAX) {
             add(res, u.pow(e));
           }
         }
@@ -61,6 +67,42 @@ public class A080035 extends Sequence1 implements Conjectural {
     }
     return res;
   }
+
+//  private Set<Q> compute(final String digits, final SExpression s) {
+//    if (!s.isPair()) {
+//      final HashSet<Q> res = new HashSet<>();
+//      final Q d = Q.valueOf(digits.charAt(mK++) - '0');
+//      res.add(d);
+//      res.add(d.negate()); // unary -
+//      return res;
+//    }
+//    final Set<Q> left = compute(digits, s.car());
+//    final Set<Q> right = compute(digits, s.cdr());
+//    final Set<Q> res = new HashSet<>();
+//    for (final Q u : left) {
+//      for (final Q v : right) {
+//        if (v.signum() >= 0 && !u.isZero() && !s.car().isPair()) {
+//          if (!s.cdr().isPair()) {
+//            // Warning: this concatenation is insufficient for > 2 digits
+//            add(res, u.multiply(10).add(v.multiply(u.signum()))); // Concatenation of 2 digits
+//          }
+//        }
+//        add(res, u.add(v));
+//        add(res, u.subtract(v));
+//        add(res, u.multiply(v));
+//        if (v.signum() != 0) {
+//          add(res, u.divide(v));
+//        }
+//        if (u.signum() > 0 && v.isInteger()) {
+//          final long e = v.toZ().longValueExact();
+//          if (Math.abs(e) <= POW_MAX) {
+//            add(res, u.pow(e));
+//          }
+//        }
+//      }
+//    }
+//    return res;
+//  }
 
   private boolean is(final long n, final String digits, final SExpression s) {
     mK = 0;

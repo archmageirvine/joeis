@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046523;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A318893 Filter sequence combining the prime signature of n (A046523) with Euler totient function (A000010).
+ * A318893 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A000010(i) = A000010(j) and A046523(i) = A046523(j), for all i, j &gt;= 1, where A046523(n) is the smallest number with same prime signature as n, and A000010 is the Euler totient function.
  * @author Georg Fischer
  */
 public class A318893 extends RestrictedGrowthTransformSequence {

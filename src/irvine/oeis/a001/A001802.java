@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001802 Coefficients of Legendre polynomials.
+ * A001802 Diagonal 4 of triangle A100258 comprising coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
 public class A001802 extends Sequence0 {

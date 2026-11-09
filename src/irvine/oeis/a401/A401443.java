@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A401443 allocated for Brian Matthews.
+ * A401443 From a test by Paul Cooijmans (item 27 of Short Test for Genius).
  * @author Sean A. Irvine
  */
 public class A401443 extends FiniteSequence {

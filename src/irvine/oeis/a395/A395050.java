@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A395050 allocated for Alex Ratushnyak.
+ * A395050 Numbers k such that there is an oblong number bigger than k among divisors of k^2, and a square bigger than k among divisors of oblong(k).
  * @author Sean A. Irvine
  */
 public class A395050 extends FilterNumberSequence {

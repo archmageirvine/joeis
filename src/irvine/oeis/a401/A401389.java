@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A401389 allocated for Antti Karttunen.
+ * A401389 Numbers k such that {the largest divisor of sigma(k) coprime with k} is a power of 2 larger than 1.
  * @author Georg Fischer
  */
 public class A401389 extends FilterPositionSequence {

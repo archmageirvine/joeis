@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A087295:
+ * A401599 Odd numbers k &gt; 1 such that, for some g, iterating x -&gt; (3*x+1)/2^g starting at k gives integers until 1 is reached.
  * @author Sean A. Irvine
  */
 public class A401599 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.factor.util.FactorUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401509 allocated for Amiram Eldar.
+ * A401509 Numbers whose largest exponentially odd unitary divisor is a cube.
  * @author Georg Fischer
  */
 public class A401509 extends FilterNumberSequence {

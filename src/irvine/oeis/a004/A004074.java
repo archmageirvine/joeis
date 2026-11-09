@@ -10,14 +10,13 @@ import irvine.oeis.Sequence1;
  */
 public class A004074 extends Sequence1 implements DirectSequence {
 
-  private final DirectSequence A004001 = new A004001();
+  private static final DirectSequence A004001 = new A004001();
   private long mN = 0;
 
   @Override
   public Z next() {
     return A004001.next().multiply2().subtract(++mN);
   }
-
 
   @Override
   public Z a(final Z n) {
@@ -28,5 +27,4 @@ public class A004074 extends Sequence1 implements DirectSequence {
   public Z a(final long n) {
     return A004001.a(n).multiply2().subtract(n);
   }
-
 }

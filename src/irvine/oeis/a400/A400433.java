@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400433 allocated for Michael De Vlieger.
+ * A400433 Numbers k of the form rad(k) * lpf(k)^m, m &gt; 1, where rad = A007947 and lpf(k) is the least prime factor of k.
  * @author Sean A. Irvine
  */
 public class A400433 extends FilterNumberSequence {

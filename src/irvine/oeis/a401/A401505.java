@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a307.A307848;
 
 /**
- * A401505 allocated for Amiram Eldar.
+ * A401505 a(n) = log_2(A307848(n)).
  * @author Georg Fischer
  */
 public class A401505 extends LambdaSequence {

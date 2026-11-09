@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400943
+ * A401116 Array read by anti-diagonals: T(n,k) = [x^n] cosh((2*k+1)*arctanh(2*sqrt(x))).
  * @author Sean A. Irvine
  */
 public class A401116 extends Sequence0 {

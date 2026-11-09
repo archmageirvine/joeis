@@ -6,7 +6,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400922 allocated for Casper Asbj\u00f8rn Eriksen.
+ * A400922 Number of monosubstituted acyclic hydrocarbons (alkanes and olefins), taking stereoisomers into account.
  * @author Sean A. Irvine
  */
 public class A400922 extends GfSequence {

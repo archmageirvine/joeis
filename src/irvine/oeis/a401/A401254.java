@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A401254 allocated for Guido Avagliano.
+ * A401254 Primitive anti-abundant numbers: anti-abundant numbers whose anti-divisors are all anti-deficient or anti-perfect.
  * @author Sean A. Irvine
  */
 public class A401254 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a187.A187256;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A401531 allocated for Akash Suresh.
+ * A400355 allocated for Ifeyinwa Madu.
  * @author Sean A. Irvine
  */
 public class A400355 extends GfSequence {

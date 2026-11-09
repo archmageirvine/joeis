@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A219144 Unchanging value maps: number of 3Xn binary arrays indicating the locations of corresponding elements unequal to no horizontal, diagonal or antidiagonal neighbor in a random 0..2 3Xn array.
+ * A219144 Unchanging value maps: number of 3 X n binary arrays indicating the locations of corresponding elements unequal to no horizontal, diagonal or antidiagonal neighbor in a random 0..2 3 X n array.
  * @author Georg Fischer
  */
 public class A219144 extends HolonomicRecurrence implements Conjectural {

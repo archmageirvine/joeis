@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400813 allocated for Boris K. Horvat.
+ * A400813 Number of major star triples in the level-n supertile of the Spectre tiling.
  * @author Georg Fischer
  */
 public class A400813 extends HolonomicRecurrence {

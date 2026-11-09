@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A063535 Primes prime(n) such that prime(n+1)^2 &lt; prime(n)*prime(n+2).
+ * A063535 Primes prime(k) such that prime(k+1)^2 &lt; prime(k)*prime(k+2).
  * @author Sean A. Irvine
  */
 public class A063535 extends Sequence1 {

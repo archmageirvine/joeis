@@ -16,7 +16,7 @@ public class A397673 extends Sequence0 {
   private long mM = 0;
 
   /**
-   * A397673 allocated for Janaka Rodrigo.
+   * A397673 Shortest sides, r, of right-angled triangles (r,s,x+y) that can be dissected into two distinct integer-sided right-angled triangles corresponding to primitive solutions of five side lengths (r,s,x,y,z).
    * @param fs factorization of r
    * @param index current prime index
    * @param value current divisor

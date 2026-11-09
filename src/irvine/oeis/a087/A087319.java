@@ -7,7 +7,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A401531 allocated for Akash Suresh.
+ * A087319 Smallest number of the form n^k + 1, with tau(a(n)) = tau(n), or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A087319 extends Sequence1 implements Conjectural {

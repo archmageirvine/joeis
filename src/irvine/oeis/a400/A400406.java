@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400406 allocated for Leo Zhang.
+ * A400406 Number of ways of tiling a strip of length n with squares (length 1) and dominos (length 2) such that the number of dominos used is prime.
  * @author Sean A. Irvine
  */
 public class A400406 extends Sequence0 {

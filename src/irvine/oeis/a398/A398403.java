@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a179.A179502;
 
 /**
- * A398403 allocated for Mottaqui Karim.
+ * A398403 Primes r such that r and (r^2+2)/3 are both terms of A179502.
  * @author Sean A. Irvine
  */
 public class A398403 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005153;
 
 /**
- * A400433.
+ * A401636 Practical numbers M (A005153) such that sigma(M) + 2 is prime.
  * @author Sean A. Irvine
  */
 public class A401636 extends FilterSequence {

@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A401327 allocated for Gordon Hamilton.
+ * A401327 Folding polygons: a(n) is the maximum number of folds possible using the process described in the comments.
  * @author Sean A. Irvine
  */
 public class A401327 extends Sequence3 {

@@ -4,7 +4,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a399.A399581;
 
 /**
- * A401359 allocated for Karan Sharma.
+ * A401359 Records in A399581.
  * @author Sean A. Irvine
  */
 public class A401359 extends RecordSequence {

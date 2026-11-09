@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401514 allocated for Robert Israel.
+ * A401514 Even legs of the primitive Pythagorean triples corresponding to A398554.
  * @author Sean A. Irvine
  */
 public class A401514 extends Sequence1 {

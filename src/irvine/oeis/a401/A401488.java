@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401488 allocated for Francisco J. Mu\u00f1oz.
+ * A401488 Number of Boolean functions of n variables up to duality, where f is identified with its dual f^d(x) = NOT f(NOT x).
  * @author Sean A. Irvine
  */
 public class A401488 extends Sequence0 {

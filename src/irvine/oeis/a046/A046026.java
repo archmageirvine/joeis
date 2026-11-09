@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046026 Smallest prime p dividing n#-1, n#, or n#+1, n squarefree.
+ * A046026 Smallest prime p such that A005117(n) divides p#-1, p#, or p#+1.
  * @author Sean A. Irvine
  */
 public class A046026 extends Sequence1 {

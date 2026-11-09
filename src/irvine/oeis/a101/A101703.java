@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A101703 Numbers n such that reversal(n) = (2/3)*n - 2.
+ * A101703 Numbers k such that reversal(k) = (2/3)*k - 2.
  * @author Sean A. Irvine
  */
 public class A101703 extends FilterNumberSequence {

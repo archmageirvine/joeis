@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A166457 Numbers n such that n*100+1 is prime.
+ * A166457 Numbers k such that k*100 + 1 is prime.
  * @author Georg Fischer
  */
 public class A166457 extends FilterNumberSequence {

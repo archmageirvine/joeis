@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002144;
 
 /**
- * A401444 allocated for Edward Schmidt.
+ * A401444 Pythagorean primes p for which one Fibonacci recurrence step (v, u) -&gt; (u, u+v) on the odd leg u and even leg v of the primitive Pythagorean triangle with hypotenuse p gives another Pythagorean prime q = (u^2 + (u+v)^2)/2.
  * @author Sean A. Irvine
  */
 public class A401444 extends FilterSequence {

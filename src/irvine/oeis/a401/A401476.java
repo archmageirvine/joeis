@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a267.A267124;
 
 /**
- * A401476 allocated for Frank M Jackson.
+ * A401476 Primes p such that 2^p - 2 is a primitive practical number.
  * @author Sean A. Irvine
  */
 public class A401476 extends FilterSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400291 allocated for M. F. Hasler.
+ * A400291 Triangular array where row n lists the smallest n-tuple of primes p for which 1/p has the same period length in base 10, with respect to the sup norm.
  * @author Sean A. Irvine
  */
 public class A400291 extends Sequence1 {

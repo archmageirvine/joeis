@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A343936 Number of ways to choose a multiset of n divisors of n - 1.
+ * A343936 Number of ways to choose a multiset of n-1 divisors of n.
  * @author Georg Fischer
  */
 public class A343936 extends LambdaSequence {

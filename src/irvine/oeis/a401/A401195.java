@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A401195 allocated for Alex Towell.
+ * A401195 Number of connected unlabeled simple graphs on n vertices whose sandpile group is cyclic.
  * @author Sean A. Irvine
  */
 public class A401195 extends ParallelGenerateGraphsSequence {

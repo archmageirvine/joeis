@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A087101.
+ * A401566 Number of connected symmetric quartic graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A401566 extends ParallelGenerateGraphsSequence {

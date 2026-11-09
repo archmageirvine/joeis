@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A401334 allocated for Marco Mantovanelli.
+ * A401334 Multi-arch perturbed Hofstadter Q-sequence: a(n) = a(n-a(n-1)) + a(n-a(n-2)) - (-1)^n for n &gt;= 8, with (a(1),...,a(7)) = (1,1,3,3,3,3,5).
  * @author Sean A. Irvine
  */
 public class A401334 extends CachedSequence {

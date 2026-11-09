@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398554 allocated for Robert Israel.
+ * A398554 Prime values of (square of perimeter) - hypotenuse for primitive Pythagorean triples.
  * @author Sean A. Irvine
  */
 public class A398554 extends Sequence1 {

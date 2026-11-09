@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A401648
+ * A401553 Positions of 2's in A401552.
  * @author Sean A. Irvine
  */
 public class A401553 extends FilterPositionSequence {

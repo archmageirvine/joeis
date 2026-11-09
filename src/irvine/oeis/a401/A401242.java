@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a032.A032531;
 
 /**
- * A401242 allocated for Yifeng Zou.
+ * A401242 Maximum entry in the n-th row of A032531 read as a triangle.
  * @author Sean A. Irvine
  */
 public class A401242 extends A032531 {

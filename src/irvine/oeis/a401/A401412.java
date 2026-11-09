@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401412 allocated for Scott M. Foltz.
+ * A401412 Number of distinct adjacency eigenvalues of the triangular lattice on an n X n torus (n^2 vertices).
  * @author Sean A. Irvine
  */
 public class A401412 extends Sequence1 {

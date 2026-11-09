@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A401544 allocated for Spandan Bandyopadhyay.
+ * A401544 Numbers k such that the alternating group A_k does not contain an element of order k.
  * @author Sean A. Irvine
  */
 public class A401544 extends GfSequence {

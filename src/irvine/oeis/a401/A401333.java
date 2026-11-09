@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401333 allocated for Yu-Wen Wang.
+ * A401333 Numbers k such that the units digit of 5*k equals the tens digit of k^5.
  * @author Sean A. Irvine
  */
 public class A401333 extends FilterNumberSequence {

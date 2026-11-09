@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401458 allocated for Helen Grundman.
+ * A401458 Number of fixed points under iteration of the function S(x) = n+sum of squares of digits of x.
  * @author Sean A. Irvine
  */
 public class A401458 extends Sequence0 {

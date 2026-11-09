@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401441 allocated for Jishnu Babu Ranitha.
+ * A401441 Square array A(n,k), n &gt;= 1, k &gt;= 1, read by antidiagonals (A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), ...): A(n,k) is the number of divisors d of n such that gcd(d, n/d) is a k-th power.
  * @author Sean A. Irvine
  */
 public class A401441 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401457 allocated for Helen Grundman.
+ * A401457 Number of cycles under iteration (including fixed points) of the function S(x) = n+sum of squares of digits of x.
  * @author Sean A. Irvine
  */
 public class A401457 extends Sequence0 {

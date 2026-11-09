@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401611
+ * A401611 Number of distinct (up to reflection) n-building skylines of minimal total height such that each building of height h sees exactly h other buildings in total to its left and right.
  * @author Sean A. Irvine
  */
 public class A401611 extends Sequence0 {

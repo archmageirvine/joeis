@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002462 Coefficients of Legendre polynomials.
+ * A002462 Constant term of the Legendre polynomials of even order when they are expressed in terms of the cosine function.
  * @author Sean A. Irvine
  */
 public class A002462 extends Sequence0 {

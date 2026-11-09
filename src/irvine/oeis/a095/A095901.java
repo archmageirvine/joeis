@@ -11,7 +11,7 @@ import irvine.oeis.a004.A004001;
  */
 public class A095901 extends Sequence1 implements DirectSequence {
 
-  private final DirectSequence A004001 = new A004001();
+  private static final DirectSequence A004001 = new A004001();
 
   @Override
   public Z next() {

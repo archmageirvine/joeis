@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401358 allocated for Liu Junhui.
+ * A401358 Irregular triangle read by rows: row n lists the arithmetic means of the outermost pairs of primes in the interval [prime(n)^2, prime(n+1)^2].
  * @author Sean A. Irvine
  */
 public class A401358 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a001.A001227;
 
 /**
- * A400210 allocated for Bernard Schott.
+ * A400210 a(n) = sigma(n) - tau(m) where m is the largest odd divisor of positive integer n, sigma = A000203 and tau = A000005.
  * @author Sean A. Irvine
  */
 public class A400210 extends Sequence1 {

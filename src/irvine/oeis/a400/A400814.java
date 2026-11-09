@@ -4,7 +4,7 @@ package irvine.oeis.a400;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A400814 allocated for Boris K. Horvat.
+ * A400814 Number of minor star triples in the level-n supertile of the Spectre tiling.
  * @author Georg Fischer
  */
 public class A400814 extends HolonomicRecurrence {

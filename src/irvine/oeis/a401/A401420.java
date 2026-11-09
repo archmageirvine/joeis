@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A401420 allocated for Alex Ratushnyak.
+ * A401420 Triangular numbers t such that either t-1 or t+1 is a perfect power (A001597).
  * @author Sean A. Irvine
  */
 public class A401420 extends FilterSequence {

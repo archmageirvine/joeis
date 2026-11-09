@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401508 allocated for Robert G. Wilson v.
+ * A401508 Least prime p such that 2^((p-1)/n) == 1 (mod p).
  * @author Sean A. Irvine
  */
 public class A401508 extends Sequence1 {

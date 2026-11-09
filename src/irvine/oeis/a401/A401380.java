@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A401380 allocated for Antti Karttunen.
+ * A401380 Number of distinct prime factors in the largest divisor of sigma(n^2) that are coprime with n^2, where sigma is the sum of divisors function.
  * @author Georg Fischer
  */
 public class A401380 extends LambdaSequence {

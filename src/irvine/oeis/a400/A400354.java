@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a032.A032531;
 
 /**
- * A401531.
+ * A400354 Column of the rightmost maximum entry in the n-th row of A032531.
  * @author Sean A. Irvine
  */
 public class A400354 extends A032531 {

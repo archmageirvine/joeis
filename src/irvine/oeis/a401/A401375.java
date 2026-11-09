@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A401375 allocated for Antti Karttunen.
+ * A401375 Largest divisor of sigma(n) coprime with n, where sigma is the sum of divisors function.
  * @author Georg Fischer
  */
 public class A401375 extends LambdaSequence {

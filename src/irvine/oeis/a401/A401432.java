@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053616;
 
 /**
- * A401432 allocated for Alex Ratushnyak.
+ * A401432 Distance between n^2 and the nearest triangular number, either above or below n^2.
  * @author Sean A. Irvine
  */
 public class A401432 extends Sequence0 {

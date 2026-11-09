@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053616;
 
 /**
- * A053616 Pyramidal sequence: distance to nearest triangular number.
+ * A401595 Distance between n^3 and the nearest triangular number, either above or below n^3.
  * @author Sean A. Irvine
  */
 public class A401595 extends Sequence0 {

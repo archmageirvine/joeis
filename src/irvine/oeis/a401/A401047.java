@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401047 allocated for Marco Mantovanelli.
+ * A401047 Number of unordered pairs of finite sets of integer points of diameter n having the same multiset of pairwise distances, with the two sets distinct up to translation and reflection and each counted up to these operations.
  * @author Sean A. Irvine
  */
 public class A401047 extends Sequence0 {

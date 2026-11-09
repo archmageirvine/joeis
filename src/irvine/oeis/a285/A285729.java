@@ -5,7 +5,7 @@ import irvine.oeis.a046.A046523;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A285729 Compound filter: a(n) = T(A032742(n), A046523(n)), where T(n,k) is sequence A000027 used as a pairing function.
+ * A285729 a(n) = (1/2)*(2 + ((A032742(n)+A046523(n))^2) - A032742(n) - 3*A046523(n)), where A032742(n) is the largest proper divisor of n, and A046523(n) is the smallest number with same prime signature as n.
  * @author Georg Fischer
  */
 public class A285729 extends PairTransformSequence {

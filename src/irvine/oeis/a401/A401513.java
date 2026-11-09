@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401513 allocated for Robert Israel.
+ * A401513 Odd legs of the primitive Pythagorean triples corresponding to A398554.
  * @author Sean A. Irvine
  */
 public class A401513 extends Sequence1 {

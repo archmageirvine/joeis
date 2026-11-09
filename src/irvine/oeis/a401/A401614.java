@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401614
+ * A401614 The minimal total height of an n-building skyline such that each building of height h sees exactly h other buildings in total to its left and right.
  * @author Sean A. Irvine
  */
 public class A401614 extends Sequence0 {

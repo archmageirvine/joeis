@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 /**
- * A072718 Numbers n such that 12 applications of 'Reverse and Subtract' lead to n, whereas fewer than 12 applications do not lead to n.
+ * A072718 Numbers m such that 12 applications of 'Reverse and Subtract' lead to m, whereas fewer than 12 applications do not lead to m.
  * @author Sean A. Irvine
  */
 public class A072718 extends A072141 {

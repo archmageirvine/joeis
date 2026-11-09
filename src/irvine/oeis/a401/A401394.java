@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A401394 allocated for Per W. Alexandersson.
+ * A401394 Number of labeled graphs on n vertices that are both chordal and claw-free.
  * @author Sean A. Irvine
  */
 public class A401394 extends ParallelGenerateGraphsSequence {

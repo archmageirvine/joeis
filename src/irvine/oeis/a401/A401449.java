@@ -4,7 +4,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401449 allocated for Ganesan Subramaniam.
+ * A401449 Non-repdigit positive integers whose proper decimal prefixes and proper decimal suffixes have equal sums.
  * @author Sean A. Irvine
  */
 public class A401449 extends FilterNumberSequence {

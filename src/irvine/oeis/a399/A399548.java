@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399548 allocated for Gerhard Kirchner.
+ * A399548 Number of shortest lattice paths starting at (0,0) and ending at (x,y) with x,y&gt;=0, x^2+y^2&lt;=n^2, (x+1)^2+y^2&gt;n^2 and x^2+(y+1)^2&gt;n^2.
  * @author Sean A. Irvine
  */
 public class A399548 extends Sequence0 {

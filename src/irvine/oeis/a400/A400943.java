@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400943 allocated for Siegfried Pohl.
+ * A400943 Maximum length J of a chain of factorizations j*n = d(j)*e(j) (j = 1..J) with d(1), e(1) &gt;= 2, d(j+1) &gt;= d(j) + 2 and e(j+1) &gt;= e(j) + 2.
  * @author Sean A. Irvine
  */
 public class A400943 extends Sequence1 {

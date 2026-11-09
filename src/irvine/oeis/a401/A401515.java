@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401515 allocated for Robert Israel.
+ * A401515 Hypotenuses of the primitive Pythagorean triples corresponding to A398554.
  * @author Sean A. Irvine
  */
 public class A401515 extends Sequence1 {

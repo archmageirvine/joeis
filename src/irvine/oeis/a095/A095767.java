@@ -8,12 +8,12 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004001;
 
 /**
- * A095767 a(n) = valuation(A004001(n), 2).
+ * A095767 a(n) = valuation(A004001(n),2).
  * @author Georg Fischer
  */
 public class A095767 extends Sequence1 implements DirectSequence {
 
-  private final DirectSequence A004001 = new A004001();
+  private static final DirectSequence A004001 = new A004001();
 
   @Override
   public Z next() {

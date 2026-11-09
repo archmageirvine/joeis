@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401648
+ * A401648 Earliest monotonic sequence satisfying a(1)=1 and a(a(n)+a(n-1)+a(n-2)+a(n-3)+a(n-4)) = n for n&gt;=1 (with a(k)=0 for k&lt;=0).
  * @author Sean A. Irvine
  */
 public class A401648 extends Sequence0 {

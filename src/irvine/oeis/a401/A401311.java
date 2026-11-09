@@ -5,7 +5,7 @@ import irvine.oeis.a058.A058009;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A401311 allocated for Justo Tapiador.
+ * A401311 Prime staircase: a(n) is obtained by starting from n and iterating the prime-indexing map x -&gt; prime(x) exactly n+1 times.
  * @author Sean A. Irvine
  */
 public class A401311 extends SimpleTransformSequence {

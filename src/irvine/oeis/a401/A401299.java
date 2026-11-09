@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003418;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A401299 allocated for Aidan Shin.
+ * A401299 Number of decimal digits in lcm(1,2,...,n) = A003418(n).
  * @author Sean A. Irvine
  */
 public class A401299 extends SimpleTransformSequence {

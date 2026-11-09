@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A087254 If we start the Collatz-iteration at these values, each divisible by 4, all subsequent terms in trajectory are smaller than the initial value.
+ * A087254 Numbers k, divisible by 4, such that k is the only number for which k is the maximum value in any Collatz trajectory.
  * @author Sean A. Irvine
  */
 public class A087254 extends FilterPositionSequence {

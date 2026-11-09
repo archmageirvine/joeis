@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A091983 a(0) = 1, a(n) = 20*sigma[3](n).
+ * A091983 a(0) = 1, a(n) = 20*sigma_3(n).
  * @author Georg Fischer
  */
 public class A091983 extends LambdaSequence {

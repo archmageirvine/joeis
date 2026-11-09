@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a046.A046523;
 
 /**
- * A278226 Filter-sequence for primorial base: least number with the same prime signature as A276086(n).
+ * A278226 The smallest number with same prime signature as A276086(n) has, where A276086 is the primorial base exp-function.
  * @author Georg Fischer
  */
 public class A278226 extends LambdaSequence {

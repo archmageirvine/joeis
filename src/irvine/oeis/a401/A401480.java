@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a008.A008479;
 
 /**
- * A401480 allocated for Michael De Vlieger.
+ * A401480 Smallest k = prime(j) * Product_{h=i..j} prime(h) such that A008479(k) = n+1.
  * @author Sean A. Irvine
  */
 public class A401480 extends A000040 {

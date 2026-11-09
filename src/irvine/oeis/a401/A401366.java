@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401366 allocated for Scott M. Foltz.
+ * A401366 Number of distinct adjacency eigenvalues of the honeycomb lattice on an n X n torus (2*n^2 vertices).
  * @author Sean A. Irvine
  */
 public class A401366 extends Sequence1 {

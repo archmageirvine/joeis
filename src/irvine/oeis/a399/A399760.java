@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399760 allocated for Ruud H.G. van Tol.
+ * A399760 Odd part of the parity vector of 4*n-1 under the reduced Collatz map A014682 until its trajectory first goes below 4*n-1, read in binary, with a 1 for each (3*x+1)/2 step and a 0 for each x/2 step.
  * @author Sean A. Irvine
  */
 public class A399760 extends Sequence1 {

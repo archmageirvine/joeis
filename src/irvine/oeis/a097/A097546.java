@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.math.z.Z;
 
 /**
- * A097546 Denominators of "Farey fraction" approximations to Pi.
+ * A097546 Denominators of semiconvergents to Pi.
  * @author Sean A. Irvine
  */
 public class A097546 extends A097545 {

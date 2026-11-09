@@ -5,7 +5,7 @@ import irvine.math.predicate.Predicates;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A401382 allocated for Antti Karttunen.
+ * A401382 Numbers k such that {the largest divisor of sigma(k) coprime with k} is a prime, where sigma is the sum of divisors function.
  * @author Georg Fischer
  */
 public class A401382 extends FilterPositionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A401470 allocated for Nicolay Avilov.
+ * A401470 a(n) is the number of n-digit numbers with distinct digits that are divisible by n.
  * @author Sean A. Irvine
  */
 public class A401470 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A108033 n!*(3*n^2-13*n+14)/6.
+ * A108033 a(n) = n!*(3*n^2 - 13*n + 14)/6.
  * @author Georg Fischer
  */
 public class A108033 extends HolonomicRecurrence {

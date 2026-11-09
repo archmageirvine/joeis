@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A399622 allocated for Bruno Paiva Viana.
+ * A399622 Semiprimes N = p*q with 5 &lt; p &lt; q such that N is the largest vertex of a directed cycle of length &gt;= 3 in the digraph on all such semiprimes, with an arc N -&gt; M iff M is also such a semiprime and M is one of N-(p+q), N-(q-p), N+(q-p), N+(p+q).
  * @author Sean
  */
 public class A399622 extends Sequence1 {

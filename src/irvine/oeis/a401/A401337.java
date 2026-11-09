@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401337 allocated for Liu Junhui.
+ * A401337 Absolute difference between the number of primes in the left half and the right half of the interval [prime(n)^2, prime(n+1)^2].
  * @author Sean A. Irvine
  */
 public class A401337 extends Sequence1 {

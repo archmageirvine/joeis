@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048250;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A291750 Compound filter: a(n) = P(A003557(n), A048250(n)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A291750 a(n) = (1/2)*(2 + ((A003557(n) + A048250(n))^2) - A003557(n) - 3*A048250(n)), where A003557(n) = n divided by largest squarefree divisor of n, and A048250(n) = sum of the squarefree divisors of n.
  * @author Georg Fischer
  */
 public class A291750 extends TupleTransformSequence {

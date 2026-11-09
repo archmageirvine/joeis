@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401277 allocated for Geoffrey Critzer.
+ * A401277 Irregular triangular array read by rows. T(n,k) is the number of ways to orient the edges of a simple labeled graph on [n] having exactly k edges so that there are no vertex descents then color the vertices with exactly n colors c1&lt;c2&lt;...&lt;cn so that there are no color descents, 0&lt;=k&lt;=binomial(n,2), n&gt;=0.
  * @author Sean A. Irvine
  */
 public class A401277 extends Sequence0 {

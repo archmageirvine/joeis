@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398117 allocated for Dmytro Dmytryshyn.
+ * A398117 Triangle read by rows: T(n,k) = [x^(n-k)] ((1-x^2)^2 - 4*x)^(-(k+1)/2) for 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A398117 extends Sequence0 {

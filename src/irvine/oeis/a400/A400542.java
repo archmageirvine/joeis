@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.Albanian;
 
 /**
- * A400542 allocated for Marko Radulovic.
+ * A400542 Number of letters in n in Albanian (excluding spaces).
  * @author Sean A. Irvine
  */
 public class A400542 extends Sequence0 {

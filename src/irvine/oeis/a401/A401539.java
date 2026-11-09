@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001358;
 
 /**
- * A401539 allocated for Michael Shmoish.
+ * A401539 Semiprime residuals: a(n) = q (mod p), where p &lt;= q are the prime factors of the n-th semiprime S_n = p*q.
  * @author Sean A. Irvine
  */
 public class A401539 extends A001358 {

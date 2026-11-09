@@ -8,7 +8,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a122.A122111;
 
 /**
- * A278221 Filtering sequence (related to prime factorization): a(n) = A046523(A122111(n)).
+ * A278221 The smallest number with same prime signature as A122111(n) has, where A122111 conjugates the prime factorization of n.
  * @author Georg Fischer
  */
 public class A278221 extends AbstractSequence implements DirectSequence {

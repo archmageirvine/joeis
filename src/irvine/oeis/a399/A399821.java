@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399821 allocated for Jwalin Bhatt.
+ * A399821 Maximum number of elements in an admissible tuple with consecutive gaps at most 2n.
  * @author Sean A. Irvine
  */
 public class A399821 extends Sequence0 {

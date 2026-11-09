@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A400995 allocated for Martin Sims.
+ * A400995 Prime numbers p such that p^4 is an interprime = average of two successive primes.
  * @author Sean A. Irvine
  */
 public class A400995 extends FilterSequence {

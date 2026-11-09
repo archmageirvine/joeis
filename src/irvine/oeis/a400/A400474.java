@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A400474 allocated for Takuto Nakai.
+ * A400474 Maximum, over all triangles ABC, of the number of points P strictly inside ABC such that the angles APB, BPC, CPA are pairwise distinct integer multiples of Pi/n.
  * @author Sean A. Irvine
  */
 public class A400474 extends Sequence3 {

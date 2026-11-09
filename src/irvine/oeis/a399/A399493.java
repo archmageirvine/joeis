@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399493 allocated for Stuart Coe.
+ * A399493 a(1) = a(2) = 1, a(n) = gcd((n-1)*(n-2), a(n-1)+a(n-2)) for n &gt; 2.
  * @author Sean A. Irvine
  */
 public class A399493 extends Sequence1 {

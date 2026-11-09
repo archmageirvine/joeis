@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401368 allocated for Ali Ashter.
+ * A401368 Number of ways to write 2n as p + q with p a twin prime and q a cousin prime.
  * @author Sean A. Irvine
  */
 public class A401368 extends Sequence1 {

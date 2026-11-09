@@ -5,7 +5,7 @@ import irvine.oeis.a286.A286570;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A300230 Restricted growth sequence transform of A286570, combining A009194(n) and A046523(n), i.e., gcd(n,sigma(n)) and the prime signature of n.
+ * A300230 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A046523(i) = A046523(j) and A009194(i) = A009194(j), for all i, j &gt;= 1, where A046523(n) is the smallest number with same prime signature as n, and A009194(n) = gcd(n, sigma(n)).
  * @author Georg Fischer
  */
 public class A300230 extends RestrictedGrowthTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A400334 allocated for Rick Gulati.
+ * A400334 Decimal expansion of (3/2)*exp(-6^(1/3)).
  * @author Sean A. Irvine
  */
 public class A400334 extends DecimalExpansionSequence {

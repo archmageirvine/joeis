@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401455 allocated for Yonatan Haver.
+ * A401455 Number of partitions of n into distinct positive parts such that the sum of any two distinct parts is squarefree.
  * @author Sean A. Irvine
  */
 public class A401455 extends Sequence0 {

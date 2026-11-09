@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A094876 a(1) = a(2) = a(3) = a(4) = a(5) = a(6) = 1; then a(n) = sum( a(2*i)*a(3*j)) where 1&lt; = i&lt; = n, 1&lt; = j&lt; = n and 2*i+3*j = n.
+ * A094876 a(1) = a(2) = a(3) = a(4) = a(5) = a(6) = 1, then a(n) = Sum_{1 &lt;= i &lt;= n, 1 &lt;= j &lt;= n and 2*i + 3*j = n} ( a(2*i)*a(3*j) ).
  * @author Georg Fischer
  */
 public class A094876 extends HolonomicRecurrence {

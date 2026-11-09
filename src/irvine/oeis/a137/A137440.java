@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A137440 Triangle T(n,m) read by rows: T(m,n) = (1+n*3^m)-th prime.
+ * A137440 Triangle T(n,m) read by rows: T(n,m) = (1+n*3^m)-th prime.
  * @author Georg Fischer
  */
 public class A137440 extends LambdaTriangle {

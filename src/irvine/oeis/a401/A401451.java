@@ -1,0 +1,37 @@
+
+package irvine.oeis.a401;
+
+import irvine.math.function.Functions;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A401451.
+ * @author Sean A. Irvine
+ */
+public class A401451 extends Sequence1 {
+
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private static final Polynomial<Q> W = Polynomial.create(Q.HALF, Q.ZERO, Q.HALF.negate());
+  private int mN = 0;
+
+  private Polynomial<Q> up(final Polynomial<Q> f) {
+    final Polynomial<Q> i = RING.integrate(f);
+    return RING.subtract(RING.monomial(RING.eval(i, Q.ONE), 0), i);
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    Polynomial<Q> f = Polynomial.create(Q.ONE);
+    for (long k = mN - 1; k > 0; --k) {
+      f = up(RING.multiply(f, W));
+      f = up(f);
+    }
+    return f.coeff(0).multiply(Functions.FACTORIAL.z(4 * (mN - 1))).toZ();
+  }
+}

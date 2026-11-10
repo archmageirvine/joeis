@@ -8,7 +8,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a400.A400564;
 
 /**
- * A398731
+ * A398756 allocated for Jishnu Babu Ranitha.
  * @author Sean A. Irvine
  */
 public class A398756 extends CachedSequence {

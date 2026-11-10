@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A400196 The Heraclitus transform of the squares and 2: a(0) = 0; thereafter a(n) is the least integer (in absolute value) not yet in the sequence such that the absolute difference between a(n-1) and a(n) is either a square or 2; in case of a tie, preference is given to the positive value.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A400196 extends Sequence0 {
 

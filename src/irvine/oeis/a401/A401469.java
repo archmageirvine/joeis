@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
- * A401469 Number of subsets S of {1, 2, ..., n} such that no two elements in S sum to a square-free hypotenuse leg pair, or equivalent subset restriction defined by Pythagorean triples.
+ * A401469 allocated for Yinon Werner.
  * @author Sean A. Irvine
  */
 public class A401469 extends Sequence0 {

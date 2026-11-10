@@ -13,7 +13,7 @@ import irvine.oeis.a001.A001212;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A006638: Extremal restricted range for additive 2-bases.
+ * A006638 Restricted postage stamp problem with n denominations and 2 stamps.
  * Based on Algorithm 1 of J. Kohonen, 2014.
  * @author Sean A. Irvine
  */

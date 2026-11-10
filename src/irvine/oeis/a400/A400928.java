@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A400928 Array read by ascending antidiagonals: A(n,k) = Sum_{m=0..n} binomial(n,m)^k, with k &gt;= 0.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A400928 extends Sequence0 {
 

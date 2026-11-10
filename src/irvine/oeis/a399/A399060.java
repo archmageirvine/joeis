@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A399060 a(n) is the maximum size of a subset of the distinct entries in row n of Pascal's triangle such that no selected entry divides another.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A399060 extends Sequence0 {
 

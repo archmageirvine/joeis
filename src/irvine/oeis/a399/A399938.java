@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 
 /**
  * A399938 Smallest k such that A399937(k) = n, or -1 if no such k exists.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A399938 extends InverseSequence {
 

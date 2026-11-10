@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400926
+ * A400926 allocated for Alex Tori.
  * @author Sean A. Irvine
  */
 public class A400926 extends Sequence1 {

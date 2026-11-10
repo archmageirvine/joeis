@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 
 /**
  * A400916 Array A(n,k) read by antidiagonals: number of unit n-cubes added in the k-th shell by expanding an n-cube by one unit in every coordinate direction per step.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A400916 extends Sequence1 {
 

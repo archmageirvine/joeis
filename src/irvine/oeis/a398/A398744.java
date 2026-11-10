@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087331.
+ * A398744 allocated for Leo Zhang.
  * @author Sean A. Irvine
  */
 public class A398744 extends Sequence0 {

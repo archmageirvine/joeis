@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A399937 a(n) is the number of partitions of n into distinct parts such that the sum of primepi(k) over the parts k equals primepi(n).
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A399937 extends Sequence0 {
 

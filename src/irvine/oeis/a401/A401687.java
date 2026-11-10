@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A087331.
+ * A401687 allocated for Ya-Ping Lu.
  * @author Sean A. Irvine
  */
 public class A401687 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterNumberSequence;
 
 /**
  * A400499 Integer circumradii of non-isosceles cyclic quadrilaterals with integer sides.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A400499 extends FilterNumberSequence {
 

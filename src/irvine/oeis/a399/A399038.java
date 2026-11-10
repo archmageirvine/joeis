@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A399038 Product of the distinct entries on the two main diagonals of the (2*n + 1) X (2*n + 1) square spiral.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A399038 extends Sequence0 {
 

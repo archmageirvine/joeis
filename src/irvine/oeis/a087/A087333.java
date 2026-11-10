@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087331 Smallest number with all identical digits having n distinct prime divisors.
+ * A087333 Smallest prime which begins with the concatenation of n successive odd numbers.
  * @author Sean A. Irvine
  */
 public class A087333 extends Sequence1 {

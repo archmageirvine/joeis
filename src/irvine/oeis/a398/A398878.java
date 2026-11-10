@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000217;
 
 /**
  * A398878 Triangular numbers t such that t+1, t+3, t+7, t+9 are four primes.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A398878 extends FilterSequence {
 

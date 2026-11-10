@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 
 /**
  * A400929 Antidiagonal sums of the array A400928.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A400929 extends A400928 {
 

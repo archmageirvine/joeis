@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087331.
+ * A401617 allocated for Charles L. Hohn.
  * @author Sean A. Irvine
  */
 public class A401617 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401673
+ * A401673 allocated for Dawid Ry\u0142ko.
  * @author Sean A. Irvine
  */
 public class A401673 extends Sequence0 {

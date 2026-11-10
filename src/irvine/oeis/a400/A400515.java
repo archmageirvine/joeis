@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A400515 a(n) = (16^n + 3*4^n - 4*7^n)/12.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A400515 extends Sequence0 {
 

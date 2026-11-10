@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 
 /**
  * A399196 a(n) is obtained by appending the smallest decimal digit to a(n-1) such that the resulting number is deficient, with a(1) = 1.
- * @author Sean
+ * @author Sean A. Irvine
  */
 public class A399196 extends Sequence1 {
 

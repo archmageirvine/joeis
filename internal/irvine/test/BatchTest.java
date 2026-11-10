@@ -45,7 +45,7 @@ import irvine.oeis.SequenceFactory;
 
 /** Reads a subset of OEIS 'stripped', calls jOEIS sequence classes
  *  and compares the results
- *  @author Dr. Georg Fischer
+ *  @author Georg Fischer
  */
 public class BatchTest {
   /** Version information. */

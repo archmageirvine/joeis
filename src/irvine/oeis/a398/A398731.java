@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398731
+ * A398731 allocated for V. Barbera.
  * @author Sean A. Irvine
  */
 public class A398731 extends Sequence0 {

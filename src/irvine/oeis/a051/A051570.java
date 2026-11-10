@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.DeadSequence;
 
 /**
- * A087331 Smallest number with all identical digits having n distinct prime divisors.
+ * A051570 Consider the problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=3 and sequence gives number of different solutions when N takes its maximal value.
  * @author Sean A. Irvine
  */
 public class A051570 extends DeadSequence {

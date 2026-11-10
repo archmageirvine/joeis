@@ -8,13 +8,14 @@ import irvine.math.series.SeriesRing;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * An ordinary generating function consisting of a fraction of two polynomials in "x".
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class GeneratingFunctionSequence extends AbstractSequence {
+public class GeneratingFunctionSequence extends AbstractSequence implements DirectSequence {
 
   private final Z[] mNum; // coefficients of the numerator polynomial
   private final Z[] mDen; // coefficients of the denominator polynomial
@@ -133,5 +134,15 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   @Override
   public Z next() {
     return mSeries.coeff(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return mSeries.coeff(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final long n) {
+    return mSeries.coeff(n);
   }
 }

@@ -12,7 +12,7 @@ public class A401665 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A401665() {
     super(1, 2, k -> {
-      Z t = Z.valueOf(k).multiply(k + 1).multiply(2 * k + 1);
+      final Z t = Z.valueOf(k).multiply(k + 1).multiply(2 * k + 1);
       for (long r = 1; r < k; ++r) {
         final Z u = t.subtract(Z.valueOf(r).multiply(r - 1).multiply(2 * r - 1));
         final long d = 6 * (k - r + 1);

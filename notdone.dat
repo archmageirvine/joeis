@@ -436,7 +436,6 @@ A006574 Number of domino n-tuples, insufficient detail
 A006602 Number of hierarchical models with linear terms forced, dep. on A003182
 A006607 Number of labeled connected rooted trivalent graphs with 2n nodes, I think the OEIS entry is incorrect
 A006627 Number of nonisomorphic 2-graphs with n nodes with first and second cohomology invariants both 0, have paper two-graphs.pdf
-A006638 Restricted postage stamp problem with n denominations and 2 stamps, have paper, and A001212
 A006639 Restricted postage stamp problem
 A006640 Restricted postage stamp problem
 A006652 From the graph reconstruction problem, have paper
@@ -1391,7 +1390,6 @@ A051486 Triangle T(n,k) = number of symmetric Boolean functions of n variables a
 A051526 Order of group G_{1,n}^{8}
 A051527 Order of group H_{1,n}^{8}
 A051569 Consider the problem of placing N = A051756(n) queens on an n X n board so that each queen attacks precisely 3 others; a(n) gives the number of inequivalent solutions [probably erroneous]
-A051570 Consider the problem of placing N = A051756(n) queens on an n X n board so that each queen attacks precisely 3 others; a(n) gives the number of inequivalent solutions [probably erroneous]
 A051571 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=4 and sequence gives number of different solutions when N takes its maximal value [probably erroneous]
 A051590 Number of oriented triangle graphs on binomial(n,2) points [could not get ref]
 A051637 Chromos with n colors

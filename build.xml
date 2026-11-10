@@ -8,6 +8,7 @@
   <property name="doc.dir" value="build.tmp/docs"/>
   <property name="lib.dir" value="lib"/>
   <property name="tools.dir" value="tools"/>
+  <property name="release" value="11"/>
 
   <taskdef resource="net/sf/antcontrib/antlib.xml">
     <classpath>
@@ -38,7 +39,7 @@
 
   <target name="compile-src" description="Compile the source" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" release="11" includeantruntime="false">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" release="${release}" includeantruntime="false">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -49,7 +50,7 @@
 
   <target name="compile-src-debug" description="Compile the source with debugging" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes-debug"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes-debug" release="11" includeantruntime="false" debug="true" debuglevel="lines,vars,source">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes-debug" release="${release}" includeantruntime="false" debug="true" debuglevel="lines,vars,source">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -60,7 +61,7 @@
 
   <target name="compile-internal" depends="compile-src" description="Compile the internal">
     <mkdir dir="${build.dir}/classes-debug"/>
-    <javac srcdir="${internal.dir}" release="11" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${internal.dir}" release="${release}" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
@@ -71,7 +72,7 @@
   </target>
 
   <target name="compile-test" description="Compile the tests">
-    <javac srcdir="${test.dir}" release="11" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${test.dir}" release="${release}" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <pathelement path="${internal.dir}"/>

@@ -11,21 +11,21 @@ import irvine.oeis.a004.A004001;
  */
 public class A095901 extends Sequence1 implements DirectSequence {
 
-  private static final DirectSequence A004001 = new A004001();
+  private final DirectSequence mA = new A004001();
 
   @Override
   public Z next() {
-    return A004001.next().mod(Z.TWO);
+    return mA.next().mod(Z.TWO);
   }
 
   @Override
   public Z a(final Z n) {
-    return A004001.a(n).mod(Z.TWO);
+    return mA.a(n).mod(Z.TWO);
   }
 
   @Override
   public Z a(final long n) {
-    return A004001.a(n).mod(Z.TWO);
+    return mA.a(n).mod(Z.TWO);
   }
 
 }

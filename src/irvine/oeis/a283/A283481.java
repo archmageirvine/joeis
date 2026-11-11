@@ -5,7 +5,6 @@ package irvine.oeis.a283;
 import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a095.A095901;
 
-
 /**
  * A283481 Positions of odd terms in A004001.
  * @author Georg Fischer

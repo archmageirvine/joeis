@@ -1,5 +1,6 @@
 package irvine.oeis.a008;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,77 +13,20 @@ import irvine.oeis.Sequence0;
  */
 public class A008524 extends Sequence0 {
 
-  /*
-   * A vertex is represented by:
-   *   (t, x, y, z, basis)
-   *
-   * The first four entries are integer unit-cell coordinates.
-   * The final entry identifies one of the four basis positions.
-   *
-   * The five neighbours are given by integer translations of
-   * the appropriate basis positions.
-   */
-
-  private static final int[][] TARGET = {
-    {1, 1, 1, 1, 2},
-    {0, 0, 0, 0, 3},
-    {0, 3, 3, 3, 3},
-    {1, 2, 2, 2, 2}
-  };
-
-  private static final int[][][] DELTA = {
-    {
-      {0, 1, 1, 0},
-      {1, 0, 1, 0},
-      {1, 1, 0, 0},
-      {1, 1, 1, 0},
-      {0, 0, 0, 0}
-    },
-    {
-      {-1, -1, -1, 0},
-      {-1, -1, 0, 0},
-      {-1, 0, -1, 0},
-      {0, -1, -1, 0},
-      {0, 0, 0, 0}
-    },
-    {
-      {0, 0, 0, 0},
-      {0, 1, 1, 1},
-      {1, 0, 1, 1},
-      {1, 1, 0, 1},
-      {1, 1, 1, 1}
-    },
-    {
-      {0, 0, 0, 0},
-      {-1, -1, -1, -1},
-      {-1, -1, 0, -1},
-      {-1, 0, -1, -1},
-      {0, -1, -1, -1}
-    }
-  };
-
   private static final class Vertex {
-    private final int mT;
-    private final int mX;
-    private final int mY;
-    private final int mZ;
+    private final int[] mCoordinates;
     private final int mBasis;
+    private final int mHash;
 
-    private Vertex(final int t, final int x, final int y, final int z, final int basis) {
-      mT = t;
-      mX = x;
-      mY = y;
-      mZ = z;
+    private Vertex(final int[] coordinates, final int basis) {
+      mCoordinates = coordinates;
       mBasis = basis;
+      mHash = 31 * Arrays.hashCode(coordinates) + basis;
     }
 
     @Override
     public int hashCode() {
-      int h = mT;
-      h = 31 * h + mX;
-      h = 31 * h + mY;
-      h = 31 * h + mZ;
-      return 31 * h + mBasis;
+      return mHash;
     }
 
     @Override
@@ -91,46 +35,106 @@ public class A008524 extends Sequence0 {
         return false;
       }
       final Vertex other = (Vertex) obj;
-      return mT == other.mT
-        && mX == other.mX
-        && mY == other.mY
-        && mZ == other.mZ
-        && mBasis == other.mBasis;
+      return mBasis == other.mBasis  && Arrays.equals(mCoordinates, other.mCoordinates);
     }
   }
 
+  private final int mN;
   private final Set<Vertex> mVisited = new HashSet<>();
   private Set<Vertex> mFrontier = new HashSet<>();
 
-  /**
-   * Construct the sequence.
-   */
-  public A008524() {
-    final Vertex origin = new Vertex(0, 0, 0, 0, 0);
+  protected A008524(final int n) {
+    mN = n;
+    final Vertex origin = new Vertex(new int[n], 0);
     mVisited.add(origin);
     mFrontier.add(origin);
+  }
+
+  /** Construct the sequence. */
+  public A008524() {
+    this(4);
+  }
+
+  private Vertex neighbour(final Vertex v, final int k) {
+    final int[] c = v.mCoordinates.clone();
+    final int basis;
+    switch (v.mBasis) {
+      case 0:
+        if (k == mN) {
+          basis = 2;
+        } else {
+          for (int j = 0; j < mN - 1; ++j) {
+            ++c[j];
+          }
+          if (k < mN - 1) {
+            --c[k];
+          }
+          basis = 1;
+        }
+        break;
+
+      case 1:
+        if (k == mN) {
+          basis = 3;
+        } else {
+          for (int j = 0; j < mN - 1; ++j) {
+            --c[j];
+          }
+          if (k < mN - 1) {
+            ++c[k];
+          }
+          basis = 0;
+        }
+        break;
+
+      case 2:
+        if (k == 0) {
+          basis = 0;
+        } else {
+          for (int j = 0; j < mN - 1; ++j) {
+            ++c[j];
+          }
+          if (k <= mN - 1) {
+            --c[k - 1];
+          }
+          ++c[mN - 1];
+          basis = 3;
+        }
+        break;
+
+      default:
+        if (k == 0) {
+          basis = 1;
+        } else {
+          for (int j = 0; j < mN - 1; ++j) {
+            --c[j];
+          }
+          if (k <= mN - 1) {
+            ++c[k - 1];
+          }
+          --c[mN - 1];
+          basis = 2;
+        }
+        break;
+    }
+
+    return new Vertex(c, basis);
   }
 
   @Override
   public Z next() {
     final Z result = Z.valueOf(mFrontier.size());
     final Set<Vertex> next = new HashSet<>();
+
     for (final Vertex v : mFrontier) {
-      final int basis = v.mBasis;
-      for (int k = 0; k < 5; ++k) {
-        final int[] d = DELTA[basis][k];
-        final Vertex w = new Vertex(
-          v.mT + d[0],
-          v.mX + d[1],
-          v.mY + d[2],
-          v.mZ + d[3],
-          TARGET[basis][k]
-        );
+      for (int k = 0; k <= mN; ++k) {
+        final Vertex w = neighbour(v, k);
         if (mVisited.add(w)) {
           next.add(w);
         }
       }
     }
+
     mFrontier = next;
     return result;
   }

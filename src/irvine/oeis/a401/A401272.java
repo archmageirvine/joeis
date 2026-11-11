@@ -1,6 +1,5 @@
 package irvine.oeis.a401;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -13,7 +12,6 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A401272 extends Sequence1 {
 
-  private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   private final Sequence mS = new A005101();
   private int mN = 0;

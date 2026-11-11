@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import irvine.math.api.Field;
-import irvine.math.group.AbstractRing;
+import irvine.math.group.AbstractField;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
@@ -22,7 +22,7 @@ import irvine.math.z.Z;
  * @param <E> underlying element type
  * @author Sean A. Irvine
  */
-public class SeriesRing<E> extends AbstractRing<Series<E>> {
+public class SeriesRing<E> extends AbstractField<Series<E>> {
 
   /** Formal power series ring over integers. */
   public static final SeriesRing<Z> SZ = new SeriesRing<>(IntegerField.SINGLETON);

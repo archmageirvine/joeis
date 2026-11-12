@@ -3,25 +3,31 @@ package irvine.oeis.a007;
 import irvine.math.polynomial.CyclotomicPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007273 Inverse of 1155th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A007273 extends Sequence0 {
+public class A007273 extends AbstractSequence {
 
   private final int mN;
   private Polynomial<Z> mA = null;
   private int mM = -1;
 
+  protected A007273(final int offset, final int n) {
+    super(offset);
+    mN = n;
+  }
+
   protected A007273(final int n) {
+    super(0);
     mN = n;
   }
 
   /** Construct the sequence. */
   public A007273() {
-    this(1155);
+    this(0, 1155);
   }
 
   @Override

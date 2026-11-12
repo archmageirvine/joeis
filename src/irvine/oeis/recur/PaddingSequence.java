@@ -31,7 +31,7 @@ public class PaddingSequence extends AbstractSequence implements DirectSequence 
    * @param rightList the right list
    */
   public PaddingSequence(final long[] leftList, final long[] rightList) {
-    this(0, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
+    this(0, leftList, rightList);
   }
 
   /**
@@ -40,7 +40,7 @@ public class PaddingSequence extends AbstractSequence implements DirectSequence 
    * @param rightList the right list
    */
   public PaddingSequence(final String leftList, final String rightList) {
-    this(0, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
+    this(0, leftList, rightList);
   }
 
   /**
@@ -59,7 +59,7 @@ public class PaddingSequence extends AbstractSequence implements DirectSequence 
    * @param rightList the right list
    */
   public PaddingSequence(final int offset, final String leftList, final String rightList) {
-    this(offset, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
+    this(offset, ZUtils.toZ(leftList), rightList == "null" ? new Z[] {null} : ZUtils.toZ(rightList));
   }
 
   /**

@@ -6,18 +6,20 @@ import irvine.math.z.Z;
 /**
  * Generate an aliquot sequence.
  * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class AliquotSequence extends Sequence0 {
+public class AliquotSequence extends AbstractSequence {
 
-  private Z mA = null;
-  private final Z mStart;
+  private static final int DEFOFF = 0;
+  private Z mA;
 
   /**
    * Construct a new aliquot sequence.
    * @param start starting value
    */
   public AliquotSequence(final Z start) {
-    mStart = start;
+    super(DEFOFF);
+    mA = start;
   }
 
   /**
@@ -28,12 +30,22 @@ public class AliquotSequence extends Sequence0 {
     this(Z.valueOf(start));
   }
 
+  /**
+   * Construct a new aliquot sequence.
+   * @param offset first index
+   * @param start starting value
+   */
+  public AliquotSequence(final int offset, final long start) {
+    super(offset);
+    mA = Z.valueOf(start);
+  }
+
   @Override
   public Z next() {
-    if (Z.ZERO.equals(mA)) {
-      return null;
+    final Z result = mA;
+    if (!mA.isZero()) {
+      mA = Functions.ALIQUOT.z(mA);
     }
-    mA = mA == null ? mStart : Functions.ALIQUOT.z(mA);
-    return mA;
+    return result;
   }
 }

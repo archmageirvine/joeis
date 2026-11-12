@@ -13,7 +13,7 @@ public class A401461 extends Sequence2 {
 
   private long mN = 1;
 
-  private static long step(long x, final long base) {
+  private static long step(final long x, final long base) {
     return 1 + Functions.DIGIT_SUM_SQUARES.l(base, x);
   }
 

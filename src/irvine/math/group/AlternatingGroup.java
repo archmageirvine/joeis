@@ -199,7 +199,7 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
     final int n = mSet.size().intValueExact();
     final StringBuilder sb = new StringBuilder("(1 2 3);(");
     for (int k = 0; k <= 2 * n; ++k) {
-      sb.append((k + 1));
+      sb.append(k + 1);
       if (k != 2 * n) {
         sb.append(' ');
       }

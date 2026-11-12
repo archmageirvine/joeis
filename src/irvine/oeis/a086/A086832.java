@@ -36,7 +36,6 @@ public class A086832 extends Sequence1 {
       for (final Map.Entry<Integer, Z> e : v.entrySet()) {
         final int s = e.getKey();
         final Z c = e.getValue();
-
         for (int j = 0; j < nr; ++j) {
           final int r = rows[j];
           if ((r & s) == s) {

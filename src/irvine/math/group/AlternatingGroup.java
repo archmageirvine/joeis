@@ -3,15 +3,18 @@ package irvine.math.group;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import irvine.math.api.Set;
 import irvine.math.function.Functions;
+import irvine.math.graph.Graph;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.partition.PartitionUtils;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
+import irvine.math.set.FiniteSet;
 import irvine.math.set.IntegerSet;
 import irvine.math.set.Permutation;
 import irvine.math.z.Z;
@@ -188,5 +191,23 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
   @Override
   public CycleIndex cycleIndex() {
     return cycleIndex(mSet.size().intValueExact());
+  }
+
+  @Override
+  public Graph cayleyGraph() {
+    // Do this via a permutation group
+    final int n = mSet.size().intValueExact();
+    final StringBuilder sb = new StringBuilder("(1 2 3);(");
+    for (int k = 0; k <= 2 * n; ++k) {
+      sb.append((k + 1));
+      if (k != 2 * n) {
+        sb.append(' ');
+      }
+    }
+    sb.append(')');
+    final List<Permutation<Integer>> values = GroupFactory.descriptionToPermutations(sb.toString());
+    final FiniteSet<Permutation<Integer>> gens = new FiniteSet<>(values);
+    final int o = gens.iterator().next().domain().size().intValueExact();
+    return SymmetricGroup.create(o).generateSubgroup(gens).cayleyGraph();
   }
 }

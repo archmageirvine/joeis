@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 public class A065357 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
-  private long mN = -1;
+  protected long mN = -1;
   private boolean mSign = true;
 
   @Override

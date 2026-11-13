@@ -37,6 +37,8 @@ public class A401753 extends Sequence1 {
     }
     switch (grid[x][y]) {
       case UNVISITED:
+        // We have not been in this cell before
+        // Recurse with each of the two possible colors
         grid[x][y] = BLACK;
         search(grid, x, y, d, steps, max);
         grid[x][y] = WHITE;

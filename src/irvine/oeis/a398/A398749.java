@@ -4,7 +4,7 @@ import irvine.oeis.a060.A060355;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A398749 allocated for Michael De Vlieger.
+ * A398749 Powerful oblong numbers (oblong Achilles numbers).
  * @author Sean A. Irvine
  */
 public class A398749 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A258885 Primitive weird numbers (A002975) having 6 distinct prime factors.
+ * A258885 Primitive weird numbers (PWNs: A002975) having 6 distinct prime factors.
  *
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002828;
 import irvine.oeis.a053.A053610;
 
 /**
- * A401547 allocated for Abo Khmiss.
+ * A401547 Numbers k such that the greedy algorithm for writing k as a sum of positive squares uses more squares than necessary; i.e., numbers k such that A053610(k) &gt; A002828(k).
  * @author Sean A. Irvine
  */
 public class A401547 extends Sequence1 {

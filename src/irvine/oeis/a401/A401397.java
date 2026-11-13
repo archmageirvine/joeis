@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401397 allocated for Sajid Hussain.
+ * A401397 Triangle read by rows: T(n,k) is the number of decimal strings of length n with k indispensable digits, with 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A401397 extends Sequence0 {

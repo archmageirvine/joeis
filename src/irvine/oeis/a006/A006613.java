@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A006613 Zarankiewicz's problem.
+ * A006613 Zarankiewicz's problem: a(n) is the least k such that every n X n {0,1}-matrix with k ones contains an all-ones 2 X 3 submatrix.
  * @author Sean A. Irvine
  */
 public class A006613 extends AbstractSequence {

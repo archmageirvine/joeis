@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398775 allocated for Lei Zhou.
+ * A398775 a(n) is the smallest positive integer that makes p(n) = (2 * a(n) * p(n-1))^2 + 1 a prime with p(0) = 1.
  * @author Sean A. Irvine
  */
 public class A398775 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401624 allocated for Henri Lifchitz.
+ * A401624 Number of primes p &lt; 10^n such 2*p-1 is also prime.
  * @author Sean A. Irvine
  */
 public class A401624 extends Sequence1 {

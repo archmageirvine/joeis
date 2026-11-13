@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A400625 allocated for Siegfried Pohl.
+ * A400625 Smallest k such that A400943(k) &gt;= n.
  * @author Sean A. Irvine
  */
 public class A400625 extends Sequence1 {

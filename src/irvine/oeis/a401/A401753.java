@@ -1,4 +1,3 @@
-
 package irvine.oeis.a401;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401753.
+ * A401753 allocated for Kossi Roland Etse.
  * @author Sean A. Irvine
  */
 public class A401753 extends Sequence1 {

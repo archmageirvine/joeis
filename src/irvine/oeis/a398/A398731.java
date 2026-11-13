@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398731 allocated for V. Barbera.
+ * A398731 Irregular triangle read by rows in which row n gives the congruences (mod 2^floor(1+n*log_2(5))) that have an admissible sequence of order n; related to 5x+1 problem.
  * @author Sean A. Irvine
  */
 public class A398731 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399557 allocated for Mottaqui Karim.
+ * A399557 a(n) is the smallest prime p such that p and p+2n are both terms of A179502, or 0 if no such p exists.
  * @author Sean A. Irvine
  */
 public class A399557 extends Sequence1 {

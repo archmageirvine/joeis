@@ -8,7 +8,7 @@ import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A401770 allocated for Lucas A. Brown.
+ * A401770 Product_{n&gt;=1} zeta(n*s)^a(n) equals the Dirichlet series of the 6-full numbers.
  * @author Sean A. Irvine
  */
 public class A401770 extends Sequence1 {

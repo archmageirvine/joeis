@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401673 allocated for Dawid Ry\u0142ko.
+ * A401673 Triangle read by rows: T(n,k) is the number of domicule tilings of the 2n X 2n square with exactly 2k diagonal domicules, 0 &lt;= k &lt;= n^2.
  * @author Sean A. Irvine
  */
 public class A401673 extends Sequence0 {

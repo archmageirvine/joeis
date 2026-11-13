@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A178175 Numbers n such that 10^n - 47 is prime.
+ * A178175 Numbers k such that 10^k - 47 is prime.
  * @author Georg Fischer
  */
 public class A178175 extends PrimePositionSubsequence {

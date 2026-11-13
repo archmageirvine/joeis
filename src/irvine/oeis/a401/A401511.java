@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401511 allocated for Martin Michael Musatov.
+ * A401511 Value of m - (2k + 3), where m is the prime index of the n-th prime that is the sum of three consecutive primes (A034962), and k is the prime index of the first of those three consecutive primes (A073681).
  * @author Sean A. Irvine
  */
 public class A401511 extends Sequence1 {

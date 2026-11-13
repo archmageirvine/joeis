@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401826 allocated for Wesley Ivan Hurt.
+ * A401826 a(n) = Sum_{d|n, d&gt;1} d * pi(d-1) for n&gt;=1, where pi = A000720.
  * @author Sean A. Irvine
  */
 public class A401826 extends Sequence1 {

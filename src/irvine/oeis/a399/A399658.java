@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A399658 allocated for Alper Ferudun.
+ * A399658 Number of jumps until the n-th return to 0 of the walk on the integers that starts at 0 and, on its j-th visit to an integer x, jumps to x - j if x &gt; 0 and to x + j if x &lt;= 0.
  * @author Sean A. Irvine
  */
 public class A399658 extends Sequence1 {

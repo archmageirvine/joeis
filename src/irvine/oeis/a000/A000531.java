@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A000531 From area of cyclic polygon of 2n + 1 sides.
+ * A000531 Maximum number of (2n + 1)-sided cyclic polygons with specified side lengths.
  * @author Sean A. Irvine
  */
 public class A000531 extends Sequence1 {

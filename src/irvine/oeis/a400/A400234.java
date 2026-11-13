@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400234 Number of spanning trees in the Klein bottle graph K_{3,2n}.
+ * A400234 Number of spanning trees in the 3 X n Klein bottle grid graph.
  * @author Sean A. Irvine
  */
 public class A400234 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401738 allocated for Alper Ferudun.
+ * A401738 Least preperiod of row n of A401735.
  * @author Sean A. Irvine
  */
 public class A401738 extends Sequence0 {

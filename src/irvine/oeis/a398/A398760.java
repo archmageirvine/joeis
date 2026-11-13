@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398760 allocated for Andrei Leonov.
+ * A398760 Sieve: delete every 3rd term of the positive integers, then every 4th term of what remains, then every 5th term, and so on; a(n) is the n-th survivor.
  * @author Sean A. Irvine
  */
 public class A398760 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A401687 allocated for Ya-Ping Lu.
+ * A401687 a(n) is the number of steps required for the n-th prime to enter a loop when iterating the map: x -&gt; nextprime(x*2) if primepi(x) is odd and x -&gt; nextprime(x/2) otherwise.
  * @author Sean A. Irvine
  */
 public class A401687 extends A000040 {

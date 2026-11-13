@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A401760 allocated for Eddie Lin Rui.
+ * A401760 Array A(n,k), n &gt;= 3, k &gt;= 2, read by antidiagonals: number of unit cubes in the k^n cubic grid.
  * @author Sean A. Irvine
  */
 public class A401760 extends Sequence3 {

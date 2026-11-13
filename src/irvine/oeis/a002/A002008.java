@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A002008 Almost trivalent maps.
+ * A002008 Number of rooted planar maps with 2n trivalent vertices and a root vertex of valence 6.
  * @author Sean A. Irvine
  */
 public class A002008 extends Sequence0 {

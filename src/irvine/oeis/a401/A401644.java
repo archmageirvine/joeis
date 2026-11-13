@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001358;
 
 /**
- * A401644 allocated for Simon Goater.
+ * A401644 Sum of semiprimes &lt; 10^n.
  * @author Sean A. Irvine
  */
 public class A401644 extends Sequence0 {

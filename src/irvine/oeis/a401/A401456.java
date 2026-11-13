@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A401456 allocated for Vicenzo P DeMaar.
+ * A401456 Smallest m such that the m-tuples ((x/p), ((x+1)/p), ..., ((x+m-1)/p)) of consecutive Legendre symbols are pairwise distinct for x = 0..p-1, where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A401456 extends Sequence2 {

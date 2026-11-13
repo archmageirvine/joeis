@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.BriefSequence;
 
 /**
- * A370963 a(n) = number of &quot;lonesum&quot; n X n X n tensors.
+ * A370963 a(n) = number of "lonesum" n X n X n tensors.
  * @author Georg Fischer
  */
 

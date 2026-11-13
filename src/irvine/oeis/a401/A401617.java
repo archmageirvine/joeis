@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401617 allocated for Charles L. Hohn.
+ * A401617 Maximum number of consecutive equal digits of n in any base &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A401617 extends Sequence0 {

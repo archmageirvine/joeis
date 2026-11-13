@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398733 allocated for Scott M. Foltz.
+ * A398733 Number of perfect matchings in the graph on 2n vertices (0..2n-1) with i and j adjacent if and only if |i-j| is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A398733 extends Sequence0 {

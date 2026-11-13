@@ -5,7 +5,7 @@ package irvine.oeis.a297;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A297670 Number of chordless cycles in the n-triangular graph.
+ * A297670 Number of chordless cycles in the n-triangular (Johnson) graph.
  * (-4-2*n)*a(n+1)+2*a(n+2)+(2+2*n)*a(n)-n^3+n
  * @author Georg Fischer
  */

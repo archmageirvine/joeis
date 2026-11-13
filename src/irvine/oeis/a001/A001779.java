@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001779 Expansion of 1/((1+x)(1-x)^8).
+ * A001779 Expansion of g.f. 1/((1+x)*(1-x)^8).
  * @author Sean A. Irvine
  */
 public class A001779 extends Sequence0 {

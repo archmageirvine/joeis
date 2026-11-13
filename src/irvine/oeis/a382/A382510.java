@@ -4,7 +4,7 @@ package irvine.oeis.a382;
 import irvine.oeis.BriefSequence;
 
 /**
- * A382510 a(n) is the number of solutions to the &quot;sum equals product&quot; riddle with n prices v_j, i.e., find positive integers v_j, v_{j+1}&gt;=v_j such that 100^(n-1)*Sum_{k=1..n} v_k = Product_{k=1..n} v_k.
+ * A382510 a(n) is the number of solutions to the "sum equals product" riddle with n prices v_j, i.e., find positive integers v_j, v_{j+1}&gt;=v_j such that 100^(n-1)*Sum_{k=1..n} v_k = Product_{k=1..n} v_k.
  * @author Georg Fischer
  */
 

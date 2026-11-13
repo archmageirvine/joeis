@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A399492 allocated for Paul Agyemang.
+ * A399492 a(0) = 0, a(1) = 1; for n &gt;= 2, a(n) = a(n-1) + 1 + c(n), where c(n) is the number of pairs 0 &lt;= i &lt; j &lt; n with a(j) - a(i) = a(n-1) - a(n-2).
  * @author Sean A. Irvine
  */
 public class A399492 extends CachedSequence {

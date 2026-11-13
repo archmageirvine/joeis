@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A142354 A triangular sequence "representation" of the modulo 10 Integer field: t(+)(n,m)=Mod[n + m, 10]; t(x)(n,m)=Mod[n*m, 10]; t(n,m)=Mod[t(=)(n,m)*t(X)(n,m),10].
+ * A142354 Triangle read by rows: T(n,k) = n * k * (n + k) mod 10, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A142354 extends Sequence1 {

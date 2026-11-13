@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401460 allocated for Helen Grundman.
+ * A401460 Number of cycles under iteration (including fixed points) of the function S(x) = 1+sum of squares of base n digits.
  * @author Sean A. Irvine
  */
 public class A401460 extends Sequence2 {

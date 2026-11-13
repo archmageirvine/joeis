@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401668 allocated for Sajid Khan Hussain.
+ * A401668 Number of groups G of order n such that |Aut(G)| = n.
  * @author Sean A. Irvine
  */
 public class A401668 extends Sequence1 {

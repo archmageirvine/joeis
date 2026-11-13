@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401734 allocated for Amiram Eldar.
+ * A401734 Number of factorizations of n into factors that have the same prime signature.
  * @author Sean A. Irvine
  */
 public class A401734 extends Sequence1 {

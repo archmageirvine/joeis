@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401695 allocated for Amiram Eldar.
+ * A401695 Number of unordered factorizations of n into its distinct and pairwise infinitarily coprime infinitary divisors.
  * @author Sean A. Irvine
  */
 public class A401695 extends Sequence1 {

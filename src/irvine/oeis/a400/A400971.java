@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400971 allocated for Yongkuo Chen.
+ * A400971 Number of ordered pairs of distinct subsets A,B of {1,...,n} with equal sums of elements and equal sums of cubes of elements.
  * @author Sean A. Irvine
  */
 public class A400971 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002365;
 import irvine.oeis.a002.A002366;
 
 /**
- * A401741 allocated for Edward Schmidt.
+ * A401741 Sum of the squares of the semiperimeter s and inradius r of the primitive Pythagorean triangle with hypotenuse A002144(n): a(n) = s^2 + r^2.
  * @author Sean A. Irvine
  */
 public class A401741 extends Sequence1 {

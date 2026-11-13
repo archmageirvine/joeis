@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.math.z.Z;
 
 /**
- * A401360 allocated for Rok Cestnik.
+ * A401360 Number of earlier bars in A401167 that are invisible from the point (n,n-1).
  * @author Sean A. Irvine
  */
 public class A401360 extends A401167 {

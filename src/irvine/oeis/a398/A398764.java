@@ -6,7 +6,7 @@ import irvine.oeis.CachedSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A398764 allocated for Rok Cestnik.
+ * A398764 a(n) = the height h of the highest building which can see exactly h earlier buildings.
  * @author Sean A. Irvine
  */
 public class A398764 extends CachedSequence {

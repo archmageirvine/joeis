@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A401666 allocated for Igor Zhuk.
+ * A401666 Sum of n-bit primes whose binary expansion has a single circular run of 1s and at most one internal block of 0s.
  * @author Sean A. Irvine
  */
 public class A401666 extends Sequence2 {

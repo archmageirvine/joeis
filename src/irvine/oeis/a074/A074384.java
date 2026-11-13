@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a084.A084301;
 
 /**
- * A074384 Solutions to mod(sigma(x), 6) = 5.
+ * A074384 Solutions to sigma(x) == 5 (mod 6).
  * @author Georg Fischer
  */
 public class A074384 extends FilterPositionSequence {

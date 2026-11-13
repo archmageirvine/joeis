@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A173187 a(n) = binomial(n + 3, 3)*9^n.
+ * A173187 a(n) = binomial(n+3,3)*9^n.
  * @author Sean A. Irvine
  */
 public class A173187 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A218689 Sum_{k=0..n} C(n,k)^6*C(n+k,k)^6.
+ * A218689 a(n) = Sum_{k=0..n} binomial(n,k)^6*binomial(n+k,k)^6.
  * a(n)=sum(k=0,n,binom(n,k)^6*binom(n+k,k)^6)
  * @author Georg Fischer
  */

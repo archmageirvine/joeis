@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002365;
 import irvine.oeis.a002.A002366;
 
 /**
- * A401742 allocated for Edward Schmidt.
+ * A401742 Square roots of the central entries in a six-square 3 X 3 magic-square construction from Pythagorean primes using the semiperimeter and inradius.
  * @author Sean A. Irvine
  */
 public class A401742 extends Sequence1 {

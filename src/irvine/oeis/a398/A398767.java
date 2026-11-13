@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a090.A090025;
 
 /**
- * A398767 allocated for Janaka Rodrigo.
+ * A398767 a(n) is the number of grid points in an n X n X n cube that cannot be connected by a straight line to a given corner without passing through another grid point.
  * @author Sean A. Irvine
  */
 public class A398767 extends Sequence1 {

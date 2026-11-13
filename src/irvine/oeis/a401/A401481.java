@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002487;
 
 /**
- * A401481 allocated for M. Jeremie Lafitte (Levitas).
+ * A401481 Binary encodings of the top-to-bottom column words of the Gosper-Lafitte triangle.
  * @author Sean A. Irvine
  */
 public class A401481 extends Sequence1 {

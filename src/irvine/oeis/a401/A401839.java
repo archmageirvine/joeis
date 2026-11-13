@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401839 allocated for Felix Huber.
+ * A401839 a(n) is the least positive integer k such that each side of the triangle with sides k*A120133(n), k*A120132(n), k*A120131(n) divides its area.
  * @author Sean A. Irvine
  */
 public class A401839 extends Sequence1 {

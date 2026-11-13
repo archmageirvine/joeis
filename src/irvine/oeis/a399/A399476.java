@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399476 allocated for Clark Kimberling.
+ * A399476 Least prime of the form (3^k - 1)/2.
  * @author Sean A. Irvine
  */
 public class A399476 extends Sequence1 {

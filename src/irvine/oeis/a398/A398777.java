@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398777 allocated for Jeff Sponaugle.
+ * A398777 Number of ways to tile an n X n board having a black border with the 1 X 1 tiles bbbb, bbww, wbbw, bwwb, wwbb (colors read clockwise around each tile), up to rotations and reflections of the board.
  * @author Sean A. Irvine
  */
 public class A398777 extends Sequence1 {

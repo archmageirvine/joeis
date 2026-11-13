@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401594 allocated for Omar E. Pol.
+ * A401594 Square array read by antidiagonals upwards: T(n,k) is the n-th prime that does not contain the string "k", with n &gt;= 1, k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A401594 extends Sequence1 {

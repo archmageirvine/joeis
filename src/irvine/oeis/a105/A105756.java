@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001591;
 
 /**
- * A105756 Indices of prime Fibonacci 5-step numbers, A001591.
+ * A105756 Indices minus 3 of prime Fibonacci 5-step numbers, A001591.
  * @author Georg Fischer
  */
 public class A105756 extends FilterPositionSequence {

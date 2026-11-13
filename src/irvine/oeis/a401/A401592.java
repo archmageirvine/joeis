@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401592 allocated for Ruud H.G. van Tol.
+ * A401592 Numerator of the 2-adic rational xi(h(n)), where h is the parity-preserving conjugacy between the Collatz map T = A014682 and Monks' q-analog T_q(x) = x/q if x is even, ((1+q)*x+1)/q if x is odd, on F_2[[q]].
  * @author Sean A. Irvine
  */
 public class A401592 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401764 allocated for Vighnesh Pamu.
+ * A401764 Decimal expansion of the positive real root of x^(x+1) = x^2 + 1.
  * @author Sean A. Irvine
  */
 public class A401764 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a381;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A381001 Georges Pfeffermann&apos;s 1890 bimagic square of order 8, read by rows.
+ * A381001 Georges Pfeffermann's 1890 bimagic square of order 8, read by rows.
  * @author Georg Fischer
  */
 

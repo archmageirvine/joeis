@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401697 allocated for Amiram Eldar.
+ * A401697 Number of unordered factorizations of n into its distinct infinitary divisors.
  * @author Sean A. Irvine
  */
 public class A401697 extends Sequence1 {

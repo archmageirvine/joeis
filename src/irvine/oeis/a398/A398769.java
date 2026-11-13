@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398769 allocated for Chai Wah Wu.
+ * A398769 Odd numbers k such that k is a multiple of (product of digits of k) * (sum of digits of k).
  * @author Sean A. Irvine
  */
 public class A398769 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401698 allocated for Amiram Eldar.
+ * A401698 Number of unordered partitions of n into distinct parts such that every 1 in the binary expansion of each part is also a 1 in the binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A401698 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398744 allocated for Leo Zhang.
+ * A398744 a(n) represents the number of ways to tile a strip of length n with squares (length 1) and dominos (length 2) such that dominos are only placed on prime-numbered cells (0-based indexing).
  * @author Sean A. Irvine
  */
 public class A398744 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A398773 allocated for M. Jeremie Lafitte (Levitas).
+ * A398773 Half the number of changes in the stable cyclic row words of the Gosper-Lafitte triangle.
  * @author Sean A. Irvine
  */
 public class A398773 extends Sequence0 {

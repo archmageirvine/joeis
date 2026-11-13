@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.math.z.Z;
 
 /**
- * A401736 allocated for Alper Ferudun.
+ * A401736 Main diagonal of A401735.
  * @author Sean A. Irvine
  */
 public class A401736 extends A401735 {

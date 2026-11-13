@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A142711 A determinant sequence: M={{a(-1 + n), a(-2 + n), a(-3 + n)}, {a(-2 + n), a(-3 + n), a(-4 + n)}, {a(-3 + n), a(-4 + n), a(-5 + n)}} a(n)=Det[M].
+ * A142711 a(1)=1, a(2)=2, a(3)=3, a(4)=5, a(5)=7, a(n) = det([[a(n-1), a(n-2), a(n-3)], [a(n-2), a(n-3), a(n-4)], [a(n-3), a(n-4), a(n-5)]]).
  * @author Sean A. Irvine
  */
 public class A142711 extends Sequence1 {

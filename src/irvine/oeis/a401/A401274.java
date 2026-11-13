@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005101;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401274 allocated for Bernard Schott.
+ * A401274 a(n) is the smallest deficient number (A005100) that is equal to the sum of n distinct abundant numbers (A005101).
  * @author Sean A. Irvine
  */
 public class A401274 extends Sequence2 {

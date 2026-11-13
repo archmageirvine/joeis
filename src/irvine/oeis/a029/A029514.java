@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A029514 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 21 (most significant digit on right).
+ * A029514 Numbers k such that k divides the (right) concatenation of all numbers &lt;= k written in base 21 (most significant digit on right).
  * @author Sean A. Irvine
  */
 public class A029514 extends Sequence1 {

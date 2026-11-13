@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A401461 allocated for Helen Grundman.
+ * A401461 Number of fixed points under iteration of the function: 1+sum of squares of base n digits.
  * @author Sean A. Irvine
  */
 public class A401461 extends Sequence2 {

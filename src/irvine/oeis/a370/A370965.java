@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.BriefSequence;
 
 /**
- * A370965 a(n) = number of &quot;weakly lonesum&quot; n X n X n tensors.
+ * A370965 a(n) = number of "weakly lonesum" n X n X n tensors.
  * @author Georg Fischer
  */
 

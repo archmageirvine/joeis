@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401671 allocated for Scott M. Foltz.
+ * A401671 Number of spanning trees of the n X n triangular-lattice rhombus graph.
  * @author Sean A. Irvine
  */
 public class A401671 extends Sequence1 {

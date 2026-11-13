@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
- * A401675 allocated for Karan Sharma.
+ * A401675 Number of earlier points visible from the n-th point of the hexagonal spiral on the Eisenstein lattice.
  * @author Sean A. Irvine
  */
 public class A401675 extends Sequence0 {

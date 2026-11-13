@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400721 allocated for Clark Kimberling.
+ * A400721 Greatest prime factor of 3^n - 2^n.
  * @author Sean A. Irvine
  */
 public class A400721 extends Sequence1 {

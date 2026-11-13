@@ -4,7 +4,7 @@ import irvine.oeis.a020.A020861;
 import irvine.oeis.cons.ContinuedFractionNumeratorSequence;
 
 /**
- * A401664 allocated for Miquel Cerda.
+ * A401664 Numerators of convergents to log_2(9).
  * @author Sean A. Irvine
  */
 public class A401664 extends ContinuedFractionNumeratorSequence {

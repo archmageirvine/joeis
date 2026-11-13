@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.DeadSequence;
 
 /**
- * A051569 Consider the problem of placing N = A051756(n) queens on an n X n board so that each queen attacks precisely 3 others; a(n) gives the number of inequivalent solutions.
+ * A051569 Erroneous version of A051759.
  * @author Sean A. Irvine
  */
 public class A051569 extends DeadSequence {

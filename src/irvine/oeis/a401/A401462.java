@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401462 allocated for Helen Grundman.
+ * A401462 Number of attractors under iteration of the function: 1+sum of squares of base n digits.
  * @author Sean A. Irvine
  */
 public class A401462 extends Sequence2 {

@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A298625 Number of nX4 0..1 arrays with every element equal to 2, 3, 4, 5 or 7 king-move adjacent elements, with upper left element zero.
+ * A298625 Number of n X 4 0..1 arrays with every element equal to 2, 3, 4, 5 or 7 king-move adjacent elements, with upper left element zero.
  * @author Georg Fischer
  */
 public class A298625 extends HolonomicRecurrence implements Conjectural {

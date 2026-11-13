@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A257557 Expansion (x-1)/(x^5+2*x^3+2*x-1).
+ * A257557 Expansion of g.f. (x-1)/(x^5+2*x^3+2*x-1).
  * (x-1)/(x^5+2*x^3+2*x-1)
  * @author Georg Fischer
  */

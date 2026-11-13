@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401733 allocated for Amiram Eldar.
+ * A401733 Number of factorizations of n into factors that have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A401733 extends Sequence1 {

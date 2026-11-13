@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001414;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A238525 n modulo sopfr(n), where sopfr(n) is the sum of the prime factors of n, with multiplicity.
+ * A238525 a(n) = n mod sopfr(n), where sopfr(n) is the sum of the prime factors of n, with multiplicity.
  * @author Georg Fischer
  */
 public class A238525 extends MultiTransformSequence {

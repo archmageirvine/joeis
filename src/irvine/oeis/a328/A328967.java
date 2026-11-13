@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A328967 a(n+1) = 1 - Sum_{k=1..n} a(floor(n/k)).
+ * A328967 a(1) = 1, a(n+1) = 1 - Sum_{k=1..n} a(floor(n/k)).
  * @author Georg Fischer
  */
 public class A328967 extends MultiTransformSequence {

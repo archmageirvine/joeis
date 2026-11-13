@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A074625 Triangular array T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows, where T(n,k) = smallest number x such that Mod[sigma[x],n]=k.
+ * A074625 Triangular array T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows, where T(n,k) = smallest number x such that sigma(x) == k (mod n).
  * @author Sean A. Irvine
  */
 public class A074625 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398806.
+ * A398835 Numbers k such that (3^k - 1)/2 is squarefree.
  * @author Sean A. Irvine
  */
 public class A398835 extends FilterNumberSequence {

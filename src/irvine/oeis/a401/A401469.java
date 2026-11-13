@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
- * A401469 allocated for Yinon Werner.
+ * A401469 Number of subsets of {1..n}, including the empty set, that contain no Pythagorean triple x &lt; y &lt; z with x^2 + y^2 = z^2.
  * @author Sean A. Irvine
  */
 public class A401469 extends Sequence0 {

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a003.A003136;
 
 /**
- * A401602 allocated for Karan Sharma.
+ * A401602 Number of Eisenstein primes reachable from 0 by steps of length at most sqrt(A003136(n)), stepping only on Eisenstein primes.
  * @author Sean A. Irvine
  */
 public class A401602 extends Sequence2 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002144;
 
 /**
- * A401740 allocated for Edward Schmidt.
+ * A401740 Pythagorean primes p for which the semiperimeter s and inradius r of the primitive Pythagorean triangle with hypotenuse p give another Pythagorean prime q = s^2 + r^2.
  * @author Sean A. Irvine
  */
 public class A401740 extends FilterSequence {

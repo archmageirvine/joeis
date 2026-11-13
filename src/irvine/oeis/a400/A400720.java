@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A400720 allocated for Clark Kimberling.
+ * A400720 Numbers k such that 3^k-2^k is squarefree.
  * @author Sean A. Irvine
  */
 public class A400720 extends FilterNumberSequence {

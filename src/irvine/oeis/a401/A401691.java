@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401691 allocated for Jishnu Babu Ranitha.
+ * A401691 Number of stabilizer states on n qutrits.
  * @author Sean A. Irvine
  */
 public class A401691 extends Sequence0 {

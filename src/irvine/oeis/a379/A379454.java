@@ -4,7 +4,7 @@ package irvine.oeis.a379;
 import irvine.oeis.BriefSequence;
 
 /**
- * A379454 Numbers that decrease three times in succession when they are iteratively replaced by the &quot;Look and Say&quot; description (cf. A045918) of their prime factors, counted with multiplicity.
+ * A379454 Numbers that decrease three times in succession when they are iteratively replaced by the "Look and Say" description (cf. A045918) of their prime factors, counted with multiplicity.
  * @author Georg Fischer
  */
 

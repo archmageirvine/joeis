@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A038163 G.f.: 1/((1-x)*(1-x^2))^3.
+ * A038163 Expansion of g.f. 1/((1-x)*(1-x^2))^3.
  * @author Sean A. Irvine
  */
 public class A038163 extends LinearRecurrence {

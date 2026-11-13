@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A398746 allocated for Christopher Smolen.
+ * A398746 Even numbers k such that the Antihydra iteration starting from k halts (conjectural).
  * @author Sean A. Irvine
  */
 public class A398746 extends FilterNumberSequence {

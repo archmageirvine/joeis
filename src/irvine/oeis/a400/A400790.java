@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a061.A061260;
 
 /**
- * A400790 allocated for William J. Keith.
+ * A400790 Array read by antidiagonals: A(n,k) is number of unordered k-element sets of partitions summing to n.
  * @author Sean A. Irvine
  */
 public class A400790 extends A061260 {

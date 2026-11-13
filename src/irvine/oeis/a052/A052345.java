@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.InverseSequence;
 
 /**
- * A052345 Least k such that A052343(k)=n.
+ * A052345 Least positive k such that A052343(k)=n.
  * @author Sean A. Irvine
  */
 public class A052345 extends InverseSequence {

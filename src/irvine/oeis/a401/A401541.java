@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005153;
 
 /**
- * A401541 allocated for Guido Avagliano.
+ * A401541 Numbers of the form m * (sigma(m) + 2) where m is a practical number (A005153) such that sigma(m) + 2 is prime, ordered by increasing value.
  * @author Sean A. Irvine
  */
 public class A401541 extends Sequence1 {

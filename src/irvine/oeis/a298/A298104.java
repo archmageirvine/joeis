@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a001.A001187;
 
 /**
- * A298104 Number of connected dominating sets in the n-triangular graph.
+ * A298104 Number of connected dominating sets in the n-triangular (Johnson) graph.
  * @author Georg Fischer
  */
 public class A298104 extends AbstractSequence {

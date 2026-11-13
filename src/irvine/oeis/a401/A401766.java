@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401766 allocated for Jwalin Bhatt.
+ * A401766 The least starting number that first reaches 2 after exactly n iterations of the decimal digit-product map.
  * @author Sean A. Irvine
  */
 public class A401766 extends Sequence0 {

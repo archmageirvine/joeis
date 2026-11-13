@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401451 allocated for Feihu Liu.
+ * A401451 Number of Young tableaux with walls of period n whose basic blocks are Z2, where Z2 is a special class of Young diagram with walls of shape 2 X 2.
  * @author Sean A. Irvine
  */
 public class A401451 extends Sequence1 {

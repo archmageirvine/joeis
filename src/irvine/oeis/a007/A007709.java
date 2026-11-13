@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A007709 Number of winning (or reformed) decks at Mousetrap.
+ * A007709 Number of winning (or reformed) decks with n cards at Mousetrap.
  * @author Sean A. Irvine
  */
 public class A007709 extends Sequence1 {

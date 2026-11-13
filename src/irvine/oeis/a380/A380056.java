@@ -4,7 +4,7 @@ package irvine.oeis.a380;
 import irvine.oeis.PolynomialFieldSequence;
 
 /**
- * A380056 E.g.f. (exp(x) - 1)/cos(2*x).
+ * A380056 Expansion of e.g.f. (exp(x) - 1)/cos(2*x).
  * E.g.f.(exp(x) - 1)/cos(2*x).
  * @author Georg Fischer
  */

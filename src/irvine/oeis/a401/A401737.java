@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.InverseSequence;
 
 /**
- * A401737 allocated for Alper Ferudun.
+ * A401737 Least k such that A401736(k) = n.
  * @author Sean A. Irvine
  */
 public class A401737 extends InverseSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a006.A006455;
 
 /**
- * A398778 allocated for Alejandro H. Morales.
+ * A398778 Number of irreducible naturally labeled posets on {1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A398778 extends CachedSequence {

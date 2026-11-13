@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401754 allocated for Omar E. Pol.
+ * A401754 Square array read by antidiagonals upwards: T(n,k) is the n-th nonnegative integer that does not contain the string "k", with n &gt;= 1, k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A401754 extends Sequence1 {

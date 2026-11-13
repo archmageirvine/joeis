@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401665 allocated for Ctibor O. Zizka.
+ * A401665 Numbers k &gt;= 2 such that the root mean square of the consecutive integers r, r+1, ..., k is an integer for some 1 &lt;= r &lt;= k-1.
  * @author Sean A. Irvine
  */
 public class A401665 extends FilterNumberSequence {

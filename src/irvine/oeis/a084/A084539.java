@@ -1,4 +1,3 @@
-
 package irvine.oeis.a084;
 
 import irvine.oeis.cons.ContinuedFractionSequence;

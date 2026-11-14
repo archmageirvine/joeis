@@ -1,4 +1,3 @@
-
 package irvine.oeis.a086;
 
 import irvine.math.function.Functions;

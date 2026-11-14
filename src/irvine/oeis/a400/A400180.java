@@ -1,4 +1,3 @@
-
 package irvine.oeis.a400;
 
 import java.util.HashMap;

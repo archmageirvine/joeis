@@ -1,4 +1,3 @@
-
 package irvine.oeis.a006;
 
 import java.util.ArrayList;

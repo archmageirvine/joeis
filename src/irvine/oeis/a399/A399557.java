@@ -1,4 +1,3 @@
-
 package irvine.oeis.a399;
 
 import irvine.factor.prime.Fast;

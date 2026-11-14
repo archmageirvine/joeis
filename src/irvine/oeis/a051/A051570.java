@@ -1,4 +1,3 @@
-
 package irvine.oeis.a051;
 
 import irvine.oeis.DeadSequence;

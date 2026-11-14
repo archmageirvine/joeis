@@ -1,4 +1,3 @@
-
 package irvine.oeis.a398;
 
 import irvine.math.z.Integers;

@@ -1,4 +1,3 @@
-
 package irvine.oeis.a204;
 
 import irvine.oeis.a401.A401854;

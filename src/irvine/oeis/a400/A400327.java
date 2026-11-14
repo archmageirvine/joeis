@@ -1,4 +1,3 @@
-
 package irvine.oeis.a400;
 
 import irvine.math.z.Z;

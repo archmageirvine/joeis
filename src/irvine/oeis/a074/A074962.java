@@ -1,4 +1,3 @@
-
 package irvine.oeis.a074;
 
 import irvine.math.cr.CR;

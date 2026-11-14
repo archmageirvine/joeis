@@ -52,6 +52,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(UpperIncompleteGammaTest.class);
     suite.addTestSuite(WeberETest.class);
     suite.addTestSuite(ZetaPrimeTest.class);
+    suite.addTestSuite(ZetaTest.class);
     return suite;
   }
 }

@@ -199,7 +199,7 @@ public final class Zeta {
           final long n1 = ++k;
           final int m = Functions.MOBIUS.i(n1);
           if (m != 0) {
-            final Z t = zeta((long) (long) n * k).log().divide(CR.valueOf(k)).getApprox(precision);
+            final Z t = zeta((long) n * k).log().divide(CR.valueOf(k)).getApprox(precision);
             if (t.isZero()) {
               break;
             }

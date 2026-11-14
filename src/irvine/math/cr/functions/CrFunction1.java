@@ -43,5 +43,4 @@ public abstract class CrFunction1 {
   public CR cr(final Q z) {
     return cr(CR.valueOf(z));
   }
-
 }

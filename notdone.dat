@@ -1745,7 +1745,6 @@ A059687 Number of basic circuits of nullity n
 A059713 Number of multi-directed animals on the square lattice
 A059739 Triangle T(n,k), n >= 1, giving number of prime unoriented alternating links with n crossings and k components.
 A059741 Prime unoriented alternating links with n crossings and 2 components.
-A059750 Decimal expansion of zeta(1/2) (negated).
 A059813 Let s_n be the simplex packing n-width for the manifold torus X interval; sequence gives numerator of s_n/Pi.
 A059814 Let s_n be the simplex packing n-width for the manifold torus X interval; sequence gives denominator of s_n/Pi.
 A059817 Let s_n be the simplex packing n-width for the manifold torus X square; sequence gives numerator of s_n/Pi
@@ -2056,7 +2055,6 @@ A068392 Number of partitions of n X n checkerboard into two edgewise-connected s
 A068393 Number of partitions of n X n checkerboard by two edgewise-connected sets which produce the maximum n^2-2n+2 frontier edges between the two sets. Partitions equal under rotation or reflection are counted only once.
 A068416	Number of partitionings of n X n checkerboard into two edgewise-connected sets.
 A068417 Number of partitionings of n X n checkerboard into three edgewise-connected sets.
-A068469 Decimal expansion of zeta(Pi).
 A068471 Number of n X n binary matrices with each 1 having at most 2 adjacent 1's.
 A068472	Number of n X n binary matrices with every 1 having at most 3 adjacent 1's.
 A068529 k values for self-contained numbers.
@@ -2118,10 +2116,7 @@ A069452 Half the number of 7 X n binary arrays with no path of adjacent 1's or a
 A069481 Number of conjugacy classes of irreducible maximal finite subgroups of GL_n(Q) (the group of invertible rational n X n matrices).
 A069544 Continued fraction for Feigenbaum's constant - 4 = 0.6692...
 A069738 Number of isomorphism classes of minimal n-extensions of a kind of homeomorphism of the circle.
-A069815 Decimal expansion of (negative of) real solution -1<x<1 to zeta(x)=sin(x).
 A069818 Let x = 1.757739951145463... be smallest real number that satisfies gcd(floor(x^m),m)=1 for all integers m>0; sequence gives floor(x^n).
-A069857 Decimal expansion of -C, where C = -0.2959050055752... is the real solution < 0 to zeta(x) = x.
-A069995 Decimal expansion of the real positive solution to zeta(x)=x.
 A070259 Array f(m,n) read by antidiagonals: f(m,n) = minimal number of 0's in a 2m X 2n (0,1) matrix that contains no m X n submatrix of 1's (m >= 1, n >= 1).
 A070300 Minimal number of 0's in a 2n X 2n (0,1) matrix that contains no n X n submatrix of 1's
 A070731 Size of largest conjugacy class in the group GL(n,2).
@@ -2369,10 +2364,8 @@ A078356 Minimal positive solution z of Pell equation z^2 - A077426(n)*t^2 = -4.
 A078357 Minimal positive solution x of Pell equation y^2 - A077426(n)*x^2 = -4.
 A078361 Minimal positive solution a(n) of Pell equation a(n)^2 - D(n)*b(n)^2 = +4 or -4 with D(n)=A077425(n). The companion sequence is b(n)=A077058(n).
 A078416 Decimal expansion of Viswanath's constant.
-A078434 Decimal expansion of zeta(3/2).
 A078437 Decimal expansion of sum of alternating series of reciprocals of primes.
 A078460 Initial n digits in decimal portion of the Traveling Salesman constant (A073008) form a prime number.
-A078470 Continued fraction for zeta(3/2) (A078434).
 A078517 Number of different solutions of order n to a certain combinatorial-differential equation
 A078518 Consider primitive solutions (x,y,z) to x^4+y^4+z^4=w^4 with 0<x<=y<=z arranged in order of increasing w; sequence gives x values.
 A078519 Consider primitive solutions (x,y,z) to x^4+y^4+z^4=w^4 with 0<x<=y<=z arranged in order of increasing w; sequence gives y values.

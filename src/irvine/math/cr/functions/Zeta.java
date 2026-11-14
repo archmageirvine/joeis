@@ -1,4 +1,3 @@
-
 package irvine.math.cr.functions;
 
 import java.util.Map;

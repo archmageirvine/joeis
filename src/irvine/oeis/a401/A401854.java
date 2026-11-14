@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401854: Maximum cycle length of the global map induced by an elementary cellular automaton with periodic boundary conditions.
+ * A401854 allocated for Francisco J. Mu\u00f1oz.
  * @author Sean A. Irvine
  */
 public class A401854 extends Sequence1 {

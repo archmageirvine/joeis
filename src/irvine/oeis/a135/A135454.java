@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A135454 Number of sums payable using exactly n banknotes of denominations 1, 5, 10, 20, 50, 100.
  * @author Sean A. Irvine
  */
 public class A135454 extends PrependSequence {

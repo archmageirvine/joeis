@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A087382 Twin prime indices of primes forming a twin prime member.
  * @author Sean A. Irvine
  */
 public class A087382 extends Sequence1 {

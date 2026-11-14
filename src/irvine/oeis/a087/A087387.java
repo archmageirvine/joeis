@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.FilterSequence;
 
 /**
- * A399911.
+ * A087387 Palindromes in A087386.
  * @author Sean A. Irvine
  */
 public class A087387 extends FilterSequence {

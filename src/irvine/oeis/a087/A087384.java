@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A399911.
+ * A087384 a(n) is the smallest prime == 1 (mod F(n)) where F(n) is the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A087384 extends Sequence1 {

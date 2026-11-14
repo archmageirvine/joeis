@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401854: T(n,k) = Sum_{i=0..n-k} binomial(n-k, i)*((n-i-k+2)/(n-i+1)*binomial(n-i+k-1,k-1) - binomial(n-i-2,k-1) ) for k >= 2.
+ * A401822 allocated for Lucy Martinez.
  * @author Sean A. Irvine
  */
 public class A401822 extends Sequence0 {

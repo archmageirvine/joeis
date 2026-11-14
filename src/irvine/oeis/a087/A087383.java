@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001097;
 
 /**
- * A399911.
+ * A087383 Primes p such that p is a twin prime and prime(prime(p)) is also a twin prime.
  * @author Sean A. Irvine
  */
 public class A087383 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399911.
+ * A078434 Decimal expansion of zeta(3/2).
  * @author Sean A. Irvine
  */
 public class A078434 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A401835 allocated for Pierre Colmant.
  * @author Sean A. Irvine
  */
 public class A401835 extends PrependSequence {

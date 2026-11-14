@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A399911. A step cyclic recursion: a(n) = If[a(n - 1) - Prime[n] > 0, Abs[a(n - 1) - 2*n], If[a[n - 1] - Prime[n] < 0, Abs[a(n - 1) + 2*n], Fibonacci[n] - a(n - 1)]].
+ * A144386 A step cyclic recursion: a(n) = If[a(n - 1) - Prime[n] &gt; 0, Abs[a(n - 1) - 2*n], If[a[n - 1] - Prime[n] &lt; 0, Abs[a(n - 1) + 2*n], Fibonacci[n] - a(n - 1)]].
  * @author Sean A. Irvine
  */
 public class A144386 extends Sequence0 {

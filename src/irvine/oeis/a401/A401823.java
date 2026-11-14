@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401854: T(n,k) = (n-k+1)/(n+1)*binomial(n+k,k) - binomial(n-1,k) for k>=1, T(n,0) = A000007(n).
+ * A401823 allocated for Lucy Martinez.
  * @author Sean A. Irvine
  */
 public class A401823 extends Sequence0 {

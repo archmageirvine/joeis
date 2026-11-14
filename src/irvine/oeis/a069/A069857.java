@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399911.
+ * A069857 Decimal expansion of -C, where C = -0.2959050055752... is the real solution &lt; 0 to zeta(x) = x.
  * @author Sean A. Irvine
  */
 public class A069857 extends DecimalExpansionSequence {

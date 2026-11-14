@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399911.
+ * A069995 Decimal expansion of the real positive solution to zeta(x)=x.
  * @author Sean A. Irvine
  */
 public class A069995 extends DecimalExpansionSequence {

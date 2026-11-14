@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399911.
+ * A059750 Decimal expansion of zeta(1/2) (negated).
  * @author Sean A. Irvine
  */
 public class A059750 extends DecimalExpansionSequence {

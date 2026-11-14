@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399911.
+ * A401686 allocated for Wolfdieter Lang.
  * @author Sean A. Irvine
  */
 public class A401686 extends Sequence0 {

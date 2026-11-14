@@ -5,7 +5,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399911.
+ * A068469 Decimal expansion of zeta(Pi).
  * @author Sean A. Irvine
  */
 public class A068469 extends DecimalExpansionSequence {

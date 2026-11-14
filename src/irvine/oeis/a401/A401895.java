@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A401895 allocated for Tomas Laris.
  * @author Sean A. Irvine
  */
 public class A401895 extends Sequence1 {

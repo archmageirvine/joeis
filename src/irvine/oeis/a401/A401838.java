@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399911.
+ * A401838 allocated for Pieter Post.
  * @author Sean A. Irvine
  */
 public class A401838 extends FilterNumberSequence {

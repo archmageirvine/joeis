@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A087373 Twin-prime-indexed primes (TWIPS): members of a pair of twin primes whose prime index is also a member of a pair of twin primes.
  * @author Sean A. Irvine
  */
 public class A087373 extends Sequence1 {

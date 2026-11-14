@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399911.
+ * A069815 Decimal expansion of (negative of) real solution -1&lt;x&lt;1 to zeta(x)=sin(x).
  * @author Sean A. Irvine
  */
 public class A069815 extends DecimalExpansionSequence {

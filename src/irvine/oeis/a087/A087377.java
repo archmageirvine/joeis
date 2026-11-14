@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A087377 Triangle read by rows: n-th row contains n smallest numbers k (say) such that nk+1 is a prime.
  * @author Sean A. Irvine
  */
 public class A087377 extends Sequence1 {

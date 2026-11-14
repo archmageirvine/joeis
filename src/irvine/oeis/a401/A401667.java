@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A401667.
+ * A401667 allocated for Igor Zhuk.
  * @author Sean A. Irvine
  */
 public class A401667 extends Sequence1 {

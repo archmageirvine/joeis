@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A399911.
+ * A078470 Continued fraction for zeta(3/2) (A078434).
  * @author Sean A. Irvine
  */
 public class A078470 extends ContinuedFractionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A401684 allocated for Peter M. Chema.
  * @author Sean A. Irvine
  */
 public class A401684 extends Sequence1 {

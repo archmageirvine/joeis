@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401520:
+ * A401520 allocated for Gordon Hamilton.
  * @author Sean A. Irvine
  */
 public class A401520 extends Sequence1 {

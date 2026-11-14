@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911.
+ * A087375 Smallest n-th power &gt; n!.
  * @author Sean A. Irvine
  */
 public class A087375 extends Sequence1 {

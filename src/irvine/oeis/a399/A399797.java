@@ -3,7 +3,7 @@ package irvine.oeis.a399;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A399911.
+ * A399797 allocated for Chen Honghao.
  * @author Sean A. Irvine
  */
 public class A399797 extends PeriodicSequence {

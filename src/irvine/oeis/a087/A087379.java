@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a068.A068632;
 
 /**
- * A399911.
+ * A087379 Beginning with 2, primes such that the difference between two successive terms is a distinct composite number.
  * @author Sean A. Irvine
  */
 public class A087379 extends PartialSumSequence {

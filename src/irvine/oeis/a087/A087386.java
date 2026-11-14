@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
- * A399911.
+ * A087386 a(n) = smallest prime == 1 (mod P(n)) where P(n) is the n-th Palindrome.
  * @author Sean A. Irvine
  */
 public class A087386 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087386.
+ * A087390 a(1) = 7; a(n+1) is the least prime formed by adding one or more digits to the digit reversal of a(n).
  * @author Sean A. Irvine
  */
 public class A087390 extends Sequence1 {

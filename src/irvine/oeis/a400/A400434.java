@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004012;
 
 /**
- * A087386.
+ * A400434 allocated for Andrew J. Morris.
  * @author Sean A. Irvine
  */
 public class A400434 extends A004012 {

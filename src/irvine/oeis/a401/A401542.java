@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A087386.
+ * A401542 allocated for Dimas Saputra.
  * @author Sean A. Irvine
  */
 public class A401542 extends FilterNumberSequence {

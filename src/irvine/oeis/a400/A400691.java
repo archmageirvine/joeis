@@ -9,7 +9,7 @@ import irvine.oeis.a014.A014103;
 import irvine.oeis.a104.A104794;
 
 /**
- * A400691 allocated for Alex Shvets.
+ * A400691 a(n) = c_4(n)/n, where c_4(n) are the Fourier coefficients of the level-2 K3 meromorphic modular form C_4 defined below.
  * @author Sean A. Irvine
  */
 public class A400691 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a174.A174973;
 
 /**
- * A401769 allocated for Omar E. Pol.
+ * A401769 Averages of twin prime pairs that are 2-dense numbers A174973.
  * @author Sean A. Irvine
  */
 public class A401769 extends FilterSequence {

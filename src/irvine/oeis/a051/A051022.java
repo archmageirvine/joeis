@@ -1,19 +1,36 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
  * A051022 Interpolate 0's between each pair of digits of n.
  * @author Sean A. Irvine
  */
-public class A051022 extends Sequence0 {
+public class A051022 extends Sequence0 implements DirectSequence {
 
   private long mN = -1;
 
   @Override
   public Z next() {
-    final String s = String.valueOf(++mN);
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    final String s = n.toString();
+    final StringBuilder sb = new StringBuilder();
+    sb.append(s.charAt(0));
+    for (int k = 1; k < s.length(); ++k) {
+      sb.append('0').append(s.charAt(k));
+    }
+    return new Z(sb);
+  }
+
+  @Override
+  public Z a(final long n) {
+    final String s = String.valueOf(n);
     final StringBuilder sb = new StringBuilder();
     sb.append(s.charAt(0));
     for (int k = 1; k < s.length(); ++k) {

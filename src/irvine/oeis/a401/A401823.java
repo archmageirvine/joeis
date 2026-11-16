@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401823 allocated for Lucy Martinez.
+ * A401823 Triangle read by rows: T(n,k) is the number of parking permutations avoiding the pattern 312 with lucky set {1,2,...,k}.
  * @author Sean A. Irvine
  */
 public class A401823 extends Sequence0 {

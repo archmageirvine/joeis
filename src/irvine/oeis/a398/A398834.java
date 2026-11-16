@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087203.
+ * A398834 Number of positive integer divisors of (3^n-1)/2.
  * @author Sean A. Irvine
  */
 public class A398834 extends Sequence1 {

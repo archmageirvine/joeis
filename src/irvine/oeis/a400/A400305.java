@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002407;
 
 /**
- * A400305 allocated for Hassane Bakkaoui.
+ * A400305 Cuban primes p such that p-2 is also prime.
  * @author Sean A. Irvine
  */
 public class A400305 extends FilterSequence {

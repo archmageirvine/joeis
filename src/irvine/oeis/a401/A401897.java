@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.TwoParameterFormSequence;
 
 /**
- * A401897 allocated for Karan Sharma.
+ * A401897 Number of Gaussian integers w with N(w) &lt; N(z) that are visible from z, where z = a+b*i is the n-th nonzero Gaussian integer with 0 &lt;= b &lt;= a, ordered by norm and then by b.
  * @author Sean A. Irvine
  */
 public class A401897 extends TwoParameterFormSequence {

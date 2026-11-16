@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401864 allocated for Daniel Okwor.
+ * A401864 Number of coincidence site lattices of index 2n-1 in the cubic lattice Z^3, counted up to the rotations of the cube.
  * @author Sean A. Irvine
  */
 public class A401864 extends Sequence1 {

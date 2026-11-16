@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007530;
 
 /**
- * A401787 allocated for Pankaj Ladhe.
+ * A401787 a(n) is the number of prime quadruplets (q, q+2, q+6, q+8) with q strictly between p+8 and 2*(p+8), where p = A007530(n).
  * @author Sean A. Irvine
  */
 public class A401787 extends A007530 {

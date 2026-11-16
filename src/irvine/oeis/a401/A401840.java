@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401840 allocated for Felix Huber.
+ * A401840 a(n) is the area of the triangle with sides A401839(n)*A120133(n), A401839(n)*A120132(n), A401839(n)*A120131(n).
  * @author Sean A. Irvine
  */
 public class A401840 extends Sequence1 {

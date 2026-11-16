@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004012;
 
 /**
- * A400434 allocated for Andrew J. Morris.
+ * A400434 Sizes of the successive clusters of the hexagonal close-packed (HCP) lattice, centered on a lattice point.
  * @author Sean A. Irvine
  */
 public class A400434 extends A004012 {

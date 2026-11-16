@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401753 allocated for Kossi Roland Etse.
+ * A401753 Escape time of Langton's ant on an n X k rectangular grid: T(n,k) for 1 &lt;= k &lt;= n, read by rows.
  * @author Sean A. Irvine
  */
 public class A401753 extends Sequence1 {

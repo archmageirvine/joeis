@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401836 allocated for Pieter Post.
+ * A401836 Numbers k such that two distinct numbers can be removed from 1 through k so that the sum of their squares equals the sum of the remaining numbers.
  * @author Sean A. Irvine
  */
 public class A401836 extends FilterNumberSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398774 allocated for Amelia S. Krogulska.
+ * A398774 Number of decimal digits in the sequence S = (n, 2*n, 3*n, ..., n^2).
  * @author Sean A. Irvine
  */
 public class A398774 extends Sequence1 {

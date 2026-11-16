@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401686 allocated for Wolfdieter Lang.
+ * A401686 Irregular triangle T(n, k), n &gt;= 0, k = 0, 1, ..., 2*n, giving in row n the parts of a certain partition of A003261(n+1) related to a chain problem.
  * @author Sean A. Irvine
  */
 public class A401686 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399911 allocated for Clark Kimberling.
+ * A399911 Number of divisors of 3^n - 2^n.
  * @author Sean A. Irvine
  */
 public class A399911 extends Sequence1 {

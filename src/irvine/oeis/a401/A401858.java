@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401858 allocated for Alper Ferudun.
+ * A401858 a(1) = 3; for n &gt; 1, a(n) is the smallest positive integer not yet in the sequence that, together with some earlier term, forms two sides of a Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A401858 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a179.A179290;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A395323 Decimal expansion of the conjecturally maximum possible volume of a polyhedron with 32 vertices inscribed in the unit sphere.
+ * A395323 Decimal expansion of the maximum possible volume of a polyhedron with 32 vertices inscribed in the unit sphere.
  * Formula:
  * @author Georg Fischer
  */

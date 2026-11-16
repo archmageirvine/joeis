@@ -5,7 +5,7 @@ import irvine.oeis.a065.A065442;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401890 allocated for Stefano Spezia.
+ * A401890 Decimal expansion of 5/4 + A065442/2.
  * @author Sean A. Irvine
  */
 public class A401890 extends DecimalExpansionSequence {

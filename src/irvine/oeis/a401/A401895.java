@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401895 allocated for Tomas Laris.
+ * A401895 Number of distinct decimal digits in the product of n and its digit reversal.
  * @author Sean A. Irvine
  */
 public class A401895 extends Sequence1 {

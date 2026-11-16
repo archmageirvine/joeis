@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A401667 allocated for Igor Zhuk.
+ * A401667 Primes p &gt;= 5 for which the iteration of K(u) = (u^3 - 7*u)/6 on GF(p) collapses every element into {-1, 0, 1}.
  * @author Sean A. Irvine
  */
 public class A401667 extends Sequence1 {

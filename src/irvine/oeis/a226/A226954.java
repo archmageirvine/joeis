@@ -7,11 +7,10 @@ import irvine.oeis.BriefSequence;
  * A226954 Numbers m such that there are at least 7 distinct triples (k, k+m, k+2*m) of squares.
  * @author Georg Fischer
  */
-
 public class A226954 extends BriefSequence {
 
   /** Construct the sequence. */
   public A226954() {
-    super(1, BRIEF, "[12671122464000,50684489856000,114040102176000,202737959424000,316778061600000,456160408704000,620885000736000,810951837696000,1026360919584000,1267112246400000,1533205818144000]");
+    super(1, BRIEF, "[8866603025280, 12671122464000]");
   }
 }

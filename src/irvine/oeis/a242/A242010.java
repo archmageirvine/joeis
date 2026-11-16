@@ -6,7 +6,7 @@ import irvine.math.cr.functions.CrFunctions;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A242010 Decimal expansion of sum_{k&gt;=0} (log(3k+1)/(3k+1)-log(3k+2)/(3k+2)).
+ * A242010 Decimal expansion of Sum_{k&gt;=0} (log(3k+1)/(3k+1)-log(3k+2)/(3k+2)).
  * Formula: (Pi/sqrt(3))*(log(Gamma(1/3)/Gamma(2/3))-(1/3)*(gamma+log(2*Pi)))
  * @author Georg Fischer
  */

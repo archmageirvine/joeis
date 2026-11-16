@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401838 allocated for Pieter Post.
+ * A401838 Numbers k such that two distinct integers can be removed from 1 through k so that their product equals the sum of the remaining integers.
  * @author Sean A. Irvine
  */
 public class A401838 extends FilterNumberSequence {

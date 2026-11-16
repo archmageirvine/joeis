@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399358 allocated for Sajid Khan Hussain.
+ * A399358 Primes p &gt; 3 such that the elliptic curve y^2 = x^3 + 7 over GF(p) has a prime number of points (including the point at infinity).
  * @author Sean A. Irvine
  */
 public class A399358 extends Sequence1 {

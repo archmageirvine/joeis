@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401857 allocated for Alper Ferudun.
+ * A401857 Lexicographically earliest sequence of positive integers such that a(n) is the least positive integer j for which gcd(a(n), a(n+j)) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A401857 extends Sequence1 {

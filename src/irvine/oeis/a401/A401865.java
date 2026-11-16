@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401865 allocated for Wesley Ivan Hurt.
+ * A401865 a(n) = Sum_{d|n} floor(sqrt(d-1)).
  * @author Sean A. Irvine
  */
 public class A401865 extends Sequence1 {

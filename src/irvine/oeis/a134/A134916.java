@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051783;
 import irvine.oeis.a057.A057732;
 
 /**
- * A134916 Numbers n such that both 3^n+2 and 2^n+3 are primes.
+ * A134916 Numbers k such that both 3^k+2 and 2^k+3 are primes.
  * @author Georg Fischer
  */
 public class A134916 extends IntersectionSequence {

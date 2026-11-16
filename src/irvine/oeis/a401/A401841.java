@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401841 allocated for Felix Huber.
+ * A401841 Numbers m such that there is an integer-sided triangle with area m whose three sides all divide m.
  * @author Sean A. Irvine
  */
 public class A401841 extends Sequence1 {

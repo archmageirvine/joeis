@@ -111,8 +111,7 @@ public class Zeta extends CrFunction1 {
           m += Math.max(8, m / 2);
           n = 4 * m + ax + 32;
         }
-        // We use corrections through m-1; the m-th correction
-        // bounds the omitted remainder.
+        // We use corrections through m-1; the m-th correction bounds the omitted remainder.
         return evaluate(x, n, m).getApprox(precision - 2).shiftRight(2);
       }
     };

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A400526 allocated for Zhining Yang.
+ * A400526 The smallest prime divisor of S(n) = Sum_{k=1..n} k^(k^(k^k)).
  * @author Sean A. Irvine
  */
 public class A400526 extends Sequence2 {

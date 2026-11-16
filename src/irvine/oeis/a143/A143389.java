@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A143389 Coefficient Expansion sequence of a Weaver Morse Code polynomial (using Cyclotomic prime base dot, dash, letter space and word space symbols): p(x) = -5 - 10 x - 12 x^2 - 10 x^3 - 7 x^4 - 3 x^5 + 5 x^7 + 8 x^8 + 9 x^9 + 8 x^10 + 6 x^11 + 3 x^12 + x^13.
+ * A143389 Expansion of the g.f. -1 / (5*x^13 + 10*x^12 + 12*x^11 + 10*x^10 + 7*x^9 + 3*x^8 - 5*x^6 - 8*x^5 - 9*x^4 - 8*x^3 - 6*x^2 - 3*x -1).
  * @author Georg Fischer
  */
 public class A143389 extends GeneratingFunctionSequence {

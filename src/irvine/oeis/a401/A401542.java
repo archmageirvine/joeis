@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401542 allocated for Dimas Saputra.
+ * A401542 Numbers k such that k = i + (i+1) + ... + j with j &gt; i &gt;= 1, and k+1 is a sum of at least 2 consecutive integers starting at j+1.
  * @author Sean A. Irvine
  */
 public class A401542 extends FilterNumberSequence {

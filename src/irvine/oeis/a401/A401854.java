@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401854 allocated for Francisco J. Mu\u00f1oz.
+ * A401854 Maximum period of cellular automaton rule 45 in a cyclic universe of width n.
  * @author Sean A. Irvine
  */
 public class A401854 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401892 allocated for Stefano Spezia.
+ * A401892 Decimal expansion of 5/4 + A065442/2 + Sum_{k&gt;=1} 1/(2^k + 1).
  * @author Sean A. Irvine
  */
 public class A401892 extends DecimalExpansionSequence {

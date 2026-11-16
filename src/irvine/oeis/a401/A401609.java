@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A401609 allocated for Alain Rocchelli.
+ * A401609 Number of distinct primes of the form P(n)/d - d, where P(n) is the n-th primorial A002110(n) and d&lt;prime(n) is a divisor of P(n).
  * @author Sean A. Irvine
  */
 public class A401609 extends A000040 {

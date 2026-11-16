@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A238183 Decimal expansion of sum_(n&gt;=1) H(n)^2/n^7 where H(n) is the n-th harmonic number (Quadratic Euler Sum S(2,7)).
+ * A238183 Decimal expansion of Sum_{n&gt;=1} H(n)^2/n^7 where H(n) is the n-th harmonic number (Quadratic Euler Sum S(2,7)).
  * Formula: Decimal expansion of sum_(n>=1) H(n)^2/n^7 where H(n) is the n-th harmonic number (Quadratic Euler Sum S(2,7)). nonn,cons       1..100  nyi
  * @author Georg Fischer
  */

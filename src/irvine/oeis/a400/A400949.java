@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002895;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A400949 allocated for James Baker.
+ * A400949 Number of closed non-backtracking walks of length 2n (cyclically non-backtracking, i.e., tailless) starting and ending at a fixed atom of the diamond network.
  * @author Sean A. Irvine
  */
 public class A400949 extends GfSequence {

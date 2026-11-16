@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401520 allocated for Gordon Hamilton.
+ * A401520 Minimal addition Venn diagram. A Venn diagram with n questions is populated by 2^n multisets. This triangular array records the minimal addition questions necessary to fill the Venn diagram. Each question is of the form: "One or more elements of the multiset sum to a(n)." Each row of the table is decreasing and each a(n) is chosen to be as small as possible, before proceeding to a(n+1).
  * @author Sean A. Irvine
  */
 public class A401520 extends Sequence1 {

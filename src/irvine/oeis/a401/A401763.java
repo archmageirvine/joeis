@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401763 allocated for Eddie Lin Rui.
+ * A401763 Square array A(n,k), n &gt;= 1, k &gt;= 1, read by antidiagonals: A(n,k) = h_n(r,s), the complete homogeneous symmetric polynomial of degree n in r and s; (r,s) is the k-th integer pair in lexicographic order subject to 1 &lt;= s &lt;= r: (1,1), (2,1), (2,2), (3,1), (3,2), (3,3), ...
  * @author Sean A. Irvine
  */
 public class A401763 extends Sequence1 {

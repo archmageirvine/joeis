@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244676 Decimal expansion of sum_(n&gt;=1) (H(n)^3/(n+1)^6) where H(n) is the n-th harmonic number.
+ * A244676 Decimal expansion of Sum_{n&gt;=1} (H(n)^3/(n+1)^6) where H(n) is the n-th harmonic number.
  * Formula: -37/7560*Pi^6*zeta(3)+zeta(3)^3-11/120*Pi^4*zeta(5)+1/2*Pi^2*zeta(7)+197/24*zeta(9)
  * @author Georg Fischer
  */

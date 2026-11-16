@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A401835 allocated for Pierre Colmant.
+ * A401835 Number of different amounts that can be paid with exactly n euro coins (1, 2, 5, 10, 20, 50 cents, 1 and 2 euros).
  * @author Sean A. Irvine
  */
 public class A401835 extends PrependSequence {

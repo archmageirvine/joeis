@@ -39,6 +39,18 @@ public interface Edges {
     }
   };
 
+  /** Digraph edges with loops. */
+  Edges DIGRAPH_WITH_LOOPS = new Edges() {
+    @Override
+    public <E> E edges(final int[] partition, final Field<E> fld, final Function<Integer, E> yf) {
+      E prod = DIGRAPH_EDGES.edges(partition, fld, yf);
+      for (final int k : partition) {
+        prod = fld.multiply(prod, yf.apply(k));
+      }
+      return prod;
+    }
+  };
+
   /** Ordinary undirected edges. */
   Edges GRAPH_EDGES = new Edges() {
     @Override

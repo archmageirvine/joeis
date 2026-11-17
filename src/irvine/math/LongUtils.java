@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
 
@@ -43,50 +42,6 @@ public final class LongUtils {
         r *= a;
       }
       a *= a;
-      e >>>= 1;
-    }
-    return r;
-  }
-
-  /**
-   * Compute <code>a^e mod n</code>, provided n does not exceed sqrt(Long.MAX_VALUE).
-   * @param a base
-   * @param e exponent
-   * @param n modulus
-   * @return <code>a^e mod n</code>
-   */
-  public static long modPow(long a, long e, final long n) {
-    if (n > MODLIMIT) {
-      return Z.valueOf(a).modPow(Z.valueOf(e), Z.valueOf(n)).longValueExact();
-    }
-    if (n <= 0) {
-      throw new IllegalArgumentException("Modulus cannot be nonpositve or greater than " + MODLIMIT + " given " + n);
-    }
-    if (a < 0) {
-      throw new IllegalArgumentException("Base can only be nonnegative in this implementation");
-    }
-    // handle some special cases
-    if (n == 1) {
-      return 0;
-    }
-    a %= n;
-    if (a == 1 || e == 0) {
-      return 1;
-    } else if (a == 0) {
-      return 0;
-    } else if (e == 1) {
-      return a;
-    } else if (e == 2) {
-      return (a * a) % n;
-    }
-    long r = 1;
-    while (e != 0) {
-      if ((e & 1) != 0) {
-        r *= a;
-        r %= n;
-      }
-      a *= a;
-      a %= n;
       e >>>= 1;
     }
     return r;
@@ -564,4 +519,72 @@ public final class LongUtils {
     }
     return false;
   }
+
+  /**
+   * Overflow-safe modular addition.
+   * @param a addend
+   * @param b addend
+   * @param m modulus
+   * @return sum (a + b) mod m
+   */
+  public static long modAdd(final long a, final long b, final long m) {
+    return a >= m - b ? a - (m - b) : a + b;
+  }
+
+  /**
+   * Overflow-safe modular multiplication.
+   * @param a multiplicand
+   * @param b multiplicand
+   * @param m modulus
+   * @return product (a * b) mod m
+   */
+  public static long modMultiply(long a, long b, final long m) {
+    a %= m;
+    b %= m;
+    long res = 0;
+    while (b != 0) {
+      if ((b & 1) != 0) {
+        res = modAdd(res, a, m);
+      }
+      a = modAdd(a, a, m);
+      b >>>= 1;
+    }
+    return res;
+  }
+
+  /**
+   * Compute <code>a^e mod n</code>, provided n does not exceed sqrt(Long.MAX_VALUE).
+   * @param a base
+   * @param e exponent
+   * @param n modulus
+   * @return <code>a^e mod n</code>
+   */
+  public static long modPow(long a, long e, final long n) {
+    if (n <= 0) {
+      throw new IllegalArgumentException("Modulus cannot be nonpositve");
+    }
+    if (n == 1) {
+      return 0;
+    }
+    a = Math.floorMod(a, n);
+    if (a == 1 || e == 0) {
+      return 1;
+    } else if (a == 0) {
+      return 0;
+    } else if (e == 1) {
+      return a;
+    } else if (e == 2) {
+      return modMultiply(a, a, n);
+    }
+    long r = 1;
+    while (e != 0) {
+      if ((e & 1) != 0) {
+        r = modMultiply(r, a, n);
+      }
+      a = modMultiply(a, a, n);
+      e >>>= 1;
+    }
+    return r;
+  }
+
 }

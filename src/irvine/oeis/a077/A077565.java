@@ -6,6 +6,7 @@ import java.util.List;
 
 import irvine.factor.util.FactorUtils;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
@@ -13,7 +14,7 @@ import irvine.util.array.LongDynamicArray;
  * A077565 Number of factorizations of n where each factor has a different prime signature.
  * @author Sean A. Irvine
  */
-public class A077565 extends Sequence1 {
+public class A077565 extends Sequence1 implements DirectSequence {
 
   private int mN = 0;
   private final LongDynamicArray<int[]> mSignatures = new LongDynamicArray<>();
@@ -27,18 +28,6 @@ public class A077565 extends Sequence1 {
     final int[] v = FactorUtils.sortedPrimeSignature(Z.valueOf(n));
     mSignatures.set(n, v);
     return v;
-  }
-
-  private boolean is(final int[] p) {
-    for (int k = 1; k < p.length; ++k) {
-      final int[] sk = signature(p[k]);
-      for (int j = 0; j < k; ++j) {
-        if (Arrays.equals(signature(p[j]), sk)) {
-          return false;
-        }
-      }
-    }
-    return true;
   }
 
   private boolean seen(final List<int[]> seen, final int[] sig) {
@@ -72,11 +61,21 @@ public class A077565 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN < 8) {
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.longValueExact());
+  }
+
+  @Override
+  public Z a(final long n) {
+    if (n < 8) {
       return Z.ONE;
     }
     mCount = 0;
-    count(mN, 1, new ArrayList<>());
+    count(n, 1, new ArrayList<>());
     return Z.valueOf(mCount);
   }
 }

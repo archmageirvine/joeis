@@ -22,14 +22,6 @@ public class LongUtilsTest extends TestCase {
         // ok
       }
     }
-    for (long n = -1; n > -50; --n) {
-      try {
-        LongUtils.modPow(n, 1L, 2L);
-        fail("Didn't throw expected exception");
-      } catch (final IllegalArgumentException e) {
-        // ok
-      }
-    }
 
     // test powers of one
     for (long n = 2; n < 500; ++n) {
@@ -65,10 +57,6 @@ public class LongUtilsTest extends TestCase {
 
   public void testEndian() {
     assertEquals(0x1234567890ABCDEFL, LongUtils.endian(0xEFCDAB9078563412L));
-    /* assertEquals(0x1234567890ABCDEFL, LongUtils.endian1(0xEFCDAB9078563412L));
-    assertEquals(0x1234567890ABCDEFL, LongUtils.endian2(0xEFCDAB9078563412L));
-    assertEquals(0x1234567890ABCDEFL, LongUtils.endian3(0xEFCDAB9078563412L));
-    assertEquals(0x1234567890ABCDEFL, LongUtils.endian4(0xEFCDAB9078563412L));*/
   }
 
   public void testLg() {

@@ -16,11 +16,6 @@ public class A401667 extends Sequence1 {
 
   private long mN = 4;
 
-  private static long powMod(long a, final long e, final long p) {
-    a = Math.floorMod(a, p);
-    return LongUtils.modPow(a, e, p);
-  }
-
   private static long f(final long c, final long p, final long inv6) {
     final long t = c * c - 7;
     return Math.floorMod(c * Math.floorMod(t, p), p) * inv6 % p;
@@ -32,10 +27,10 @@ public class A401667 extends Sequence1 {
     }
     final long h = p >> 1;
     if (p > 5) {
-      if (powMod(13, h, p) == 1) {
+      if (LongUtils.modPow(13, h, p) == 1) {
         return false;
       }
-      if (powMod(19, h, p) == 1 && powMod(-5, h, p) == 1) {
+      if (LongUtils.modPow(19, h, p) == 1 && LongUtils.modPow(-5, h, p) == 1) {
         return false;
       }
     }

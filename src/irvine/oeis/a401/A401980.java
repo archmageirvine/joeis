@@ -17,7 +17,7 @@ public class A401980 extends Sequence0 {
   public Z next() {
     ++mN;
     Z sum = Z.ONE;
-    for (long d = 1; 2 *d <= mN; ++d) {
+    for (long d = 1; 2 * d <= mN; ++d) {
       final long t = Functions.PRIME_PI.l(mN - 2 * d);
       if (t != 0) {
         sum = sum.add(Binomial.binomial(d + t - 1, d));

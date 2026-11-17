@@ -24,7 +24,7 @@ public class A000069 extends Sequence1 implements DirectSequence {
   @Override
   public Z a(final Z n) {
     // a(n+1) = (1/2) * (4*n + 1 + (-1)^A000120(n))
-    return n.multiply(4).subtract(3).add(((n.subtract(1).bitCount() & 1) == 1) ? Z.ONE : Z.NEG_ONE).divide(2);
+    return n.multiply(4).subtract(3).add(((n.subtract(1).bitCount() & 1) == 0) ? Z.ONE : Z.NEG_ONE).divide(2);
   }
 
   @Override

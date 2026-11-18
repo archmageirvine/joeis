@@ -65,21 +65,49 @@ public class A003087 extends Sequence0 {
   private final ArrayList<CycleIndex> mH = new ArrayList<>();
   private int mN = -1;
 
-  @Override
-  public Z next() {
-    if (++mN == 0) {
+  private CycleIndex cycleIndex(final int n) {
+    if (mH.isEmpty()) {
       final MultivariateMonomial h0a = new MultivariateMonomial();
       mH.add(new CycleIndex("Z(H_0)", h0a));
-    } else {
-      final CycleIndex hn = new CycleIndex("Z(H_" + mN + ")");
-      for (int k = 1; k <= mN; ++k) {
-        final CycleIndex t = SymmetricGroup.create(k).cycleIndex().relabel(MultivariateMonomial.DEFAULT_VARIABLE, "s").op(OP, mH.get(mN - k));
+    }
+    while (mH.size() <= n) {
+      final int j = mH.size();
+      final CycleIndex hn = new CycleIndex("Z(H_" + j + ")");
+      for (int k = 1; k <= j; ++k) {
+        final CycleIndex t = SymmetricGroup.create(k).cycleIndex().relabel(MultivariateMonomial.DEFAULT_VARIABLE, "s").op(OP, mH.get(j - k));
         hn.add(t);
       }
       mH.add(hn);
     }
+    return mH.get(n);
+  }
+
+  /**
+   * Count the digraphs with a prescribed number of vertices other than sources.
+   * @param n number of vertices
+   * @param k number of non-sources
+   * @return number of digraphs
+   */
+  public Z nonSources(final int n, final int k) {
+    Q sum = Q.ZERO;
+    for (final MultivariateMonomial m : cycleIndex(n).values()) {
+      int total = 0;
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        if ("t".equals(e.getKey().left())) {
+          total += e.getKey().right() * e.getValue().intValueExact();
+        }
+      }
+      if (total == k) {
+        sum = sum.add(m.getCoefficient());
+      }
+    }
+    return sum.toZ();
+  }
+
+  @Override
+  public Z next() {
     Q s = Q.ZERO;
-    for (final MultivariateMonomial m : mH.get(mH.size() - 1).values()) {
+    for (final MultivariateMonomial m : cycleIndex(++mN).values()) {
       s = s.add(m.getCoefficient());
     }
     return s.toZ();

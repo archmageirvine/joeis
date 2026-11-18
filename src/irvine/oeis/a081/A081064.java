@@ -32,12 +32,21 @@ public class A081064 extends Sequence0 {
     }
   };
 
+  /**
+   * Count the digraphs by number of arcs.
+   * @param n number of vertices
+   * @return arc enumerator
+   */
+  public Polynomial<Z> row(final int n) {
+    return mGf.get(n);
+  }
+
   @Override
   public Z next() {
-    if (++mM > mGf.get(mN).degree()) {
+    if (++mM > row(mN).degree()) {
       ++mN;
       mM = 0;
     }
-    return mGf.get(mN).coeff(mM);
+    return row(mN).coeff(mM);
   }
 }

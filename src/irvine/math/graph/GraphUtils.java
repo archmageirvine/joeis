@@ -969,6 +969,10 @@ public final class GraphUtils {
    * @return pointing data
    */
   public static <E> List<List<E>> pointCycleIndexData(final Field<E> fld, final List<List<E>> data) {
+    return pointCycleIndexData(fld, data, false);
+  }
+
+  private static <E> List<List<E>> pointCycleIndexData(final Field<E> fld, final List<List<E>> data, final boolean two) {
     final List<List<E>> results = new ArrayList<>();
     for (int n = 0; n < data.size(); ++n) {
       final List<E> v = new ArrayList<>(data.get(n));
@@ -977,11 +981,50 @@ public final class GraphUtils {
       int[] pi;
       while ((pi = partN.next()) != null) {
         ++xi;
-        v.set(xi, fld.multiply(v.get(xi), fld.coerce(IntegerUtils.count(1, pi))));
+        final long count = IntegerUtils.count(1, pi);
+        v.set(xi, fld.multiply(v.get(xi), fld.coerce(two ? count * (count - 1) : count)));
       }
       results.add(v);
     }
     return results;
+  }
+
+  /**
+   * Generating function for initially connected graphs with a distinguished entry.
+   * Formula: <code>D X Point(S)*exp(-S)</code>.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> pointedInitially(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    final List<List<E>> inv = invGgfCycleIndexData(fld, graphs, yf);
+    final List<List<E>> strong = negate(fld, logCycleIndexData(fld, inv));
+    final List<List<E>> pointed = pointCycleIndexData(fld, strong);
+    return unlabeledOgf(fld, multiplyGgfCycleIndexData(fld, graphs, multiplyCycleIndexData(fld, pointed, inv), yf));
+  }
+
+  /**
+   * Generating function for initially-finally connected graphs with an ordered pair of distinct distinguished vertices.
+   * Formula: <code>DPoint(S) - Point(S)^2 + exp(S)*((Point(S)*exp(-S)) X (Point(S)*exp(-S)) X D)</code>.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> doublyPointedInitiallyFinally(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    final List<List<E>> inv = invGgfCycleIndexData(fld, graphs, yf);
+    final List<List<E>> strong = negate(fld, logCycleIndexData(fld, inv));
+    final List<List<E>> pointed = pointCycleIndexData(fld, strong);
+    final List<List<E>> pt = multiplyCycleIndexData(fld, pointed, inv);
+    final List<List<E>> product = multiplyGgfCycleIndexData(fld, graphs, multiplyGgfCycleIndexData(fld, pt, pt, yf), yf);
+    final Polynomial<E> sogf = unlabeledOgf(fld, strong);
+    final DegreeLimitedPolynomialRingField<E> ring = new DegreeLimitedPolynomialRingField<>(fld, sogf.degree());
+    final Polynomial<E> correction = ring.subtract(unlabeledOgf(fld, pointCycleIndexData(fld, strong, true)),
+      unlabeledOgf(fld, multiplyCycleIndexData(fld, pointed, pointed)));
+    return ring.add(correction, ring.multiply(PolynomialUtils.eulerTransform(fld, sogf), unlabeledOgf(fld, product)));
   }
 
   /**

@@ -10,11 +10,11 @@ class Chowla extends AbstractFunction1 {
 
   @Override
   public Z z(final Z n) {
-    return Z.ONE.equals(n) ? Z.ZERO : Functions.SIGMA.z(n).subtract(n).subtract(1);
+    return n.compareTo(Z.ONE) <= 0 ? Z.ZERO : Functions.SIGMA.z(n).subtract(n).subtract(1);
   }
 
   @Override
   public long l(final long n) {
-    return n == 1 ? 0 : Functions.SIGMA.l(n) - n - 1;
+    return n <= 1 ? 0 : Functions.SIGMA.l(n) - n - 1;
   }
 }

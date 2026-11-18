@@ -12,7 +12,8 @@ import irvine.oeis.a067.A067970;
  */
 public class A144411 extends Sequence1 {
 
-  final Sequence mA067970 = new A067970();
+  private final Sequence mA067970 = new A067970();
+
   @Override
   public Z next() {
     return mA067970.next().divide(Z.TWO).subtract(Z.TWO);

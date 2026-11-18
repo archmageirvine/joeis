@@ -30,7 +30,7 @@ public class A401762 extends Sequence1 {
   private Z[] mPow4;
   private Map<Key, Z> mCache;
 
-  private static class Key {
+  private static final class Key {
     private final int mState;
     private final int mPos;
     private final int mK;

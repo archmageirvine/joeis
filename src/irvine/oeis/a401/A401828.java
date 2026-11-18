@@ -14,7 +14,7 @@ public class A401828 extends Sequence0 {
 
   private static final int TILE_HEIGHT = 8;
 
-  private static class Board {
+  private static final class Board {
     private long[] mFiring;
     private long[] mState2;
     private long[] mState3;

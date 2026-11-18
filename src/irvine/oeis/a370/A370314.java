@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A370314 Number of chordless cycles in the n-odd graph.
  * @author Georg Fischer
  */
-
 public class A370314 extends BriefSequence {
 
   /** Construct the sequence. */

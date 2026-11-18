@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A382153 Numbers k such that there is an exceptional k-isogeny arising from the rational points on an elliptic curve X_0^{+}(k) of genus at most 6.
  * @author Georg Fischer
  */
-
 public class A382153 extends FiniteSequence {
 
   /** Construct the sequence. */

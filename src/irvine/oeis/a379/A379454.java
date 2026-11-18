@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A379454 Numbers that decrease three times in succession when they are iteratively replaced by the "Look and Say" description (cf. A045918) of their prime factors, counted with multiplicity.
  * @author Georg Fischer
  */
-
 public class A379454 extends BriefSequence {
 
   /** Construct the sequence. */

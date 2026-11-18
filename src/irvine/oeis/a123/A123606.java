@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A123606 Number of fusenes with 24 hexagons, C_(2v) symmetry and containing n carbon atoms.
  * @author Georg Fischer
  */
-
 public class A123606 extends FiniteSequence {
 
   /** Construct the sequence. */

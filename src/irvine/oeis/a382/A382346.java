@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A382346 Number of antichains in the Bruhat order on B_n.
  * @author Georg Fischer
  */
-
 public class A382346 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A370965 a(n) = number of "weakly lonesum" n X n X n tensors.
  * @author Georg Fischer
  */
-
 public class A370965 extends BriefSequence {
 
   /** Construct the sequence. */

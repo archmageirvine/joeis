@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A374168 a(n) is the smallest number which can be represented as the sum of two nonzero square pyramidal numbers in exactly n ways, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A374168 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A348335 a(n) = smallest k such that the sum of the divisors of the n numbers from k to k+n-1 equals sigma(k+n), or -1 if no such k exists.
  * @author Georg Fischer
  */
-
 public class A348335 extends BriefSequence {
 
   /** Construct the sequence. */

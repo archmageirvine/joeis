@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A358413 Smallest 3-abundant number (sigma(x) &gt; 3x) which is not divisible by any of the first n primes.
  * @author Georg Fischer
  */
-
 public class A358413 extends BriefSequence {
 
   /** Construct the sequence. */

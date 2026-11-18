@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A381151 The order of the 13 cards of one suit such that after Down-SpellUnder dealing the cards are in order; a(n) is the n-th card in the deck.
  * @author Georg Fischer
  */
-
 public class A381151 extends FiniteSequence {
 
   /** Construct the sequence. */

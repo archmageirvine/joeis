@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A356516 a(n) is the least k such that A356515(k) = n.
  * @author Georg Fischer
  */
-
 public class A356516 extends BriefSequence {
 
   /** Construct the sequence. */

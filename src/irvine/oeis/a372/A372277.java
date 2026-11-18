@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A372277 Composite numbers that divide the concatenation of the reverse of their ascending order prime factors, with repetition, when written in binary.
  * @author Georg Fischer
  */
-
 public class A372277 extends BriefSequence {
 
   /** Construct the sequence. */

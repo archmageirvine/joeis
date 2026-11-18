@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A366476 Number of possible chmess games at the end of the n-th ply.
  * @author Georg Fischer
  */
-
 public class A366476 extends BriefSequence {
 
   /** Construct the sequence. */

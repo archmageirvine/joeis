@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A359148 1, together with numbers k such that A173426(k) is prime.
  * @author Georg Fischer
  */
-
 public class A359148 extends BriefSequence {
 
   /** Construct the sequence. */

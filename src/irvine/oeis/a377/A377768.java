@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A377768 Number of edge cuts in the n-Pell graph.
  * @author Georg Fischer
  */
-
 public class A377768 extends BriefSequence {
 
   /** Construct the sequence. */

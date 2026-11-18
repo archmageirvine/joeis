@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A358414 Smallest 4-abundant number (sigma(x) &gt; 4x) which is not divisible by any of the first n primes.
  * @author Georg Fischer
  */
-
 public class A358414 extends BriefSequence {
 
   /** Construct the sequence. */

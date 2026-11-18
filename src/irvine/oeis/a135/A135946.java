@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A135946 Number of primes with 3n digits made of adjacent primes with 3 digits.
  * @author Georg Fischer
  */
-
 public class A135946 extends BriefSequence {
 
   /** Construct the sequence. */

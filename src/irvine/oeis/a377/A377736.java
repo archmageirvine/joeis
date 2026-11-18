@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A377736 Numbers k such that k, k+1 and k+2 are all terms in A377732.
  * @author Georg Fischer
  */
-
 public class A377736 extends BriefSequence {
 
   /** Construct the sequence. */

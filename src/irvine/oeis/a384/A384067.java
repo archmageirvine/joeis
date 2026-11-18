@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384067 Number of edge-connected components of n faces of the cuboctahedron up to the 48 rotations and reflections of the cuboctahedron.
  * @author Georg Fischer
  */
-
 public class A384067 extends FiniteSequence {
 
   /** Construct the sequence. */

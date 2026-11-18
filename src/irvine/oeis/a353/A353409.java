@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A353409 Smallest overpseudoprime to base 2 (A141232) with n distinct prime factors.
  * @author Georg Fischer
  */
-
 public class A353409 extends BriefSequence {
 
   /** Construct the sequence. */

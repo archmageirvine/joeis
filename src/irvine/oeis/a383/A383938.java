@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383938 a(n) is the least positive integer k such that b(2*j) is prime for 1 &lt;= j &lt;= n but not prime for j = n+1, where b(1) = k and b(m+1) = b(m) + prime(m) for m &gt;= 1.
  * @author Georg Fischer
  */
-
 public class A383938 extends FiniteSequence {
 
   /** Construct the sequence. */

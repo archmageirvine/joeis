@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A103850 Primes with digits not in all previous terms.
  * @author Georg Fischer
  */
-
 public class A103850 extends FiniteSequence {
 
   /** Construct the sequence. */

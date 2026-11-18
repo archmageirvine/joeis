@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A347613 Number of maximal irredundant sets in the torus grid graph C_n square C_n.
  * @author Georg Fischer
  */
-
 public class A347613 extends BriefSequence {
 
   /** Construct the sequence. */

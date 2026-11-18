@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A382151 Primes p such that some  elliptic curve over Q admits a Q-rational p-isogeny.
  * @author Georg Fischer
  */
-
 public class A382151 extends FiniteSequence {
 
   /** Construct the sequence. */

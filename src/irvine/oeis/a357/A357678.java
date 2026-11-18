@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A357678 Numbers k equal to the integer log of the sum of k and its digit reversal.
  * @author Georg Fischer
  */
-
 public class A357678 extends BriefSequence {
 
   /** Construct the sequence. */

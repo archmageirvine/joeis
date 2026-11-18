@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A364948 Perfect powers that are equal to the sum of the first k perfect powers &gt; 1 for some k.
  * @author Georg Fischer
  */
-
 public class A364948 extends BriefSequence {
 
   /** Construct the sequence. */

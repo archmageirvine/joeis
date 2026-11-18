@@ -7,7 +7,6 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-
 public class A397673 extends Sequence0 {
 
   // After Andrew Howroyd

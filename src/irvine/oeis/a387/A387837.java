@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A387837 Number of fundamentally different graceful labelings of the n-web graph.
  * @author Georg Fischer
  */
-
 public class A387837 extends BriefSequence {
 
   /** Construct the sequence. */

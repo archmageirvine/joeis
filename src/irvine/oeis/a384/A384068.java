@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384068 Number of connected components of n faces of the truncated cube up to the 48 rotations and reflections of the truncated cube.
  * @author Georg Fischer
  */
-
 public class A384068 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A109741 Number of inequivalent (completed) n^2 X n^2 sudokus (or Sudokus).
  * @author Georg Fischer
  */
-
 public class A109741 extends BriefSequence {
 
   /** Construct the sequence. */

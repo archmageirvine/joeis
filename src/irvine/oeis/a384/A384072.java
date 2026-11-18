@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384072 Number of connected components of n faces of the snub cube up to the 24 rotations of the snub cube.
  * @author Georg Fischer
  */
-
 public class A384072 extends FiniteSequence {
 
   /** Construct the sequence. */

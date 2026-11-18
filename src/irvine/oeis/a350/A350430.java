@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A350430 a(n) is the smallest n-th power which can be represented as the sum of n distinct positive n-th powers in exactly n ways, or -1 if none exists.
  * @author Georg Fischer
  */
-
 public class A350430 extends BriefSequence {
 
   /** Construct the sequence. */

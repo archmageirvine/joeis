@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A368939 Numbers k such that the sum of the digits times the sum of the fourth powers of the digits equals k.
  * @author Georg Fischer
  */
-
 public class A368939 extends BriefSequence {
 
   /** Construct the sequence. */

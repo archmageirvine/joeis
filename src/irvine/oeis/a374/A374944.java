@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A374944 a(n) is the maximum over the minimum crossing numbers of all Legendrian knots that can be realized on a Legendrian n-mosaic.
  * @author Georg Fischer
  */
-
 public class A374944 extends BriefSequence {
 
   /** Construct the sequence. */

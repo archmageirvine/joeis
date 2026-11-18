@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A375605 Number of composite knots with n crossings.
  * @author Georg Fischer
  */
-
 public class A375605 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A112262 A good sequence of gaps for Shellsort, found by genetic programming.
  * @author Georg Fischer
  */
-
 public class A112262 extends FiniteSequence {
 
   /** Construct the sequence. */

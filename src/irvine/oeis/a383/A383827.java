@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383827 Number of polyforms with n cells on the faces of a tetrakis hexahedron up to tetrahedral symmetry.
  * @author Georg Fischer
  */
-
 public class A383827 extends FiniteSequence {
 
   /** Construct the sequence. */

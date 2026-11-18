@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A074025 Numbers k such that a triplewhist tournament TWh(k) exists.
  * @author Georg Fischer
  */
-
 public class A074025 extends BriefSequence {
 
   /** Construct the sequence. */

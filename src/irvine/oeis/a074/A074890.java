@@ -48,7 +48,6 @@ public class A074890 extends Sequence0 {
 
 /*Java class to generate sequence
 package irvine.oeis.ca;
-
 public class A074890 { 
   static String zero="0", one="1"; 
   public static void main(String[] args) { 

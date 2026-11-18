@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A352586 a(n) is the largest prime that is not the sum of n-th powers of distinct primes.
  * @author Georg Fischer
  */
-
 public class A352586 extends BriefSequence {
 
   /** Construct the sequence. */

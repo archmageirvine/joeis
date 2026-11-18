@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A123205 Number of polyhexes with 24 hexagons, C_(3h) symmetry and containing 67+3n carbon atoms.
  * @author Georg Fischer
  */
-
 public class A123205 extends FiniteSequence {
 
   /** Construct the sequence. */

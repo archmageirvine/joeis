@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A349764 a(n) is the smallest number which can be represented as the sum of n distinct n-th powers of primes in exactly n ways.
  * @author Georg Fischer
  */
-
 public class A349764 extends BriefSequence {
 
   /** Construct the sequence. */

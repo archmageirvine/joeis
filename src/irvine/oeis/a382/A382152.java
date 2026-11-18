@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A382152 Numbers k such that there is an elliptic curve defined over Q with a Q-rational cyclic isogeny of degree k.
  * @author Georg Fischer
  */
-
 public class A382152 extends FiniteSequence {
 
   /** Construct the sequence. */

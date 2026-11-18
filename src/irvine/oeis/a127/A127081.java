@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A127081 One-sided kissing number for spheres in n-dimensional Euclidean space.
  * @author Georg Fischer
  */
-
 public class A127081 extends BriefSequence {
 
   /** Construct the sequence. */

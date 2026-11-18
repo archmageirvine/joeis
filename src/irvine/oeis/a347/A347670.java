@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A347670 Number of irredundant sets in the n-Apollonian network.
  * @author Georg Fischer
  */
-
 public class A347670 extends BriefSequence {
 
   /** Construct the sequence. */

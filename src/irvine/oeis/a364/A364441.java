@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A364441 Number of facets of the balanced minimum evolution polytope on n species.
  * @author Georg Fischer
  */
-
 public class A364441 extends BriefSequence {
 
   /** Construct the sequence. */

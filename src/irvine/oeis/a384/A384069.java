@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384069 Number of connected components of n faces of the truncated octahedron up to the 48 rotations and reflections of the truncated octahedron.
  * @author Georg Fischer
  */
-
 public class A384069 extends FiniteSequence {
 
   /** Construct the sequence. */

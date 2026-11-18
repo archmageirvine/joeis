@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A360221 Minimum number of intercalates in an orthogonal diagonal Latin square of order n.
  * @author Georg Fischer
  */
-
 public class A360221 extends BriefSequence {
 
   /** Construct the sequence. */

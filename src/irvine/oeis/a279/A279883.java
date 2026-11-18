@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A279883 Primes of the form (prime(j)-1)^(prime(j)+1) + 1.
  * @author Georg Fischer
  */
-
 public class A279883 extends BriefSequence {
 
   /** Construct the sequence. */

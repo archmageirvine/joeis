@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383974 Number of connected subsets of n edges of the icosahedron up to the 120 rotations and reflections of the icosahedron.
  * @author Georg Fischer
  */
-
 public class A383974 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A360836 a(n) is the least n-gonal pyramidal number that is the sum of two or more consecutive nonzero n-gonal pyramidal numbers in more than one way.
  * @author Georg Fischer
  */
-
 public class A360836 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A366650 Number of Calabi-Yau threefolds that are a complete intersection (CICY) in products of n projective spaces.
  * @author Georg Fischer
  */
-
 public class A366650 extends FiniteSequence {
 
   /** Construct the sequence. */

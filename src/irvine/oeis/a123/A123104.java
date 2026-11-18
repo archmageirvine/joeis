@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A123104 Number of benzenoids with 22 hexagons, D_(2h) symmetry and containing 2n carbon atoms.
  * @author Georg Fischer
  */
-
 public class A123104 extends FiniteSequence {
 
   /** Construct the sequence. */

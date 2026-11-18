@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A381776 Empty polygon numbers: a(n) is the smallest number of points in the plane (with no three of them collinear) such that an empty convex n-gon cannot be avoided.
  * @author Georg Fischer
  */
-
 public class A381776 extends BriefSequence {
 
   /** Construct the sequence. */

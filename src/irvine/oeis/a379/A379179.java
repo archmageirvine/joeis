@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A379179 The Anti-Parker Square, read by rows.
  * @author Georg Fischer
  */
-
 public class A379179 extends FiniteSequence {
 
   /** Construct the sequence. */

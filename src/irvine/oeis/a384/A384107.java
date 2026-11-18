@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384107 Number of connected components of n faces of the icosidodecahedron up to the 120 rotations and reflections of the icosidodecahedron.
  * @author Georg Fischer
  */
-
 public class A384107 extends FiniteSequence {
 
   /** Construct the sequence. */

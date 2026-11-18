@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A381001 Georges Pfeffermann's 1890 bimagic square of order 8, read by rows.
  * @author Georg Fischer
  */
-
 public class A381001 extends FiniteSequence {
 
   /** Construct the sequence. */

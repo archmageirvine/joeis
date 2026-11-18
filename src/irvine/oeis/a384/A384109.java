@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384109 Number of connected components of n faces of the truncated icosahedron up to the 120 rotations and reflections of the truncated icosahedron.
  * @author Georg Fischer
  */
-
 public class A384109 extends FiniteSequence {
 
   /** Construct the sequence. */

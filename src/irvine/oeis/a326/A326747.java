@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A326747 Number of graceful labelings of the n-crown graph.
  * @author Georg Fischer
  */
-
 public class A326747 extends BriefSequence {
 
   /** Construct the sequence. */

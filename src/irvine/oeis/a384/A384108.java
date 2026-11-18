@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384108 Number of connected components of n faces of the truncated dodecahedron up to the 120 rotations and reflections of the truncated dodecahedron.
  * @author Georg Fischer
  */
-
 public class A384108 extends FiniteSequence {
 
   /** Construct the sequence. */

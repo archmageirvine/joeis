@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A361370 Number of weakly 3-connected simple digraphs with n unlabeled nodes.
  * @author Georg Fischer
  */
-
 public class A361370 extends BriefSequence {
 
   /** Construct the sequence. */

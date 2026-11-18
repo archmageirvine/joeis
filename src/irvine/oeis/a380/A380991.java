@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A380991 a(n) = largest number of cells of a polyomino with at most n collinear cell centers.
  * @author Georg Fischer
  */
-
 public class A380991 extends BriefSequence {
 
   /** Construct the sequence. */

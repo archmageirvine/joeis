@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A352600 Number of positive integers that are not the sum of n-th powers of distinct primes.
  * @author Georg Fischer
  */
-
 public class A352600 extends BriefSequence {
 
   /** Construct the sequence. */

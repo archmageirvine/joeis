@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A096621 Numbers of distinct minimal toss sequences modulo rotation and conjugation.
  * @author Georg Fischer
  */
-
 public class A096621 extends BriefSequence {
 
   /** Construct the sequence. */

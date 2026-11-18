@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A370312 Number of chordless cycles in the n-middle layer graph.
  * @author Georg Fischer
  */
-
 public class A370312 extends BriefSequence {
 
   /** Construct the sequence. */

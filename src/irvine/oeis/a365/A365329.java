@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A365329 Denominators of a FRACTRAN program that produces the iterates of the Collatz (or 3x+1) function.
  * @author Georg Fischer
  */
-
 public class A365329 extends FiniteSequence {
 
   /** Construct the sequence. */

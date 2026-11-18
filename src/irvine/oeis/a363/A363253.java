@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A363253 a(n) is the smallest n-gonal number which can be represented as the sum of distinct nonzero n-gonal numbers in exactly n ways, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A363253 extends BriefSequence {
 
   /** Construct the sequence. */

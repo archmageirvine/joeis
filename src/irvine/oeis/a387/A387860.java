@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A387860 Number of fundamentally different graceful labelings of the n-Pell graph.
  * @author Georg Fischer
  */
-
 public class A387860 extends BriefSequence {
 
   /** Construct the sequence. */

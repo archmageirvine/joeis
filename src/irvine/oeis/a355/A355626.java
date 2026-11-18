@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A355626 a(n) is the number of tuples (t_1, ..., t_n) with integers 2 &lt;= t_1 &lt;= ... &lt;= t_n such that Product_{i = 1..n} (3 + 1/t_i) is an integer.
  * @author Georg Fischer
  */
-
 public class A355626 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383981 Number of connected subsets of n edges of the rhombic dodecahedron up to the 48 rotations and reflections of the rhombic dodecahedron.
  * @author Georg Fischer
  */
-
 public class A383981 extends FiniteSequence {
 
   /** Construct the sequence. */

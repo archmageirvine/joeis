@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A365019 Triangular numbers that for some k &gt;= 0 are also the sum of the first k perfect powers.
  * @author Georg Fischer
  */
-
 public class A365019 extends BriefSequence {
 
   /** Construct the sequence. */

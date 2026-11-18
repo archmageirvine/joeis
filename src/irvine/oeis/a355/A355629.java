@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A355629 a(n) is the number of tuples (t_1, ..., t_n) with integers 2 &lt;= t_1 &lt;= ... &lt;= t_n such that 3^n + 1 = Product_{i = 1..n} (3 + 1/t_i).
  * @author Georg Fischer
  */
-
 public class A355629 extends BriefSequence {
 
   /** Construct the sequence. */

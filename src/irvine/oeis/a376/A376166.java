@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A376166 Integers m whose decimal representation can be split into integers a,b,c such that the triangle with sides a,b,c has area sqrt(m).
  * @author Georg Fischer
  */
-
 public class A376166 extends BriefSequence {
 
   /** Construct the sequence. */

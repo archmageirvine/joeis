@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384104 Number of edge-connected components of n faces of the truncated tetrahedron up to the 24 rotations and reflections of the truncated tetrahedron.
  * @author Georg Fischer
  */
-
 public class A384104 extends FiniteSequence {
 
   /** Construct the sequence. */

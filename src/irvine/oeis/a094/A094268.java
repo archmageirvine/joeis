@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A094268 Starting term of smallest consecutive n-tuples of abundant numbers.
  * @author Georg Fischer
  */
-
 public class A094268 extends BriefSequence {
 
   /** Construct the sequence. */

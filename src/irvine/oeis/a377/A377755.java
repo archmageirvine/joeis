@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A377755 Number of edge cuts in the n-polygon diagonal intersection graph.
  * @author Georg Fischer
  */
-
 public class A377755 extends BriefSequence {
 
   /** Construct the sequence. */

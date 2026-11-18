@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A374804 a(n) is the smallest number which can be represented as the sum of 4 distinct nonzero sixth powers in exactly n ways, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A374804 extends BriefSequence {
 
   /** Construct the sequence. */

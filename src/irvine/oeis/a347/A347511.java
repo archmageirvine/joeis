@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A347511 Number of minimal dominating sets in the n-Apollonian network.
  * @author Georg Fischer
  */
-
 public class A347511 extends BriefSequence {
 
   /** Construct the sequence. */

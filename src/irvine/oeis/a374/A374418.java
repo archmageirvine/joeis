@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A374418 a(n) is the smallest number which can be represented as the sum of 2 distinct positive n-th powers in exactly 3 ways, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A374418 extends BriefSequence {
 
   /** Construct the sequence. */

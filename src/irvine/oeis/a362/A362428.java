@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A362428 a(n) is the least positive integer that can be expressed as the sum of one or more consecutive perfect powers (A001597) in exactly n ways, or -1 if no such integer exists.
  * @author Georg Fischer
  */
-
 public class A362428 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A245206 Odd primes p with E_{p-3}(1/4) == 0 (mod p), where E_n(x) denotes the Euler polynomial of degree n.
  * @author Georg Fischer
  */
-
 public class A245206 extends BriefSequence {
 
   /** Construct the sequence. */

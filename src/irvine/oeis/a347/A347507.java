@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A347507 Number of dominating sets in the odd graph O_n.
  * @author Georg Fischer
  */
-
 public class A347507 extends BriefSequence {
 
   /** Construct the sequence. */

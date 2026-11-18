@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A356683 a(n) is the smallest positive k such that the count of squarefree numbers &lt;= k that have n prime factors is equal to the count of squarefree numbers &lt;= k that have n-1 prime factors (and the count is positive).
  * @author Georg Fischer
  */
-
 public class A356683 extends BriefSequence {
 
   /** Construct the sequence. */

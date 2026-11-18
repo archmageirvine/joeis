@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A123209 Number of polyhexes with 24 hexagons, D_(2h) symmetry and containing 2n carbon atoms.
  * @author Georg Fischer
  */
-
 public class A123209 extends FiniteSequence {
 
   /** Construct the sequence. */

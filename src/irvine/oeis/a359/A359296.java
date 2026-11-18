@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A359296 Absolute discriminants of imaginary quadratic fields with elementary bicyclic 7-class group and capitulation type the identity permutation.
  * @author Georg Fischer
  */
-
 public class A359296 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A368480 Orders k such that there exists a group of order k with automorphism group of odd order.
  * @author Georg Fischer
  */
-
 public class A368480 extends BriefSequence {
 
   /** Construct the sequence. */

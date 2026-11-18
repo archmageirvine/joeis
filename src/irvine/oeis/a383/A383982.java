@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383982 Number of connected subsets of n edges of the cuboctahedron up to the 48 rotations and reflections of the cuboctahedron.
  * @author Georg Fischer
  */
-
 public class A383982 extends FiniteSequence {
 
   /** Construct the sequence. */

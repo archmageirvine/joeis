@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A355960 Primes p such that (p+5)^(p-1) == 1 (mod p^2).
  * @author Georg Fischer
  */
-
 public class A355960 extends BriefSequence {
 
   /** Construct the sequence. */

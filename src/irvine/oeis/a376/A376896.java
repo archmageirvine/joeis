@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A376896 Wieferich prime to base 3/2: primes p such that p^2 divides 3^(p-1) - 2^(p-1).
  * @author Georg Fischer
  */
-
 public class A376896 extends BriefSequence {
 
   /** Construct the sequence. */

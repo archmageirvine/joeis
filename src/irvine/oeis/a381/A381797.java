@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A381797 Number of connected dominating sets in the n X n X n grid graph.
  * @author Georg Fischer
  */
-
 public class A381797 extends BriefSequence {
 
   /** Construct the sequence. */

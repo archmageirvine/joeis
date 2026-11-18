@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A112542 Lengths of the loop of the sequences "Sum of last ten digits" beginning with nine zeros followed by digit n.
  * @author Georg Fischer
  */
-
 public class A112542 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A353175 Base-99 Wieferich pseudoprimes, i.e., composites c such that 99^(c-1) == 1 (mod c^2).
  * @author Georg Fischer
  */
-
 public class A353175 extends BriefSequence {
 
   /** Construct the sequence. */

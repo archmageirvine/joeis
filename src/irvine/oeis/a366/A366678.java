@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A366678 Number of Calabi-Yau threefolds that are a complete intersection (CICY) with n polynomials.
  * @author Georg Fischer
  */
-
 public class A366678 extends FiniteSequence {
 
   /** Construct the sequence. */

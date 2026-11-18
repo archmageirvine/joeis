@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A358419 Least number k coprime to 2, 3, 5, and 7 such that sigma(k)/k &gt;= n.
  * @author Georg Fischer
  */
-
 public class A358419 extends BriefSequence {
 
   /** Construct the sequence. */

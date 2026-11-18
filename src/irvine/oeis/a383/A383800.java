@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383800 Number of polyforms with n cells on the faces of a triakis octahedron up to rotation and reflection.
  * @author Georg Fischer
  */
-
 public class A383800 extends FiniteSequence {
 
   /** Construct the sequence. */

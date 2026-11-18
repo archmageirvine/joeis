@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A381969 Primes p with the property that PreviousPrime(p) is a substring of p^2.
  * @author Georg Fischer
  */
-
 public class A381969 extends BriefSequence {
 
   /** Construct the sequence. */

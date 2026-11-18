@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A355963 Primes p such that (p+8)^(p-1) == 1 (mod p^2).
  * @author Georg Fischer
  */
-
 public class A355963 extends BriefSequence {
 
   /** Construct the sequence. */

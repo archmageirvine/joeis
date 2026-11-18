@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383804 Number of polyforms with n cells on the faces of a deltoidal icositetrahedron up to rotation and reflection.
  * @author Georg Fischer
  */
-
 public class A383804 extends FiniteSequence {
 
   /** Construct the sequence. */

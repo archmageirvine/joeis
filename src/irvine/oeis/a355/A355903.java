@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A355903 Variant of Stepping Stones problem: here the stone you place only needs to divide the sum of its 8 neighbors.
  * @author Georg Fischer
  */
-
 public class A355903 extends BriefSequence {
 
   /** Construct the sequence. */

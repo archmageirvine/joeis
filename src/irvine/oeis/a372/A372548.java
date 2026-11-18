@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A372548 Largest order of a torsion subgroup of an elliptic curve over a number field of degree n.
  * @author Georg Fischer
  */
-
 public class A372548 extends BriefSequence {
 
   /** Construct the sequence. */

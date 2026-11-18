@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A384070 Number of connected components of n faces of the rhombicuboctahedron up to the 48 rotations and reflections of the rhombicuboctahedron.
  * @author Georg Fischer
  */
-
 public class A384070 extends FiniteSequence {
 
   /** Construct the sequence. */

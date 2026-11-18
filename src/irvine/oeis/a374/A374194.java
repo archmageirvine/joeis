@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A374194 a(n) is the smallest number which can be represented as the sum of two nonzero hexagonal pyramidal numbers in exactly n ways, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A374194 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A364227 a(n) is the number of n X n nonsingular matrices using all the first n^2 prime numbers.
  * @author Georg Fischer
  */
-
 public class A364227 extends BriefSequence {
 
   /** Construct the sequence. */

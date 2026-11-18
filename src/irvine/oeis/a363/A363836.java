@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A363836 a(n) = smallest number m such that digitsum(m^n) &lt; digitsum(m), or -1 if no such m exists.
  * @author Georg Fischer
  */
-
 public class A363836 extends BriefSequence {
 
   /** Construct the sequence. */

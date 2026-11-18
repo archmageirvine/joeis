@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383490 Number of polyforms with n cells on the faces of a rhombic triacontahedron up to rotation and reflection.
  * @author Georg Fischer
  */
-
 public class A383490 extends FiniteSequence {
 
   /** Construct the sequence. */

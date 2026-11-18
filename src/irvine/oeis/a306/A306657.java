@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A306657 Least primary Carmichael number (A324316) with n prime factors, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A306657 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A382149 Primes p such that the elliptic curve X_0^{+}(p) has genus 2.
  * @author Georg Fischer
  */
-
 public class A382149 extends FiniteSequence {
 
   /** Construct the sequence. */

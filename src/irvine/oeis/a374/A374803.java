@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A374803 a(n) is the smallest number which can be represented as the sum of 4 distinct positive fifth powers in exactly n ways, or -1 if no such number exists.
  * @author Georg Fischer
  */
-
 public class A374803 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A370963 a(n) = number of "lonesum" n X n X n tensors.
  * @author Georg Fischer
  */
-
 public class A370963 extends BriefSequence {
 
   /** Construct the sequence. */

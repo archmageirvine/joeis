@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A365098 Primes p such that Sum_{k=1..p-1} q^2_p(k) == 0 (mod p), with q_p(k) a Fermat quotient.
  * @author Georg Fischer
  */
-
 public class A365098 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A347504 Number of dominating sets in the n X n X n grid graph.
  * @author Georg Fischer
  */
-
 public class A347504 extends BriefSequence {
 
   /** Construct the sequence. */

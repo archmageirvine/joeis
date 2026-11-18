@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383806 Number of polyforms with n cells on the faces of a disdyakis dodecahedron up to rotation and reflection.
  * @author Georg Fischer
  */
-
 public class A383806 extends FiniteSequence {
 
   /** Construct the sequence. */

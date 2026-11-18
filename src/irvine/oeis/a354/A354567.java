@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A354567 a(n) is the least number k such that P(k)^n | k and P(k+1)^n | (k+1), where P(k) = A006530(k) is the largest prime dividing k, or -1 if no such k exists.
  * @author Georg Fischer
  */
-
 public class A354567 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -6,14 +6,14 @@ import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
+/**
+ * A084547 Numbers k that have primitive roots less than k that are nonnegative perfect cubes.
+ * @author Sean A. Irvine
+ */
 public class A084547 extends Sequence1 {
 
   private long mN = 0;
 
-  /**
-   * A084547 Numbers k that have primitive roots less than k that are nonnegative perfect cubes.
-   * @author Sean A. Irvine
-   */
   private boolean is(final long n) {
     // Primitive roots only exist for n = 1, 2, 4, p^k, 2*p^k (p odd prime)
     if (n == 2) {

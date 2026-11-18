@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A383691 Square numbers with distinct digits from 1-9 that have an initial string of two or more digits forming a square number.
  * @author Georg Fischer
  */
-
 public class A383691 extends FiniteSequence {
 
   /** Construct the sequence. */

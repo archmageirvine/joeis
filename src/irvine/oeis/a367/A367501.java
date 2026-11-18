@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A367501 The orders, without repetition, of the subquotients of finite groups with irreducible representations in GL_5(Z).
  * @author Georg Fischer
  */
-
 public class A367501 extends FiniteSequence {
 
   /** Construct the sequence. */

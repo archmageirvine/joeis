@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A269836 Primes p of the form k^(2*k) + 1.
  * @author Georg Fischer
  */
-
 public class A269836 extends BriefSequence {
 
   /** Construct the sequence. */

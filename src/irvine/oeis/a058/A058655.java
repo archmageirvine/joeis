@@ -17,7 +17,6 @@ public class A058655 extends Sequence1 implements UnimplementedSequence {
 
 // The following implementation is way too slow to be useful
 // I think the recursive mA with precision kills it
-
 //public class A058655 extends DecimalExpansionSequence {
 //
 //  private static CR s(final int k) {

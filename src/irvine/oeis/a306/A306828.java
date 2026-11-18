@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A306828 Carmichael numbers whose index is a power of 2 (see A174590).
  * @author Georg Fischer
  */
-
 public class A306828 extends BriefSequence {
 
   /** Construct the sequence. */

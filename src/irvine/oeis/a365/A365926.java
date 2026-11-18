@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A365926 Number of distinct characteristic polynomials for n X n matrices with entries in {0, 1, ..., n-1}.
  * @author Georg Fischer
  */
-
 public class A365926 extends BriefSequence {
 
   /** Construct the sequence. */

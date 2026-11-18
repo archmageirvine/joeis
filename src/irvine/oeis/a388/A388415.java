@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A388415 Number of fundamentally different graceful labelings of the 2n-crossed prism graph.
  * @author Georg Fischer
  */
-
 public class A388415 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A204520 Numbers such that floor(a(n)^2 / 5) is a square.
+ * A204520 Numbers k such that floor(k^2 / 5) is a square.
  * @author Georg Fischer
  */
 public class A204520 extends Sequence1 {

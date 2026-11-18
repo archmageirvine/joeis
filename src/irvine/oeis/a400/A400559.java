@@ -4,7 +4,7 @@ import irvine.math.graph.EverywhereReducibleDigraphs;
 import irvine.oeis.CachedSequence;
 
 /**
- * A400559 Number of single-entry single-exit all-valid blocks on n labeled nodes.
+ * A400559 Number of triples (B, g, e) with B a strongly connected digraph on n labeled nodes, g and e nodes of B, such that adding a new node r with edges e -&gt; r and r -&gt; g yields a digraph reducible as a flow graph rooted at every node.
  * @author Gregory Morse
  */
 public class A400559 extends CachedSequence {

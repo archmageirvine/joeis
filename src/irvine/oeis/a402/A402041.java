@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087450.
+ * A402041 allocated for Jason Bard.
  * @author Sean A. Irvine
  */
 public class A402041 extends Sequence0 {

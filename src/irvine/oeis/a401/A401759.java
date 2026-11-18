@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A401759 allocated for Henry E. Rodr\u00edguez Vargas.
+ * A401759 a(n) = number of primes p &lt;= n, taken in decreasing order starting from the largest, that must be tried before reaching the first one for which 2*n - p is also prime.
  * @author Sean A. Irvine
  */
 public class A401759 extends Sequence2 {

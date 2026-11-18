@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401442 allocated for Adrian Morgan.
+ * A401442 Number of ordered rooted trees with n nodes such that no two sibling subtrees are isomorphic as unordered rooted trees.
  * @author Sean A. Irvine
  */
 public class A401442 extends Sequence1 {

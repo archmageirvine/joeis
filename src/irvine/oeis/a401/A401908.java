@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401908 allocated for Jwalin Bhatt.
+ * A401908 Number of primes in the n-th maximal cluster of primes with consecutive gaps at most 4.
  * @author Sean A. Irvine
  */
 public class A401908 extends Sequence1 {

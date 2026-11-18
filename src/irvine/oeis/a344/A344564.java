@@ -5,7 +5,7 @@ package irvine.oeis.a344;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A344564 a(n) = [x^n] -3/(2*x - 1)^5.
+ * A344564 a(n) = [x^n] 3/(1 - 2*x)^5.
  * Recurrence: n*a(n)=2*(n+4)*a(n-1)
  * @author Georg Fischer
  */

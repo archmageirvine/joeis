@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400504 allocated for Adam Ra\u017aniewski.
+ * A400504 Number of regions in a disk cut by the chords of a round-mirror billiard: n points equally spaced on the circle, and from point 0, for each k = 1..n-1, a ray joins points j*k and (j+1)*k (mod n) for j = 0, 1, 2, ... until it returns to point 0.
  * @author Sean A. Irvine
  */
 public class A400504 extends Sequence1 {

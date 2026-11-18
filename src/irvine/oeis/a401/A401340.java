@@ -11,7 +11,7 @@ import irvine.oeis.a051.A051022;
 import irvine.oeis.a343.A343550;
 
 /**
- * A401340 allocated for Bernard Schott.
+ * A401340 Primitive quotients in increasing order, obtained when a primitive term m of A401339 divides the number formed by inserting a 0 between each pair of consecutive digits of this term m.
  * @author Sean A. Irvine
  */
 public class A401340 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a056.A056576;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401012 allocated for Joel Cruz Cabrera.
+ * A401012 Decimal expansion of 1 - Sum_{n&gt;=1} 2^(-floor(n*log_2(3))).
  * @author Sean A. Irvine
  */
 public class A401012 extends DecimalExpansionSequence {

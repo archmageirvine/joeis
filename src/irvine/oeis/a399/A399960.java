@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014574;
 
 /**
- * A399960 allocated for Mourad Belafsahi.
+ * A399960 Terms m of A014574 such that there are no two distinct terms x &lt; y of A014574 with x + y = 2*m.
  * @author Sean A. Irvine
  */
 public class A399960 extends Sequence1 {

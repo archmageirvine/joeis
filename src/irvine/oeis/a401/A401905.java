@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401905 allocated for Alper Ferudun.
+ * A401905 Least m &gt;= 0 such that k/2^n is a fusible number for every k &gt;= m.
  * @author Sean A. Irvine
  */
 public class A401905 extends Sequence0 {

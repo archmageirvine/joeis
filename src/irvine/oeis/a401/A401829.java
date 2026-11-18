@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A401828: Population of the B2/S34/C4 automaton.
+ * A401829 allocated for Alper Ferudun.
  * @author Sean A. Irvine
  */
 public class A401829 extends DifferenceSequence {

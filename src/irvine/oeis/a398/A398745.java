@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A398745 allocated for Igor Zhuk.
+ * A398745 Least prime p &gt;= 5 with p &gt; n + 1 for which the iteration of K_n(u) = (u^3 - (n^2 + n + 1)*u)/(n*(n + 1)) on GF(p) collapses every element into {-1, 0, 1}, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A398745 extends Sequence1 {

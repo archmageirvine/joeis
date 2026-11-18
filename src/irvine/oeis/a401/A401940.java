@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087450.
+ * A401940 allocated for Narciso Gonzaga, Jr.
  * @author Sean A. Irvine
  */
 public class A401940 extends Sequence0 {

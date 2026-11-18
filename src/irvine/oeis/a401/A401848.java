@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401848 allocated for Nguyen Trong Nhan.
+ * A401848 Trajectory of 30 under the map x -&gt; x^(omega(x)-1) + 1, where omega(x) is the number of distinct prime divisors of x.
  * @author Sean A. Irvine
  */
 public class A401848 extends Sequence1 {

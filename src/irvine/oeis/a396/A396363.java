@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A396363 allocated for Charles L. Hohn.
+ * A396363 Numbers k &gt;= 1 for which a record number of trailing digits in 2 different bases are equal.
  * @author Sean A. Irvine
  */
 public class A396363 extends Sequence1 {

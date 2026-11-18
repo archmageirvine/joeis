@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401894 allocated for Marko Radulovic.
+ * A401894 Number of doubly shaded cells in the n X n grid obtained by shading according to the additive orders in the group Z/nZ, using the same horizontal/vertical rule as in A395245.
  * @author Sean A. Irvine
  */
 public class A401894 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005117;
 import irvine.oeis.a397.A397710;
 
 /**
- * A398754 allocated for Michael De Vlieger.
+ * A398754 Union of squarefree numbers k (in A005117) and products m = lpf(k)*k (in A397710), where lpf(k) is the smallest prime factor of k.
  * @author Sean A. Irvine
  */
 public class A398754 extends UnionSequence {

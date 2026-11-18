@@ -4,7 +4,7 @@ import irvine.oeis.a070.A070043;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A401605 allocated for Alejandro Espinoza Quispe.
+ * A401605 Numbers of the form (6*y + 1) * (6*x + 1) for integers x&gt;0 and y&gt;0.
  * @author Sean A. Irvine
  */
 public class A401605 extends SimpleTransformSequence {

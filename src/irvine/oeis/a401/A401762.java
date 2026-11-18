@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401762
+ * A401762 allocated for Pietro Tiaraju Giavarina dos Santos.
  * @author Sean A. Irvine
  */
 public class A401762 extends Sequence1 {

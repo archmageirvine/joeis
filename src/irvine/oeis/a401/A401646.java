@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A401646 allocated for Jos\u00e9 Luis Ram\u00edrez Ram\u00edrez.
+ * A401646 Total number of symmetric peaks over all Dyck paths of semilength n.
  * @author Sean A. Irvine
  */
 public class A401646 extends GfSequence {

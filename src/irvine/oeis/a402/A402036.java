@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087450.
+ * A402036 allocated for Jwalin Bhatt.
  * @author Sean A. Irvine
  */
 public class A402036 extends Sequence1 {

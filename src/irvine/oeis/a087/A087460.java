@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087450.
+ * A087460 Least n such that H(n) is closer to an integer than any H(j) with j &lt; n; where H(n) is the harmonic number sum_{i=0..n} 1/i.
  * @author Sean A. Irvine
  */
 public class A087460 extends Sequence1 {

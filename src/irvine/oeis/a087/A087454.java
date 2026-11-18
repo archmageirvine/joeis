@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000040;
 
 /**
- * A087450.
+ * A087454 Multiplicative inverse of the n-th prime prime(n) modulo prime(n-1).
  * @author Sean A. Irvine
  */
 public class A087454 extends Sequence2 {

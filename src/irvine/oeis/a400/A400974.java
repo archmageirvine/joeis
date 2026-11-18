@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400974 allocated for Omar E. Pol.
+ * A400974 Number of terms in the central 2-dense sublist of divisors of n, or 0 if such a sublist does not exist.
  * @author Sean A. Irvine
  */
 public class A400974 extends Sequence1 {

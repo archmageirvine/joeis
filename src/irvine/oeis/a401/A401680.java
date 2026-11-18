@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A401680 allocated for Sajid Khan Hussain.
+ * A401680 a(1) = 1; for n &gt; 1, a(n) is the number of k &lt; n such that a(k) &lt; n - k &lt;= 3*a(k).
  * @author Sean A. Irvine
  */
 public class A401680 extends CachedSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401910 allocated for Scott M. Foltz.
+ * A401910 Number of distinct sizes of intervals [a,b] = {c : a &lt;= c &lt;= b}, a &lt; b, in the n X n grid {0,...,n-1}^2 under the partial order (t,x) &lt;= (t',x') iff t' &gt;= t and |x'-x| &lt;= t'-t (with a &lt; b requiring t' &gt; t).
  * @author Sean A. Irvine
  */
 public class A401910 extends Sequence1 {

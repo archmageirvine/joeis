@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A087450.
+ * A087458 Greatest prime p such that prime(n)+p &lt;= prime(n+1); a(1)=1.
  * @author Sean A. Irvine
  */
 public class A087458 extends A000040 {

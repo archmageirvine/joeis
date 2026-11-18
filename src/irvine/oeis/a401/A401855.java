@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a025.A025487;
 
 /**
- * A401855 allocated for Zhicheng Wei.
+ * A401855 a(1) = 1, for n&gt;1, a(n) is the smallest prime number where A025487(n)/a(n) is still in A025487.
  * @author Sean A. Irvine
  */
 public class A401855 extends A025487 {

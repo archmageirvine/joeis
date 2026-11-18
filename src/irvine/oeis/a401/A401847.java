@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000720;
 
 /**
- * A401847 allocated for Mykola Filipchuk.
+ * A401847 Number of permutations of {1..n} such that all primes are adjacent (form a single contiguous block).
  * @author Sean A. Irvine
  */
 public class A401847 extends Sequence0 {

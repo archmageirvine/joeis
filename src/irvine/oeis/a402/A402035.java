@@ -5,7 +5,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A087450.
+ * A402035 allocated for Carlos Alberto Terencio de Bastos.
  * @author Sean A. Irvine
  */
 public class A402035 extends FilterNumberSequence {

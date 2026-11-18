@@ -4,7 +4,7 @@ import irvine.math.graph.LabeledReducibleDigraphs;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397655 Number of reducible flow graphs on n labeled nodes with entry node 1 and exit node n.
+ * A397655 Number of reducible flow graphs on n labeled nodes with entry node 1 and exit node n reachable from every node (node 1 = node n when n = 1).
  * @author Gregory Morse
  */
 public class A397655 extends CachedSequence {

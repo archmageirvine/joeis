@@ -3,7 +3,7 @@ package irvine.oeis.a402;
 import irvine.math.z.Z;
 
 /**
- * A087450.
+ * A402042 allocated for Jason Bard.
  * @author Sean A. Irvine
  */
 public class A402042 extends A402041 {

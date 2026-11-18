@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a003.A003586;
 
 /**
- * A401944 allocated for Hassane Bakkaoui.
+ * A401944 3-smooth numbers k &gt; 1 such that 3*k^2 - 3*k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A401944 extends FilterSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A093172 Primes of the form 10^n - 3.
+ * A093172 Primes of the form 10^k - 3.
  * @author Georg Fischer
  */
 public class A093172 extends PrimeSubsequence {

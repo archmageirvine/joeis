@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A397968 Number of unlabeled reducible flow graphs on n nodes with a distinguished entry.
+ * A397968 Number of reducible flow graphs on n unlabeled nodes: digraphs with a distinguished entry from which every node is reachable and in which every cycle has a unique entry node, counted up to isomorphism fixing the entry.
  * @author Gregory Morse
  */
 public class A397968 extends CachedSequence {

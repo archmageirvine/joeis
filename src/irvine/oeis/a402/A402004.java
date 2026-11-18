@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001359;
 
 /**
- * A087450.
+ * A402004 allocated for Francisco Torres Gonzalez.
  * @author Sean A. Irvine
  */
 public class A402004 extends FilterSequence {

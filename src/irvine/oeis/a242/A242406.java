@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A242406 The Rendezvous Constant.
+ * A242406 Decimal expansion of the Rendezvous Constant.
  * Polynomial: <code>2x^5-4x^4-5x^2+4x-1</code>
  * @author Georg Fischer
  */

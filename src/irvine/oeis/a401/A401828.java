@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401828: Population of the B2/S34/C4 automaton.
+ * A401828 allocated for Alper Ferudun.
  * @author Alper Ferudun
  * @author Sean A. Irvine (Java port)
  */

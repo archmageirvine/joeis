@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A401902 allocated for Alper Ferudun.
+ * A401902 Number of sites that topple when the 2n-th grain is added at the origin of an initially empty sandpile on the first quadrant, where a site (x, y) with at least 2 grains topples by sending one grain to each of (x+1, y) and (x, y+1).
  * @author Sean A. Irvine
  */
 public class A401902 extends Sequence1 {

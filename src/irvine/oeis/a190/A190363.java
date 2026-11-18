@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A190363 a(n) = n + [n*r/t] + [n*s/t];  r=1, s=sqrt(5/4), t=sqrt(4/5).
+ * A190363 a(n) = n + floor(n*r/t) + floor(n*s/t); r=1, s=sqrt(5/4), t=sqrt(4/5).
  * @author Georg Fischer
  */
 public class A190363 extends FloorSequence {

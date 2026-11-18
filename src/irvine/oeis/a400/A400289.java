@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400289 allocated for M. F. Hasler.
+ * A400289 Bases b in which the digits of prime(b*x + y) are the reversal of the digits of prime(b*y + x) for some 0 &lt; x &lt; y &lt; b.
  * @author Sean A. Irvine
  */
 public class A400289 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398739
+ * A398739 allocated for Robert Potter.
  * @author Sean A. Irvine
  */
 public class A398739 extends Sequence1 {

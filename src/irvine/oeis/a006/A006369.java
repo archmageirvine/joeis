@@ -5,7 +5,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A006369 a(n) = 2*n/3 for n divisible by 3, otherwise a(n) = round(4*n/3).
+ * A006369 a(n) = 2*n/3 for n divisible by 3, otherwise a(n) = round(4*n/3). Or, equivalently, a(3*n-2) = 4*n-3, a(3*n-1) = 4*n-1, a(3*n) = 2*n.
  * Or, equivalently, a(3*n-2) = 4*n-3, a(3*n-1) = 4*n-1, a(3*n) = 2*n,
  * Or, equivalently, a(3*m+1) = 4*m+1, a(3*m+2) = 4*m+3, a(3*n) = 2*n.
  * @author Sean A. Irvine

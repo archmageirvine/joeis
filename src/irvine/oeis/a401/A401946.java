@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A401946 allocated for Adam Onus.
+ * A401946 a(n) is the number of integers k such that k - reversal of k in base 2 = n.
  * @author Sean A. Irvine
  */
 public class A401946 extends Sequence1 {

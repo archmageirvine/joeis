@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401980 allocated for Leo Zhang.
+ * A401980 Number of tilings of a strip of length n using squares (length 1) and dominoes (length 2) such that each domino has a prime number of squares preceding it.
  * @author Sean A. Irvine
  */
 public class A401980 extends Sequence0 {

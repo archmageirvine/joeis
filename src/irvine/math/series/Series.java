@@ -106,6 +106,26 @@ public interface Series<E> {
   }
 
   /**
+   * Convert a rational series to an integer series.
+   * Terms are simply truncated to integers.
+   * @param series rational series
+   * @return integer series
+   */
+  static Series<Z> toZ(final Series<Q> series) {
+    return new Series<>() {
+      @Override
+      public Z coeff(final long n) {
+        return series.coeff(n).toZ();
+      }
+
+      @Override
+      public long bound() {
+        return series.bound();
+      }
+    };
+  }
+
+  /**
    * Create a series backed by a directly accessible sequence.
    * @param sequence underlying sequence
    * @return series based on sequence

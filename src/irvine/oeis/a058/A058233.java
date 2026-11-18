@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A058233 Primes p such that p#+1 is divisible by the next prime after p.
+ * A058233 Primes p such that p#+1 is divisible by the next prime after p, where p# = A034386(p).
  * @author Sean A. Irvine
  */
 public class A058233 extends Sequence1 {

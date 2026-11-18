@@ -4,7 +4,7 @@ package irvine.oeis.a377;
 import irvine.oeis.BriefSequence;
 
 /**
- * A377755 Number of edge cuts in the n-diagonal intersection graph.
+ * A377755 Number of edge cuts in the n-polygon diagonal intersection graph.
  * @author Georg Fischer
  */
 

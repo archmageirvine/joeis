@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a007.A007521;
 
 /**
- * A401518 allocated for Joseph Farland.
+ * A401518 a(n) = t(p) = (A_1 - A_3)/p, where p = A007521(n) and A_j is the sum of the elements of the j-th coset of the fourth powers mod p, the quartic character being normalized by chi_4(2) = i.
  * @author Sean A. Irvine
  */
 public class A401518 extends Sequence2 {

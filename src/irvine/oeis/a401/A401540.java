@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005153;
 
 /**
- * A087450.
+ * A401540 allocated for Guido Avagliano.
  * @author Sean A. Irvine
  */
 public class A401540 extends A005153 {

@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a051.A051022;
 
 /**
- * A092909 Interpolate 0&apos;s between each pair of digits of n-th prime.
+ * A092909 Interpolate 0's between each pair of digits of n-th prime.
  * @author Georg Fischer
  */
 public class A092909 extends LambdaSequence {

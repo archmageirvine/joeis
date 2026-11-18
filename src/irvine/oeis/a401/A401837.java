@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401837 allocated for Pieter Post.
+ * A401837 Numbers k such that two distinct integers can be removed from 1 through k so that the sum of their cubes equals the sum of the remaining integers.
  * @author Sean A. Irvine
  */
 public class A401837 extends FilterNumberSequence {

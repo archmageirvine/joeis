@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A240771 Number of nX3 0..3 arrays with no element equal to exactly one horizontal or vertical neighbor, with new values 0..3 introduced in row major order.
+ * A240771 Number of n X 3 0..3 arrays with no element equal to exactly one horizontal or vertical neighbor, with new values 0..3 introduced in row major order.
  * @author Georg Fischer
  */
 public class A240771 extends HolonomicRecurrence implements Conjectural {

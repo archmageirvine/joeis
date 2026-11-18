@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A087450.
+ * A402040 allocated for Jason Bard.
  * @author Sean A. Irvine
  */
 public class A402040 extends DecimalExpansionSequence {

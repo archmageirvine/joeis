@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a020.A020882;
 
 /**
- * A087450.
+ * A087456 Palindromic hypotenuses in primitive Pythagorean triples.
  * @author Sean A. Irvine
  */
 public class A087456 extends DistinctSequence {

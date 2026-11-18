@@ -4,7 +4,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A399758 allocated for Paolo P. Lava.
+ * A399758 Fixed points with respect to the 'say what you see' transformation described in A063850.
  * @author Sean A. Irvine
  */
 public class A399758 extends FilterNumberSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A087450.
+ * A402005 allocated for Eddie Lin Rui.
  * @author Sean A. Irvine
  */
 public class A402005 extends Sequence1 {

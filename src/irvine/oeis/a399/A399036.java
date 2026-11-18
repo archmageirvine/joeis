@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A399036 Number of unlabeled reducible flow graphs with n nodes whose entry is a global source, self-loops disallowed.
+ * A399036 Number of unlabeled reducible flow graphs with n nodes whose entry is a global source (in-degree 0, reaches every node), self-loops disallowed.
  * @author Gregory Morse
  */
 public class A399036 extends CachedSequence {

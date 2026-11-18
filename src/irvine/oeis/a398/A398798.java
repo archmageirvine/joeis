@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A398798 Number of unlabeled reducible flow graphs on n nodes with distinguished entry and exit nodes.
+ * A398798 Number of reducible flow graphs on n unlabeled nodes with distinguished entry r and exit t reachable from every node (r = t if n = 1, else r != t), counted up to isomorphism fixing r and t.
  * @author Gregory Morse
  */
 public class A398798 extends CachedSequence {

@@ -14,7 +14,7 @@ import irvine.oeis.Sequence3;
 import irvine.oeis.a003.A003849;
 
 /**
- * A401899 allocated for Scott M. Foltz.
+ * A401899 Number of distinct eigenvalues of the Laplacian of the weighted n-cycle whose i-th edge has weight 1 or 2 according as the i-th term of the Fibonacci word A003849 is 0 or 1.
  * @author Sean A. Irvine
  */
 public class A401899 extends Sequence3 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401979 allocated for Leo Zhang.
+ * A401979 Number of tilings of a strip of length n using squares (length 1) and dominoes (length 2) such that the number of dominoes is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A401979 extends Sequence0 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012745 arcsinh(arctanh(x)*cos(x))=x-2/3!*x^3+28/5!*x^5-520/7!*x^7+59728/9!*x^9...
+ * A012745 Expansion of e.g.f. arcsinh(arctanh(x)*cos(x)).
  * @author Sean A. Irvine
  */
 public class A012745 extends Sequence0 {

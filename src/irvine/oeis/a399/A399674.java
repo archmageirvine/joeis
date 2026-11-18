@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A399674 Number of unlabeled reducible flow graphs on n nodes with self-loops allowed and distinguished entry and exit nodes.
+ * A399674 Number of reducible flow graphs on n unlabeled nodes with self-loops allowed and distinguished entry r and exit t (r = t if n = 1, else r != t), counted up to isomorphism fixing r and t.
  * @author Gregory Morse
  */
 public class A399674 extends CachedSequence {

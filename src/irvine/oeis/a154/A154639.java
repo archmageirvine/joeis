@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A154639 a(n) is the number of reduced words of length n (i.e., all possible length-reducing cancellations have been applied) in the generators of the &quot;Apollonian reflection group&quot; in three dimensions. This is a Coxeter group with five generators, satisfying the id
+ * A154639 a(n) is the number of reduced words of length n (i.e., all possible length-reducing cancellations have been applied) in the generators of the "Apollonian reflection group" in three dimensions. This is a Coxeter group with five generators, satisfying the identities (S_i)^2 = (S_i S_j)^3 = I.
  * @author Georg Fischer
  */
 public class A154639 extends HolonomicRecurrence {

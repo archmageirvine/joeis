@@ -18,12 +18,13 @@ public class A002218 extends Sequence1 {
   private static final CycleIndex S1NEG1 = new CycleIndex("", MultivariateMonomial.create(1, -1));
   private int mN = 0;
 
-  @Override
-  public Z next() {
-    if (++mN == 1) {
-      return Z.ZERO;
-    }
-    final Polynomial<CycleIndex> g = CombinatorialSpecies.graphSeries(mN);
+  /**
+   * Cycle index series for nonseparable graphs.
+   * @param n maximum order
+   * @return cycle index series
+   */
+  public static Polynomial<CycleIndex> blockSeries(final int n) {
+    final Polynomial<CycleIndex> g = CombinatorialSpecies.graphSeries(n);
     final Polynomial<CycleIndex> gc = CombinatorialSpecies.sLog(g);
     final Polynomial<CycleIndex> gcr = CombinatorialSpecies.sPoint(gc, 1);
     final Polynomial<CycleIndex> gcrxs1 = CombinatorialSpecies.RING.multiply(gcr.shift(-1), S1NEG1);
@@ -32,7 +33,11 @@ public class A002218 extends Sequence1 {
     final Polynomial<CycleIndex> integral = CombinatorialSpecies.integrate(solve, 1);
     final Polynomial<CycleIndex> subs = CombinatorialSpecies.drop(gc, 1);
     final Polynomial<CycleIndex> solve1 = CombinatorialSpecies.sSolve(subs, gcr);
-    final Polynomial<CycleIndex> add = CombinatorialSpecies.RING.add(integral, solve1);
-    return CombinatorialSpecies.eval1(add).coeff(mN).toZ();
+    return CombinatorialSpecies.RING.add(integral, solve1);
+  }
+
+  @Override
+  public Z next() {
+    return ++mN == 1 ? Z.ZERO : blockSeries(mN).coeff(mN).eval(1).toZ();
   }
 }

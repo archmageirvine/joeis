@@ -19,7 +19,13 @@ public class A062734 extends Sequence1 {
   private int mN = 0;
   private int mM = 0;
 
-  private Z t(final int n, final int m) {
+  /**
+   * Count connected labeled graphs of a prescribed size.
+   * @param n number of vertices
+   * @param m number of edges
+   * @return number of graphs
+   */
+  public Z t(final int n, final int m) {
     final DegreeLimitedPolynomialRingField<Q> inner = new DegreeLimitedPolynomialRingField<>(Rationals.SINGLETON, m);
     final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>(inner);
     Polynomial<Polynomial<Q>> sum = ring.zero();

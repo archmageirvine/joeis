@@ -162,9 +162,8 @@ public final class CombinatorialSpecies {
       Polynomial<CycleIndex> r = RING.monomial(u, 0);
       for (Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         final int i = e.getKey().right();
-        if (i <= n) {
-          r = RING.multiply(r, RING.pow(f.get(i - 1), e.getValue().intValueExact(), n), n);
-        }
+        // Even when i > n, the shifted series contributes its constant cycle marker.
+        r = RING.multiply(r, RING.pow(f.get(i - 1), e.getValue().intValueExact(), n), n);
       }
       res = RING.add(res, r);
     }

@@ -65,6 +65,16 @@ public class A003087 extends Sequence0 {
   private final ArrayList<CycleIndex> mH = new ArrayList<>();
   private int mN = -1;
 
+  /**
+   * Prepend the complete set of sources to an acyclic digraph.
+   * @param k number of new sources
+   * @param smaller cycle index of the digraph after deleting its sources
+   * @return cycle index including the new source layer
+   */
+  protected static CycleIndex prependSources(final int k, final CycleIndex smaller) {
+    return SymmetricGroup.create(k).cycleIndex().relabel(MultivariateMonomial.DEFAULT_VARIABLE, "s").op(OP, smaller);
+  }
+
   private CycleIndex cycleIndex(final int n) {
     if (mH.isEmpty()) {
       final MultivariateMonomial h0a = new MultivariateMonomial();
@@ -74,8 +84,7 @@ public class A003087 extends Sequence0 {
       final int j = mH.size();
       final CycleIndex hn = new CycleIndex("Z(H_" + j + ")");
       for (int k = 1; k <= j; ++k) {
-        final CycleIndex t = SymmetricGroup.create(k).cycleIndex().relabel(MultivariateMonomial.DEFAULT_VARIABLE, "s").op(OP, mH.get(j - k));
-        hn.add(t);
+        hn.add(prependSources(k, mH.get(j - k)));
       }
       mH.add(hn);
     }

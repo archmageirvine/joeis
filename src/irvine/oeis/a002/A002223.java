@@ -2,26 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002223 Smallest prime p of form p = 8k-1 such that first n primes (p_1=2, ..., p_n) are quadratic residues mod p.
  * @author Sean A. Irvine
  */
-public class A002223 extends AbstractSequence {
-
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  protected A002223(final int offset) {
-    super(offset);
-  }
-
-  /** Construct the sequence. */
-  public A002223() {
-    super(1);
-  }
+public class A002223 extends Sequence1 {
 
   // I suspect there must be a sieve approach to this...
 

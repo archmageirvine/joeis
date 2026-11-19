@@ -14,12 +14,14 @@ public class A402005 extends Sequence1 {
 
   private long t(final long n, final long k) {
     long cnt = 0;
-    final long m = (n + 1) * (n + 1) + (k + 1) * (k + 1);
+    final Z n12 = Z.valueOf(n + 1).square();
+    final Z k12 = Z.valueOf(k + 1).square();
+    final Z m = n12.multiply(k12);
     for (long i = 1; i <= n; ++i) {
       for (long j = 1; j <= k; ++j) {
         final long u = 2 * i - n - 1;
         final long v = 2 * j - k - 1;
-        if (u * u + v * v < m) {
+        if (k12.multiply(u * u).add(n12.multiply(v * v)).compareTo(m) < 0) {
           ++cnt;
         }
       }

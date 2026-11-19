@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.math.function.Functions;
+import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
 
@@ -566,6 +567,9 @@ public final class LongUtils {
     if (n == 1) {
       return 0;
     }
+    if (n > MODLIMIT) {
+      return Z.valueOf(a).modPow(Z.valueOf(e), Z.valueOf(n)).longValueExact();
+    }
     a = Math.floorMod(a, n);
     if (a == 1 || e == 0) {
       return 1;
@@ -574,14 +578,16 @@ public final class LongUtils {
     } else if (e == 1) {
       return a;
     } else if (e == 2) {
-      return modMultiply(a, a, n);
+      return (a * a) % n;
     }
     long r = 1;
     while (e != 0) {
       if ((e & 1) != 0) {
-        r = modMultiply(r, a, n);
+        r *= a;
+        r %= n;
       }
-      a = modMultiply(a, a, n);
+      a *= a;
+      a %= n;
       e >>>= 1;
     }
     return r;

@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A112297 A puzzle sequence: given the first six terms, how does the sequence continue?
+ * A112297 A puzzle sequence: given the first six terms, how does the sequence continue?.
  * @author Georg Fischer
  */
 public class A112297 extends NoncomputableSequence {

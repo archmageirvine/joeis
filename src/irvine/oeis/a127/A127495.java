@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A127495 Found on geocaching.com, can&apos;t find the answer.
+ * A127495 Found on geocaching.com, can't find the answer.
  * @author Georg Fischer
  */
 public class A127495 extends NoncomputableSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A350447 Triangle read by rows: T(n,k) is the number of acyclic digraphs on n unlabeled nodes with k arcs, n &gt;= 0, k = 0..(n-1)*n/2.
+ * A350447 Triangle read by rows: T(n,k) is the number of acyclic digraphs on n unlabeled nodes with k arcs, n &gt;=0, k = 0..(n-1)*n/2.
  * @author Gregory Morse
  */
 public class A350447 extends AbstractSequence {

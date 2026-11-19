@@ -4,7 +4,7 @@ package irvine.oeis.a029;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A029898 Pitoun&apos;s sequence: a(n+1) is digital root of a(0) + ... + a(n).
+ * A029898 Pitoun's sequence: a(n+1) is digital root of a(0) + ... + a(n).
  * @author Georg Fischer
  */
 public class A029898 extends PaddingSequence {

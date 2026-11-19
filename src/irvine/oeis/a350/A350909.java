@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a081.A081064;
 
 /**
- * A350909 Triangle read by rows: T(n,k) is the number of weakly connected acyclic digraphs on n labeled nodes with k arcs.
+ * A350909 Triangle read by rows: T(n,k) is the number of weakly connected acyclic digraphs on n labeled nodes with k arcs, k=0..n*(n-1).
  * @author Gregory Morse
  */
 public class A350909 extends Sequence1 {

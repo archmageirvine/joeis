@@ -1,6 +1,5 @@
 package irvine.oeis.a025;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,7 +13,7 @@ public class A025021 extends Sequence1 {
 
   static boolean isResidue(final long n, final long m) {
     for (long k = 1; k <= m / 2; ++k) {
-      if (LongUtils.modPow(k, 2, m) == n) {
+      if ((k * k) % m == n) {
         return true;
       }
     }

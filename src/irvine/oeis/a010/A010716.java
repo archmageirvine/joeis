@@ -4,7 +4,7 @@ package irvine.oeis.a010;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A010716 Constant sequence: the all 5&apos;s sequence.
+ * A010716 Constant sequence: the all 5's sequence.
  * @author Georg Fischer
  */
 public class A010716 extends PeriodicSequence {

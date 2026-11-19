@@ -712,7 +712,10 @@ public final class GraphUtils {
    * @return log
    */
   public static <E> List<List<E>> logCycleIndexData(final Field<E> fld, final List<List<E>> input) {
-    final List<List<E>> lg = primLogCycleIndexData(fld, input);
+    return cycleIndexAdams(fld, primLogCycleIndexData(fld, input), true);
+  }
+
+  private static <E> List<List<E>> cycleIndexAdams(final Field<E> fld, final List<List<E>> input, final boolean mobius) {
     final List<List<E>> results = new ArrayList<>();
     results.add(Collections.singletonList(fld.zero()));
     for (int n = 1; n < input.size(); ++n) {
@@ -721,8 +724,8 @@ public final class GraphUtils {
       for (int d = 1; d <= n; ++d) {
         if (n % d == 0) {
           final int i = n / d;
-          final E r = fld.coerce(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(i)).divide(d).multiply(Functions.MOBIUS.i(d)));
-          final List<E> ui = lg.get(i);
+          final E r = fld.coerce(Functions.FACTORIAL.z(n).divide(Functions.FACTORIAL.z(i)).divide(d).multiply(mobius ? Functions.MOBIUS.i(d) : 1));
+          final List<E> ui = input.get(i);
           int xi = -1;
           final IntegerPartition partI = new IntegerPartition(n / d);
           int[] pi;
@@ -734,6 +737,43 @@ public final class GraphUtils {
               v.add(fld.zero());
             }
             v.set(col, fld.add(v.get(col), fld.multiply(subs, r)));
+          }
+        }
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Compute the combinatorial exponential of a cycle index with zero constant term.
+   * @param fld underlying field
+   * @param input cycle index data
+   * @param <E> underlying field type
+   * @return cycle index for sets of the input objects
+   */
+  public static <E> List<List<E>> expCycleIndexData(final Field<E> fld, final List<List<E>> input) {
+    // After Andrew Howroyd's ExpCIData and PrimExpCIData.
+    final List<List<E>> powerSums = cycleIndexAdams(fld, input, false);
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.one()));
+    for (int n = 1; n < powerSums.size(); ++n) {
+      final List<E> v = new ArrayList<>(powerSums.get(n));
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      for (int i = 1; i < n; ++i) {
+        final int j = n - i;
+        final E b = fld.coerce(Binomial.binomial(n - 1, i - 1));
+        final IntegerPartition partJ = new IntegerPartition(j);
+        int xj = 0;
+        int[] pj;
+        while ((pj = partJ.next()) != null) {
+          final E w = fld.multiply(b, results.get(j).get(xj++));
+          final IntegerPartition partI = new IntegerPartition(i);
+          int xi = 0;
+          int[] pi;
+          while ((pi = partI.next()) != null) {
+            final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
+            v.set(col, fld.add(v.get(col), fld.multiply(w, powerSums.get(i).get(xi++))));
           }
         }
       }

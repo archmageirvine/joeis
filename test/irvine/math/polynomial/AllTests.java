@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(BarSymmetricGroupCycleIndexTest.class);
     suite.addTestSuite(BernoulliPolynomialsTest.class);
     suite.addTestSuite(BesselITest.class);
+    suite.addTestSuite(CombinatorialSpeciesTest.class);
     suite.addTestSuite(CycleIndexTest.class);
     suite.addTestSuite(CycleIndexReadBigNTest.class);
     suite.addTestSuite(CyclotomicPolynomialsTest.class);

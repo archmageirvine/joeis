@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a052.A052283;
 
 /**
- * A350908 Triangle read by rows: T(n,k) is the number of digraphs on n unlabeled unisolated nodes with k arcs.
+ * A350908 Triangle read by rows: T(n,k) is the number of digraphs on n unlabeled unisolated nodes with k arcs, k = 0..n*(n-1).
  * @author Gregory Morse
  */
 public class A350908 extends A052283 {

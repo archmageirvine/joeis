@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a057.A057273;
 
 /**
- * A350731 Triangle read by rows: T(n,k) is the number of strongly connected oriented graphs on n labeled nodes with k arcs.
+ * A350731 Triangle read by rows: T(n,k) is the number of strongly connected oriented graphs on n labeled nodes with k arcs, n &gt;= 1, k=0..n*(n-1)/2.
  * @author Gregory Morse
  */
 public class A350731 extends A057273 {

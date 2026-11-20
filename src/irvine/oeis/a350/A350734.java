@@ -8,7 +8,7 @@ import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 
 /**
- * A350734 Triangle read by rows: T(n,k) is the number of weakly connected oriented graphs on n unlabeled nodes with k arcs.
+ * A350734 Triangle read by rows: T(n,k) is the number of weakly connected oriented graphs on n unlabeled nodes with k arcs, n &gt;= 1, k = 0..n*(n-1)/2.
  * @author Gregory Morse
  */
 public class A350734 extends A350733 {

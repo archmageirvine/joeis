@@ -1555,7 +1555,6 @@ A057140 Number of equivalence classes of self-dual 3-valued Post functions of n 
 A057141 Number of equivalence classes of self-dual 4-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group C(n,4).
 A057210 Number of fullerenes with 2n vertices (or carbon atoms), counting enantiomorphic pairs as distinct
 A057241 Circuit cost of the hardest Boolean function of n variables; metric: 2-input AND-gates cost 1, NOT is free, fanout is free, inputs are free, no feedback allowed
-A057272 Triangle T(n,k) of number of digraphs with a quasi-source on n labeled nodes and with k arcs, k=0,1,..,n*(n-1)
 A057280 Coefficient triangle of polynomials (rising powers) related to Fibonacci convolutions. Companion triangle to A057995.
 A057281 Coefficient triangle of polynomials (falling powers) related to Fibonacci convolutions. Companion triangle to A057282.
 A057282 Coefficient triangle of polynomials (falling powers) related to Fibonacci convolutions. Companion triangle to A057281.
@@ -2693,3 +2692,13 @@ A087241 Consecutive min and max-terms of solution-clusters of A057809, i,e, leas
 A087329 Independence numbers for KT_4 knight on hexagonal board.
 A087481 Number of polynomials of the form x^n +- x^(n-1) +- x^(n-2) +- ... +- 1 irreducible over the integers.
 A087482 Number of binary polynomials of degree n irreducible over the integers.
+A087491 Decimal expansion of the Khinchin harmonic mean K_{-1}.
+A087492 Decimal expansion of the Khinchin harmonic mean K_{-2}.
+A087493 Decimal expansion of the Khinchin harmonic mean K_{-3}.
+A087494 Decimal expansion of the Khinchin harmonic mean K_{-4}.
+A087495 Decimal expansion of the Khinchin harmonic mean K_{-5}.
+A087496 Decimal expansion of the Khinchin harmonic mean K_{-6}.
+A087497 Decimal expansion of the Khinchin harmonic mean K_{-7}.
+A087498 Decimal expansion of the Khinchin harmonic mean K_{-8}.
+A087499 Decimal expansion of the Khinchin harmonic mean K_{-9}.
+A087500 Decimal expansion of the Khinchin harmonic mean K_{-10}.

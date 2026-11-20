@@ -20,6 +20,18 @@ public class A086510 extends Sequence0 {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
   private long mCount = 0;
+  private final Q mE0;
+  private final Q mE1;
+
+  protected A086510(final Q e0, final Q e1) {
+    mE0 = e0;
+    mE1 = e1;
+  }
+
+  /** Construct the sequence. */
+  public A086510() {
+    this(Q.ZERO, Q.ONE);
+  }
 
   private static int signChangesAtZero(final List<Polynomial<Q>> seq) {
     int prev = 0;
@@ -101,10 +113,10 @@ public class A086510 extends Sequence0 {
       search(m, 0, y + 1);
       return;
     }
+    m.set(x, y, mE0);
     search(m, x + 1, y); // M[x,y] = 0
-    m.set(x, y, Q.ONE);
+    m.set(x, y, mE1);
     search(m, x + 1, y); // M[x,y] = 1
-    m.set(x, y, Q.ZERO);
   }
 
   @Override

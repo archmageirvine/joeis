@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A350750 Triangle read by rows: T(n,k) is the number of strongly connected oriented graphs on n unlabeled nodes with k arcs.
+ * A350750 Triangle read by rows: T(n,k) is the number of strongly connected oriented graphs on n unlabeled nodes with k arcs, n &gt;= 1, k = 0..n*(n-1)/2.
  * @author Gregory Morse
  */
 public class A350750 extends A350733 {

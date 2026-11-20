@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A350914 Triangle read by rows: T(n,k) is the number of unlabeled weakly connected oriented graphs with n arcs and k vertices.
+ * A350914 Triangle read by rows: T(n,k) is the number of unlabeled weakly connected oriented graphs with n arcs and k vertices, k = 1..n+1.
  * @author Gregory Morse
  */
 public class A350914 extends A350734 {

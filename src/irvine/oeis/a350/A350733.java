@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A350733 Triangle read by rows: T(n,k) is the number of oriented graphs on n unlabeled nodes with k arcs.
+ * A350733 Triangle read by rows: T(n,k) is the number of oriented graphs on n unlabeled nodes with k arcs, n &gt;= 0, k = 0..n*(n-1)/2.
  * @author Gregory Morse
  */
 public class A350733 extends AbstractSequence {

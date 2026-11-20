@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399890.
+ * A399890 allocated for Bar\u0131\u015f Kocaba\u015f.
  * @author Sean A. Irvine
  */
 public class A399890 extends Sequence0 {

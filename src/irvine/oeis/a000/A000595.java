@@ -42,6 +42,10 @@ public class A000595 extends AbstractSequence {
     return Z.ONE;
   }
 
+  protected Z fixed(final int[] cycles) {
+    return Z.ONE.shiftLeft(t(cycles));
+  }
+
   @Override
   public Z next() {
     if (++mN == 0) {
@@ -53,7 +57,7 @@ public class A000595 extends AbstractSequence {
     int[] p;
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, a);
-      s = s.add(new Q(Z.ONE.shiftLeft(t(a)), PartitionUtils.per(a)));
+      s = s.add(new Q(fixed(a), PartitionUtils.per(a)));
     }
     return s.toZ();
   }

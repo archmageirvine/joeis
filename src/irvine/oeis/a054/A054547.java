@@ -13,16 +13,20 @@ public class A054547 extends Sequence1 {
   private int mN = 0;
   private int mM = 0;
 
+  protected Z count(final int n, final int m) {
+    Z sum = Z.ZERO;
+    for (int k = 0; k <= n; ++k) {
+      sum = sum.signedAdd(((n - k) & 1) == 0, Binomial.binomial(n, k).multiply(Binomial.binomial(k * (k - 1L), m)));
+    }
+    return sum;
+  }
+
   @Override
   public Z next() {
     if (++mM > mN * (mN - 1)) {
       ++mN;
       mM = 0;
     }
-    Z sum = Z.ZERO;
-    for (int k = 0; k <= mN; ++k) {
-      sum = sum.signedAdd(((mN - k) & 1) == 0, Binomial.binomial(mN, k).multiply(Binomial.binomial(k * (k - 1L), mM)));
-    }
-    return sum;
+    return count(mN, mM);
   }
 }

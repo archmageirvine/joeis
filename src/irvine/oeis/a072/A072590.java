@@ -12,7 +12,13 @@ public class A072590 extends Sequence1 {
   private long mN = 0;
   private long mM = 0;
 
-  private Z t(final long n, final long m) {
+  /**
+   * Count spanning trees of a complete bipartite graph.
+   * @param n size of the first part
+   * @param m size of the second part
+   * @return the number of spanning trees
+   */
+  public static Z spanningTrees(final long n, final long m) {
     return Z.valueOf(n).pow(m - 1).multiply(Z.valueOf(m).pow(n - 1));
   }
 
@@ -22,6 +28,6 @@ public class A072590 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return t(mM + 1, mN - mM);
+    return spanningTrees(mM + 1, mN - mM);
   }
 }

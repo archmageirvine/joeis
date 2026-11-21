@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  * @author Gregory Morse
  */
 public class A384968 extends Sequence1 {
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
+  protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final int mParts;
   private int mN = 0;
   private int mM = 0;
@@ -27,15 +27,18 @@ public class A384968 extends Sequence1 {
     this(2);
   }
 
+  protected static Polynomial<Z> block(final int n) {
+    final Polynomial<Z> bell = RING.empty();
+    for (int k = 0; k <= n; ++k) {
+      bell.add(Functions.STIRLING2.z(n, k));
+    }
+    return bell;
+  }
+
   @Override
   public Z next() {
     if (++mM > mParts * mN) {
-      final Polynomial<Z> bell = RING.empty();
-      for (int k = 0; k <= mN + 1; ++k) {
-        bell.add(Functions.STIRLING2.z(mN + 1, k));
-      }
-      ++mN;
-      mRow = RING.pow(bell, mParts);
+      mRow = RING.pow(block(++mN), mParts);
       mM = mParts;
     }
     return mRow.coeff(mM);

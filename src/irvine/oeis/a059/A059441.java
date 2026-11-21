@@ -21,23 +21,27 @@ public class A059441 extends A295193 {
   private int mN = 0;
   private int mM = 0;
 
+  protected final Polynomial<Z> regularRow(final int n) {
+    final Map<Polynomial<Z>, Z> m = graphsByDegreeSeq(n, (n - 1) / 2, (p, r) -> p.degree() - valuation(p) <= r);
+    Polynomial<Z> sum = RING.zero();
+    for (final Map.Entry<Polynomial<Z>, Z> e : m.entrySet()) {
+      final Polynomial<Z> p = e.getKey();
+      final int d = p.degree();
+      if (p.leadingCoeff().intValueExact() == n) {
+        Polynomial<Z> xd = RING.monomial(Z.ONE, d);
+        if (2 * d != n - 1) {
+          xd = RING.add(xd, RING.monomial(Z.ONE, n - 1 - d));
+        }
+        sum = RING.add(sum, RING.multiply(xd, e.getValue()));
+      }
+    }
+    return sum;
+  }
+
   @Override
   public Z next() {
     if (++mM >= mN) {
-      final Map<Polynomial<Z>, Z> m = graphsByDegreeSeq(++mN, (mN - 1) / 2, (p, r) -> p.degree() - valuation(p) <= r);
-      Polynomial<Z> sum = RING.zero();
-      for (final Map.Entry<Polynomial<Z>, Z> e : m.entrySet()) {
-        final Polynomial<Z> p = e.getKey();
-        final int d = p.degree();
-        if (p.leadingCoeff().intValueExact() == mN) {
-          Polynomial<Z> xd = RING.monomial(Z.ONE, d);
-          if (2 * d != mN - 1) {
-            xd = RING.add(xd, RING.monomial(Z.ONE, mN - 1 - d));
-          }
-          sum = RING.add(sum, RING.multiply(xd, e.getValue()));
-        }
-      }
-      mGf = sum;
+      mGf = regularRow(++mN);
       mM = 0;
     }
     return mGf.coeff(mM);

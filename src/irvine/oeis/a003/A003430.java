@@ -20,16 +20,22 @@ public class A003430 extends AbstractSequence {
    * @param offset first index
    */
   protected A003430(final int offset) {
+    this(offset, 1);
+  }
+
+  protected A003430(final int offset, final int colors) {
     super(offset);
+    mColors = new Q(colors);
   }
 
   /** Construct the sequence. */
   public A003430() {
-    super(0);
+    this(0);
   }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO = RING.create(Collections.singletonList(Q.TWO));
+  private final Q mColors;
 
   private Polynomial<Q> mA = RING.one();
   private int mN = -1;
@@ -40,7 +46,7 @@ public class A003430 extends AbstractSequence {
     Polynomial<Q> a = RING.zero();
     for (int k = 1; k <= mN; ++k) {
       final Polynomial<Q> ak = mA.substitutePower(k, mN);
-      final Polynomial<Q> t = RING.add(RING.add(ak, RING.series(RING.one(), ak, mN)), RING.subtract(RING.monomial(Q.ONE, k), TWO));
+      final Polynomial<Q> t = RING.add(RING.add(ak, RING.series(RING.one(), ak, mN)), RING.subtract(RING.monomial(mColors, k), TWO));
       a = RING.add(a, RING.divide(t, new Q(k)));
     }
     mA = RING.exp(a, mN);

@@ -25,8 +25,15 @@ public class A397711 extends Sequence0 {
     this(2);
   }
 
-  private Z f(final int p, final int q) {
-    return Integers.SINGLETON.sum(1, mK, i -> Binomial.binomial(p + q, i).subtract(Binomial.binomial(q, i)));
+  /**
+   * Count bounded parent sets meeting the previous level.
+   * @param p size of the previous level
+   * @param q number of nodes on earlier levels
+   * @param bound maximum number of parents
+   * @return the number of parent sets
+   */
+  public static Z parents(final int p, final int q, final int bound) {
+    return Integers.SINGLETON.sum(1, bound, i -> Binomial.binomial(p + q, i).subtract(Binomial.binomial(q, i)));
   }
 
   @Override
@@ -52,7 +59,7 @@ public class A397711 extends Sequence0 {
           continue;
         }
         final int q = u - p;
-        final Z fpq = f(p, q);
+        final Z fpq = parents(p, q, mK);
         Z pow = Z.ONE;
         for (int m = 1; m <= mN - u; ++m) {
           pow = pow.multiply(fpq);

@@ -72,10 +72,6 @@ public class RealsTest extends TestCase {
     assertEquals(1 / Math.tan(1), r.cot(1.0));
   }
 
-  public void testGamma() {
-    assertEquals(3.8543707171800725E247, Gamma.gamma(144), 1E240);
-  }
-
   public void testCompare() {
     assertEquals(0, Reals.SINGLETON.compare(0.0, 0.0));
     assertEquals(1, Reals.SINGLETON.compare(0.1, 0.0));

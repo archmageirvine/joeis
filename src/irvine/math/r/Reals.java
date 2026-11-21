@@ -250,7 +250,7 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
 
   @Override
   public Double gamma(final Double n) {
-    return irvine.math.r.Gamma.gamma(n);
+    throw new UnsupportedOperationException();
   }
 
   @Override

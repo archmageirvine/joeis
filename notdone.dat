@@ -116,7 +116,6 @@ A002336 Maximal kissing number of n-dimensional laminated lattice
 A002395 Crystal forms, insufficient detail
 A002497 Composite sequence, not obvious criteria, have dependencies
 A002498 Depends A002497
-A002543 Post functions, insufficient detail
 A002558 Insufficient detail, Bernoulli numbers, Dirichlet series [ens-001_1960_6_1_a_003_d.pdf]
 A002560 Graph counting, paper in French, have paper, no obvious formula
 A002631 Insufficient detail, foster1932.pdf, possibly in error
@@ -129,7 +128,7 @@ A002787 Semigroups, hard, some code for GAP might be available
 A002788 Semigroups, hard, some code for GAP might be available
 A002823 Metropolis sequence, fractal like, paper available not obvious
 A002827 Unitary perfect, difficult to make a useful implementation
-A002833 Boolean fns, have paper, seq. is in table, but origin unclear
+A002833 Number of threshold functions of n variables.
 A002839 Counting squares in rectangle, possible? but hard
 A002841 Number of 3-connected self-dual planar graphs with 2n edges
 A002853 Maximal set of equiangular lines, hard

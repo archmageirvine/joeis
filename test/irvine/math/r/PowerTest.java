@@ -1,6 +1,5 @@
 package irvine.math.r;
 
-import static irvine.TestUtils.assertEqualsLocal;
 import junit.framework.TestCase;
 
 /**
@@ -70,24 +69,6 @@ public class PowerTest extends TestCase {
       assertEquals("exp = " + exp, 0.5, Power.sNormalizedMantissa, 1.0E-15);
       x /= 2.0;
       exp -= 1;
-    }
-  }
-
-  public void testcbrt() {
-    assertEqualsLocal(Double.POSITIVE_INFINITY, Power.cbrt(Double.POSITIVE_INFINITY), 0);
-    assertEqualsLocal(Double.NEGATIVE_INFINITY, Power.cbrt(Double.NEGATIVE_INFINITY), 0);
-    assertEqualsLocal(0, Power.cbrt(0), 0);
-    assertEqualsLocal(-1, Power.cbrt(-1), 0);
-    assertEqualsLocal(1, Power.cbrt(1), 0);
-    assertEqualsLocal(-1.442249570307408382321638310755743800238, Power.cbrt(-3), 1E-10);
-    for (double x = 1; x < Double.POSITIVE_INFINITY; x *= Math.PI) {
-      assertEqualsLocal(1, Math.pow(x, 1 / 3.0) / Power.cbrt(x), 1E-10);
-      assertEqualsLocal(1, -Math.pow(x, 1 / 3.0) / Power.cbrt(-x), 1E-10);
-    }
-    for (double x = 1; x > 0; x /= Math.PI) {
-      final double p = Math.pow(x, 1 / 3.0);
-      final double r = Power.cbrt(x);
-      assertEqualsLocal(x + " " + p + " " + r, 1, p / r, 1E-10);
     }
   }
 

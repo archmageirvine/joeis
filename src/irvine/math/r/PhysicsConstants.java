@@ -6,7 +6,6 @@ import irvine.math.z.Z;
 
 /**
  * Various double precision physical constants.
- *
  * @author Sean A. Irvine
  */
 public final class PhysicsConstants {
@@ -22,12 +21,6 @@ public final class PhysicsConstants {
 
   /** Speed of light in vacuum in m/s. An exact value. */
   public static final long SPEED_OF_LIGHT = 299792458;
-  /** Magnetic constant, mu_0, 4 * pi * 10^-7 in N/A^2. */
-  public static final double MAGNETIC_CONSTANT = Constants.TAU * 2E-7;
-  /** Electric constant, epsilon_0, 1/mu_0 c^2 in F/m. */
-  public static final double ELECTRIC_CONSTANT = 1 / MAGNETIC_CONSTANT / SPEED_OF_LIGHT / SPEED_OF_LIGHT;
-  /** Characteristic impedance of vacuum, Z_0 = mu_0 c in ohms. */
-  public static final double CHARACTERISTIC_IMPEDANCE_OF_VACUUM = MAGNETIC_CONSTANT * SPEED_OF_LIGHT;
 
   /** Newtonian gravitation constant, G, in m^3 kg^-1 s^-2. */
   public static final double GRAVITATION_CONSTANT     = 6.67408E-11;

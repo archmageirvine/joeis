@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061211 Number of nonempty subsets of {1..n} whose sum divides their least common multiple.
+ * A402183 Number of nonempty subsets of {1..n} whose sum divides their least common multiple.
  * @author Sean A. Irvine
  */
 public class A402183 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402188 allocated for Clark Kimberling.
+ * A402188 Numbers k such that (5^k - 1)/4 is squarefree.
  * @author Sean A. Irvine
  */
 public class A402188 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005153;
 
 /**
- * A401540 allocated for Guido Avagliano.
+ * A401540 Numbers of the form sigma(m) + 1 where m is a practical number (A005153) such that sigma(m) + 2 is prime.
  * @author Sean A. Irvine
  */
 public class A401540 extends A005153 {

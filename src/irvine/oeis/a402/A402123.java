@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A402123 allocated for Z\u00fclf\u00fc Mirza G\u00fcr.
+ * A402123 Number of ways to partition the numbers from 1 to n into blocks of consecutive integers such that the sum of the smallest and largest numbers in each block is a perfect square.
  * @author Sean A. Irvine
  */
 public class A402123 extends CachedSequence {

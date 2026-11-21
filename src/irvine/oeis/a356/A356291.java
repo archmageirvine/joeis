@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003319;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A356291 Number of reducible permutations.
+ * A356291 Number of reducible (or decomposable) permutations.
  * @author Georg Fischer
  */
 public class A356291 extends SimpleTransformSequence {

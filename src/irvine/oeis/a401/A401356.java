@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401593 Least integer k = x + y, where x and y are integers such that 0 < x < = y, for which there exist exactly n pairs (x, y) that satisfy the condition A000203(x) = A000203(y).
+ * A401356 allocated for Jianing Song.
  * @author Sean A. Irvine
  */
 public class A401356 extends Sequence1 {

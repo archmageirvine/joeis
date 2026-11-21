@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002328;
 
 /**
- * A088502 Numbers n such that (n^2 - 5)/4 is prime.
+ * A088502 Numbers k such that (k^2 - 5)/4 is prime.
  * @author Georg Fischer
  */
 public class A088502 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a054.A054450;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A134510 A112552 * A128174.
+ * A134510 Triangle read by rows: A112552 * A128174 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A134510 extends TruncatedTriangle {

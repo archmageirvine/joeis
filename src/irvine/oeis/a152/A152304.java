@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A152304 Marsaglia-Zaman type binet solution rationalized: f(n)=(11/20 - Sqrt[512]/20)^n/3 + (2/3)*(11/20 + Sqrt[512]/20)^n; a(n)=Mod[Floor[f(n)],10].
+ * A152304 a(n) = floor( (11/20 - sqrt(32)/5)^n/3 + (2/3)*(11/20 + sqrt(32)/5)^n ) mod 10.
  * @author Sean A. Irvine
  */
 public class A152304 extends Sequence0 {

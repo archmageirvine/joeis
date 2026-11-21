@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402113 allocated for Eddie Lin Rui.
+ * A402113 Array A(n,k), n &gt;= 1, k &gt;= 1, read by antidiagonals: number of distinct intersection points formed by n longitudinal great circles and k latitudinal circles on a sphere.
  * @author Sean A. Irvine
  */
 public class A402113 extends Sequence1 {

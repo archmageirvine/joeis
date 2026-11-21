@@ -6,7 +6,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A401821 allocated for Firdous Ahmad Mala.
+ * A401821 Least m such that Sum_{k=1..m} sin(1/k) &gt; n (angles in radians).
  * @author Sean A. Irvine
  */
 public class A401821 extends Sequence1 implements Conjectural {

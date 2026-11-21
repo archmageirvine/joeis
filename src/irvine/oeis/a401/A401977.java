@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401977 allocated for Blaize Rouyea.
+ * A401977 Triangle read by rows: T(0,0) = 2; for n &gt;= 1, T(n,0) = 1, T(n,n) = (-1)^n*prime(n+1), and T(n,k) = T(n-1,k-1) + T(n-1,k) for 0 &lt; k &lt; n.
  * @author Sean A. Irvine
  */
 public class A401977 extends Sequence0 {

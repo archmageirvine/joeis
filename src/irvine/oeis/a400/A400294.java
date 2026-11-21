@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400294 allocated for M. F. Hasler.
+ * A400294 Numbers that are the difference of positive numbers of the form (k*(k+2))^2 (A099761).
  * @author Sean A. Irvine
  */
 public class A400294 extends Sequence1 {

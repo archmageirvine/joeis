@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A402155 allocated for Alper Ferudun.
+ * A402155 Horizontal coordinates where successive walks from (0,1) first reach the x-axis, guided by arrows that initially point south and turn 90 degrees counterclockwise each time they are followed.
  * @author Sean A. Irvine
  */
 public class A402155 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401625 allocated for David Cleaver.
+ * A401625 Image of 0 under repeated application of the map k -&gt; (3k, 3k+2, 3k, 3k+2).
  * @author Sean A. Irvine
  */
 public class A401625 extends Sequence0 {

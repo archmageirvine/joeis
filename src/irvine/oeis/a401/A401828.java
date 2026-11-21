@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401828 allocated for Alper Ferudun.
+ * A401828 Number of firing cells after n generations of a four-state cellular automaton on the infinite square lattice (rule B2/S34/C4, see Comments), starting with two horizontally adjacent firing cells and all other cells ready.
  * @author Alper Ferudun
  * @author Sean A. Irvine (Java port)
  */

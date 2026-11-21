@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A402034 allocated for V\u00edctor Casa\u00f1a-Giner.
+ * A402034 Decimal expansion of -Integral_{x=1..infinity} log(abs(sin(Pi*x)))/x^2 dx.
  * @author Sean A. Irvine
  */
 public class A402034 extends DecimalExpansionSequence {

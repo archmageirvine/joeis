@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086055 Decimal expansion of Pi log(3)sqrt(3).
+ * A086055 Decimal expansion of Pi*log(3)*sqrt(3).
  * @author Georg Fischer
  */
 public class A086055 extends DecimalExpansionSequence {

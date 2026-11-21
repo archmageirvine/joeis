@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401901
+ * A401901 a(n) is the term removed at step n from the front of a queue that is initially 1, 2, 3, ..., where after each removal every remaining term j &gt; 1 is replaced by the pair j, j-1.
  * @author Sean A. Irvine
  */
 public class A401901 extends Sequence1 {

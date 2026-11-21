@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401940 allocated for Narciso Gonzaga, Jr.
+ * A401940 Riordan array (1,x*(1-3*x+x^2)/(1-4*x+3*x^2)).
  * @author Sean A. Irvine
  */
 public class A401940 extends Sequence0 {

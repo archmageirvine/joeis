@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002384;
 
 /**
- * A088503 Numbers n such that (n^2 + 3)/4 is prime.
+ * A088503 Numbers k such that (k^2 + 3)/4 is prime.
  * @author Georg Fischer
  */
 public class A088503 extends Sequence1 {

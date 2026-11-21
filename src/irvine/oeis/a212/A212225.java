@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A212225 Decimal expansion of (2/Pi)log(phi), the exponential rate factor of golden spiral.
+ * A212225 Decimal expansion of (2/Pi)*log(phi), the exponential rate factor of golden spiral.
  * @author Georg Fischer
  */
 public class A212225 extends DecimalExpansionSequence {

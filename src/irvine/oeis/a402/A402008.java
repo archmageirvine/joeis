@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
 /**
- * A402008 allocated for Edward Schmidt.
+ * A402008 Square roots of the central entries in a six-square 3 X 3 magic-square construction from Pythagorean primes using fourth powers of the hypotenuse and the sum of the legs.
  * @author Sean A. Irvine
  */
 public class A402008 extends A002144 {

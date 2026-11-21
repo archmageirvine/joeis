@@ -7,7 +7,7 @@ import irvine.oeis.a046.A046080;
 import irvine.oeis.a056.A056137;
 
 /**
- * A401880 allocated for Janaka Rodrigo.
+ * A401880 a(n) is the number of distinct placements of two nonoverlapping congruent Pythagorean triangles whose acute angles meet to form a right angle at a corner of an n X n square.
  * @author Sean A. Irvine
  */
 public class A401880 extends Sequence1 {

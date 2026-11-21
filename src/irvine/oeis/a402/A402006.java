@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002144;
 
 /**
- * A402006 allocated for Edward Schmidt.
+ * A402006 Pythagorean primes p for which the legs u and v of the primitive Pythagorean triangle with hypotenuse p give another Pythagorean prime q = (p^4 + (u+v)^4)/2.
  * @author Sean A. Irvine
  */
 public class A402006 extends FilterSequence {

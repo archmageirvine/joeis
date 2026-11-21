@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A402125 allocated for Alper Ferudun.
+ * A402125 Card read at step n if, at each step, the top card of the deck 1, 2, 3, ... is read, removed and put back below n - k of the remaining cards, where k is the last earlier step at which this card was read (k = 0 if there is none).
  * @author Sean A. Irvine
  */
 public class A402125 extends Sequence0 {

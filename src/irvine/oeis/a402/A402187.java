@@ -3,7 +3,7 @@ package irvine.oeis.a402;
 import irvine.oeis.a398.A398834;
 
 /**
- * A402187 allocated for Clark Kimberling.
+ * A402187 Number of divisors of (5^n - 1)/4.
  * @author Sean A. Irvine
  */
 public class A402187 extends A398834 {

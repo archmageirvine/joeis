@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002543: Number of essentially distinct complete Post functions of n variables.
+ * A002543 Number of complete Post functions of n variables.
  * @author Sean A. Irvine
  */
 public class A002543 extends Sequence1 {

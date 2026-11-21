@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401901
+ * A401996 Numbers k such that k and sigma(k) have the same number and sum of prime factors counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A401996 extends FilterNumberSequence {

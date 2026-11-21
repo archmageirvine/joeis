@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A402119 allocated for Andrea Pinos.
+ * A402119 Decimal expansion of Sum_{k &gt;= 1} coth(Pi*k)/k^11 = (1453/425675250)*Pi^11.
  * @author Sean A. Irvine
  */
 public class A402119 extends DecimalExpansionSequence {

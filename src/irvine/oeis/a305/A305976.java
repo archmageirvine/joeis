@@ -8,7 +8,7 @@ import irvine.oeis.a085.A085970;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A305976 Filter sequence for a(prime^k) = constant sequences.
+ * A305976 a(1) = 1, and for n &gt; 1, if n is a prime power, p^k with k &gt;= 1, a(n) = 2, otherwise a(n) is one more than the position of n in A361102, numbers that are not prime powers.
  * @author Georg Fischer
  */
 public class A305976 extends MultiTransformSequence {

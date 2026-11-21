@@ -7,7 +7,7 @@ import irvine.oeis.a033.A033676;
 import irvine.oeis.a033.A033677;
 
 /**
- * A402106 allocated for Hassan Baloui.
+ * A402106 Difference between the integer parts of the square roots of the upper and lower central divisors of n.
  * @author Sean A. Irvine
  */
 public class A402106 extends Sequence1 {

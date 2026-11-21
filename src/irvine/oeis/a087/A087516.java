@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A152304. Consider pairs (i,j) such that j*P(i)# - P(i+2) and j*P(i)# - P(i+1) are consecutive primes and 0 < j < P(i+1), where P(r) = r-th prime and P(r)# = r-th primorial number (A002110). Sequence gives i values.
+ * A087516 Consider pairs (i,j) such that j*prime(i)# - prime(i+2) and j*prime(i)# - prime(i+1) are consecutive primes and 0 &lt; j &lt; prime(i+1), where prime(r)# = r-th primorial number (A002110). Sequence gives prime(i) values.
  * @author Sean A. Irvine
  */
 public class A087516 extends Sequence1 {

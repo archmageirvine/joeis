@@ -11,7 +11,7 @@ import irvine.oeis.a051.A051022;
 import irvine.oeis.a343.A343550;
 
 /**
- * A401341 allocated for Bernard Schott.
+ * A401341 a(n) is the least term k in A401339 that produces the primitive quotient A401340(n).
  * @author Sean A. Irvine
  */
 public class A401341 extends Sequence1 {

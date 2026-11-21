@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A402136 allocated for Reid Beckett.
+ * A402136 Numbers k such that 11^k in contains in its decimal representation 11*k as a substring.
  * @author Sean A. Irvine
  */
 public class A402136 extends FilterNumberSequence {

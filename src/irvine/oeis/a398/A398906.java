@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401901
+ * A398906 Maximum number of painted tiles in a hexagonal grid of side length n+1 such that no two painted tiles touch and all unpainted tiles form a contiguous area.
  * @author Sean A. Irvine
  */
 public class A398906 extends Sequence0 {

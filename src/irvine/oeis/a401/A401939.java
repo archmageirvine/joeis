@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A401939 allocated for Claudio Annunziata.
+ * A401939 Decimal expansion of the fixed point of the cosine function when the angle is measured in gradians.
  * @author Sean A. Irvine
  */
 public class A401939 extends DecimalExpansionSequence {

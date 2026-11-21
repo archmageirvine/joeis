@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401762 allocated for Pietro Tiaraju Giavarina dos Santos.
+ * A401762 Number of distinct traces of length n of Wolfram's 2-state 3-symbol Turing machine; i.e., sequences of n (state, symbol read) pairs produced from an arbitrary tape and starting state.
  * @author Sean A. Irvine
  */
 public class A401762 extends Sequence1 {

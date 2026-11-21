@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A085582 The number of rectangles (orthogonal or not) with corners on an n X n grid of points.
+ * A085582 Number of rectangles (orthogonal or not) with corners on an n X n grid of points.
  * @author Sean A. Irvine
  */
 public class A085582 extends Sequence1 {

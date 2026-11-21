@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A397143 allocated for Tomas Laris.
+ * A397143 Numbers k such that k times its decimal digit reversal contains all ten distinct decimal digits.
  * @author Sean A. Irvine
  */
 public class A397143 extends FilterNumberSequence {

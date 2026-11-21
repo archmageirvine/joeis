@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401743 allocated for Michael A. Allen.
+ * A401743 Triangle read by rows: for n&gt;0 and 0&lt;=k&lt;=n, T(n,k) is the number of circular (n+k)-bit strings with k 1's that, when circularly shifted by 2 bits, do not have any coincident 1's when placed over the original bit string.
  * @author Sean A. Irvine
  */
 public class A401743 extends Sequence1 {

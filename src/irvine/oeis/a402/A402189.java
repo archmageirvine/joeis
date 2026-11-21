@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A402189 allocated for Clark Kimberling.
+ * A402189 Least prime factor of (5^n - 1)/4.
  * @author Sean A. Irvine
  */
 public class A402189 extends Sequence2 {

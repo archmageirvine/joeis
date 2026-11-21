@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401782 allocated for Vaibhav Kodag.
+ * A401782 Positive integers k such that sopfr(k) = sopfr(3*k + 1).
  * @author Sean A. Irvine
  */
 public class A401782 extends FilterNumberSequence {

@@ -7,7 +7,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A400296 allocated for M. F. Hasler.
+ * A400296 Primes that are the sum of more consecutive primes than any smaller primes.
  * @author Sean A. Irvine
  */
 public class A400296 extends Sequence1 {

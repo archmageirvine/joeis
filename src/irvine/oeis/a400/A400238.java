@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400238 allocated for Dmytro Dmytryshyn.
+ * A400238 Array read by upwards antidiagonals: T(n,k) is the coefficient of x^n in (1 - 2*x - 3*x^2 - 4*x/(1-x))^(-k - 1/2) for n &gt;= 0, k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A400238 extends Sequence0 {

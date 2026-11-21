@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A402040 allocated for Jason Bard.
+ * A402040 Decimal expansion of a self-referential continued fraction whose partial quotients are earlier convergents.
  * @author Sean A. Irvine
  */
 public class A402040 extends DecimalExpansionSequence {

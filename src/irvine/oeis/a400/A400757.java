@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400757 allocated for Marko Radulovic.
+ * A400757 Number of doubly shaded cells in an n X n grid with inverted axes using Euler's totient function.
  * @author Sean A. Irvine
  */
 public class A400757 extends Sequence1 {

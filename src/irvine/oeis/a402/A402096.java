@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001481;
 
 /**
- * A402096 allocated for Cristian Vitorino Rodrigues da Cunha.
+ * A402096 Number of primes of Z[sqrt(2)] reachable from 0 by steps of length at most sqrt(A001481(n)), stepping only on primes.
  * @author Sean A. Irvine
  */
 public class A402096 extends Sequence1 {

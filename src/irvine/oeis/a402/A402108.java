@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402108 allocated for Felix Huber.
+ * A402108 a(n) is the least positive integer k for which exactly n composite divisors d of k have the same sum of prime factors as a smaller composite divisor of k (with multiplicity).
  * @author Sean A. Irvine
  */
 public class A402108 extends Sequence0 {

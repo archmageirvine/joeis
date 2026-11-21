@@ -6,7 +6,7 @@ package irvine.oeis.a227;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A227937 Partitions of n labeled elements into subsets of two or three elements.
+ * A227937 Number of partitions of n labeled elements into subsets of two or three elements.
  * @author Georg Fischer
  */
 public class A227937 extends HolonomicRecurrence {

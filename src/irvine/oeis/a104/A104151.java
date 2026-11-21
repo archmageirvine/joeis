@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A104151 Primes of the form 6^n-4^n+11.
+ * A104151 Primes of the form 6^k-4^k+11.
  * @author Georg Fischer
  */
 public class A104151 extends FilterSequence {

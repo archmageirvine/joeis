@@ -7,7 +7,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A400297 allocated for M. F. Hasler.
+ * A400297 a(n) is the maximum number of consecutive primes that sum up to A400296(n), the least prime establishing a new record for that number.
  * @author Sean A. Irvine
  */
 public class A400297 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
 /**
- * A402007 allocated for Edward Schmidt.
+ * A402007 Half the sum of the fourth powers of the hypotenuse and the sum of the legs: a(n) = (p^4 + (u+v)^4)/2, where u and v are the legs of the primitive Pythagorean triangle with hypotenuse p = A002144(n).
  * @author Sean A. Irvine
  */
 public class A402007 extends A002144 {

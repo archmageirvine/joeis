@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401765 allocated for Pietro Tiaraju Giavarina dos Santos.
+ * A401765 Largest m such that an n X m rectangle can be tiled with Culik's 13 Wang tiles so that every column wraps around (its bottom edge matches its top edge).
  * @author Sean A. Irvine
  */
 public class A401765 extends Sequence1 {

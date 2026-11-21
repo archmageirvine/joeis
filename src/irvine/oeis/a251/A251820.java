@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A251820 Numbers n for which the symmetric representation of sigma(n) has at least 3 parts, all having the same area.
+ * A251820 Numbers k for which the symmetric representation of sigma(k) has at least 3 parts, all having the same area.
  *
  * @author Georg Fischer
  */

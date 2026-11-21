@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402124 allocated for Alper Ferudun.
+ * A402124 Lexicographically earliest sequence of integers &gt;= 2 such that no two adjacent blocks of terms have the same product.
  * @author Sean A. Irvine
  */
 public class A402124 extends Sequence1 {

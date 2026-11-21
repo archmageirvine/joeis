@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399890 allocated for Bar\u0131\u015f Kocaba\u015f.
+ * A399890 Number of Dyck paths of semilength n with distinct peak heights and distinct valley heights.
  * @author Sean A. Irvine
  */
 public class A399890 extends Sequence0 {

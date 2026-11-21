@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401963 allocated for Alper Ferudun.
+ * A401963 Period of row 2^m - 1 - n in the Laver table of size 2^m, for any m such that 2^m &gt; n + 1.
  * @author Sean A. Irvine
  */
 public class A401963 extends Sequence0 {

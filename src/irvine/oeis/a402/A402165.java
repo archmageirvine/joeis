@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A402165 allocated for Nguyen Trong Nhan.
+ * A402165 Number of steps to reach 2 starting from n under the map x -&gt; x/lpf(x) + 1, where lpf(x) is the least prime factor of x (A020639).
  * @author Sean A. Irvine
  */
 public class A402165 extends Sequence2 {

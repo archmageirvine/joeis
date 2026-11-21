@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398739 allocated for Robert Potter.
+ * A398739 Maximum length of a cyclic run of primes in a Schick cycle modulo 2n+1.
  * @author Sean A. Irvine
  */
 public class A398739 extends Sequence1 {

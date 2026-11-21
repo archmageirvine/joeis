@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A068558 Decimal expansion of the smallest solution &gt;0 to cos(x)=cos(x^2).
+ * A068558 Decimal expansion of the smallest solution &gt; 0 to cos(x) = cos(x^2).
  * @author Sean A. Irvine
  */
 public class A068558 extends DecimalExpansionSequence {

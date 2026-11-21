@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399598 allocated for Michael De Vlieger.
+ * A399598 Table A(n,m) read by upward antidiagonals such that A(n,m) is the smallest number prime(i+n-1)^m * Product_{j=i..i+n-1} prime(j) such that log(prime(i+n-1)) / log(prime(i)) &lt;= (m+1)/m with i&gt;0.
  * @author Sean A. Irvine
  */
 public class A399598 extends Sequence1 {

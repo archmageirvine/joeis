@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398743 allocated for Jules Beauchamp.
+ * A398743 Triangle by rows: T(n,1) = 1, T(n,k) = (A000217(k-1) + 1) mod n, for k &gt; 1. Row T(n) contains n terms if n is odd, or 2*n terms if n is even.
  * @author Sean A. Irvine
  */
 public class A398743 extends Sequence1 {

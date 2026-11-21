@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402041 allocated for Jason Bard.
+ * A402041 Numerators of the convergents of A402040.
  * @author Sean A. Irvine
  */
 public class A402041 extends Sequence0 {

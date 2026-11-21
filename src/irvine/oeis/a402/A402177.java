@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402177 allocated for Luc Rousseau.
+ * A402177 Number of distinct polynomials obtained after n steps starting from P(x) = 1 and repeatedly applying either P -&gt; x*(x*P)' or P -&gt; P(0) + Integral_{t=0..x} ((P(t) - P(0))/t) dt.
  * @author Sean A. Irvine
  */
 public class A402177 extends Sequence0 {

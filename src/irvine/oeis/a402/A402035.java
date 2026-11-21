@@ -5,7 +5,7 @@ import irvine.oeis.FilterNumberSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A402035 allocated for Carlos Alberto Terencio de Bastos.
+ * A402035 Numbers k such that 3*k reaches 1 in exactly one Collatz step fewer than k: A006577(3*k) = A006577(k) - 1.
  * @author Sean A. Irvine
  */
 public class A402035 extends FilterNumberSequence {

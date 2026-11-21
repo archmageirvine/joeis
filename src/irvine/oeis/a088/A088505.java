@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A088505 a(n) = (2^(3*n-1))/(integral_{x=0..1} (1-x^4)^n dx).
+ * A088505 a(n) = (2^(3*n-1))/(Integral_{x=0..1} (1-x^4)^n dx).
  * Recurrence: n*a(n)+2*(-4*n-1)*a(n-1)=0
  * @author Georg Fischer
  */

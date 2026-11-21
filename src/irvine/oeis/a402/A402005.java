@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402005 allocated for Eddie Lin Rui.
+ * A402005 Triangle T(n,k) read by rows: number of distinct proper crossing points formed by n vertical chords and k horizontal chords of a circle, equally spaced along their respective diameters, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A402005 extends Sequence1 {

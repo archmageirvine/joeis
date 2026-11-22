@@ -2,6 +2,7 @@ package irvine.oeis.a081;
 
 import java.util.Arrays;
 
+import irvine.math.turing.MinskyBusyBeaver;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -9,14 +10,8 @@ import irvine.util.string.StringUtils;
 /**
  * A081419 Largest value held in any register at the end of a halting computation by an n-instruction register Minsky machine.
  * @author Sean A. Irvine
+ * @author Gregory Morse
  */
-//public class A081419 extends NoncomputableSequence {
-//
-//  /** Construct the sequence. */
-//  public A081419() {
-//    super(1, NONCOMPUTABLE, 0, 1, 2, 3, 4, 6, 9, 34, 520);
-//  }
-//}
 public class A081419 extends Sequence1 {
 
   private static final int HALT = 0;
@@ -24,11 +19,10 @@ public class A081419 extends Sequence1 {
   private static final int DEC = 2;
   private static final int[] HALT_INS = {HALT};
 
-  private static final long STEPS = 50; // Too small for n>=8
-
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mMaxRegAttained = 0;
   private int mN = 0;
+  private int mStepLimit;
 
   private boolean isViable(final int[][] program) {
     // Check theoretically possible to reach halt
@@ -54,8 +48,8 @@ public class A081419 extends Sequence1 {
     final long[] reg = new long[maxRegister + 1];
     int state = 0;
 
-    for (long k = 0; k < STEPS; ++k) {
-      switch(program[state][0]) {
+    for (int k = 0; k < mStepLimit; ++k) {
+      switch (program[state][0]) {
         case INC:
           ++reg[program[state][1]];
           state = program[state][2];
@@ -125,7 +119,13 @@ public class A081419 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    final MinskyBusyBeaver verified = MinskyBusyBeaver.compute(++mN);
+    if (mN > 4) {
+      return Z.valueOf(verified.maximumScore());
+    }
+    // Keep the original exhaustive search at the small sizes, using the
+    // independently verified time bound (plus the final HALT instruction).
+    mStepLimit = verified.maximumSteps() + 1;
     mMaxRegAttained = 0;
     buildProgram(new int[mN][], 0, 0);
     return Z.valueOf(mMaxRegAttained);

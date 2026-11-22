@@ -3,6 +3,8 @@ package irvine.math.turing;
 import java.util.Arrays;
 import java.util.BitSet;
 import java.util.Locale;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Exact bounded-size verification of the Minsky step and register maxima.
@@ -10,6 +12,7 @@ import java.util.Locale;
  */
 public final class MinskyBusyBeaver {
 
+  private static final Map<Integer, MinskyBusyBeaver> RESULTS = new ConcurrentHashMap<>();
   private static final int INFINITY = 9;
   private static final int FINITE_BOUND = INFINITY - 1;
   private static final int SMALL_VALUE = 5;
@@ -414,6 +417,39 @@ public final class MinskyBusyBeaver {
     mLastVisit[pc] = previous;
     mLastZero[r] = zero;
     mValue[r] = value;
+  }
+
+  /**
+   * Compute the maxima for a size whose entire search is known to close.
+   * @param instructions total instruction count, including one HALT
+   * @return the completed register machine enumeration
+   */
+  public static MinskyBusyBeaver compute(final int instructions) {
+    if (instructions < 1 || instructions > 7) {
+      throw new UnsupportedOperationException("No verified enumeration for this instruction count");
+    }
+    return RESULTS.computeIfAbsent(instructions, n -> {
+      final MinskyBusyBeaver search = new MinskyBusyBeaver(n - 1, 512);
+      search.visit(0, 0, 0, 0);
+      if (search.mUnknown != 0 || search.mCapped) {
+        throw new IllegalStateException("Search did not certify both maxima");
+      }
+      return search;
+    });
+  }
+
+  /**
+   * @return maximum number of steps, excluding the final HALT
+   */
+  public int maximumSteps() {
+    return mSteps;
+  }
+
+  /**
+   * @return largest value of any register at halting
+   */
+  public int maximumScore() {
+    return mScore;
   }
 
   /**

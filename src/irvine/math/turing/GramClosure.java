@@ -9,12 +9,15 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Event-driven n-gram closed position set on a binary or history-augmented tape.
+ * Event-driven n-gram closed position set on an ordinary or history-augmented tape.
  * @author Gregory Morse
  */
 final class GramClosure {
   private static final Word EMPTY = new Word(0, 0, null, null);
   private final int[] mTable;
+  private final int mAlphabet;
+  private final int mBits;
+  private final int mMask;
   private final int mLeftWidth;
   private final int mRightWidth;
   private final long mModulus;
@@ -31,11 +34,20 @@ final class GramClosure {
   private boolean mCapped;
 
   GramClosure(final int[] table, final int leftWidth, final int rightWidth, final int length, final boolean lru, final int limit) {
-    if (leftWidth < 1 || leftWidth > 24 || rightWidth < 1 || rightWidth > 24 || length < 0 || length > 10
+    this(table, 2, leftWidth, rightWidth, length, lru, limit);
+  }
+
+  GramClosure(final int[] table, final int alphabet, final int leftWidth, final int rightWidth,
+              final int length, final boolean lru, final int limit) {
+    if (alphabet < 2 || alphabet > 4 || table.length > 10
+      || leftWidth < 1 || leftWidth > 24 || rightWidth < 1 || rightWidth > 24 || length < 0 || length > 10
       || limit < 1 || limit > 200_000) {
       throw new IllegalArgumentException("Unsafe history-closure parameters");
     }
     this.mTable = table;
+    this.mAlphabet = alphabet;
+    mBits = 32 - Integer.numberOfLeadingZeros(alphabet - 1);
+    mMask = (1 << mBits) - 1;
     this.mLeftWidth = leftWidth;
     this.mRightWidth = rightWidth;
     this.mLru = lru;
@@ -213,19 +225,19 @@ final class GramClosure {
     while (!mQueue.isEmpty() && !mCapped) {
       final Context c = mQueue.removeFirst();
       final long read = mSymbols.get(c.mCenter);
-      final int slot = 2 * c.mState + (int) (read & 1);
+      final int slot = mAlphabet * c.mState + (int) (read & mMask);
       final int rule = mTable[slot];
       if (rule < 0) {
         return false;
       }
-      final int write = symbol(2 * history(read >>> 1, slot + 1) + (rule >>> 1 & 1));
+      final int write = symbol((history(read >>> mBits, slot + 1) << mBits) | (rule >>> 1 & mMask));
       final boolean toRight = (rule & 1) != 0;
       final Word from = toRight ? c.mRight : c.mLeft;
       final Word dest = toRight ? c.mLeft : c.mRight;
       (toRight ? mLeft : mRight).record(dest);
       if (!mCapped) {
         (toRight ? mRight : mLeft).request(from.mTail,
-          new Pending(cons(write, dest.mPrefix), rule >>> 2, from.mFirst, toRight));
+          new Pending(cons(write, dest.mPrefix), rule >>> (mBits + 1), from.mFirst, toRight));
       }
     }
     return !mCapped;

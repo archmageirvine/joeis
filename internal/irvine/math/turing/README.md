@@ -16,7 +16,7 @@ java -Xmx288m -cp build.tmp/classes irvine.math.turing.BusyBeaver 5 internal/irv
 ```
 
 To compile only the checker, use
-`javac --release 11 -d build.tmp/classes internal/irvine/math/turing/*.java`
+`javac --release 11 -sourcepath src -d build.tmp/classes internal/irvine/math/turing/*.java src/irvine/math/turing/AlphabetBusyBeaver.java src/irvine/math/turing/MinskyBusyBeaver.java`
 in place of the Ant command. The checker has no dependencies outside the JDK.
 
 The five-state run visits 181,385,789 tree nodes. It fails if any node is
@@ -48,11 +48,19 @@ outline for Skelet #17; see also [Chris Xu's analysis][xu] and
 checks the step and final-register maxima for seven instructions in the
 model of [A081419][register-score] and [A401603][register-steps].
 The instruction count includes a single HALT; the step count excludes it.
+Both sequence classes stop at the end of the Java-verified prefix.
 The checker names instructions and registers in discovery order and
 assigns branch targets only when first taken. A missing instruction can
 either halt or use one more instruction from the budget. It rejects a
 search with unresolved branches or a reached limit; an ordinary
 simulation timeout does not prove nonhalting.
+
+## Larger alphabets
+
+`java -cp build.tmp/classes irvine.math.turing.AlphabetBusyBeaver 4`
+checks the step and score maxima for two states and four tape symbols.
+This is the same enumeration used by A398770 and A399567; neither has
+a table of terms. The decider schedule follows the [Rocq 2-by-4 check][bb24].
 
 [paper]: https://arxiv.org/abs/2509.12337
 [coq]: https://github.com/ccz181078/Coq-BB5/tree/b295161e830cfb0698e6eff667afce8917ca1423/CoqBB5/BB5
@@ -61,3 +69,4 @@ simulation timeout does not prove nonhalting.
 [xu]: https://arxiv.org/abs/2407.02426
 [register-score]: https://oeis.org/A081419
 [register-steps]: https://oeis.org/A401603
+[bb24]: https://github.com/ccz181078/Coq-BB5/tree/b295161e830cfb0698e6eff667afce8917ca1423/CoqBB5/BB2x4

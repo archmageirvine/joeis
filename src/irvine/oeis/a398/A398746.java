@@ -1,14 +1,13 @@
 package irvine.oeis.a398;
 
 import irvine.math.z.Z;
-import irvine.oeis.Conjectural;
 import irvine.oeis.FilterNumberSequence;
 
 /**
  * A398746 Even numbers k such that the Antihydra iteration starting from k halts (conjectural).
  * @author Sean A. Irvine
  */
-public class A398746 extends FilterNumberSequence implements Conjectural {
+public class A398746 extends FilterNumberSequence {
 
   private static final long HEURISTIC = 10000;
 

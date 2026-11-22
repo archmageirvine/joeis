@@ -5,12 +5,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 /**
- * Finite forward closure on pairs of run-compressed tapes (RepWL).
+ * Finite forward closure on pairs of run-compressed tapes over a small alphabet (RepWL).
  * @author Gregory Morse
  */
 final class RepeatedWords {
   private final int[] mRules;
   private final int mWidth;
+  private final int mSymbols;
+  private final int mBits;
+  private final int mMask;
   private final int mSaturation;
   private final int mStepLimit;
   private final int mNodeLimit;
@@ -21,7 +24,15 @@ final class RepeatedWords {
   private boolean mInconclusive;
 
   RepeatedWords(final int[] rules, final int width, final int saturation, final int stepLimit, final int nodeLimit) {
-    if (width < 1 || width > 59 || saturation < 2 || saturation > 100 || stepLimit < 1 || nodeLimit < 1 || nodeLimit > 200_000) {
+    this(rules, 2, width, saturation, stepLimit, nodeLimit);
+  }
+
+  RepeatedWords(final int[] rules, final int symbols, final int width, final int saturation, final int stepLimit, final int nodeLimit) {
+    mSymbols = symbols;
+    mBits = 32 - Integer.numberOfLeadingZeros(symbols - 1);
+    mMask = (1 << mBits) - 1;
+    if (symbols < 2 || symbols > 4 || width < 1 || width > 59 / mBits
+      || saturation < 2 || saturation > 100 || stepLimit < 1 || nodeLimit < 1 || nodeLimit > 200_000) {
       throw new IllegalArgumentException("Unsafe repeated-word parameters");
     }
     this.mRules = rules;
@@ -108,13 +119,14 @@ final class RepeatedWords {
       int state = node.mStateDir >>> 1;
       long updated = word;
       for (int i = 0; i < mStepLimit; ++i) {
-        final int rule = mRules[2 * state + (int) (updated >>> at & 1)];
+        final int shift = mBits * at;
+        final int rule = mRules[mSymbols * state + (int) (updated >>> shift & mMask)];
         if (rule < 0) {
           break;
         }
-        updated = updated & ~(1L << at) | (long) (rule >>> 1 & 1) << at;
+        updated = updated & ~((long) mMask << shift) | (long) (rule >>> 1 & mMask) << shift;
         at += (rule & 1) == 0 ? -1 : 1;
-        state = rule >>> 2;
+        state = rule >>> (mBits + 1);
         if (at < 0 || at == mWidth) {
           exit = updated << 4 | 2 * state | (rule & 1);
           mBlocks.put(key, exit);

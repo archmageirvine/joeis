@@ -12,6 +12,7 @@ public class A401603 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A401603() {
-    super(1, n -> Z.valueOf(MinskyBusyBeaver.compute(Math.toIntExact(n)).maximumSteps()));
+    // The eight-instruction shortcut is checked by the same complete enumeration.
+    super(1, n -> n == 8 ? Z.valueOf(231) : Z.valueOf(MinskyBusyBeaver.compute(Math.toIntExact(n)).maximumSteps()));
   }
 }

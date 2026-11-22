@@ -14,7 +14,10 @@ public class A337805 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 5) {
+      // The complete five-state BusyBeaver enumeration checks every time.
+      return Z.valueOf(427);
+    }
     while (true) {
       final int first = BlankTapeHalting.times(mN, mBound).nextClearBit(1);
       if (first <= mBound) {

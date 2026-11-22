@@ -365,7 +365,8 @@ public final class MinskyBusyBeaver {
   private void execute(final int pc, final int used, final int registers, final int time) {
     if (repeats(pc, registers) || time == mStepLimit
       && (cannotReachHalt(pc) || excludesMissingBranch(pc, used) || closesResidues(pc, registers)
-      || closesScaledOctagons(pc, used, registers))) {
+      || closesScaledOctagons(pc, used, registers)
+      || registers <= 3 && new RegisterLinearClosure(used, registers).closes(pc, mValue, mRegister, mIncrement, mTarget))) {
       ++mLoops;
       return;
     }
@@ -425,7 +426,7 @@ public final class MinskyBusyBeaver {
    * @return the completed register machine enumeration
    */
   public static MinskyBusyBeaver compute(final int instructions) {
-    if (instructions < 1 || instructions > 7) {
+    if (instructions < 1 || instructions > 8) {
       throw new UnsupportedOperationException("No verified enumeration for this instruction count");
     }
     return RESULTS.computeIfAbsent(instructions, n -> {

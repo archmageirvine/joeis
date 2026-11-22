@@ -140,7 +140,7 @@ public final class BusyBeaver {
     return hints;
   }
 
-  private static final class Simulator {
+  static final class Simulator {
     private final byte[] mTape = new byte[WIDTH];
     private final byte[] mPrevious = new byte[WIDTH];
     private int mLeft = CENTER;
@@ -150,7 +150,7 @@ public final class BusyBeaver {
     private final boolean mRepwl;
     private Map<Long, Hint> mHints = Map.of();
     private final HistoryGram[] mHistory;
-    private Simulator(final boolean wide) {
+    Simulator(final boolean wide) {
       final int radius = wide ? 5 : 4;
       mRepwl = !wide;
       mNgrams = new NGram[radius + 1];
@@ -198,7 +198,11 @@ public final class BusyBeaver {
       return true;
     }
 
-    private int run(final int[] table, final int limit, final boolean loopCheck) {
+    int haltSlot() {
+      return mHaltSlot;
+    }
+
+    int run(final int[] table, final int limit, final boolean loopCheck) {
       Arrays.fill(mTape, mLeft, mRight + 1, (byte) 0);
       mLeft = CENTER;
       mRight = CENTER;
@@ -641,6 +645,7 @@ public final class BusyBeaver {
     private final int[] mTable;
     private final long[][] mWeights;
     private final List<String> mExamples = new ArrayList<>();
+    private final BusyBeaverWitnesses mWitnesses = new BusyBeaverWitnesses();
     private boolean mCapped;
     private long mLabeledHalters;
     private long mLabeledTotalSteps;
@@ -679,7 +684,7 @@ public final class BusyBeaver {
       final int result = mSimulator.classify(mTable, mLimit);
       mCounts.record(result, mSimulator.mOnes);
       if (result == UNKNOWN && mExamples.size() < 24) {
-        mExamples.add(format(mTable));
+        mExamples.add(BusyBeaverWitnesses.format(mTable, -1, false));
       }
       if (result > 0) {
         final long weight = mWeights[used][seen];
@@ -691,6 +696,7 @@ public final class BusyBeaver {
           mBlankMaximum = Math.max(mBlankMaximum, result);
         }
         final int slot = mSimulator.mHaltSlot;
+        mWitnesses.record(mTable, result, mSimulator.mOnes, slot);
         for (int next = 0; next < Math.min(mTable.length / 2, seen + 1) && !mCapped; ++next) {
           for (int write = 0; write < 2 && !mCapped; ++write) {
             for (int d = used == 0 ? 1 : 0; d < 2 && !mCapped; ++d) {
@@ -703,21 +709,6 @@ public final class BusyBeaver {
       }
     }
 
-    private static String format(final int[] table) {
-      final StringBuilder example = new StringBuilder();
-      for (int i = 0; i < table.length; ++i) {
-        if (i != 0 && (i & 1) == 0) {
-          example.append('_');
-        }
-        final int rule = table[i];
-        if (rule < 0) {
-          example.append("---");
-        } else {
-          example.append(rule >>> 1 & 1).append((rule & 1) == 0 ? 'L' : 'R').append((char) ('A' + (rule >>> 2)));
-        }
-      }
-      return example.toString();
-    }
   }
 
 
@@ -746,5 +737,6 @@ public final class BusyBeaver {
     }
     System.out.printf(Locale.ROOT, "n=%d %s labeledHalters=%d labeledTotalSteps=%d blankMaximum=%d seconds=%.6f%n",
       states, tree.mCounts, tree.mLabeledHalters, tree.mLabeledTotalSteps, tree.mBlankMaximum, (System.nanoTime() - start) / 1e9);
+    tree.mWitnesses.print();
   }
 }

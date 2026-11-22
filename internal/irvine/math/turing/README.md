@@ -27,6 +27,14 @@ tree-normal-form convention. See the [bbchallenge paper][paper] for the
 normalization and enumeration argument. This implementation is an
 independent Java check, not a Rocq proof or a replacement for it.
 
+The same run collects the set of halting times for A337805 and emits
+short halting-machine witnesses for the small scores in A399346. The
+sequence class replays those machines and checks the lower bound from
+the smaller-state maxima. For a separate bounded time search, use
+`java -cp build.tmp/classes irvine.math.turing.LazyBeaver 4 128`.
+That tool accepts a state count and time horizon; it rejects a capped
+enumeration or a horizon with no missing time.
+
 The gzip file is sorted ASCII with one record per exceptional machine.
 Each line contains the machine in standard bbchallenge notation, the
 decider and its parameters, and, for FAR/WFAR, transition tables with
@@ -44,11 +52,12 @@ outline for Skelet #17; see also [Chris Xu's analysis][xu] and
 
 ## Register machines
 
-`java -cp build.tmp/classes irvine.math.turing.MinskyBusyBeaver 7`
-checks the step and final-register maxima for seven instructions in the
+`java -cp build.tmp/classes irvine.math.turing.MinskyBusyBeaver 8`
+checks the step and final-register maxima for eight instructions in the
 model of [A081419][register-score] and [A401603][register-steps].
 The instruction count includes a single HALT; the step count excludes it.
-Both sequence classes stop at the end of the Java-verified prefix.
+Both sequence classes compute the earlier terms and use the verified
+eight-instruction results as shortcuts.
 The checker names instructions and registers in discovery order and
 assigns branch targets only when first taken. A missing instruction can
 either halt or use one more instruction from the budget. It rejects a

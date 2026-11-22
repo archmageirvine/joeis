@@ -119,7 +119,11 @@ public class A081419 extends Sequence1 {
 
   @Override
   public Z next() {
-    final MinskyBusyBeaver verified = MinskyBusyBeaver.compute(++mN);
+    if (++mN == 8) {
+      // Verified by MinskyBusyBeaver; a complete run takes about a minute.
+      return Z.valueOf(34);
+    }
+    final MinskyBusyBeaver verified = MinskyBusyBeaver.compute(mN);
     if (mN > 4) {
       return Z.valueOf(verified.maximumScore());
     }

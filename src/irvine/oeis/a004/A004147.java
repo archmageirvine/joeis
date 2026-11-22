@@ -1,97 +1,44 @@
 package irvine.oeis.a004;
 
-import java.util.Arrays;
-
+import irvine.math.turing.BlankTapeHalting;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.array.LongDynamicByteArray;
-import irvine.util.bumper.Bumper;
-import irvine.util.bumper.BumperFactory;
+import irvine.oeis.a060.A060843;
 
 /**
  * A004147 Number of n-state Turing machines which halt.
  * @author Sean A. Irvine
+ * @author Gregory Morse
  */
 public class A004147 extends Sequence1 {
 
+  private final A060843 mStepMaximum = new A060843();
+  private final long mFifth;
   private int mN = 0;
-  private boolean[] mReachableWorkspace = null;
-  private int[] mQueueWorkspace = null;
 
-  private boolean hasHalt(final int[] machine) {
-    // Quick deterministic test to make sure machine has any stop state
-    for (final int v : machine) {
-      if ((v & ~3) == 0) {
-        return true;
-      }
-    }
-    return false;
+  /** Construct the sequence. */
+  public A004147() {
+    // Published five-state count; the exhaustive run is not part of this generator.
+    this(26751695615616L);
   }
 
-  private boolean hasReachableHalt(final int[] machine) {
-    Arrays.fill(mReachableWorkspace, false);
-    int queueIndex = 0;
-    int queueFree = 0;
-    int current = 1;
-    while (!mReachableWorkspace[0]) {
-      final int a = machine[2 * current - 2] >>> 2;
-      if (!mReachableWorkspace[a]) {
-        mReachableWorkspace[a] = true;
-        mQueueWorkspace[queueFree++] = a;
-      }
-      final int b = machine[2 * current - 1] >>> 2;
-      if (!mReachableWorkspace[b]) {
-        mReachableWorkspace[b] = true;
-        mQueueWorkspace[queueFree++] = b;
-      }
-      if (queueIndex == queueFree) {
-        return false;
-      }
-      current = mQueueWorkspace[queueIndex++];
-    }
-    return true;
+  protected A004147(final long fifth) {
+    mFifth = fifth;
   }
 
-  // State of machine: lowest bit is replacement symbol, next bit is move left-or-right, rest is next state
-  // Test if the machine stops in specified number of steps
-  private boolean halts(final int[] machine, int steps) {
-    if (!hasHalt(machine) || !hasReachableHalt(machine)) {
-      return false;
-    }
-    final LongDynamicByteArray tape = new LongDynamicByteArray();
-    // Even numbers are positive tape positions, odd numbers are negative tape positions
-    int state = 1;
-    int position = 0;
-    while (state != 0 && --steps >= 0) {
-      final int symbol = position >= 0 ? tape.get(2L * position) : tape.get(2L * -position + 1);
-      final int next = machine[2 * state + symbol - 2];
-      final int r = next & 1;
-      if (r != symbol) {
-        if (position >= 0) {
-          tape.set(2L * position, (byte) r);
-        } else {
-          tape.set(2L * -position + 1, (byte) r);
-        }
-      }
-      position += (next & 2) == 0 ? 1 : -1;
-      state = next >>> 2;
-    }
-    return state == 0;
+  protected Z select(final BlankTapeHalting tally) {
+    return tally.count();
   }
 
   @Override
   public Z next() {
-    ++mN;
-    mReachableWorkspace = new boolean[mN + 1];
-    mQueueWorkspace = new int[mN + 1];
-    long c = 0;
-    final int[] machine = new int[2 * mN];
-    final Bumper bumper = BumperFactory.range(0, 4 * (mN + 1) - 1);
-    do {
-      if (halts(machine, 1000)) { // heuristic, 1000 is definitely large enough for a(3)
-        ++c;
-      }
-    } while (bumper.bump(machine));
-    return Z.valueOf(c);
+    if (++mN < 5) {
+      // This is a proved upper bound, not a heuristic simulation timeout.
+      return select(BlankTapeHalting.tally(mN, mStepMaximum.a(mN).intValueExact()));
+    }
+    if (mN == 5) {
+      return Z.valueOf(mFifth);
+    }
+    throw new UnsupportedOperationException("No further exact terms known");
   }
 }

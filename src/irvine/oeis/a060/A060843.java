@@ -4,6 +4,7 @@ import irvine.oeis.NoncomputableSequence;
 
 /**
  * A060843 Busy Beaver problem: a(n) is the maximal number of steps that an n-state Turing machine can make on an initially blank tape before eventually halting.
+ * The internal {@code irvine.math.turing.BusyBeaver} tool can verify the stored terms.
  * @author Sean A. Irvine
  */
 public class A060843 extends NoncomputableSequence {

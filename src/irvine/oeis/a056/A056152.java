@@ -11,7 +11,11 @@ public class A056152 extends A028657 {
 
   /** Construct the sequence. */
   public A056152() {
-    super(2);
+    this(2);
+  }
+
+  protected A056152(final int offset) {
+    super(offset);
   }
 
   @Override

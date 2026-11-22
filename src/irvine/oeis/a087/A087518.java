@@ -1,4 +1,3 @@
-
 package irvine.oeis.a087;
 
 import java.util.HashMap;
@@ -19,8 +18,7 @@ public class A087518 extends Sequence1 {
   private int mN = 0;
 
   /*
-   * Transform a subset mask by one of the 8 symmetries
-   * of the square.
+   * Transform a subset mask by one of the 8 symmetries of the square.
    */
   private long transform(final long mask, final int symmetry) {
     final int n = mN;
@@ -79,8 +77,7 @@ public class A087518 extends Sequence1 {
   }
 
   /*
-   * Return the canonical representative of a subset
-   * under the dihedral symmetry group of the square.
+   * Return the canonical representative of a subset under the dihedral symmetry group of the square.
    */
   private long canonical(final long mask) {
     long best = mask;

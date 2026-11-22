@@ -19,7 +19,7 @@ public class A080035 extends Sequence1 implements Conjectural {
 
   private static final Q MAX = Q.valueOf(Z.ONE.shiftLeft(24));
   private static final long POW_MAX = 100;
-  private long mN = 126;
+  private long mN = 24;
   private int mK = 0;
 
   private void add(final Set<Q> set, final Q v) {
@@ -117,8 +117,12 @@ public class A080035 extends Sequence1 implements Conjectural {
     return false;
   }
 
+  protected String getString(final long n) {
+    return String.valueOf(n);
+  }
+
   private boolean is(final long n) {
-    final String digits = String.valueOf(n);
+    final String digits = getString(n);
     final Sequence parens = new A014486(); // Mechanism to get possible parenthesizations
     final int p = 2 * (digits.length() - 1);
     while (true) {

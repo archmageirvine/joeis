@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.BitSet;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import irvine.math.z.Z;
 
@@ -12,6 +13,8 @@ import irvine.math.z.Z;
  * @author Gregory Morse
  */
 public final class BlankTapeHalting {
+
+  private static final Map<Integer, BlankTapeHalting> SMALL_TALLIES = new ConcurrentHashMap<>();
 
   private final int mStates;
   private final int mLimit;
@@ -206,6 +209,33 @@ public final class BlankTapeHalting {
     final BlankTapeHalting search = new BlankTapeHalting(states, limit, true, -1);
     search.visit();
     return search;
+  }
+
+  /**
+   * Enumerate the complete halting statistics for up to four states.
+   * @param states number of nonhalting states, from one to four
+   * @return exact halting statistics
+   */
+  public static BlankTapeHalting smallTally(final int states) {
+    if (states < 1 || states > 4) {
+      throw new IllegalArgumentException();
+    }
+    // Coarse upper bounds from the independent BusyBeaver verifier.
+    return SMALL_TALLIES.computeIfAbsent(states, n -> tally(n, 1 << (2 * n - 1)));
+  }
+
+  /**
+   * @return greatest halting time among the enumerated machines
+   */
+  public int maximumSteps() {
+    return mTimes.length() - 1;
+  }
+
+  /**
+   * @return greatest final number of ones among the enumerated machines
+   */
+  public int maximumScore() {
+    return mScores.length() - 1;
   }
 
   /**

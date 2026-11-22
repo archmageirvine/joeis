@@ -9,7 +9,7 @@ import irvine.oeis.a004.A004147;
  * @author Gregory Morse
  */
 public class A386859 extends A004147 {
-  // Use the published fifth value; recompute the earlier terms.
+  // Five-state shortcut checked by the internal BusyBeaver verifier.
   /** Construct the sequence. */
   public A386859() {
     super(64068865333248L);

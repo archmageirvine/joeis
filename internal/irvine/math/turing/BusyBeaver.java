@@ -147,25 +147,12 @@ public final class BusyBeaver {
     private int mRight = CENTER;
     private int mOnes;
     private int mHaltSlot;
-    private long mReachProofs;
-    private long mLoopProofs;
-    private long mNgramProofs;
-    private long mHistoryProofs;
-    private long mRepwlProofs;
-    private boolean mRepwl;
+    private final boolean mRepwl;
     private Map<Long, Hint> mHints = Map.of();
     private final HistoryGram[] mHistory;
-    private final int mHistoryWork;
-
-    private Simulator(final int radius) {
-      this(radius, false, false, 3200);
-    }
-
-    private Simulator(final int radius, final boolean useHistory, final boolean wide, final int work) {
-      if (radius < 0 || radius > 5 || work < 1 || work > 100_000) {
-        throw new IllegalArgumentException("Unsafe n-gram radius or work limit");
-      }
-      mHistoryWork = work;
+    private Simulator(final boolean wide) {
+      final int radius = wide ? 5 : 4;
+      mRepwl = !wide;
       mNgrams = new NGram[radius + 1];
       for (int r = 1; r <= radius; ++r) {
         mNgrams[r] = new NGram(r);
@@ -174,9 +161,9 @@ public final class BusyBeaver {
         new HistoryGram(1, 1), new HistoryGram(2, 1), new HistoryGram(2, 2), new HistoryGram(3, 2),
         new HistoryGram(2, 3), new HistoryGram(2, 4), new HistoryGram(3, 3), new HistoryGram(3, 4),
         new HistoryGram(2, 4, true), new HistoryGram(3, 4, true)
-      } : useHistory ? new HistoryGram[] {
+      } : new HistoryGram[] {
         new HistoryGram(1, 1), new HistoryGram(2, 1), new HistoryGram(2, 2), new HistoryGram(3, 2)
-      } : new HistoryGram[0];
+      };
     }
 
     private final NGram[] mNgrams;
@@ -218,7 +205,6 @@ public final class BusyBeaver {
       mOnes = 0;
       mHaltSlot = -1;
       if (loopCheck && noHaltReachable(table)) {
-        ++mReachProofs;
         return NONHALT;
       }
       int position = CENTER;
@@ -255,7 +241,6 @@ public final class BusyBeaver {
             final int from = shift >= 0 ? min : Math.min(oldLeft, mLeft - shift);
             final int to = shift <= 0 ? max : Math.max(oldRight, mRight - shift);
             if (matches(from, to, shift, oldLeft, oldRight)) {
-              ++mLoopProofs;
               return NONHALT;
             }
           }
@@ -286,13 +271,11 @@ public final class BusyBeaver {
       }
       for (int r = 1; r < mNgrams.length; ++r) {
         if (mNgrams[r].closes(table, 3200)) {
-          ++mNgramProofs;
           return NONHALT;
         }
       }
       for (final HistoryGram gram : mHistory) {
-        if (gram.closes(table, mHistoryWork)) {
-          ++mHistoryProofs;
+        if (gram.closes(table, 3200)) {
           return NONHALT;
         }
       }
@@ -311,7 +294,6 @@ public final class BusyBeaver {
         for (int len = 4; len <= 8; len += 2) {
           for (int r = 2; r <= 3; ++r) {
             if (new GramClosure(table, r, r, len, false, 3600).closes()) {
-              ++mHistoryProofs;
               return NONHALT;
             }
           }
@@ -327,19 +309,16 @@ public final class BusyBeaver {
           for (int r = 2; r <= 6; ++r) {
             for (int len = 0; len <= 10; len += 2) {
               if (new GramClosure(table, r, r, len, false, 30_000).closes()) {
-                ++mHistoryProofs;
                 return NONHALT;
               }
             }
             if (new GramClosure(table, r, r, 10, true, 30_000).closes()) {
-              ++mHistoryProofs;
               return NONHALT;
             }
           }
           for (int width = 1; width <= 8; ++width) {
             for (int sat = 2; sat <= 3; ++sat) {
               if (new RepeatedWords(table, width, sat, 320, 8000).closes()) {
-                ++mRepwlProofs;
                 return NONHALT;
               }
             }
@@ -350,18 +329,15 @@ public final class BusyBeaver {
         for (int len = 4; len <= 10; len += 2) {
           for (int radius = 2; radius <= (len == 10 ? 4 : 3); ++radius) {
             if (new GramClosure(table, radius, radius, len, false, 25_000).closes()) {
-              ++mHistoryProofs;
               return NONHALT;
             }
           }
         }
         if (new GramClosure(table, 2, 2, 10, true, 25_000).closes()) {
-          ++mHistoryProofs;
           return NONHALT;
         }
       }
       if (mRepwl && new RepeatedWords(table, 4, 3, 320, 8000).closes()) {
-        ++mRepwlProofs;
         return NONHALT;
       }
       return UNKNOWN;
@@ -663,8 +639,12 @@ public final class BusyBeaver {
     private final int mLimit;
     private final long mNodes;
     private final int[] mTable;
+    private final long[][] mWeights;
     private final List<String> mExamples = new ArrayList<>();
     private boolean mCapped;
+    private long mLabeledHalters;
+    private long mLabeledTotalSteps;
+    private int mBlankMaximum;
 
     private Tree(final Simulator simulator, final int states, final int limit, final long nodes) {
       this.mSimulator = simulator;
@@ -672,6 +652,19 @@ public final class BusyBeaver {
       this.mNodes = nodes;
       mTable = new int[2 * states];
       Arrays.fill(mTable, -1);
+      mWeights = new long[mTable.length][states + 1];
+      long completions = 1;
+      for (int used = mTable.length - 1; used >= 0; --used) {
+        // At the first hit of the missing rule, there are four possible
+        // halting actions. The unused slots may be filled arbitrarily.
+        // Undo the first-move reflection and the order-of-discovery names.
+        long weight = (used == 0 ? 4 : 8) * completions;
+        for (int seen = 1; seen <= states; ++seen) {
+          mWeights[used][seen] = weight;
+          weight *= states - seen;
+        }
+        completions *= 4 * states + 4;
+      }
     }
 
     private void visit(final int used, final int seen) {
@@ -689,6 +682,14 @@ public final class BusyBeaver {
         mExamples.add(format(mTable));
       }
       if (result > 0) {
+        final long weight = mWeights[used][seen];
+        mLabeledHalters = Math.addExact(mLabeledHalters, weight);
+        mLabeledTotalSteps = Math.addExact(mLabeledTotalSteps, Math.multiplyExact(weight, result));
+        if (mSimulator.mOnes == 1) {
+          // The recorded halt writes a 1. Clearing that cell would leave
+          // an entirely blank tape exactly when that is the only 1.
+          mBlankMaximum = Math.max(mBlankMaximum, result);
+        }
         final int slot = mSimulator.mHaltSlot;
         for (int next = 0; next < Math.min(mTable.length / 2, seen + 1) && !mCapped; ++next) {
           for (int write = 0; write < 2 && !mCapped; ++write) {
@@ -734,8 +735,7 @@ public final class BusyBeaver {
       throw new IllegalArgumentException("Use a state count of 1..5 and supply certificates only for five states");
     }
     final long start = System.nanoTime();
-    final Simulator simulator = new Simulator(states == 5 ? 5 : 4, true, states == 5, 3200);
-    simulator.mRepwl = states < 5;
+    final Simulator simulator = new Simulator(states == 5);
     if (states == 5) {
       simulator.mHints = loadHints(Path.of(args[1]));
     }
@@ -744,6 +744,7 @@ public final class BusyBeaver {
     if (tree.mCapped || tree.mCounts.mUnknown != 0) {
       throw new IllegalStateException("Incomplete enumeration: " + tree.mCounts + " " + tree.mExamples);
     }
-    System.out.printf(Locale.ROOT, "n=%d %s seconds=%.6f%n", states, tree.mCounts, (System.nanoTime() - start) / 1e9);
+    System.out.printf(Locale.ROOT, "n=%d %s labeledHalters=%d labeledTotalSteps=%d blankMaximum=%d seconds=%.6f%n",
+      states, tree.mCounts, tree.mLabeledHalters, tree.mLabeledTotalSteps, tree.mBlankMaximum, (System.nanoTime() - start) / 1e9);
   }
 }

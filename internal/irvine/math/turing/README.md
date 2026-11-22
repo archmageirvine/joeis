@@ -1,8 +1,11 @@
 # Busy Beaver verification
 
-`BusyBeaver` enumerates binary machines in tree normal form and computes
-the step and score maxima (A060843 and A028444) for one to five working states.
-It is an opt-in internal utility, not part of normal sequence evaluation.
+`BusyBeaver` enumerates binary machines in tree normal form for one to five
+working states. It computes the step and score maxima (A060843 and A028444),
+the labeled halter count (A004147), the sum of halting times (A386859), and
+the maximum halting time leaving a blank tape (A119683). The five-state
+run is opt-in; ordinary sequence evaluation computes the one- through
+four-state terms and uses the verified five-state values as a shortcut.
 
 From the repository root:
 
@@ -39,8 +42,22 @@ The sporadic checks follow the BusyCoq proofs and the Coq-BB5 proof
 outline for Skelet #17; see also [Chris Xu's analysis][xu] and
 [`skelet-17.txt`](skelet-17.txt).
 
+## Register machines
+
+`java -cp build.tmp/classes irvine.math.turing.MinskyBusyBeaver 7`
+checks the step and final-register maxima for seven instructions in the
+model of [A081419][register-score] and [A401603][register-steps].
+The instruction count includes a single HALT; the step count excludes it.
+The checker names instructions and registers in discovery order and
+assigns branch targets only when first taken. A missing instruction can
+either halt or use one more instruction from the budget. It rejects a
+search with unresolved branches or a reached limit; an ordinary
+simulation timeout does not prove nonhalting.
+
 [paper]: https://arxiv.org/abs/2509.12337
 [coq]: https://github.com/ccz181078/Coq-BB5/tree/b295161e830cfb0698e6eff667afce8917ca1423/CoqBB5/BB5
 [roster]: https://docs.bbchallenge.org/CoqBB5_release_v1.0.0/
 [license]: ../../../../licenses/busy-beaver-license.txt
 [xu]: https://arxiv.org/abs/2407.02426
+[register-score]: https://oeis.org/A081419
+[register-steps]: https://oeis.org/A401603

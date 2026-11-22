@@ -53,7 +53,7 @@ public class A399346 extends Sequence1 {
   public Z next() {
     ++mN;
     for (int states = 1; states < mN; ++states) {
-      if (states < mSigma.size() && mSigma.a(states).compareTo(mN) < 0) {
+      if (states <= 5 && mSigma.a(states).compareTo(mN) < 0) {
         continue;
       }
       if (states < mScores.length) {

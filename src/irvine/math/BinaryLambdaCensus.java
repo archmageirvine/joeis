@@ -1807,24 +1807,24 @@ public final class BinaryLambdaCensus {
     return false;
   }
 
-  private final long[][] population;
+  private final long[][] mPopulation;
 
   private BinaryLambdaCensus(final int maxSize) {
-    population = new long[maxSize + 1][maxSize + 2];
+    mPopulation = new long[maxSize + 1][maxSize + 2];
     for (int size = 2; size <= maxSize; ++size) {
-      for (int depth = 0; depth < population[size].length; ++depth) {
+      for (int depth = 0; depth < mPopulation[size].length; ++depth) {
         long count = depth >= size - 1 ? 1 : 0;
         count = Math.addExact(count, count(size - 2, depth + 1));
         for (int i = 2; i <= size - 4; ++i) {
           count = Math.addExact(count, Math.multiplyExact(count(i, depth), count(size - i - 2, depth)));
         }
-        population[size][depth] = count;
+        mPopulation[size][depth] = count;
       }
     }
   }
 
   private long count(final int size, final int depth) {
-    return population[size][Math.min(depth, population[size].length - 1)];
+    return mPopulation[size][Math.min(depth, mPopulation[size].length - 1)];
   }
 
   private void terms(final int size, final int depth, final Consumer<Term> out) {

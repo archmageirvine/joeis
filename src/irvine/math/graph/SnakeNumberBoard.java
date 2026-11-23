@@ -1,9 +1,12 @@
-package irvine.oeis.a353;
+package irvine.math.graph;
 
 import java.util.Arrays;
 
-/** Exact search for the finite-board snake number variants. */
-final class SnakeNumberBoard {
+/**
+ * Exact search for the finite-board snake number variants.
+ * @author Gregory Morse
+ */
+public final class SnakeNumberBoard {
   private final int mN;
   private final int[] mX;
   private final int[] mY;
@@ -95,7 +98,13 @@ final class SnakeNumberBoard {
     mBest = Math.max(mBest, path.length);
   }
 
-  static int maximum(final int n, final boolean knight) {
+  /**
+   * Exhaustively search the board for the longest valid path.
+   * @param n board side length
+   * @param knight allow knight moves instead of orthogonal unit moves
+   * @return maximum path length
+   */
+  public static int maximum(final int n, final boolean knight) {
     final SnakeNumberBoard board = new SnakeNumberBoard(n, knight);
     // Reflections and transposition preserve both the moves and the constraints.
     for (int y = 0; 2 * y < n && board.mBest < n * n; ++y) {
@@ -106,7 +115,14 @@ final class SnakeNumberBoard {
     return board.mBest;
   }
 
-  static int witnessLength(final int n, final boolean knight, final int[] path) {
+  /**
+   * Check an attaining path and return its length.
+   * @param n board side length
+   * @param knight allow knight moves instead of orthogonal unit moves
+   * @param path row-major cell indices along the path
+   * @return length of the validated path
+   */
+  public static int witnessLength(final int n, final boolean knight, final int[] path) {
     final SnakeNumberBoard board = new SnakeNumberBoard(n, knight);
     board.acceptPath(path);
     return board.mBest;

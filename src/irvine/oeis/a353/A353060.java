@@ -1,5 +1,6 @@
 package irvine.oeis.a353;
 
+import irvine.math.graph.SnakeNumberBoard;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -8,6 +9,8 @@ import irvine.oeis.Sequence1;
  * @author Gregory Morse
  */
 public class A353060 extends Sequence1 {
+
+  private static final int MAX_SIDE = 8;
 
   // Giorgio Vecchi's witnesses. Exhaustive search verifies maximality at
   // side 7; the side-8 path visits every cell, so no upper search is needed.
@@ -36,6 +39,9 @@ public class A353060 extends Sequence1 {
 
   @Override
   public Z next() {
+    if (mN >= MAX_SIDE) {
+      throw new UnsupportedOperationException("Use exhaustive(n) to search beyond side " + MAX_SIDE);
+    }
     final int n = ++mN;
     if (n == 7 || n == 8) {
       return Z.valueOf(SnakeNumberBoard.witnessLength(n, true, n == 7 ? PATH_7 : PATH_8));

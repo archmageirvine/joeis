@@ -16,7 +16,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A006947 Two-rowed truncated monotone triangles.
+ * A006947 Number of two-rowed truncated monotone triangles of size n.
  * @author Sean A. Irvine
  */
 public class A006947 extends Sequence1 {
@@ -66,7 +66,6 @@ public class A006947 extends Sequence1 {
      * for all b=(b_1, ... ,b_k) in eq. (1) of the paper on Act  I:
      * Counting Magog)
      */
-
     MultivariatePolynomial<Z> gu = MultivariatePolynomial.one(IntegerField.SINGLETON, k);
     for (int i = 1; i < k; ++i) {
       final Polynomial<Z> normal = RING.divide(RING.oneMinusXToTheN(Math.min(a[i - 1], n - i) - a[i] + 1), RING.oneMinusXToTheN(1));
@@ -137,10 +136,10 @@ public class A006947 extends Sequence1 {
     return sum;
   }
 
-  private int mN = 1;
+  private int mN = 0;
 
   @Override
   public Z next() {
-    return b(2, ++mN);
+    return ++mN == 1 ? Z.ONE : b(2, mN);
   }
 }

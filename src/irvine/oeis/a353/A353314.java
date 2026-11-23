@@ -10,6 +10,16 @@ public class A353314 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A353314() {
-    super(0, n -> n % 3 == 0 ? Z.valueOf(n) : Z.valueOf(n / 3).multiply(5).add(3 + n % 3));
+    super(0, n -> step(Z.valueOf(n)));
+  }
+
+  /**
+   * Apply one step of the map.
+   * @param n nonnegative input
+   * @return next value
+   */
+  public static Z step(final Z n) {
+    final long r = n.mod(3);
+    return r == 0 ? n : n.divide(3).multiply(5).add(3 + r);
   }
 }

@@ -51,21 +51,21 @@ public final class BinaryLambdaCensus {
   private static final Set<Term> SPINE_LOOPS = new HashSet<>();
 
   private static final class Term {
-    final int kind;
-    final Term left;
-    final Term right;
-    final int hash;
-    final int nodes;
+    final int mKind;
+    final Term mLeft;
+    final Term mRight;
+    final int mHash;
+    final int mNodes;
 
     Term(final int kind, final Term left, final Term right) {
-      this.kind = kind;
-      this.left = left;
-      this.right = right;
-      final int l = left == null ? 0 : left.hash;
-      final int r = right == null ? 0 : right.hash;
-      hash = mix(Integer.rotateLeft(l * 0x9e3779b1, 13) + r * 0x85ebca6b + kind * 0xc2b2ae35);
-      nodes = Math.min(MAX_PROOF_NODES + 1,
-        1 + (left == null ? 0 : left.nodes) + (right == null ? 0 : right.nodes));
+      mKind = kind;
+      mLeft = left;
+      mRight = right;
+      final int l = left == null ? 0 : left.mHash;
+      final int r = right == null ? 0 : right.mHash;
+      mHash = mix(Integer.rotateLeft(l * 0x9e3779b1, 13) + r * 0x85ebca6b + kind * 0xc2b2ae35);
+      mNodes = Math.min(MAX_PROOF_NODES + 1,
+        1 + (left == null ? 0 : left.mNodes) + (right == null ? 0 : right.mNodes));
     }
 
     private static int mix(int x) {
@@ -76,7 +76,7 @@ public final class BinaryLambdaCensus {
 
     @Override
     public int hashCode() {
-      return hash;
+      return mHash;
     }
 
     @Override
@@ -88,29 +88,29 @@ public final class BinaryLambdaCensus {
         return false;
       }
       final Term t = (Term) obj;
-      if (hash != t.hash || kind != t.kind || nodes != t.nodes) {
+      if (mHash != t.mHash || mKind != t.mKind || mNodes != t.mNodes) {
         return false;
       }
-      if (nodes > 512) {
+      if (mNodes > 512) {
         return sameTree(this, t, new IdentityHashMap<>());
       }
-      return (left == null || left.equals(t.left)) && (right == null || right.equals(t.right));
+      return (mLeft == null || mLeft.equals(t.mLeft)) && (mRight == null || mRight.equals(t.mRight));
     }
 
     private static boolean sameTree(final Term a, final Term b, final Map<Term, Set<Term>> seen) {
       if (a == b) {
         return true;
       }
-      if (a.hash != b.hash || a.kind != b.kind || a.nodes != b.nodes) {
+      if (a.mHash != b.mHash || a.mKind != b.mKind || a.mNodes != b.mNodes) {
         return false;
       }
       // Substitution shares subtrees. Compare each actual pair once, not
       // once per occurrence in its possibly enormous unfolded tree.
-      if (a.nodes > 512 && !seen.computeIfAbsent(a, k -> java.util.Collections.newSetFromMap(new IdentityHashMap<>())).add(b)) {
+      if (a.mNodes > 512 && !seen.computeIfAbsent(a, k -> java.util.Collections.newSetFromMap(new IdentityHashMap<>())).add(b)) {
         return true;
       }
-      return (a.left == null || sameTree(a.left, b.left, seen))
-        && (a.right == null || sameTree(a.right, b.right, seen));
+      return (a.mLeft == null || sameTree(a.mLeft, b.mLeft, seen))
+        && (a.mRight == null || sameTree(a.mRight, b.mRight, seen));
     }
   }
 
@@ -123,16 +123,16 @@ public final class BinaryLambdaCensus {
   private static void reductions(final Term t, final Normalizer worker, final int height, final Consumer<Term> out,
                                  final boolean useEta) {
     worker.charge(height);
-    if (t.kind == ABS) {
+    if (t.mKind == ABS) {
       if (useEta && etaRedex(t, worker, height + 1)) {
-        out.accept(worker.substitute(t.left.left, PAYLOAD, 0, height + 1));
+        out.accept(worker.substitute(t.mLeft.mLeft, PAYLOAD, 0, height + 1));
       }
-      reductions(t.left, worker, height + 1, b -> out.accept(new Term(ABS, b, null)), useEta);
-    } else if (t.kind == APP) {
-      reductions(t.left, worker, height + 1, l -> out.accept(new Term(APP, l, t.right)), useEta);
-      reductions(t.right, worker, height + 1, r -> out.accept(new Term(APP, t.left, r)), useEta);
-      if (t.left.kind == ABS) {
-        out.accept(worker.substitute(t.left.left, t.right, 0, height + 1));
+      reductions(t.mLeft, worker, height + 1, b -> out.accept(new Term(ABS, b, null)), useEta);
+    } else if (t.mKind == APP) {
+      reductions(t.mLeft, worker, height + 1, l -> out.accept(new Term(APP, l, t.mRight)), useEta);
+      reductions(t.mRight, worker, height + 1, r -> out.accept(new Term(APP, t.mLeft, r)), useEta);
+      if (t.mLeft.mKind == ABS) {
+        out.accept(worker.substitute(t.mLeft.mLeft, t.mRight, 0, height + 1));
       }
     }
   }
@@ -156,36 +156,36 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean applicativeHead(Term t, final long allowed) {
-    while (t.kind == APP) {
+    while (t.mKind == APP) {
       if (delayedOperand(t, allowed)) {
         return true;
       }
-      t = t.left;
+      t = t.mLeft;
     }
     return false;
   }
 
   private static boolean delayedOperand(Term t, final long allowed) {
-    if (t.kind == APP) {
+    if (t.mKind == APP) {
       // An already-applied core cannot be rescued by a new argument:
       // exposed lambdas are vacuous in its core, and a rigid head
       // still demands the same divergent child.
-      return delayedOperand(t.left, allowed) && (t.left.kind == APP || delayedOperand(t.right, allowed));
+      return delayedOperand(t.mLeft, allowed) && (t.mLeft.mKind == APP || delayedOperand(t.mRight, allowed));
     }
-    if (t.kind >= 0) {
-      return t.kind < Long.SIZE && (allowed & 1L << t.kind) != 0;
+    if (t.mKind >= 0) {
+      return t.mKind < Long.SIZE && (allowed & 1L << t.mKind) != 0;
     }
     int binders = 0;
-    while (t.kind == ABS) {
+    while (t.mKind == ABS) {
       ++binders;
-      t = t.left;
+      t = t.mLeft;
     }
     return binders > 0 && binders < Long.SIZE && (allowed << binders >>> binders) == allowed
       && applicativeHead(t, (allowed << binders) | 1L << (binders - 1));
   }
 
   private static boolean guardedApplication(final Term t) {
-    return t.kind == APP && t.left.kind >= 1 && applicativeHead(t.right, 1L);
+    return t.mKind == APP && t.mLeft.mKind >= 1 && applicativeHead(t.mRight, 1L);
   }
 
   private static boolean delayedSelfApplication(Term t) {
@@ -193,10 +193,10 @@ public final class BinaryLambdaCensus {
     final Term y = new Term(1, null, null);
     final Term identity = abs(x);
     final Term z = new Term(2, null, null);
-    while (t.kind == APP) {
-      if (t.left.kind == ABS && t.right.kind == ABS) {
-        final Term a = t.right.left;
-        final boolean self = t.left.equals(t.right);
+    while (t.mKind == APP) {
+      if (t.mLeft.mKind == ABS && t.mRight.mKind == ABS) {
+        final Term a = t.mRight.mLeft;
+        final boolean self = t.mLeft.equals(t.mRight);
         if (self && a.equals(app(x, abs(app(y, app(x, app(x, abs(y)))))))) {
           // A X=X W(X), W(U)V=U(V H(V)), H(V)=V K(V).
           // Close the grammar under application and H as well as
@@ -271,9 +271,9 @@ public final class BinaryLambdaCensus {
           // ->* T_1. The loop adds an inert trailing argument.
           return true;
         }
-        if (self && a.kind == APP && a.left.kind == APP && a.left.left.kind == 0 && a.left.right.kind >= 1) {
+        if (self && a.mKind == APP && a.mLeft.mKind == APP && a.mLeft.mLeft.mKind == 0 && a.mLeft.mRight.mKind >= 1) {
           final Term kx = abs(y);
-          if (a.right.equals(app(x, kx)) || a.right.equals(app(x, app(x, kx)))) {
+          if (a.mRight.equals(app(x, kx)) || a.mRight.equals(app(x, app(x, kx)))) {
             // A X = X r H^m(X), where H(X)=X K(X) only at the
             // innermost step: the tail is X K(X) or X(X K(X)).
             // A K(A) reduces to A A (the constant drops r).
@@ -361,8 +361,8 @@ public final class BinaryLambdaCensus {
           // The symbolic stages are the BB35Spine re-entry proof.
           return true;
         }
-        if (self && a.kind == ABS && a.left.kind == APP && a.left.left.kind >= 2
-          && a.left.right.equals(app(y, app(y, y)))) {
+        if (self && a.mKind == ABS && a.mLeft.mKind == APP && a.mLeft.mLeft.mKind >= 2
+          && a.mLeft.mRight.equals(app(y, app(y, y)))) {
           // A x y = r(x(x x)) for rigid r. With T = A(A A),
           // A A -> lambda _. r T, and T ->* lambda _. r(r T).
           // The repeated demand for T cannot be erased by extra
@@ -423,17 +423,17 @@ public final class BinaryLambdaCensus {
           // its input onto the spine, restoring the pair C D.
           return true;
         }
-        if (t.left.left.equals(app(x, abs(y))) && a.equals(app(app(x, x), abs(app(x, y))))) {
+        if (t.mLeft.mLeft.equals(app(x, abs(y))) && a.equals(app(app(x, x), abs(app(x, y))))) {
           // B X = X X J(X), J(U) V = V U. Put Q_i = J^i(K(B)).
           // The input B K(B) reaches B Q_1. Q_i Q_i head-reduces
           // to Q_(i-1) Q_(i-1), so B Q_i ->head* B Q_(i+1).
           return true;
         }
-        if (t.left.left.equals(app(app(x, x), abs(app(x, y)))) && a.equals(t.left)) {
+        if (t.mLeft.mLeft.equals(app(app(x, x), abs(app(x, y)))) && a.equals(t.mLeft)) {
           // Same reversal-tower invariant, already at B K(B).
           return true;
         }
-        if (self && a.kind == APP && a.nodes <= 128
+        if (self && a.mKind == APP && a.mNodes <= 128
           && (applicativeHead(a, 1L) || guardedApplication(a))) {
           // F is generated by A, applications, and the delayed
           // constructors recognized recursively above. Applying
@@ -448,7 +448,7 @@ public final class BinaryLambdaCensus {
           return true;
         }
       }
-      t = t.left;
+      t = t.mLeft;
     }
     return false;
   }
@@ -460,22 +460,22 @@ public final class BinaryLambdaCensus {
     if (delayedSelfApplication(t)) {
       return true;
     }
-    if (t.kind != APP || t.left.kind != ABS || t.right.kind != ABS) {
+    if (t.mKind != APP || t.mLeft.mKind != ABS || t.mRight.mKind != ABS) {
       return false;
     }
     final Term v0 = new Term(0, null, null);
     final Term v1 = new Term(1, null, null);
     final Term v2 = new Term(2, null, null);
     final Term duplicator = app(v0, v0);
-    final Term a = t.right.left;
-    if (t.left.equals(t.right) && a.equals(abs(app(v0, app(app(v1, v1), app(v1, v0)))))) {
+    final Term a = t.mRight.mLeft;
+    if (t.mLeft.equals(t.mRight) && a.equals(abs(app(v0, app(app(v1, v1), app(v1, v0)))))) {
       // A X Y=Y((X X)(X Y)). A A exposes under its lambda
       // a rigid Y applied to P(Y), where P(U)=(A A)(A U).
       // P(U) ->head* (A U)P(A U) ->head P(A U) with an
       // extra argument. Inductively the argument cannot normalize.
       return true;
     }
-    if (t.left.left.equals(app(duplicator, v0))) {
+    if (t.mLeft.mLeft.equals(app(duplicator, v0))) {
       // A x y = (x y)(x y), T_0=A, T_(i+1)=A T_i.
       // A A T_i ->* T_(i+1) T_(i+1) ->* A A T_(i+1) with
       // extra trailing arguments. Each unfolding before the milestone is
@@ -521,7 +521,7 @@ public final class BinaryLambdaCensus {
         // Derive and replay the two finite spine certificates,
         // contracting only beta-redexes with an unused binder
         // between counted head steps.
-        final Term b = t.right;
+        final Term b = t.mRight;
         final Term t1 = app(b, abs(b));
         final Term t2 = app(t1, abs(t1));
         final Term t3 = app(t2, abs(t2));
@@ -530,7 +530,7 @@ public final class BinaryLambdaCensus {
       }
       return false;
     }
-    if (!t.left.left.equals(duplicator)) {
+    if (!t.mLeft.mLeft.equals(duplicator)) {
       return false;
     }
     if (a.equals(abs(app(v0, app(v1, app(v1, abs(v2))))))) {
@@ -565,53 +565,53 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean closed(final Term t, final int depth) {
-    if (t.kind >= 0) {
-      return t.kind < depth;
+    if (t.mKind >= 0) {
+      return t.mKind < depth;
     }
-    if (t.kind == ABS) {
-      return closed(t.left, depth + 1);
+    if (t.mKind == ABS) {
+      return closed(t.mLeft, depth + 1);
     }
-    if (t.kind == APP) {
-      return closed(t.left, depth) && closed(t.right, depth);
+    if (t.mKind == APP) {
+      return closed(t.mLeft, depth) && closed(t.mRight, depth);
     }
     // A tower marker stands for a closed term. An unrestricted hole,
     // on the other hand, must not be a base term or a wrapper.
-    return t.kind == TOWER || t.kind <= RIGID;
+    return t.mKind == TOWER || t.mKind <= RIGID;
   }
 
   // Fixed ambient variables can be made atoms for the proof search.
   // Unlike a local de Bruijn index, an atom cannot be captured or moved
   // by a binder. The proof decodes each atom as its distinct free name.
   private static Term freezeFree(final Term t, final int depth) {
-    if (t.kind >= 0) {
-      return t.kind < depth ? t : new Term(RIGID - (t.kind - depth), null, null);
+    if (t.mKind >= 0) {
+      return t.mKind < depth ? t : new Term(RIGID - (t.mKind - depth), null, null);
     }
-    if (t.kind == ABS) {
-      final Term b = freezeFree(t.left, depth + 1);
-      return b == t.left ? t : new Term(ABS, b, null);
+    if (t.mKind == ABS) {
+      final Term b = freezeFree(t.mLeft, depth + 1);
+      return b == t.mLeft ? t : new Term(ABS, b, null);
     }
-    if (t.kind == APP) {
-      final Term l = freezeFree(t.left, depth);
-      final Term r = freezeFree(t.right, depth);
-      return l == t.left && r == t.right ? t : app(l, r);
+    if (t.mKind == APP) {
+      final Term l = freezeFree(t.mLeft, depth);
+      final Term r = freezeFree(t.mRight, depth);
+      return l == t.mLeft && r == t.mRight ? t : app(l, r);
     }
     return t;
   }
 
   private static int markers(final Term t) {
-    return t.kind == TOWER ? 1 : t.kind == ABS ? markers(t.left)
-      : t.kind == APP ? markers(t.left) + markers(t.right) : 0;
+    return t.mKind == TOWER ? 1 : t.mKind == ABS ? markers(t.mLeft)
+      : t.mKind == APP ? markers(t.mLeft) + markers(t.mRight) : 0;
   }
 
   private static void wrappers(final Term t, final Set<Term> found) {
-    if (t.kind == ABS || t.kind == APP) {
+    if (t.mKind == ABS || t.mKind == APP) {
       final int holes = markers(t);
       if (holes > 0 && holes <= 2 && closed(t, 0)) {
         found.add(t);
       }
-      wrappers(t.left, found);
-      if (t.kind == APP) {
-        wrappers(t.right, found);
+      wrappers(t.mLeft, found);
+      if (t.mKind == APP) {
+        wrappers(t.mRight, found);
       }
     }
   }
@@ -621,9 +621,9 @@ public final class BinaryLambdaCensus {
   }
 
   private static final class TowerGrammar {
-    final List<Term> productions;
-    final Map<Term, Boolean> membership = new HashMap<>();
-    private int fuel = 150_000;
+    final List<Term> mProductions;
+    final Map<Term, Boolean> mMembership = new HashMap<>();
+    private int mFuel = 150_000;
 
     TowerGrammar(final Term base, final Term wrapper, final Term other, final boolean applications) {
       final List<Term> rules = new ArrayList<>();
@@ -635,25 +635,25 @@ public final class BinaryLambdaCensus {
       if (applications) {
         rules.add(app(TOWER_MEMBER, TOWER_MEMBER));
       }
-      productions = List.copyOf(rules);
+      mProductions = List.copyOf(rules);
     }
 
     boolean accepts(final Term t) {
-      if (t.kind == TOWER) {
+      if (t.mKind == TOWER) {
         return true;
       }
-      if (fuel <= 0 || t.nodes > MAX_PROOF_NODES) {
+      if (mFuel <= 0 || t.mNodes > MAX_PROOF_NODES) {
         return false;
       }
-      final Boolean cached = membership.get(t);
+      final Boolean cached = mMembership.get(t);
       if (cached != null) {
         return cached;
       }
-      if (t.equals(productions.get(0))) {
+      if (t.equals(mProductions.get(0))) {
         return true;
       }
-      for (int i = 1; i < productions.size(); ++i) {
-        if (accepts(productions.get(i), t)) {
+      for (int i = 1; i < mProductions.size(); ++i) {
+        if (accepts(mProductions.get(i), t)) {
           remember(t, true);
           return true;
         }
@@ -663,38 +663,38 @@ public final class BinaryLambdaCensus {
     }
 
     void remember(final Term t, final boolean value) {
-      if (membership.size() < 32_768) {
-        membership.put(t, value);
+      if (mMembership.size() < 32_768) {
+        mMembership.put(t, value);
       }
     }
 
     boolean accepts(final Term pattern, final Term t) {
       // This is a proof search cap. A missed match cannot certify a loop.
-      if (--fuel <= 0) {
+      if (--mFuel <= 0) {
         return false;
       }
-      if (pattern.kind == TOWER) {
+      if (pattern.mKind == TOWER) {
         return accepts(t);
       }
-      return pattern.kind == t.kind && (pattern.kind >= 0 || pattern.kind <= RIGID
-        || accepts(pattern.left, t.left) && (pattern.kind != APP || accepts(pattern.right, t.right)));
+      return pattern.mKind == t.mKind && (pattern.mKind >= 0 || pattern.mKind <= RIGID
+        || accepts(pattern.mLeft, t.mLeft) && (pattern.mKind != APP || accepts(pattern.mRight, t.mRight)));
     }
 
     List<Term> split(final Term t) {
-      if (t.kind == TOWER) {
-        return productions;
+      if (t.mKind == TOWER) {
+        return mProductions;
       }
-      if (t.kind == ABS) {
+      if (t.mKind == ABS) {
         final List<Term> out = new ArrayList<>();
-        for (final Term b : split(t.left)) {
+        for (final Term b : split(t.mLeft)) {
           out.add(new Term(ABS, b, null));
         }
         return out;
       }
-      if (t.kind == APP) {
+      if (t.mKind == APP) {
         final List<Term> out = new ArrayList<>();
-        final List<Term> right = split(t.right);
-        for (final Term l : split(t.left)) {
+        final List<Term> right = split(t.mRight);
+        for (final Term l : split(t.mLeft)) {
           for (final Term r : right) {
             out.add(app(l, r));
           }
@@ -726,7 +726,7 @@ public final class BinaryLambdaCensus {
         return true;
       }
       for (final Term v : strictSuccessors(t)) {
-        if (v.nodes > MAX_PROOF_NODES) {
+        if (v.mNodes > MAX_PROOF_NODES) {
           continue;
         }
         if (grammar.accepts(pattern, v)) {
@@ -741,7 +741,7 @@ public final class BinaryLambdaCensus {
         final Set<Term> seen = progressed ? pendingStrict : pendingLoose;
         try {
           reductions(t, new Normalizer(96), 0, v -> {
-            if (v.nodes > MAX_PROOF_NODES) {
+            if (v.mNodes > MAX_PROOF_NODES) {
               return;
             }
             if (progressed && grammar.accepts(pattern, v)) {
@@ -774,25 +774,25 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean hasHeadPrefix(final TowerGrammar grammar, final Term pattern, Term t) {
-    while (t.kind == APP) {
+    while (t.mKind == APP) {
       if (grammar.accepts(pattern, t)) {
         return true;
       }
-      t = t.left;
+      t = t.mLeft;
     }
     return false;
   }
 
   private static Term weakStep(final Term t, final Normalizer worker, final int height) {
     worker.charge(height);
-    if (t.kind != APP) {
+    if (t.mKind != APP) {
       return null;
     }
-    if (t.left.kind == ABS) {
-      return worker.substitute(t.left.left, t.right, 0, height + 1);
+    if (t.mLeft.mKind == ABS) {
+      return worker.substitute(t.mLeft.mLeft, t.mRight, 0, height + 1);
     }
-    final Term l = weakStep(t.left, worker, height + 1);
-    return l == null ? null : app(l, t.right);
+    final Term l = weakStep(t.mLeft, worker, height + 1);
+    return l == null ? null : app(l, t.mRight);
   }
 
   // A weak-head contraction is a spine contraction and remains one
@@ -802,11 +802,11 @@ public final class BinaryLambdaCensus {
   private static boolean headReturn(final Term start, final Predicate<Term> returns) {
     try {
       final Term first = weakStep(start, new Normalizer(512), 0);
-      if (first == null || first.kind != APP || first.nodes > MAX_PROOF_NODES) {
+      if (first == null || first.mKind != APP || first.mNodes > MAX_PROOF_NODES) {
         return false;
       }
       final Set<Term> seen = new HashSet<>();
-      final Queue<Term> queue = new PriorityQueue<>(Comparator.comparingInt(u -> u.nodes));
+      final Queue<Term> queue = new PriorityQueue<>(Comparator.comparingInt(u -> u.mNodes));
       seen.add(first);
       queue.add(first);
       for (int explored = 0; explored < 192 && !queue.isEmpty(); ++explored) {
@@ -816,7 +816,7 @@ public final class BinaryLambdaCensus {
         }
         try {
           reductions(t, new Normalizer(320), 0, u -> {
-            if (u.kind == APP && u.nodes <= MAX_PROOF_NODES) {
+            if (u.mKind == APP && u.mNodes <= MAX_PROOF_NODES) {
               if (returns.test(u)) {
                 throw CYCLE;
               }
@@ -846,26 +846,26 @@ public final class BinaryLambdaCensus {
     if (SPINE_LOOPS.isEmpty()) {
       return false;
     }
-    while (t.kind == APP) {
+    while (t.mKind == APP) {
       if (SPINE_LOOPS.contains(t)) {
         return true;
       }
-      t = t.left;
+      t = t.mLeft;
     }
     return false;
   }
 
   private static boolean headLasso(Term t) {
-    while (t.kind == ABS) {
-      t = t.left;
+    while (t.mKind == ABS) {
+      t = t.mLeft;
     }
-    for (int i = 0; i < 5 && t != null && t.kind == APP; ++i) {
+    for (int i = 0; i < 5 && t != null && t.mKind == APP; ++i) {
       final Term seed = t;
       if (hasSpineLoop(seed)) {
         return true;
       }
       if (headReturn(seed, candidate -> {
-        for (Term u = candidate; u.kind == APP; u = u.left) {
+        for (Term u = candidate; u.mKind == APP; u = u.mLeft) {
           if (u.equals(seed)) {
             return true;
           }
@@ -883,11 +883,11 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean matchesHead(Term t, final Term pattern) {
-    while (t.kind == APP) {
+    while (t.mKind == APP) {
       if (matches(pattern, t, 0)) {
         return true;
       }
-      t = t.left;
+      t = t.mLeft;
     }
     return false;
   }
@@ -898,7 +898,7 @@ public final class BinaryLambdaCensus {
     try {
       for (int i = 0; i < 18; ++i) {
         t = weakStep(t, worker, 0);
-        if (t == null || t.nodes > MAX_PROOF_NODES) {
+        if (t == null || t.mNodes > MAX_PROOF_NODES) {
           return false;
         }
         if (matchesHead(t, pattern)) {
@@ -921,11 +921,11 @@ public final class BinaryLambdaCensus {
     queue.add(original);
     while (!queue.isEmpty()) {
       final Term t = queue.remove();
-      for (Term prefix = t; prefix.kind == APP; prefix = prefix.left) {
-        if (prefix.left.kind == APP) {
-          final Term pattern = app(prefix.left, PAYLOAD);
+      for (Term prefix = t; prefix.mKind == APP; prefix = prefix.mLeft) {
+        if (prefix.mLeft.mKind == APP) {
+          final Term pattern = app(prefix.mLeft, PAYLOAD);
           if (tried.add(pattern) && headPump(pattern)) {
-            if (prefix.nodes <= 256 && SPINE_LOOPS.size() < 4096) {
+            if (prefix.mNodes <= 256 && SPINE_LOOPS.size() < 4096) {
               SPINE_LOOPS.add(prefix);
             }
             return true;
@@ -933,7 +933,7 @@ public final class BinaryLambdaCensus {
         }
       }
       for (final Term u : strictSuccessors(t)) {
-        if (u.nodes <= 256 && reached.size() < 24 && reached.add(u)) {
+        if (u.mNodes <= 256 && reached.size() < 24 && reached.add(u)) {
           queue.add(u);
         }
       }
@@ -965,14 +965,14 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean towerHeadCase(final TowerGrammar grammar, final List<Term> patterns, Term t) {
-      if (t.kind == APP && headInFamily(grammar, patterns, t.left)) {
+      if (t.mKind == APP && headInFamily(grammar, patterns, t.mLeft)) {
         return true;
       }
       final Normalizer worker = new Normalizer(480);
       try {
         for (int i = 0; i < 24; ++i) {
           t = weakStep(t, worker, 0);
-          if (t == null || t.nodes > MAX_PROOF_NODES) {
+          if (t == null || t.mNodes > MAX_PROOF_NODES) {
             break;
           }
           if (headInFamily(grammar, patterns, t)) {
@@ -989,16 +989,16 @@ public final class BinaryLambdaCensus {
 
   private static boolean towerDiverges(final Term original) {
     Term t = original;
-    while (t.kind == ABS) {
-      t = t.left; // A lambda body must normalize.
+    while (t.mKind == ABS) {
+      t = t.mLeft; // A lambda body must normalize.
     }
     t = freezeFree(t, 0);
-    if (t.kind != APP || t.right.kind != ABS || !closed(t.right, 0)) {
+    if (t.mKind != APP || t.mRight.mKind != ABS || !closed(t.mRight, 0)) {
       return false;
     }
-    final Term base = t.right;
+    final Term base = t.mRight;
     final Set<Term> ws = new LinkedHashSet<>();
-    wrappers(new Normalizer(320).substitute(base.left, TOWER_MEMBER, 0, 0), ws);
+    wrappers(new Normalizer(320).substitute(base.mLeft, TOWER_MEMBER, 0, 0), ws);
     if (ws.isEmpty()) {
       return false;
     }
@@ -1008,7 +1008,7 @@ public final class BinaryLambdaCensus {
     reached.add(t);
     for (int i = 0; i < landings.size(); ++i) {
       for (final Term u : strictSuccessors(landings.get(i))) {
-        if (u.nodes <= 512 && landings.size() < 32 && reached.add(u)) {
+        if (u.mNodes <= 512 && landings.size() < 32 && reached.add(u)) {
           landings.add(u);
         }
       }
@@ -1064,13 +1064,13 @@ public final class BinaryLambdaCensus {
   }
 
   private static Term replaceTower(final Term t, final Term value) {
-    if (t.kind == TOWER) {
+    if (t.mKind == TOWER) {
       return value;
     }
-    if (t.kind == ABS) {
-      return new Term(ABS, replaceTower(t.left, value), null);
+    if (t.mKind == ABS) {
+      return new Term(ABS, replaceTower(t.mLeft, value), null);
     }
-    return t.kind == APP ? app(replaceTower(t.left, value), replaceTower(t.right, value)) : t;
+    return t.mKind == APP ? app(replaceTower(t.mLeft, value), replaceTower(t.mRight, value)) : t;
   }
 
   // For A = lambda x. x (x (lambda y z. x y)), put K(U)=lambda z.U,
@@ -1085,20 +1085,20 @@ public final class BinaryLambdaCensus {
   // using the i=1 case. A normal form of A A would therefore give
   // normal forms of strictly decreasing size for A T_2, A T_3, ...
   private static boolean doubleDelay(final Term a) {
-    final Term body = a.left;
-    if (body.kind != APP || body.left.kind != 0 || body.right.kind != APP
-      || body.right.left.kind != 0) {
+    final Term body = a.mLeft;
+    if (body.mKind != APP || body.mLeft.mKind != 0 || body.mRight.mKind != APP
+      || body.mRight.mLeft.mKind != 0) {
       return false;
     }
-    final Term w = body.right.right;
-    return w.kind == ABS && w.left.kind == ABS && w.left.left.kind == APP
-      && w.left.left.left.kind == 2 && w.left.left.right.kind == 1;
+    final Term w = body.mRight.mRight;
+    return w.mKind == ABS && w.mLeft.mKind == ABS && w.mLeft.mLeft.mKind == APP
+      && w.mLeft.mLeft.mLeft.mKind == 2 && w.mLeft.mLeft.mRight.mKind == 1;
   }
 
   private static void rememberHeadLandings(final List<Term> landings, final TowerGrammar grammar,
                                            final List<Term> patterns) {
     for (final Term t : landings) {
-      if (t.kind == APP && t.nodes <= 288 && SPINE_LOOPS.size() < 4096 && headInFamily(grammar, patterns, t)) {
+      if (t.mKind == APP && t.mNodes <= 288 && SPINE_LOOPS.size() < 4096 && headInFamily(grammar, patterns, t)) {
         SPINE_LOOPS.add(t);
       }
     }
@@ -1108,35 +1108,35 @@ public final class BinaryLambdaCensus {
   // surrounding it in the template. This is what makes substitution
   // and shifts on an uninspected symbolic hole capture-safe.
   private static boolean avoidsBinders(final Term t, final int binders, final int inner) {
-    if (binders == 0 || t.kind == HOLE || t.kind == NEUTRAL || t.kind <= RIGID) {
+    if (binders == 0 || t.mKind == HOLE || t.mKind == NEUTRAL || t.mKind <= RIGID) {
       return true;
     }
-    if (t.kind >= 0) {
-      return t.kind < inner || t.kind - inner >= binders;
+    if (t.mKind >= 0) {
+      return t.mKind < inner || t.mKind - inner >= binders;
     }
-    if (t.kind == ABS) {
-      return avoidsBinders(t.left, binders, inner + 1);
+    if (t.mKind == ABS) {
+      return avoidsBinders(t.mLeft, binders, inner + 1);
     }
-    return avoidsBinders(t.left, binders, inner) && avoidsBinders(t.right, binders, inner);
+    return avoidsBinders(t.mLeft, binders, inner) && avoidsBinders(t.mRight, binders, inner);
   }
 
   private static boolean matches(final Term pattern, final Term t, final int depth) {
-    if (pattern.kind == HOLE) {
+    if (pattern.mKind == HOLE) {
       return avoidsBinders(t, depth, 0);
     }
-    if (pattern.kind == NEUTRAL) {
+    if (pattern.mKind == NEUTRAL) {
       return hasNeutralHead(t, depth) && avoidsBinders(t, depth, 0);
     }
-    return pattern.kind == t.kind && (pattern.kind >= 0
-      || matches(pattern.left, t.left, depth + (pattern.kind == ABS ? 1 : 0))
-        && (pattern.kind != APP || matches(pattern.right, t.right, depth)));
+    return pattern.mKind == t.mKind && (pattern.mKind >= 0
+      || matches(pattern.mLeft, t.mLeft, depth + (pattern.mKind == ABS ? 1 : 0))
+        && (pattern.mKind != APP || matches(pattern.mRight, t.mRight, depth)));
   }
 
   private static boolean hasNeutralHead(Term t, final int depth) {
-    while (t.kind == APP) {
-      t = t.left;
+    while (t.mKind == APP) {
+      t = t.mLeft;
     }
-    return t.kind >= depth || t.kind == NEUTRAL || t.kind <= RIGID;
+    return t.mKind >= depth || t.mKind == NEUTRAL || t.mKind <= RIGID;
   }
 
   // In a rigid-headed term the arguments must normalize, even if they
@@ -1151,22 +1151,22 @@ public final class BinaryLambdaCensus {
     seen.add(root);
     while (!pending.isEmpty()) {
       final Term t = pending.remove();
-      if (t.kind == APP) {
-        if (hasNeutralHead(t.right, 0)) {
-          final Term pattern = app(t.left, NEUTRAL_PAYLOAD);
+      if (t.mKind == APP) {
+        if (hasNeutralHead(t.mRight, 0)) {
+          final Term pattern = app(t.mLeft, NEUTRAL_PAYLOAD);
           if (tried.add(pattern) && checkPump(pattern)) {
             return true;
           }
         }
-        if (t.left.kind == APP && hasNeutralHead(t.left.right, 0)) {
-          final Term pattern = app(app(t.left.left, NEUTRAL_PAYLOAD), t.right);
+        if (t.mLeft.mKind == APP && hasNeutralHead(t.mLeft.mRight, 0)) {
+          final Term pattern = app(app(t.mLeft.mLeft, NEUTRAL_PAYLOAD), t.mRight);
           if (tried.add(pattern) && checkPump(pattern)) {
             return true;
           }
         }
       }
       for (final Term u : strictSuccessors(t)) {
-        if (u.nodes <= 512 && seen.size() < 40) {
+        if (u.mNodes <= 512 && seen.size() < 40) {
           final Term v = renameFree(u);
           if (seen.add(v)) {
             pending.add(v);
@@ -1181,12 +1181,12 @@ public final class BinaryLambdaCensus {
     if (a.equals(b)) {
       return a;
     }
-    if (a.kind == b.kind && a.kind < 0) {
-      final Term l = generalize(a.left, b.left, depth + (a.kind == ABS ? 1 : 0));
+    if (a.mKind == b.mKind && a.mKind < 0) {
+      final Term l = generalize(a.mLeft, b.mLeft, depth + (a.mKind == ABS ? 1 : 0));
       if (l != null) {
-        final Term r = a.kind == ABS ? null : generalize(a.right, b.right, depth);
-        if (a.kind == ABS || r != null) {
-          return new Term(a.kind, l, r);
+        final Term r = a.mKind == ABS ? null : generalize(a.mRight, b.mRight, depth);
+        if (a.mKind == ABS || r != null) {
+          return new Term(a.mKind, l, r);
         }
       }
     }
@@ -1224,7 +1224,7 @@ public final class BinaryLambdaCensus {
     queue.add(pattern);
     while (!queue.isEmpty()) {
       for (final Term t : strictSuccessors(queue.remove())) {
-        if (t.nodes > MAX_PROOF_NODES) {
+        if (t.mNodes > MAX_PROOF_NODES) {
           continue;
         }
         final Term u = renameFree(t);
@@ -1245,7 +1245,7 @@ public final class BinaryLambdaCensus {
     // Generated from strict descendants only, so every queued state
     // already has a strictly decreasing path from the pattern.
     for (final Term t : strictSuccessors(pattern)) {
-      if (t.nodes > MAX_PROOF_NODES) {
+      if (t.mNodes > MAX_PROOF_NODES) {
         continue;
       }
       final Term u = renameFree(t);
@@ -1254,7 +1254,7 @@ public final class BinaryLambdaCensus {
       }
     }
     final Consumer<Term> offer = t -> {
-      if (t.nodes > MAX_PROOF_NODES) {
+      if (t.mNodes > MAX_PROOF_NODES) {
         return;
       }
       final Term u = renameFree(t);
@@ -1295,15 +1295,15 @@ public final class BinaryLambdaCensus {
       final Term current = examples.get(i);
       for (int j = Math.max(0, i - 16); j < i; ++j) {
         final Term t = examples.get(j);
-        if (t.kind == current.kind && t.kind < 0) {
+        if (t.mKind == current.mKind && t.mKind < 0) {
           final Term pattern = generalize(t, current, 0);
-          if (pattern != null && pattern.kind != HOLE && tried.add(pattern) && checkPump(pattern)) {
+          if (pattern != null && pattern.mKind != HOLE && tried.add(pattern) && checkPump(pattern)) {
             return true;
           }
         }
       }
       for (final Term successor : strictSuccessors(current)) {
-        if (successor.nodes > MAX_PROOF_NODES) {
+        if (successor.mNodes > MAX_PROOF_NODES) {
           continue;
         }
         final Term next = renameFree(successor);
@@ -1344,8 +1344,8 @@ public final class BinaryLambdaCensus {
         return true;
       }
       if (!useEta) {
-        for (Term h = t; h.kind == APP; h = h.left) {
-          if (h.nodes <= 128 && h.left.kind == ABS && h.left.equals(h.right)
+        for (Term h = t; h.mKind == APP; h = h.mLeft) {
+          if (h.mNodes <= 128 && h.mLeft.mKind == ABS && h.mLeft.equals(h.mRight)
             && testedHeads.add(h) && headEmbeds(h)) {
             return true;
           }
@@ -1392,12 +1392,12 @@ public final class BinaryLambdaCensus {
       try {
         final Normalizer worker = new Normalizer(512);
         final Term next = useEta ? spine(t, worker, 0) : leftmost(t, worker, 0);
-        if (next != null && next.nodes <= MAX_PROOF_NODES && reaches(renameFree(next), t, edges)) {
+        if (next != null && next.mNodes <= MAX_PROOF_NODES && reaches(renameFree(next), t, edges)) {
           return true;
         }
-        if (!useEta && !useDemands && t.kind == APP) {
+        if (!useEta && !useDemands && t.mKind == APP) {
           final Term headStep = spine(t, worker, 0);
-          if (headStep != null && headStep.nodes <= MAX_PROOF_NODES
+          if (headStep != null && headStep.mNodes <= MAX_PROOF_NODES
             && reaches(renameFree(headStep), t, edges, true)) {
             return true;
           }
@@ -1416,13 +1416,13 @@ public final class BinaryLambdaCensus {
   private static boolean headEmbeds(final Term target) {
     try {
       final Term first = spine(target, new Normalizer(512), 0);
-      final Queue<Term> queue = new PriorityQueue<>(Comparator.comparingInt(u -> u.nodes));
+      final Queue<Term> queue = new PriorityQueue<>(Comparator.comparingInt(u -> u.mNodes));
       final Set<Term> seen = new HashSet<>();
       queue.add(first);
       seen.add(first);
       final Term small = squashIdentities(first);
       Term fast = small;
-      for (int steps = 0; fast != null && fast.kind == APP && fast.nodes <= 512 && steps < 8; ++steps) {
+      for (int steps = 0; fast != null && fast.mKind == APP && fast.mNodes <= 512 && steps < 8; ++steps) {
         if (onHeadSpine(target, fast)) {
           return true;
         }
@@ -1442,7 +1442,7 @@ public final class BinaryLambdaCensus {
           return true;
         }
         reductions(t, new Normalizer(512), 0, u -> {
-          if (u.nodes <= 512 && seen.size() < 384 && seen.add(u)) {
+          if (u.mNodes <= 512 && seen.size() < 384 && seen.add(u)) {
             queue.add(u);
           }
         }, false);
@@ -1457,21 +1457,21 @@ public final class BinaryLambdaCensus {
 
   private static Term constReduce(final Term t, final Normalizer worker, final int depth) {
     worker.charge(depth);
-    if (t.kind != APP) {
+    if (t.mKind != APP) {
       return t;
     }
-    final Term l = constReduce(t.left, worker, depth + 1);
-    if (l.kind == ABS && !mentions(l.left, 0, worker, depth + 1)) {
-      return constReduce(worker.substitute(l.left, t.right, 0, depth + 1), worker, depth + 1);
+    final Term l = constReduce(t.mLeft, worker, depth + 1);
+    if (l.mKind == ABS && !mentions(l.mLeft, 0, worker, depth + 1)) {
+      return constReduce(worker.substitute(l.mLeft, t.mRight, 0, depth + 1), worker, depth + 1);
     }
-    final Term r = constReduce(t.right, worker, depth + 1);
-    return l == t.left && r == t.right ? t : app(l, r);
+    final Term r = constReduce(t.mRight, worker, depth + 1);
+    return l == t.mLeft && r == t.mRight ? t : app(l, r);
   }
 
   private static boolean entersHead(final Term start, final Term goal, final int limit) {
     try {
       Term t = start;
-      for (int i = 0; i < limit && t != null && t.kind == APP && t.nodes <= 4096; ++i) {
+      for (int i = 0; i < limit && t != null && t.mKind == APP && t.mNodes <= 4096; ++i) {
         final Normalizer worker = new Normalizer(20000);
         t = spine(t, worker, 0);
         if (t == null) {
@@ -1491,42 +1491,42 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean identity(final Term t) {
-    return t.kind == ABS && t.left.kind == 0;
+    return t.mKind == ABS && t.mLeft.mKind == 0;
   }
 
   private static boolean identityTree(final Term t) {
-    return t.kind == APP ? identityTree(t.left) && identityTree(t.right)
-      : t.kind == 0 || identity(t);
+    return t.mKind == APP ? identityTree(t.mLeft) && identityTree(t.mRight)
+      : t.mKind == 0 || identity(t);
   }
 
   private static Term squashIdentities(final Term t) {
-    if (t.kind != APP) {
+    if (t.mKind != APP) {
       return t;
     }
-    final Term l = squashIdentities(t.left);
-    final Term r = squashIdentities(t.right);
+    final Term l = squashIdentities(t.mLeft);
+    final Term r = squashIdentities(t.mRight);
     if (identity(l)) {
       return r;
     }
-    if (l.kind == ABS && identity(r) && identityTree(l.left)) {
+    if (l.mKind == ABS && identity(r) && identityTree(l.mLeft)) {
       return r; // Substituting I gives an applicative tree of I only.
     }
-    return l == t.left && r == t.right ? t : app(l, r);
+    return l == t.mLeft && r == t.mRight ? t : app(l, r);
   }
 
   private static Term shortenSpines(final Term t) {
-    if (t.kind != APP || t.nodes > 512) {
+    if (t.mKind != APP || t.mNodes > 512) {
       return t;
     }
-    final Term l = shortenSpines(t.left);
-    final Term r = shortenSpines(t.right);
-    Term best = l == t.left && r == t.right ? t : app(l, r);
+    final Term l = shortenSpines(t.mLeft);
+    final Term r = shortenSpines(t.mRight);
+    Term best = l == t.mLeft && r == t.mRight ? t : app(l, r);
     try {
       Term trial = best;
       final Normalizer worker = new Normalizer(512);
-      for (int n = 0; n < 12 && trial != null && trial.kind == APP && trial.nodes <= 512; ++n) {
+      for (int n = 0; n < 12 && trial != null && trial.mKind == APP && trial.mNodes <= 512; ++n) {
         trial = spine(trial, worker, 0);
-        if (trial != null && trial.nodes < best.nodes) {
+        if (trial != null && trial.mNodes < best.mNodes) {
           best = trial;
         }
       }
@@ -1540,27 +1540,27 @@ public final class BinaryLambdaCensus {
 
   private static boolean mentions(final Term t, final int i, final Normalizer worker, final int height) {
     worker.charge(height);
-    return t.kind >= 0 ? t.kind == i : t.kind == ABS
-      ? mentions(t.left, i + 1, worker, height + 1)
-      : mentions(t.left, i, worker, height + 1) || mentions(t.right, i, worker, height + 1);
+    return t.mKind >= 0 ? t.mKind == i : t.mKind == ABS
+      ? mentions(t.mLeft, i + 1, worker, height + 1)
+      : mentions(t.mLeft, i, worker, height + 1) || mentions(t.mRight, i, worker, height + 1);
   }
 
   private static boolean etaRedex(final Term t, final Normalizer worker, final int height) {
-    return t.kind == ABS && t.left.kind == APP && t.left.right.kind == 0
-      && !mentions(t.left.left, 0, worker, height + 1);
+    return t.mKind == ABS && t.mLeft.mKind == APP && t.mLeft.mRight.mKind == 0
+      && !mentions(t.mLeft.mLeft, 0, worker, height + 1);
   }
 
   private static Term etaShrink(final Term t, final Normalizer worker, final int height) {
     worker.charge(height);
-    if (t.kind == ABS) {
-      final Term basis = etaShrink(t.left, worker, height + 1);
-      final Term u = basis == t.left ? t : new Term(ABS, basis, null);
-      return etaRedex(u, worker, height + 1) ? worker.substitute(u.left.left, PAYLOAD, 0, height + 1) : u;
+    if (t.mKind == ABS) {
+      final Term basis = etaShrink(t.mLeft, worker, height + 1);
+      final Term u = basis == t.mLeft ? t : new Term(ABS, basis, null);
+      return etaRedex(u, worker, height + 1) ? worker.substitute(u.mLeft.mLeft, PAYLOAD, 0, height + 1) : u;
     }
-    if (t.kind == APP) {
-      final Term l = etaShrink(t.left, worker, height + 1);
-      final Term r = etaShrink(t.right, worker, height + 1);
-      return l == t.left && r == t.right ? t : app(l, r);
+    if (t.mKind == APP) {
+      final Term l = etaShrink(t.mLeft, worker, height + 1);
+      final Term r = etaShrink(t.mRight, worker, height + 1);
+      return l == t.mLeft && r == t.mRight ? t : app(l, r);
     }
     return t;
   }
@@ -1576,10 +1576,10 @@ public final class BinaryLambdaCensus {
       final Normalizer worker = new Normalizer(1400);
       for (int i = 0; i < 32; ++i) {
         final Term head = worker.weakHead(t, 0, false);
-        if (head.kind != ABS) {
+        if (head.mKind != ABS) {
           return false;
         }
-        t = head.left;
+        t = head.mLeft;
       }
     } catch (final Verdict v) {
       if (v == CYCLE) {
@@ -1598,26 +1598,26 @@ public final class BinaryLambdaCensus {
   // be eta-normalized, so an infinite spine cycle excludes a beta NF.
   private static Term spine(final Term t, final Normalizer worker, final int height) {
     worker.charge(height);
-    if (t.kind == ABS) {
+    if (t.mKind == ABS) {
       if (etaRedex(t, worker, height + 1)) {
-        return worker.substitute(t.left.left, PAYLOAD, 0, height + 1);
+        return worker.substitute(t.mLeft.mLeft, PAYLOAD, 0, height + 1);
       }
-      final Term b = spine(t.left, worker, height + 1);
+      final Term b = spine(t.mLeft, worker, height + 1);
       return b == null ? null : new Term(ABS, b, null);
     }
-    if (t.kind == APP) {
-      if (t.left.kind == ABS) {
-        return worker.substitute(t.left.left, t.right, 0, height + 1);
+    if (t.mKind == APP) {
+      if (t.mLeft.mKind == ABS) {
+        return worker.substitute(t.mLeft.mLeft, t.mRight, 0, height + 1);
       }
-      final Term l = spine(t.left, worker, height + 1);
-      return l == null ? null : new Term(APP, l, t.right);
+      final Term l = spine(t.mLeft, worker, height + 1);
+      return l == null ? null : new Term(APP, l, t.mRight);
     }
     return null;
   }
 
   private static boolean offer(final Term t, final Set<Term> seen, final Queue<Term> queue, final List<Term> outgoing,
                                 final int maxGraph) {
-    if (t.nodes > MAX_PROOF_NODES) {
+    if (t.mNodes > MAX_PROOF_NODES) {
       return false;
     }
     final Term next = renameFree(t);
@@ -1634,19 +1634,19 @@ public final class BinaryLambdaCensus {
 
   private static BigInteger church(final Term t, final Normalizer worker, final int height) {
     worker.charge(height);
-    if (t.kind == ABS && t.left.kind == ABS) {
+    if (t.mKind == ABS && t.mLeft.mKind == ABS) {
       int n = 0;
-      Term body = t.left.left;
-      while (body.kind == APP && body.left.kind == 1) {
-        body = body.right;
+      Term body = t.mLeft.mLeft;
+      while (body.mKind == APP && body.mLeft.mKind == 1) {
+        body = body.mRight;
         ++n;
       }
-      return n > 0 && body.kind == 0 ? BigInteger.valueOf(n) : null;
+      return n > 0 && body.mKind == 0 ? BigInteger.valueOf(n) : null;
     }
-    if (t.kind == APP) {
-      final BigInteger a = church(t.left, worker, height + 1);
+    if (t.mKind == APP) {
+      final BigInteger a = church(t.mLeft, worker, height + 1);
       if (a != null) {
-        final BigInteger b = church(t.right, worker, height + 1);
+        final BigInteger b = church(t.mRight, worker, height + 1);
         // For positive Church numbers, C_a C_b beta-reduces to C_(b^a).
         if (BigInteger.ONE.equals(b)) {
           return b;
@@ -1655,8 +1655,8 @@ public final class BinaryLambdaCensus {
           return b.pow(a.intValueExact());
         }
       }
-      if (t.left.kind == ABS) {
-        return church(worker.substitute(t.left.left, t.right, 0, height + 1), worker, height + 1);
+      if (t.mLeft.mKind == ABS) {
+        return church(worker.substitute(t.mLeft.mLeft, t.mRight, 0, height + 1), worker, height + 1);
       }
     }
     return null;
@@ -1675,10 +1675,10 @@ public final class BinaryLambdaCensus {
             // n occurrences of index 1 (encoded as 110), then index 0.
             return n.multiply(BigInteger.valueOf(5)).add(BigInteger.valueOf(6L + extra));
           }
-          if (body.kind != ABS) {
+          if (body.mKind != ABS) {
             break;
           }
-          body = body.left;
+          body = body.mLeft;
         }
         t = leftmost(t, worker, 0);
       }
@@ -1697,36 +1697,36 @@ public final class BinaryLambdaCensus {
   // An injective relabeling of free variables preserves the number of LO
   // steps and the node count of a normal form (not its binary bit length).
   private static Term renameFree(final Term t, final int depth, final Map<Integer, Integer> names) {
-    if (t.kind == HOLE || t.kind == TOWER || t.kind == NEUTRAL) {
+    if (t.mKind == HOLE || t.mKind == TOWER || t.mKind == NEUTRAL) {
       return t;
     }
-    if (t.kind >= 0) {
-      if (t.kind < depth) {
+    if (t.mKind >= 0) {
+      if (t.mKind < depth) {
         return t;
       }
-      final int k = depth + names.computeIfAbsent(t.kind - depth, ignored -> names.size());
-      return k == t.kind ? t : new Term(k, null, null);
+      final int k = depth + names.computeIfAbsent(t.mKind - depth, ignored -> names.size());
+      return k == t.mKind ? t : new Term(k, null, null);
     }
-    if (t.kind == ABS) {
-      final Term body = renameFree(t.left, depth + 1, names);
-      return body == t.left ? t : new Term(ABS, body, null);
+    if (t.mKind == ABS) {
+      final Term body = renameFree(t.mLeft, depth + 1, names);
+      return body == t.mLeft ? t : new Term(ABS, body, null);
     }
-    final Term left = renameFree(t.left, depth, names);
-    final Term right = renameFree(t.right, depth, names);
-    return left == t.left && right == t.right ? t : new Term(APP, left, right);
+    final Term left = renameFree(t.mLeft, depth, names);
+    final Term right = renameFree(t.mRight, depth, names);
+    return left == t.mLeft && right == t.mRight ? t : new Term(APP, left, right);
   }
 
   private static void demandChildren(final Term t, final Consumer<Term> out) {
-    if (t.kind == ABS) {
-      out.accept(t.left);
-    } else if (t.kind == APP) {
+    if (t.mKind == ABS) {
+      out.accept(t.mLeft);
+    } else if (t.mKind == APP) {
       Term head = t;
-      while (head.kind == APP) {
-        head = head.left;
+      while (head.mKind == APP) {
+        head = head.mLeft;
       }
-      if (head.kind >= 0 || head.kind == NEUTRAL || head.kind <= RIGID) {
-        for (Term a = t; a.kind == APP; a = a.left) {
-          out.accept(a.right);
+      if (head.mKind >= 0 || head.mKind == NEUTRAL || head.mKind <= RIGID) {
+        for (Term a = t; a.mKind == APP; a = a.mLeft) {
+          out.accept(a.mRight);
         }
       }
     }
@@ -1734,25 +1734,25 @@ public final class BinaryLambdaCensus {
 
   private static Term leftmost(final Term t, final Normalizer worker, final int height) {
     worker.charge(height);
-    if (t.kind == HOLE || t.kind == TOWER || t.kind == NEUTRAL) {
+    if (t.mKind == HOLE || t.mKind == TOWER || t.mKind == NEUTRAL) {
       // An arbitrary payload could hide the actual leftmost redex or
       // change the outcome of the scan. No progress can be certified.
       throw LIMIT;
     }
-    if (t.kind == ABS) {
-      final Term b = leftmost(t.left, worker, height + 1);
+    if (t.mKind == ABS) {
+      final Term b = leftmost(t.mLeft, worker, height + 1);
       return b == null ? null : new Term(ABS, b, null);
     }
-    if (t.kind == APP) {
-      if (t.left.kind == ABS) {
-        return worker.substitute(t.left.left, t.right, 0, height + 1);
+    if (t.mKind == APP) {
+      if (t.mLeft.mKind == ABS) {
+        return worker.substitute(t.mLeft.mLeft, t.mRight, 0, height + 1);
       }
-      final Term l = leftmost(t.left, worker, height + 1);
+      final Term l = leftmost(t.mLeft, worker, height + 1);
       if (l != null) {
-        return new Term(APP, l, t.right);
+        return new Term(APP, l, t.mRight);
       }
-      final Term r = leftmost(t.right, worker, height + 1);
-      return r == null ? null : new Term(APP, t.left, r);
+      final Term r = leftmost(t.mRight, worker, height + 1);
+      return r == null ? null : new Term(APP, t.mLeft, r);
     }
     return null;
   }
@@ -1798,11 +1798,11 @@ public final class BinaryLambdaCensus {
   }
 
   private static boolean onHeadSpine(final Term target, Term t) {
-    while (t.kind == APP && t.nodes >= target.nodes) {
-      if (t.nodes == target.nodes && renameFree(t).equals(target)) {
+    while (t.mKind == APP && t.mNodes >= target.mNodes) {
+      if (t.mNodes == target.mNodes && renameFree(t).equals(target)) {
         return true;
       }
-      t = t.left;
+      t = t.mLeft;
     }
     return false;
   }
@@ -1855,14 +1855,14 @@ public final class BinaryLambdaCensus {
   private static final Verdict RETURNS_TAIL = new Verdict();
 
   private static final class Normalizer {
-    private final Set<Term> weak = new HashSet<>();
-    private final Set<Term> full = new HashSet<>();
-    private final Map<Term, Long> normalSizes;
-    private final Map<Term, Term> heads;
-    private final Map<Term, Term> appliedHeads;
-    private final Map<MemoKey, Term> shifts;
-    private final Map<MemoKey, Term> replacements;
-    private int fuel;
+    private final Set<Term> mWeak = new HashSet<>();
+    private final Set<Term> mFull = new HashSet<>();
+    private final Map<Term, Long> mNormalSizes;
+    private final Map<Term, Term> mHeads;
+    private final Map<Term, Term> mAppliedHeads;
+    private final Map<MemoKey, Term> mShifts;
+    private final Map<MemoKey, Term> mReplacements;
+    private int mFuel;
 
     private static final class MemoKey {
       private final Term mFirst;
@@ -1897,16 +1897,16 @@ public final class BinaryLambdaCensus {
     }
 
     Normalizer(final int budget, final boolean memoize) {
-      fuel = budget;
-      normalSizes = memoize ? new HashMap<>() : null;
-      heads = memoize ? new HashMap<>() : null;
-      appliedHeads = memoize ? new HashMap<>() : null;
-      shifts = memoize ? new HashMap<>() : null;
-      replacements = memoize ? new HashMap<>() : null;
+      mFuel = budget;
+      mNormalSizes = memoize ? new HashMap<>() : null;
+      mHeads = memoize ? new HashMap<>() : null;
+      mAppliedHeads = memoize ? new HashMap<>() : null;
+      mShifts = memoize ? new HashMap<>() : null;
+      mReplacements = memoize ? new HashMap<>() : null;
     }
 
     private void charge(final int height) {
-      if (--fuel < 0 || height > (normalSizes == null ? MAX_DEPTH : 1536)) {
+      if (--mFuel < 0 || height > (mNormalSizes == null ? MAX_DEPTH : 1536)) {
         throw LIMIT;
       }
     }
@@ -1916,70 +1916,70 @@ public final class BinaryLambdaCensus {
       if (by == 0) {
         return t;
       }
-      if (shifts == null) {
+      if (mShifts == null) {
         return shiftDirect(t, by, cut, height);
       }
       final MemoKey key = new MemoKey(t, null, by, cut);
-      final Term old = shifts.get(key);
+      final Term old = mShifts.get(key);
       if (old != null) {
         return old;
       }
       final Term result = shiftDirect(t, by, cut, height);
-      shifts.put(key, result);
+      mShifts.put(key, result);
       return result;
     }
 
     private Term shiftDirect(final Term t, final int by, final int cut, final int height) {
-      if (t.kind == HOLE || t.kind == TAIL || t.kind == TOWER || t.kind == NEUTRAL || t.kind <= RIGID) {
+      if (t.mKind == HOLE || t.mKind == TAIL || t.mKind == TOWER || t.mKind == NEUTRAL || t.mKind <= RIGID) {
         return t;
       }
-      if (t.kind >= 0) {
-        return t.kind < cut ? t : new Term(t.kind + by, null, null);
+      if (t.mKind >= 0) {
+        return t.mKind < cut ? t : new Term(t.mKind + by, null, null);
       }
-      if (t.kind == ABS) {
-        return new Term(ABS, shift(t.left, by, cut + 1, height + 1), null);
+      if (t.mKind == ABS) {
+        return new Term(ABS, shift(t.mLeft, by, cut + 1, height + 1), null);
       }
-      return new Term(APP, shift(t.left, by, cut, height + 1), shift(t.right, by, cut, height + 1));
+      return new Term(APP, shift(t.mLeft, by, cut, height + 1), shift(t.mRight, by, cut, height + 1));
     }
 
     private Term substitute(final Term t, final Term argument, final int depth, final int height) {
       charge(height);
-      if (replacements == null) {
+      if (mReplacements == null) {
         return substituteDirect(t, argument, depth, height);
       }
       final MemoKey key = new MemoKey(t, argument, depth, 0);
-      final Term old = replacements.get(key);
+      final Term old = mReplacements.get(key);
       if (old != null) {
         return old;
       }
       final Term result = substituteDirect(t, argument, depth, height);
-      replacements.put(key, result);
+      mReplacements.put(key, result);
       return result;
     }
 
     private Term substituteDirect(final Term t, final Term argument, final int depth, final int height) {
-      if (t.kind == HOLE || t.kind == TAIL || t.kind == TOWER || t.kind == NEUTRAL || t.kind <= RIGID) {
+      if (t.mKind == HOLE || t.mKind == TAIL || t.mKind == TOWER || t.mKind == NEUTRAL || t.mKind <= RIGID) {
         return t;
       }
-      if (t.kind >= 0) {
-        if (t.kind == depth) {
+      if (t.mKind >= 0) {
+        if (t.mKind == depth) {
           return depth == 0 ? argument : shift(argument, depth, 0, height + 1);
         }
-        return t.kind < depth ? t : new Term(t.kind - 1, null, null);
+        return t.mKind < depth ? t : new Term(t.mKind - 1, null, null);
       }
-      if (t.kind == ABS) {
-        return new Term(ABS, substitute(t.left, argument, depth + 1, height + 1), null);
+      if (t.mKind == ABS) {
+        return new Term(ABS, substitute(t.mLeft, argument, depth + 1, height + 1), null);
       }
-      return new Term(APP, substitute(t.left, argument, depth, height + 1),
-        substitute(t.right, argument, depth, height + 1));
+      return new Term(APP, substitute(t.mLeft, argument, depth, height + 1),
+        substitute(t.mRight, argument, depth, height + 1));
     }
 
     private Term weakHead(final Term t, final int height, final boolean applied) {
       charge(height);
-      if (heads == null || t.kind != APP) {
+      if (mHeads == null || t.mKind != APP) {
         return weakHeadDirect(t, height, applied);
       }
-      final Map<Term, Term> mem = applied ? appliedHeads : heads;
+      final Map<Term, Term> mem = applied ? mAppliedHeads : mHeads;
       final Term old = mem.get(t);
       if (old != null) {
         return old;
@@ -1990,91 +1990,91 @@ public final class BinaryLambdaCensus {
     }
 
     private Term weakHeadDirect(final Term t, final int height, final boolean applied) {
-      if (t.kind == TAIL) {
+      if (t.mKind == TAIL) {
         throw applied ? NEED_BIT : RETURNS_TAIL;
       }
-      if (t.kind == HOLE) {
+      if (t.mKind == HOLE) {
         throw LIMIT;
       }
-      if (t.kind != APP) {
+      if (t.mKind != APP) {
         return t;
       }
-      if (!weak.add(t)) {
+      if (!mWeak.add(t)) {
         throw CYCLE;
       }
       try {
-        final Term function = weakHead(t.left, height + 1, true);
-        if (function.kind == ABS) {
-          return weakHead(substitute(function.left, t.right, 0, height + 1), height + 1, applied);
+        final Term function = weakHead(t.mLeft, height + 1, true);
+        if (function.mKind == ABS) {
+          return weakHead(substitute(function.mLeft, t.mRight, 0, height + 1), height + 1, applied);
         }
-        return function == t.left ? t : new Term(APP, function, t.right);
+        return function == t.mLeft ? t : new Term(APP, function, t.mRight);
       } finally {
-        weak.remove(t);
+        mWeak.remove(t);
       }
     }
 
     private long normalSize(final Term t, final int height) {
       charge(height);
-      if (NO_NORMAL_FORM.contains(t) || t.kind == APP && hasSpineLoop(t)) {
+      if (NO_NORMAL_FORM.contains(t) || t.mKind == APP && hasSpineLoop(t)) {
         throw CYCLE;
       }
-      if (normalSizes != null) {
-        final Long cached = normalSizes.get(t);
+      if (mNormalSizes != null) {
+        final Long cached = mNormalSizes.get(t);
         if (cached != null) {
           return cached;
         }
       }
-      if (!full.add(t)) {
+      if (!mFull.add(t)) {
         throw CYCLE;
       }
       try {
         final long size = countNormal(t, height);
-        if (normalSizes != null) {
-          normalSizes.put(t, size);
+        if (mNormalSizes != null) {
+          mNormalSizes.put(t, size);
         }
         return size;
       } finally {
-        full.remove(t);
+        mFull.remove(t);
       }
     }
 
     private long countNormal(final Term t, final int height) {
       final Term hnf = weakHead(t, height + 1, false);
-      if (hnf.kind == ABS) {
-        return Math.addExact(2, normalSize(hnf.left, height + 1));
+      if (hnf.mKind == ABS) {
+        return Math.addExact(2, normalSize(hnf.mLeft, height + 1));
       }
       long size = 0;
       Term head = hnf;
-      while (head.kind == APP) {
+      while (head.mKind == APP) {
         charge(height);
-        size = Math.addExact(size, Math.addExact(2, normalSize(head.right, height + 1)));
-        head = head.left;
+        size = Math.addExact(size, Math.addExact(2, normalSize(head.mRight, height + 1)));
+        head = head.mLeft;
       }
-      return Math.addExact(size, head.kind + 2L);
+      return Math.addExact(size, head.mKind + 2L);
     }
   }
 
   private static final class Program {
-    final Term prefix;
-    final long data;
-    final int bits;
-    final boolean minimal;
+    final Term mPrefix;
+    final long mData;
+    final int mBits;
+    final boolean mMinimal;
 
     Program(final Term prefix, final long data, final int bits, final boolean minimal) {
-      this.prefix = prefix;
-      this.data = data;
-      this.bits = bits;
-      this.minimal = minimal;
+      mPrefix = prefix;
+      mData = data;
+      mBits = bits;
+      mMinimal = minimal;
     }
 
     Term apply(final Term tail) {
       Term input = tail;
-      for (int b = 0; b < bits; ++b) {
-        final int bit = (int) ((data >>> b) & 1);
+      for (int b = 0; b < mBits; ++b) {
+        final int bit = (int) ((mData >>> b) & 1);
         final Term value = new Term(ABS, new Term(ABS, new Term(1 - bit, null, null), null), null);
         input = new Term(ABS, new Term(APP, new Term(APP, new Term(0, null, null), value), input), null);
       }
-      return new Term(APP, prefix, input);
+      return new Term(APP, mPrefix, input);
     }
   }
 
@@ -2117,7 +2117,7 @@ public final class BinaryLambdaCensus {
         ++totals[0];
         try {
           final long size = new Normalizer(mBudget).normalSize(p.apply(INPUT_TAIL), 0);
-          if (p.minimal) {
+          if (p.mMinimal) {
             ++totals[1];
             totals[4] = Math.max(totals[4], size);
           } else {
@@ -2147,8 +2147,8 @@ public final class BinaryLambdaCensus {
               throw new IllegalStateException("input frontier limit: no exact count");
             }
             if (extend) {
-              next.add(new Program(p.prefix, p.data << 1, p.bits + 1, p.minimal && proven));
-              next.add(new Program(p.prefix, (p.data << 1) | 1, p.bits + 1, p.minimal && proven));
+              next.add(new Program(p.mPrefix, p.mData << 1, p.mBits + 1, p.mMinimal && proven));
+              next.add(new Program(p.mPrefix, (p.mData << 1) | 1, p.mBits + 1, p.mMinimal && proven));
             }
           } else if (v != CYCLE && v != RETURNS_TAIL) {
             throw v;
@@ -2190,58 +2190,58 @@ public final class BinaryLambdaCensus {
 
   private static void printInputHoldout(final Program p, final String reason, final long size) {
     final StringBuilder code = new StringBuilder();
-    binary(p.prefix, code);
+    binary(p.mPrefix, code);
     final int prefixSize = code.length();
-    for (int j = p.bits - 1; j >= 0; --j) {
-      code.append((p.data >>> j) & 1);
+    for (int j = p.mBits - 1; j >= 0; --j) {
+      code.append((p.mData >>> j) & 1);
     }
     System.out.printf("UNKNOWN %d %d %s %s %d%n", code.length(), prefixSize, code, reason, size);
   }
 
   private static boolean normal(final Term t) {
-    if (t.kind == ABS) {
-      return normal(t.left);
+    if (t.mKind == ABS) {
+      return normal(t.mLeft);
     }
-    return t.kind != APP || t.left.kind != ABS && normal(t.left) && normal(t.right);
+    return t.mKind != APP || t.mLeft.mKind != ABS && normal(t.mLeft) && normal(t.mRight);
   }
 
   private static void binary(final Term t, final StringBuilder b) {
-    if (t.kind >= 0) {
-      b.append("1".repeat(t.kind + 1)).append('0');
+    if (t.mKind >= 0) {
+      b.append("1".repeat(t.mKind + 1)).append('0');
     } else {
-      b.append(t.kind == ABS ? "00" : "01");
-      binary(t.left, b);
-      if (t.kind == APP) {
-        binary(t.right, b);
+      b.append(t.mKind == ABS ? "00" : "01");
+      binary(t.mLeft, b);
+      if (t.mKind == APP) {
+        binary(t.mRight, b);
       }
     }
   }
 
   private static final class Row {
-    long total;
-    long inNormalForm;
-    long normalized;
-    long diverged;
-    long unknown;
-    BigInteger max = BigInteger.ZERO;
-    final int budget;
-    final boolean showUnknown;
+    long mTotal;
+    long mInNormalForm;
+    long mNormalized;
+    long mDiverged;
+    long mUnknown;
+    BigInteger mMax = BigInteger.ZERO;
+    final int mBudget;
+    final boolean mShowUnknown;
 
     Row(final int budget, final boolean showUnknown) {
-      this.budget = budget;
-      this.showUnknown = showUnknown;
+      mBudget = budget;
+      mShowUnknown = showUnknown;
     }
 
     void accept(final Term t) {
-      ++total;
+      ++mTotal;
       if (normal(t)) {
-        ++inNormalForm;
+        ++mInNormalForm;
       }
       boolean attemptedProof = false;
       try {
         final long size;
         try {
-          size = new Normalizer(budget).normalSize(t, 0);
+          size = new Normalizer(mBudget).normalSize(t, 0);
         } catch (final Verdict v) {
           if (v != LIMIT) {
             throw v;
@@ -2259,7 +2259,7 @@ public final class BinaryLambdaCensus {
         recordNormalized(BigInteger.valueOf(size));
       } catch (final Verdict v) {
         if (v == CYCLE) {
-          ++diverged;
+          ++mDiverged;
           if (attemptedProof && NO_NORMAL_FORM.size() < 8192) {
             NO_NORMAL_FORM.add(t);
           }
@@ -2274,13 +2274,13 @@ public final class BinaryLambdaCensus {
     }
 
     void recordNormalized(final BigInteger size) {
-      max = max.max(size);
-      ++normalized;
+      mMax = mMax.max(size);
+      ++mNormalized;
     }
 
     void markUnknown(final Term t) {
-      ++unknown;
-      if (showUnknown) {
+      ++mUnknown;
+      if (mShowUnknown) {
         final StringBuilder b = new StringBuilder();
         binary(t, b);
         System.out.println("UNKNOWN " + b);
@@ -2295,11 +2295,11 @@ public final class BinaryLambdaCensus {
     final BinaryLambdaCensus census = new BinaryLambdaCensus(size);
     final Row row = new Row(30000, false);
     census.terms(size, 0, row::accept);
-    if (row.total != census.count(size, 0) || row.normalized + row.diverged + row.unknown != row.total) {
+    if (row.mTotal != census.count(size, 0) || row.mNormalized + row.mDiverged + row.mUnknown != row.mTotal) {
       throw new IllegalStateException("Incomplete closed-term enumeration");
     }
-    if (row.unknown != 0) {
-      throw new IllegalStateException("Only " + row.normalized + " normalizing terms and " + row.unknown + " unresolved");
+    if (row.mUnknown != 0) {
+      throw new IllegalStateException("Only " + row.mNormalized + " normalizing terms and " + row.mUnknown + " unresolved");
     }
     return row;
   }
@@ -2310,7 +2310,7 @@ public final class BinaryLambdaCensus {
    * @return the verified maximum
    */
   public static synchronized Z maximum(final int size) {
-    return new Z(closedRow(size).max.toString());
+    return new Z(closedRow(size).mMax.toString());
   }
 
   /**
@@ -2319,7 +2319,7 @@ public final class BinaryLambdaCensus {
    * @return the verified normalizer count
    */
   public static synchronized long normalizingCount(final int size) {
-    return closedRow(size).normalized;
+    return closedRow(size).mNormalized;
   }
 
   private static Term parse(final String bits, final int[] index) {
@@ -2336,6 +2336,10 @@ public final class BinaryLambdaCensus {
     return new Term(variable, null, null);
   }
 
+  /**
+   * Run the opt-in binary lambda verification.
+   * @param args census options and bounds
+   */
   public static void main(final String[] args) {
     if ("--maximum".equals(args[0])) {
       if (args.length != 2) {
@@ -2344,7 +2348,7 @@ public final class BinaryLambdaCensus {
       final int size = Integer.parseInt(args[1]);
       final Row row = closedRow(size);
       System.out.printf("size=%d terms=%d normalizing=%d diverging=%d unresolved=%d maximum=%s%n",
-        size, row.total, row.normalized, row.diverged, row.unknown, row.max);
+        size, row.mTotal, row.mNormalized, row.mDiverged, row.mUnknown, row.mMax);
       return;
     }
     if ("--term".equals(args[0])) {
@@ -2375,11 +2379,11 @@ public final class BinaryLambdaCensus {
     for (int n = first; n <= last; ++n) {
       final Row row = new Row(budget, args.length > 3);
       census.terms(n, 0, row::accept);
-      if (row.total != census.count(n, 0) || row.normalized + row.diverged + row.unknown != row.total) {
+      if (row.mTotal != census.count(n, 0) || row.mNormalized + row.mDiverged + row.mUnknown != row.mTotal) {
         throw new IllegalStateException("incomplete enumeration at size " + n);
       }
-      System.out.printf("%d %d %d %d %d %d %d%n", n, row.total, row.inNormalForm, row.normalized,
-        row.diverged, row.unknown, row.max);
+      System.out.printf("%d %d %d %d %d %d %d%n", n, row.mTotal, row.mInNormalForm, row.mNormalized,
+        row.mDiverged, row.mUnknown, row.mMax);
     }
   }
 }

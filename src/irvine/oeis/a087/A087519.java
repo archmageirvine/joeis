@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A087518 Number of arrangements of 1..n^2 in n X n array with exactly one local maximum.
+ * A087519 Number of arrangements of 1..n^2 in n X n array with one local minimum and one local maximum.
  * @author Sean A. Irvine
  */
 public class A087519 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A400621.
+ * A402117 a(n) = Sum of the n-th row of a triangle whose n-th row consists of the n smallest available primes, where the k-th prime is removed after appearing in k rows.
  * @author Sean A. Irvine
  */
 public class A402117 extends Sequence1 {

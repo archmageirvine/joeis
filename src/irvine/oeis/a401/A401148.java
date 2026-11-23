@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A401148 allocated for Jacek Szymkowiak.
+ * A401148 Primes p for which there exists an even number d with p + d &lt; d^2 &lt; p + 2d such that p+d, p+2d and p+3d are also prime.
  * @author Sean A. Irvine
  */
 public class A401148 extends FilterSequence {

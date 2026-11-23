@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402203:
+ * A402203 Smallest prime whose tree of most central Goldbach partitions has height n.
  * @author Sean A. Irvine
  */
 public class A402203 extends Sequence0 {

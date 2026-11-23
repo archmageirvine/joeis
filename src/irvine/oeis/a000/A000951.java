@@ -1,9 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
@@ -12,12 +8,10 @@ import irvine.math.z.Z;
  */
 public class A000951 extends A000950 {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private Polynomial<Q> mS = RING.x();
+  private int mN = -1;
 
   @Override
   public Z next() {
-    mS = RING.add(mS, RING.monomial(super.nextEgf(), mN + 1));
-    return RING.exp(mS, mN).coeff(mN).multiply(mF).toZ();
+    return mB.get(++mN, 4);
   }
 }

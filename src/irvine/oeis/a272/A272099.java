@@ -5,7 +5,7 @@ import irvine.oeis.a210.A210038;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A272099 Triangle read by rows, T(n,k) = C(n+1,k+1)*F([k-n, k-n-1], [-n-1], -1), where F is the generalized hypergeometric function, for n&gt;=0 and 0&lt;=k&lt;=n.
+ * A272099 Triangle read by rows, T(n, k) = C(n+1, k+1)*F([k-n, k-n-1], [-n-1], -1), where F is the generalized hypergeometric function, for n &gt;= 0 and 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A272099 extends TruncatedTriangle {

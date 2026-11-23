@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a267.A267383;
 
 /**
- * A372326 Number A(n,k) of acyclic orientations of the Turán graph T(k*n,n); square array A(n,k), n&gt;=0, k&gt;=1, read by antidiagonals.
+ * A372326 Number A(n,k) of acyclic orientations of the Tur\u00e1n graph T(k*n,n); square array A(n,k), n&gt;=0, k&gt;=1, read by antidiagonals.
  * @author Gregory Morse
  */
 public class A372326 extends A372254 {

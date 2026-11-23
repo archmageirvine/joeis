@@ -16,7 +16,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A006947 Two-rowed truncated monotone triangles.
+ * A006947 Number of two-rowed truncated monotone triangles of size n.
  * @author Sean A. Irvine
  */
 public class A006947 extends Sequence1 {

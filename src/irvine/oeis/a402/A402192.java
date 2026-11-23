@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402192
+ * A402192 Number of ways to remove n unit triangles from an equilateral triangle of side n so that the rest can be tiled by lozenges.
  * @author Sean A. Irvine
  */
 public class A402192 extends Sequence1 {

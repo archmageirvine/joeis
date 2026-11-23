@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402204: Largest prime of each height in the prime partition tree.
+ * A402204 Largest prime whose tree of most central Goldbach partitions has height n.
  * @author Sean A. Irvine
  */
 public class A402204 extends Sequence0 {

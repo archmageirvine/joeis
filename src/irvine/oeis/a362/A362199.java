@@ -10,6 +10,8 @@ import irvine.oeis.a060.A060843;
  * @author Gregory Morse
  */
 public class A362199 extends Sequence1 {
+  private static final int SPLIT_DIGITS = 21_000;
+
   private final String mDigits;
   private int mN = 0;
 
@@ -20,11 +22,22 @@ public class A362199 extends Sequence1 {
     for (int n = 1; n <= 5; ++n) {
       sum = sum.add(new Q(Z.ONE, bb.next()));
     }
-    // Kropitz's May 2010 machine gives BB(6) > 10^21000 (Michel, historical survey).
-    // BB is nondecreasing. Also BB(n) >= n^2/16 for n >= 6: use
-    // 2*k+1 states to lay down k marks, turn around and sweep them k times.
-    // Split the tail at 10^10500. Its sum is less than 17 * 10^(-10500).
-    final Z lower = sum.multiply(Z.TEN.pow(10498)).floor();
+    // Ligocki's e78k witness, checked directly from its transition table
+    // by the internal E78kWitness checker. Three zero-block sweeps
+    // determine the length of the last iteration. That iteration alone
+    // takes more than 2^(2*(triples-1)) steps.
+    final int first = 3 * (1 << (8 / 3)) - 2;
+    final int second = 3 * (1 << ((4 * first + 6) / 3)) - 2;
+    final int triples = (4 * second + 4) / 3;
+    if (Z.ONE.shiftLeft(2 * (triples - 1)).compareTo(Z.TEN.pow(2 * SPLIT_DIGITS)) <= 0) {
+      throw new IllegalStateException("The six-state witness does not give the required tail bound");
+    }
+    // BB is nondecreasing. For k=floor(n/2), k states lay down k marks
+    // and k states alternately sweep left and right; this takes at least
+    // k^2 steps. In particular BB(n) >= n^2/16 for n >= 6. Before
+    // the split use BB(6); after it bound the sum by the integral of
+    // 16/x^2. The total error is less than 17 * 10^(-SPLIT_DIGITS).
+    final Z lower = sum.multiply(Z.TEN.pow(SPLIT_DIGITS - 2)).floor();
     final String lo = lower.toString();
     final String hi = lower.add(1).toString();
     int k = 0;

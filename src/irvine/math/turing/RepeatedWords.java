@@ -31,7 +31,7 @@ final class RepeatedWords {
     mSymbols = symbols;
     mBits = 32 - Integer.numberOfLeadingZeros(symbols - 1);
     mMask = (1 << mBits) - 1;
-    if (symbols < 2 || symbols > 4 || width < 1 || width > 59 / mBits
+    if (symbols < 2 || symbols > 8 || rules.length / symbols > 8 || width < 1 || width > 59 / mBits
       || saturation < 2 || saturation > 100 || stepLimit < 1 || nodeLimit < 1 || nodeLimit > 200_000) {
       throw new IllegalArgumentException("Unsafe repeated-word parameters");
     }

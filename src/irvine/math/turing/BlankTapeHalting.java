@@ -211,17 +211,31 @@ public final class BlankTapeHalting {
     return search;
   }
 
+  private static int smallUpperBound(final int states) {
+    if (states < 1 || states > 4) {
+      throw new IllegalArgumentException();
+    }
+    // Coarse upper bounds from the independent BusyBeaver verifier.
+    return 1 << (2 * states - 1);
+  }
+
+  /**
+   * Enumerate all halting times for up to four states, without tallies.
+   * @param states number of nonhalting states, from one to four
+   * @return bit set indexed by halting time
+   */
+  public static BitSet smallTimes(final int states) {
+    return times(states, smallUpperBound(states));
+  }
+
   /**
    * Enumerate the complete halting statistics for up to four states.
    * @param states number of nonhalting states, from one to four
    * @return exact halting statistics
    */
   public static BlankTapeHalting smallTally(final int states) {
-    if (states < 1 || states > 4) {
-      throw new IllegalArgumentException();
-    }
-    // Coarse upper bounds from the independent BusyBeaver verifier.
-    return SMALL_TALLIES.computeIfAbsent(states, n -> tally(n, 1 << (2 * n - 1)));
+    final int limit = smallUpperBound(states);
+    return SMALL_TALLIES.computeIfAbsent(states, n -> tally(n, limit));
   }
 
   /**
@@ -236,6 +250,15 @@ public final class BlankTapeHalting {
    */
   public int maximumScore() {
     return mScores.length() - 1;
+  }
+
+  /**
+   * Test a score against this completed tally's exact enumeration horizon.
+   * @param score number of nonblank cells when the machine halts
+   * @return whether the score was attained
+   */
+  public boolean containsScore(final int score) {
+    return mScores.get(score);
   }
 
   /**

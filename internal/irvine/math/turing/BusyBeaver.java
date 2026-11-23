@@ -147,6 +147,7 @@ public final class BusyBeaver {
     private int mRight = CENTER;
     private int mOnes;
     private int mHaltSlot;
+    private int mHaltHead;
     private final boolean mRepwl;
     private Map<Long, Hint> mHints = Map.of();
     private final HistoryGram[] mHistory;
@@ -202,6 +203,10 @@ public final class BusyBeaver {
       return mHaltSlot;
     }
 
+    int symbolNearHalt(final int offset) {
+      return mTape[mHaltHead + offset];
+    }
+
     int run(final int[] table, final int limit, final boolean loopCheck) {
       Arrays.fill(mTape, mLeft, mRight + 1, (byte) 0);
       mLeft = CENTER;
@@ -232,6 +237,7 @@ public final class BusyBeaver {
         final int rule = table[slot];
         if (rule < 0) {
           mHaltSlot = slot;
+          mHaltHead = position;
           // The released TNF data completes an undefined halt with write-one.
           mOnes += (rule == -2 ? 0 : 1) - read;
           return step + 1;

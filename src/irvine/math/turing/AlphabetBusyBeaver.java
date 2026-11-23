@@ -6,18 +6,23 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Exhaustive bounded-size verification for two-state machines with up to four symbols.
+ * Exhaustive bounded-size verification of Turing-machine maxima.
  * @author Gregory Morse
  */
 public final class AlphabetBusyBeaver {
 
   private static final Map<Integer, AlphabetBusyBeaver> RESULTS = new ConcurrentHashMap<>();
+  private static final Map<Integer, AlphabetBusyBeaver> INSTRUCTION_RESULTS = new ConcurrentHashMap<>();
   private static final int NONHALT = -1;
   private static final int UNKNOWN = 0;
   private static final int TAPE_SIZE = 1 << 16;
   private static final int CENTER = TAPE_SIZE / 2;
+  private static final long PUBLISHED_SEVEN_INSTRUCTION_HALTERS = 264_055_010L;
 
   private final int mSymbols;
+  private final int mStates;
+  private final int mInstructionLimit;
+  private final boolean mExplicitHalt;
   private final int mBits;
   private final int mSymbolMask;
   private final int[] mTable;
@@ -34,10 +39,17 @@ public final class AlphabetBusyBeaver {
   private long mUnresolved;
 
   private AlphabetBusyBeaver(final int symbols) {
+    this(2, symbols, 2 * symbols, true);
+  }
+
+  private AlphabetBusyBeaver(final int states, final int symbols, final int instructions, final boolean explicitHalt) {
     mSymbols = symbols;
+    mStates = states;
+    mInstructionLimit = instructions;
+    mExplicitHalt = explicitHalt;
     mBits = 32 - Integer.numberOfLeadingZeros(symbols - 1);
     mSymbolMask = (1 << mBits) - 1;
-    mTable = new int[2 * symbols];
+    mTable = new int[states * symbols];
     Arrays.fill(mTable, -1);
   }
 
@@ -79,7 +91,7 @@ public final class AlphabetBusyBeaver {
       final int rule = mTable[slot];
       if (rule < 0) {
         mHaltSlot = slot;
-        if (mSymbols > 1 && read == 0) {
+        if (mExplicitHalt && mSymbols > 1 && read == 0) {
           ++mMarks;
         }
         return t + 1;
@@ -147,7 +159,62 @@ public final class AlphabetBusyBeaver {
     }
     // A timeout is unresolved, never a proof. The budget is deliberately
     // larger than necessary for all discovered halters.
-    return simulate(4_000_000, false);
+    final int bounded = simulate(4_000_000, false);
+    if (bounded != UNKNOWN || mExplicitHalt) {
+      return bounded;
+    }
+    final int shifted = simulate(TAPE_SIZE, true);
+    if (shifted != UNKNOWN) {
+      return shifted;
+    }
+    // Sparse seven-instruction tables sometimes need a larger invariant
+    // than the small two-state alphabet search does.
+    for (int width = 1; width <= 12; ++width) {
+      for (int saturation = 2; saturation <= 4; ++saturation) {
+        if (new RepeatedWords(mTable, mSymbols, width, saturation, 2048, 24_000).closes()) {
+          return NONHALT;
+        }
+      }
+    }
+    for (int width = 1; width <= 6; ++width) {
+      for (int history = 0; history <= 10; ++history) {
+        if (gram(width, history, false, 60_000)) {
+          return NONHALT;
+        }
+      }
+      if (gram(width, 10, true, 60_000)) {
+        return NONHALT;
+      }
+    }
+    return UNKNOWN;
+  }
+
+  private String machineCode() {
+    int states = 1;
+    int symbols = 1;
+    for (int k = 0; k < mTable.length; ++k) {
+      final int action = mTable[k];
+      if (action >= 0) {
+        states = Math.max(states, 1 + Math.max(k / mSymbols, action >>> (mBits + 1)));
+        symbols = Math.max(symbols, 1 + Math.max(k % mSymbols, action >>> 1 & mSymbolMask));
+      }
+    }
+    final StringBuilder code = new StringBuilder();
+    for (int s = 0; s < states; ++s) {
+      if (s > 0) {
+        code.append('_');
+      }
+      for (int c = 0; c < symbols; ++c) {
+        final int action = mTable[s * mSymbols + c];
+        if (action < 0) {
+          code.append("---");
+        } else {
+          code.append(action >>> 1 & mSymbolMask).append((action & 1) == 0 ? 'L' : 'R')
+            .append((char) ('A' + (action >>> (mBits + 1))));
+        }
+      }
+    }
+    return code.toString();
   }
 
   private void visit(final int used, final int states, final int symbols) {
@@ -158,17 +225,20 @@ public final class AlphabetBusyBeaver {
     if (result == NONHALT) {
       ++mNonhalters;
     } else if (result == UNKNOWN) {
-      if (++mUnresolved <= 10) {
-        System.err.println("Unresolved machine: " + Arrays.toString(mTable));
+      if (++mUnresolved <= 32) {
+        System.err.println("Unresolved machine: " + machineCode());
       }
     } else {
       ++mHalters;
-      mSteps = Math.max(mSteps, result);
+      mSteps = Math.max(mSteps, mExplicitHalt ? result : result - 1);
       mScore = Math.max(mScore, mMarks);
+      if (used == mInstructionLimit) {
+        return;
+      }
       final int hole = mHaltSlot;
       // Only first appearances matter: rename states and nonblank
       // symbols on discovery, and reflect the first move to the right.
-      for (int next = 0; next < Math.min(2, states + 1); ++next) {
+      for (int next = 0; next < Math.min(mStates, states + 1); ++next) {
         for (int write = 0; write < Math.min(mSymbols, symbols + 1); ++write) {
           for (int dir = used == 0 ? 1 : 0; dir < 2; ++dir) {
             mTable[hole] = (next << (mBits + 1)) | (write << 1) | dir;
@@ -200,7 +270,36 @@ public final class AlphabetBusyBeaver {
   }
 
   /**
-   * @return maximum number of steps, including the final halting step
+   * Compute both maxima with an instruction budget and no explicit halt.
+   * @param instructions maximum number of defined transitions, from zero to seven
+   * @return the completed enumeration
+   */
+  public static AlphabetBusyBeaver instructionLimited(final int instructions) {
+    return INSTRUCTION_RESULTS.computeIfAbsent(instructions, n -> instructionLimited(n, -1));
+  }
+
+  private static AlphabetBusyBeaver instructionLimited(final int instructions, final long knownHalters) {
+    if (instructions < 0 || instructions > 7) {
+      throw new UnsupportedOperationException("Only zero to seven instructions supported");
+    }
+    // Each new state or nonblank symbol first appears as the target or
+    // written symbol of some instruction. The initial state and blank
+    // symbol therefore give at most n+1 names of each kind.
+    final AlphabetBusyBeaver result = new AlphabetBusyBeaver(instructions + 1, instructions + 1, instructions, false);
+    result.visit(0, 1, 1);
+    if (knownHalters >= 0 && result.mHalters != knownHalters) {
+      throw new IllegalStateException("Found " + result.mHalters + " halters, expected " + knownHalters);
+    }
+    if (knownHalters < 0 && result.mUnresolved != 0) {
+      throw new IllegalStateException(result.mUnresolved + " unresolved machines for " + instructions
+        + " instructions after " + result.mHalters + " halting and " + result.mNonhalters
+        + " nonhalting classifications: lower bounds " + result.mSteps + " steps, " + result.mScore + " nonblank cells");
+    }
+    return result;
+  }
+
+  /**
+   * @return maximum number of steps, including the final step if halt is explicit
    */
   public int maximumSteps() {
     return mSteps;
@@ -215,9 +314,24 @@ public final class AlphabetBusyBeaver {
 
   /**
    * Enumerate normalized two-state machines, failing on any unresolved case.
-   * @param args the tape alphabet size (one to four)
+   * @param args the tape alphabet size, or --instructions budget [--published-count]
    */
   public static void main(final String[] args) {
+    if ((args.length == 2 || args.length == 3) && "--instructions".equals(args[0])) {
+      final int budget = Integer.parseInt(args[1]);
+      final long start = System.nanoTime();
+      if (args.length == 3 && (budget != 7 || !"--published-count".equals(args[2]))) {
+        throw new IllegalArgumentException("The published-count replay is only available for budget seven");
+      }
+      final long knownHalters = args.length == 3 ? PUBLISHED_SEVEN_INSTRUCTION_HALTERS : -1;
+      final AlphabetBusyBeaver result = knownHalters < 0 ? instructionLimited(budget) : instructionLimited(budget, knownHalters);
+      System.out.printf(Locale.ROOT, "budget=%d halt=%d nonhalt=%d unresolved=%d steps=%d score=%d seconds=%.6f%n",
+        budget, result.mHalters, result.mNonhalters, result.mUnresolved, result.mSteps, result.mScore, (System.nanoTime() - start) / 1e9);
+      if (knownHalters >= 0) {
+        System.out.println("Completeness uses the published halter count, not classification of every table.");
+      }
+      return;
+    }
     if (args.length != 1) {
       throw new IllegalArgumentException("Usage: AlphabetBusyBeaver <symbols>");
     }

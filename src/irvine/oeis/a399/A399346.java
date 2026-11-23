@@ -1,12 +1,9 @@
 package irvine.oeis.a399;
 
-import java.util.BitSet;
-
 import irvine.math.turing.BlankTapeHalting;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028444;
-import irvine.oeis.a060.A060843;
 
 /**
  * A399346 Placid Platypus function PP(n): Minimal number of states of all 2-symbol Turing machines that print exactly n ones then halt.
@@ -44,8 +41,6 @@ public class A399346 extends Sequence1 {
   };
 
   private final A028444 mSigma = new A028444();
-  private final A060843 mTime = new A060843();
-  private final BitSet[] mScores = new BitSet[5];
   private int mN = 0;
 
   private static int score(final String machine) {
@@ -78,11 +73,8 @@ public class A399346 extends Sequence1 {
       if (states <= 5 && mSigma.a(states).compareTo(mN) < 0) {
         continue;
       }
-      if (states < mScores.length) {
-        if (mScores[states] == null) {
-          mScores[states] = BlankTapeHalting.scores(states, mTime.a(states).intValueExact());
-        }
-        if (mScores[states].get(mN)) {
+      if (states <= 4) {
+        if (BlankTapeHalting.smallTally(states).containsScore(mN)) {
           return Z.valueOf(states);
         }
       } else {

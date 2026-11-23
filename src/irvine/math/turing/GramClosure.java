@@ -15,6 +15,7 @@ import java.util.Set;
 final class GramClosure {
   private static final Word EMPTY = new Word(0, 0, null, null);
   private final int[] mTable;
+  private final int[] mHistoryTokens;
   private final int mAlphabet;
   private final int mBits;
   private final int mMask;
@@ -39,7 +40,7 @@ final class GramClosure {
 
   GramClosure(final int[] table, final int alphabet, final int leftWidth, final int rightWidth,
               final int length, final boolean lru, final int limit) {
-    if (alphabet < 2 || alphabet > 4 || table.length > 10
+    if (alphabet < 2 || alphabet > 8 || table.length > 64
       || leftWidth < 1 || leftWidth > 24 || rightWidth < 1 || rightWidth > 24 || length < 0 || length > 10
       || limit < 1 || limit > 200_000) {
       throw new IllegalArgumentException("Unsafe history-closure parameters");
@@ -52,6 +53,18 @@ final class GramClosure {
     this.mRightWidth = rightWidth;
     this.mLru = lru;
     this.mLimit = limit;
+    mHistoryTokens = new int[table.length];
+    int token = 0;
+    for (int slot = 0; slot < table.length; ++slot) {
+      if (table[slot] >= 0) {
+        // A history only records defined transitions. Dense names keep
+        // the base-11 representation injective for sparse tables too.
+        mHistoryTokens[slot] = ++token;
+      }
+    }
+    if (token > 10) {
+      throw new IllegalArgumentException("Too many defined transitions for base-11 histories");
+    }
     long mod = 1;
     for (int i = 0; i < length; ++i) {
       mod *= 11;
@@ -230,7 +243,7 @@ final class GramClosure {
       if (rule < 0) {
         return false;
       }
-      final int write = symbol((history(read >>> mBits, slot + 1) << mBits) | (rule >>> 1 & mMask));
+      final int write = symbol((history(read >>> mBits, mHistoryTokens[slot]) << mBits) | (rule >>> 1 & mMask));
       final boolean toRight = (rule & 1) != 0;
       final Word from = toRight ? c.mRight : c.mLeft;
       final Word dest = toRight ? c.mLeft : c.mRight;

@@ -1,0 +1,185 @@
+Skelet #17: soundness of the Java certificate
+==============================================
+
+SkeletSeventeen checks the actual transition table, nine local tape
+identities, and the blank-tape initialization. DyadicProof.Ladder
+checks the algebra below universally, not at a cutoff width. The
+generic induction rules linking these checks are given here. This is
+a specialized Java verifier, not a port of the Rocq proof kernel.
+
+1. What a counter transition means
+----------------------------------
+
+Write P=01 for a pair on the near side of the left stack and Q=10 for
+a pair on the right. A list (a0,...,aw) means C looking left into
+P^a0 1 P^a1 1 ... 1 P^aw followed by blanks, with blank right stack.
+The base replay reaches (0,4,2,0) from the all-blank initial machine.
+These are nearest-first counters, the reverse order from Xu's paper.
+
+The raw checker follows each rule to its exact target without reading
+an opaque tail. Thus the rule holds for every substitution for its
+tails. The one-pair B sweep and the two-pair C sweep extend to all
+right runs and all even left runs respectively, by induction on the
+number of applications. An even group followed by a separator moves
+onto the right stack as 1 Q^a. When C reaches an odd nonterminal
+group, sweep its even part, then use the checked 011 turn. Sweeping
+back over the even part leaves P^(a-1) 1 P^(b+1) in front of the next
+tail: the odd group a has lost one and its next group b gained one.
+
+On the return, the checked 110 rule plus right sweeps change a right
+group 1 Q^t (t>0) into a left prefix P^(t-1) 1 P. This puts t-1 at
+the head and adds one to its old near counter, so successive positive
+groups restore all internal counts. The final positive a0 becomes
+a0-1; the rule on blank stops at C. If the last group is 1 followed by
+blank (a0=0), the checked empty-group rule supplies one P to the
+previously decremented counter and drops that empty group. We describe
+this as decrement to a0=-1 followed by Halve, which drops a0. The
+negative intermediate is bookkeeping, not a physical configuration.
+
+At a terminal even y the checked blank-left turn gives 11 then blank
+on the left. Sweeping back Q^y gives the list (y,0,0) before restoring
+the skipped groups; the restored separator increments y to y+1.
+This is Zero: increment the old top, append two zeros, subtract one
+from a0 and normalize a0=-1 by Halve. At a terminal odd y, the odd
+blank-left turn gives (1,1,0,0), then returning over y-1 pairs gives
+(y,1,0,0) before restoring the skipped groups. With a0=0, the resulting
+raw list is (a1,...,y+1,1,0,0). We represent this as Overflow to the
+virtual list (0,a1,...,y+1,0), followed by its Zero and immediate
+Halve. Only the combined path is claimed on the physical tape.
+
+2. Gray counter and return to zero
+---------------------------------
+
+At width w, define the Gray bits gi = ai mod 2 (1 <= i <= w).
+Binary bit i-1 is the XOR of gi through gw. Let n be that binary
+integer, and let the direction be up iff the sum of all ai is odd.
+The direction is the low binary bit XOR the parity of a0. When a0
+is odd the next increment flips the first Gray bit. Otherwise the
+first odd higher group is at the far edge of the initial run of
+equal low binary bits. Adding one to a run of ones or subtracting
+one from a run of zeros changes just the next Gray bit. This proves
+the +/-1 rule. Each increment takes one unit from a0 and adds one
+at the changed Gray position, preserving the direction. If a0=-1,
+Halve drops it, halves n and reverses the direction.
+
+Call a list regular when a1,...,a_(w-1) are positive and the last
+counter is arbitrary. Interior steps preserve regularity, since
+they only increase the higher counters. Zero from n=0 descending is
+legal on a regular list: all counters are then even. It produces two
+high zero counters, all other higher counters positive, and n=2^w-1
+descending. In that mode the current effective width excludes the two
+high zero counters. A descending run stopping at n>=3 cannot inspect
+the blank high boundary, and halving then leaves n>=1. An ascending
+run crossing the effective upper bound hits the highest positive
+counter as its odd group and fills the first high zero; it becomes
+regular, with just one high zero. These facts justify the changes
+of mode used below, without assuming that arbitrary Zero is safe on
+a list already ending in two zeros.
+
+Let w be odd, A=2^(w-1), and E a regular even (empty) list. The
+three monotone runs of its two-halving return N have endpoints:
+
+    after Zero:            n=2A-1, descending
+    first run then Halve:  s1=2A-1-a0, h1=(s1-1)/2
+    second run then Halve: s2=A+a1,    h2=s2/2
+    third run:             h2 down to 0
+
+The first two runs end exactly when the low counter becomes -1.
+The checked guards 0<=a0<=2A-4, 2<=a1<=3A-2, both even, give
+s1>=3 and A+2<=s2<=4A-2: the upward run crosses the effective-width
+boundary, but cannot overflow. The low counter just after the first
+Halve is a1+a0/2, giving the stated s2. The third run is legal
+provided its final a0 is nonnegative. These rules imply regularity
+at the end of the return and a positive number of real steps.
+
+Put r_i(t)=floor((t+2^(i-1))/2^i), i>=1. Along consecutive binary
+values, Gray bit i flips exactly at the points counted by the
+change of r_i. The number of increments at that coordinate along
+a monotone run is therefore the absolute difference in r_i at its
+endpoints. Applying this to the three runs gives N's low counter
+a2+A/2-2r_1(h1). At j>=1 it gives
+
+    shifted post-Zero counter at j+2
+       + r_(j+2)(2A-1) - 2r_(j+1)(h1) + 2r_j(h2).
+
+Here r_(j+2)(2h1+1)=r_(j+1)(h1) and r_(j+1)(2h2)=r_j(h2)
+follow by integer division; the first shifted counter includes the
+increment of the old top if j+2=w, and zero fill above w.
+
+These formulas prove the carry rule used to propagate returns.
+With coordinates in range, adding 2 at i>=2 shifts the perturbation
+to i-2. At i=0 it lowers h1 by one and sends the 2 to index v2(h1).
+At i=1 it raises h2 by one and sends the 2 to v2(h2+1)+1. Indeed
+r_j(t)-r_j(t-1) is 1 exactly when t is 2^(j-1) times an odd integer.
+The low-coordinate formula gives the same rule at index zero.
+The perturbed output is therefore still nonnegative if the old
+return was valid, once the input bounds of the new return hold.
+Induction gives the descending chain i,i-2,...,i mod 2. The last
+index is its root, and its predecessor h's are those before the
+final low-coordinate change. This is the only carry induction used.
+
+3. A width increases by two
+--------------------------
+
+Let S_w be (0,2^(w-1),2^(w-2),...,2,0), w odd >=3. The symbolic
+checker verifies N(S_w)=S_w with 2 added at w. The first chain visits
+w,w-2,...,1. The following four chains, with valuations checked
+modulo 4, visit [1], [2,0], [0], and [1]. This starts the middle
+phase at checkpoint m=2, root 1, predecessor (h1,h2)=(A-3,A+2).
+The low counters are (2m,A+2m+2).
+
+For a checkpoint m of odd 2-adic valuation, take the next m'>m
+with odd valuation, ending at A-2 (which has valuation one). During
+the first half, for e=m+1,...,m', the current root 1 selects chain
+v2(A+e)+1. This is v2(e)+1: for 0<e<A, write e=2^v*t, t odd,
+and A/2^v is even. Each intermediate e has even valuation, hence
+the chain ends at 1; at m' it ends at 0. During the second half,
+root 0 selects v2(A-e)=v2(e) over the same range. Intermediates
+end at 0 and the last at 1. The predecessor h's decrease h1 once
+per low-zero addition and increase h2 once per low-one addition,
+giving (A-m'-1,A+m') at the next checkpoint. For each e the pair
+of chains covers positions 0 through v2(e)+1 exactly once: the
+parities alternate and the sole higher endpoint is v2(e)+1.
+All low coordinates are monotone, and the checked terminal guard
+therefore bounds every preceding return. The A=4 case has no
+middle iterations.
+
+At coordinate j, the middle additions are the number of multiples
+of 2^max(0,j-1) in [3,A-2]. Java checks that floor difference, adds
+the prefix and the final low-one chain, and verifies the resulting
+vector. The final low-one addition leaves a0=2A-4 and a1=3A.
+There is now a different return: Zero and a descending run reach
+n=3 with low counter -1, Halve yields n=1, and the ascending run
+reaches n=4A-1 with low counter zero. These endpoint and per-index
+identities, including positivity and the highest-only odd parity,
+are checked symbolically. The resulting Overflow is fused with
+the next Zero as in part 1. The virtual regular state has width
+w+2, low pair (0,4A-4), and h's (4A-1,4A-2).
+
+Java verifies that the first two-halving return from that virtual
+state adds 2 at index w, and all other coordinates are unchanged.
+The corresponding odd chain adds 2 down through index 1. It is
+safe by the checked low guards, including after the last addition.
+The predecessor h2 for the last low addition is 4A-2, so the next
+carry is v2(4A-1)+1=1. A final addition at 1 completes S_(w+2).
+The whole path consumes positive real steps. Starting at S_3, this
+proves endless progress and hence excludes a halting step.
+
+What the symbolic checker covers
+--------------------------------
+
+Each cone uses two independent nonnegative integer parameters. The
+cases are w=3 explicitly, and w>=5 split into j=0,1,2, the two
+parities of 3<=j<=w-3, and j=w-2,w-1,w,w+1,w+2. They are an exact
+cover. Powers of two with affine exponents are added exactly with
+BigInteger. Rounding separates integer terms and bounds remaining
+dyadic fractions, and fails unless both bounds force the same
+integer. Bounds and residues are proved on the cone: testing a few
+values of the parameters cannot pass the symbolic checker. The
+separate skelet17-control mode is only a finite regression.
+
+Sources for the counter structure and induction: Chris Xu,
+https://arxiv.org/html/2407.02426v2, and the pinned Coq-BB5 v1.0.0
+CoqBB5/BB5/BB5_Skelet17.v. The finite tape schemas and normalized
+dyadic identities are replayed by Java, without assuming either
+source's final nonhalting theorem as a verdict.

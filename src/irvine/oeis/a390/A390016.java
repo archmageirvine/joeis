@@ -11,9 +11,10 @@ import irvine.oeis.Sequence1;
  */
 public class A390016 extends Sequence1 {
 
-  // Attaining rule tables from the complete machine/input certificate
-  // audit, not stored running times. Replay each machine without a cutoff.
-  private static final int[] RULES = {
+  // Rule numbers, not running times. A separate exhaustive audit covered
+  // all 12^6 transition tables at each input and found these maximizers.
+  // Replaying a witness checks its time, not maximality on its own.
+  private static final int[] ATTAINING_RULES = {
     718804, 670559, 718804, 172204, 670559, 2133803, 666364, 2543572,
     733183, 670559, 665239, 213652, 733183, 670559, 666364, 1999002,
     2727319, 2204791, 733183, 213652, 670559, 173183, 665239, 2543572,
@@ -26,10 +27,10 @@ public class A390016 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (mN == RULES.length) {
+    if (mN == ATTAINING_RULES.length) {
       throw new UnsupportedOperationException("No exact census at input " + (mN + 1));
     }
-    final TuringMachine machine = new TuringMachine(RULES[mN], 3, 2);
+    final TuringMachine machine = new TuringMachine(ATTAINING_RULES[mN], 3, 2);
     machine.initialTape(++mN);
     long steps = 1;
     while (machine.step() >= 0) {

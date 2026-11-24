@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a037.A037077;
 
 /**
- * A401206 allocated for Marvin Ray Burns.
+ * A401206 Indices in a greedy approximation to the Marvin Ray Burns (MRB) constant using f(m) = 2*m^(-1/m)*sin(Pi/m)/Pi.
  * @author Sean A. Irvine
  */
 public class A401206 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A401356 allocated for Jianing Song.
+ * A401356 Least number congruent to 17 modulo 24 that is a quadratic residue modulo the first n-1 primes greater than 3.
  * @author Sean A. Irvine
  */
 public class A401356 extends Sequence1 {

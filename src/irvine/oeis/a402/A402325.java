@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402325 allocated for Wesley Ivan Hurt.
+ * A402325 Number of ways to write n = x*y with 1 &lt;= x &lt;= n, 1 &lt;= y &lt;= n, where neither x nor y is squarefree.
  * @author Sean A. Irvine
  */
 public class A402325 extends Sequence1 {

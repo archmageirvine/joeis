@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.FilterTransformSequence;
 
 /**
- * A109863 Primes arising as the 10&apos;s complement of A109862(n).
+ * A109863 Primes arising as the 10's complement of A109862(n).
  * @author Georg Fischer
  */
 public class A109863 extends FilterTransformSequence {

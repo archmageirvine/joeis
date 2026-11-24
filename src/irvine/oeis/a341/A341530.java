@@ -8,7 +8,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a003.A003961;
 
 /**
- * A341530 a(n) = gcd(n*sigma(A003961(n)), sigma(n)*A003961(n)),
+ * A341530 a(n) = gcd(n*sigma(A003961(n)), sigma(n)*A003961(n)), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of divisors of n.
  * where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of divisors of n.
  * @author Georg Fischer
  */

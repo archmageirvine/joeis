@@ -6,7 +6,7 @@ import irvine.oeis.a347.A347395;
 import irvine.oeis.transform.SingleTransformSequence;
 
 /**
- * A401917 a(n) = 1 if A347395(n) is even, and 0 if it is odd, where A347395 is the Dirichlet convolution of Liouville&apos;s lambda (A008836) with A342001.
+ * A401917 a(n) = 1 if A347395(n) is even, and 0 if it is odd, where A347395 is the Dirichlet convolution of Liouville's lambda (A008836) with A342001.
  * @author Georg Fischer
  */
 public class A401917 extends SingleTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A395424 Busy Beaver problem for FRACTRAN.
+ * A395424 Busy Beaver problem for FRACTRAN: a(n) is the maximal number of steps that a FRACTRAN program of size n can make on the integer 2 before eventually halting.
  * @author Gregory Morse
  */
 public class A395424 extends AbstractSequence {

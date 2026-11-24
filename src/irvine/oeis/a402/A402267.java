@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034699;
 
 /**
- * A402267 allocated for Hassane Bakkaoui.
+ * A402267 Composite numbers k such that min_{1&lt;j&lt;=k/2} gcd(k, binomial(k,j)) = k/A034699(k).
  * @author Sean A. Irvine
  */
 public class A402267 extends A034699 {

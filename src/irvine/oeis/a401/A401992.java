@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401992 allocated for Yu Chu.
+ * A401992 Numbers k such that k*2^k+7 is prime.
  * @author Sean A. Irvine
  */
 public class A401992 extends FilterNumberSequence {

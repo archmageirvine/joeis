@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401685 allocated for Wolfdieter Lang.
+ * A401685 Triangle read by rows: T(n, k) = (n + 1)*2^k, with k = 0..n.
  * @author Sean A. Irvine
  */
 public class A401685 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A402181 allocated for Dean Grayson.
+ * A402181 Numbers k such that the decimal concatenation of the sum and product of the digits of 2^k, in either order (allowing leading zeros), is a power of 2.
  * @author Sean A. Irvine
  */
 public class A402181 extends FilterNumberSequence {

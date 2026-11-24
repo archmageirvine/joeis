@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A368006 Rayo's function for formulas of exactly n symbols.
+ * A368006 Rayo's function: smallest natural number larger than any number uniquely defined by an n-symbol formula in First Order Set Theory.
  * @author Gregory Morse
  */
 public class A368006 extends Sequence0 {

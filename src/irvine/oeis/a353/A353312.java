@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A353312 Length of the cycle reached under iteration of A353313.
+ * A353312 Size of the finite cycle eventually reached by iterating A353313, or -1 if no finite cycle is ever reached.
  * @author Gregory Morse
  */
 public class A353312 extends LambdaSequence {

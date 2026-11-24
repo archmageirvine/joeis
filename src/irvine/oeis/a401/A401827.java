@@ -7,7 +7,7 @@ import irvine.oeis.ParallelPermutationSequence;
 import irvine.util.Point;
 
 /**
- * A401827 allocated for Marko Radulovic.
+ * A401827 Total number of isolated Moore neighborhoods of doubly shaded squares in A395245 for permutations of [n].
  * @author Sean A. Irvine
  */
 public class A401827 extends ParallelPermutationSequence {

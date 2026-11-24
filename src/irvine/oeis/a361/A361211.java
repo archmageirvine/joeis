@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A361211 Busy Beaver for self-delimiting Binary Lambda Calculus programs.
+ * A361211 Busy Beaver for the Binary Lambda Calculus (BLC) language BB\u03bb2: the maximum output size of self-delimiting BLC programs of size n, or 0 if no program of size n exists.
  * @author Gregory Morse
  */
 public class A361211 extends Sequence1 {

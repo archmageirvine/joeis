@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A402173 allocated for Henri Lifchitz.
+ * A402173 Number of primes p &lt; 10^n such that p+2, 2p+1, 2p+3 are also primes.
  * @author Sean A. Irvine
  */
 public class A402173 extends A001359 {

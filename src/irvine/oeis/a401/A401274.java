@@ -1,11 +1,11 @@
 package irvine.oeis.a401;
 
+import irvine.math.function.Functions;
+import irvine.math.predicate.Predicates;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence2;
-import irvine.oeis.a005.A005100;
 import irvine.oeis.a005.A005101;
-import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A401274 a(n) is the smallest deficient number (A005100) that is equal to the sum of n distinct abundant numbers (A005101).
@@ -13,50 +13,31 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A401274 extends Sequence2 {
 
-  private final LongDynamicLongArray mD = new LongDynamicLongArray();
-  private final LongDynamicLongArray mA = new LongDynamicLongArray();
-  private final Sequence mDeficient = new A005100();
-  private final Sequence mAbundant = new A005101();
-  private int mN = 1;
+  private final DirectSequence mA = DirectSequence.create(new A005101());
+  private long mN = 1;
 
-  private long deficient(final long k) {
-    while (k >= mD.length()) {
-      mD.set(mD.length(), mDeficient.next().longValueExact());
-    }
-    return mD.get(k);
-  }
-
-  private long abundant(final long k) {
-    while (k >= mA.length()) {
-      mA.set(mA.length(), mAbundant.next().longValueExact());
-    }
-    return mA.get(k);
-  }
-
-  private boolean is(final long n, final int remaining, final long pos) {
-    if (remaining == 0) {
-      return n == 0;
-    }
-    if (n <= 0) {
-      return false;
-    }
-    long k = pos;
-    while (abundant(k) * remaining <= n) {
-      if (is(n - abundant(k), remaining - 1, k + 1)) {
-        return true;
+  private Z v(final Z s) {
+    Z sum = Z.ZERO;
+    for (int k = 0; k < s.bitLength(); ++k) {
+      if (s.testBit(k)) {
+        sum = sum.add(mA.a(k + 1));
       }
-      ++k;
     }
-    return false;
+    return sum;
   }
 
   @Override
   public Z next() {
-    ++mN;
-    long k = 0;
-    while (!is(deficient(k), mN, 0)) {
-      ++k;
+    Z s = Z.ONE.shiftLeft(++mN).subtract(1);
+    final Z lo = v(s.divide2()); // Smallest possible sum of n-1 values
+    Z best = null;
+    while (best == null || mA.a(s.bitLength()).add(lo).compareTo(best) < 0) {
+      final Z t = v(s);
+      if (Predicates.DEFICIENT.is(t) && (best == null || t.compareTo(best) < 0)) {
+        best = t;
+      }
+      s = Functions.SWIZZLE.z(s);
     }
-    return Z.valueOf(deficient(k));
+    return best;
   }
 }

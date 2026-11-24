@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003285;
 
 /**
- * A401843 allocated for Oleg Smolyakov.
+ * A401843 Number of integers k where n^2 &lt; k &lt; (n+1)^2 such that the period of the continued fraction of the square root of k is an odd number.
  * @author Sean A. Irvine
  */
 public class A401843 extends Sequence1 {

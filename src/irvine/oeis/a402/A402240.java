@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402240 allocated for Yinon Werner.
+ * A402240 Number of subsets of {1..n} that contain the bitwise OR of any two of their elements whenever this OR is &lt;= n.
  * @author Sean A. Irvine
  */
 public class A402240 extends Sequence0 {

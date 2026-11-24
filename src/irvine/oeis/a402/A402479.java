@@ -1,7 +1,7 @@
 package irvine.oeis.a402;
 
 /**
- * A402282.
+ * A402479 G.f.: Sum_{k&gt;=1} x^(k*(k+1)) * Product_{j=1..4*k} (1 + x^j).
  * @author Sean A. Irvine
  */
 public class A402479 extends A402468 {

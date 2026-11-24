@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333479 Busy Beaver for lambda calculus.
+ * A333479 Busy Beaver for lambda calculus BB\u03bb: the maximum beta normal form size of any closed lambda term of size n, or 0 if no closed term of size n exists.
  * @author Gregory Morse
  */
 public class A333479 extends Sequence1 {

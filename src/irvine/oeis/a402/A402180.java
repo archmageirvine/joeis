@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402180 allocated for Michael De Vlieger.
+ * A402180 a(n) = binomial(bigomega(n) + omega(n), omega(n)) - tau(n), where bigomega = A001222, omega = A001221, and tau = A000005.
  * @author Sean A. Irvine
  */
 public class A402180 extends Sequence1 {

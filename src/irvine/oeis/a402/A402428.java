@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A402428 Primes p such that 4*p# + p&apos; is prime, where p&apos; is the next prime &gt; p.
+ * A402428 Primes p such that 4*p# + p' is prime, where prime(n)# = A002110(n) and p' is the next prime &gt; p.
  * @author Georg Fischer
  */
 public class A402428 extends FilterSequence {

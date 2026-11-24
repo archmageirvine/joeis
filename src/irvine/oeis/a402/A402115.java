@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402115 allocated for Felix Huber.
+ * A402115 a(n) is the number of tangential quadrilaterals, up to congruence, with integer side lengths, integer area, and semiperimeter n.
  * @author Sean A. Irvine
  */
 public class A402115 extends Sequence1 {

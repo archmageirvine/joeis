@@ -9,7 +9,7 @@ import irvine.oeis.a003.A003961;
 
 
 /**
- * A341529 a(n) = sigma(n) * A003961(n),
+ * A341529 a(n) = sigma(n) * A003961(n), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of the divisors of n.
  * where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of the divisors of n.
  * @author Georg Fischer
  */

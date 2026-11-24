@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A189286 a(n):=(Sum_{k=0}^n C(6k,3k)C(3k,k)C(6(n-k),3(n-k))C(3(n-k),n-k))/((2n-1)Binomial[3n,n]).
+ * A189286 a(n) = (Sum_{k=0..n} C(6k,3k) * C(3k,k) * C(6(n-k),3(n-k)) * C(3(n-k),n-k)) / ((2n-1) * C(3n,n)).
  * @author Georg Fischer
  */
 public class A189286 extends HolonomicRecurrence {

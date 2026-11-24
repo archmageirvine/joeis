@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402242 allocated for Yinon Werner.
+ * A402242 Number of subsets of {1..n} that contain the bitwise XOR of any two distinct elements whenever this XOR is &lt;= n.
  * @author Sean A. Irvine
  */
 public class A402242 extends Sequence0 {

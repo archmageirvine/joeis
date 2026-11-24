@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399884 Busy beaver function for binary Post correspondence problems.
+ * A399884 Variant of the Busy Beaver sequence for the Post correspondence problem.
  * @author Gregory Morse
  */
 public class A399884 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A393376 Maximum rightmost position among the halting 2-state 2-symbol Wolfram machines started with n on the tape.
+ * A393376 Maximum space used by any of the 4096 Wolfram 2-state 2-symbol Turing machines when started with n on the tape.
  * @author Sean A. Irvine
  * @author Gregory Morse
  */

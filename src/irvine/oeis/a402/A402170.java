@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402170 allocated for Alper Ferudun.
+ * A402170 Square array read by antidiagonals: T(n,0) = T(0,k) = 1, and for n, k &gt;= 1, T(n,k) is the least positive integer such that T(i,j)*T(n,k) != T(i,k)*T(n,j) for all 0 &lt;= i &lt; n and 0 &lt;= j &lt; k.
  * @author Sean A. Irvine
  */
 public class A402170 extends Sequence0 {

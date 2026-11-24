@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A384629 Instruction-limited Busy Beaver sequence.
+ * A384629 Instruction-Limited Busy Beaver Sequence: BBi(n). Maximum number of steps that an n-instruction Turing machine (allowing any number of states and symbols) can take on an initially blank tape before eventually halting.
  * @author Gregory Morse
  */
 public class A384629 extends Sequence0 {

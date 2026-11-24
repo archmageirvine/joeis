@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A402275 allocated for Jwalin Bhatt.
+ * A402275 Span of the n-th maximal cluster of primes with consecutive gaps at most 10.
  * @author Sean A. Irvine
  */
 public class A402275 extends A000040 {

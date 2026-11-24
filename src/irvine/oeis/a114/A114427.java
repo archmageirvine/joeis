@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A114427 Decimal expansion of the real solution of x^3-x^2-x-4=0.
+ * A114427 Decimal expansion of the real solution of x^3-x^2-x-4 = 0.
  * Polynomial: x^3-x^2-x-4
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A352895 Maximum binary weight reached after the first step of the Collatz trajectory down to 1.
+ * A352895 The maximum binary weight of those elements of the Collatz orbit of n that follow after the term n itself, when iterated down to 1, or -1 if 1 is never reached.
  * @author Gregory Morse
  */
 public class A352895 extends LambdaSequence {

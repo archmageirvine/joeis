@@ -9,7 +9,7 @@ import irvine.oeis.a067.A067029;
 import irvine.oeis.a076.A076479;
 
 /**
- * A384709 a(n) = [n &gt; 1 and A076479(n) = -M√∂bius(A067029(n))], where [.] is the Iverson bracket.
+ * A384709 a(n) = [n &gt; 1 and A076479(n) = -M\u00f6bius(A067029(n))], where [.] is the Iverson bracket.
  * @author Georg Fischer
  */
 public class A384709 extends LambdaSequence {

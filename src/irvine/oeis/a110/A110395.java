@@ -5,7 +5,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A110395 a(1) = 1. a(n) = n times (10&apos;s complement of a(n-1)).
+ * A110395 a(1) = 1. a(n) = n times (10's complement of a(n-1)).
  * @author Georg Fischer
  */
 public class A110395 extends MultiTransformSequence {

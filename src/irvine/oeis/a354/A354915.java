@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A354915 Maximum length of 3 finite snakes in the Snake Number Problem with n-periodic instructions in an infinite square grid.
+ * A354915 Maximum length of 3 finite snakes in the Snake Number Problem with n-periodic instructions in an infinite square grid (see Comments).
  * @author Gregory Morse
  */
 public class A354915 extends LambdaSequence {

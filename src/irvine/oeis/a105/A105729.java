@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A105729 Decimal expansion of sqrt[3]*e^2/4: area of the regular triangle with side e.
+ * A105729 Decimal expansion of sqrt(3)*e^2/4: area of the regular triangle with side e.
  * Formula: sqrt(3)*e^2/4
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A087525 Primes p with the property that p-q does not divide p+q for all primes q &lt; p.
+ * A087525 Greater members in pairs of primes (p,q) such that p-q does not divide p+q.
  * @author Sean A. Irvine
  */
 public class A087525 extends Sequence0 {

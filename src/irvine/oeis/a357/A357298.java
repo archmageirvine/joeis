@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A357298 Triangle read by rows where all entries in every even row are 1&apos;s and the entries in every odd row alternate between 0 (start/end) and 1.
+ * A357298 Triangle read by rows where all entries in every even row are 1's and the entries in every odd row alternate between 0 (start/end) and 1.
  * @author Georg Fischer
  */
 public class A357298 extends LambdaTriangle {

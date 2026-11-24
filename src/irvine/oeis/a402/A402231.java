@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002899;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A402231 allocated for James Baker.
+ * A402231 Number of closed non-backtracking walks of length n starting and ending at a fixed vertex of the face-centered cubic lattice.
  * @author Sean A. Irvine
  */
 public class A402231 extends GfSequence {

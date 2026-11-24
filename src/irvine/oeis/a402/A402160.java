@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A402160 allocated for Alper Ferudun.
+ * A402160 Number of sets of three distinct triangulations of a convex n-gon such that the graph formed by the sides of the polygon and the diagonals of the three triangulations is not 4-colorable.
  * @author Sean A. Irvine
  */
 public class A402160 extends Sequence3 {

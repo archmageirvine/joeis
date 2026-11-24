@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A402282 allocated for Buyun Shentu.
+ * A402295 allocated for N. J. A. Sloane.
  * @author Sean A. Irvine
  */
 public class A402295 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.math.series.Series;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A402282.
+ * A402468 G.f.: Sum_{k&gt;=1} x^(k^2) * Product_{j=1..4*k} (1 + x^j).
  * @author Sean A. Irvine
  */
 public class A402468 extends GfSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A353309 Largest ternary digit sum reached after the first step of the orbit under A353313.
+ * A353309 The maximum sum of base-3 digits occurring among all numbers reached after n, when iterating map x -&gt; A353313(x) starting from x=n, or -1 if no finite cycle is ever reached.
  * @author Gregory Morse
  */
 public class A353309 extends LambdaSequence {

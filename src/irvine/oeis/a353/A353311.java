@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A353311 Number of distinct terms in the orbit under iteration of A353313.
+ * A353311 Number of distinct terms encountered when A353313 is iterated, or -1 if the iteration never reaches a finite cycle.
  * @author Gregory Morse
  */
 public class A353311 extends LambdaSequence {

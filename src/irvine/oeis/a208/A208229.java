@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A208229 Maximum halting time of Wolfram machine 596440 when only the first n tape cells can be nonblank initially.
+ * A208229 Consider Wolfram's universal 2-state 3-symbol Turing machine on a one-way-infinite tape with all but the first n cells initially blank and the head initially in state 1. a(n) is the maximum number of steps the Turing machine can make before halting.
  * @author Gregory Morse
  */
 public class A208229 extends Sequence0 {

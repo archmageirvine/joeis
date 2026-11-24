@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A353306 Starting values whose orbit under A353313 contains 1.
+ * A353306 Numbers k such that 1 is in the transitive closure of the map x -&gt; A353313(x) when starting iterating from x=k.
  * @author Gregory Morse
  */
 public class A353306 extends FilterSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A353305 Minimum value reached after the first step of the orbit under A353313.
+ * A353305 The smallest number reached after n when iterating map x -&gt; A353313(x) and starting from x=n, or -1 if no finite cycle is ever reached.
  * @author Gregory Morse
  */
 public class A353305 extends LambdaSequence {

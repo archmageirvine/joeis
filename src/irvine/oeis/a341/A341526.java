@@ -9,7 +9,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a003.A003961;
 
 /**
- * A341526 Numerator of ratio n*sigma(A003961(n)) / sigma(n)*A003961(n),
+ * A341526 Numerator of ratio n*sigma(A003961(n)) / sigma(n)*A003961(n), where sigma is the sum of divisors of n, and A003961 shifts the prime factorization of n one step towards larger primes.
  * where sigma is the sum of divisors of n, and A003961 shifts the prime factorization of n one step towards larger primes.
  * @author Georg Fischer
  */

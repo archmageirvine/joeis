@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A402268 allocated for Hassane Bakkaoui.
+ * A402268 Composite numbers k such that min_{1&lt;j&lt;=k/2} gcd(k, binomial(k,j)) &gt; sqrt(k).
  * @author Sean A. Irvine
  */
 public class A402268 extends A002808 {

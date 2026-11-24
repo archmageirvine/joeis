@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333958 Number of closed binary lambda terms of size n with a normal form.
+ * A333958 The number of closed lambda calculus terms of size n that have a normal form, where size(lambda M)=2+size(M), size(M N)=2+size(M)+size(N), and size(V)=1+i for a variable V bound by the i-th enclosing lambda.
  * @author Gregory Morse
  */
 public class A333958 extends Sequence1 {

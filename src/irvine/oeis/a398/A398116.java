@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398116 allocated for Marco Rip\u00e0.
+ * A398116 Number of sequences of at least two pairwise distinct points of an n X n grid such that every grid point strictly between two consecutive points has already appeared earlier in the sequence.
  * @author Sean A. Irvine
  */
 public class A398116 extends Sequence1 {

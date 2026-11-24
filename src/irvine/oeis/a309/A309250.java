@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A309250 Index of the binary string underlying the n-th Post correspondence problem encoding.
+ * A309250 a(n) is the index of the binary string of a Post's Correspondence Problem Encoding with index n.
  * @author Gregory Morse
  */
 public class A309250 extends Sequence1 {

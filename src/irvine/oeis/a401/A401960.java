@@ -3,7 +3,7 @@ package irvine.oeis.a401;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A401960 allocated for Yu Chu.
+ * A401960 Primes of the form k*2^k + 7.
  * @author Sean A. Irvine
  */
 public class A401960 extends SimpleTransformSequence {

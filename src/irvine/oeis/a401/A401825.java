@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401825 allocated for Guido Avagliano.
+ * A401825 Maximum number of digits of a zerofree non-repdigit permutation-invariant Niven number in base n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A401825 extends Sequence0 {

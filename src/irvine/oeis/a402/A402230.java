@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402230 allocated for Alper Ferudun.
+ * A402230 a(n) is the largest n-digit number from which no earlier term can be obtained by deleting digits one at a time, where a digit may be deleted only if it is the last digit or is not smaller than the digit currently following it.
  * @author Sean A. Irvine
  */
 public class A402230 extends Sequence1 {

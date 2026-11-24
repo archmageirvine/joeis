@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A402282 allocated for Buyun Shentu.
+ * A402282 Numbers k such that the walk on the square lattice encoded by the binary expansion of k ends at a point not reached by the walk of any smaller positive integer.
  * @author Sean A. Irvine
  */
 public class A402282 extends Sequence1 {

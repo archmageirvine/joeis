@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.transform.MultiTransformSequence;
 
 /**
- * A098751 a(n+1) = a(n) + 10&apos;s complement of each of the digits of a(n); a(0) = 0.
+ * A098751 a(n+1) = a(n) + 10's complement of each of the digits of a(n); a(0) = 0.
  * @author Georg Fischer
  */
 public class A098751 extends MultiTransformSequence {

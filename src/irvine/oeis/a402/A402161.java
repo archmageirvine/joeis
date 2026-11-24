@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A402161 allocated for Alper Ferudun.
+ * A402161 a(n) is the least k &gt;= 1 such that the n consecutive integers k, k+1, ..., k+n-1 cannot be cut into an initial block and a final block, both nonempty, with coprime sums; a(n) = 0 if there is no such k.
  * @author Sean A. Irvine
  */
 public class A402161 extends Sequence2 {

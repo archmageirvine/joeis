@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051037;
 import irvine.oeis.a238.A238690;
 
 /**
- * A399984 allocated for Michael De Vlieger.
+ * A399984 a(n) = A238690(A051037(n)).
  * @author Sean A. Irvine
  */
 public class A399984 extends A051037 {

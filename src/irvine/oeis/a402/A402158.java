@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A402158 allocated for Igor Zhuk.
+ * A402158 Primes p such that the iteration of T(z) = (z + 2)*(z^7 + 5*z^6 + 6*z^5 - 2*z^4 - 4*z^3 + 2*z^2 + 9*z - 1) + z collapses every element of GF(p) to -2.
  * @author Sean A. Irvine
  */
 public class A402158 extends Sequence0 {

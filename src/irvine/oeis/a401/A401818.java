@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A401818 allocated for Janaka Rodrigo.
+ * A401818 Side lengths of squares formed by constructing three right triangles corresponding to distinct Pythagorean triples on the sides of a triangle excluding configurations that are integer multiples of previously obtained configurations.
  * @author Sean A. Irvine
  */
 public class A401818 extends FilterNumberSequence {

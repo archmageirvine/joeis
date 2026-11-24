@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A349877 Steps to reach a multiple of 3 under iteration of A353314.
+ * A349877 a(n) is the number of times the map x -&gt; A353314(x) needs to be applied to n to reach a multiple of 3, or -1 if the trajectory never reaches a multiple of 3.
  * @author Gregory Morse
  */
 public class A349877 extends LambdaSequence {

@@ -171,28 +171,7 @@ public final class Gl2ClassAlgebra {
     for (int j = 0; j < points.length; ++j) {
       points[j] = Z.valueOf(mOrder).divide(degrees[j]).square();
     }
-    final Q[] polynomial = new Q[degrees.length];
-    Arrays.fill(polynomial, Q.ZERO);
-    for (int i = 0; i < points.length; ++i) {
-      final Z[] term = new Z[degrees.length];
-      Arrays.fill(term, Z.ZERO);
-      term[0] = degrees[i];
-      Z denominator = Z.ONE;
-      int degree = 0;
-      for (int j = 0; j < points.length; ++j) {
-        if (j != i) {
-          for (int k = ++degree; k >= 1; --k) {
-            term[k] = term[k - 1].subtract(points[j].multiply(term[k]));
-          }
-          term[0] = points[j].negate().multiply(term[0]);
-          denominator = denominator.multiply(points[i].subtract(points[j]));
-        }
-      }
-      for (int j = 0; j < polynomial.length; ++j) {
-        polynomial[j] = polynomial[j].add(new Q(term[j], denominator));
-      }
-    }
-    return polynomial;
+    return ClassAlgebraPolynomial.interpolate(points, degrees);
   }
 
   private Z sum(final Z p, final int e) {

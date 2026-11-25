@@ -13,6 +13,6 @@ public class A401087 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A401087() {
-    super(1, (p, e) -> (e & 1) == 1 ? Z.valueOf(e * e + 4 * e + 19).divide(8) : Z.valueOf(e * (e + 2)).divide(8));
+    super(1, (p, e) -> (e & 1) == 1 ? Z.valueOf((long) e * e + 4L * e + 19).divide(8) : Z.valueOf(e * (e + 2L)).divide(8));
   }
 }

@@ -48,19 +48,15 @@ public class A399997 extends Sequence3 {
         return;
       }
 
-      final int rem = (mN - d) * (mN - d - 1) / 2
-        + d * (mN - d);
-
+      final int rem = (mN - d) * (mN - d - 1) / 2 + d * (mN - d);
       final int best = Math.max(mBest, mGlobalBest.get());
       if (card + Math.min(rem, mM - card) <= best) {
         return;
       }
 
       final int[] added = new int[d];
-
       for (int v = lo; v <= mM - (mN - 1 - d); ++v) {
         mPos[d] = v;
-
         int addedCount = 0;
         for (int i = 0; i < d; ++i) {
           final int diff = v - mPos[i];
@@ -71,7 +67,6 @@ public class A399997 extends Sequence3 {
         }
 
         search(d + 1, v + 1, seen);
-
         for (int i = 0; i < addedCount; ++i) {
           seen.clear(added[i]);
         }

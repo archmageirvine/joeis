@@ -17,9 +17,9 @@ public class A087365 extends Sequence1 {
   private Z mMod;
   private Z[] mWeight;
   private HashMap<Z, byte[]> mRight;
-  private char[] mLeft;
-  private int mLeftLen;
-  private int mRightLen;
+  private char[] mLeft = null;
+  private int mLeftLen = 0;
+  private int mRightLen = 0;
   private byte[] mFound;
 
   private byte[] mDigits = new byte[mRightLen];

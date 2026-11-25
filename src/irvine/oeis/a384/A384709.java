@@ -19,6 +19,6 @@ public class A384709 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A384709() {
-    super(1, n -> (n > 1 && A076479.a(n).equals(Functions.MOEBIUS.z(A067029.a(n)).negate()) ? Z.ONE : Z.ZERO));
+    super(1, n -> n > 1 && A076479.a(n).equals(Functions.MOEBIUS.z(A067029.a(n)).negate()) ? Z.ONE : Z.ZERO);
   }
 }

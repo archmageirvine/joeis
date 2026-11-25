@@ -34,7 +34,7 @@ public class A016071 extends Sequence0 {
     // At this phase the nonblank span is 11(01)^k, possibly with
     // an additional terminal 1. The head is at the fifth cell.
     for (int k = first + 2; k < last; ++k) {
-      if (mMarks.contains(k) != ((k - first) % 2 == 1)) {
+      if (mMarks.contains(k) != (((k - first) & 1) == 1)) {
         return false;
       }
     }

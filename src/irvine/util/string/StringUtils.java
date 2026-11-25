@@ -308,4 +308,20 @@ public final class StringUtils {
     }
     return cnt;
   }
+
+  /**
+   * Test whether u is a subsequence of v.
+   * @param u the string to find
+   * @param v the string to search
+   * @return true if u is a subsequence of v
+   */
+  public static boolean isSubsequence(final String u, final String v) {
+    int j = 0;
+    for (int i = 0; i < v.length() && j < u.length(); ++i) {
+      if (v.charAt(i) == u.charAt(j)) {
+        ++j;
+      }
+    }
+    return j == u.length();
+  }
 }

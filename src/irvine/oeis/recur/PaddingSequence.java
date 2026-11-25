@@ -59,7 +59,7 @@ public class PaddingSequence extends AbstractSequence implements DirectSequence 
    * @param rightList the right list
    */
   public PaddingSequence(final int offset, final String leftList, final String rightList) {
-    this(offset, ZUtils.toZ(leftList), rightList == "null" ? new Z[] {null} : ZUtils.toZ(rightList));
+    this(offset, ZUtils.toZ(leftList), rightList.equals("null") ? new Z[] {null} : ZUtils.toZ(rightList));
   }
 
   /**

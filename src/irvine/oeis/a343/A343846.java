@@ -13,6 +13,6 @@ public class A343846 extends SingleTransformSequence {
 
   /** Construct the sequence. */
   public A343846() {
-    super(0, (term, n) -> Binomial.binomial(2 * n, n).multiply(term).multiply(((n * (n + 1) / 2) & 1) == 1 ? -1 : 1), "", new A163747());
+    super(0, (term, n) -> Binomial.binomial(2L * n, n).multiply(term).multiply(((n * (n + 1) / 2) & 1) == 1 ? -1 : 1), "", new A163747());
   }
 }

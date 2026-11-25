@@ -71,16 +71,7 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
     if (q == null) {
       return null;
     }
-    // Otherwise, it is prod_{k=0}^{n-1}(q^n-q^k) where q is field size
-    Z s = Z.ONE;
-    final int n = mSize;
-    final Z qn = q.pow(n);
-    Z qk = Z.ONE;
-    for (int k = 0; k < n; ++k) {
-      s = s.multiply(qn.subtract(qk));
-      qk = qk.multiply(q);
-    }
-    return s;
+    return LinearGroupOrder.general(mSize, q);
   }
 
   @Override

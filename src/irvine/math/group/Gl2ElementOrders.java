@@ -1,5 +1,6 @@
-package irvine.oeis.a316;
+package irvine.math.group;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,8 +12,9 @@ import irvine.math.z.Z;
 /**
  * Element order distributions in GL(2,Z_n).
  * @author Gregory Morse
+ * @author Sean A. Irvine
  */
-final class Gl2ElementOrders {
+public final class Gl2ElementOrders {
 
   private final Map<Integer, Z[]> mPrimePowers = new HashMap<>();
 
@@ -26,10 +28,58 @@ final class Gl2ElementOrders {
   }
 
   private Z[] primePowerOrders(final int modulus) {
-    return mPrimePowers.computeIfAbsent(modulus, n -> new A316566().computeRow(n));
+    return mPrimePowers.computeIfAbsent(modulus, Gl2ElementOrders::enumerateOrders);
   }
 
-  Z roots(final int modulus, final Z k) {
+  private static int[] multiply(final int[] x, final int[] y, final int n) {
+    return new int[] {
+      Math.floorMod((long) x[0] * y[0] + (long) x[1] * y[2], n),
+      Math.floorMod((long) x[0] * y[1] + (long) x[1] * y[3], n),
+      Math.floorMod((long) x[2] * y[0] + (long) x[3] * y[2], n),
+      Math.floorMod((long) x[2] * y[1] + (long) x[3] * y[3], n),
+    };
+  }
+
+  private static int order(final int[] m, final int n) {
+    int[] p = m;
+    int k = 1;
+    while (!(p[0] == 1 && p[1] == 0 && p[2] == 0 && p[3] == 1)) {
+      p = multiply(p, m, n);
+      ++k;
+    }
+    return k;
+  }
+
+  // Enumerate only the non-field prime-power factors; the field
+  // factors use conjugacy types and CRT assembles the composite result.
+  private static Z[] enumerateOrders(final int n) {
+    final ArrayList<Z> counts = new ArrayList<>();
+    final Z modulus = Z.valueOf(n);
+    for (int a = 0; a < n; ++a) {
+      for (int b = 0; b < n; ++b) {
+        for (int c = 0; c < n; ++c) {
+          for (int d = 0; d < n; ++d) {
+            if (Z.valueOf((long) a * d - (long) b * c).gcd(modulus).isOne()) {
+              final int index = order(new int[] {a, b, c, d}, n) - 1;
+              while (counts.size() <= index) {
+                counts.add(Z.ZERO);
+              }
+              counts.set(index, counts.get(index).add(1));
+            }
+          }
+        }
+      }
+    }
+    return counts.toArray(new Z[0]);
+  }
+
+  /**
+   * Count solutions of x^k = I.
+   * @param modulus positive modulus
+   * @param k exponent
+   * @return number of solutions
+   */
+  public Z roots(final int modulus, final Z k) {
     final FactorSequence fs = Jaguar.factor(modulus);
     Z result = Z.ONE;
     for (final Z p : fs.toZArray()) {
@@ -50,7 +100,12 @@ final class Gl2ElementOrders {
     return result;
   }
 
-  Map<Z, Z> distribution(final int modulus) {
+  /**
+   * Count elements by exact order.
+   * @param modulus positive modulus
+   * @return the nonzero counts, keyed by order
+   */
+  public Map<Z, Z> distribution(final int modulus) {
     final FactorSequence fs = Jaguar.factor(modulus);
     Map<Z, Z> result = Map.of(Z.ONE, Z.ONE);
     for (final Z p : fs.toZArray()) {

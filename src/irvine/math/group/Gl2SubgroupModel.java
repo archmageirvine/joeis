@@ -259,8 +259,8 @@ final class Gl2SubgroupModel {
 
   static int[] elements(final Group g, final int[] generators) {
     final Generated result = new Generated(g);
-    for (final int g : generators) {
-      result.add(g);
+    for (final int gn : generators) {
+      result.add(gn);
     }
     return toArray(result.mElements);
   }

@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A053071 Number of invertible binary matrices A such that A^5 + I is invertible.
+ * A053071 Number of n X n invertible binary matrices A such that A^5+I is invertible.
  * @author Gregory Morse
  */
 public class A053071 extends LambdaSequence {

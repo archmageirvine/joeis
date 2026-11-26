@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A309244 Triangle of number of nonsingular binary matrices by number of ones.
+ * A309244 Triangle of number of nonsingular n X n matrices over GF(2) by number of ones.
  * @author Gregory Morse
  */
 public class A309244 extends Sequence1 {

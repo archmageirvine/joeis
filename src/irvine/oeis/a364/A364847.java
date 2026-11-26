@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A364847 Number of conjugacy classes in SL(2,Z_n), up to conjugacy in GL(2,Z_n).
+ * A364847 Number of conjugacy classes in the group SL(2, Z_n), up to conjugacy in GL(2, Z_n).
  * @author Gregory Morse
  */
 public class A364847 extends LambdaSequence {

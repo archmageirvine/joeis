@@ -4,7 +4,7 @@ import irvine.math.group.SpecialLinearCyclicSubgroups;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A062315 Number of cyclic subgroups of SL(n,4).
+ * A062315 Number of cyclic subgroups of the group SL(n,4) (the group of nonsingular n X n matrices over GF(4) with determinant 1 ).
  * @author Gregory Morse
  */
 public class A062315 extends LambdaSequence {

@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A226236 Number of semisimple invertible binary matrices.
+ * A226236 Number of semisimple invertible n X n matrices over GF(2).
  * @author Gregory Morse
  */
 public class A226236 extends LambdaSequence {

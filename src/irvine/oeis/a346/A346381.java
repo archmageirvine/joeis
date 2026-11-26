@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A346381 Number of invertible binary matrices with a given dimension of the fixed space.
+ * A346381 Triangle read by rows. T(n,k) is the number of invertible n X n matrices over GF(2) such that the dimension of the eigenspace corresponding to eigenvalue 1 is k, 0 &lt;= k &lt;= n, n &gt;= 0.
  * @author Gregory Morse
  */
 public class A346381 extends Sequence0 {

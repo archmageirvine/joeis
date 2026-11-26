@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a335.A335000;
 
 /**
- * A334884 Order of the non-isomorphic groups PSL(m,q) in increasing order as q runs through the prime powers.
+ * A334884 Order of the non-isomorphic groups PSL(m,q) [or PSL_m(q)] in increasing order as q runs through the prime powers.
  * @author Gregory Morse
  */
 public class A334884 extends A335000 {

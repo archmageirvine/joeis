@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A224879 Number of invertible binary matrices up to row and column permutations.
+ * A224879 Number of equivalence classes of n X n nonsingular matrices over GF(2), up to row and column permutation.
  * @author Gregory Morse
  */
 public class A224879 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A065558 Largest irreducible character degree of GL(2,Z_n).
+ * A065558 Let G_n be the group of invertible 2 X 2 matrices mod n (sequence A000252). a(n) is the maximal degree of an irreducible representation of G_n.
  * @author Gregory Morse
  */
 public class A065558 extends LambdaSequence {

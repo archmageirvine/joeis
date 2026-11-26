@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A316584 Antidiagonal array of counts of solutions to x^k = I in GL(2,Z_n).
+ * A316584 Array read by antidiagonals: T(n,k) is the number of elements x in GL(2,Z_n) with x^k == I mod n where I is the identity matrix.
  * @author Gregory Morse
  */
 public class A316584 extends Sequence1 {

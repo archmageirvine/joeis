@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A336663 2-Carmichael numbers.
+ * A336663 2-Carmichael numbers: composite numbers n such that A^{n*(n-1)*(n+1)} = I for every matrix A from the group GL(2,Z/nZ).
  * @author Gregory Morse
  */
 public class A336663 extends Sequence1 {

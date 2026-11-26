@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A053060 Number of invertible binary matrices A such that A^3 + I is invertible.
+ * A053060 Number of n X n invertible binary matrices A such that A^3+I is invertible.
  * @author Gregory Morse
  */
 public class A053060 extends LambdaSequence {

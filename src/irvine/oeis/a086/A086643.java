@@ -4,7 +4,7 @@ import irvine.math.group.Gl2ClassAlgebra;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086643 Number of zeros in the character table of GL(2,Z_n).
+ * A086643 Number of zeros in the character table of the group GL(2,Z_n).
  * @author Gregory Morse
  */
 public class A086643 extends LambdaSequence {

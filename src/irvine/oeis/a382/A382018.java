@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A382018 Number of orbits of S(n) on nonsingular binary matrices.
+ * A382018 Number of orbits under the action of the permutation group S(n) on the nonsingular n X n matrices over GF(2).
  * @author Gregory Morse
  */
 public class A382018 extends LambdaSequence {

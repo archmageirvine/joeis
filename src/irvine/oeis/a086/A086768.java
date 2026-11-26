@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086768 Number of conjugacy classes in GL(3,Z_n).
+ * A086768 Number of conjugacy classes in the group GL(3,Z_n).
  * @author Gregory Morse
  */
 public class A086768 extends LambdaSequence {

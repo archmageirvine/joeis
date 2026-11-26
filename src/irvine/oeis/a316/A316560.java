@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A316560 Number of cyclic subgroups of GL(2,Z_n).
+ * A316560 Number of cyclic subgroups of the group GL(2, Z(n)), counting conjugates as distinct.
  * @author Gregory Morse
  */
 public class A316560 extends Sequence1 {

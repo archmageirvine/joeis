@@ -729,7 +729,6 @@ A011556 Number of regular triangulations of triangle X n-simplex, hard
 A011789 Number of directed animals on a certain lattice, insufficient detail [email sent]
 A011790 Number of directed animals on a certain lattice, insufficient detail
 A011791 Number of directed animals on a certain lattice, insufficient detail
-A011792 Number of directed animals on a certain lattice, insufficient detail
 A011798 Related to disproof of Gilbert-Pollak conjecture on n-dimensional Steiner minimal trees
 A011834 f-vectors for 2-neighborly simplicial complexes on n+1 vertices, pos. L in A011804
 A011835 f-vectors for 3-neighborly simplicial complexes on n+2 vertices
@@ -1282,7 +1281,6 @@ A046943 Continued fraction for Fransen-Robinson constant Integral_{x>=0} 1/Gamma
 A046958 Theta series of 14-dimensional integral laminated lattice LAMBDA14.2 with minimal norm 4
 A046997 Simple dependency on A001183.
 A047051 Prime alternating tangle types (of knots) with n crossings.
-A047052 Number of Abelian subgroups of Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2)).
 A047626 Theta series of 14-dimensional integral laminated lattice LAMBDA14.3 with minimal norm 4
 A047627 Theta series of 14-dimensional integral laminated lattice LAMBDA14.4 with minimal norm 4.
 A047628 Theta series of 14-dimensional lattice Kappa_{14} with minimal norm 4.
@@ -1442,8 +1440,6 @@ A052508 Smallest number such that the largest set of positive real numbers whose
 A053022 Number of subdiagonal directed diagonally-convex animals with given diagonal semiperimeter.
 A053040 Number of self-complementary types of Boolean functions of n variables under action of affine self-dual group M(n,2).
 A053043 Number of facets of hypermetric correlation cone
-A053060 Number of n X n invertible binary matrices A such that A^3+I is invertible
-A053071 Number of n X n invertible binary matrices A such that A^5+I is invertible.
 A053168 Hamming weights (or nonlinearity) of degree 4 rotation-symmetric functions.
 A053189 Hamming weights (or nonlinearity) of degree 5 rotation-symmetric functions
 A053346 a(n) = solution to the postage stamp problem with 7 denominations and n stamps.
@@ -1845,7 +1841,6 @@ A062167 Number of permutations with at most 2 queens on any torus diagonal, solu
 A062168 Number of permutations with at most 2 queens on any torus diagonal, solutions similar on the torus count only once.
 A062240 Number of subgroups of Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2) ).
 A062297 Number of distinct Abelian subgroups of the symmetric group S_n
-A062315 Number of cyclic subgroups of the group SL(n,4) (the group of nonsingular n X n matrices over GF(4) with determinant 1 ) [could not match numbers]
 A062361 Number of triangular regions in regular n-gon with all diagonals drawn
 A062386 Number of alternating link diagrams with n crossings, 1 connected component and two external legs
 A062528 Number of ways to fill an n X n matrix with numbers 1, 2, ..., n*n such that each row and each column is decreasing or increasing
@@ -1948,7 +1943,6 @@ A065505 Let p(k) denote k-th prime; consider solutions (p(n),p(m)) of Diophantin
 A065511 Let p(k) denote k-th prime; consider solutions (n,m) of the Diophantine system {p(p(n)+1)-p(p(n))=2, p(p(n))-6.p(p(m))=-1} (*); sequence gives values of m.
 A065535 Number of strongly perfect lattices in dimension n
 A065536 Number of strongly eutactic lattices in dimension n
-A065558 Let G_n be the group of invertible 2 X 2 matrices mod n (sequence A000252). a(n) is the maximal degree of an irreducible representation of G_n
 A065594 A036981(n)/(2n)!
 A065603 Transposition diameter: maximal number of moves in an optimal sorting of n objects by moving blocks
 A065645 Continued fraction for twin prime constant. [A005597 is too slow]
@@ -1991,9 +1985,7 @@ A066304 Reduced partially ordered sets (posets) with n unlabeled elements.
 A066305 Number of connected reduced partially ordered sets (posets) with n unlabeled elements
 A066389 Number of 2-generated groups of order n: groups that have a generating set of size <=2, i.e., are cyclic or of the form <a,b>.
 A066510 Conjectured list of positive numbers which are not of the form r^i-s^j, where r,s,i,j are integers with i>1, j>1.
-A066514 Number of subgroups of the group GL(2,Z_n) of invertible 2 X 2 matrices mod n (sequence A000252)
 A066517 Continued fraction expansion of Artin constant of rank 2: product(1-1/(p^3-p^2), p=prime).
-A066541 Number of normal subgroups of the group GL(2,Z_n) of invertible 2 X 2 matrices mod n (sequence A000252).
 A066634 Number of triangulations of the cyclic polytope C(n, n-5).
 A066654 Continued fraction for the Hardy-Littlewood constant Product_{p prime >= 5} (1-(3*p-1)/(p-1)^3)
 A066701 Triangle giving number of nonisomorphic minimal covering designs with parameters (n, k, k-1) (designs achieving the covering number C(n,k,k-1) given in A066010), for n >= 2, 2 <= k <= n.
@@ -2112,7 +2104,6 @@ A069738 Number of isomorphism classes of minimal n-extensions of a kind of homeo
 A069818 Let x = 1.757739951145463... be smallest real number that satisfies gcd(floor(x^m),m)=1 for all integers m>0; sequence gives floor(x^n).
 A070259 Array f(m,n) read by antidiagonals: f(m,n) = minimal number of 0's in a 2m X 2n (0,1) matrix that contains no m X n submatrix of 1's (m >= 1, n >= 1).
 A070300 Minimal number of 0's in a 2n X 2n (0,1) matrix that contains no n X n submatrix of 1's
-A070731 Size of largest conjugacy class in the group GL(n,2).
 A070735 Let r, s, t be three permutations of the set { 1, 2, 3, ..., n }; a(n) = minimal value of Sum_{i=1..n} r(i)*s(i)*t(i)
 A070736 Let r, s, t, u be four permutations of the set { 1, 2, 3, ..., n }; a(n) = minimal value of Sum_{i=1..n} r(i)*s(i)*t(i)*u(i).
 A070766 Number of polyhexes with n cells that tile the plane.
@@ -2616,7 +2607,6 @@ A085619 Number of 2-graphs with n nodes and integral spectrum.
 A085620 Number of 2-graphs with n nodes and transitive automorphism group.
 A085632 Number of connected coin graphs, also known as "penny" graphs.
 A085633 Number of not necessarily connected coin graphs, also known as "penny" graphs.
-A085646 Sum of the entries in the character table of the group GL(2,Z_n).
 A085705 Integers expressible as (x^3 + y^3 + z^3)/(x*y*z) with nonzero integers x, y and z. Alternatively, integers expressible as a/b + b/c + c/a with nonzero integers a, b and c.
 A085714 Degrees for which Gassmann triples do not exist.
 A085715 Squarefree conductors of quintic fields.
@@ -2630,10 +2620,8 @@ A085850 Decimal expansion of hard square entropy constant. [hard with all known 
 A085919 Number of ways a loop can cross three roads meeting in a Y n times.
 A086031 Number of nonisomorphic ways a loop can cross two parallel roads 2n times.
 A086053 Decimal expansion of Lengyel's constant L.
-A086087 a(n) is the minimal m such that the group GL(m,3) has an element of order n
 A086141 Permutation of A025487 (least prime signatures) which, when values are factored, exhibit self-similarity (cf. A008687).
 A086153 Special prime numbers arranged in a triangle: n-th row contains m primes p (where m = pi(2n + A020483(n)) - pi(A020483(n))) with following properties.
-A086157 Sum of the orders of the elements in the group GL(n,2).
 A086232 Decimal expansion of probability that a random walk on a 4-d lattice returns to the origin.
 A086233 Decimal expansion of probability that a random walk on a 5-d lattice returns to the origin.
 A086234 Decimal expansion of probability that a random walk on a 6-d lattice returns to the origin.
@@ -2661,13 +2649,10 @@ A086588 Number of cycles in range [A014137(n-1)..A014138(n-1)] of permutations A
 A086589 Number of fixed points in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
 A086590 Maximum cycle size in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
 A086591 Least common multiple of cycle sizes in range [A014137(n-1)..A014138(n-1)] of permutations A072088/A072089.
-A086643 Number of zeros in the character table of the group GL(2,Z_n).
 A086676 Number of n-dimensional 2 X 2 X ... X 2 grid graphs needed to cover an n-dimensional 3 X 3 X ... X 3 torus
 A086744 Decimal expansion of Product_{n>=1} (2n/(2n+1))^((-1)^t(n)), where t(n) = A010060(n) is the Thue-Morse sequence.
 A086748 Odd numbers m such that when C(2k, k) == 1 (mod m) then k is necessarily even.
-A086768 Number of conjugacy classes in the group GL(3,Z_n).
 A086771 Prime links (not necessarily connected knots) with n crossings.
-A086782 Sum of the degrees of the irreducible representations of the group GL(3,Z_n).
 A086792 Orders of finite groups G with the property that the sum of the orders of all the proper normal subgroups of G equals the order of G.
 A086808 Sum of the entries in the character table of the alternating group A_n.
 A086825 Number of knots (prime or composite) with n crossings.

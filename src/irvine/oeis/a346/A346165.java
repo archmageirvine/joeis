@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A346165 Number of invertible binary matrices with squarefree characteristic polynomial.
+ * A346165 Number of n X n invertible matrices whose characteristic polynomial is squarefree.
  * @author Gregory Morse
  */
 public class A346165 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A087785 Number of elements x in GL(2,Z_n) with x^2 = -I.
+ * A087785 Number of elements in GL(2,Z_n) x with x^2 == -I mod n where I is the identity matrix.
  * @author Gregory Morse
  */
 public class A087785 extends LambdaSequence {

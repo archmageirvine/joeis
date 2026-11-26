@@ -8,10 +8,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A399599 allocated for Michael De Vlieger.
+ * A399559 Norm from Q(zeta_n) to Q of F(zeta_n), where F(q) = Sum_{k&gt;=0} (q;q)_k is the Kontsevich-Zagier series and zeta_n is a primitive n-th root of unity.
  * @author Sean A. Irvine
  */
-public class A399599 extends Sequence1 {
+public class A399559 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

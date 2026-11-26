@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A346084 Number of invertible cyclic binary matrices.
+ * A346084 Number of invertible n X n cyclic matrices over GF(2).
  * @author Gregory Morse
  */
 public class A346084 extends LambdaSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A162158 Orbits of index-n coordinate-surjective sublattices of Z^3.
+ * A162158 The number of elements in S_3\det^{-1}(n)/GL(3,\Z), where we take det : M_{3 \x 3}(\Z) \rightarrow \Z.
  * @author Gregory Morse
  */
 public class A162158 extends LambdaSequence {

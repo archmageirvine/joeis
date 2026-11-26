@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A274313 Conjugacy classes of binary matrices that are squares.
+ * A274313 The number of conjugacy classes of n X n matrices over GF(2) which are squares of other such matrices.
  * @author Gregory Morse
  */
 public class A274313 extends Sequence0 {

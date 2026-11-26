@@ -4,7 +4,7 @@ import irvine.math.group.BinaryLinearMatrixCounts;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070731 Size of largest conjugacy class in GL(n,2).
+ * A070731 Size of largest conjugacy class in the group GL(n,2).
  * @author Gregory Morse
  */
 public class A070731 extends LambdaSequence {

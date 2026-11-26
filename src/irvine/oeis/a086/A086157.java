@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A086157 Sum of the orders of the elements in GL(n,2).
+ * A086157 Sum of the orders of the elements in the group GL(n,2).
  * @author Gregory Morse
  */
 public class A086157 extends Sequence1 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A086087 Minimal m such that GL(m,3) has an element of order n.
+ * A086087 a(n) is the minimal m such that the group GL(m,3) has an element of order n.
  * @author Gregory Morse
  */
 public class A086087 extends LambdaSequence {

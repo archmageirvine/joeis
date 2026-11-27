@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A402264 allocated for Stephen Casey.
+ * A402264 Positive integers equal to the sum of the p-th powers of their first k divisors for some positive integers p and k.
  * @author Sean A. Irvine
  */
 public class A402264 extends FilterNumberSequence {

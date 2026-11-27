@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402223 allocated for Connor Harrington.
+ * A402223 Fill the cells of the square grid in spiral order, starting at the center. a(n) is the smallest positive k such that no earlier cell within k steps (up, down, left, right) of cell n has k.
  * @author Sean A. Irvine
  */
 public class A402223 extends Sequence1 {

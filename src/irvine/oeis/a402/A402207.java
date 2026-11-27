@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402207 allocated for Ctibor O. Zizka.
+ * A402207 a(n) = 4*sigma(n) - n*tau(n).
  * @author Sean A. Irvine
  */
 public class A402207 extends Sequence1 {

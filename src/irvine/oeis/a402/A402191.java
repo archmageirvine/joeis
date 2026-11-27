@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A402191 allocated for James Baker.
+ * A402191 Number of distinct hyperplanes through the center of the (n-1)-dimensional permutohedron that are spanned by its ridges (faces of codimension 2).
  * @author Sean A. Irvine
  */
 public class A402191 extends Sequence3 {

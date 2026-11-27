@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A399325 allocated for Karan Sharma.
+ * A399325 Decimal expansion of the root in (0,1) of 7^(x-1) = 2^x - 1.
  * @author Sean A. Irvine
  */
 public class A399325 extends DecimalExpansionSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402176 allocated for Felix Huber.
+ * A402176 a(n) is the number of ways to write m = A025487(A402175(n)) as a quotient in which every divisor d &gt; 1 of m occurs exactly once as a factor of the numerator or denominator.
  * @author Sean A. Irvine
  */
 public class A402176 extends Sequence1 {

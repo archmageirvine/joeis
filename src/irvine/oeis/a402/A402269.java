@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A402269 allocated for Werner Aumayr.
+ * A402269 Composite numbers c such that psi(c+6) - psi(c) = 6 where psi is Dedekind's psi function (A001615).
  * @author Sean A. Irvine
  */
 public class A402269 extends FilterSequence {

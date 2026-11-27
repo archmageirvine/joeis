@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402384 allocated for Alper Ferudun.
+ * A402384 a(n) is the smallest positive n-digit number from which no earlier term can be obtained by deleting digits and rearranging the rest.
  * @author Sean A. Irvine
  */
 public class A402384 extends Sequence1 {

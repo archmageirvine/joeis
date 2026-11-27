@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A399868 allocated for Dmytro Dmytryshyn.
+ * A399868 Array read by upwards antidiagonals: T(n,k) is the coefficient of x^n in (1 - (1 - 9*3^k*x)^(3^(-k - 1)))/(3*x) for n &gt;= 0, k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A399868 extends Sequence0 {

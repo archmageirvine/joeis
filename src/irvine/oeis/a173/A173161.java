@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A173161 Decimal expansion of the solution x to x^x=7.
+ * A173161 Decimal expansion of the solution x to x^x = 7.
  * Equation; x^x-(7)
  * @author Georg Fischer
  */

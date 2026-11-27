@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a344.A344005;
 
 /**
- * A345995 Numbers k such that A345992(k) &gt; A345993(k).
+ * A345995 Numbers k such that gcd(k, A344005(k)) &gt; gcd(k + 1, A344005(k)), where A344005(n) is the smallest positive m such that n divides the oblong number m*(m+1).
  * @author Sean A. Irvine
  */
 public class A345995 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401888 allocated for Nouman Wali.
+ * A401888 Number of n X n matrices M over GF(3) satisfying M^2 = 0.
  * @author Sean A. Irvine
  */
 public class A401888 extends Sequence0 {

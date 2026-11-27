@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402374 allocated for Patryk Majda.
+ * A402374 Number of Frobenius pseudoprimes with respect to the Fibonacci polynomial x^2 - x - 1 (A212424) less than 10^n.
  * @author Sean A. Irvine
  */
 public class A402374 extends Sequence1 {

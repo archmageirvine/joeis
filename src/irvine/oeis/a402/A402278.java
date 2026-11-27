@@ -4,7 +4,7 @@ import irvine.oeis.a401.A401012;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A402278 allocated for Joel Cruz Cabrera.
+ * A402278 Continued fraction of the constant A401012 = 1 - Sum_{n&gt;=1} 2^(-floor(n*log_2(3))).
  * @author Sean A. Irvine
  */
 public class A402278 extends ContinuedFractionSequence {

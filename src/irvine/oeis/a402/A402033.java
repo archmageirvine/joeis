@@ -4,7 +4,7 @@ import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A402033 allocated for Leo Hennig.
+ * A402033 Numbers k such that every invertible residue modulo k, except 1, has a positive power congruent to k-1 modulo k.
  * @author Sean A. Irvine
  */
 public class A402033 extends FilterNumberSequence {

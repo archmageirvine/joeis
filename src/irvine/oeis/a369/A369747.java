@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A369747 a(n) = Sum_{p|n, p prime} pi(n/p).
+ * A369747 a(n) = Sum_{p|n, p prime} pi(n/p), where pi(n) is the number of primes &lt;= n, A000720.
  * @author Georg Fischer
  */
 public class A369747 extends LambdaSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A401955 allocated for Oleg Vasilyev.
+ * A401955 Number of steps to reach 1 by the map x -&gt; (3x+1)/2 if x is odd, 3x/2 if x == 2 (mod 4), and largest odd factor of x if x == 0 (mod 4), or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A401955 extends Sequence1 {

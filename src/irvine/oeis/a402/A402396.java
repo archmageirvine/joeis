@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402396 allocated for Pietro Tiaraju Giavarina dos Santos.
+ * A402396 Number of tilings of a 3 X 3 X n box using copies of the seven Soma cube pieces (any number of each, in any orientation).
  * @author Sean A. Irvine
  */
 public class A402396 extends Sequence0 {

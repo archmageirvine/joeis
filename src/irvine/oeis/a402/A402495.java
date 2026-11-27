@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402495 allocated for Jwalin Bhatt.
+ * A402495 Board sizes k &gt;= 5 for which Warnsdorff's knight's tour heuristic with the specified half-up variant of Roth's tie-breaking fails.
  * @author Sean A. Irvine
  */
 public class A402495 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A398918 allocated for Patryk Majda.
+ * A398918 Number of primes p &lt;= 10^n having a Fibonacci primitive root.
  * @author Sean A. Irvine
  */
 public class A398918 extends Sequence1 {

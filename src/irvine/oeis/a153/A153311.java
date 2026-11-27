@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A153311 Coefficient triangle sequence of a polynomial recursion: p(x,n)=(x + 1)*(p(x, n - 1) + 3^(n - 2)*(x + x^Floor[n/2] + x^(n - 2))); Row sums are 2*3^n.
+ * A153311 Triangle read by rows: T(n,k) = [x^k] P(n) where P(0) = 2, P(1) = 3+x, P(2) = 2+14*x+2*x^2, and P(n) = (x+1) * (P(n-1) + 3^(n-2) * (x + x^floor(n/2) + x^(n-2))).
  * @author Sean A. Irvine
  */
 public class A153311 extends Sequence0 {

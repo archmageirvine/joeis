@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402406 allocated for Jacek Szymkowiak.
+ * A402406 Smallest possible largest element of a set of 2^n distinct primes forming an n-dimensional Hilbert cube {m + Sum_{i in S} s(i) : S subset of {1..n}} with integers 0 &lt; s(1) &lt; ... &lt; s(n).
  * @author Sean A. Irvine
  */
 public class A402406 extends Sequence1 {

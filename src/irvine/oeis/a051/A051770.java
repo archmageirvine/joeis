@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051770 Numbers n such that there exists a binomial coefficient C(n,k) where C(n,k)-1 and C(n,k)+1 are twin primes and 2&lt;=k&lt;=floor(n/2).
+ * A051770 Numbers m such that there exists a binomial coefficient C(m,k) where C(m,k)-1 and C(m,k)+1 are twin primes and 2&lt;=k&lt;=floor(m/2).
  * @author Sean A. Irvine
  */
 public class A051770 extends Sequence1 {

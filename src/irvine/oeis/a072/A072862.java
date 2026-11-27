@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a049.A049605;
 
 /**
- * A072862 The smallest k&gt;1 such that k divides sigma(k*n) is equal to 6.
+ * A072862 Numbers m for which the smallest k &gt; 1 such that k divides sigma(k*m) is equal to 6.
  * @author Georg Fischer
  */
 public class A072862 extends FilterPositionSequence {

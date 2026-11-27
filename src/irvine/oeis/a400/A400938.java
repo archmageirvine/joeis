@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400938 allocated for Zolt\u00e1n Jo\u00f3.
+ * A400938 a(n) = 1 + the total remainder when repeatedly taking integer cube roots until 1 is reached.
  * @author Sean A. Irvine
  */
 public class A400938 extends Sequence1 {

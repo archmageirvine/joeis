@@ -13,6 +13,6 @@ public class A323376 extends LambdaArray {
 
   /** Construct the sequence. */
   public A323376() {
-    super(1, 1, 1, 1, (n, k) -> n == k ? Z.ZERO : Functions.ORDER.z(Functions.PRIME.z(k), Functions.PRIME.z(n)));
+    super(1, 1, 1, 1, (n, k) -> n.equals(k) ? Z.ZERO : Functions.ORDER.z(Functions.PRIME.z(k), Functions.PRIME.z(n)));
   }
 }

@@ -44,7 +44,7 @@ final class Gl2SubgroupModel {
       for (int p = 2; p <= m; ++p) {
         if (m % p == 0) {
           m /= p;
-          order *= (long) p * (p - 1) * (p * p - 1);
+          order *= (long) p * (p - 1) * ((long) p * p - 1);
           while (m % p == 0) {
             m /= p;
             order *= (long) p * p * p * p;

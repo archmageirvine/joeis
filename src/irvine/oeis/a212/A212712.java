@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A212712 Decimal expansion of (golden ratio)^E.
+ * A212712 Decimal expansion of (golden ratio)^e.
  * Formula: phi^e
  * @author Georg Fischer
  */

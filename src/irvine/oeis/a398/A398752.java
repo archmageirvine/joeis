@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002378;
 import irvine.oeis.a332.A332785;
 
 /**
- * A398752 allocated for Michael De Vlieger.
+ * A398752 Numbers that are neither squarefree, powerful, or oblong.
  * @author Sean A. Irvine
  */
 public class A398752 extends SetDifferenceSequence {

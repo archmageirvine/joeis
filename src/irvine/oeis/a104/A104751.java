@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A104751 Decimal expansion of solution to x^(3^x)=3.
+ * A104751 Decimal expansion of solution to x^(3^x) = 3.
  * Equation; x^(3^x)-(3)
  * @author Georg Fischer
  */

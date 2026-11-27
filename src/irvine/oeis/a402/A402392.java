@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A402392 allocated for Carlos Alberto Terencio de Bastos.
+ * A402392 Triangle read by rows: T(n,k) is the number of positive integers that reach 1 in exactly n steps of the '3x+1' problem, k of them being tripling steps.
  * @author Sean A. Irvine
  */
 public class A402392 extends Sequence0 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402446 allocated for Alper Ferudun.
+ * A402446 Card read at step n if, at each step, the top card of the deck 1, 2, 3, ... is read, removed and put back below 2*(n - k) of the remaining cards, where k is the last earlier step at which this card was read (k = 0 if there is none).
  * @author Sean A. Irvine
  */
 public class A402446 extends Sequence1 {

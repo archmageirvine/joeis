@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A399689 allocated for Ben Adelstein.
+ * A399689 a(1)=1; for n&gt;1, a(n) is the smallest number in a square spiral that is not touching any neighbor of a previous term, including diagonals.
  * @author Sean A. Irvine
  */
 public class A399689 extends Sequence1 {

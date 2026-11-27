@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A104753 Decimal expansion of solution to x^(5^x)=5.
+ * A104753 Decimal expansion of solution to x^(5^x) = 5.
  * Equation; x^(5^x)-(5)
  * @author Georg Fischer
  */

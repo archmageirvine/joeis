@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A173163 Decimal expansion of the solution x to x^x=9.
+ * A173163 Decimal expansion of the solution x to x^x = 9.
  * Equation; x^x-(9)
  * @author Georg Fischer
  */

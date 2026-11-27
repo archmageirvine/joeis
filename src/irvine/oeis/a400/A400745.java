@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A400745 allocated for Osman Hassan Hussein.
+ * A400745 Number of primes p &lt;= 10^n whose trajectory under the map p -&gt; prime(A007953(p)) ends in the cycle (3, 5, 11).
  * @author Sean A. Irvine
  */
 public class A400745 extends Sequence1 {

@@ -1405,7 +1405,6 @@ A052194 Positive integers sorted by length of name in English and numerical orde
 A052196 Largest natural number less than 10^66 requiring exactly n letters in English
 A052253 Triangle T(n,k) (n >= 1, k >= 1) giving filtration of bigrading of Hopf algebra of rooted trees (might be possible -- see paper).
 A052280 Number of 4 X 4 stochastic matrices under row and column permutations, depends on A333733
-A052281 Number of 4 X 4 symmetric stochastic matrices under row and column permutations, probably erroneous
 A052315 M-type rooted trees on n nodes
 A052336	Shifts left under transform in formula line
 A052400 Number of fully amphichiral and invertible knots with n crossings

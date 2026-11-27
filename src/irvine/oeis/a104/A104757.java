@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A104757 Decimal expansion of solution to x^(9^x)=9.
+ * A104757 Decimal expansion of solution to x^(9^x) = 9.
  * Equation; x^(9^x)-(9)
  * @author Georg Fischer
  */

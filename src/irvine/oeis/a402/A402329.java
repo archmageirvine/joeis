@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A402329 allocated for Francisco J. Mu\u00f1oz.
+ * A402329 Decimal expansion of Sum_{n&gt;=1} sqrt(4*n^2+1)/2^(n+2).
  * @author Sean A. Irvine
  */
 public class A402329 extends DecimalExpansionSequence {

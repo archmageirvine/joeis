@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402391 allocated for Carlos Alberto Terencio de Bastos.
+ * A402391 Odd numbers k such that the first even number reached by iterating x -&gt; (3*x+1)/2 from k is a power of 2.
  * @author Sean A. Irvine
  */
 public class A402391 extends Sequence1 {

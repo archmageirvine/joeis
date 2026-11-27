@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCrFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A104756 Decimal expansion of solution to x^(8^x)=8.
+ * A104756 Decimal expansion of solution to x^(8^x) = 8.
  * Equation; x^(8^x)-(8)
  * @author Georg Fischer
  */

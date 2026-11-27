@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402175 allocated for Felix Huber.
+ * A402175 Numbers k such that A025487(k) can be written as a quotient in which every divisor d &gt; 1 of A025487(k) occurs exactly once as a factor of the numerator or denominator.
  * @author Sean A. Irvine
  */
 public class A402175 extends Sequence1 {

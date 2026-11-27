@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000026;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A398543 a(n) = A008683(A000026(n)).
+ * A398543 a(n) = A008683(A000026(n)), where A008683 is M\u00f6bius function mu, and A000026 is multiplicative with a(p^e) = p*e.
  * @author Sean A. Irvine
  */
 public class A398543 extends SimpleTransformSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401900 allocated for Sergii Voloshyn.
+ * A401900 Irregular triangle of palindromic numerator coefficients for the nonsymmetric Horn companion of the Gross-Witten-Wadia generating function, read by rows.
  * @author Sean A. Irvine
  */
 public class A401900 extends Sequence0 {

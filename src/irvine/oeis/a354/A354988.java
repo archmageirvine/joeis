@@ -7,7 +7,7 @@ import irvine.oeis.a345.A345992;
 import irvine.oeis.a345.A345993;
 
 /**
- * A354988 a(n) = A345993(n) - A345992(n).
+ * A354988 a(n) = gcd(n, 1+A344005(n)) - gcd(n, A344005(n)), otherwise 0, where A344005(n) is the smallest positive m such that n divides the oblong number m*(m+1).
  * @author Georg Fischer
  */
 public class A354988 extends AbstractSequence {

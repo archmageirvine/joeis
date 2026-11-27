@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402353 allocated for Guido Avagliano.
+ * A402353 Positive integers k such that [1, k] contains exactly two integers that cannot be represented as a sum of distinct divisors of k.
  * @author Sean A. Irvine
  */
 public class A402353 extends Sequence1 {

@@ -68,38 +68,16 @@
        <BugPattern name="DM_EXIT" />
      </Match>
 
+     <!-- Intentional uses of ST -->
+     <Match classregex="irvine.oeis.a002.A002887" >
+       <BugCode name="ST" />
+     </Match>
+
      <!-- Math code making careful use of equality on floating-point -->
      <Match classregex="irvine.math.c.C">
        <BugCode name="FE"/>
      </Match>
-     <Match classregex="irvine.math.r.Gamma">
-       <BugCode name="FE,FL"/>
-     </Match>
-     <Match classregex="irvine.math.r.GammaTest">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.Beta">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.BetaTest">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.ExponentialTest">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.StudentTTest">
-       <BugCode name="FE"/>
-     </Match>
      <Match classregex="irvine.math.real.Hypergeometric">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.Struve">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.Bessel">
-       <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.HyperbolicTest">
        <BugCode name="FE"/>
      </Match>
      <Match classregex="irvine.twiddle.Crunch">
@@ -113,9 +91,6 @@
      </Match>
      <Match classregex="irvine.util.LimitedLengthPriorityQueue">
        <BugCode name="FE"/>
-     </Match>
-     <Match classregex="irvine.math.r.Airy">
-       <BugCode name="FPL"/>
      </Match>
 
      <!-- Deliberate use in test -->
@@ -143,9 +118,6 @@
      </Match>
 
      <!-- Fingbugs false-positive -->
-     <Match classregex="irvine.math.r.Bessel">
-       <BugCode name="DLS"/>
-     </Match>
      <Match classregex="irvine.oeis.a042.A042947">
        <BugCode name="DLS"/>
      </Match>
@@ -187,9 +159,6 @@
      </Match>
      <Match classregex="irvine.euler.Euler539">
        <BugCode name="BIT"/>
-     </Match>
-     <Match classregex="irvine.math.r.TrigonometricIntegralTest">
-       <BugCode name="CNT"/>
      </Match>
      <Match classregex="irvine.math.polynomial.CycleIndexReadBigN">
        <BugCode name="DMI"/>

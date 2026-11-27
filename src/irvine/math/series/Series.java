@@ -3,6 +3,7 @@ package irvine.math.series;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.QUtils;
 import irvine.math.z.Z;
@@ -140,6 +141,20 @@ public interface Series<E> {
   }
 
   /**
+   * Create a series backed by a directly accessible sequence.
+   * @param sequence underlying sequence
+   * @return series based on sequence
+   */
+  static Series<Q> createEgf(final DirectSequence sequence) {
+    return new AbstractInfiniteSeries<>() {
+      @Override
+      public Q coeff(final long n) {
+        return new Q(sequence.a(n), Functions.FACTORIAL.z(n));
+      }
+    };
+  }
+
+  /**
    * Create a series backed by a sequence.
    * The offset of the underlying sequence is not considered.
    * @param sequence underlying sequence
@@ -154,6 +169,25 @@ public interface Series<E> {
           seq.add(sequence.next());
         }
         return new Q(seq.get(Math.toIntExact(n)));
+      }
+    };
+  }
+
+  /**
+   * Create a series backed by a sequence.
+   * The offset of the underlying sequence is not considered.
+   * @param sequence underlying sequence
+   * @return series based on sequence
+   */
+  static Series<Q> createEgf(final Sequence sequence) {
+    final List<Z> seq = new ArrayList<>();
+    return new AbstractInfiniteSeries<>() {
+      @Override
+      public Q coeff(final long n) {
+        while (seq.size() <= n) {
+          seq.add(sequence.next());
+        }
+        return new Q(seq.get(Math.toIntExact(n)), Functions.FACTORIAL.z(n));
       }
     };
   }

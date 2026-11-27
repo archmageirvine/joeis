@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A400016 allocated for Karan Sharma.
+ * A400016 Number of permutations p of [n] such that every left-to-right maximum of p is a vertex of the upper convex hull of the points (i, p(i)).
  * @author Sean A. Irvine
  */
 public class A400016 extends Sequence0 {

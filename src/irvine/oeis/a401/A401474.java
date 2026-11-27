@@ -6,7 +6,7 @@ import irvine.oeis.a028.A028959;
 import irvine.oeis.gf.GfSequence;
 
 /**
- * A402207.
+ * A401474 Expansion of g.f. Phi^7*F, where Phi = g.f. for A028930 and F = g.f. for A028959.
  * @author Sean A. Irvine
  */
 public class A401474 extends GfSequence {

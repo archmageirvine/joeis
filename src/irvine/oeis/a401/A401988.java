@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401988 allocated for Dawid Ry\u0142ko.
+ * A401988 Number of perfect matchings in the 2n X 2n grid graph with the diagonal edges from (i,j) to (i+1,j+1) added, i.e., in a 2n X 2n rhombus of the triangular lattice.
  * @author Sean A. Irvine
  */
 public class A401988 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A220846 a(n) = sum_(d|n) ((product_(d|n) d) / d).
+ * A220846 a(n) = Sum_(d|n) ((Product_(d|n) d) / d).
  * @author Georg Fischer
  */
 public class A220846 extends LambdaSequence {

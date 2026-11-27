@@ -3,7 +3,7 @@ package irvine.oeis.a402;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A402101 allocated for Aidan Markey.
+ * A402101 Number of ways to earn a score of 1.5*n on the AMC 10 or AMC 12, distinct up to the number of questions answered correctly, left blank, or answered incorrectly. See comments.
  * @author Sean A. Irvine
  */
 public class A402101 extends FiniteSequence {

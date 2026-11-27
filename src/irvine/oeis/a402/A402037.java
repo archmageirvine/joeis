@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002182;
 import irvine.oeis.a057.A057641;
 
 /**
- * A402037 allocated for Omar E. Pol.
+ * A402037 Values of A057641 whose indices are highly composite numbers A002182.
  * @author Sean A. Irvine
  */
 public class A402037 extends Sequence1 {

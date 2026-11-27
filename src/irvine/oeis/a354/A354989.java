@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A354989 a(n) = 1 if A345993(n) &lt; A345992(n), otherwise 0.
+ * A354989 a(n) = 1 if gcd(n, 1+A344005(n)) &lt; gcd(n, A344005(n)), otherwise 0, where A344005(n) is the smallest positive m such that n divides the oblong number m*(m+1).
  * @author Georg Fischer
  */
 public class A354989 extends SimpleTransformSequence {

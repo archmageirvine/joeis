@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402393 allocated for Carlos Alberto Terencio de Bastos.
+ * A402393 a(n) is the largest j &gt;= 0 such that 3^j*n reaches 1 in exactly j fewer Collatz steps than n: A006577(3^j*n) = A006577(n) - j.
  * @author Sean A. Irvine
  */
 public class A402393 extends Sequence1 {

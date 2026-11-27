@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A402295 allocated for N. J. A. Sloane.
+ * A402295 Two-column array read by rows: list of points (x,y) arising in A402282.
  * @author Sean A. Irvine
  */
 public class A402295 extends Sequence1 {

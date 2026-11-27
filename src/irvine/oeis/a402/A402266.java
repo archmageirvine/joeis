@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a173.A173106;
 
 /**
- * A402266 allocated for Bernard Schott.
+ * A402266 Indices m for which the sum of the first m deficient numbers A173106(m) is itself deficient.
  * @author Sean A. Irvine
  */
 public class A402266 extends FilterPositionSequence {

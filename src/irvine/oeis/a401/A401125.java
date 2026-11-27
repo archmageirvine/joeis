@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A401125 allocated for Jos\u00e9 Luis Ram\u00edrez Ram\u00edrez.
+ * A401125 Triangle read by rows: T(n,k) is the number of Dyck paths of semilength n with exactly k symmetric peaks, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A401125 extends Sequence0 {

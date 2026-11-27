@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a173.A173107;
 
 /**
- * A402265 allocated for Bernard Schott.
+ * A402265 Indices m for which the sum of the first m abundant numbers A173107(m) is itself abundant.
  * @author Sean A. Irvine
  */
 public class A402265 extends FilterPositionSequence {

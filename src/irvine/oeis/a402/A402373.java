@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005596;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A402373 allocated for Patryk Majda.
+ * A402373 Decimal expansion of 27*A/38, where A is Artin's constant (A005596): the conjectured relative density of the primes having a Fibonacci primitive root.
  * @author Sean A. Irvine
  */
 public class A402373 extends DecimalExpansionSequence {

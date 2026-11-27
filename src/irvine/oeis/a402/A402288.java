@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A402288 allocated for Alper Ferudun.
+ * A402288 Triangle read by rows: among the lists of n positive integers that contain no earlier row as a subsequence, row n has the smallest possible largest term and, among those, is the lexicographically smallest.
  * @author Sean A. Irvine
  */
 public class A402288 extends Sequence1 {

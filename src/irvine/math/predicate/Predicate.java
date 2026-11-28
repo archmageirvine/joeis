@@ -32,5 +32,25 @@ public interface Predicate {
    */
   boolean is(final int n);
 
+  /**
+   * Characteristic function.
+   * @param n parameter
+   * @return 1 if the predicate ist true, 0 otherwise
+   * @throws IllegalArgumentException if the parameter is not valid.
+   */
+  default int iverson(final Z n) {
+    return is(n) ? 1 : 0;
+  }
+
+  /**
+   * Characteristic function.
+   * @param n parameter
+   * @return 1 if the predicate ist true, 0 otherwise
+   * @throws IllegalArgumentException if the parameter is not valid.
+   */
+  default int iverson(final long n) {
+    return is(n) ? 1 : 0;
+  }
+
 }
 

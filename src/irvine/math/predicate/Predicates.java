@@ -44,6 +44,8 @@ public final class Predicates {
   public static final Predicate LUCAS = new Lucas(); // =A000032, =A000204
   /** Test if a number is perfect. */
   public static final Predicate PERFECT = new Perfect(); // =A000396
+  /** Test if a number is an Achilles number (see A052486): powerful but imperfect. */
+  public static final Predicate ACHILLES = new Achilles(); // =A052486
   /** Test if a number is a primorial. */
   public static final Predicate PRIMORIAL = new Primorial(); // =A002110
   /** Test if a number is arithmetic. */
@@ -129,6 +131,8 @@ public final class Predicates {
   public static final Predicate2 REPDIGIT = new Repdigit();
   /** Test if a number is zeroless in a base. */
   public static final Predicate2 ZEROLESS = new Zeroless(); // =A052382(10,
+  /** Test if a number has distinct digits in a base. */
+  public static final Predicate2 DISTINCT_DIGITS = new DistinctDigits(); // =A010784(10, =A023798(3, =A023799(4, =A023800(5, =A023801(6, =A023804(9, =A023805(11, =A023806(12
   /** Test if a number is p-smooth: all prime divisors are &lt;= p. */
   public static final Predicate2 SMOOTH = new Smooth(); // =A003586(3, =A051037(5, =A002473(7, =A051038(11, =A080197(13, =A080681(17, =A080682(19, =A080683(23
   /** Test if a number is a repeated digit in a base. */

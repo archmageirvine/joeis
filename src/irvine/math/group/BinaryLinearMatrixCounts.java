@@ -33,7 +33,7 @@ public final class BinaryLinearMatrixCounts {
 
   private BinaryLinearMatrixCounts() { }
 
-  private static int[] multiplicities(final int[] parts) {
+  static int[] multiplicities(final int[] parts) {
     final int[] counts = new int[parts[0] + 1];
     for (final int p : parts) {
       ++counts[p];
@@ -84,6 +84,123 @@ public final class BinaryLinearMatrixCounts {
       }
     }
     return sum.divide(d);
+  }
+
+  private static Q largestHookWeight(final int n, final Z q) {
+    final IntegerPartition partitions = new IntegerPartition(n);
+    Q best = Q.ZERO;
+    int[] parts;
+    while ((parts = partitions.next()) != null) {
+      Z denominator = Z.ONE;
+      long b = 0;
+      for (int i = 0; i < parts.length; ++i) {
+        b += (long) i * parts[i];
+        for (int j = 0; j < parts[i]; ++j) {
+          int hook = parts[i] - j;
+          for (int k = i + 1; k < parts.length && parts[k] > j; ++k) {
+            ++hook;
+          }
+          denominator = denominator.multiply(q.pow(hook).subtract(1));
+        }
+      }
+      final Q weight = new Q(q.pow(b), denominator);
+      if (weight.compareTo(best) > 0) {
+        best = weight;
+      }
+    }
+    return best;
+  }
+
+  /**
+   * Maximum irreducible character degree of GL(n,2), using Green's hook formula.
+   * @param n dimension
+   * @return maximum degree
+   */
+  public static Z largestCharacterDegree(final int n) {
+    final Q[] best = new Q[n + 1];
+    Arrays.fill(best, Q.ZERO);
+    best[0] = Q.ONE;
+    Z orderPart = Z.ONE;
+    for (int d = 1; d <= n; ++d) {
+      final Z q = Z.ONE.shiftLeft(d);
+      orderPart = orderPart.multiply(q.subtract(1));
+      final Q[] weight = new Q[n / d + 1];
+      for (int k = 1; k < weight.length; ++k) {
+        weight[k] = largestHookWeight(k, q);
+      }
+      // Each distinct nonzero irreducible label can be used only once.
+      final int count = irreducibles(d).subtract(d == 1 ? 1 : 0).min(Z.valueOf(n / d)).intValueExact();
+      for (int label = 0; label < count; ++label) {
+        for (int i = n; i >= d; --i) {
+          for (int k = 1; k <= i / d; ++k) {
+            final Q value = best[i - k * d].multiply(weight[k]);
+            if (value.compareTo(best[i]) > 0) {
+              best[i] = value;
+            }
+          }
+        }
+      }
+    }
+    return best[n].multiply(orderPart).toZ();
+  }
+
+  private static Q[][] zeroTriangle(final int n) {
+    final Q[][] result = new Q[n + 1][];
+    for (int i = 0; i <= n; ++i) {
+      result[i] = new Q[i + 1];
+      Arrays.fill(result[i], Q.ZERO);
+    }
+    return result;
+  }
+
+  /**
+   * Count invertible binary matrices by number of primary rational canonical blocks.
+   * @param n dimension
+   * @return counts for zero through n blocks
+   */
+  public static Z[] primaryBlockCounts(final int n) {
+    final Q[][] logarithmic = zeroTriangle(n);
+    for (int d = 1; d <= n; ++d) {
+      final Z copies = irreducibles(d).subtract(d == 1 ? 1 : 0).multiply(d);
+      final Q[][] local = zeroTriangle(n / d);
+      final Q[][] derivative = zeroTriangle(n / d);
+      for (int m = 1; m <= n / d; ++m) {
+        final IntegerPartition partitions = new IntegerPartition(m);
+        int[] parts;
+        while ((parts = partitions.next()) != null) {
+          local[m][parts.length] = local[m][parts.length].add(new Q(Z.ONE, GeneralLinearCycleIndex.kung(d, multiplicities(parts), 2)));
+        }
+        for (int b = 1; b <= m; ++b) {
+          Q value = local[m][b].multiply(m);
+          for (int i = 1; i < m; ++i) {
+            for (int j = Math.max(1, b - (m - i)); j <= Math.min(i, b - 1); ++j) {
+              value = value.subtract(local[i][j].multiply(derivative[m - i][b - j]));
+            }
+          }
+          derivative[m][b] = value;
+          logarithmic[d * m][b] = logarithmic[d * m][b].add(value.multiply(copies));
+        }
+      }
+    }
+    final Q[][] coefficient = zeroTriangle(n);
+    coefficient[0][0] = Q.ONE;
+    for (int m = 1; m <= n; ++m) {
+      for (int b = 1; b <= m; ++b) {
+        Q value = Q.ZERO;
+        for (int i = 1; i <= m; ++i) {
+          for (int j = Math.max(1, b - (m - i)); j <= Math.min(i, b); ++j) {
+            value = value.add(logarithmic[i][j].multiply(coefficient[m - i][b - j]));
+          }
+        }
+        coefficient[m][b] = value.divide(m);
+      }
+    }
+    final Z order = LinearGroupOrder.general(n, Z.TWO);
+    final Z[] counts = new Z[n + 1];
+    for (int k = 0; k <= n; ++k) {
+      counts[k] = coefficient[n][k].multiply(order).toZ();
+    }
+    return counts;
   }
 
   /**

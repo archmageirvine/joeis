@@ -1,82 +1,41 @@
 package irvine.oeis.a390;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-
 import irvine.math.wolfram.TuringMachine;
 import irvine.math.z.Z;
-import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
  * A390016 Maximum halting time across all Wolfram 3-state 2-symbol Turing machines started with n on the tape.
  * @author Sean A. Irvine
+ * @author Gregory Morse
  */
-public class A390016 extends Sequence1 implements Conjectural {
+public class A390016 extends Sequence1 {
 
-  private static final int MACHINES = 2985984; // =2^12 * 3^6
-  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
-    String.valueOf(Runtime.getRuntime().availableProcessors())));
-  private long mHeuristicLimit = 100;
-  private int mN = 0;
-
-  private long countSteps(final TuringMachine tm, final long input, final long maxSteps) {
-    tm.initialTape(input);
-    long steps = 1;
-    while (tm.step() >= 0) {
-      if (++steps > maxSteps) {
-        return -1;
-      }
-    }
-    return steps;
-  }
+  // Rule numbers, not running times. A separate exhaustive audit covered
+  // all 12^6 transition tables at each input and found these maximizers.
+  // Replaying a witness checks its time, not maximality on its own.
+  private static final int[] ATTAINING_RULES = {
+    718804, 670559, 718804, 172204, 670559, 2133803, 666364, 2543572,
+    733183, 670559, 665239, 213652, 733183, 670559, 666364, 1999002,
+    2727319, 2204791, 733183, 213652, 670559, 173183, 665239, 2543572,
+    2727319, 600720, 2143286, 213652, 2675476, 2910079, 666364, 1999002,
+    213652, 600720, 2723839, 2375763, 665239, 213609, 2018687, 1999002,
+    213652, 600720, 2143286, 213652, 173183, 600720, 589111, 2745402,
+    720871, 600720,
+  };
+  private int mN;
 
   @Override
   public Z next() {
-    ++mN;
-    final ExecutorService exec = Executors.newFixedThreadPool(THREADS);
-    final List<Callable<Long>> tasks = new ArrayList<>();
-
-    // Split MACHINES into THREADS roughly equal chunks
-    final int chunk = (MACHINES + THREADS - 1) / THREADS;
-    for (int t = 0; t < THREADS; ++t) {
-      final int start = t * chunk;
-      final int end = Math.min(start + chunk, MACHINES);
-      tasks.add(() -> {
-        long localMax = 0;
-        for (int machine = start; machine < end; ++machine) {
-          final TuringMachine tm = new TuringMachine(machine, 3, 2);
-          if (tm.neverHalts()) {
-            continue;
-          }
-          final long steps = countSteps(tm, mN, mHeuristicLimit);
-          if (steps > localMax) {
-            localMax = steps;
-          }
-        }
-        return localMax;
-      });
+    if (mN == ATTAINING_RULES.length) {
+      throw new UnsupportedOperationException("No exact census at input " + (mN + 1));
     }
-
-    long max = 0;
-    try {
-      final List<Future<Long>> results = exec.invokeAll(tasks);
-      for (final Future<Long> f : results) {
-        max = Math.max(max, f.get());
-      }
-    } catch (final InterruptedException | ExecutionException e) {
-      throw new RuntimeException(e);
-    } finally {
-      exec.shutdown();
+    final TuringMachine machine = new TuringMachine(ATTAINING_RULES[mN], 3, 2);
+    machine.initialTape(++mN);
+    long steps = 1;
+    while (machine.step() >= 0) {
+      ++steps;
     }
-
-    // Update maximum observed halt for next number
-    mHeuristicLimit = Math.max(5 * max, mHeuristicLimit);
-    return Z.valueOf(max);
+    return Z.valueOf(steps);
   }
 }

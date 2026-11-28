@@ -1,8 +1,5 @@
 package irvine.math.group;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -220,10 +217,10 @@ final class RationalE7Census {
     }
   }
 
-  static int maximal(final Path path) throws IOException {
+  static int maximal(final String data) {
     final RationalE7Census e7 = new RationalE7Census();
     final int rootGroup = e7.order();
-    final String fixture = Files.readAllLines(path).stream().filter(s -> s.startsWith("IMF_GENERATORS ")).findFirst().orElseThrow();
+    final String fixture = data.lines().filter(s -> s.startsWith("IMF_GENERATORS ")).findFirst().orElseThrow();
     final Input input = new Input(fixture.substring("IMF_GENERATORS ".length()));
     final List<Integer> candidates = new ArrayList<>();
     final List<Integer> simplex = new ArrayList<>();

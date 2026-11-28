@@ -1,8 +1,8 @@
 package irvine.math.group;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.BitSet;
@@ -15,6 +15,7 @@ import java.util.Set;
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.zip.GZIPInputStream;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -32,7 +33,7 @@ public final class RationalGroupCensus {
   private static final int SAMPLES = 192;
   private static final long TORUS_LIMIT = 600000;
 
-  private final Path mDirectory;
+  private Map<String, String> mRecords;
   private final Map<String, List<Q>> mSeeds = new HashMap<>();
   private final Map<String, String> mTypes = new HashMap<>();
   private final Map<String, Map<Integer, SylowInput>> mSylows = new HashMap<>();
@@ -48,12 +49,46 @@ public final class RationalGroupCensus {
   private List<Q> mG2Seed;
   private LocalClassInput mG2LocalRestriction;
 
-  /**
-   * Create a census using the structural data in the given directory.
-   * @param directory the directory containing the CARAT and IMF records
-   */
-  public RationalGroupCensus(final Path directory) {
-    mDirectory = directory;
+  static InputStream resource(final String name) throws IOException {
+    final InputStream in = RationalGroupCensus.class.getResourceAsStream("resources/" + name);
+    if (in == null) {
+      throw new IOException("Missing rational group resource " + name);
+    }
+    return in;
+  }
+
+  private static Map<String, String> readRecords() throws IOException {
+    final String data;
+    try (InputStream in = resource("a069481-imf.dat.gz");
+         InputStream decoded = new GZIPInputStream(in)) {
+      data = new String(decoded.readAllBytes(), StandardCharsets.UTF_8);
+    }
+    final Map<String, String> records = new HashMap<>();
+    final Matcher sections = Pattern.compile("(?m)^@@ ([A-Za-z0-9]+[.]txt)\\n").matcher(data);
+    int start = 0;
+    String name = null;
+    while (sections.find()) {
+      if (name != null && records.putIfAbsent(name, data.substring(start, sections.start())) != null) {
+        throw new IOException("Duplicate rational group record " + name);
+      }
+      name = sections.group(1);
+      start = sections.end();
+    }
+    if (name == null || records.putIfAbsent(name, data.substring(start)) != null) {
+      throw new IOException("Invalid rational group resource");
+    }
+    return records;
+  }
+
+  private String record(final String name) throws IOException {
+    if (mRecords == null) {
+      mRecords = readRecords();
+    }
+    final String data = mRecords.get(name);
+    if (data == null) {
+      throw new IOException("Missing rational group record " + name);
+    }
+    return data;
   }
 
   /**
@@ -67,10 +102,10 @@ public final class RationalGroupCensus {
       throw new UnsupportedOperationException("Rational matrix-group catalogue covers dimensions 1 to 31");
     }
     if (n <= 6) {
-      return RationalGroupCatalogue.maximal(mDirectory.resolve("qcatalog.tar.gz"), n);
+      return RationalGroupCatalogue.maximal(n);
     }
     if (n == 7) {
-      return RationalE7Census.maximal(mDirectory.resolve("ImfNative7Structure.txt"));
+      return RationalE7Census.maximal(record("ImfNative7Structure.txt"));
     }
     if (mRows == null) {
       loadImf();
@@ -1248,8 +1283,6 @@ public final class RationalGroupCensus {
         // sieve reaches this method. The 24-dimensional even unimodular
         // rootless lattice is uniquely the Leech lattice.
         mLeechLattice = RationalLatticeIsometry.isRootlessEvenUnimodular(primitive());
-        if (mLeechLattice) {
-        }
       }
       if (!mLeechLattice) {
         return false;
@@ -1483,7 +1516,7 @@ public final class RationalGroupCensus {
   }
 
   private void loadImf() throws IOException {
-    final String file = Files.readString(mDirectory.resolve("ImfNativeScreenStructure.txt"));
+    final String file = record("ImfNativeScreenStructure.txt");
     loadNormalizers();
     loadBlockQuotients();
     loadLocalClasses();
@@ -1495,12 +1528,13 @@ public final class RationalGroupCensus {
     loadSylows();
     loadLabels();
     loadRows(file);
+    mRecords = null;
   }
 
   private void loadNormalizers() throws IOException {
     for (final String name : List.of("NativeFrontierTriangleNormalizers.txt", "NativeFrontierUnitaryNormalizers.txt")) {
       final Matcher groups = Pattern.compile("(?ms)^NORMAL_GROUP +(\\d+) +(\\d+) +(\\d+) +(\\d+) *\\r?\\n(.*?)^LOCAL_END")
-        .matcher(Files.readString(mDirectory.resolve(name)));
+        .matcher(record(name));
       while (groups.find()) {
         final List<RationalClassInventory.Lift> lifts = new ArrayList<>();
         final Matcher records = Pattern.compile("(?ms)^NORMAL_LIFT +(.*?)(?=^NORMAL_LIFT |\\z)").matcher(groups.group(5));
@@ -1519,7 +1553,7 @@ public final class RationalGroupCensus {
 
   private void loadBlockQuotients() throws IOException {
     final Matcher inventories = Pattern.compile("(?ms)^BLOCKQ_GROUP +(\\d+) +(\\d+) +(\\d+) +(\\d+) *\\r?\\n(.*?)^LOCAL_END")
-      .matcher(Files.readString(mDirectory.resolve("NativeFrontierBlockQuotients.txt")));
+      .matcher(record("NativeFrontierBlockQuotients.txt"));
     while (inventories.find()) {
       final BlockQuotientInput input = new BlockQuotientInput(new Z(inventories.group(3)), new Z(inventories.group(4)));
       final Matcher records = Pattern.compile("(?ms)^BLOCKQ_(CAYLEY|LIFT) +(.*?)(?=^BLOCKQ_|\\z)").matcher(inventories.group(5));
@@ -1544,7 +1578,7 @@ public final class RationalGroupCensus {
   private void loadLocalClasses() throws IOException {
     for (final String fileName : List.of("NativeFrontierBlocks.txt", "NativeFrontierLastBlocks.txt", "NativeFrontierG23Restriction.txt", "NativeFrontierPSLCores.txt")) {
       final Matcher inventories = Pattern.compile("(?ms)^LOCAL_GROUP +(?:(\\d+) +)?(\\d+) +(\\d+) *\\r?\\n(.*?)^LOCAL_END")
-        .matcher(Files.readString(mDirectory.resolve(fileName)));
+        .matcher(record(fileName));
       while (inventories.find()) {
         final LocalClassInput input = new LocalClassInput(new Z(inventories.group(3)));
         final Matcher records = Pattern.compile("(?ms)^LOCAL_(BASIS|LIFT) +(.*?)(?=^LOCAL_|\\z)").matcher(inventories.group(4));
@@ -1573,7 +1607,7 @@ public final class RationalGroupCensus {
   private void loadClasses() throws IOException {
     for (final String fileName : List.of("NativeFrontierClasses.txt", "NativeFrontierMore.txt", "NativeFrontierLastWhole.txt", "NativeFrontierJankoFast.txt")) {
       final Matcher inventories = Pattern.compile("(?ms)^CLASS_GROUP +(\\d+) +(\\d+) +(\\d+) +(\\d+) *\\r?\\n(.*?)^CLASS_END")
-        .matcher(Files.readString(mDirectory.resolve(fileName)));
+        .matcher(record(fileName));
       while (inventories.find()) {
         final List<Q[][]> radical = new ArrayList<>();
         final List<RationalClassInventory.Lift> classes = new ArrayList<>();
@@ -1599,7 +1633,7 @@ public final class RationalGroupCensus {
   private void loadG2() throws IOException {
     final List<Q[][]> generators = new ArrayList<>();
     final Matcher records = Pattern.compile("(?ms)^NORMALIZER_(SEED|GEN) +(.*?)(?=^NORMALIZER_|^GAP_RESULT_END)")
-      .matcher(Files.readString(mDirectory.resolve("NativeG23Normalizer.txt")));
+      .matcher(record("NativeG23Normalizer.txt"));
     while (records.find()) {
       final RationalE7Census.Input input = new RationalE7Census.Input(records.group(2));
       if ("SEED".equals(records.group(1))) {
@@ -1616,7 +1650,7 @@ public final class RationalGroupCensus {
 
   private void loadTori() throws IOException {
     final Matcher records = Pattern.compile("(?ms)^TORUS_(SEED|ELEMENT|RADICAL|FIBRE) +(\\d+) +(.*?)(?=^TORUS_|^GAP_RESULT_END)")
-      .matcher(Files.readString(mDirectory.resolve("NativeTorus16FullInputs.txt")));
+      .matcher(record("NativeTorus16FullInputs.txt"));
     while (records.find()) {
       final TorusInput input = mTori.computeIfAbsent(Integer.parseInt(records.group(2)), k -> new TorusInput());
       final RationalE7Census.Input tokens = new RationalE7Census.Input(records.group(3));
@@ -1642,7 +1676,7 @@ public final class RationalGroupCensus {
   private void loadE8() throws IOException {
     final Map<List<Integer>, Z> spectra = new HashMap<>();
     final Matcher classes = Pattern.compile("(?ms)^WEYL_CLASS +(\\d+) +(.*?)(?=^WEYL_CLASS |^GAP_RESULT_END)")
-      .matcher(Files.readString(mDirectory.resolve("NativeWeylE8Classes.txt")));
+      .matcher(record("NativeWeylE8Classes.txt"));
     int count = 0;
     while (classes.find()) {
       final Q[][] matrix = new RationalE7Census.Input(classes.group(2)).matrix();
@@ -1658,7 +1692,7 @@ public final class RationalGroupCensus {
 
   private void loadLeech() throws IOException {
     final Map<List<Integer>, Z> spectra = new HashMap<>();
-    for (final String line : Files.readAllLines(mDirectory.resolve("LeechMasses.txt"))) {
+    for (final String line : record("LeechMasses.txt").split("\\R")) {
       if (line.matches("[0-9 ]+: [0-9]+")) {
         final String[] parts = line.split(":");
         final List<Integer> factors = new ArrayList<>();
@@ -1674,7 +1708,7 @@ public final class RationalGroupCensus {
   private void loadSylows() throws IOException {
     for (final String sylowFile : List.of("NativeSylow16Inputs.txt", "NativeSylow20Inputs.txt")) {
       final Matcher records = Pattern.compile("(?ms)^IMF_SYLOW +(\\d+) +(\\d+) +(\\d+) +(.*?)(?=^IMF_SYLOW |^GAP_RESULT_END)")
-        .matcher(Files.readString(mDirectory.resolve(sylowFile)));
+        .matcher(record(sylowFile));
       while (records.find()) {
         final RationalE7Census.Input tokens = new RationalE7Census.Input(records.group(4));
         final List<Q> seed = tokens.vector();
@@ -1691,13 +1725,13 @@ public final class RationalGroupCensus {
   }
 
   private void loadLabels() throws IOException {
-    for (final String line : Files.readAllLines(mDirectory.resolve("ImfNativeTypesStructure.txt"))) {
+    for (final String line : record("ImfNativeTypesStructure.txt").split("\\R")) {
       if (line.startsWith("IMF_TYPE ")) {
         final String[] fields = line.split(" +", 4);
         mTypes.put(fields[1] + "." + fields[2], fields[3].trim());
       }
     }
-    for (final String line : Files.readAllLines(mDirectory.resolve("ImfNativeSimplexSeeds.txt"))) {
+    for (final String line : record("ImfNativeSimplexSeeds.txt").split("\\R")) {
       if (line.startsWith("IMF_SEED ")) {
         final String[] fields = line.split(" +", 4);
         mSeeds.put(fields[1] + "." + fields[2], new RationalE7Census.Input(fields[3]).vector());

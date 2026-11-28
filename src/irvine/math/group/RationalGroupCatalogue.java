@@ -3,8 +3,6 @@ package irvine.math.group;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -112,11 +110,12 @@ final class RationalGroupCatalogue {
     return new Candidate(order, generators);
   }
 
-  private static List<Candidate> readArchive(final Path filename, final int n) throws IOException {
+  private static List<Candidate> readArchive(final int n) throws IOException {
     final List<Candidate> candidates = new ArrayList<>();
     final Pattern match = Pattern.compile("qcatalog/dim" + n + "/dir\\." + n
       + "(?:-\\d+)*/ordnung\\.(\\d+)/[^/]+/(?:max|min|group)\\.\\d+");
-    try (InputStream in = new GZIPInputStream(Files.newInputStream(filename))) {
+    try (InputStream resource = RationalGroupCensus.resource("a069481-carat.dat.gz");
+         InputStream in = new GZIPInputStream(resource)) {
       while (true) {
         final byte[] header = in.readNBytes(512);
         if (header.length != 512) {
@@ -143,8 +142,8 @@ final class RationalGroupCatalogue {
     return candidates;
   }
 
-  static int maximal(final Path archive, final int n) throws IOException {
-    final List<Candidate> candidates = readArchive(archive, n);
+  static int maximal(final int n) throws IOException {
+    final List<Candidate> candidates = readArchive(n);
     if (candidates.isEmpty()) {
       throw new IOException("No CARAT records for dimension " + n);
     }

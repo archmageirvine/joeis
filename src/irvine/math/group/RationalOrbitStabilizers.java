@@ -13,7 +13,7 @@ import irvine.math.z.Z;
  */
 final class RationalOrbitStabilizers {
 
-  private static final int CELL_LIMIT = Math.min(64000000, Integer.getInteger("joeis.rational.audit.chainCells", 26000000));
+  private static final int CELL_LIMIT = 59000000;
 
   private static final class Level {
     private final char[][] mForward;

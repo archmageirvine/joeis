@@ -45,8 +45,7 @@ public class A402447 extends DecimalExpansionSequence {
 
           final Z factor;
           final Z denominator;
-          // Convert the decimal fixed-point interval to the requested
-          // binary precision.
+          // Convert the decimal fixed-point interval to the requested binary precision.
           if (precision < 0) {
             factor = Z.ONE.shiftLeft(-(long) precision > Integer.MAX_VALUE ? Integer.MAX_VALUE : -precision);
             denominator = q;
@@ -55,10 +54,8 @@ public class A402447 extends DecimalExpansionSequence {
             denominator = q.shiftLeft(precision);
           }
 
-          boolean settled = false;
           while (lo.compareTo(hi) < 0) {
-            // If both endpoints round to the same integer, the answer
-            // is determined to the requested CR precision.
+            // If both endpoints round to the same integer, the answer is determined to the requested CR precision.
             final Z a = roundedRatio(lo.multiply(factor), denominator);
             final Z b = roundedRatio(hi.multiply(factor), denominator);
             if (a.equals(b)) {

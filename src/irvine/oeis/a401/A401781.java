@@ -59,13 +59,11 @@ public class A401781 extends Sequence1 {
       }
 
       // Create a new block.
-      {
-        final int[] block = mBlock.clone();
-        final int[] sizes = mSizes.clone();
-        block[mPos] = mBlocks;
-        sizes[mBlocks] = 1;
-        tasks.add(new PartitionTask(mN, mPos + 1, mBlocks + 1, block, sizes, mSplitDepth));
-      }
+      final int[] block = mBlock.clone();
+      final int[] sizes = mSizes.clone();
+      block[mPos] = mBlocks;
+      sizes[mBlocks] = 1;
+      tasks.add(new PartitionTask(mN, mPos + 1, mBlocks + 1, block, sizes, mSplitDepth));
 
       invokeAll(tasks);
 

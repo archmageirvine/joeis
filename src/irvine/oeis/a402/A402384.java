@@ -56,6 +56,7 @@ public class A402384 extends Sequence1 {
   private List<Box> mBoxes;
   private int mN;
 
+  /** Construct the sequence. */
   public A402384() {
     mBoxes = new ArrayList<>();
     mN = 0;
